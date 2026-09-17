@@ -1,0 +1,2465 @@
+
+™•
+platform
+GameKit
+GKViewControllerProtocolMeta
+kotlinx
+cinterop
+	ObjCClass
+ObjCObjectMeta
+ExternalObjCClass
+protocolGetter
+*kniprot_platform_GameKit0_GKViewController
+GKViewControllerProtocol
+
+ObjCObject
+*GKGameCenterControllerDelegateProtocolMeta
+darwin
+NSObjectProtocolMeta
+8kniprot_platform_GameKit1_GKGameCenterControllerDelegate
+&GKGameCenterControllerDelegateProtocol
+NSObjectProtocol
+GKGameCenterViewController
+gameCenterViewController
+kotlin
+Unit
+
+ObjCMethod
+selector
+"gameCenterViewControllerDidFinish:
+encoding
+
+v24@0:8@16
+isStret
+!gameCenterViewControllerDidFinish
+/GKAchievementViewControllerDelegateProtocolMeta
+=kniprot_platform_GameKit2_GKAchievementViewControllerDelegate
++GKAchievementViewControllerDelegateProtocol
+GKAchievementViewController
+viewController
+#achievementViewControllerDidFinish:
+"achievementViewControllerDidFinish
++GKChallengeEventHandlerDelegateProtocolMeta
+9kniprot_platform_GameKit3_GKChallengeEventHandlerDelegate
+'GKChallengeEventHandlerDelegateProtocol
+GKChallenge
+	challenge
+localPlayerDidSelectChallenge:
+localPlayerDidSelectChallenge
+Boolean
+,shouldShowBannerForLocallyReceivedChallenge:
+
+c24@0:8@16
++shouldShowBannerForLocallyReceivedChallenge
+localPlayerDidReceiveChallenge:
+localPlayerDidReceiveChallenge
+-shouldShowBannerForLocallyCompletedChallenge:
+,shouldShowBannerForLocallyCompletedChallenge
+ localPlayerDidCompleteChallenge:
+localPlayerDidCompleteChallenge
+.shouldShowBannerForRemotelyCompletedChallenge:
+-shouldShowBannerForRemotelyCompletedChallenge
+!remotePlayerDidCompleteChallenge:
+ remotePlayerDidCompleteChallenge
+.GKChallengesViewControllerDelegateProtocolMeta
+<kniprot_platform_GameKit4_GKChallengesViewControllerDelegate
+*GKChallengesViewControllerDelegateProtocol
+GKChallengesViewController
+"challengesViewControllerDidFinish:
+!challengesViewControllerDidFinish
+GKChallengeListenerProtocolMeta
+-kniprot_platform_GameKit5_GKChallengeListener
+GKChallengeListenerProtocol
+GKPlayer
+player
+wantsToPlayChallenge
+player:wantsToPlayChallenge:
+v32@0:8@16@24
+didReceiveChallenge
+player:didReceiveChallenge:
+didCompleteChallenge
+issuedByFriend
++player:didCompleteChallenge:issuedByFriend:
+v40@0:8@16@24@32
+issuedChallengeWasCompleted
+byFriend
+,player:issuedChallengeWasCompleted:byFriend:
+8GKFriendRequestComposeViewControllerDelegateProtocolMeta
+Fkniprot_platform_GameKit6_GKFriendRequestComposeViewControllerDelegate
+4GKFriendRequestComposeViewControllerDelegateProtocol
+$GKFriendRequestComposeViewController
+,friendRequestComposeViewControllerDidFinish:
++friendRequestComposeViewControllerDidFinish
+GKMatchDelegateProtocolMeta
+)kniprot_platform_GameKit7_GKMatchDelegate
+GKMatchDelegateProtocol
+GKMatch
+match
+
+Foundation
+NSData
+didReceiveData
+fromRemotePlayer
+&match:didReceiveData:fromRemotePlayer:
+forRecipient
+3match:didReceiveData:forRecipient:fromRemotePlayer:
+v48@0:8@16@24@32@40
+GKPlayerConnectionState
+didChangeConnectionState
+&match:player:didChangeConnectionState:
+v40@0:8@16@24q32
+NSError
+didFailWithError
+match:didFailWithError:
+ shouldReinviteDisconnectedPlayer
+'match:shouldReinviteDisconnectedPlayer:
+c32@0:8@16@24
+String
+
+fromPlayer
+ match:didReceiveData:fromPlayer:
+didChangeState
+match:player:didChangeState:
+shouldReinvitePlayer
+match:shouldReinvitePlayer:
+"GKGameActivityListenerProtocolMeta
+0kniprot_platform_GameKit8_GKGameActivityListener
+GKGameActivityListenerProtocol
+GKGameActivity
+wantsToPlayGameActivity
+	Function1
+completionHandler
+1player:wantsToPlayGameActivity:completionHandler:
+v40@0:8@16@24@?32
+&GKGameSessionEventListenerProtocolMeta
+4kniprot_platform_GameKit9_GKGameSessionEventListener
+"GKGameSessionEventListenerProtocol
+GKGameSession
+session
+GKCloudPlayer
+didAddPlayer
+session:didAddPlayer:
+didRemovePlayer
+session:didRemovePlayer:
+GKConnectionState
+(session:player:didChangeConnectionState:
+didSaveData
+session:player:didSaveData:
+"session:didReceiveData:fromPlayer:
+didReceiveMessage
+withData
+.session:didReceiveMessage:withData:fromPlayer:
+/GKLeaderboardViewControllerDelegateProtocolMeta
+>kniprot_platform_GameKit10_GKLeaderboardViewControllerDelegate
++GKLeaderboardViewControllerDelegateProtocol
+GKLeaderboardViewController
+#leaderboardViewControllerDidFinish:
+"leaderboardViewControllerDidFinish
+$GKTurnBasedEventListenerProtocolMeta
+3kniprot_platform_GameKit11_GKTurnBasedEventListener
+ GKTurnBasedEventListenerProtocol
+collections
+List
+didRequestMatchWithOtherPlayers
+'player:didRequestMatchWithOtherPlayers:
+GKTurnBasedMatch
+receivedTurnEventForMatch
+didBecomeActive
+1player:receivedTurnEventForMatch:didBecomeActive:
+v36@0:8@16@24c32
+
+matchEnded
+player:matchEnded:
+GKTurnBasedExchange
+receivedExchangeRequest
+forMatch
+(player:receivedExchangeRequest:forMatch:
+receivedExchangeCancellation
+-player:receivedExchangeCancellation:forMatch:
+receivedExchangeReplies
+forCompletedExchange
+=player:receivedExchangeReplies:forCompletedExchange:forMatch:
+wantsToQuitMatch
+player:wantsToQuitMatch:
+didRequestMatchWithPlayers
+"player:didRequestMatchWithPlayers:
++GKTurnBasedEventHandlerDelegateProtocolMeta
+:kniprot_platform_GameKit12_GKTurnBasedEventHandlerDelegate
+'GKTurnBasedEventHandlerDelegateProtocol
+playersToInvite
+handleInviteFromGameCenter:
+handleInviteFromGameCenter
+(handleTurnEventForMatch:didBecomeActive:
+v28@0:8@16c24
+handleTurnEventForMatch
+handleTurnEventForMatch:
+handleMatchEnded:
+handleMatchEnded
+!GKInviteEventListenerProtocolMeta
+0kniprot_platform_GameKit13_GKInviteEventListener
+GKInviteEventListenerProtocol
+GKInvite
+didAcceptInvite
+player:didAcceptInvite:
+didRequestMatchWithRecipients
+%player:didRequestMatchWithRecipients:
+GKSavedGameListenerProtocolMeta
+.kniprot_platform_GameKit14_GKSavedGameListener
+GKSavedGameListenerProtocol
+GKSavedGame
+didModifySavedGame
+player:didModifySavedGame:
+hasConflictingSavedGames
+ player:hasConflictingSavedGames:
+!GKLocalPlayerListenerProtocolMeta
+0kniprot_platform_GameKit15_GKLocalPlayerListener
+GKLocalPlayerListenerProtocol
+debugDescription
+@16@0:8
+.GKMatchmakerViewControllerDelegateProtocolMeta
+=kniprot_platform_GameKit16_GKMatchmakerViewControllerDelegate
+*GKMatchmakerViewControllerDelegateProtocol
+GKMatchmakerViewController
+%matchmakerViewControllerWasCancelled:
+$matchmakerViewControllerWasCancelled
+*matchmakerViewController:didFailWithError:
+matchmakerViewController
+didFindMatch
+&matchmakerViewController:didFindMatch:
+didFindHostedPlayers
+.matchmakerViewController:didFindHostedPlayers:
+hostedPlayerDidAccept
+/matchmakerViewController:hostedPlayerDidAccept:
+getMatchPropertiesForRecipient
+Map
+Any
+withCompletionHandler
+NmatchmakerViewController:getMatchPropertiesForRecipient:withCompletionHandler:
+didFindPlayers
+(matchmakerViewController:didFindPlayers:
+ didReceiveAcceptFromHostedPlayer
+:matchmakerViewController:didReceiveAcceptFromHostedPlayer:
+GKSessionDelegateProtocolMeta
+,kniprot_platform_GameKit17_GKSessionDelegate
+GKSessionDelegateProtocol
+	GKSession
+peer
+GKPeerConnectionState
+session:peer:didChangeState:
+v36@0:8@16@24i32
+#didReceiveConnectionRequestFromPeer
+,session:didReceiveConnectionRequestFromPeer:
+connectionWithPeerFailed
+	withError
++session:connectionWithPeerFailed:withError:
+session:didFailWithError:
+GKVoiceChatClientProtocolMeta
+,kniprot_platform_GameKit18_GKVoiceChatClient
+GKVoiceChatClientProtocol
+GKVoiceChatService
+voiceChatService
+sendData
+toParticipantID
+*voiceChatService:sendData:toParticipantID:
+participantID
+sendRealTimeData
+2voiceChatService:sendRealTimeData:toParticipantID:
+didStartWithParticipantID
++voiceChatService:didStartWithParticipantID:
+didNotStartWithParticipantID
+error
+4voiceChatService:didNotStartWithParticipantID:error:
+didStopWithParticipantID
+0voiceChatService:didStopWithParticipantID:error:
+%didReceiveInvitationFromParticipantID
+Long
+	NSInteger
+callID
+>voiceChatService:didReceiveInvitationFromParticipantID:callID:
+7GKTurnBasedMatchmakerViewControllerDelegateProtocolMeta
+Fkniprot_platform_GameKit19_GKTurnBasedMatchmakerViewControllerDelegate
+3GKTurnBasedMatchmakerViewControllerDelegateProtocol
+#GKTurnBasedMatchmakerViewController
+.turnBasedMatchmakerViewControllerWasCancelled:
+-turnBasedMatchmakerViewControllerWasCancelled
+3turnBasedMatchmakerViewController:didFailWithError:
+!turnBasedMatchmakerViewController
+/turnBasedMatchmakerViewController:didFindMatch:
+playerQuitForMatch
+5turnBasedMatchmakerViewController:playerQuitForMatch:
+GKBasePlayerMeta
+NSObjectMeta
+NSCopyingProtocolMeta
+GKBasePlayer
+new
+CPointer
+cnames
+structs
+_NSZone
+zone
+allocWithZone:
+@24@0:8^{_NSZone=}16
+
+Deprecated
+message
+)Use constructor or factory method instead
+replaceWith
+ReplaceWith
+imports
+
+expression
+ 
+level
+DeprecationLevel
+WARNING
+allocWithZone
+alloc
+NSObject
+NSCopyingProtocol
+ObjCConstructor
+
+designated
+initSelector
+init
+playerID
+displayName
+Use constructor instead
+GKBasePlayer()
+ERROR
+internal
+CCall
+ConsumesReceiver
+ReturnsRetained
+NSZone
+copyWithZone:
+copyWithZone
+	Companion
+ObjCClassOf
+GKPlayerMeta
+guestIdentifier
+#anonymousGuestPlayerWithIdentifier:
+
+@24@0:8@16
+"anonymousGuestPlayerWithIdentifier
+scopedIDsArePersistent
+c16@0:8
+gamePlayerID
+teamPlayerID
+alias
+isInvitable
+
+GKPlayer()
+GKLeaderboardMeta
+leaderboardIDs
+	Function2
+*loadLeaderboardsWithIDs:completionHandler:
+v32@0:8@16@?24
+loadLeaderboardsWithIDs
+score
+ULong
+
+NSUInteger
+context
+<submitScore:context:player:leaderboardIDs:completionHandler:
+v56@0:8q16Q24@32@40@?48
+submitScore
+GKLeaderboard
+,loadPreviousOccurrenceWithCompletionHandler:
+v24@0:8@?16
++loadPreviousOccurrenceWithCompletionHandler
+-submitScore:context:player:completionHandler:
+v48@0:8q16Q24@32@?40
+GKLeaderboardPlayerScope
+playerScope
+GKLeaderboardTimeScope
+	timeScope
+CValue
+_NSRange
+NSRange
+range
+	Function4
+GKLeaderboardEntry
+<loadEntriesForPlayerScope:timeScope:range:completionHandler:
+ v56@0:8q16q24{_NSRange=QQ}32@?48
+loadEntriesForPlayerScope
+players
+	Function3
+2loadEntriesForPlayers:timeScope:completionHandler:
+v40@0:8@16q24@?32
+loadEntriesForPlayers
+title
+groupIdentifier
+baseLeaderboardID
+GKLeaderboardType
+type
+q16@0:8
+NSDate
+	startDate
+nextStartDate
+Double
+NSTimeInterval
+duration
+d16@0:8
+leaderboardDescription
+GKReleaseState
+releaseState
+Q16@0:8
+activityIdentifier
+activityProperties
+isHidden
+GKLeaderboard()
+GKLeaderboardEntryMeta
+rank
+formattedScore
+date
+GKLeaderboardEntry()
+GKScoreMeta
+NSCodingProtocolMeta
+NSSecureCodingProtocolMeta
+scores
+#reportScores:withCompletionHandler:
+reportScores
+GKScore
+supportsSecureCoding
+NSCodingProtocol
+NSSecureCodingProtocol
+leaderboardIdentifier
+initWithLeaderboardIdentifier:
+%initWithLeaderboardIdentifier:player:
+NSCoder
+coder
+initWithCoder:
+
+identifier
+GKScore(identifier)
+initWithLeaderboardIdentifier
+GKScore(identifier, player)
+@32@0:8@16@24
+posix
+int64_t
+value
+	setValue:
+
+v24@0:8q16
+setValue
+formattedValue
+setLeaderboardIdentifier:
+setLeaderboardIdentifier
+uint64_t
+setContext:
+
+v24@0:8Q16
+
+setContext
+shouldSetDefaultLeaderboard
+setShouldSetDefaultLeaderboard:
+
+v20@0:8c16
+setShouldSetDefaultLeaderboard
+	GKScore()
+GKScore(coder)
+initWithCoder
+encodeWithCoder:
+encodeWithCoder
+GKAchievementMeta
+&loadAchievementsWithCompletionHandler:
+%loadAchievementsWithCompletionHandler
+'resetAchievementsWithCompletionHandler:
+&resetAchievementsWithCompletionHandler
+achievements
+)reportAchievements:withCompletionHandler:
+reportAchievements
+GKAchievement
+initWithIdentifier:
+initWithIdentifier:player:
+GKAchievement(identifier)
+initWithIdentifier
+!GKAchievement(identifier, player)
+setIdentifier:
+setIdentifier
+percentComplete
+setPercentComplete:
+
+v24@0:8d16
+setPercentComplete
+isCompleted
+lastReportedDate
+showsCompletionBanner
+setShowsCompletionBanner:
+setShowsCompletionBanner
+GKAchievement()
+GKAchievement(coder)
+	completed
+GKDialogControllerMeta
+AppKit
+NSResponderMeta
+GKDialogController
+NSResponder
+NSViewController
+presentViewController:
+presentViewController
+sender
+dismiss:
+dismiss
+NSWindow
+parentWindow
+setParentWindow:
+setParentWindow
+GKDialogController()
+GKDialogController(coder)
+GKGameCenterViewControllerMeta
+NSViewControllerMeta
+	NSNibName
+nibName
+NSBundle
+bundle
+initWithNibName:bundle:
+nibNameOrNil
+0GKGameCenterViewController(nibNameOrNil, bundle)
+initWithNibName
+!GKGameCenterViewController(coder)
+GKGameCenterViewController()
+GKAccessPointMeta
+GKAccessPoint
+shared
+	Function0
+handler
+triggerAccessPointWithHandler:
+triggerAccessPointWithHandler
+GKGameCenterViewControllerState
+state
+$triggerAccessPointWithState:handler:
+v32@0:8q16@?24
+triggerAccessPointWithState
+achievementID
+,triggerAccessPointWithAchievementID:handler:
+#triggerAccessPointWithAchievementID
+leaderboardSetID
+/triggerAccessPointWithLeaderboardSetID:handler:
+&triggerAccessPointWithLeaderboardSetID
+leaderboardID
+BtriggerAccessPointWithLeaderboardID:playerScope:timeScope:handler:
+v48@0:8@16q24q32@?40
+#triggerAccessPointWithLeaderboardID
+%triggerAccessPointWithPlayer:handler:
+triggerAccessPointWithPlayer
+-triggerAccessPointForPlayTogetherWithHandler:
+,triggerAccessPointForPlayTogetherWithHandler
++triggerAccessPointForChallengesWithHandler:
+*triggerAccessPointForChallengesWithHandler
+challengeDefinitionID
+4triggerAccessPointWithChallengeDefinitionID:handler:
++triggerAccessPointWithChallengeDefinitionID
+gameActivityDefinitionID
+7triggerAccessPointWithGameActivityDefinitionID:handler:
+.triggerAccessPointWithGameActivityDefinitionID
+gameActivity
++triggerAccessPointWithGameActivity:handler:
+"triggerAccessPointWithGameActivity
+*triggerAccessPointForFriendingWithHandler:
+)triggerAccessPointForFriendingWithHandler
+'triggerAccessPointForArcadeWithHandler:
+&triggerAccessPointForArcadeWithHandler
+isActive
+active
+
+setActive:
+	setActive
+	isVisible
+isPresentingGameCenter
+showHighlights
+setShowHighlights:
+setShowHighlights
+GKAccessPointLocation
+location
+setLocation:
+setLocation
+CoreGraphics
+CGRect
+NSRect
+frameInScreenCoordinates
+&{CGRect={CGPoint=dd}{CGSize=dd}}16@0:8
+GKAccessPoint()
+visible
+GKGameActivityMeta
+GKGameActivityDefinition
+activityDefinition
+	partyCode
+ObjCObjectVar
+$startWithDefinition:partyCode:error:
+@40@0:8@16@24^@32
+startWithDefinition
+startWithDefinition:error:
+@32@0:8@16^@24
+isValidPartyCode:
+isValidPartyCode
+validPartyCodeAlphabet
+
+definition
+initWithDefinition:
+"GKGameActivity(activityDefinition)
+initWithDefinition
+start
+v16@0:8
+pause
+resume
+end
+leaderboard
+toScore
+&setScoreOnLeaderboard:toScore:context:
+v40@0:8@16q24Q32
+setScoreOnLeaderboard
+setScoreOnLeaderboard:toScore:
+v32@0:8@16q24
+GKLeaderboardScore
+getScoreOnLeaderboard:
+getScoreOnLeaderboard
+leaderboards
+removeScoresFromLeaderboards:
+removeScoresFromLeaderboards
+achievement
+toPercentComplete
++setProgressOnAchievement:toPercentComplete:
+v32@0:8@16d24
+setProgressOnAchievement
+setAchievementCompleted:
+setAchievementCompleted
+getProgressOnAchievement:
+
+d24@0:8@16
+getProgressOnAchievement
+removeAchievements:
+removeAchievements
+
+properties
+setProperties:
+setProperties
+GKGameActivityState
+NSURL
+partyURL
+creationDate
+lastResumeDate
+endDate
+Set
+leaderboardScores
+GKGameActivity()
+GKGameActivityDefinitionMeta
+1loadAchievementDescriptionsWithCompletionHandler:
+0loadAchievementDescriptionsWithCompletionHandler
+&loadLeaderboardsWithCompletionHandler:
+%loadLeaderboardsWithCompletionHandler
+NSImage
+loadImageWithCompletionHandler:
+loadImageWithCompletionHandler
+details
+defaultProperties
+fallbackURL
+supportsPartyCode
+NSNumber
+
+maxPlayers
+
+minPlayers
+supportsUnlimitedPlayers
+GKGameActivityPlayStyle
+	playStyle
+GKGameActivityDefinition()
+GKLeaderboardScoreMeta
+
+setPlayer:
+	setPlayer
+setLeaderboardID:
+setLeaderboardID
+GKLeaderboardScore()
+GKAchievementDescriptionMeta
+GKAchievementDescription
+achievedDescription
+unachievedDescription
+maximumPoints
+isReplayable
+rarityPercent
+GKAchievementDescription()
+GKAchievementDescription(coder)
+hidden
+
+replayable
+GKAchievementViewControllerMeta
+achievementDelegate
+setAchievementDelegate:
+setAchievementDelegate
+1GKAchievementViewController(nibNameOrNil, bundle)
+"GKAchievementViewController(coder)
+GKAchievementViewController()
+GKChallengeMeta
+,loadReceivedChallengesWithCompletionHandler:
++loadReceivedChallengesWithCompletionHandler
+decline
+issuingPlayer
+receivingPlayer
+GKChallengeState
+	issueDate
+completionDate
+GKChallenge()
+GKChallenge(coder)
+GKScoreChallengeMeta
+GKScoreChallenge
+leaderboardEntry
+GKScoreChallenge()
+GKScoreChallenge(coder)
+GKAchievementChallengeMeta
+GKAchievementChallenge
+GKAchievementChallenge()
+GKAchievementChallenge(coder)
+GKChallengeDefinitionMeta
+GKChallengeDefinition
+durationOptions
+isRepeatable
+GKChallengeDefinition()
+GKChallengeEventHandlerMeta
+GKChallengeEventHandler
+challengeEventHandler
+delegate
+setDelegate:
+setDelegate
+GKChallengeEventHandler()
+GKChallengesViewControllerMeta
+challengeDelegate
+setChallengeDelegate:
+setChallengeDelegate
+0GKChallengesViewController(nibNameOrNil, bundle)
+!GKChallengesViewController(coder)
+GKChallengesViewController()
+GKCloudPlayerMeta
+containerName
+7getCurrentSignedInPlayerForContainer:completionHandler:
+$getCurrentSignedInPlayerForContainer
+GKCloudPlayer()
+(GKFriendRequestComposeViewControllerMeta
+:GKFriendRequestComposeViewController(nibNameOrNil, bundle)
++GKFriendRequestComposeViewController(coder)
+&GKFriendRequestComposeViewController()
+GKMatchRequestMeta
+GKMatchType
+	matchType
+ maxPlayersAllowedForMatchOfType:
+
+Q24@0:8Q16
+maxPlayersAllowedForMatchOfType
+GKMatchRequest
+setMinPlayers:
+setMinPlayers
+setMaxPlayers:
+setMaxPlayers
+playerGroup
+setPlayerGroup:
+setPlayerGroup
+UInt
+uint32_t
+playerAttributes
+I16@0:8
+setPlayerAttributes:
+
+v20@0:8I16
+setPlayerAttributes
+
+recipients
+setRecipients:
+setRecipients
+inviteMessage
+setInviteMessage:
+setInviteMessage
+defaultNumberOfPlayers
+setDefaultNumberOfPlayers:
+setDefaultNumberOfPlayers
+restrictToAutomatch
+setRestrictToAutomatch:
+setRestrictToAutomatch
+GKInviteRecipientResponse
+recipientResponseHandler
+@?16@0:8
+setRecipientResponseHandler:
+setRecipientResponseHandler
+GKInviteeResponse
+inviteeResponseHandler
+setInviteeResponseHandler:
+setInviteeResponseHandler
+setPlayersToInvite:
+setPlayersToInvite
+	queueName
+setQueueName:
+setQueueName
+recipientProperties
+setRecipientProperties:
+setRecipientProperties
+GKMatchRequest()
+GKMatchMeta
+data
+	toPlayers
+GKMatchSendDataMode
+dataMode
+"sendData:toPlayers:dataMode:error:
+c48@0:8@16@24q32^@40
+withDataMode
+(sendDataToAllPlayers:withDataMode:error:
+c40@0:8@16q24^@32
+sendDataToAllPlayers
+
+disconnect
+-chooseBestHostingPlayerWithCompletionHandler:
+,chooseBestHostingPlayerWithCompletionHandler
+rematchWithCompletionHandler:
+rematchWithCompletionHandler
+name
+GKVoiceChat
+voiceChatWithName:
+voiceChatWithName
+expectedPlayerCount
+playerProperties
+	GKMatch()
+GKVoiceChatMeta
+isVoIPAllowed
+stop
+muted
+setPlayer:muted:
+GKVoiceChatPlayerState
+$playerVoiceChatStateDidChangeHandler
+(setPlayerVoiceChatStateDidChangeHandler:
+'setPlayerVoiceChatStateDidChangeHandler
+Float
+volume
+f16@0:8
+
+setVolume:
+
+v20@0:8f16
+	setVolume
+GKVoiceChat()
+GKGameSessionMeta
+	withTitle
+maxConnectedPlayers
+IcreateSessionInContainer:withTitle:maxConnectedPlayers:completionHandler:
+v48@0:8@16@24q32@?40
+createSessionInContainer
+*loadSessionsInContainer:completionHandler:
+loadSessionsInContainer
+,loadSessionWithIdentifier:completionHandler:
+loadSessionWithIdentifier
+.removeSessionWithIdentifier:completionHandler:
+removeSessionWithIdentifier
+!getShareURLWithCompletionHandler:
+ getShareURLWithCompletionHandler
+loadDataWithCompletionHandler:
+loadDataWithCompletionHandler
+saveData:completionHandler:
+saveData
+%setConnectionState:completionHandler:
+setConnectionState
+playersWithConnectionState:
+
+@24@0:8q16
+playersWithConnectionState
+GKTransportType
+withTransportType
+-sendData:withTransportType:completionHandler:
+key
+	arguments
+badgePlayers
+ZsendMessageWithLocalizedFormatKey:arguments:data:toPlayers:badgePlayers:completionHandler:
+v60@0:8@16@24@32@40c48@?52
+!sendMessageWithLocalizedFormatKey
+'clearBadgeForPlayers:completionHandler:
+clearBadgeForPlayers
+owner
+lastModifiedDate
+lastModifiedPlayer
+maxNumberOfConnectedPlayers
+badgedPlayers
+GKGameSession()
+GKLeaderboardSetMeta
+)loadLeaderboardSetsWithCompletionHandler:
+(loadLeaderboardSetsWithCompletionHandler
+GKLeaderboardSet
+loadLeaderboardsWithHandler:
+loadLeaderboardsWithHandler
+GKLeaderboardSet()
+GKLeaderboardSet(coder)
+GKLeaderboardViewControllerMeta
+1GKLeaderboardViewController(nibNameOrNil, bundle)
+"GKLeaderboardViewController(coder)
+GKLeaderboardViewController()
+GKTurnBasedParticipantMeta
+GKTurnBasedParticipant
+lastTurnDate
+GKTurnBasedParticipantStatus
+status
+GKTurnBasedMatchOutcome
+matchOutcome
+setMatchOutcome:
+setMatchOutcome
+timeoutDate
+GKTurnBasedParticipant()
+GKTurnBasedMatchMeta
+request
+*findMatchForRequest:withCompletionHandler:
+findMatchForRequest
+!loadMatchesWithCompletionHandler:
+ loadMatchesWithCompletionHandler
+matchID
+&loadMatchWithID:withCompletionHandler:
+loadMatchWithID¨
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+  
+$ 
+& 
+' 
++ 
+9 
+; 
+< 
+? 
+A 
+B 
+P 
+R 
+S 
+V 
+X 
+Y 
+ [
+&\ 
+c 
+&g 
+m 
+t 
+v 
+w 
+y 
+} 
+ 
+Ä 
+Ç 
+á 
+è 
+ë 
+í 
+ï 
+ó 
+ò
+9ô 
+ú 
+£ 
+∞ 
+≤ 
+º 
+æ 
+ø 
+ƒ 
+∆ 
+« 
+Ã 
+Œ 
+— 
+” 
+‘ 
+9‡ 
+· 
+Ë 
+Í 
+Î 
+Ì 
+ˆ 
+¯ 
+˘ 
+â 
+ä 
+ç 
+è 
+ê 
+ò 
+ô 
+&ö 
+õ 
+ù 
+û
+]ü
+^† 
+§ 
+® 
+≠ 
+± 
+&≤ 
+≥ 
+º
+fΩ 
+gæ 
+gø 
+&¿ 
+[√ 
+ƒ 
+≈ 
+√ 
+— 
+” 
+ÿ 
+Ÿ 
+ﬁ 
+‰ 
+Ê 
+Ë 
+&È 
+&Í 
+Ï 
+Ì 
+Ú 
+˘ 
+&¸ 
+ˇ 
+&Ä 
+Ñ 
+s√ 
+ã 
+z√ 
+ê 
+&ë 
+&í 
+ñ 
+&ò 
+&ô 
+&ù 
+ •
+ã¶ 
+ãÆ 
+á√ 
+ª 
+√ 
+ê√ 
+◊ 
+ ÿ
+ìŸ 
+⁄ 
+ì€ 
+ì‹ 
+ì‚ 
+ï√ 
+Ë 
+ìÈ 
+ìÍ 
+&Ï 
+√ 
+Ù 
+ı 
+˜ 
+˚ 
+¶ 
+ ™
+§´ 
+&¨ 
+†√ 
+± 
+≤ 
+µ 
+Œ 
+„ 
+&‰ 
+9È 
+-√ 
+Ï 
+ìÒ 
+&¯ 
+¸ 
+©√ 
+ˇ 
+´√ 
+Ö 
+Ü 
+∏√ 
+ê 
+√ 
+ó 
+ù 
+√ 
+¢ 
+£ 
+¿√ 
+ß 
+® 
+√√ 
+´ 
+¨ 
+∆√ 
+∞ 
+± 
+…√ 
+∑ 
+√ 
+æ 
+2√ 
+√ 
+"√ 
+« 
+» 
+Õ 
+’ 
+ã÷ 
+Ë 
+Ì 
+”√ 
+˙ 
+˝ 
+ã 
+%√ 
+ë 
+ñ 
+ö 
+€√ 
+° 
+∏ 
+1√ 
+… 
+Ã 
+Â√ 
+— 
+6√ 
+’ 
+÷ 
+ÿ 
+⁄ 
+Í√ 
+‡ "g20j`“
+(	"g20	“
+(	"g
+20“
+("Lg20J3020H'“
+ (( “
+("g20“
+("Ng20J5#02!0H'“
+ ("( “
+("g20“
+(%"òg20J5*02(0H“
+ ()( J5.02(0H“
+ (,(- J5002(0H“
+ (/( J5202(0H“
+ (1(- J5402(0H“
+ (3( J5602(0H“
+ (5(- J5802(0H“
+ (7( “
+(%"g20j`“
+(:"Ng20	J5>02!0H'“
+ (=( “
+(:"g20“
+(@"õg20J;C02C02D0H“
+ (E(F J;C02C02G0H“
+ (H(F JCC02C02I02J0H“
+ (K(L JCC02C02M02N0H“
+ (O(L “
+(@"g 20j`“
+(Q"Lg!20	J3U02!0"H'“
+ (T( “
+(Q"g#20“
+(W"±g$20JCZ02Z0%2]0'2^0H“
+ (_(L JKZ02Z0%2]0'2`02^0H“
+ (a(b JCZ02Z0%2C02d0(H“
+ (e(f J=Z02Z0%2h0)H“
+ (i(F J;Z02Z0%2j0H“
+ (k(l JCZ02Z0%2]0'2n0*H“
+ (o(L JCZ02Z0%2C0*2p0(H“
+ (q(f J;Z02Z0%2r0*H“
+ (s(l “
+(W"g+20j`“
+(u"hg,20	JOC02C02x0-2z000.H“
+ ({(| “
+(u"g/20“
+(~"ƒg020J?Å02Å012É02H“
+!	(Ñ(F J?Å02Å012Ö02H“
+!	(Ü(F JFÅ02Å012C022d03H“
+!	(à(f JGÅ02Å012C022â0'H“
+!	(ä(L JFÅ02Å012]0'2n02H“
+!	(ã(L JPÅ02Å012å0*2ç0'2n02H“
+!	(é(b “
+(~"g420“
+	(ê"Qg520J7î02!06H'“
+!	(ì( “
+	(ê"g720j`“
+	(ñ" g820	JAC02C02ö0:H“
+!	(õ(F JGC02C02ù0;2û0H“
+"	(ü	(† J=C02C02°0;H“
+!	(¢(F JFC02C02§0<2•0;H“
+!	(¶(L JFC02C02ß0<2•0;H“
+!	(®(L JSC02C02©0:2™0<2•0;H“
+!	(´(b J=C02C02¨0;H“
+!	(≠(F JAC02C02Æ0:H“
+!	(Ø(F “
+	(ñ"g=20j`“
+	(±"Ég>20	J:µ02≥0:H'“
+!	(¥( J?∏02Z0;2û0H'“
+"	(∂	(∑ J5∏02Z0;H“
+!	(π( J5ª02Z0;H“
+!	(∫( “
+	(±"g?20j`“
+	(Ω"›g@20	J=C02C02¿0AH“
+!	(¡(F JAC02C02¬0:H“
+!	(√(F JAC02C02Æ0:H“
+!	(Ø(F “
+	(Ω"gB20“
+	(≈"ögC20J=C02C02»0DH“
+!	(…(F JAC02C02 0:H“
+!	(À(F “
+	(≈"(gE2020+20?20720B“
+	(Õ"ùgF2020,20@20820CJ0œ0*H“
+"	(œ	(– JAC02C02Æ0:H“
+!	(Ø(F “
+	(Õ"gG20“
+	(“"πgH20J5÷02!0IH'“
+!	(’( J=ÿ02!0I2h0)H'“
+!	(◊(F J>ÿ02!0I2Ÿ0%H“
+!	(⁄(F JBÿ02!0I2€0:H“
+!	(‹(F J>ÿ02!0I2›0H“
+!	(ﬁ(F Jaÿ02!0I2ﬂ02!‚0K0J00.H“
+!	(„(| JBÿ02!0I2‰0:H“
+!	(Â(F J>ÿ02!0I2Ê0*H“
+!	(Á(F “
+	(“"gL20“
+	(È"≠gM20JHÅ02Å0N2Ï0*2p0OH“
+"	(Ó	(Ô J?Å02Å0N20*H“
+!	(Ò(F JHÅ02Å0N2Ú0*2Û0)H“
+!	(Ù(L J>Å02Å0N2h0)H“
+!	(ı(F “
+	(È"gP20“
+	(˜"ÉgQ20JH˙02˙0R2˚0'2¸0*H'“
+!	(˝(L J.˛0*H'“
+"	(˛	(– JH˙02˙0R2ˇ0'2¸0*H“
+!	(Ä(L J?˙02˙0R2Å0*H“
+!	(Ç(F JJ˙02˙0R2É0*2	Ñ0)H“
+!	(Ö(L JJ˙02˙0R2Ü0*2	Ñ0)H“
+!	(á(L JL˙02˙0R2à0*2ã0Sj`TH“
+!	(å(f “
+	(˜"gU20“
+	(é"égV20J5í02!0WH'“
+!	(ë( J=î02!0W2h0)H'“
+!	(ì(F J>î02!0W2Ÿ0;H“
+!	(ï(F J>î02!0W2ñ0;H“
+!	(ó(F “
+	(é"¬X20Y20ZBJ1ú0[Hó “
+"	(ú	(– JÉØ0[2°
+0_0\Hó “
+"	(¢	(£ “
+>`
+•(¶ ßBa©
+™(´¨
+0b8ÆJr∞0[Hó “
+"	(∞	(– “
+>`
+•(¶ ßBa©
+™(´¨
+0b8Æ“
+"Õ[ √20c20d:√B“
+e	¥
+µ(∂J1∑0*Hó “
+"	(∑	(– J1∏0*Hó “
+"	(∏	(– J|∂0[Hó “
+>`
+•(π ßBa©
+™(∫¨
+0b8ª“
+"	(∂	(– “
+h“
+iJI¬0K2°0_j`j0\Hó “
+"	(¡	(£ “
+iR1∑0*8«ä"	(∑	(– R1∏0*8«ä"	(∏	(– “
+"Ük20X20[0lB"¯m20XBJ8…02∆0*Hó “
+"	(«	(» J1ú0Hó “
+"	(ú	(– JÉØ02°
+0_0\Hó “
+"	(¢	(£ “
+>`
+•(¶ ßBa©
+™(´¨
+0b8ÆJr∞0Hó “
+"	(∞	(– “
+>`
+•(¶ ßBa©
+™(´¨
+0b8Æ“
+"Ç √20[:√B“
+e	¥
+µ(∂J/ 0Hó “
+"	( 	(À J/Ã0*Hó “
+"	(Ã	(– J/Õ0*Hó “
+"	(Õ	(– J/∏0*Hó “
+"	(∏	(– J/Œ0*Hó “
+"	(Œ	(– J1∆0*Hó “
+"	(∆	(– J/œ0Hó “
+"	(œ	(À J|∂0Hó “
+>`
+•(π ßBa©
+™(–¨
+0b8ª“
+"	(∂	(– “
+h“
+iR/Ã0*8«ä"	(Ã	(– R/Õ0*8«ä"	(Õ	(– R/Œ0*8«ä"	(Œ	(– R1∆0*8«ä"	(∆	(– R/œ08«ä"	(œ	(À “
+"Ün20m200lB"ño20YBJ`÷02“0:2 z
+0:0)00pHó “
+"	(‘	(’ Jt›02◊0Sj`T2⁄0qj`r2C02“0:2z0)00.Hó “
+"	(€	(‹ J1ú0sHó “
+"	(ú	(– JÉØ0s2°
+0_0\Hó “
+"	(¢	(£ “
+>`
+•(¶ ßBa©
+™(´¨
+0b8ÆJr∞0sHó “
+"	(∞	(– “
+>`
+•(¶ ßBa©
+™(´¨
+0b8Æ“
+"ºs √20c:√B“
+e	¥
+µ(∂JM·02z0s0)00pHó “
+"	(ﬂ	(‡ Jg›02◊0Sj`T2⁄0qj`r2C02z0)00.Hó “
+"	(‚	(„ Jê02Â0Sj`t2Á0Sj`u2Î0wj`x0v22z.0z
+0:0Sj`T0)00yHó “
+"	(Ó	(Ô Jsı02Ò0:2Á0Sj`u2(z$0z
+0:0)00{Hó “
+"	(Û	(Ù J1ˆ0*Hó “
+"	(ˆ	(– J1˜0*Hó “
+"	(˜	(– J/¯0*Hó “
+"	(¯	(– J/˙0|Hó “
+"	(˙	(˚ J1˝0}Hó “
+"	(˝	(– J1˛0}Hó “
+"	(˛	(– J3Å0~j`Hó “
+"	(Å	(Ç J/É0*Hó “
+"	(É	(– J0Ö0ÄHó “
+"	(Ö	(Ü J/á0*Hó “
+"	(á	(– J;à0K0JHó “
+"	(à	(– J/â0Hó “
+"	(â	(À J|∂0sHó “
+>`
+•(π ßBa©
+™(ä¨
+0b8ª“
+"	(∂	(– “
+h“
+iR1ˆ0*8«ä"	(ˆ	(– R1˜0*8«ä"	(˜	(– R/¯0*8«ä"	(¯	(– R/˙0|8«ä"	(˙	(˚ R1˝0}8«ä"	(˝	(– R1˛0}8«ä"	(˛	(– R3Å0~j`8«ä"	(Å	(Ç R/É0*8«ä"	(É	(– R0Ö0Ä8«ä"	(Ö	(Ü R/á0*8«ä"	(á	(– R;à0K0J8«ä"	(à	(– R/â08«ä"	(â	(À “
+"ÜÅ20o20s0lB"øÇ20YBJ1ú0zHó “
+"	(ú	(– JÉØ0z2°
+0_0\Hó “
+"	(¢	(£ “
+>`
+•(¶ ßBa©
+™(´¨
+0b8ÆJr∞0zHó “
+"	(∞	(– “
+>`
+•(¶ ßBa©
+™(´¨
+0b8Æ“
+"íz √20c:√B“
+e	¥
+µ(∂J-C0Hó “
+!(C	(– J3å0Sj`THó “
+"	(å	(˚ J3◊0Sj`THó “
+"	(◊	(˚ J/ç0*Hó “
+"	(ç	(– J3⁄0qj`rHó “
+"	(⁄	(Ü J/é0}Hó “
+"	(é	(– J|∂0zHó “
+>`
+•(π ßBa©
+™(è¨
+0b8ª“
+"	(∂	(– “
+h“
+iR-C08«ä!(C	(– R3å0Sj`T8«ä"	(å	(˚ R3◊0Sj`T8«ä"	(◊	(˚ R/ç0*8«ä"	(ç	(– R3⁄0qj`r8«ä"	(⁄	(Ü R/é0}8«ä"	(é	(– “
+"ÜÉ20Ç20z0lB"‘Ñ20Y20Ö20ÜBJUï02ì0:2‚0)00.Hó “
+"	(î	(’ J2ú0áHó “
+"	(ú	(– JÑØ0á2°
+0_0\Hó “
+"	(¢	(£ “
+>`
+•(¶ ßBa©
+™(´¨
+0b8ÆJs∞0áHó “
+"	(∞	(– “
+>`
+•(¶ ßBa©
+™(´¨
+0b8ÆJ/ó0Hó “
+"	(ó	(À “
+"ñá √20c20à20â:√B'ö0*“
+e	¥
+µ(õB/ö0*C0“
+e	¥
+µ(úB“
+e	¥
+µ(∂B(û0ä“
+e	¥
+µ(üJÑ¢0á2†0*Hó “
+>`
+•(π ßBa©
+™(°¨
+0b8ª“
+"	(õ	(» “
+h“
+iJå¢0á2†0*2C0Hó “
+>`
+•(π ßBa©
+™(£¨
+0b8ª“
+"	(ú	(§ “
+h“
+iJ4ß0Sj`åHó “
+"	(ß	(˚ J=™02ß0Sj`åHó “
+"	(®	(© J1´0*Hó “
+"	(´	(– J/ö0*Hó “
+"	(ö	(– J7≠02ö0*Hó “
+!	(¨( J4⁄0qj`çHó “
+"	(⁄	(Ü J=±02⁄0qj`çHó “
+"	(Ø	(∞ J/é0}Hó “
+"	(é	(– J/C0Hó “
+!(C	(– J3å0Sj`THó “
+"	(å	(˚ J/≤0Hó “
+"	(≤	(À J8µ02≤0Hó “
+"	(≥	(¥ J}∂0áHó “
+>`
+•(π ßBa©
+™(∂¨
+0b8ª“
+"	(∂	(– “
+h“
+iJá∏0á2û0äHó “
+>`
+•(π ßBa©
+™(∑¨
+0b8ª“
+"	(ü	(» “
+h“
+iJ8∫02û0äHó “
+!	(π( Rmß0Sj`å2ß0Sj`å8«@«XÜä"	(ß	(˚ í"	(®	(© R1´0*8«ä"	(´	(– Rbö0*2ß0*8«@«XÜä"	(ö	(– í!	(¨( Rm⁄0qj`ç2ß0qj`ç8«@«XÜä"	(⁄	(Ü í"	(Ø	(∞ R/é0}8«ä"	(é	(– R/C08«ä!(C	(– R3å0Sj`T8«ä"	(å	(˚ Rc≤02ß08«@«XÜä"	(≤	(À í"	(≥	(¥ “
+"Üé20Ñ2	0á0lB"Úè20Y20Ö20ÜBJSΩ02"z
+0:0)00pHó “
+"	(º	(‡ JGø02z0)00.Hó “
+"	(æ	(‡ JU¬02¿0:2‚0)00.Hó “
+"	(¡	(’ J2ú0êHó “
+"	(ú	(– JÑØ0ê2°
+0_0\Hó “
+"	(¢	(£ “
+>`
+•(¶ ßBa©
+™(´¨
+0b8ÆJs∞0êHó “
+"	(∞	(– “
+>`
+•(¶ ßBa©
+™(´¨
+0b8ÆJ/ó0Hó “
+"	(ó	(À “
+"¿ê √20c20à20â:√B)	†0*“
+e	¥
+µ(ƒB1	†0*C0“
+e	¥
+µ(≈B“
+e	¥
+µ(∂B(û0ä“
+e	¥
+µ(üJÜ«0ê2	†0*Hó “
+>`
+•(π ßBa©
+™(∆¨
+0b8ª“
+"	(ƒ	(» “
+h“
+iJé«0ê2	†0*2C0Hó “
+>`
+•(π ßBa©
+™(»¨
+0b8ª“
+"	(≈	(§ “
+h“
+iJ1†0*Hó “
+"	(†	(– J9 02	†0*Hó “
+!	(…( J/À0~Hó “
+"	(À	(Ç J8Œ02À0~Hó “
+"	(Ã	(Õ J/œ0Hó “
+"	(œ	(À J/–0}Hó “
+"	(–	(– J/—0Hó “
+"	(—	(À J8”02—0Hó “
+"	(“	(¥ J/C0Hó “
+!(C	(– J}∂0êHó “
+>`
+•(π ßBa©
+™(‘¨
+0b8ª“
+"	(∂	(– “
+h“
+iJá∏0ê2û0äHó “
+>`
+•(π ßBa©
+™(’¨
+0b8ª“
+"	(ü	(» “
+h“
+iJ8∫02û0äHó “
+!	(π( Rf†0*2	ß0*8«@«XÜä"	(†	(– í!	(…( RcÀ0~2ß0~8«@«XÜä"	(À	(Ç í"	(Ã	(Õ R/÷08«ä"	(œ	(À R/–0}8«ä"	(–	(– Rc—02ß08«@«XÜä"	(—	(À í"	(“	(¥ R/C08«ä!(C	(– “
+"Üë20è2	0ê0lB"√í20îBJ2ú0ïHó “
+"	(ú	(– JÑØ0ï2°
+0_0\Hó “
+"	(¢	(£ “
+>`
+•(¶ ßBa©
+™(´¨
+0b8ÆJs∞0ïHó “
+"	(∞	(– “
+>`
+•(¶ ßBa©
+™(´¨
+0b8Æ“
+"≥ï √20ñ:√B“
+e	¥
+µ(∂B(û0ä“
+e	¥
+µ(üJ7ﬁ02!0óHó “
+!	(›(- J7·02ﬂ0KHó “
+!	(‡( J2„0òHó “
+"	(„	(– J:Â02
+„0òHó “
+!	(‰( J{∂0ïHó “
+>`
+•(π ßBa©
+™(Ê¨
+0b8ª“
+"	(∂	(– “
+h“
+iJá∏0ï2û0äHó “
+>`
+•(π ßBa©
+™(Á¨
+0b8ª“
+"	(ü	(» “
+h“
+iRh„0ò2
+ß0ò8«@«XÜä"	(„	(– í!	(‰( “
+"Üô20í2	0ï0lB"ƒö20õ20BJ1ú0Hó “
+"	(ú	(– JÉØ02°
+0_0\Hó “
+"	(¢	(£ “
+>`
+•(¶ ßBa©
+™(´¨
+0b8ÆJr∞0Hó “
+"	(∞	(– “
+>`
+•(¶ ßBa©
+™(´¨
+0b8Æ“
+"¡ √20ó20:√B<Î0*j`ú
+Ì0ù“
+e	¥
+µ(ÓB(û0ä“
+e	¥
+µ(üB“
+e	¥ 
+µ(∂JòÒ02Ô0*j`ú2
+Ì0ùHó “
+>`
+•(π ßBa©
+™(¨
+0b8ª“
+"	(Ó	(§ “
+h“
+iJÜ∏02û0äHó “
+>`
+•(π ßBa©
+™(Ú¨
+0b8ª“
+"	(ü	(» “
+h“
+iJz∂0Hó “
+>`
+•(π ßBa©
+™(Û¨
+0b8ª“
+"	(∂	(– “
+h“
+i“
+"Üû20ö200lB"¶ü20YBJ0ˆ0†Hó “
+"	(ˆ	(– J2ú0†Hó “
+"	(ú	(– JÑØ0†2°
+0_0\Hó “
+"	(¢	(£ “
+>`
+•(¶ ßBa©
+™(´¨
+0b8ÆJs∞0†Hó “
+"	(∞	(– “
+>`
+•(¶ ßBa©
+™(´¨
+0b8ÆR0ˆ0†8«ä"	(ˆ	(– “
+"â† √20c:√B“
+e	¥
+µ(∂J?˙02¯	00°Hó “
+"	(˘	(‡ JMˇ02¸0Sj`¢2¯	00°Hó “
+"	(˝	(˛ JJÇ02Ä0*2¯00°Hó “
+"	(Å	(’ JJÖ02É0*2¯00°Hó “
+"	(Ñ	(’ Jdâ02Ü0*2Â0Sj`t2Á0Sj`u2¯00°Hó “
+"	(á	(à JIã02C02¯00°Hó “
+"	(ä	(’ JAç02¯00°Hó “
+"	(å	(‡ JAè02¯00°Hó “
+"	(é	(‡ JJí02ê0*2¯00°Hó “
+"	(ë	(’ JJï02ì0*2¯00°Hó “
+"	(î	(’ JJò02ñ0-2¯00°Hó “
+"	(ó	(’ JAö02¯00°Hó “
+"	(ô	(‡ JAú02¯00°Hó “
+"	(õ	(‡ J/ù0Hó “
+"	(ù	(À J8†02û0Hó “
+"	(ü	(¥ J/°0Hó “
+"	(°	(À J/¢0Hó “
+"	(¢	(À J/£0Hó “
+"	(£	(À J8•02£0Hó “
+"	(§	(¥ J0ß0£Hó “
+"	(ß	(˚ J9©02ß0£Hó “
+"	(®	(© J;≠
+0•j`¶0vHó “
+"	(≠	(ÆJ2„0òHó “
+"	(„	(– J:Â02
+„0òHó “
+!	(‰( J}∂0†Hó “
+>`
+•(π ßBa©
+™(Ø¨
+0b8ª“
+"	(∂	(– “
+h“
+iRcû02ß08«@«XÜä"	(ù	(À í"	(ü	(¥ R/∞08«ä"	(°	(À R/¢08«ä"	(¢	(À Rc£02ß08«@«XÜä"	(£	(À í"	(§	(¥ Reß0£2ß0£8«@«XÜä"	(ß	(˚ í"	(®	(© R;≠
+0•j`¶0v8«ä"	(≠	(ÆRh„0ò2
+ß0ò8«@«XÜä"	(„	(– í!	(‰( “
+"Üß20ü2	0†0lB"ô®20YBJ^∏0-2≥0©2¥0*2Ñ0)0™0\Hó “
+"	(∂	(∑ JU∏0-2≥0©2Ñ0)0™0\Hó “
+"	(π	(∫ J7º02¥0*Hó “
+!	(ª(- J3Ω0:Hó “
+"	(Ω	(– J1ú0-Hó “
+"	(ú	(– JÉØ0-2°
+0_0\Hó “
+"	(¢	(£ “
+>`
+•(¶ ßBa©
+™(´¨
+0b8ÆJr∞0-Hó “
+"	(∞	(– “
+>`
+•(¶ ßBa©
+™(´¨
+0b8ÆR3Ω0:8«ä"	(Ω	(– “
+"Ü- √20c:√B(æ0©“
+e	¥
+µ(øB“
+e	¥
+µ(∂JÑ¡0-2≥0©Hó “
+>`
+•(π ßBa©
+™(¿¨
+0b8ª“
+"	(ø	(» “
+h“
+iJ/¬0Hó “
+"	(¬	(√ J/ƒ0Hó “
+"	(ƒ	(√ J/≈0Hó “
+"	(≈	(√ J/∆0Hó “
+"	(∆	(√ JRÀ02«0s2»0Sj`T2⁄0qj`rHó “
+"	(…	(  JEÀ02«0s2»0Sj`THó “
+"	(Ã	(Õ J;–0´2«0sHó “
+"	(œ	(» J;”02—0:Hó “
+!	(“( JBÿ02‘0ê2’0~Hó “
+"	(÷	(◊ J8⁄02‘0êHó “
+!	(Ÿ( J9›0~2‘0êHó “
+"	(€	(‹ J;ﬂ02¿0:Hó “
+!	(ﬁ( J/†0*Hó “
+"	(†	(– J0≥0©Hó “
+"	(≥	(– J;‡0K0JHó “
+"	(‡	(– JC‚02‡0K0JHó “
+!	(·( J4¸0qj`¨Hó “
+"	(¸	(Ü J1¥0*Hó “
+"	(¥	(– J2Â0≠Hó “
+"	(Â	(– J/Ê0}Hó “
+"	(Ê	(– J1˝0}Hó “
+"	(˝	(– J1Á0}Hó “
+"	(Á	(– J1Ë0}Hó “
+"	(Ë	(– J3Å0~j`Hó “
+"	(Å	(Ç J4¿0ÆHó “
+"	(¿	(– J4Í0ÆHó “
+"	(Í	(– J|∂0-Hó “
+>`
+•(π ßBa©
+™(Î¨
+0b8ª“
+"	(∂	(– “
+h“
+iR/†0*8«ä"	(†	(– R0≥0©8«ä"	(≥	(– Rz‡0K0J2ß0K0J8«@«XÜä"	(‡	(– í!	(·( R4¸0qj`¨8«ä"	(¸	(Ü R1¥0*8«ä"	(¥	(– R2Â0≠8«ä"	(Â	(– R/Ê0}8«ä"	(Ê	(– R1˝0}8«ä"	(˝	(– R1Á0}8«ä"	(Á	(– R1Ë0}8«ä"	(Ë	(– R3Å0~j`8«ä"	(Å	(Ç R4¿0Æ8«ä"	(¿	(– R4Í0Æ8«ä"	(Í	(– “
+"ÜØ20®20-0lB"¬∞20YBJ2ú0©Hó “
+"	(ú	(– JÑØ0©2°
+0_0\Hó “
+"	(¢	(£ “
+>`
+•(¶ ßBa©
+™(´¨
+0b8ÆJs∞0©Hó “
+"	(∞	(– “
+>`
+•(¶ ßBa©
+™(´¨
+0b8Æ“
+"Ä© √20c:√B“
+e	¥
+µ(∂JQÓ02 z
+0:0)00pHó “
+"	(Ì	(‡ JQ02 z
+0:0)00pHó “
+"	(Ô	(‡ JNÛ02z0±0)00pHó “
+"	(Ú	(‡ J/†0*Hó “
+"	(†	(– J1˜0*Hó “
+"	(˜	(– J/ˆ0*Hó “
+"	(ˆ	(– J1Ù0*Hó “
+"	(Ù	(– J;ı0K0JHó “
+"	(ı	(– J2ˆ0≠Hó “
+"	(ˆ	(– J/˜0Hó “
+"	(˜	(À J2˘0≤Hó “
+"	(˘	(– J2˙0≤Hó “
+"	(˙	(– J/˚0Hó “
+"	(˚	(À J4˝0Sj`≥Hó “
+"	(˝	(˚ J0Ö0ÄHó “
+"	(Ö	(Ü J}∂0©Hó “
+>`
+•(π ßBa©
+™(˛¨
+0b8ª“
+"	(∂	(– “
+h“
+iR/†0*8«ä"	(†	(– R1˜0*8«ä"	(˜	(– R/ˆ0*8«ä"	(ˆ	(– R1Ù0*8«ä"	(Ù	(– R;ı0K0J8«ä"	(ı	(– R2ˆ0≠8«ä"	(ˆ	(– R/˜08«ä"	(˜	(À R2˘0≤8«ä"	(˘	(– R2˙0≤8«ä"	(˙	(– R/˚08«ä"	(˚	(À R4˝0Sj`≥8«ä"	(˝	(˚ R0Ö0Ä8«ä"	(Ö	(Ü “
+"Ü¥20∞2	0©0lB"¬µ20YBJ2ú0´Hó “
+"	(ú	(– JÑØ0´2°
+0_0\Hó “
+"	(¢	(£ “
+>`
+•(¶ ßBa©
+™(´¨
+0b8ÆJs∞0´Hó “
+"	(∞	(– “
+>`
+•(¶ ßBa©
+™(´¨
+0b8Æ“
+"ã´ √20c:√B“
+e	¥
+µ(∂J-C0Hó “
+!(C	(– J6Å02C0Hó “
+!	(Ä( J3ß0Sj`THó “
+"	(ß	(˚ J<™02ß0Sj`THó “
+"	(®	(© J3⁄0qj`rHó “
+"	(⁄	(Ü J<±02⁄0qj`rHó “
+"	(Ø	(∞ J/Ü0*Hó “
+"	(Ü	(– J7É02Ü0*Hó “
+!	(Ç( J}∂0´Hó “
+>`
+•(π ßBa©
+™(Ñ¨
+0b8ª“
+"	(∂	(– “
+h“
+iR`C02ß08«@«XÜä!(C	(– í!	(Ä( Rkß0Sj`T2ß0Sj`T8«@«XÜä"	(ß	(˚ í"	(®	(© Rk⁄0qj`r2ß0qj`r8«@«XÜä"	(⁄	(Ü í"	(Ø	(∞ RbÜ0*2ß0*8«@«XÜä"	(Ü	(– í!	(Ç( “
+"Ü∂20µ2	0´0lB"“∑20Y20Ö20ÜBJSÓ02"z
+0:0)00pHó “
+"	(Ì	(‡ J2ú0∏Hó “
+"	(ú	(– JÑØ0∏2°
+0_0\Hó “
+"	(¢	(£ “
+>`
+•(¶ ßBa©
+™(´¨
+0b8ÆJs∞0∏Hó “
+"	(∞	(– “
+>`
+•(¶ ßBa©
+™(´¨
+0b8ÆJ/ó0Hó “
+"	(ó	(À “
+"Ä∏ √20c20à20â:√B“
+e	¥
+µ(∂B(û0ä“
+e	¥
+µ(üJ1†0*Hó “
+"	(†	(– J1˜0*Hó “
+"	(˜	(– J1ˆ0*Hó “
+"	(ˆ	(– J1á0*Hó “
+"	(á	(– J1à0*Hó “
+"	(à	(– J3â0Sj`THó “
+"	(â	(˚ J/â0Hó “
+"	(â	(À J/ä0Hó “
+"	(ä	(À J2ã0≤Hó “
+"	(ã	(– J0Ö0ÄHó “
+"	(Ö	(Ü J/á0*Hó “
+"	(á	(– J;à0K0JHó “
+"	(à	(– J}∂0∏Hó “
+>`
+•(π ßBa©
+™(å¨
+0b8ª“
+"	(∂	(– “
+h“
+iJá∏0∏2û0äHó “
+>`
+•(π ßBa©
+™(ç¨
+0b8ª“
+"	(ü	(» “
+h“
+iJ8∫02û0äHó “
+!	(π( R1†0*8«ä"	(†	(– R1˜0*8«ä"	(˜	(– R1ˆ0*8«ä"	(ˆ	(– R1á0*8«ä"	(á	(– R1à0*8«ä"	(à	(– R3â0Sj`T8«ä"	(â	(˚ R/é08«ä"	(â	(À R/è08«ä"	(ä	(À R2ã0≤8«ä"	(ã	(– R0Ö0Ä8«ä"	(Ö	(Ü R/á0*8«ä"	(á	(– R;à0K0J8«ä"	(à	(– “
+"Üπ20∑2	0∏0lB"¿∫20öBJ1ú0Hó “
+"	(ú	(– JÉØ02°
+0_0\Hó “
+"	(¢	(£ “
+>`
+•(¶ ßBa©
+™(´¨
+0b8ÆJr∞0Hó “
+"	(∞	(– “
+>`
+•(¶ ßBa©
+™(´¨
+0b8Æ“
+"í √20:√B<Î0*j`ú
+Ì0ù“
+e	¥
+µ(ÓB(û0ä“
+e	¥
+µ(üB“
+e	¥ 
+µ(∂J1ë0Hó “
+"	(ë	(– J9ì02	ë0Hó “
+!	(í( JòÒ02Ô0*j`ú2
+Ì0ùHó “
+>`
+•(π ßBa©
+™(î¨
+0b8ª“
+"	(Ó	(§ “
+h“
+iJÜ∏02û0äHó “
+>`
+•(π ßBa©
+™(ï¨
+0b8ª“
+"	(ü	(» “
+h“
+iJz∂0Hó “
+>`
+•(π ßBa©
+™(ñ¨
+0b8ª“
+"	(∂	(– “
+h“
+iRfë02	ß08«@«XÜä"	(ë	(– í!	(í( “
+"Üª20∫200lB"œº20Y20Ö20ÜBJSô02"z
+0:0)00pHó “
+"	(ò	(‡ J1ú0Hó “
+"	(ú	(– JÉØ02°
+0_0\Hó “
+"	(¢	(£ “
+>`
+•(¶ ßBa©
+™(´¨
+0b8ÆJr∞0Hó “
+"	(∞	(– “
+>`
+•(¶ ßBa©
+™(´¨
+0b8ÆJ/ó0Hó “
+"	(ó	(À “
+"¿ √20c20à20â:√B“
+e	¥
+µ(∂B(û0ä“
+e	¥
+µ(üJ/ö0Hó “
+"	(ö	(√ J1õ0Hó “
+"	(õ	(– J1ú0Hó “
+"	(ú	(– J4¸0Sj`ΩHó “
+"	(¸	(˚ J/û0}Hó “
+"	(û	(– J1ü0}Hó “
+"	(ü	(– J1•0*Hó “
+"	(•	(– J|∂0Hó “
+>`
+•(π ßBa©
+™(†¨
+0b8ª“
+"	(∂	(– “
+h“
+iJÜ∏02û0äHó “
+>`
+•(π ßBa©
+™(°¨
+0b8ª“
+"	(ü	(» “
+h“
+iJ8∫02û0äHó “
+!	(π( R1õ08«ä"	(õ	(– R1ú08«ä"	(ú	(– R4¸0Sj`Ω8«ä"	(¸	(˚ R/û0}8«ä"	(û	(– R1ü0}8«ä"	(ü	(– R1•0*8«ä"	(•	(– “
+"Üæ20º200lB"√ø20ºBJ2ú0¿Hó “
+"	(ú	(– JÑØ0¿2°
+0_0\Hó “
+"	(¢	(£ “
+>`
+•(¶ ßBa©
+™(´¨
+0b8ÆJs∞0¿Hó “
+"	(∞	(– “
+>`
+•(¶ ßBa©
+™(´¨
+0b8Æ“
+"∂¿ √20:√B“
+e	¥
+µ(∂B(û0ä“
+e	¥
+µ(üJ2◊0áHó “
+"	(◊	(– J1§0zHó “
+"	(§	(– J}∂0¿Hó “
+>`
+•(π ßBa©
+™(•¨
+0b8ª“
+"	(∂	(– “
+h“
+iJá∏0¿2û0äHó “
+>`
+•(π ßBa©
+™(¶¨
+0b8ª“
+"	(ü	(» “
+h“
+iR2◊0á8«ä"	(◊	(– R1§0z8«ä"	(§	(– “
+"Ü¡20ø2	0¿0lB"√¬20ºBJ2ú0√Hó “
+"	(ú	(– JÑØ0√2°
+0_0\Hó “
+"	(¢	(£ “
+>`
+•(¶ ßBa©
+™(´¨
+0b8ÆJs∞0√Hó “
+"	(∞	(– “
+>`
+•(¶ ßBa©
+™(´¨
+0b8Æ“
+"–√ √20:√B“
+e	¥
+µ(∂B(û0ä“
+e	¥
+µ(üJ2‘0êHó “
+"	(‘	(– J}∂0√Hó “
+>`
+•(π ßBa©
+™(©¨
+0b8ª“
+"	(∂	(– “
+h“
+iJá∏0√2û0äHó “
+>`
+•(π ßBa©
+™(™¨
+0b8ª“
+"	(ü	(» “
+h“
+iR2‘0ê8«ä"	(‘	(– “
+"Üƒ20¬2	0√0lB"¬≈20YBJ2ú0∆Hó “
+"	(ú	(– JÑØ0∆2°
+0_0\Hó “
+"	(¢	(£ “
+>`
+•(¶ ßBa©
+™(´¨
+0b8ÆJs∞0∆Hó “
+"	(∞	(– “
+>`
+•(¶ ßBa©
+™(´¨
+0b8Æ“
+"™∆ √20c:√B“
+e	¥
+µ(∂JNÛ02z0±0)00pHó “
+"	(Ú	(‡ J/†0*Hó “
+"	(†	(– J1˜0*Hó “
+"	(˜	(– J/ˆ0*Hó “
+"	(ˆ	(– J1Ù0*Hó “
+"	(Ù	(– J3≠0:Hó “
+"	(≠	(– J/Æ0Hó “
+"	(Æ	(À J1«0sHó “
+"	(«	(– J0Ö0ÄHó “
+"	(Ö	(Ü J}∂0∆Hó “
+>`
+•(π ßBa©
+™(Ø¨
+0b8ª“
+"	(∂	(– “
+h“
+iR/†0*8«ä"	(†	(– R1˜0*8«ä"	(˜	(– R/ˆ0*8«ä"	(ˆ	(– R1Ù0*8«ä"	(Ù	(– R3≠0:8«ä"	(≠	(– R/Æ08«ä"	(Æ	(À R1«0s8«ä"	(«	(– R0Ö0Ä8«ä"	(Ö	(Ü “
+"Ü«20≈2	0∆0lB"ˆ»20YBJ2≤0…Hó “
+"	(≤	(– J2ú0…Hó “
+"	(ú	(– JÑØ0…2°
+0_0\Hó “
+"	(¢	(£ “
+>`
+•(¶ ßBa©
+™(´¨
+0b8ÆJs∞0…Hó “
+"	(∞	(– “
+>`
+•(¶ ßBa©
+™(´¨
+0b8Æ“
+"ä… √20c:√B“
+e	¥
+µ(∂J1≥0Hó “
+"	(≥	(– J9µ02	≥0Hó “
+!	(¥( J}∂0…Hó “
+>`
+•(π ßBa©
+™(∂¨
+0b8ª“
+"	(∂	(– “
+h“
+iRf≥02	ß08«@«XÜä"	(≥	(– í!	(¥( “
+"Ü 20»2	0…0lB"ƒÀ20õ20BJ1ú0Hó “
+"	(ú	(– JÉØ02°
+0_0\Hó “
+"	(¢	(£ “
+>`
+•(¶ ßBa©
+™(´¨
+0b8ÆJr∞0Hó “
+"	(∞	(– “
+>`
+•(¶ ßBa©
+™(´¨
+0b8Æ“
+"ó √20ó20:√B<Î0*j`ú
+Ì0ù“
+e	¥
+µ(ÓB(û0ä“
+e	¥
+µ(üB“
+e	¥ 
+µ(∂J1∏0Hó “
+"	(∏	(– J9∫02	∏0Hó “
+!	(π( JòÒ02Ô0*j`ú2
+Ì0ùHó “
+>`
+•(π ßBa©
+™(ª¨
+0b8ª“
+"	(Ó	(§ “
+h“
+iJÜ∏02û0äHó “
+>`
+•(π ßBa©
+™(º¨
+0b8ª“
+"	(ü	(» “
+h“
+iJz∂0Hó “
+>`
+•(π ßBa©
+™(Ω¨
+0b8ª“
+"	(∂	(– “
+h“
+iRf∏02	ß08«@«XÜä"	(∏	(– í!	(π( “
+"ÜÃ20À200lB"ôÕ20XBJX¡02	ø0*2z020)00pHó “
+"	(¿	(’ J1ú02Hó “
+"	(ú	(– JÉØ022°
+0_0\Hó “
+"	(¢	(£ “
+>`
+•(¶ ßBa©
+™(´¨
+0b8ÆJr∞02Hó “
+"	(∞	(– “
+>`
+•(¶ ßBa©
+™(´¨
+0b8Æ“
+"≤2 √20[:√B“
+e	¥
+µ(∂J|∂02Hó “
+>`
+•(π ßBa©
+™(¬¨
+0b8ª“
+"	(∂	(– “
+h“
+i“
+"ÜŒ20Õ2020lB"ƒœ20õ20BJ1ú0"Hó “
+"	(ú	(– JÉØ0"2°
+0_0\Hó “
+"	(¢	(£ “
+>`
+•(¶ ßBa©
+™(´¨
+0b8ÆJr∞0"Hó “
+"	(∞	(– “
+>`
+•(¶ ßBa©
+™(´¨
+0b8Æ“
+"¡" √20ó20:√B<Î0*j`ú
+Ì0ù“
+e	¥
+µ(ÓB(û0ä“
+e	¥
+µ(üB“
+e	¥ 
+µ(∂JòÒ0"2Ô0*j`ú2
+Ì0ùHó “
+>`
+•(π ßBa©
+™(ƒ¨
+0b8ª“
+"	(Ó	(§ “
+h“
+iJÜ∏0"2û0äHó “
+>`
+•(π ßBa©
+™(≈¨
+0b8ª“
+"	(ü	(» “
+h“
+iJz∂0"Hó “
+>`
+•(π ßBa©
+™(∆¨
+0b8ª“
+"	(∂	(– “
+h“
+i“
+"Ü–20œ20"0lB"Å—20YBJ=Ã0qj`r2…0“Hó “
+"	( 	(À J2ú0”Hó “
+"	(ú	(– JÑØ0”2°
+0_0\Hó “
+"	(¢	(£ “
+>`
+•(¶ ßBa©
+™(´¨
+0b8ÆJs∞0”Hó “
+"	(∞	(– “
+>`
+•(¶ ßBa©
+™(´¨
+0b8Æ“
+"Í” √20c:√B“
+e	¥
+µ(∂J3˙0qj`rHó “
+"	(˙	(Ü J<œ02˙0qj`rHó “
+"	(Œ	(∞ J3˘0qj`rHó “
+"	(˘	(Ü J<—02˘0qj`rHó “
+"	(–	(∞ J3“0qj`rHó “
+"	(“	(Ü J<‘02“0qj`rHó “
+"	(”	(∞ J5◊0‘j`’Hó “
+"	(◊	(ÿ J>€02◊0‘j`’Hó “
+"	(Ÿ	(⁄ J5‹0:Hó “
+"	(‹	(– J=ﬁ02‹0:Hó “
+!	(›( J1ﬂ0*Hó “
+"	(ﬂ	(– J9·02	ﬂ0*Hó “
+!	(‡( J3‚0qj`rHó “
+"	(‚	(Ü J<‰02‚0qj`rHó “
+"	(„	(∞ J/Â0Hó “
+"	(Â	(À J8Á02Â0Hó “
+"	(Ê	(¥ JJÈ0	0Sj`÷00pHó “
+"	(È	(Í JSÏ02"È0	0Sj`÷00pHó “
+"	(Î	(‡ JJÓ0*	0Sj`◊00pHó “
+"	(Ó	(Í JS02"Ó0*	0Sj`◊00pHó “
+"	(Ô	(‡ J5≥0:Hó “
+"	(≥	(– J=Ú02≥0:Hó “
+!	(Ò( J1Û0*Hó “
+"	(Û	(– J9ı02	Û0*Hó “
+!	(Ù( J=‡0K0JHó “
+"	(‡	(– JE‚02‡0K0JHó “
+!	(·( J=ˆ0K0JHó “
+"	(ˆ	(– JE¯02ˆ0K0JHó “
+!	(˜( J}∂0”Hó “
+>`
+•(π ßBa©
+™(˘¨
+0b8ª“
+"	(∂	(– “
+h“
+iRk˙0qj`r2ß0qj`r8«@«XÜä"	(˙	(Ü í"	(Œ	(∞ Rk˘0qj`r2ß0qj`r8«@«XÜä"	(˘	(Ü í"	(–	(∞ Rk“0qj`r2ß0qj`r8«@«XÜä"	(“	(Ü í"	(”	(∞ Ro◊0‘j`’2ß0‘j`’8«@«XÜä"	(◊	(ÿ í"	(Ÿ	(⁄ Rn‹0:2ß0:8«@«XÜä"	(‹	(– í!	(›( Rfﬂ0*2	ß0*8«@«XÜä"	(ﬂ	(– í!	(‡( Rk‚0qj`r2ß0qj`r8«@«XÜä"	(‚	(Ü í"	(„	(∞ RcÂ02ß08«@«XÜä"	(Â	(À í"	(Ê	(¥ RôÈ0	0Sj`÷00p2"ß0	0Sj`÷00p8«@«XÜä"	(È	(Í í"	(Î	(‡ RôÓ0*	0Sj`◊00p2"ß0*	0Sj`◊00p8«@«XÜä"	(Ó	(Í í"	(Ô	(‡ Rn≥0:2ß0:8«@«XÜä"	(≥	(– í!	(Ò( RfÛ0*2	ß0*8«@«XÜä"	(Û	(– í!	(Ù( R~‡0K0J2ß0K0J8«@«XÜä"	(‡	(– í!	(·( R~ˆ0K0J2ß0K0J8«@«XÜä"	(ˆ	(– í!	(˜( “
+"Üÿ20—2	0”0lB"øŸ20YBJ1ú0%Hó “
+"	(ú	(– JÉØ0%2°
+0_0\Hó “
+"	(¢	(£ “
+>`
+•(¶ ßBa©
+™(´¨
+0b8ÆJr∞0%Hó “
+"	(∞	(– “
+>`
+•(¶ ßBa©
+™(´¨
+0b8Æ“
+"ß
+% √20c:√B“
+e	¥
+µ(∂Ji˚02˚0'2¸0:2˛0⁄2Ñ0)0™0\Hó “
+"	(ˇ	(Ä J\Ñ02˚0'2Å0⁄2Ñ0)0™0\Hó “
+"	(Ç	(É J/Ö0Hó “
+"	(Ö	(√ JEá02z000.Hó “
+"	(Ü	(‡ JOâ02z0%0)00pHó “
+"	(à	(‡ J;ç0€2ä0*Hó “
+"	(å	(» J3Ò0:Hó “
+"	(Ò	(– J1≥0$Hó “
+"	(≥	(– J9µ02	≥0$Hó “
+!	(¥( J3é0qj`rHó “
+"	(é	(Ü J=‡0K0JHó “
+"	(‡	(– J=è0K0JHó “
+"	(è	(– J|∂0%Hó “
+>`
+•(π ßBa©
+™(ê¨
+0b8ª“
+"	(∂	(– “
+h“
+iR3Ò0:8«ä"	(Ò	(– Rf≥0$2	ß0$8«@«XÜä"	(≥	(– í!	(¥( R3é0qj`r8«ä"	(é	(Ü R=‡0K0J8«ä"	(‡	(– R=è0K0J8«ä"	(è	(– “
+"Ü‹20Ÿ20%0lB"Û›20YBJ/í0Hó “
+"	(í	(À J2ú0€Hó “
+"	(ú	(– JÑØ0€2°
+0_0\Hó “
+"	(¢	(£ “
+>`
+•(¶ ßBa©
+™(´¨
+0b8ÆJs∞0€Hó “
+"	(∞	(– “
+>`
+•(¶ ßBa©
+™(´¨
+0b8Æ“
+"Ì	€ √20c:√B“
+e	¥
+µ(∂J/¬0Hó “
+"	(¬	(√ J/ì0Hó “
+"	(ì	(√ J@Å02C02î0Hó “
+"	(ï	(∑ JDó00ﬁ00pHó “
+"	(ó	(Í JMô02ó00ﬁ00pHó “
+"	(ò	(‡ J/ä0*Hó “
+"	(ä	(– J/ù0Hó “
+"	(ù	(À J8†02û0Hó “
+"	(ü	(¥ J0õ0ﬂHó “
+"	(õ	(ú J9ü02õ0ﬂHó “
+"	(ù	(û J3Ò0:Hó “
+"	(Ò	(– J}∂0€Hó “
+>`
+•(π ßBa©
+™(†¨
+0b8ª“
+"	(∂	(– “
+h“
+iRçó00ﬁ00p2ß00ﬁ00p8«@«XÜä"	(ó	(Í í"	(ò	(‡ R/ä0*8«ä"	(ä	(– Rcû02ß08«@«XÜä"	(ù	(À í"	(ü	(¥ Reõ0ﬂ2ß0ﬂ8«@«XÜä"	(õ	(ú í"	(ù	(û R3Ò0:8«ä"	(Ò	(– “
+"Ü‡20›2	0€0lB"µ·20YBJn¶02	ø0*2¢0*2£0Sj`T2z010)00pHó “
+"	(§	(• J\®02	ø0*2 z
+0:0)00pHó “
+"	(ß	(’ JV™02†0*2z010)00pHó “
+"	(©	(’ JN¨02†0*2z0)00.Hó “
+"	(´	(’ J1ú01Hó “
+"	(ú	(– JÉØ012°
+0_0\Hó “
+"	(¢	(£ “
+>`
+•(¶ ßBa©
+™(´¨
+0b8ÆJr∞01Hó “
+"	(∞	(– “
+>`
+•(¶ ßBa©
+™(´¨
+0b8Æ“
+"ã1 √20c:√B“
+e	¥
+µ(∂JNÆ02z0≠0)00pHó “
+"	(≠	(‡ JM∞02z0'0)00pHó “
+"	(Ø	(‡ JV≤02˚0'2z0'0)00pHó “
+"	(±	(’ JN¥02¸032z0)00.Hó “
+"	(≥	(˛ J<∑0:2¸03Hó “
+"	(µ	(∂ JX˚02˚0'2π0‚2z0)00.Hó “
+"	(∫	(Ù J|¿02ª0*2º0:2	˚0'2¸0:2Ω02z0)00.Hó “
+"	(æ	(ø JR¬02Ò0:2z0)00.Hó “
+"	(¡	(’ J/†0*Hó “
+"	(†	(– J/ˆ0*Hó “
+"	(ˆ	(– J/√02Hó “
+"	(√	(– J3Ò0:Hó “
+"	(Ò	(– J/ƒ0}Hó “
+"	(ƒ	(– J/≈02Hó “
+"	(≈	(– J3∆0Sj`THó “
+"	(∆	(˚ J3«0:Hó “
+"	(«	(– J|∂01Hó “
+>`
+•(π ßBa©
+™(»¨
+0b8ª“
+"	(∂	(– “
+h“
+iR/†0*8«ä"	(†	(– R/ˆ0*8«ä"	(ˆ	(– R/√028«ä"	(√	(– R3Ò0:8«ä"	(Ò	(– R/ƒ0}8«ä"	(ƒ	(– R/≈028«ä"	(≈	(– R3∆0Sj`T8«ä"	(∆	(˚ R3«0:8«ä"	(«	(– “
+"Ü„20·2010lB"“‰20Y20Ö20ÜBJSÀ02"z
+0:0)00pHó “
+"	( 	(‡ J2ú0ÂHó “
+"	(ú	(– JÑØ0Â2°
+0_0\Hó “
+"	(¢	(£ “
+>`
+•(¶ ßBa©
+™(´¨
+0b8ÆJs∞0ÂHó “
+"	(∞	(– “
+>`
+•(¶ ßBa©
+™(´¨
+0b8ÆJ/ó0Hó “
+"	(ó	(À “
+"ûÂ √20c20à20â:√B“
+e	¥
+µ(∂B(û0ä“
+e	¥
+µ(üJRŒ02!¯
+0:0)00pHó “
+"	(Õ	(‡ J/ˆ0*Hó “
+"	(ˆ	(– J1˜0*Hó “
+"	(˜	(– J1†0*Hó “
+"	(†	(– J9 02	†0*Hó “
+!	(…( J}∂0ÂHó “
+>`
+•(π ßBa©
+™(œ¨
+0b8ª“
+"	(∂	(– “
+h“
+iJá∏0Â2û0äHó “
+>`
+•(π ßBa©
+™(–¨
+0b8ª“
+"	(ü	(» “
+h“
+iJ8∫02û0äHó “
+!	(π( R/ˆ0*8«ä"	(ˆ	(– R1˜0*8«ä"	(˜	(– Rf†0*2	ß0*8«@«XÜä"	(†	(– í!	(…( “
+"ÜÊ20‰2	0Â0lB"¿Á20öBJ1ú06Hó “
+"	(ú	(– JÉØ062°
+0_0\Hó “
+"	(¢	(£ “
+>`
+•(¶ ßBa©
+™(´¨
+0b8ÆJr∞06Hó “
+"	(∞	(– “
+>`
+•(¶ ßBa©
+™(´¨
+0b8Æ“
+"º6 √20:√B<Î0*j`ú
+Ì0ù“
+e	¥
+µ(ÓB(û0ä“
+e	¥
+µ(üB“
+e	¥ 
+µ(∂JòÒ062Ô0*j`ú2
+Ì0ùHó “
+>`
+•(π ßBa©
+™(“¨
+0b8ª“
+"	(Ó	(§ “
+h“
+iJÜ∏062û0äHó “
+>`
+•(π ßBa©
+™(”¨
+0b8ª“
+"	(ü	(» “
+h“
+iJz∂06Hó “
+>`
+•(π ßBa©
+™(‘¨
+0b8ª“
+"	(∂	(– “
+h“
+i“
+"ÜË20Á2060lB"¬È20YBJ2ú0ÍHó “
+"	(ú	(– JÑØ0Í2°
+0_0\Hó “
+"	(¢	(£ “
+>`
+•(¶ ßBa©
+™(´¨
+0b8ÆJs∞0ÍHó “
+"	(∞	(– “
+>`
+•(¶ ßBa©
+™(´¨
+0b8Æ“
+"≤Í √20c:√B“
+e	¥
+µ(∂J/C0Hó “
+!(C	(– J1◊0}Hó “
+"	(◊	(– J4Ÿ0Sj`ÎHó “
+"	(Ÿ	(˚ J4€0Sj`ÏHó “
+"	(€	(˚ J=›02€0Sj`ÏHó “
+"	(‹	(© J1ﬁ0}Hó “
+"	(ﬁ	(– J}∂0ÍHó “
+>`
+•(π ßBa©
+™(ﬂ¨
+0b8ª“
+"	(∂	(– “
+h“
+iR/C08«ä!(C	(– R1◊0}8«ä"	(◊	(– R4Ÿ0Sj`Î8«ä"	(Ÿ	(˚ Rm€0Sj`Ï2ß0Sj`Ï8«@«XÜä"	(€	(˚ í"	(‹	(© R1ﬁ0}8«ä"	(ﬁ	(– “
+"ÜÌ20È2	0Í0lB"…Ó20YBJX„02·0”2‚0;0)00pHó “
+"	(‚	(’ JSÂ02"z
+0:0)00pHó “
+"	(‰	(‡ JYË02Ê0*2‚0;0)00pHó “
+"	(Á	(’ J1ú0;Hó “
+"	(ú	(– JÉØ0;2°
+0_0\Hó “
+"	(¢	(£ “
+>`
+•(¶ ßBa©
+™(´¨
+0b8ÆJr∞0;Hó “
+"	(∞	(– “
+>`
+•(¶ ßBa©
+™(´¨
+0b8Æ“
+‡
+ Í
+platform.GameKitÚ
+≈
+ !#$+,/04578=>?@BCEFGHLMPQUVX[kmnosÅÇzÉÑáéèêëíïôöûü†ß®-Ø∞©¥µ´∂∑∏π∫ªºæø¿¡¬√ƒ≈∆«»… ÀÃÕ2Œœ"–—”ÿŸ%‹›€‡·1„‰ÂÊÁ6ËÈÍÌÓ

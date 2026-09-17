@@ -1,0 +1,709 @@
+
+∏@
+platform
+AVFoundation
+AVSampleBufferDisplayLayer
+kotlin
+Unit
+kotlinx
+cinterop
+
+ObjCMethod
+selector
+flush
+encoding
+v16@0:8
+isStret
+flushAndRemoveImage
+darwin
+NSObject
+dispatch_queue_t
+queue
+	Function0
+
+usingBlock
+,requestMediaDataWhenReadyOnQueue:usingBlock:
+v32@0:8@16@?24
+ requestMediaDataWhenReadyOnQueue
+stopRequestingMediaData
+CPointer
+cnames
+structs
+OpaqueCMTimebase
+	CoreMedia
+CMTimebaseRef
+timebase
+^{OpaqueCMTimebase=}16@0:8
+Long
+#AVQueuedSampleBufferRenderingStatus
+status
+q16@0:8
+
+Foundation
+NSError
+error
+@16@0:8
+Boolean
+requiresFlushToResumeDecoding
+c16@0:8
+isReadyForMoreMediaData
+.hasSufficientMediaDataForReliablePlaybackStart
+preventsCapture
+setPreventsCapture:
+
+v20@0:8c16
+setPreventsCapture
+'preventsDisplaySleepDuringVideoPlayback
++setPreventsDisplaySleepDuringVideoPlayback:
+*setPreventsDisplaySleepDuringVideoPlayback
+1outputObscuredDueToInsufficientExternalProtection
+AVSampleBufferVideoRenderer
+sampleBufferRenderer
+ AVSampleBufferRenderSynchronizer
+%AVQueuedSampleBufferRenderingProtocol
+renderer
+addRenderer:
+
+v24@0:8@16
+addRenderer
+CValue
+CMTime
+atTime
+	Function1
+completionHandler
+(removeRenderer:atTime:completionHandler:
+v56@0:8@16{?=qiIq}24@?48
+removeRenderer
+collections
+List
+	renderers
+interval
+Any
+4addPeriodicTimeObserverForInterval:queue:usingBlock:
+@56@0:8{?=qiIq}16@40@?48
+"addPeriodicTimeObserverForInterval
+times
+1addBoundaryTimeObserverForTimes:queue:usingBlock:
+@40@0:8@16@24@?32
+addBoundaryTimeObserverForTimes
+observer
+removeTimeObserver:
+removeTimeObserver
+AVSampleCursor
+cursor
+NSComparisonResult
+1comparePositionInDecodeOrderWithPositionOfCursor:
+
+q24@0:8@16
+0comparePositionInDecodeOrderWithPositionOfCursor
+OsamplesWithEarlierDecodeTimeStampsMayHaveLaterPresentationTimeStampsThanCursor:
+
+c24@0:8@16
+NsamplesWithEarlierDecodeTimeStampsMayHaveLaterPresentationTimeStampsThanCursor
+OsamplesWithLaterDecodeTimeStampsMayHaveEarlierPresentationTimeStampsThanCursor:
+NsamplesWithLaterDecodeTimeStampsMayHaveEarlierPresentationTimeStampsThanCursor
+presentationTimeStamp
+{?=qiIq}16@0:8
+decodeTimeStamp
+opaqueCMFormatDescription
+CMFormatDescriptionRef
+"copyCurrentSampleFormatDescription
+#^{opaqueCMFormatDescription=}16@0:8
+currentSampleDuration
+AVSampleCursorSyncInfo
+currentSampleSyncInfo
+{?=ccc}16@0:8
+AVSampleCursorDependencyInfo
+currentSampleDependencyInfo
+{?=cccccc}16@0:8
+Map
+"currentSampleDependencyAttachments
+!AVSampleCursorAudioDependencyInfo
+ currentSampleAudioDependencyInfo
+{?=cq}16@0:8
+	NSInteger
+ samplesRequiredForDecoderRefresh
+NSURL
+currentChunkStorageURL
+AVSampleCursorStorageRange
+currentChunkStorageRange
+{?=qq}16@0:8
+AVSampleCursorChunkInfo
+currentChunkInfo
+{?=qccc}16@0:8
+posix
+int64_t
+currentSampleIndexInChunk
+currentSampleStorageRange
+
+__CVBuffer
+	CoreVideo
+CVPixelBufferRef
+copyDisplayedPixelBuffer
+^{__CVBuffer=}16@0:8
+minimumUpcomingPresentationTime
+2expectMinimumUpcomingSampleBufferPresentationTime:
+v40@0:8{?=qiIq}16
+1expectMinimumUpcomingSampleBufferPresentationTime
+BexpectMonotonicallyIncreasingUpcomingSampleBufferPresentationTimes
+5resetUpcomingSampleBufferPresentationTimeExpectations
+ recommendedPixelBufferAttributes
+AVVideoPerformanceMetrics
+1loadVideoPerformanceMetricsWithCompletionHandler:
+v24@0:8@?16
+0loadVideoPerformanceMetricsWithCompletionHandler
+NSValueMeta
+time
+NSValue
+valueWithCMTime:
+@40@0:8{?=qiIq}16
+valueWithCMTime
+CMTimeRange
+	timeRange
+valueWithCMTimeRange:
+@64@0:8{?={?=qiIq}{?=qiIq}}16
+valueWithCMTimeRange
+CMTimeMapping
+timeMapping
+valueWithCMTimeMapping:
+6@112@0:8{?={?={?=qiIq}{?=qiIq}}{?={?=qiIq}{?=qiIq}}}16
+valueWithCMTimeMapping
+CMTimeValue
+CMTimeRangeValue
+{?={?=qiIq}{?=qiIq}}16@0:8
+CMTimeMappingValue
+2{?={?={?=qiIq}{?=qiIq}}{?={?=qiIq}{?=qiIq}}}16@0:8
+NSCoder
+String
+forKey
+encodeCMTime:forKey:
+v48@0:8{?=qiIq}16@40
+encodeCMTime
+key
+decodeCMTimeForKey:
+{?=qiIq}24@0:8@16
+decodeCMTimeForKey
+encodeCMTimeRange:forKey:
+ v72@0:8{?={?=qiIq}{?=qiIq}}16@64
+encodeCMTimeRange
+decodeCMTimeRangeForKey:
+{?={?=qiIq}{?=qiIq}}24@0:8@16
+decodeCMTimeRangeForKey
+encodeCMTimeMapping:forKey:
+:v120@0:8{?={?={?=qiIq}{?=qiIq}}{?={?=qiIq}{?=qiIq}}}16@112
+encodeCMTimeMapping
+decodeCMTimeMappingForKey:
+5{?={?={?=qiIq}{?=qiIq}}{?={?=qiIq}{?=qiIq}}}24@0:8@16
+decodeCMTimeMappingForKey
+AVCaptureDevice
+AVCaptureDevicePosition
+position
+AVCaptureDeviceType
+
+deviceType
+AVCaptureDeviceMeta
+AVMediaType
+	mediaType
+/defaultDeviceWithDeviceType:mediaType:position:
+@40@0:8@16@24q32
+defaultDeviceWithDeviceType
+userPreferredCamera
+setUserPreferredCamera:
+setUserPreferredCamera
+systemPreferredCamera
+2AVCapturePrimaryConstituentDeviceSwitchingBehavior
+switchingBehavior
+ULong
+FAVCapturePrimaryConstituentDeviceRestrictedSwitchingBehaviorConditions
+%restrictedSwitchingBehaviorConditions
+SsetPrimaryConstituentDeviceSwitchingBehavior:restrictedSwitchingBehaviorConditions:
+v32@0:8q16Q24
+,setPrimaryConstituentDeviceSwitchingBehavior
+)primaryConstituentDeviceSwitchingBehavior
+=primaryConstituentDeviceRestrictedSwitchingBehaviorConditions
+Q16@0:8
+/activePrimaryConstituentDeviceSwitchingBehavior
+CactivePrimaryConstituentDeviceRestrictedSwitchingBehaviorConditions
+activePrimaryConstituentDevice
+*supportedFallbackPrimaryConstituentDevices
+!fallbackPrimaryConstituentDevices
+%setFallbackPrimaryConstituentDevices:
+$setFallbackPrimaryConstituentDevices
+AVCaptureFlashMode
+	flashMode
+isFlashModeSupported:
+
+c24@0:8q16
+isFlashModeSupported
+hasFlash
+isFlashAvailable
+setFlashMode:
+
+v24@0:8q16
+setFlashMode
+AVCaptureTorchMode
+	torchMode
+isTorchModeSupported:
+isTorchModeSupported
+Float
+
+torchLevel
+ObjCObjectVar
+setTorchModeOnWithLevel:error:
+c28@0:8f16^@20
+setTorchModeOnWithLevel
+hasTorch
+isTorchAvailable
+isTorchActive
+f16@0:8
+setTorchMode:
+setTorchMode
+AVCaptureFocusMode
+	focusMode
+isFocusModeSupported:
+isFocusModeSupported
+CoreGraphics
+CGPoint
+pointOfInterest
+CGRect
+#defaultRectForFocusPointOfInterest:
+4{CGRect={CGPoint=dd}{CGSize=dd}}32@0:8{CGPoint=dd}16
+"defaultRectForFocusPointOfInterest
+detectedObjectID
+ AVCaptureCinematicVideoFocusMode
+=setCinematicVideoTrackingFocusWithDetectedObjectID:focusMode:
+v32@0:8q16q24
+2setCinematicVideoTrackingFocusWithDetectedObjectID
+point
+0setCinematicVideoTrackingFocusAtPoint:focusMode:
+v40@0:8{CGPoint=dd}16q32
+%setCinematicVideoTrackingFocusAtPoint
+-setCinematicVideoFixedFocusAtPoint:focusMode:
+"setCinematicVideoFixedFocusAtPoint
+setFocusMode:
+setFocusMode
+isFocusPointOfInterestSupported
+focusPointOfInterest
+{CGPoint=dd}16@0:8
+setFocusPointOfInterest:
+v32@0:8{CGPoint=dd}16
+setFocusPointOfInterest
+isFocusRectOfInterestSupported
+CGSize
+minFocusRectOfInterestSize
+{CGSize=dd}16@0:8
+focusRectOfInterest
+&{CGRect={CGPoint=dd}{CGSize=dd}}16@0:8
+setFocusRectOfInterest:
+)v48@0:8{CGRect={CGPoint=dd}{CGSize=dd}}16
+setFocusRectOfInterest
+isAdjustingFocus
+minimumFocusDistance
+AVCaptureExposureMode
+exposureMode
+isExposureModeSupported:
+isExposureModeSupported
+&defaultRectForExposurePointOfInterest:
+%defaultRectForExposurePointOfInterest
+setExposureMode:
+setExposureMode
+"isExposurePointOfInterestSupported
+exposurePointOfInterest
+setExposurePointOfInterest:
+setExposurePointOfInterest
+!isExposureRectOfInterestSupported
+minExposureRectOfInterestSize
+exposureRectOfInterest
+setExposureRectOfInterest:
+setExposureRectOfInterest
+isAdjustingExposure
+AVCaptureWhiteBalanceMode
+whiteBalanceMode
+isWhiteBalanceModeSupported:
+isWhiteBalanceModeSupported
+setWhiteBalanceMode:
+setWhiteBalanceMode
+isAdjustingWhiteBalance
+Double
+CGFloat
+ displayVideoZoomFactorMultiplier
+d16@0:8
+AVAuthorizationStatus
+ authorizationStatusForMediaType:
+authorizationStatusForMediaType
+,requestAccessForMediaType:completionHandler:
+requestAccessForMediaType
+,AVCaptureDeviceTransportControlsPlaybackMode
+mode
+%AVCaptureDeviceTransportControlsSpeed
+speed
+'setTransportControlsPlaybackMode:speed:
+v28@0:8q16f24
+ setTransportControlsPlaybackMode
+transportControlsSupported
+transportControlsPlaybackMode
+transportControlsSpeed
+AVCaptureColorSpace
+activeColorSpace
+setActiveColorSpace:
+setActiveColorSpace
+AVCaptureCenterStageControlMode
+centerStageControlMode
+setCenterStageControlMode:
+setCenterStageControlModeô
+ 
+ 
+ 
+
+ 
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+  
+! 
+ $
+% 
+( 
+5 
+7 
+8 
+= 
+> 
+@ 
+E
+F 
+I 
+T 
+V 
+b 
+c 
+g 
+j 
+m 
+o 
+r 
+t 
+v 
+y 
+ |
+,} 
+Ä 
+ Å
+/Ç 
+å 
+ê 
+í 
+ñ 
+õ 
+• 
+¶ 
+ª 
+º 
+æ 
+¿ 
+¡ 
+  
+Ã 
+Õ 
+‹ 
+Ê 
+Í 
+Ï 
+ˆ 
+ ˙
+E˚ 
+E˝ 
+Ç 
+Eï 
+ü 
+± 
+∏ 
+Eπ 
+º 
+¡ 
+√ 
+À 
+œ ‹=0	0*0Há “
+ (	
+( 00*0Há “
+ (
+( N0*02
+0	j`
+200Há “
+ (
+( 00*0Há “
+ (
+( >00j`*0Há “
+ (
+( 4"0j`*0Há “
+ ("
+(# 2&0*0Há “
+ (&
+(' 0)0*0Há “
+ ()
+(* 0+0*0Há “
+ (+
+(* 0,0*0Há “
+ (,
+(* 0-0*0Há “
+ (-
+(* 800*02-0Há “
+ (.
+(/ 010*0Há “
+ (1
+(* 830*0210Há “
+ (2
+(/ 040*0Há “
+ (4
+(* 060*0Há “
+ (6
+(' 8<0*0290Há “
+ (:
+(; \D0*02902?002A000Há “
+ (B
+(C 4G0*0Há “
+ (G
+(' hL0*02H002
+0	j`
+2
+0000Há “
+ (J
+(K ZP0*02
+M02
+0	j`
+200Há “
+ (N
+(O 8S0*02Q0Há “
+ (R
+(; <Y0j`!*0 2U0 Há “
+ (W
+(X 8\0*0 2U0 Há “
+ (Z
+([ 8^0*0 2U0 Há “
+ (]
+([ 6_00*0 Há “
+ (_
+(`6a00*0 Há “
+ (a
+(`>d0"0j`#*0 Há “
+ (d
+(e 6f00*0 Há “
+ (f
+(`6h0$0*0 Há “
+ (h
+(i 6k0%0*0 Há “
+ (k
+(l >n00&*0 Há “
+ (n
+(' 6p0'0*0 Há “
+ (p
+(q 4s0j`(*0 Há “
+ (s
+(# 2u0)*0 Há “
+ (u
+(' 6w0*0*0 Há “
+ (w
+(x 6z0+0*0 Há “
+ (z
+({ 4~0j`-*0 Há “
+ (~
+(# 60*0*0 Há “
+ (
+(x AÉ0.0j`0*0Há “
+"	(É	
+(Ñ Bà0*02Ö00Há “
+"	(Ü	
+(á 2â0*0Há “
+!	(â
+( 2ä0*0Há “
+!	(ä
+( >ã00&*0Há “
+!	(ã
+(' Iè0*02A0100Há “
+"	(ç	
+(é Bï03*022ë00Há “
+"	(ì	
+(î Bö03*022ó040Há “
+"	(ò	
+(ô Bü03*022ú050Há “
+"	(ù	
+(û 8†00*03Há “
+!	(†
+(`9°040*03Há “
+"	(°	
+(¢9£050*03Há “
+"	(£	
+(§K™0*062ë002ß07Há “
+"	(®	
+(© BÆ00*062´07Há “
+"	(¨	
+(≠K±0*062ó0402ß07Há “
+"	(Ø	
+(∞ B¥040*062´07Há “
+"	(≤	
+(≥K∑0*062ú0502ß07Há “
+"	(µ	
+(∂ B∫050*062´07Há “
+"	(∏	
+(π6Ω0j`9*08Há “
+!	(Ω
+(# :ø
+07j`:*08Há “
+!	(ø
+(' d≈08*0;2ø
+07j`:2¬
+07j`<2Ω0j`9Há “
+"	(√	
+(ƒ 4∆08*0;Há “
+!	(∆
+(' =»0*0;2	∆08Há “
+!	(«
+(; 4…08*0;Há “
+!	(…
+(' M—0*082À0j`=2Œ0>j`?Há “
+"	(œ	
+(– 6“0j`=*08Há “
+!	(“
+(# 7”0>j`?*08Há “
+"	(”	
+(‘ 6’0j`=*08Há “
+!	(’
+(# 7÷0>j`?*08Há “
+"	(÷	
+(‘ 4◊08*08Há “
+!	(◊
+(' 6ÿ0*08Há “
+!	(ÿ
+(' 6Ÿ0*08Há “
+!	(Ÿ
+(' ?€0*082Ÿ0Há “
+!	(⁄
+(; @‡0*082›0j`@Há “
+"	(ﬁ	
+(ﬂ 2·0*08Há “
+!	(·
+(* 2‚0*08Há “
+!	(‚
+(* 6›0j`@*08Há “
+!	(›
+(# @Â0*082›0j`@Há “
+"	(„	
+(‰ @È0*082Á0j`AHá “
+"	(Ë	
+(ﬂ TÔ0*082Î0B2&
+00C0Há “
+"	(Ì	
+(Ó 20*08Há “
+!	(
+(* 2Ò0*08Há “
+!	(Ò
+(* 2Ú0*08Há “
+!	(Ú
+(* 3Î0B*08Há “
+"	(Î	
+(Û 6Á0j`A*08Há “
+!	(Á
+(# @ı0*082Á0j`AHá “
+"	(Ù	
+(‰ @˘0*082˜0j`DHá “
+"	(¯	
+(ﬂ HÄ0G0*082¸0F0Há “
+"	(˛	
+(ˇMÖ0*082Å0j`(2˜0j`HHá “
+"	(É	
+(Ñ Oâ0*082Ü0F02˜0j`HHá “
+"	(á	
+(à Oã0*082Ü0F02˜0j`HHá “
+"	(ä	
+(à 6˜0j`D*08Há “
+!	(˜
+(# @ç0*082˜0j`DHá “
+"	(å	
+(‰ 2é0*08Há “
+!	(é
+(* 9è0F0*08Há “
+"	(è	
+(ê Bì0*082è0F0Há “
+"	(ë	
+(í 2î0*08Há “
+!	(î
+(* 9ñ0I0*08Há “
+"	(ñ	
+(ó 9ò0G0*08Há “
+"	(ò	
+(ôBú0*082ò0G0Há “
+"	(ö	
+(õ 2ù0*08Há “
+!	(ù
+(* 6û0j`(*08Há “
+!	(û
+(# @¢0*082†0j`JHá “
+"	(°	
+(ﬂ H§0G0*082¸0F0Há “
+"	(£	
+(ˇ6†0j`J*08Há “
+!	(†
+(# @¶0*082†0j`JHá “
+"	(•	
+(‰ 2ß0*08Há “
+!	(ß
+(* 9®0F0*08Há “
+"	(®	
+(ê B™0*082®0F0Há “
+"	(©	
+(í 2´0*08Há “
+!	(´
+(* 9¨0I0*08Há “
+"	(¨	
+(ó 9≠0G0*08Há “
+"	(≠	
+(ôBØ0*082≠0G0Há “
+"	(Æ	
+(õ 2∞0*08Há “
+!	(∞
+(* @¥0*082≤0j`KHá “
+"	(≥	
+(ﬂ 6≤0j`K*08Há “
+!	(≤
+(# @∂0*082≤0j`KHá “
+"	(µ	
+(‰ 2∑0*08Há “
+!	(∑
+(* 7∫0Lj`M*08Há “
+"	(∫	
+(ª Gæ0j`N*0;2¬
+07j`<Há “
+!	(Ω
+(X W¿0*0;2¬
+07j`<2A000Há “
+!	(ø
+( M«0*082¬0j`O2ƒ0Bj`PHá “
+"	(≈	
+(∆ 2»0*08Há “
+!	(»
+(* 6…0j`O*08Há “
+!	(…
+(# 7 0Bj`P*08Há “
+"	( 	
+(Û 6Ã0j`Q*08Há “
+!	(Ã
+(# @Œ0*082Ã0j`QHá “
+"	(Õ	
+(‰ 6–0j`R*0;Há “
+!	(–
+(# @“0*0;2–0j`RHá “
+"	(—	
+(‰ ÿ
+‡
+ Í
+platform.AVFoundation

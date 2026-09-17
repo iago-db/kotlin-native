@@ -1,0 +1,972 @@
+
+˙|
+kotlinx
+cinterop
+CPointer
+cnames
+structs
+OpaqueAudioFileStreamID
+platform
+AudioToolbox
+AudioFileStreamID
+inAudioFileStream
+kotlin
+Long
+darwin
+SInt64
+inPacketOffset
+
+CValuesRef
+	LongVarOf
+	SInt64Var
+outDataByteOffset
+	UIntVarOf
+UInt
+AudioFileStreamSeekFlagsVar
+ioFlags
+Int
+OSStatus
+internal
+CCall
+id
+6knifunptr_platform_AudioToolbox130_AudioFileStreamSeek
+AudioFileStreamSeek
+AudioFileStreamPropertyID
+inPropertyID
+	UInt32Var
+outPropertyDataSize
+BooleanVarOf
+Boolean
+
+BooleanVar
+outWritable
+Aknifunptr_platform_AudioToolbox131_AudioFileStreamGetPropertyInfo
+AudioFileStreamGetPropertyInfo
+ioPropertyDataSize
+outPropertyData
+=knifunptr_platform_AudioToolbox132_AudioFileStreamGetProperty
+AudioFileStreamGetProperty
+UInt32
+inPropertyDataSize
+inPropertyData
+=knifunptr_platform_AudioToolbox133_AudioFileStreamSetProperty
+AudioFileStreamSetProperty
+7knifunptr_platform_AudioToolbox134_AudioFileStreamClose
+AudioFileStreamClose
+AudioFormatPropertyID
+inSpecifierSize
+inSpecifier
+=knifunptr_platform_AudioToolbox135_AudioFormatGetPropertyInfo
+AudioFormatGetPropertyInfo
+9knifunptr_platform_AudioToolbox136_AudioFormatGetProperty
+AudioFormatGetProperty
+CoreAudioTypes
+AudioStreamBasicDescription
+inFormat
+	CFunction
+	Function3
+CPointed
+COpaquePointer
+OpaqueAudioQueue
+AudioQueueRef
+AudioQueueBuffer
+AudioQueueBufferRef
+Unit
+AudioQueueOutputCallback
+inCallbackProc
+
+inUserData
+__CFRunLoop
+CoreFoundation
+CFRunLoopRef
+inCallbackRunLoop
+
+__CFString
+CFStringRef
+inCallbackRunLoopMode
+inFlags
+CPointerVarOf
+AudioQueueRefVar
+outAQ
+6knifunptr_platform_AudioToolbox137_AudioQueueNewOutput
+AudioQueueNewOutput
+	Function6
+AudioTimeStamp
+AudioStreamPacketDescription
+AudioQueueInputCallback
+5knifunptr_platform_AudioToolbox138_AudioQueueNewInput
+AudioQueueNewInput
+NSObject
+dispatch_queue_t
+inCallbackDispatchQueue
+	Function2
+AudioQueueOutputCallbackBlock
+inCallbackBlock
+Gknifunptr_platform_AudioToolbox139_AudioQueueNewOutputWithDispatchQueue
+$AudioQueueNewOutputWithDispatchQueue
+	Function5
+AudioQueueInputCallbackBlock
+Fknifunptr_platform_AudioToolbox140_AudioQueueNewInputWithDispatchQueue
+#AudioQueueNewInputWithDispatchQueue
+inAQ
+inImmediate
+4knifunptr_platform_AudioToolbox141_AudioQueueDispose
+AudioQueueDispose
+inBufferByteSize
+AudioQueueBufferRefVar
+	outBuffer
+;knifunptr_platform_AudioToolbox142_AudioQueueAllocateBuffer
+AudioQueueAllocateBuffer
+inNumberPacketDescriptions
+Qknifunptr_platform_AudioToolbox143_AudioQueueAllocateBufferWithPacketDescriptions
+.AudioQueueAllocateBufferWithPacketDescriptions
+inBuffer
+7knifunptr_platform_AudioToolbox144_AudioQueueFreeBuffer
+AudioQueueFreeBuffer
+inNumPacketDescs
+inPacketDescs
+:knifunptr_platform_AudioToolbox145_AudioQueueEnqueueBuffer
+AudioQueueEnqueueBuffer
+inTrimFramesAtStart
+inTrimFramesAtEnd
+inNumParamValues
+AudioQueueParameterEvent
+inParamValues
+inStartTime
+outActualStartTime
+Hknifunptr_platform_AudioToolbox146_AudioQueueEnqueueBufferWithParameters
+%AudioQueueEnqueueBufferWithParameters
+2knifunptr_platform_AudioToolbox147_AudioQueueStart
+AudioQueueStart
+inNumberOfFramesToPrepare
+outNumberOfFramesPrepared
+2knifunptr_platform_AudioToolbox148_AudioQueuePrime
+AudioQueuePrime
+1knifunptr_platform_AudioToolbox149_AudioQueueStop
+AudioQueueStop
+2knifunptr_platform_AudioToolbox150_AudioQueuePause
+AudioQueuePause
+2knifunptr_platform_AudioToolbox151_AudioQueueFlush
+AudioQueueFlush
+2knifunptr_platform_AudioToolbox152_AudioQueueReset
+AudioQueueReset
+AudioQueueParameterID
+	inParamID
+
+FloatVarOf
+Float
+AudioQueueParameterValueVar
+outValue
+9knifunptr_platform_AudioToolbox153_AudioQueueGetParameter
+AudioQueueGetParameter
+AudioQueueParameterValue
+inValue
+9knifunptr_platform_AudioToolbox154_AudioQueueSetParameter
+AudioQueueSetParameter
+AudioQueuePropertyID
+inID
+outData
+
+ioDataSize
+8knifunptr_platform_AudioToolbox155_AudioQueueGetProperty
+AudioQueueGetProperty
+inData
+
+inDataSize
+8knifunptr_platform_AudioToolbox156_AudioQueueSetProperty
+AudioQueueSetProperty
+outDataSize
+<knifunptr_platform_AudioToolbox157_AudioQueueGetPropertySize
+AudioQueueGetPropertySize
+AudioQueuePropertyListenerProc
+inProc
+@knifunptr_platform_AudioToolbox158_AudioQueueAddPropertyListener
+AudioQueueAddPropertyListener
+Cknifunptr_platform_AudioToolbox159_AudioQueueRemovePropertyListener
+ AudioQueueRemovePropertyListener
+OpaqueAudioQueueTimeline
+AudioQueueTimelineRef
+AudioQueueTimelineRefVar
+outTimeline
+;knifunptr_platform_AudioToolbox160_AudioQueueCreateTimeline
+AudioQueueCreateTimeline
+
+inTimeline
+<knifunptr_platform_AudioToolbox161_AudioQueueDisposeTimeline
+AudioQueueDisposeTimeline
+outTimeStamp
+outTimelineDiscontinuity
+;knifunptr_platform_AudioToolbox162_AudioQueueGetCurrentTime
+AudioQueueGetCurrentTime
+Aknifunptr_platform_AudioToolbox163_AudioQueueDeviceGetCurrentTime
+AudioQueueDeviceGetCurrentTime
+inTime
+outTime
+@knifunptr_platform_AudioToolbox164_AudioQueueDeviceTranslateTime
+AudioQueueDeviceTranslateTime
+ioRequestedStartTime
+Fknifunptr_platform_AudioToolbox165_AudioQueueDeviceGetNearestStartTime
+#AudioQueueDeviceGetNearestStartTime
+AudioChannelLayout
+inLayout
+Cknifunptr_platform_AudioToolbox166_AudioQueueSetOfflineRenderFormat
+ AudioQueueSetOfflineRenderFormat
+inTimestamp
+ioBuffer
+inNumberFrames
+:knifunptr_platform_AudioToolbox167_AudioQueueOfflineRender
+AudioQueueOfflineRender
+	Function7
+OpaqueAudioQueueProcessingTap
+AudioQueueProcessingTapRef
+AudioQueueProcessingTapFlagsVar
+AudioBufferList
+AudioQueueProcessingTapCallback
+
+inCallback
+inClientData
+AudioQueueProcessingTapFlags
+outMaxFrames
+outProcessingFormat
+AudioQueueProcessingTapRefVar
+outAQTap
+=knifunptr_platform_AudioToolbox168_AudioQueueProcessingTapNew
+AudioQueueProcessingTapNew
+inAQTap
+Aknifunptr_platform_AudioToolbox169_AudioQueueProcessingTapDispose
+AudioQueueProcessingTapDispose
+ioTimeStamp
+outFlags
+outNumberFrames
+ioData
+Hknifunptr_platform_AudioToolbox170_AudioQueueProcessingTapGetSourceAudio
+%AudioQueueProcessingTapGetSourceAudio
+DoubleVarOf
+Double
+
+Float64Var
+outQueueSampleTime
+outQueueFrameCount
+Fknifunptr_platform_AudioToolbox171_AudioQueueProcessingTapGetQueueTime
+#AudioQueueProcessingTapGetQueueTime
+	inRunLoop
+inRunLoopMode
+ AudioSessionInterruptionListener
+inInterruptionListener
+9knifunptr_platform_AudioToolbox172_AudioSessionInitialize
+AudioSessionInitialize
+active
+8knifunptr_platform_AudioToolbox173_AudioSessionSetActive
+AudioSessionSetActive
+Aknifunptr_platform_AudioToolbox174_AudioSessionSetActiveWithFlags
+AudioSessionSetActiveWithFlags
+AudioSessionPropertyID
+:knifunptr_platform_AudioToolbox175_AudioSessionGetProperty
+AudioSessionGetProperty
+:knifunptr_platform_AudioToolbox176_AudioSessionSetProperty
+AudioSessionSetProperty
+>knifunptr_platform_AudioToolbox177_AudioSessionGetPropertySize
+AudioSessionGetPropertySize
+	Function4
+AudioSessionPropertyListener
+Bknifunptr_platform_AudioToolbox178_AudioSessionAddPropertyListener
+AudioSessionAddPropertyListener
+Eknifunptr_platform_AudioToolbox179_AudioSessionRemovePropertyListener
+"AudioSessionRemovePropertyListener
+Qknifunptr_platform_AudioToolbox180_AudioSessionRemovePropertyListenerWithUserData
+.AudioSessionRemovePropertyListenerWithUserData
+__CFURL
+CFURLRef
+	inFileURL
+SystemSoundIDVar
+outSystemSoundID
+Cknifunptr_platform_AudioToolbox181_AudioServicesCreateSystemSoundID
+ AudioServicesCreateSystemSoundID
+SystemSoundID
+inSystemSoundID
+Dknifunptr_platform_AudioToolbox182_AudioServicesDisposeSystemSoundID
+!AudioServicesDisposeSystemSoundID
+	Function0
+inCompletionBlock
+Lknifunptr_platform_AudioToolbox183_AudioServicesPlayAlertSoundWithCompletion
+)AudioServicesPlayAlertSoundWithCompletion
+Mknifunptr_platform_AudioToolbox184_AudioServicesPlaySystemSoundWithCompletion
+*AudioServicesPlaySystemSoundWithCompletion
+AudioServicesPropertyID
+?knifunptr_platform_AudioToolbox185_AudioServicesGetPropertyInfo
+AudioServicesGetPropertyInfo
+;knifunptr_platform_AudioToolbox186_AudioServicesGetProperty
+AudioServicesGetProperty
+;knifunptr_platform_AudioToolbox187_AudioServicesSetProperty
+AudioServicesSetProperty
+>knifunptr_platform_AudioToolbox188_AudioServicesPlayAlertSound
+AudioServicesPlayAlertSound
+?knifunptr_platform_AudioToolbox189_AudioServicesPlaySystemSound
+AudioServicesPlaySystemSound
+&AudioServicesSystemSoundCompletionProc
+inCompletionRoutine
+Hknifunptr_platform_AudioToolbox190_AudioServicesAddSystemSoundCompletion
+%AudioServicesAddSystemSoundCompletion
+Kknifunptr_platform_AudioToolbox191_AudioServicesRemoveSystemSoundCompletion
+(AudioServicesRemoveSystemSoundCompletion
+AUListenerBase
+AUParameterListenerRef
+AUParameterListenerRefVar
+outListener
+Float32
+inNotificationInterval
+inDispatchQueue
+AudioUnitParameter
+AudioUnitParameterValue
+AUParameterListenerBlock
+inBlock
+Dknifunptr_platform_AudioToolbox192_AUListenerCreateWithDispatchQueue
+!AUListenerCreateWithDispatchQueue
+AUParameterListenerProc
+3knifunptr_platform_AudioToolbox193_AUListenerCreate
+AUListenerCreate
+
+inListener
+4knifunptr_platform_AudioToolbox194_AUListenerDispose
+AUListenerDispose
+inObject
+inParameter
+9knifunptr_platform_AudioToolbox195_AUListenerAddParameter
+AUListenerAddParameter
+<knifunptr_platform_AudioToolbox196_AUListenerRemoveParameter
+AUListenerRemoveParameter
+inSendingListener
+inSendingObject
+inBufferOffsetInFrames
+1knifunptr_platform_AudioToolbox197_AUParameterSet
+AUParameterSet
+<knifunptr_platform_AudioToolbox198_AUParameterListenerNotify
+AUParameterListenerNotify
+AUEventListenerRef
+AUEventListenerRefVar
+inValueChangeGranularity
+AudioUnitEvent
+ULong
+UInt64
+AUEventListenerBlock
+Iknifunptr_platform_AudioToolbox199_AUEventListenerCreateWithDispatchQueue
+&AUEventListenerCreateWithDispatchQueue
+AUEventListenerProc
+8knifunptr_platform_AudioToolbox200_AUEventListenerCreate
+AUEventListenerCreate
+inEvent
+>knifunptr_platform_AudioToolbox201_AUEventListenerAddEventType
+AUEventListenerAddEventType
+Aknifunptr_platform_AudioToolbox202_AUEventListenerRemoveEventType
+AUEventListenerRemoveEventType
+8knifunptr_platform_AudioToolbox203_AUEventListenerNotify
+AUEventListenerNotify
+inLinearValue
+=knifunptr_platform_AudioToolbox204_AUParameterValueFromLinear
+AUParameterValueFromLinear
+inParameterValue
+;knifunptr_platform_AudioToolbox205_AUParameterValueToLinear
+AUParameterValueToLinear
+Float64
+	ByteVarOf
+Byte
+ByteVar
+inTextBuffer
+inDigits
+9knifunptr_platform_AudioToolbox206_AUParameterFormatValue
+AUParameterFormatValue
+String
+CString
+name
+os_clockid_t
+clock
+os_workgroup_attr_opaque_s
+os_workgroup_attr_t
+attr
+OS_os_workgroup
+os_workgroup_interval_t
+:knifunptr_platform_AudioToolbox207_AudioWorkIntervalCreate
+AudioWorkIntervalCreate
+)knifunptr_platform_AudioToolbox208_CAShow
+CAShow
+posix
+__sFILE
+FILE
+inFile
+-knifunptr_platform_AudioToolbox209_CAShowFile
+
+CAShowFile
+inURL
+OpaqueExtAudioFile
+ExtAudioFileRef
+ExtAudioFileRefVar
+outExtAudioFile
+6knifunptr_platform_AudioToolbox210_ExtAudioFileOpenURL
+ExtAudioFileOpenURL
+OpaqueAudioFileID
+AudioFileID
+inFileID
+inForWriting
+>knifunptr_platform_AudioToolbox211_ExtAudioFileWrapAudioFileID
+ExtAudioFileWrapAudioFileID
+AudioFileTypeID
+
+inFileType
+inStreamDesc
+inChannelLayout
+<knifunptr_platform_AudioToolbox212_ExtAudioFileCreateWithURL
+ExtAudioFileCreateWithURL
+inExtAudioFile
+6knifunptr_platform_AudioToolbox213_ExtAudioFileDispose
+ExtAudioFileDispose
+ioNumberFrames
+3knifunptr_platform_AudioToolbox214_ExtAudioFileRead
+ExtAudioFileRead
+4knifunptr_platform_AudioToolbox215_ExtAudioFileWrite
+ExtAudioFileWrite
+9knifunptr_platform_AudioToolbox216_ExtAudioFileWriteAsync
+ExtAudioFileWriteAsync
+inFrameOffset
+3knifunptr_platform_AudioToolbox217_ExtAudioFileSeek
+ExtAudioFileSeek
+outFrameOffset
+3knifunptr_platform_AudioToolbox218_ExtAudioFileTell
+ExtAudioFileTell
+ExtAudioFilePropertyID
+outSize
+>knifunptr_platform_AudioToolbox219_ExtAudioFileGetPropertyInfo
+ExtAudioFileGetPropertyInfo
+:knifunptr_platform_AudioToolbox220_ExtAudioFileGetProperty
+ExtAudioFileGetProperty
+:knifunptr_platform_AudioToolbox221_ExtAudioFileSetProperty
+ExtAudioFileSetProperty
+OpaqueMusicPlayer
+MusicPlayer
+MusicPlayerVar
+	outPlayer
+1knifunptr_platform_AudioToolbox222_NewMusicPlayer
+NewMusicPlayer
+inPlayer
+5knifunptr_platform_AudioToolbox223_DisposeMusicPlayer
+DisposeMusicPlayer
+OpaqueMusicSequence
+MusicSequence
+
+inSequence
+9knifunptr_platform_AudioToolbox224_MusicPlayerSetSequence
+MusicPlayerSetSequence
+MusicSequenceVar
+outSequence
+9knifunptr_platform_AudioToolbox225_MusicPlayerGetSequence
+MusicPlayerGetSequence
+MusicTimeStamp
+5knifunptr_platform_AudioToolbox226_MusicPlayerSetTime
+MusicPlayerSetTime
+MusicTimeStampVar
+5knifunptr_platform_AudioToolbox227_MusicPlayerGetTime
+MusicPlayerGetTime
+inBeats
+
+ULongVarOf
+	UInt64Var
+outHostTime
+Aknifunptr_platform_AudioToolbox228_MusicPlayerGetHostTimeForBeats
+MusicPlayerGetHostTimeForBeats
+
+inHostTime
+outBeats
+Aknifunptr_platform_AudioToolbox229_MusicPlayerGetBeatsForHostTime
+MusicPlayerGetBeatsForHostTime
+5knifunptr_platform_AudioToolbox230_MusicPlayerPreroll
+MusicPlayerPreroll
+3knifunptr_platform_AudioToolbox231_MusicPlayerStart
+MusicPlayerStart
+2knifunptr_platform_AudioToolbox232_MusicPlayerStop
+MusicPlayerStop
+outIsPlaying
+7knifunptr_platform_AudioToolbox233_MusicPlayerIsPlaying
+MusicPlayerIsPlaying
+inScaleRate
+?knifunptr_platform_AudioToolbox234_MusicPlayerSetPlayRateScalar
+MusicPlayerSetPlayRateScalar
+outScaleRate
+?knifunptr_platform_AudioToolbox235_MusicPlayerGetPlayRateScalar
+MusicPlayerGetPlayRateScalar
+3knifunptr_platform_AudioToolbox236_NewMusicSequence
+NewMusicSequence
+7knifunptr_platform_AudioToolbox237_DisposeMusicSequence
+DisposeMusicSequence
+OpaqueMusicTrack
+
+MusicTrack
+MusicTrackVar
+outTrack
+8knifunptr_platform_AudioToolbox238_MusicSequenceNewTrack
+MusicSequenceNewTrack
+inTrack
+<knifunptr_platform_AudioToolbox239_MusicSequenceDisposeTrack
+MusicSequenceDisposeTrack
+outNumberOfTracks
+=knifunptr_platform_AudioToolbox240_MusicSequenceGetTrackCount
+MusicSequenceGetTrackCount
+inTrackIndex
+;knifunptr_platform_AudioToolbox241_MusicSequenceGetIndTrack
+MusicSequenceGetIndTrack
+outTrackIndex
+=knifunptr_platform_AudioToolbox242_MusicSequenceGetTrackIndex
+MusicSequenceGetTrackIndex
+=knifunptr_platform_AudioToolbox243_MusicSequenceGetTempoTrack
+MusicSequenceGetTempoTrack
+OpaqueAUGraph
+AUGraph
+inGraph
+:knifunptr_platform_AudioToolbox244_MusicSequenceSetAUGraph
+MusicSequenceSetAUGraph
+
+AUGraphVar
+outGraph
+:knifunptr_platform_AudioToolbox245_MusicSequenceGetAUGraph
+MusicSequenceGetAUGraph
+CoreMIDI
+MIDIEndpointRef
+
+inEndpoint
+?knifunptr_platform_AudioToolbox246_MusicSequenceSetMIDIEndpoint
+MusicSequenceSetMIDIEndpoint
+MusicSequenceType
+inType
+?knifunptr_platform_AudioToolbox247_MusicSequenceSetSequenceType
+MusicSequenceSetSequenceType
+MusicSequenceTypeVar
+outType
+?knifunptr_platform_AudioToolbox248_MusicSequenceGetSequenceType
+MusicSequenceGetSequenceType
+	inFileRef
+MusicSequenceFileTypeID
+inFileTypeHint
+MusicSequenceLoadFlags
+8knifunptr_platform_AudioToolbox249_MusicSequenceFileLoad
+MusicSequenceFileLoad
+__CFData
+	CFDataRef
+<knifunptr_platform_AudioToolbox250_MusicSequenceFileLoadData
+MusicSequenceFileLoadData
+
+SignedByte
+fps
+UByte
+ticks
+Short
+SInt16
+Bknifunptr_platform_AudioToolbox251_MusicSequenceSetSMPTEResolution
+MusicSequenceSetSMPTEResolution
+inRes
+SignedByteVar
+
+UByteVarOf
+Bknifunptr_platform_AudioToolbox252_MusicSequenceGetSMPTEResolution
+MusicSequenceGetSMPTEResolution
+MusicSequenceFileFlags
+inResolution
+:knifunptr_platform_AudioToolbox253_MusicSequenceFileCreate
+MusicSequenceFileCreate
+CFDataRefVar
+>knifunptr_platform_AudioToolbox254_MusicSequenceFileCreateData
+MusicSequenceFileCreateData
+7knifunptr_platform_AudioToolbox255_MusicSequenceReverse
+MusicSequenceReverse
+
+outSeconds
+Bknifunptr_platform_AudioToolbox256_MusicSequenceGetSecondsForBeats
+MusicSequenceGetSecondsForBeats
+	inSeconds
+Bknifunptr_platform_AudioToolbox257_MusicSequenceGetBeatsForSeconds
+MusicSequenceGetBeatsForSecondsÊ
+
+ 
+ 
+ 
+
+
+ 
+
+
+ 
+
+
+	 
+
+ 
+ 
+ 
+ 
+ 
+	 
+ 
+	 
+ 
+
+ 
+ 
+  
+" 
+	# 
+$ 
+, 
+3 
+:
+; 
+= 
+	> 
+? 
+@ 
+A 
+B 
+C 
+D 
+	E 
+F 
+I 
+J
++K 
+M 
++N 
+Q 
+R 
+	V 
+W 
+X 
+Y 
+\ 
+] 
+	_ 
+` 
+	d 
+e 
+m 
+~ 
+í 
+î 
+	ï 
+ñ 
+ö 
+û 
+´ 
+± 
+≤ 
+≥ 
+« 
+	– 
+— 
+“ 
+” 
+‘ 
+’ 
+ÿ 
+€ 
+Ë 
+	È 
+Í 
+Ò 
+˙ 
+	Å 
+Ç 
+â 
++ä 
+å 
+ê 
+	î 
+ö 
+• 
+´ 
+¨ 
+≠ 
+Ø 
+≤ 
+≥ 
+¥ 
+∏ 
+À 
+Ã 
+Œ 
+	œ 
+– 
+— 
+‘ 
+‰ 
+Â 
+	Ê 
+Á 
+	Ï 
+Ì 
+Ô 
+Ò 
+Ú 
+Ù 
+ı 
+˙
+x˚ 
+x¸ 
+Å 
+Ç 
+É 
+á 
+à 
+ç 
+£ 
+´ 
+¨ 
+≠ 
+¥ 
+µ 
+π 
+Ω 
+¿ 
+ƒ 
+≈ 
+‡ 
+· 
+‚ 
+Ù 
+ı 
+˘ 
+˝
+í˛ 
+Ç 
+Ü 
+ã 
+ç 
+ê 
++ë 
+î 
+	ñ 
+Ê 
+	ò 
+ô 
+ù 
+û 
+Á 
+° 
++• ﬂcr0j`2	00j`2
+0
+j`20
+0j`0200j`0Há “
+(r'0j`2	00j`2
+0j`2!00j`02%00j`0Há “
+(&f+0j`2	00j`2
+0j`2(00j`02)0Há “
+(*X00j`2	00j`2
+0j`2
+-0j`2.0Há “
+(/220j`2	00j`Há “
+(1\70j`2
+0j`2
+40j`2502!00j`0Há “
+(6j90j`2
+0j`2
+40j`2502(00j`02)0Há “
+(8ˆU0j`2<
+002^GZNLHF0"0j`#0$0j`%0&0j`'0(0!0 0j`)2H02L0*0j`,2O0-0j`.2
+P0j`2"S0$0j`%0/j`00Há “
+(Tû[0j`2<
+002ÖGÄtrnl0"0j`#0$0j`%0&0j`'
+0200j`
+0300(010 0j`42H02L0*0j`,2O0-0j`.2
+P0j`2"S0$0j`%0/j`00Há “
+(Z™c0j`2"S0$0j`%0/j`002<
+002
+P0j`2^
+05j`62<a80$0j`%0&0j`'0(07j`8Há “
+(b–g0j`2"S0$0j`%0/j`002<
+002
+P0j`2^
+05j`62ba^0$0j`%0&0j`'
+0200j`
+0300(09j`:Há “
+(f:k0j`2h0$0j`%2i0Há “
+(jbp0j`2h0$0j`%2
+l0j`2"n0&0j`'0/j`;0Há “
+(ons0j`2h0$0j`%2
+l0j`2
+q0j`2"n0&0j`'0/j`;0Há “
+(rHv0j`2h0$0j`%2t0&0j`'Há “
+(udz0j`2h0$0j`%2t0&0j`'2
+w0j`2x
+030Há “
+(yºÉ0j`2h0$0j`%2t0&0j`'2
+w0j`2x
+0302
+{0j`2
+|0j`2
+}0j`2
+0<02Ä
+0202Å
+020Há “
+	(ÇEÖ0j`2h0$0j`%2Ä
+020Há “
+	(Ñ\â0j`2h0$0j`%2Ü0j`2á00j`0Há “
+	(à<ã0j`2h0$0j`%2i0Há “
+	(ä4ç0j`2h0$0j`%Há “
+	(å4è0j`2h0$0j`%Há “
+	(é4ë0j`2h0$0j`%Há “
+	(ê\ô0j`2h0$0j`%2ì0j`=2ó0?0>j`@0Há “
+	(òNù0j`2h0$0j`%2ì0j`=2õ0?j`AHá “
+	(úk£0j`2h0$0j`%2ü0j`B2†02°00j`0Há “
+	(¢]ß0j`2h0$0j`%2ü0j`B2§02•0j`Há “
+	(¶\™0j`2h0$0j`%2ü0j`B2®00j`0Há “
+	(©¶Æ0j`2h0$0j`%2ü0j`B2U¨PDB><0"0j`#0$0j`%0j`B0(0!0 0j`C2H0Há “
+	(≠¶∞0j`2h0$0j`%2ü0j`B2U¨PDB><0"0j`#0$0j`%0j`B0(0!0 0j`C2H0Há “
+	(ØY∂0j`2h0$0j`%2#¥0D0j`E0/j`F0Há “
+	(µKπ0j`2h0$0j`%2∑0D0j`EHá “
+	(∏wΩ0j`2h0$0j`%2∑0D0j`E2∫
+0202ª00j`0Há “
+	(ºEø0j`2h0$0j`%2∫
+020Há “
+	(æV√0j`2h0$0j`%2¿
+0202¡
+020Há “
+	(¬Q∆0j`2h0$0j`%2ƒ
+0202
+P0j`Há “
+	(≈U 0j`2h0$0j`%2<
+002»
+0G0Há “
+	(…iœ0j`2h0$0j`%2À
+0202Ã0&0j`'2Õ0j`Há “
+	(Œ…ﬁ0j`2h0$0j`%2¶÷†ìêãà0"0j`#0I0j`J0j`
+02000j`K000j`0
+0L00(0H0 0j`M2◊02
+P0j`N2Ÿ00j`02⁄
+002#‹0I0j`J0/j`O0Há “
+	(›5·0j`2ﬂ0I0j`JHá “
+	(‡öÁ0j`2ﬂ0I0j`J2Õ0j`2‚
+0202„00j`K02‰00j`02Â
+0L0Há “
+	(ÊkÓ0j`2ﬂ0I0j`J2Î0Q0Pj`R02Ï00j`0Há “
+	(ÌûÙ0j`2Ô0*0j`,20-0j`.2AÚ<0.*(0"0j`#0j`0(070 0j`S2◊0Há “
+	(Û'˜0j`2ı0Há “
+	(ˆ3˘0j`2ı02
+P0j`Há “
+	(¯U¸0j`2ü0j`T2°00j`02†0Há “
+	(˚G˛0j`2ü0j`T2•0j`2§0Há “
+	(˝FÄ0j`2ü0j`T2®00j`0Há “
+	(ˇùÑ0j`2ü0j`T2a¨\PNJH0"0j`#0j`T0j`0"0j`#0(0U0 0j`V2◊0Há “
+	(É+Ü0j`2ü0j`THá “
+	(Öùà0j`2ü0j`T2a¨\PNJH0"0j`#0j`T0j`0"0j`#0(0U0 0j`V2◊0Há “
+	(áPè0j`2ã0W0j`X2ç00j`Y0Há “
+	(é+ì0j`2ë0j`ZHá “
+	(í8ó0(2ë0j`Z2ï
+0(0[Há “
+	(ñ8ô0(2ë0j`Z2ï
+0(0[Há “
+	(òxú0j`2
+0j`\2
+40j`2502!00j`02%00j`0Há “
+	(õlû0j`2
+0j`\2
+40j`2502(00j`02)0Há “
+	(ù^†0j`2
+0j`\2
+40j`2502
+-0j`2.0Há “
+	(ü'¢0(2ë0j`ZHá “
+	(°'§0(2ë0j`ZHá “
+	(£´®0j`2ë0j`Z2Ô0*0j`,20-0j`.2A¶<0.*(0j`Z0"0j`#0(070 0j`]2◊0Há “
+	(ß'™0(2ë0j`ZHá “
+	(©¶∑0j`2#Æ0^0j`_0/j``02∞0?j`a2±
+05j`62Cµ>0"0j`#
+0b00?j`c0(0!j`dHá “
+	(∂Û∫0j`2e¨`TRNL0"0j`#0"0j`#
+0b00?j`c0(0U0 0j`e2H02Ô0*0j`,20-0j`.2∞0?j`a2#Æ0^0j`_0/j``0Há “
+	(π5Ω0j`2ª0^0j`_Há “
+	(ºU¡0j`2ª0^0j`_2æ02ø
+0b0Há “
+	(¿U√0j`2ª0^0j`_2æ02ø
+0b0Há “
+	(¬o»0j`2ƒ0^0j`_2≈02ø
+0b02õ0?j`c2∆0j`Há “
+	(«U 0j`2ƒ0^0j`_2≈02ø
+0b0Há “
+	(…Ω”0j`2#Æ0^0j`f0/j`g02∞0?j`a2Õ0?j`a2±
+05j`62MµH0"0j`#
+0h00ij`j0?j`c0(0Uj`kHá “
+	(“ä÷0j`2o¨j^\XV0"0j`#0"0j`#
+0h00ij`j0?j`c0(090 0j`l2H02Ô0*0j`,20-0j`.2∞0?j`a2Õ0?j`a2#Æ0^0j`f0/j`g0Há “
+	(’UŸ0j`2ª0^0j`f2æ02◊
+0h0Há “
+	(ÿU€0j`2ª0^0j`f2æ02◊
+0h0Há “
+	(⁄U›0j`2ƒ0^0j`f2≈02◊
+0h0Há “
+	(‹<‡0?j`c2ﬁ0?j`a2ø
+0b0Há “
+	(ﬂ<„0?j`a2·0?j`c2ø
+0b0Há “
+	(‚rÎ0o0nj`p02·0Qj`m2ø
+0b02Ë0o0nj`p02È0j`Há “
+	(ÍX˜
+0vj`w2Ó0q“
+r20j`s2Û0t0j`uHá “
+	(ˆ)˘0(2æ0Há “
+	(¯>ˇ0(2æ02˝0yj`z0Há “
+	(˛ZÜ0j`2Ä0W0j`X2#Ñ0{0j`|0/j`}0Há “
+	(Öcå0j`2â0~0j`2ä02#Ñ0{0j`|0/j`}0Há “
+	(ãñí0j`2Ä0W0j`X2é0j`Ä2è
+002ê
+0G02
+P0j`2#Ñ0{0j`|0/j`}0Há “
+	(ë5ï0j`2ì0{0j`|Há “
+	(îaò0j`2ì0{0j`|2ñ00j`02Â
+0L0Há “
+	(óSö0j`2ì0{0j`|2Õ0j`2Â
+0L0Há “
+	(ôSú0j`2ì0{0j`|2Õ0j`2Â
+0L0Há “
+	(õBü0j`2ì0{0j`|2ù0
+j`Há “
+	(ûP¢0j`2ì0{0j`|2†0
+0j`0Há “
+	(°w¶0j`2ì0{0j`|20j`Å2§00j`02%00j`0Há “
+	(•j®0j`2ì0{0j`|20j`Å2(00j`02)0Há “
+	(ß\™0j`2ì0{0j`|20j`Å2
+-0j`2.0Há “
+	(©F∞0j`2&Æ!0Ç0j`É0/j`Ñ0Há “
+	(Ø7≥0j`2±0Ç0j`ÉHá “
+	(≤P∏0j`2±0Ç0j`É2∂0Ö0j`ÜHá “
+	(∑_º0j`2±0Ç0j`É2&∫!0Ö0j`Ü0/j`á0Há “
+	(ªEø0j`2±0Ç0j`É2¿0Qj`àHá “
+	(æS¬0j`2±0Ç0j`É2¡0Q0Pj`â0Há “
+	(¡b»0j`2±0Ç0j`É2√0Qj`à2∆0i0äj`ã0Há “
+	(«`Ã0j`2±0Ç0j`É2…0ij`j2 0Q0Pj`â0Há “
+	(À7Œ0j`2±0Ç0j`ÉHá “
+	(Õ7–0j`2±0Ç0j`ÉHá “
+	(œ7“0j`2±0Ç0j`ÉHá “
+	(—R’0j`2±0Ç0j`É2”00j`0Há “
+	(‘Dÿ0j`2±0Ç0j`É2÷0Qj`mHá “
+	(◊R€0j`2±0Ç0j`É2Ÿ0Q0Pj`R0Há “
+	(⁄F›0j`2&∫!0Ö0j`Ü0/j`á0Há “
+	(‹7ﬂ0j`2∂0Ö0j`ÜHá “
+	(ﬁ_Â0j`2∂0Ö0j`Ü2&„!0å0j`ç0/j`é0Há “
+	(‰PË0j`2∂0Ö0j`Ü2Ê0å0j`çHá “
+	(ÁRÎ0j`2∂0Ö0j`Ü2È00j`0Há “
+	(ÍlÓ0j`2∂0Ö0j`Ü2Ï0j`2&„!0å0j`ç0/j`é0Há “
+	(ÌkÒ0j`2∂0Ö0j`Ü2Ê0å0j`ç2Ô00j`0Há “
+	(_Û0j`2∂0Ö0j`Ü2&„!0å0j`ç0/j`é0Há “
+	(ÚP¯0j`2∂0Ö0j`Ü2ˆ0è0j`êHá “
+	(˜_¸0j`2∂0Ö0j`Ü2&˙!0è0j`ê0/j`ë0Há “
+	(˚EÅ0j`2∂0Ö0j`Ü2ˇ0j`ìHá “
+	(ÄEÖ0j`2∂0Ö0j`Ü2É0j`îHá “
+	(ÑSâ0j`2∂0Ö0j`Ü2á00j`ï0Há “
+	(àiè0j`2∂0Ö0j`Ü2ä0W0j`X2å0j`ñ2P0j`óHá “
+	(ékì0j`2∂0Ö0j`Ü2§0ò0j`ô2å0j`ñ2P0j`óHá “
+	(í=õ0ùj`û2ï0oj`ö2ó0õj`úHá “
+	(öc†0(2ú0ùj`û2ï0o0nj`ü02ó0õ0†j`°0Há “
+	(üx§0j`2∂0Ö0j`Ü2ä0W0j`X2é0j`ñ2P0j`¢2¢0ùj`ûHá “
+	(£âß0j`2∂0Ö0j`Ü2é0j`ñ2P0j`¢2¢0ùj`û2&†!0ò0j`ô0/j`£0Há “
+	(¶7©0j`2∂0Ö0j`ÜHá “
+	(®`¨0j`2∂0Ö0j`Ü2√0Qj`à2™0Q0Pj`R0Há “
+	(´`Ø0j`2∂0Ö0j`Ü2≠0Qj`m2 0Q0Pj`â0Há “
+	(Æÿ
+‡
+ Í
+platform.AudioToolbox

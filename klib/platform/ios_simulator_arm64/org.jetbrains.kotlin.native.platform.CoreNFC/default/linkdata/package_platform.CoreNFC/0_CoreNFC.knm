@@ -1,0 +1,1595 @@
+
+˛s
+kotlinx
+cinterop
+
+UByteVarOf
+platform
+CoreNFC
+RequestFlag
+kotlin
+UByte
+RequestFlagVar
+NFCISO15693RequestFlag
+	LongVarOf
+PollingRequestCode
+Long
+PollingRequestCodeVar
+NFCFeliCaPollingRequestCode
+PollingTimeSlot
+PollingTimeSlotVar
+NFCFeliCaPollingTimeSlot
+EncryptionId
+EncryptionIdVar
+NFCFeliCaEncryptionId
+VASMode
+
+VASModeVar
+
+NFCVASMode
+VASErrorCode
+VASErrorCodeVar
+NFCVASErrorCode
+NFCReaderError
+NFCReaderErrorVar
+darwin
+	NSInteger
+
+ULongVarOf
+
+NFCTagType
+ULong
+NFCTagTypeVar
+
+NSUInteger
+NFCNDEFStatus
+NFCNDEFStatusVar
+NFCISO15693RequestFlagVar
+posix
+uint8_t
+NFCISO15693ResponseFlag
+NFCISO15693ResponseFlagVar
+NFCFeliCaPollingRequestCodeVar
+NFCFeliCaPollingTimeSlotVar
+NFCFeliCaEncryptionIdVar
+NFCMiFareFamily
+NFCMiFareFamilyVar
+NFCPollingOption
+NFCPollingOptionVar
+NFCTypeNameFormat
+NFCTypeNameFormatVar
+NFCVASModeVar
+NFCVASErrorCodeVar
+NFCReaderSessionProtocolMeta
+NSObjectProtocolMeta
+ExternalObjCClass
+protocolGetter
+*kniprot_platform_CoreNFC0_NFCReaderSession
+NFCReaderSessionProtocol
+NSObjectProtocol
+Unit
+
+ObjCMethod
+selector
+beginSession
+encoding
+v16@0:8
+isStret
+invalidateSession
+String
+errorMessage
+"invalidateSessionWithErrorMessage:
+
+v24@0:8@16
+!invalidateSessionWithErrorMessage
+Boolean
+isReady
+B16@0:8
+alertMessage
+@16@0:8
+setAlertMessage:
+setAlertMessage
+ready
+value
+$NFCReaderSessionDelegateProtocolMeta
+2kniprot_platform_CoreNFC1_NFCReaderSessionDelegate
+ NFCReaderSessionDelegateProtocol
+NFCReaderSession
+session
+readerSessionDidBecomeActive:
+readerSessionDidBecomeActive
+
+Foundation
+NSError
+didInvalidateWithError
+%readerSession:didInvalidateWithError:
+v32@0:8@16@24
+readerSession
+collections
+List
+didDetectTags
+readerSession:didDetectTags:
+NFCTagProtocolMeta
+NSSecureCodingProtocolMeta
+NSCopyingProtocolMeta
+ kniprot_platform_CoreNFC2_NFCTag
+NFCTagProtocol
+NSSecureCodingProtocol
+NSCopyingProtocol
+NFCISO15693TagProtocol
+asNFCISO15693Tag
+NFCISO7816TagProtocol
+asNFCISO7816Tag
+NFCFeliCaTagProtocol
+asNFCFeliCaTag
+NFCMiFareTagProtocol
+asNFCMiFareTag
+type
+Q16@0:8
+isAvailable
+NSCoder
+coder
+initWithCoder:
+
+@24@0:8@16
+internal
+CCall
+ConsumesReceiver
+ReturnsRetained
+initWithCoder
+	available
+NFCISO15693TagProtocolMeta
+NFCNDEFTagProtocolMeta
+(kniprot_platform_CoreNFC3_NFCISO15693Tag
+NFCNDEFTagProtocol
+%NFCISO15693CustomCommandConfiguration
+commandConfiguration
+	Function2
+NSData
+completionHandler
+5sendCustomCommandWithConfiguration:completionHandler:
+v32@0:8@16@?24
+"sendCustomCommandWithConfiguration
+*NFCISO15693ReadMultipleBlocksConfiguration
+readConfiguration
+6readMultipleBlocksWithConfiguration:completionHandler:
+#readMultipleBlocksWithConfiguration
+	Function1
+stayQuietWithCompletionHandler:
+v24@0:8@?16
+stayQuietWithCompletionHandler
+flags
+blockNumber
+>readSingleBlockWithRequestFlags:blockNumber:completionHandler:
+v32@0:8C16C20@?24
+readSingleBlockWithRequestFlags
+	dataBlock
+IwriteSingleBlockWithRequestFlags:blockNumber:dataBlock:completionHandler:
+v40@0:8C16C20@24@?32
+ writeSingleBlockWithRequestFlags
+8lockBlockWithRequestFlags:blockNumber:completionHandler:
+lockBlockWithRequestFlags
+CValue
+_NSRange
+NSRange
+
+blockRange
+@readMultipleBlocksWithRequestFlags:blockRange:completionHandler:
+v44@0:8C16{_NSRange=QQ}20@?36
+"readMultipleBlocksWithRequestFlags
+
+dataBlocks
+LwriteMultipleBlocksWithRequestFlags:blockRange:dataBlocks:completionHandler:
+ v52@0:8C16{_NSRange=QQ}20@36@?44
+#writeMultipleBlocksWithRequestFlags
+)selectWithRequestFlags:completionHandler:
+v28@0:8C16@?20
+selectWithRequestFlags
+/resetToReadyWithRequestFlags:completionHandler:
+resetToReadyWithRequestFlags
+afi
+.writeAFIWithRequestFlag:afi:completionHandler:
+writeAFIWithRequestFlag
+)lockAFIWithRequestFlag:completionHandler:
+lockAFIWithRequestFlag
+dsfid
+2writeDSFIDWithRequestFlag:dsfid:completionHandler:
+writeDSFIDWithRequestFlag
++lockDFSIDWithRequestFlag:completionHandler:
+lockDFSIDWithRequestFlag
++lockDSFIDWithRequestFlag:completionHandler:
+lockDSFIDWithRequestFlag
+	Function6
+/getSystemInfoWithRequestFlag:completionHandler:
+getSystemInfoWithRequestFlag
+	Function7
+5getSystemInfoAndUIDWithRequestFlag:completionHandler:
+"getSystemInfoAndUIDWithRequestFlag
+KgetMultipleBlockSecurityStatusWithRequestFlag:blockRange:completionHandler:
+-getMultipleBlockSecurityStatusWithRequestFlag
+CfastReadMultipleBlocksWithRequestFlag:blockRange:completionHandler:
+%fastReadMultipleBlocksWithRequestFlag
+customCommandCode
+customRequestParameters
+YcustomCommandWithRequestFlag:customCommandCode:customRequestParameters:completionHandler:
+v44@0:8C16q20@28@?36
+customCommandWithRequestFlag
+FextendedReadSingleBlockWithRequestFlags:blockNumber:completionHandler:
+v36@0:8C16q20@?28
+'extendedReadSingleBlockWithRequestFlags
+QextendedWriteSingleBlockWithRequestFlags:blockNumber:dataBlock:completionHandler:
+(extendedWriteSingleBlockWithRequestFlags
+@extendedLockBlockWithRequestFlags:blockNumber:completionHandler:
+!extendedLockBlockWithRequestFlags
+HextendedReadMultipleBlocksWithRequestFlags:blockRange:completionHandler:
+*extendedReadMultipleBlocksWithRequestFlags
+TextendedWriteMultipleBlocksWithRequestFlags:blockRange:dataBlocks:completionHandler:
++extendedWriteMultipleBlocksWithRequestFlags
+cryptoSuiteIdentifier
+message
+	Function3
+MauthenticateWithRequestFlags:cryptoSuiteIdentifier:message:completionHandler:
+authenticateWithRequestFlags
+keyIdentifier
+BkeyUpdateWithRequestFlags:keyIdentifier:message:completionHandler:
+keyUpdateWithRequestFlags
+JchallengeWithRequestFlags:cryptoSuiteIdentifier:message:completionHandler:
+challengeWithRequestFlags
+-readBufferWithRequestFlags:completionHandler:
+readBufferWithRequestFlags
+SextendedGetMultipleBlockSecurityStatusWithRequestFlag:blockRange:completionHandler:
+5extendedGetMultipleBlockSecurityStatusWithRequestFlag
+KextendedFastReadMultipleBlocksWithRequestFlag:blockRange:completionHandler:
+-extendedFastReadMultipleBlocksWithRequestFlag
+commandCode
+data
+7sendRequestWithFlag:commandCode:data:completionHandler:
+v48@0:8q16q24@32@?40
+sendRequestWithFlag
+
+identifier
+icManufacturerCode
+icSerialNumber
+debugDescription
+$kniprot_platform_CoreNFC4_NFCNDEFTag
+%queryNDEFStatusWithCompletionHandler:
+$queryNDEFStatusWithCompletionHandler
+NFCNDEFMessage
+readNDEFWithCompletionHandler:
+readNDEFWithCompletionHandler
+ndefMessage
+writeNDEF:completionHandler:
+	writeNDEF
+writeLockWithCompletionHandler:
+writeLockWithCompletionHandler
+NFCISO7816TagProtocolMeta
+'kniprot_platform_CoreNFC5_NFCISO7816Tag
+NFCISO7816APDU
+apdu
+	Function4
+"sendCommandAPDU:completionHandler:
+sendCommandAPDU
+initialSelectedAID
+historicalBytes
+applicationData
+ proprietaryApplicationDataCoding
+supportsPACE
+NFCFeliCaTagProtocolMeta
+&kniprot_platform_CoreNFC6_NFCFeliCaTag
+
+systemCode
+requestCode
+timeSlot
+=pollingWithSystemCode:requestCode:timeSlot:completionHandler:
+v48@0:8@16q24q32@?40
+pollingWithSystemCode
+nodeCodeList
+1requestServiceWithNodeCodeList:completionHandler:
+requestServiceWithNodeCodeList
+%requestResponseWithCompletionHandler:
+$requestResponseWithCompletionHandler
+serviceCodeList
+	blockList
+EreadWithoutEncryptionWithServiceCodeList:blockList:completionHandler:
+v40@0:8@16@24@?32
+(readWithoutEncryptionWithServiceCodeList
+	blockData
+PwriteWithoutEncryptionWithServiceCodeList:blockList:blockData:completionHandler:
+v48@0:8@16@24@32@?40
+)writeWithoutEncryptionWithServiceCodeList
+'requestSystemCodeWithCompletionHandler:
+&requestSystemCodeWithCompletionHandler
+3requestServiceV2WithNodeCodeList:completionHandler:
+ requestServiceV2WithNodeCodeList
+	Function5
+1requestSpecificationVersionWithCompletionHandler:
+0requestSpecificationVersionWithCompletionHandler
+resetModeWithCompletionHandler:
+resetModeWithCompletionHandler
+commandPacket
+*sendFeliCaCommandPacket:completionHandler:
+sendFeliCaCommandPacket
+currentSystemCode
+
+currentIDm
+NFCMiFareTagProtocolMeta
+&kniprot_platform_CoreNFC7_NFCMiFareTag
+command
+$sendMiFareCommand:completionHandler:
+sendMiFareCommand
++sendMiFareISO7816Command:completionHandler:
+sendMiFareISO7816Command
+mifareFamily
+'NFCTagReaderSessionDelegateProtocolMeta
+5kniprot_platform_CoreNFC8_NFCTagReaderSessionDelegate
+#NFCTagReaderSessionDelegateProtocol
+NFCTagReaderSession
+(tagReaderSession:didInvalidateWithError:
+tagReaderSession
+ tagReaderSessionDidBecomeActive:
+tagReaderSessionDidBecomeActive
+tagReaderSession:didDetectTags:
+(NFCNDEFReaderSessionDelegateProtocolMeta
+6kniprot_platform_CoreNFC9_NFCNDEFReaderSessionDelegate
+$NFCNDEFReaderSessionDelegateProtocol
+NFCNDEFReaderSession
+didDetectNDEFs
+readerSession:didDetectNDEFs:
+'NFCVASReaderSessionDelegateProtocolMeta
+6kniprot_platform_CoreNFC10_NFCVASReaderSessionDelegate
+#NFCVASReaderSessionDelegateProtocol
+NFCVASReaderSession
+didReceiveVASResponses
+%readerSession:didReceiveVASResponses:
+NFCReaderSessionMeta
+NSObjectMeta
+readingAvailable
+new
+CPointer
+cnames
+structs
+_NSZone
+zone
+allocWithZone:
+@24@0:8^{_NSZone=}16
+
+Deprecated
+)Use constructor or factory method instead
+replaceWith
+ReplaceWith
+imports
+
+expression
+ 
+level
+DeprecationLevel
+WARNING
+allocWithZone
+alloc
+NSObject
+ObjCConstructor
+
+designated
+initSelector
+init
+Any
+delegate
+dispatch_queue_t
+sessionQueue
+Use constructor instead
+NFCReaderSession()
+ERROR
+object
+isEqual:
+
+B24@0:8@16
+isEqual
+	ObjCClass
+class
+#16@0:8
+CPointed
+COpaquePointer
+	aSelector
+performSelector:
+
+@24@0:8:16
+performSelector
+
+withObject
+performSelector:withObject:
+@32@0:8:16@24
+_withObject
+&performSelector:withObject:withObject:
+@40@0:8:16@24@32
+isProxy
+aClass
+isKindOfClass:
+
+B24@0:8#16
+isKindOfClass
+isMemberOfClass:
+isMemberOfClass
+	objcnames
+classes
+Protocol
+	aProtocol
+conformsToProtocol:
+conformsToProtocol
+respondsToSelector:
+
+B24@0:8:16
+respondsToSelector
+hash
+
+superclass
+description
+	Companion
+ObjCClassOf
+NFCNDEFMessageMeta
+ndefMessageWithData:
+ndefMessageWithData
+supportsSecureCoding
+nDEFRecords
+initWithNDEFRecords:
+records
+NFCNDEFMessage(records)
+initWithNDEFRecords
+setRecords:
+
+setRecords
+length
+NFCNDEFMessage()
+NFCNDEFMessage(coder)
+encodeWithCoder:
+encodeWithCoder
+)NFCISO15693CustomCommandConfigurationMeta
+NFCTagCommandConfigurationMeta
+NFCTagCommandConfiguration
+manufacturerCode
+requestParameters
+=initWithManufacturerCode:customCommandCode:requestParameters:
+maximumRetries
+Double
+NSTimeInterval
+retryInterval
+ZinitWithManufacturerCode:customCommandCode:requestParameters:maximumRetries:retryInterval:
+]NFCISO15693CustomCommandConfiguration(manufacturerCode, customCommandCode, requestParameters)
+@40@0:8Q16Q24@32
+initWithManufacturerCode
+|NFCISO15693CustomCommandConfiguration(manufacturerCode, customCommandCode, requestParameters, maximumRetries, retryInterval)
+@56@0:8Q16Q24@32Q40d48
+setManufacturerCode:
+
+v24@0:8Q16
+setManufacturerCode
+setCustomCommandCode:
+setCustomCommandCode
+setRequestParameters:
+setRequestParameters
+'NFCISO15693CustomCommandConfiguration()
+setMaximumRetries:
+setMaximumRetries
+d16@0:8
+setRetryInterval:
+
+v24@0:8d16
+setRetryInterval
+NFCTagCommandConfiguration()
+NSZone
+copyWithZone:
+copyWithZone
+.NFCISO15693ReadMultipleBlocksConfigurationMeta
+range
+	chunkSize
+initWithRange:chunkSize:
+5initWithRange:chunkSize:maximumRetries:retryInterval:
+<NFCISO15693ReadMultipleBlocksConfiguration(range, chunkSize)
+@40@0:8{_NSRange=QQ}16Q32
+initWithRange
+[NFCISO15693ReadMultipleBlocksConfiguration(range, chunkSize, maximumRetries, retryInterval)
+@56@0:8{_NSRange=QQ}16Q32Q40d48
+{_NSRange=QQ}16@0:8
+	setRange:
+v32@0:8{_NSRange=QQ}16
+setRange
+setChunkSize:
+setChunkSize
+,NFCISO15693ReadMultipleBlocksConfiguration()
+NFCISO7816APDUMeta
+instructionClass
+instructionCode
+p1Parameter
+p2Parameter
+expectedResponseLength
+]initWithInstructionClass:instructionCode:p1Parameter:p2Parameter:data:expectedResponseLength:
+initWithData:
+iNFCISO7816APDU(instructionClass, instructionCode, p1Parameter, p2Parameter, data, expectedResponseLength)
+@48@0:8C16C20C24C28@32q40
+initWithInstructionClass
+NFCISO7816APDU(data)
+initWithData
+C16@0:8
+q16@0:8
+NFCISO7816APDU()
+NFCTagReaderSessionMeta
+pollingOption
+queue
+%initWithPollingOption:delegate:queue:
+ NFCTagReaderSessionConfiguration
+configuration
+%initWithConfiguration:delegate:queue:
+3NFCTagReaderSession(pollingOption, delegate, queue)
+@40@0:8q16@24@32
+initWithPollingOption
+3NFCTagReaderSession(configuration, delegate, queue)
+@40@0:8@16@24@32
+initWithConfiguration
+ restartPollingWithConfiguration:
+restartPollingWithConfiguration
+restartPolling
+tag
+connectToTag:completionHandler:
+connectToTag
+connectedTag
+NFCTagReaderSession()
+$NFCTagReaderSessionConfigurationMeta
+iso7816SelectIdentifiers
+felicaSystemCodes
+AinitWithPollingOption:iso7816SelectIdentifiers:felicaSystemCodes:
+option
+UNFCTagReaderSessionConfiguration(option, iso7816SelectIdentifiers, felicaSystemCodes)
+polling
+setPolling:
+
+v24@0:8q16
+
+setPolling
+setIso7816SelectIdentifiers:
+setIso7816SelectIdentifiers
+setFelicaSystemCodes:
+setFelicaSystemCodes
+"NFCTagReaderSessionConfiguration()
+NFCNDEFReaderSessionMeta
+invalidateAfterFirstRead
+0initWithDelegate:queue:invalidateAfterFirstRead:
+?NFCNDEFReaderSession(delegate, queue, invalidateAfterFirstRead)
+@36@0:8@16@24B32
+initWithDelegate
+NFCNDEFReaderSession()
+NFCISO15693ReaderSessionMeta
+NFCISO15693ReaderSession
+initWithDelegate:queue:
+)NFCISO15693ReaderSession(delegate, queue)
+@32@0:8@16@24
+NFCISO15693ReaderSession()
+NFCNDEFPayloadMeta
+NFCNDEFPayload
+format
+payload
+'initWithFormat:type:identifier:payload:
+size_t
+1initWithFormat:type:identifier:payload:chunkSize:
+1NFCNDEFPayload(format, type, identifier, payload)
+@44@0:8C16@20@28@36
+initWithFormat
+<NFCNDEFPayload(format, type, identifier, payload, chunkSize)
+@52@0:8C16@20@28@36Q44
+typeNameFormat
+setTypeNameFormat:
+
+v20@0:8C16
+setTypeNameFormat
+setType:
+setType
+setIdentifier:
+setIdentifier
+setPayload:
+
+setPayload
+NFCNDEFPayload()
+NFCNDEFPayload(coder)
+NFCVASCommandConfigurationMeta
+NFCVASCommandConfiguration
+vASMode
+passTypeIdentifier
+NSURL
+url
+'initWithVASMode:passTypeIdentifier:url:
+mode
+9NFCVASCommandConfiguration(mode, passTypeIdentifier, url)
+initWithVASMode
+setMode:
+setMode
+setPassTypeIdentifier:
+setPassTypeIdentifier
+setUrl:
+setUrl
+NFCVASCommandConfiguration()
+NFCVASResponseMeta
+NFCVASResponse
+status
+vasData
+mobileToken
+NFCVASResponse()
+NFCVASReaderSessionMeta
+vASCommandConfigurations
+0initWithVASCommandConfigurations:delegate:queue:
+commandConfigurations
+;NFCVASReaderSession(commandConfigurations, delegate, queue)
+ initWithVASCommandConfigurations
+NFCVASReaderSession()
+NFCPaymentTagReaderSessionMeta
+NFCPaymentTagReaderSession
++NFCPaymentTagReaderSession(delegate, queue)
+:NFCPaymentTagReaderSession(pollingOption, delegate, queue)
+:NFCPaymentTagReaderSession(configuration, delegate, queue)
+NFCPaymentTagReaderSession()£
+
+ 
+ 
+ 
+
+
+ 
+
+ 
+	 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+  
+! 
+# 
+$ 
+'
+( 
+) 
+. 
+0 
+2 
+6 
+7 
+8 
+; 
+< 
+= 
+> 
+E 
+J 
+S 
+U 
+V 
+Z
+/[ 
+`
+1a 
+d 
+/e 
+/f 
+h 
+/i 
+/j 
+k 
+m 
+o 
+q 
+/v 
+z
+>{ 
+?| 
+?} 
+Ä 
+Å 
+É 
+Ñ 
+Ü 
+/á 
+å 
+ê 
+ü 
+/† 
+/° 
+ª 
+æ 
+◊ 
+Ò 
+˘ 
+˚ 
+˝ 
+Ö 
+ü 
+© 
+± 
+≥ 
+¥ 
+∫ 
+º 
+Ω 
+¿ 
+¬ 
+√ 
+∆ 
+« 
+  
+À
+cÃ
+dÕ 
+— 
+‘ 
+Ÿ 
+› 
+ﬁ 
+‚ 
+‰ 
+Ì 
+ 
+Ò 
+É
+pÑ
+qÖ 
+.è 
+ê 
+ë 
+Pè 
+° 
+¢ 
+£ 
+® 
+/© 
+Eè 
+/¿ 
+yè 
+√ 
+Hè 
+‘ 
+Rè 
+‰ 
+Ë 
+Yè 
+˘ 
+Ñè 
+à 
+\è 
+è 
+ê 
+ãè 
+ï 
+ñ 
+ö 
+éè 
+≠ 
+Æ 
+/± 
+íè 
+æ 
+ø 
+ñè 
+ƒ 
+_è 
+À 
+Ã 
+õè «*"`020j`0*"`20j`*"`
+0	20j`
+0	*"`20j`*"`0	20j`0	*"`20j`*"`0	20j`0	*"`20j`*"`0	20j`0	*"`20j`*"`0	20j`0	*"`20j`*"`0	20j`0	*"`20j`*""`020j`0* "`20j`*%"`020j`0*$"`20j`*&"`020j`0*	"`20j`**"`020j`0*)"`20j`*+"`0	20j`0	*"`20j`*,"`0	20j`0	*"`20j`*-"`0	20j`0	*"`20j`*/"` 020j` 0*."`20j`*1"`!0	20j`!0	*0"`20j`*3"`"020j`"0*2"`20j`*4"`0	20j`0	*"`20j`*5"`0	20j`0	*"`20j`ÿ
+"g#20$“
+%9(:"¬g&20'J+@0(H'“
+ )?(@A(BC J+D0(H'“
+ )?(DA(BC J3I0(2F0*H'“
+ )?(GA(HC J+K0+H'“
+ )?(KA(LC J+M0*H'“
+ )?(MA(NC J3P0(2M0*H'“
+ )?(OA(HC R,Q0+8«ä )?(KA(LC R]M0*2R0*8«@«XÜä )?(MA(NC í )?(OA(HC “
+%9(:"g,20$“
+%9(T" g-20'J3Y0(2W0.H'“
+ )?(XA(HC J;_0(2W0.2\00H'“
+ )?(]A(^C J?_0(2W0.2
+b02H“
+ )?(cA(^C “
+%9(T"g320$204205“
+%9(g"πg620'207208J-l09H'“
+ )?(lA(NC J-n0:H'“
+ )?(nA(NC J-p0;H'“
+ )?(pA(NC J-r0<H'“
+ )?(rA(NC J/s0j`H'“
+ )?(sA(tC J-W0&H'“
+ )?(WA(NC J+u0+H'“
+ )?(uA(LC J?~062w0=H'“
+ )?(xA(yC “
+@“
+AR0s0j`8«ä )?(sA(tC R.W0&8«ä )?(WA(NC R,0+8«ä )?(uA(LC “
+%9(g"gB20320C“
+%	9(Ç"‡g920620DJVã0(2Ö0E2à0G000(0FH'“
+")	?(â	A(äC JVè0(2ç0H2à0G000(0FH'“
+")	?(é	A(äC JEì0(2à000(0IH'“
+")	?(ë	A(íC Jgò0(2î0j`2ï0j`2à0G000(0FH'“
+")	?(ñ	A(óC Jhú0(2î0j`2ï0j`2ô0G2à000(0IH'“
+")	?(ö	A(õC J_û0(2î0j`2ï0j`2à000(0IH'“
+")	?(ù	A(óC Jq•0(2î0j`2¢0Kj`L0J2!à
+02000(0FH'“
+")	?(£	A(§C Jr©0(2î0j`2¢0Kj`L0J2¶022à000(0IH'“
+")	?(ß	A(®C JR¨0(2î0j`2à000(0IH'“
+")	?(™	A(´C JRÆ0(2î0j`2à000(0IH'“
+")	?(≠	A(´C J_±0(2î0j`2Ø0j`2à000(0IH'“
+")	?(∞	A(óC JR≥0(2î0j`2à000(0IH'“
+")	?(≤	A(´C J_∂0(2î0j`2¥0j`2à000(0IH'“
+")	?(µ	A(óC JR∏0(2î0j`2à000(0IH'“
+")	?(∑	A(´C JR∫0(2î0j`2à000(0IH'“
+")	?(π	A(´C JÑΩ0(2î0j`2GàB0j`0j`0j`0j`0j`000(0MH'“
+")	?(º	A(´C Jå¿0(2î0j`2OàJ0G0j`0j`0j`0j`0j`000(0NH'“
+")	?(ø	A(´C Jq¬0(2î0j`2¢0Kj`L0J2!à
+02000(0FH'“
+")	?(¡	A(§C Jqƒ0(2î0j`2¢0Kj`L0J2!à
+02000(0FH'“
+")	?(√	A(§C Jp…0(2î0j`2≈0j`2∆0G2à0G000(0FH'“
+")	?(«	A(»C JgÃ0(2î0j`2ï0j`2à0G000(0FH'“
+")	?( 	A(ÀC JhŒ0(2î0j`2ï0j`2ô0G2à000(0IH'“
+")	?(Õ	A(»C J_–0(2î0j`2ï0j`2à000(0IH'“
+")	?(œ	A(ÀC Jq“0(2î0j`2¢0Kj`L0J2!à
+02000(0FH'“
+")	?(—	A(§C Jr‘0(2î0j`2¢0Kj`L0J2¶022à000(0IH'“
+")	?(”	A(®C JzŸ0(2î0j`2’0j`2÷0G2'à"0j`0G000(0OH'“
+")	?(ÿ	A(»C Jz‹0(2î0j`2⁄0j`2÷0G2'à"0j`0G000(0OH'“
+")	?(€	A(»C Jhﬁ0(2î0j`2’0j`2÷0G2à000(0IH'“
+")	?(›	A(»C Jd‡0(2î0j`2'à"0j`0G000(0OH'“
+")	?(ﬂ	A(´C Jq‚0(2î0j`2¢0Kj`L0J2!à
+02000(0FH'“
+")	?(·	A(§C Jq‰0(2î0j`2¢0Kj`L0J2!à
+02000(0FH'“
+")	?(„	A(§C J|È0(2î0j`2Â0j`2	Ê0G2'à"0j`0G000(0OH'“
+")	?(Á	A(ËC J-Í0GH'“
+!)	?(ÍA(NC J1Î0j`H'“
+!)	?(ÎA(tC J-Ï0GH'“
+!)	?(ÏA(NC J?~092w0=H'“
+ )?(xA(yC “
+@“
+AJ/Ì0*H“
+!)	?(ÌA(NC R.Í0G8«ä!)	?(ÍA(NC R2Î0j`8«ä!)	?(ÎA(tC R.Ï0G8«ä!)	?(ÏA(NC “
+%	9(Ç" gC20$204205“
+%	9(Ó"˝gD20'207208JY0(2)à$0j`0j`000(0OH'“
+")	?(Ô	A(íC JMÛ0(2à0P000(0FH'“
+")	?(Ú	A(íC JNˆ0(2Ù0P2à000(0IH'“
+")	?(ı	A(äC JE¯0(2à000(0IH'“
+")	?(˜	A(íC J+u0+H'“
+ )?(uA(LC J?~0D2w0=H'“
+ )?(xA(yC “
+@“
+AR,0+8«ä )?(uA(LC “
+%	9(Ó"gQ20320C“
+%	9(˙"ºg:20620DJjˇ0(2¸0R21à,0G0j`0j`000(0SH'“
+")	?(˛	A(äC J-Ä0*H'“
+!)	?(ÄA(NC J-Í0GH'“
+!)	?(ÍA(NC J/Å0GH'“
+!)	?(ÅA(NC J/Ç0GH'“
+!)	?(ÇA(NC J-É0+H'“
+!)	?(ÉA(LC J-Ñ0+H'“
+!)	?(ÑA(LC J?~0:2w0=H'“
+ )?(xA(yC “
+@“
+AJ/Ì0*H“
+!)	?(ÌA(NC R.Ä0*8«ä!)	?(ÄA(NC R.Í0G8«ä!)	?(ÍA(NC R0Å0G8«ä!)	?(ÅA(NC R0Ç0G8«ä!)	?(ÇA(NC R.É0+8«ä!)	?(ÉA(LC R.Ñ0+8«ä!)	?(ÑA(LC “
+%	9(˙"gT20320C“
+%	9(Ü"˜
+g;20620DJxå0(2á0G2à0j`2â0j`2%à 0G0G000(0OH'“
+")	?(ä	A(ãC J^è0(2ç022!à
+02000(0FH'“
+")	?(é	A(äC JOë0(2à0j`000(0FH'“
+")	?(ê	A(íC Jñ0(2í022ì0225à00j`0j`
+02000(0SH'“
+")	?(î	A(ïC JÄö0(2í022ì022ó022)à$0j`0j`000(0OH'“
+")	?(ò	A(ôC JQú0(2!à
+02000(0FH'“
+")	?(õ	A(íC Jàû0(2ç022KàF0j`0j`0j`
+02
+02000(0MH'“
+")	?(ù	A(äC Ji°0(29à40j`0j`0G0G000(0UH'“
+")	?(†	A(íC JY£0(2)à$0j`0j`000(0OH'“
+")	?(¢	A(íC JV¶0(2§0G2à0G000(0FH'“
+")	?(•	A(äC J-ß0GH'“
+!)	?(ßA(NC J-®0GH'“
+!)	?(®A(NC J?~0;2w0=H'“
+ )?(xA(yC “
+@“
+AJ/Ì0*H“
+!)	?(ÌA(NC R.ß0G8«ä!)	?(ßA(NC R.®0G8«ä!)	?(®A(NC “
+%	9(Ü"gV20320C“
+%	9(™"˚g<20620DJV≠0(2´0G2à0G000(0FH'“
+")	?(¨	A(äC JjØ0(2¸0R21à,0G0j`0j`000(0SH'“
+")	?(Æ	A(äC J1∞0j` H'“
+!)	?(∞A(tC J-Í0GH'“
+!)	?(ÍA(NC J/Å0GH'“
+!)	?(ÅA(NC J?~0<2w0=H'“
+ )?(xA(yC “
+@“
+AJ/Ì0*H“
+!)	?(ÌA(NC R2∞0j` 8«ä!)	?(∞A(tC R.Í0G8«ä!)	?(ÍA(NC R0Å0G8«ä!)	?(ÅA(NC “
+%	9(™"gW20$“
+%	9(≤"—gX20'J=∂0(2W0Y2\00H'“
+!)	?(µA(^C J5∏0(2W0YH“
+!)	?(∑A(HC JA∂0(2W0Y2
+b02H“
+!)	?(πA(^C “
+%	9(≤"gZ20$“
+%	9(ª"ég[20'J;_0(2W0\2\00H'“
+ )?(]A(^C JA_0(2W0\2æ02H'“
+!)	?(øA(^C J?_0(2W0\2
+b02H“
+ )?(cA(^C J3Y0(2W0\H“
+ )?(XA(HC “
+%	9(ª"g]20$“
+%	9(¡"Õg^20'J3Y0(2W0_H“
+ )?(XA(HC J;_0(2W0_2\00H'“
+ )?(]A(^C JA_0(2W0_2ƒ02H'“
+!)	?(≈A(^C “
+%	9(¡"†`20a20#BJ.»0+Hó “
+!)	?(»A(LC J0…0.Hó “
+!)	?(…A(NC JÉ€0.2Œ
+0e0bHó “
+")	?(œ	A(–C “
+>f
+÷(“ ”Bg’
+÷(◊ÿ
+0h8⁄Jq‹0.Hó “
+!)	?(‹A(NC “
+>f
+÷(“ ”Bg’
+÷(◊ÿ
+0h8⁄R.»0+8«ä!)	?(»A(LC “
+%"ö. è20i20&:èB“
+j	ﬂ
+‡(·J0„0kHó “
+!)	?(„A(NC J6Â
+0ij`lHó “
+!)	?(ÂA(NC J{·0.Hó “
+>f
+÷(Ê ”Bg’
+÷(Áÿ
+0h8Ë“
+!)	?(·A(NC “
+@“
+AJ,@0(Hó “
+ )?(@A(BC J,D0(Hó “
+ )?(DA(BC J4I0(2F0*Hó “
+ )?(GA(HC J,K0+Hó “
+ )?(KA(LC J,M0*Hó “
+ )?(MA(NC J4P0(2M0*Hó “
+ )?(OA(HC J:Ï0+2	È0kHó “
+")	?(Í	A(ÎC J1Ó0mHó “
+")	?(Ó	A(ÔC JJı0k2Ú0n0bj`oHó “
+")	?(Û	A(ÙC JUı0k2Ú0n0bj`o2	ˆ0kHó “
+")	?(˜	A(¯C J`ı0k2Ú0n0bj`o2	ˆ0k2	˘0kHó “
+")	?(˙	A(˚C J.¸0+Hó “
+!)	?(¸A(LC J:Ä0+2	˝0mHó “
+")	?(˛	A(ˇC J:Ç0+2	˝0mHó “
+")	?(Å	A(ˇC J:à0+2	Ü0rHó “
+")	?(á	A(ÎC JHã0+2Ú0n0bj`oHó “
+")	?(â	A(äC J2å0j`Hó “
+!)	?(åA(tC J1ç0mHó “
+")	?(ç	A(ÔC J0é0*Hó “
+!)	?(éA(NC J0Ì0*Hó “
+!)	?(ÌA(NC R0„0k8«ä!)	?(„A(NC R6Â
+0ij`l8«ä!)	?(ÂA(NC “
+%"Üs20`20.0tB"´u20a204BJ9ì0P2Ê0GHó “
+!)	?(íA(yC J0…0PHó “
+!)	?(…A(NC JÉ€0P2Œ
+0e0bHó “
+")	?(œ	A(–C “
+>f
+÷(“ ”Bg’
+÷(◊ÿ
+0h8⁄Jq‹0PHó “
+!)	?(‹A(NC “
+>f
+÷(“ ”Bg’
+÷(◊ÿ
+0h8⁄J.î0+Hó “
+!)	?(îA(LC “
+%"ëP è20i207:èB+ï02“
+j	ﬂ
+‡(ñB“
+j	ﬂ
+‡(·B%w0=“
+j	ﬂ	‡(xJÜô0P2ó02Hó “
+>f
+÷(Ê ”Bg’
+÷(òÿ
+0h8Ë“
+!)	?(ñA(yC “
+@“
+AJ2ó02Hó “
+!)	?(óA(NC J;õ0(2ó02Hó “
+!)	?(öA(HC J2ú0j`Hó “
+!)	?(úA(tC J{·0PHó “
+>f
+÷(Ê ”Bg’
+÷(ùÿ
+0h8Ë“
+!)	?(·A(NC “
+@“
+AJÅ~0P2w0=Hó “
+>f
+÷(Ê ”Bg’
+÷(ûÿ
+0h8Ë“
+ )?(xA(yC “
+@“
+AJ6†0(2w0=Hó “
+!)	?(üA(HC Rhó022
+R028«@«XÜä!)	?(óA(NC í!)	?(öA(HC R2ú0j`8«ä!)	?(úA(tC “
+%"Üv20u20P0tB"ºw20xBJ0…0EHó “
+!)	?(…A(NC JÉ€0E2Œ
+0e0bHó “
+")	?(œ	A(–C “
+>f
+÷(“ ”Bg’
+÷(◊ÿ
+0h8⁄Jq‹0EHó “
+!)	?(‹A(NC “
+>f
+÷(“ ”Bg’
+÷(◊ÿ
+0h8⁄“
+%"∏
+E è20y:èBC§0j`≈0j`	•0G“
+j	ﬂ
+‡(¶B]§0j`≈0j`	•0Gß0j`™0zj`{“
+j	ﬂ
+‡(´B“
+j	ﬂ
+‡(·JüÆ0E2§0j`2≈0j`2	•0GHó “
+>f
+÷(Ê ”Bg’
+÷(¨ÿ
+0h8Ë“
+")	?(¶	A(≠C “
+@“
+AJπÆ0E2§0j`2≈0j`2	•0G2ß0j`2™0zj`{Hó “
+>f
+÷(Ê ”Bg’
+÷(Øÿ
+0h8Ë“
+")	?(´	A(∞C “
+@“
+AJ2§0j`Hó “
+!)	?(§A(tC J<≥0(2§0j`Hó “
+")	?(±	A(≤C J2≈0j`Hó “
+!)	?(≈A(tC J<µ0(2≈0j`Hó “
+")	?(¥	A(≤C J.•0GHó “
+!)	?(•A(NC J7∑0(2•0GHó “
+!)	?(∂A(HC J{·0EHó “
+>f
+÷(Ê ”Bg’
+÷(∏ÿ
+0h8Ë“
+!)	?(·A(NC “
+@“
+ARi§0j`2
+R0j`8«@«XÜä!)	?(§A(tC í")	?(±	A(≤C Ri≈0j`2
+R0j`8«@«XÜä!)	?(≈A(tC í")	?(¥	A(≤C R`•0G2R0G8«@«XÜä!)	?(•A(NC í!)	?(∂A(HC “
+%"Ü|20w20E0tB"¿x20a205BJ0…0yHó “
+!)	?(…A(NC JÉ€0y2Œ
+0e0bHó “
+")	?(œ	A(–C “
+>f
+÷(“ ”Bg’
+÷(◊ÿ
+0h8⁄Jq‹0yHó “
+!)	?(‹A(NC “
+>f
+÷(“ ”Bg’
+÷(◊ÿ
+0h8⁄“
+%"ºy è20i208:èB“
+j	ﬂ
+‡(·J2ß0j`Hó “
+!)	?(ßA(tC J<∫0(2ß0j`Hó “
+")	?(π	A(≤C J3™0zj`{Hó “
+")	?(™	A(ªC J<æ0(2™0zj`{Hó “
+")	?(º	A(ΩC J{·0yHó “
+>f
+÷(Ê ”Bg’
+÷(øÿ
+0h8Ë“
+!)	?(·A(NC “
+@“
+AJI¬0k2Œ0ej`}0bHó “
+")	?(¡	A(–C “
+ARiß0j`2
+R0j`8«@«XÜä!)	?(ßA(tC í")	?(π	A(≤C Rj™0zj`{2
+R0zj`{8«@«XÜä")	?(™	A(ªC í")	?(º	A(ΩC “
+%"Ü~20x20y0tB"º20xBJ0…0HHó “
+!)	?(…A(NC JÉ€0H2Œ
+0e0bHó “
+")	?(œ	A(–C “
+>f
+÷(“ ”Bg’
+÷(◊ÿ
+0h8⁄Jq‹0HHó “
+!)	?(‹A(NC “
+>f
+÷(“ ”Bg’
+÷(◊ÿ
+0h8⁄“
+%"ÛH è20y:èB>ƒ0Kj`L0J≈0j`“
+j	ﬂ
+‡(∆BXƒ0Kj`L0J≈0j`ß0j`™0zj`{“
+j	ﬂ
+‡(«B“
+j	ﬂ
+‡(·Jö 0H2ƒ0Kj`L0J2≈0j`Hó “
+>f
+÷(Ê ”Bg’
+÷(»ÿ
+0h8Ë“
+")	?(∆	A(…C “
+@“
+AJ¥ 0H2ƒ0Kj`L0J2≈0j`2ß0j`2™0zj`{Hó “
+>f
+÷(Ê ”Bg’
+÷(Àÿ
+0h8Ë“
+")	?(«	A(ÃC “
+@“
+AJ9ƒ0Kj`L0JHó “
+")	?(ƒ	A(ÕC JB–0(2ƒ0Kj`L0JHó “
+")	?(Œ	A(œC J2≈0j`Hó “
+!)	?(≈A(tC J<“0(2≈0j`Hó “
+")	?(—	A(≤C J{·0HHó “
+>f
+÷(Ê ”Bg’
+÷(”ÿ
+0h8Ë“
+!)	?(·A(NC “
+@“
+ARvƒ0Kj`L0J2R0Kj`L0J8«@«XÜä")	?(ƒ	A(ÕC í")	?(Œ	A(œC Ri≈0j`2
+R0j`8«@«XÜä!)	?(≈A(tC í")	?(—	A(≤C “
+%"ÜÄ2020H0tB"¡Å20a205BJ0…0RHó “
+!)	?(…A(NC JÉ€0R2Œ
+0e0bHó “
+")	?(œ	A(–C “
+>f
+÷(“ ”Bg’
+÷(◊ÿ
+0h8⁄Jq‹0RHó “
+!)	?(‹A(NC “
+>f
+÷(“ ”Bg’
+÷(◊ÿ
+0h8⁄“
+%"◊
+R è20i208:èBh’0j`÷0j`◊0j`ÿ0j`Ê0GŸ0j`“
+j	ﬂ
+‡(⁄B'Ê0G“
+j	ﬂ
+‡(€B“
+j	ﬂ
+‡(·Jƒﬁ0R2’0j`2÷0j`2◊0j`2ÿ0j`2Ê0G2Ÿ0j`Hó “
+>f
+÷(Ê ”Bg’
+÷(‹ÿ
+0h8Ë“
+")	?(⁄	A(›C “
+@“
+AJÑ‡0R2Ê0GHó “
+>f
+÷(Ê ”Bg’
+÷(ﬂÿ
+0h8Ë“
+!)	?(€A(yC “
+@“
+AJ3’0j`Hó “
+")	?(’	A(·C J3÷0j`Hó “
+")	?(÷	A(·C J3◊0j`Hó “
+")	?(◊	A(·C J3ÿ0j`Hó “
+")	?(ÿ	A(·C J0Ê0GHó “
+!)	?(ÊA(NC J3Ÿ0j`Hó “
+")	?(Ÿ	A(‚C J{·0RHó “
+>f
+÷(Ê ”Bg’
+÷(„ÿ
+0h8Ë“
+!)	?(·A(NC “
+@“
+AJI¬0k2Œ0ej`}0bHó “
+")	?(¡	A(–C “
+AR3’0j`8«ä")	?(’	A(·C R3÷0j`8«ä")	?(÷	A(·C R3◊0j`8«ä")	?(◊	A(·C R3ÿ0j`8«ä")	?(ÿ	A(·C R0Ê0G8«ä!)	?(ÊA(NC R3Ÿ0j`8«ä")	?(Ÿ	A(‚C “
+%"ÜÇ20Å20R0tB"ΩÉ20`BJ0…0YHó “
+!)	?(…A(NC JÉ€0Y2Œ
+0e0bHó “
+")	?(œ	A(–C “
+>f
+÷(“ ”Bg’
+÷(◊ÿ
+0h8⁄Jq‹0YHó “
+!)	?(‹A(NC “
+>f
+÷(“ ”Bg’
+÷(◊ÿ
+0h8⁄“
+%"†Y è20.:èBEÂ0j`!„0XÊ
+0ij`l“
+j	ﬂ
+‡(ÁBBÈ0Ñ„0XÊ
+0ij`l“
+j	ﬂ
+‡(ÍB“
+j	ﬂ
+‡(·J°Ì0Y2Â0j`!2„0X2Ê
+0ij`lHó “
+>f
+÷(Ê ”Bg’
+÷(Îÿ
+0h8Ë“
+")	?(Á	A(ÏC “
+@“
+AJû0Y2È0Ñ2„0X2Ê
+0ij`lHó “
+>f
+÷(Ê ”Bg’
+÷(Óÿ
+0h8Ë“
+")	?(Í	A(ÔC “
+@“
+AJ8Ú0(2È0ÑHó “
+!)	?(ÒA(HC J.Û0(Hó “
+!)	?(ÛA(BC JOˆ0(2Ù062à000(0IHó “
+")	?(ı	A(äC J0˜06Hó “
+!)	?(˜A(NC J{·0YHó “
+>f
+÷(Ê ”Bg’
+÷(¯ÿ
+0h8Ë“
+!)	?(·A(NC “
+@“
+AR0˜068«ä!)	?(˜A(NC “
+%"ÜÖ20É20Y0tB"¿Ü20aBJ1…0ÑHó “
+!)	?(…A(NC JÑ€0Ñ2Œ
+0e0bHó “
+")	?(œ	A(–C “
+>f
+÷(“ ”Bg’
+÷(◊ÿ
+0h8⁄Jr‹0ÑHó “
+!)	?(‹A(NC “
+>f
+÷(“ ”Bg’
+÷(◊ÿ
+0h8⁄“
+%"¥Ñ è20i:èBEÂ0j`!˙02˚02“
+j	ﬂ
+‡(¸B“
+j	ﬂ
+‡(·J¢Ì0Ñ2˝0j`!2˙022˚02Hó “
+>f
+÷(Ê ”Bg’
+÷(˛ÿ
+0h8Ë“
+")	?(¸	A(ÏC “
+@“
+AJ3ˇ0j`!Hó “
+")	?(ˇ	A(‚C J<Ç0(2ˇ0j`!Hó “
+")	?(Ä	A(ÅC J2˙02Hó “
+!)	?(˙A(NC J;Ñ0(2˙02Hó “
+!)	?(ÉA(HC J2˚02Hó “
+!)	?(˚A(NC J;Ü0(2˚02Hó “
+!)	?(ÖA(HC J|·0ÑHó “
+>f
+÷(Ê ”Bg’
+÷(áÿ
+0h8Ë“
+!)	?(·A(NC “
+@“
+ARjˇ0j`!2
+R0j`!8«@«XÜä")	?(ˇ	A(‚C í")	?(Ä	A(ÅC Rh˙022
+R028«@«XÜä!)	?(˙A(NC í!)	?(ÉA(HC Rh˚022
+R028«@«XÜä!)	?(˚A(NC í!)	?(ÖA(HC “
+%"Üá20Ü2	0Ñ0tB"Ωà20`BJ0…0\Hó “
+!)	?(…A(NC JÉ€0\2Œ
+0e0bHó “
+")	?(œ	A(–C “
+>f
+÷(“ ”Bg’
+÷(◊ÿ
+0h8⁄Jq‹0\Hó “
+!)	?(‹A(NC “
+>f
+÷(“ ”Bg’
+÷(◊ÿ
+0h8⁄“
+%"ï\ è20.:èBA„0[Ê
+0ij`lâ0+“
+j	ﬂ
+‡(äB“
+j	ﬂ 
+‡(·Jùç0\2„0[2Ê
+0ij`l2â0+Hó “
+>f
+÷(Ê ”Bg’
+÷(ãÿ
+0h8Ë“
+")	?(ä	A(åC “
+@“
+AJ.Û0(Hó “
+!)	?(ÛA(BC JOˆ0(2Ù0D2à000(0IHó “
+")	?(ı	A(äC J{·0\Hó “
+>f
+÷(Ê ”Bg’
+÷(éÿ
+0h8Ë“
+!)	?(·A(NC “
+@“
+A“
+%"Üâ20à20\0tB"¿ä20`BJ1…0ãHó “
+!)	?(…A(NC JÑ€0ã2Œ
+0e0bHó “
+")	?(œ	A(–C “
+>f
+÷(“ ”Bg’
+÷(◊ÿ
+0h8⁄Jr‹0ãHó “
+!)	?(‹A(NC “
+>f
+÷(“ ”Bg’
+÷(◊ÿ
+0h8⁄“
+%"µã è20.:èB8„0-Ê
+0ij`l“
+j	ﬂ
+‡(ëB“
+j	ﬂ 
+‡(·Jïç0ã2„0-2Ê
+0ij`lHó “
+>f
+÷(Ê ”Bg’
+÷(íÿ
+0h8Ë“
+")	?(ë	A(ìC “
+@“
+AJ.Û0(Hó “
+!)	?(ÛA(BC J|·0ãHó “
+>f
+÷(Ê ”Bg’
+÷(îÿ
+0h8Ë“
+!)	?(·A(NC “
+@“
+A“
+%"Üå20ä2	0ã0tB"Ùç20a204BJ1…0éHó “
+!)	?(…A(NC JÑ€0é2Œ
+0e0bHó “
+")	?(œ	A(–C “
+>f
+÷(“ ”Bg’
+÷(◊ÿ
+0h8⁄Jr‹0éHó “
+!)	?(‹A(NC “
+>f
+÷(“ ”Bg’
+÷(◊ÿ
+0h8⁄J.î0+Hó “
+!)	?(îA(LC “
+%" é è20i207:èBEó0j`"s0GÍ0Gò0G“
+j	ﬂ
+‡(ôBSó0j`"s0GÍ0Gò0G≈0j`è“
+j	ﬂ
+‡(õB“
+j	ﬂ
+‡(·B%w0=“
+j	ﬂ	‡(xJ¢û0é2ó0j`"2s0G2Í0G2ò0GHó “
+>f
+÷(Ê ”Bg’
+÷(úÿ
+0h8Ë“
+")	?(ô	A(ùC “
+@“
+AJ∞û0é2ó0j`"2s0G2Í0G2ò0G2≈0j`èHó “
+>f
+÷(Ê ”Bg’
+÷(üÿ
+0h8Ë“
+")	?(õ	A(†C “
+@“
+AJ3°0j`"Hó “
+")	?(°	A(·C J<§0(2°0j`"Hó “
+")	?(¢	A(£C J,s0GHó “
+ )?(sA(NC J6¶0(2s0GHó “
+!)	?(•A(HC J.Í0GHó “
+!)	?(ÍA(NC J7®0(2Í0GHó “
+!)	?(ßA(HC J.ò0GHó “
+!)	?(òA(NC J7™0(2ò0GHó “
+!)	?(©A(HC J|·0éHó “
+>f
+÷(Ê ”Bg’
+÷(´ÿ
+0h8Ë“
+!)	?(·A(NC “
+@“
+AJÇ~0é2w0=Hó “
+>f
+÷(Ê ”Bg’
+÷(¨ÿ
+0h8Ë“
+ )?(xA(yC “
+@“
+AJ6†0(2w0=Hó “
+!)	?(üA(HC Rj°0j`"2
+R0j`"8«@«XÜä")	?(°	A(·C í")	?(¢	A(£C R^s0G2R0G8«@«XÜä )?(sA(NC í!)	?(•A(HC R`Í0G2R0G8«@«XÜä!)	?(ÍA(NC í!)	?(ßA(HC R`ò0G2R0G8«@«XÜä!)	?(òA(NC í!)	?(©A(HC “
+%"Üê20ç2	0é0tB"ƒë20a205BJ1…0íHó “
+!)	?(…A(NC JÑ€0í2Œ
+0e0bHó “
+")	?(œ	A(–C “
+>f
+÷(“ ”Bg’
+÷(◊ÿ
+0h8⁄Jr‹0íHó “
+!)	?(‹A(NC “
+>f
+÷(“ ”Bg’
+÷(◊ÿ
+0h8⁄“
+%"Âí è20i208:èB@Ø0j`∞0*
+≤0ì“
+j	ﬂ
+‡(≥B“
+j	ﬂ 
+‡(·Jù∂0í2¥0j`2∞0*2
+≤0ìHó “
+>f
+÷(Ê ”Bg’
+÷(µÿ
+0h8Ë“
+")	?(≥	A(ÏC “
+@“
+AJ3¥0j`Hó “
+")	?(¥	A(‚C J<∏0(2¥0j`Hó “
+")	?(∑	A(ÅC J.∞0*Hó “
+!)	?(∞A(NC J7∫0(2∞0*Hó “
+!)	?(πA(HC J1≤0ìHó “
+!)	?(≤A(NC J:º0(2
+≤0ìHó “
+!)	?(ªA(HC J|·0íHó “
+>f
+÷(Ê ”Bg’
+÷(Ωÿ
+0h8Ë“
+!)	?(·A(NC “
+@“
+AJI¬0k2Œ0ej`}0bHó “
+")	?(¡	A(–C “
+ARj¥0j`2
+R0j`8«@«XÜä")	?(¥	A(‚C í")	?(∑	A(ÅC R`∞0*2R0*8«@«XÜä!)	?(∞A(NC í!)	?(πA(HC Rf≤0ì2	R0ì8«@«XÜä!)	?(≤A(NC í!)	?(ªA(HC “
+%"Üî20ë2	0í0tB"ƒï20a205BJ1…0ñHó “
+!)	?(…A(NC JÑ€0ñ2Œ
+0e0bHó “
+")	?(œ	A(–C “
+>f
+÷(“ ”Bg’
+÷(◊ÿ
+0h8⁄Jr‹0ñHó “
+!)	?(‹A(NC “
+>f
+÷(“ ”Bg’
+÷(◊ÿ
+0h8⁄“
+%"¨ñ è20i208:èB“
+j	ﬂ
+‡(·J3¿0j`Hó “
+")	?(¿	A(‚C J.¡0GHó “
+!)	?(¡A(NC J.¬0GHó “
+!)	?(¬A(NC J|·0ñHó “
+>f
+÷(Ê ”Bg’
+÷(√ÿ
+0h8Ë“
+!)	?(·A(NC “
+@“
+AJI¬0k2Œ0ej`}0bHó “
+")	?(¡	A(–C “
+AR3¿0j`8«ä")	?(¿	A(‚C R.¡0G8«ä!)	?(¡A(NC R.¬0G8«ä!)	?(¬A(NC “
+%"Üó20ï2	0ñ0tB"Ωò20`BJ0…0_Hó “
+!)	?(…A(NC JÉ€0_2Œ
+0e0bHó “
+")	?(œ	A(–C “
+>f
+÷(“ ”Bg’
+÷(◊ÿ
+0h8⁄Jq‹0_Hó “
+!)	?(‹A(NC “
+>f
+÷(“ ”Bg’
+÷(◊ÿ
+0h8⁄“
+%"ú_ è20.:èBE≈02„0^Ê
+0ij`l“
+j	ﬂ
+‡(∆B“
+j	ﬂ 
+‡(·J°…0_2«022„0^2Ê
+0ij`lHó “
+>f
+÷(Ê ”Bg’
+÷(»ÿ
+0h8Ë“
+")	?(∆	A(ÔC “
+@“
+AJ{·0_Hó “
+>f
+÷(Ê ”Bg’
+÷( ÿ
+0h8Ë“
+!)	?(·A(NC “
+@“
+A“
+%"Üô20ò20_0tB"¡ö20ÉBJ1…0õHó “
+!)	?(…A(NC JÑ€0õ2Œ
+0e0bHó “
+")	?(œ	A(–C “
+>f
+÷(“ ”Bg’
+÷(◊ÿ
+0h8⁄Jr‹0õHó “
+!)	?(‹A(NC “
+>f
+÷(“ ”Bg’
+÷(◊ÿ
+0h8⁄“
+%"◊õ è20Y:èB8„0XÊ
+0ij`l“
+j	ﬂ
+‡(ëBEÂ0j`!„0XÊ
+0ij`l“
+j	ﬂ
+‡(ÁBBÈ0Ñ„0XÊ
+0ij`l“
+j	ﬂ
+‡(ÍB“
+j	ﬂ
+‡(·Jïç0õ2„0X2Ê
+0ij`lHó “
+>f
+÷(Ê ”Bg’
+÷(Õÿ
+0h8Ë“
+")	?(ë	A(ìC “
+@“
+AJ¢Ì0õ2Â0j`!2„0X2Ê
+0ij`lHó “
+>f
+÷(Ê ”Bg’
+÷(Œÿ
+0h8Ë“
+")	?(Á	A(ÏC “
+@“
+AJü0õ2È0Ñ2„0X2Ê
+0ij`lHó “
+>f
+÷(Ê ”Bg’
+÷(œÿ
+0h8Ë“
+")	?(Í	A(ÔC “
+@“
+AJ|·0õHó “
+>f
+÷(Ê ”Bg’
+÷(–ÿ
+0h8Ë“
+!)	?(·A(NC “
+@“
+A“
+%"Üú20ö2	0õ0tB‡
+ Í
+platform.CoreNFCÚ
+^#&,-36B9CDQ:T;V<WXZ[]^`.suPvwE|xy~HÄÅRÇÉYÖÜÑáà\âäãåçéêëíîïñóò_ôöõú

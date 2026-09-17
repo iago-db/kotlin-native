@@ -1,0 +1,890 @@
+
+ài
+platform
+Intents
+INIntentResolutionResultMeta
+kotlin
+Long
+darwin
+	NSInteger
+reason
+INIntentResolutionResult
+kotlinx
+cinterop
+
+ObjCMethod
+selector
+unsupportedWithReason:
+encoding
+
+@24@0:8q16
+isStret
+unsupportedWithReason
+Any
+itemToConfirm
+	forReason
+0confirmationRequiredWithItemToConfirm:forReason:
+@32@0:8@16q24
+%confirmationRequiredWithItemToConfirm
+INPerson
+INPersonHandle
+personHandle
+
+Foundation
+NSPersonNameComponents
+nameComponents
+String
+displayName
+INImage
+image
+contactIdentifier
+customIdentifier
+collections
+List
+aliases
+INPersonSuggestionType
+suggestionType
+
+Deprecated
+message
+Use factory method instead
+replaceWith
+ReplaceWith
+imports
+
+expression
+INPerson.create(personHandle, nameComponents, displayName, image, contactIdentifier, customIdentifier, aliases, suggestionType)
+level
+DeprecationLevel
+ERROR
+pinitWithPersonHandle:nameComponents:displayName:image:contactIdentifier:customIdentifier:aliases:suggestionType:
+@80@0:8@16@24@32@40@48@56@64q72
+internal
+CCall
+ConsumesReceiver
+ReturnsRetained
+initWithPersonHandle
+T
+ObjCClassOf
+ObjCFactory
+create
+@16@0:8
+q16@0:8
+INRideOption
+
+identifier
+Unit
+setIdentifier:
+
+v24@0:8@16
+setIdentifier
+CoreLocation
+CLPlacemarkMeta
+
+CLLocation
+location
+name
+	objcnames
+classes
+CNPostalAddress
+postalAddress
+CLPlacemark
+)placemarkWithLocation:name:postalAddress:
+@40@0:8@16@24@32
+placemarkWithLocation
+siriMatches
+Boolean
+isMe
+c16@0:8
+NSExtensionContext
+INIntent
+intent
+NSStringMeta
+format
+Array
+args
+)deferredLocalizedIntentsStringWithFormat:
+
+@24@0:8@16
+(deferredLocalizedIntentsStringWithFormat
+	fromTable
+3deferredLocalizedIntentsStringWithFormat:fromTable:
+@32@0:8@16@24
+CPointer
+posix
+__va_list_tag
+va_list
+	arguments
+=deferredLocalizedIntentsStringWithFormat:fromTable:arguments:
+(@40@0:8@16@24[1{__va_list_tag=II^v^v}]32
+NSUserActivity
+INInteraction
+interaction
+suggestedInvocationPhrase
+setSuggestedInvocationPhrase:
+setSuggestedInvocationPhrase
+ULong
+INShortcutAvailabilityOptions
+shortcutAvailability
+Q16@0:8
+setShortcutAvailability:
+
+v24@0:8Q16
+setShortcutAvailability
+INRequestRideIntent
+pickupLocation
+dropOffLocation
+INSpeakableString
+rideOptionName
+NSNumber
+	partySize
+INPaymentMethod
+paymentMethod
+eINRequestRideIntent.create(pickupLocation, dropOffLocation, rideOptionName, partySize, paymentMethod)
+NinitWithPickupLocation:dropOffLocation:rideOptionName:partySize:paymentMethod:
+@56@0:8@16@24@32@40@48
+initWithPickupLocation
+INRideDriver
+rating
+phoneNumber
+ZINRideDriver.create(personHandle, nameComponents, displayName, image, rating, phoneNumber)
+IinitWithPersonHandle:nameComponents:displayName:image:rating:phoneNumber:
+@64@0:8@16@24@32@40@48@56
+handle
+DINRideDriver.create(handle, displayName, image, rating, phoneNumber)
+4initWithHandle:displayName:image:rating:phoneNumber:
+initWithHandle
+GINRideDriver.create(handle, nameComponents, image, rating, phoneNumber)
+7initWithHandle:nameComponents:image:rating:phoneNumber:
+INSearchCallHistoryIntent
+INCallRecordType
+callType
+INDateComponentsRange
+dateCreated
+	recipient
+INCallCapabilityOptions
+callCapabilities
+TINSearchCallHistoryIntent.create(callType, dateCreated, recipient, callCapabilities)
+8initWithCallType:dateCreated:recipient:callCapabilities:
+@48@0:8q16@24@32Q40
+initWithCallType
+INStartAudioCallIntent
+contacts
+'INStartAudioCallIntent.create(contacts)
+initWithContacts:
+initWithContacts
+INStartCallIntent
+INCallAudioRoute
+
+audioRoute
+INCallDestinationType
+destinationType
+recordTypeForRedialing
+INCallCapability
+callCapability
+gINStartCallIntent.create(audioRoute, destinationType, contacts, recordTypeForRedialing, callCapability)
+RinitWithAudioRoute:destinationType:contacts:recordTypeForRedialing:callCapability:
+@56@0:8q16q24@32q40q48
+initWithAudioRoute
+INSearchForMessagesIntent
+
+recipients
+senders
+searchTerms
+INMessageAttributeOptions
+
+attributes
+dateTimeRange
+identifiers
+notificationIdentifiers
+
+groupNames
+èINSearchForMessagesIntent.create(recipients, senders, searchTerms, attributes, dateTimeRange, identifiers, notificationIdentifiers, groupNames)
+oinitWithRecipients:senders:searchTerms:attributes:dateTimeRange:identifiers:notificationIdentifiers:groupNames:
+@80@0:8@16@24@32Q40@48@56@64@72
+initWithRecipients
+speakableGroupNames
+òINSearchForMessagesIntent.create(recipients, senders, searchTerms, attributes, dateTimeRange, identifiers, notificationIdentifiers, speakableGroupNames)
+xinitWithRecipients:senders:searchTerms:attributes:dateTimeRange:identifiers:notificationIdentifiers:speakableGroupNames:
+INConditionalOperator
+groupNamesOperator
+INSendMessageIntent
+content
+	groupName
+serviceName
+sender
+OINSendMessageIntent.create(recipients, content, groupName, serviceName, sender)
+8initWithRecipients:content:groupName:serviceName:sender:
+speakableGroupName
+conversationIdentifier
+pINSendMessageIntent.create(recipients, content, speakableGroupName, conversationIdentifier, serviceName, sender)
+XinitWithRecipients:content:speakableGroupName:conversationIdentifier:serviceName:sender:
+INOutgoingMessageType
+outgoingMessageType
+ÖINSendMessageIntent.create(recipients, outgoingMessageType, content, speakableGroupName, conversationIdentifier, serviceName, sender)
+linitWithRecipients:outgoingMessageType:content:speakableGroupName:conversationIdentifier:serviceName:sender:
+@72@0:8@16q24@32@40@48@56@64
+INSearchForNotebookItemsIntent
+title
+INNotebookItemType
+itemType
+INTaskStatus
+status
+INLocationSearchType
+locationSearchType
+dateTime
+INDateSearchType
+dateSearchType
+INSearchForNotebookItemsIntent.create(title, content, itemType, status, location, locationSearchType, dateTime, dateSearchType)
+ZinitWithTitle:content:itemType:status:location:locationSearchType:dateTime:dateSearchType:
+@80@0:8@16@24q32q40@48q56@64q72
+initWithTitle
+notebookItemIdentifier
+óINSearchForNotebookItemsIntent.create(title, content, itemType, status, location, locationSearchType, dateTime, dateSearchType, notebookItemIdentifier)
+qinitWithTitle:content:itemType:status:location:locationSearchType:dateTime:dateSearchType:notebookItemIdentifier:
+"@88@0:8@16@24q32q40@48q56@64q72@80
+INPlayMediaIntent
+
+mediaItems
+INMediaItem
+mediaContainer
+playShuffled
+INPlaybackRepeatMode
+playbackRepeatMode
+resumePlayback
+fINPlayMediaIntent.create(mediaItems, mediaContainer, playShuffled, playbackRepeatMode, resumePlayback)
+QinitWithMediaItems:mediaContainer:playShuffled:playbackRepeatMode:resumePlayback:
+@56@0:8@16@24@32q40@48
+initWithMediaItems
+INSetTaskAttributeIntent
+INTask
+
+targetTask
+INSpatialEventTrigger
+spatialEventTrigger
+INTemporalEventTrigger
+temporalEventTrigger
+^INSetTaskAttributeIntent.create(targetTask, status, spatialEventTrigger, temporalEventTrigger)
+CinitWithTargetTask:status:spatialEventTrigger:temporalEventTrigger:
+@48@0:8@16q24@32@40
+initWithTargetTask
+INAddTasksIntent
+
+INTaskList
+targetTaskList
+
+taskTitles
+^INAddTasksIntent.create(targetTaskList, taskTitles, spatialEventTrigger, temporalEventTrigger)
+KinitWithTargetTaskList:taskTitles:spatialEventTrigger:temporalEventTrigger:
+@48@0:8@16@24@32@40
+initWithTargetTaskList
+INMediaSearch
+activityNames
+INCallRecord
+NSDate
+caller
+callRecordType
+callDuration
+unseen
+jINCallRecord.create(identifier, dateCreated, caller, callRecordType, callCapability, callDuration, unseen)
+XinitWithIdentifier:dateCreated:caller:callRecordType:callCapability:callDuration:unseen:
+@72@0:8@16@24@32q40q48@56@64
+initWithIdentifier
+numberOfCalls
+yINCallRecord.create(identifier, dateCreated, caller, callRecordType, callCapability, callDuration, unseen, numberOfCalls)
+finitWithIdentifier:dateCreated:caller:callRecordType:callCapability:callDuration:unseen:numberOfCalls:
+@80@0:8@16@24@32q40q48@56@64@72
+INSendMessageIntentResponse
+	INMessage
+sentMessage
+setSentMessage:
+setSentMessage
+id
+@knifunptr_platform_Intents56_INAnswerCallIntentIdentifier_getter
+INAnswerCallIntentIdentifier
+Cknifunptr_platform_Intents57_INCancelWorkoutIntentIdentifier_getter
+INCancelWorkoutIntentIdentifier
+INCarChargingConnectorType
+Bknifunptr_platform_Intents58_INCarChargingConnectorTypeCCS1_getter
+INCarChargingConnectorTypeCCS1
+Bknifunptr_platform_Intents59_INCarChargingConnectorTypeCCS2_getter
+INCarChargingConnectorTypeCCS2
+Eknifunptr_platform_Intents60_INCarChargingConnectorTypeCHAdeMO_getter
+!INCarChargingConnectorTypeCHAdeMO
+Cknifunptr_platform_Intents61_INCarChargingConnectorTypeGBTAC_getter
+INCarChargingConnectorTypeGBTAC
+Cknifunptr_platform_Intents62_INCarChargingConnectorTypeGBTDC_getter
+INCarChargingConnectorTypeGBTDC
+Cknifunptr_platform_Intents63_INCarChargingConnectorTypeJ1772_getter
+INCarChargingConnectorTypeJ1772
+Fknifunptr_platform_Intents64_INCarChargingConnectorTypeMennekes_getter
+"INCarChargingConnectorTypeMennekes
+Dknifunptr_platform_Intents65_INCarChargingConnectorTypeNACSAC_getter
+ INCarChargingConnectorTypeNACSAC
+Dknifunptr_platform_Intents66_INCarChargingConnectorTypeNACSDC_getter
+ INCarChargingConnectorTypeNACSDC
+Cknifunptr_platform_Intents67_INCarChargingConnectorTypeTesla_getter
+INCarChargingConnectorTypeTesla
+@knifunptr_platform_Intents68_INEndWorkoutIntentIdentifier_getter
+INEndWorkoutIntentIdentifier
+Cknifunptr_platform_Intents69_INGetRideStatusIntentIdentifier_getter
+INGetRideStatusIntentIdentifier
+@knifunptr_platform_Intents70_INHangUpCallIntentIdentifier_getter
+INHangUpCallIntentIdentifier
+7knifunptr_platform_Intents71_INIntentErrorDomain_getter
+INIntentErrorDomain
+Eknifunptr_platform_Intents72_INListRideOptionsIntentIdentifier_getter
+!INListRideOptionsIntentIdentifier
+Bknifunptr_platform_Intents73_INPauseWorkoutIntentIdentifier_getter
+INPauseWorkoutIntentIdentifier
+INPersonHandleLabel
+;knifunptr_platform_Intents74_INPersonHandleLabelHome_getter
+INPersonHandleLabelHome
+>knifunptr_platform_Intents75_INPersonHandleLabelHomeFax_getter
+INPersonHandleLabelHomeFax
+;knifunptr_platform_Intents76_INPersonHandleLabelMain_getter
+INPersonHandleLabelMain
+=knifunptr_platform_Intents77_INPersonHandleLabelMobile_getter
+INPersonHandleLabelMobile
+<knifunptr_platform_Intents78_INPersonHandleLabelOther_getter
+INPersonHandleLabelOther
+<knifunptr_platform_Intents79_INPersonHandleLabelPager_getter
+INPersonHandleLabelPager
+=knifunptr_platform_Intents80_INPersonHandleLabelSchool_getter
+INPersonHandleLabelSchool
+;knifunptr_platform_Intents81_INPersonHandleLabelWork_getter
+INPersonHandleLabelWork
+>knifunptr_platform_Intents82_INPersonHandleLabelWorkFax_getter
+INPersonHandleLabelWorkFax
+=knifunptr_platform_Intents83_INPersonHandleLabeliPhone_getter
+INPersonHandleLabeliPhone
+INPersonRelationship
+Aknifunptr_platform_Intents84_INPersonRelationshipAssistant_getter
+INPersonRelationshipAssistant
+?knifunptr_platform_Intents85_INPersonRelationshipBrother_getter
+INPersonRelationshipBrother
+=knifunptr_platform_Intents86_INPersonRelationshipChild_getter
+INPersonRelationshipChild
+@knifunptr_platform_Intents87_INPersonRelationshipDaughter_getter
+INPersonRelationshipDaughter
+>knifunptr_platform_Intents88_INPersonRelationshipFather_getter
+INPersonRelationshipFather
+>knifunptr_platform_Intents89_INPersonRelationshipFriend_getter
+INPersonRelationshipFriend
+?knifunptr_platform_Intents90_INPersonRelationshipManager_getter
+INPersonRelationshipManager
+>knifunptr_platform_Intents91_INPersonRelationshipMother_getter
+INPersonRelationshipMother
+>knifunptr_platform_Intents92_INPersonRelationshipParent_getter
+INPersonRelationshipParent
+?knifunptr_platform_Intents93_INPersonRelationshipPartner_getter
+INPersonRelationshipPartner
+>knifunptr_platform_Intents94_INPersonRelationshipSister_getter
+INPersonRelationshipSister
+;knifunptr_platform_Intents95_INPersonRelationshipSon_getter
+INPersonRelationshipSon
+>knifunptr_platform_Intents96_INPersonRelationshipSpouse_getter
+INPersonRelationshipSpouse
+Dknifunptr_platform_Intents97_INRequestPaymentIntentIdentifier_getter
+ INRequestPaymentIntentIdentifier
+Aknifunptr_platform_Intents98_INRequestRideIntentIdentifier_getter
+INRequestRideIntentIdentifier
+Cknifunptr_platform_Intents99_INResumeWorkoutIntentIdentifier_getter
+INResumeWorkoutIntentIdentifier
+!Unable to import this declaration
+ 
+"INSaveProfileInCarIntentIdentifier
+Hknifunptr_platform_Intents101_INSearchCallHistoryIntentIdentifier_getter
+#INSearchCallHistoryIntentIdentifier
+Hknifunptr_platform_Intents102_INSearchForMessagesIntentIdentifier_getter
+#INSearchForMessagesIntentIdentifier
+Fknifunptr_platform_Intents103_INSearchForPhotosIntentIdentifier_getter
+!INSearchForPhotosIntentIdentifier
+Bknifunptr_platform_Intents104_INSendMessageIntentIdentifier_getter
+INSendMessageIntentIdentifier
+Bknifunptr_platform_Intents105_INSendPaymentIntentIdentifier_getter
+INSendPaymentIntentIdentifier
+%INSetAudioSourceInCarIntentIdentifier
+)INSetClimateSettingsInCarIntentIdentifier
++INSetDefrosterSettingsInCarIntentIdentifier
+%INSetMessageAttributeIntentIdentifier
+!INSetProfileInCarIntentIdentifier
+!INSetRadioStationIntentIdentifier
+&INSetSeatSettingsInCarIntentIdentifier
+Eknifunptr_platform_Intents113_INStartAudioCallIntentIdentifier_getter
+ INStartAudioCallIntentIdentifier
+@knifunptr_platform_Intents114_INStartCallIntentIdentifier_getter
+INStartCallIntentIdentifier
+Iknifunptr_platform_Intents115_INStartPhotoPlaybackIntentIdentifier_getter
+$INStartPhotoPlaybackIntentIdentifier
+Eknifunptr_platform_Intents116_INStartVideoCallIntentIdentifier_getter
+ INStartVideoCallIntentIdentifierÏ
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+	
+
+
+	 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+$
+% 
+' 
+) 
+- 
+2 
+	6
+7 
+8 
+9 
+	< 
+	= 
+A 
+C 
+ G
+ H 
+ I 
+L
+#M
+$N 
+ P 
+U 
+X 
+Y 
+[ 
+] 
+	e 
+ f
+-g 
+-h 
+l 
+m 
+r 
+s 
+y 
+| 
+~ 
+Ä 
+Ü 
+í 
+ì 
+ï 
+ò 
+û 
+£ 
+§ 
+¶ 
+© 
+Ø 
+≥ 
+¿ 
+¬ 
+Õ 
+“ 
+‘ 
+÷ 
+ÿ 
+€ 
+Â 
+Á 
+Í 
+Ò 
+Ú 
+Ù 
+ˆ 
+¸ 
+˝ 
+Ñ 
+Ü 
+á 
+î 
+ï 
+û 
+ø 
+‘ „T<0*02
+0j`Há “
+ 
+(( D0*0202
+0j`Há “
+ 
+(( √:0*02020202!02"02#02&02(0Há “
+6*(+,B./(0
+1
+083“
+ 
+(4(5 “
+“
+ö>8 " ;*0*8 02020202!02"02#02&02(0Há “
+ (4(5 “
+“
+6&0*0Há “
+ 
+(&(? 0(0*0Há “
+ 
+(((@ 2B0*0Há “
+ 
+(B(? :F0*02B0Há “
+ 
+(D(E LS0&*0!2J0"2K02O0%Há “
+ 
+(Q(R 6T0*0Há “
+ 
+(T(? 0V0'*0Há “
+ 
+(V(W 2Z0)*0(Há “
+ 
+(Z(? Na0*0*2\02^
+00+"0Há “
+ 
+(_(` Xa0*0*2\02b02^
+00+"0Há “
+ 
+(c(d Xa0*0*2\02b02i0.0,j`/Há “
+ 
+(j(k 2n01*00Há “
+ 
+(n(? 2o0*00Há “
+ 
+(o(? :q0*002o0Há “
+ 
+(p(E 4t02j`3*00Há “
+ 
+(t(u <x0*002
+t02j`3Há “
+ 
+(v(w ™Ö04*042z0&2{0&2}052062	Å07Há “
+7*(+,B.	/(Ç
+1
+083“
+"
+	(É	(Ñ “
+“
+>8";*04*802z0&2{0&2}052062	Å07Há “
+"	(É	(Ñ “
+“
+≤:08*082020202!02	á02	à0Há “
+7*(+,B.	/(â
+1
+083“
+"
+	(ä	(ã “
+“
+à>8";*08*802020202!02	á02	à0Há “
+"	(ä	(ã “
+“
+™è08*082å0202!02	á02	à0Há “
+7*(+,B.	/(ç
+1
+083“
+"
+	(é	(Ñ “
+“
+>8";*08*802å0202!02	á02	à0Há “
+"	(é	(Ñ “
+“
+®è08*082å0202!02	á02	à0Há “
+7*(+,B.	/(ê
+1
+083“
+"
+	(ë	(Ñ “
+“
+}>8";*08*802å0202!02	á02	à0Há “
+"	(ë	(Ñ “
+“
+ßù09*092î0j`:2	ñ0;2	ó02ô02j`<Há “
+7*(+,B.	/(ö
+1
+083“
+"
+	(õ	(ú “
+“
+|>8";*09*802î0j`:2	ñ0;2	ó02ô02j`<Há “
+"	(õ	(ú “
+“
+6î0j`:*09Há “
+!
+	(î(@ Ö¢0=*0=2ü0Há “
+7*(+,B.	/(†
+1
+083“
+!
+	(°(` “
+“
+Z>8";*0=*802ü0Há “
+!	(°(` “
+“
+∫Æ0>*0>2•0j`?2ß0j`@2ü02®0j`:2™0j`AHá “
+7*(+,B.	/(´
+1
+083“
+"
+	(¨	(≠ “
+“
+è>8";*0>*802•0j`?2ß0j`@2ü02®0j`:2™0j`AHá “
+"	(¨	(≠ “
+“
+6®0j`:*0>Há “
+!
+	(®(@ Èº0B*0B2∞02±02≤02¥02j`C2	µ0;2∂02∑02∏0Há “
+7*(+,B.	/(π
+1
+083“
+"
+	(∫	(ª “
+“
+æ>8";*0B*802∞02±02≤02¥02j`C2	µ0;2∂02∑02∏0Há “
+"	(∫	(ª “
+“
+Èº0B*0B2∞02±02≤02¥02j`C2	µ0;2∂02∑02Ω0Há “
+7*(+,B.	/(æ
+1
+083“
+"
+	(ø	(ª “
+“
+æ>8	"	;*0B*8	02∞02±02≤02¥02j`C2	µ0;2∂02∑02Ω0Há “
+"	(ø	(ª “
+“
+8∏0*0BHá “
+!
+	(∏(? 6¡0j`D*0BHá “
+!
+	(¡(@ ≤º0E*0E2∞02	√02	ƒ02	≈02	∆0Há “
+7*(+,B.	/(«
+1
+083“
+"
+	(»	(Ñ “
+“
+á>8
+"
+;*0E*8
+02∞02	√02	ƒ02	≈02	∆0Há “
+"	(»	(Ñ “
+“
+Ωº0E*0E2∞02	√02	…052	 02	≈02	∆0Há “
+7*(+,B.	/(À
+1
+083“
+"
+	(Ã	(ã “
+“
+í>8";*0E*802∞02	√02	…052	 02	≈02	∆0Há “
+"	(Ã	(ã “
+“
+ º0E*0E2∞02Œ0j`F2	√02	…052	 02	≈02	∆0Há “
+7*(+,B.	/(œ
+1
+083“
+"
+	(–	(— “
+“
+ü>8";*0E*802∞02Œ0j`F2	√02	…052	 02	≈02	∆0Há “
+"	(–	(— “
+“
+4ƒ0*0EHá “
+!
+	(ƒ(? ÷‡0G*0G2	”052	√02’0j`H2◊0j`I2J0&2Ÿ0j`J2	⁄0;2‹0j`KHá “
+7*(+,B.	/(›
+1
+083“
+"
+	(ﬁ	(ﬂ “
+“
+´>8";*0G*802	”052	√02’0j`H2◊0j`I2J0&2Ÿ0j`J2	⁄0;2‹0j`KHá “
+"	(ﬁ	(ﬂ “
+“
+·‡0G*0G2	”052	√02’0j`H2◊0j`I2J0&2Ÿ0j`J2	⁄0;2‹0j`K2	·0Há “
+7*(+,B.	/(‚
+1
+083“
+"
+	(„	(‰ “
+“
+∂>8";*0G*802	”052	√02’0j`H2◊0j`I2J0&2Ÿ0j`J2	⁄0;2‹0j`K2	·0Há “
+"	(„	(‰ “
+“
+¥0L*0L2Ê02	Ë0M2	È062Î0j`N2	Ï06Há “
+7*(+,B.	/(Ì
+1
+083“
+"
+	(Ó	(Ô “
+“
+â>8";*0L*802Ê02	Ë0M2	È062Î0j`N2	Ï06Há “
+"	(Ó	(Ô “
+“
+•˚0O*0O2	Û0P2◊0j`I2	ı0Q2	˜0RHá “
+7*(+,B.	/(¯
+1
+083“
+"
+	(˘	(˙ “
+“
+z>8";*0O*802	Û0P2◊0j`I2	ı0Q2	˜0RHá “
+"	(˘	(˙ “
+“
+ßÉ0S*0S2	˛0T2ˇ02	ı0Q2	˜0RHá “
+7*(+,B.	/(Ä
+1
+083“
+"
+	(Å	(Ç “
+“
+|>8";*0S*802	˛0T2ˇ02	ı0Q2	˜0RHá “
+"	(Å	(Ç “
+“
+8Ö0*0UHá “
+!
+	(Ö(? ≈è0V*0V2B02	ñ0W2	à02â0j`:2™0j`A2	ä062	ã06Há “
+7*(+,B.	/(å
+1
+083“
+"
+	(ç	(é “
+“
+ö>8";*0V*802B02	ñ0W2	à02â0j`:2™0j`A2	ä062	ã06Há “
+"	(ç	(é “
+“
+–è0V*0V2B02	ñ0W2	à02â0j`:2™0j`A2	ä062	ã062	ê06Há “
+7*(+,B.	/(ë
+1
+083“
+"
+	(í	(ì “
+“
+•>8";*0V*802B02	ñ0W2	à02â0j`:2™0j`A2	ä062	ã062	ê06Há “
+"	(í	(ì “
+“
+4à0*0VHá “
+!
+	(à(? 4ñ0Y*0XHá “
+!
+	(ñ(? =ò0*0X2	ñ0YHá “
+!
+	(ó(E "õ08«ä
+ô(ö"ù08«ä
+ô(ú"#†
+0j`Z8«ä
+ô(ü"#¢
+0j`Z8«ä
+ô(°"#§
+0j`Z8«ä
+ô(£"#¶
+0j`Z8«ä
+ô(•"#®
+0j`Z8«ä
+ô(ß"#™
+0j`Z8«ä
+ô(©"#¨
+0j`Z8«ä
+ô(´"#Æ
+0j`Z8«ä
+ô(≠"#∞
+0j`Z8«ä
+ô(Ø"#≤
+0j`Z8«ä
+ô(±"¥08«ä
+ô(≥"∂08«ä
+ô(µ"∏08«ä
+ô(∑"∫08«ä
+ô(π"º08«ä
+ô(ª"æ08«ä
+ô(Ω"#¡
+0j`[8«ä
+ô(¿"#√
+0j`[8«ä
+ô(¬"#≈
+0j`[8«ä
+ô(ƒ"#«
+0j`[8«ä
+ô(∆"#…
+0j`[8«ä
+ô(»"#À
+0j`[8«ä
+ô( "#Õ
+0j`[8«ä
+ô(Ã"#œ
+0j`[8«ä
+ô(Œ"#—
+0j`[8«ä
+ô(–"#”
+0j`[8«ä
+ô(“"#÷
+0j`\8«ä
+ô(’"#ÿ
+0j`\8«ä
+ô(◊"#⁄
+0j`\8«ä
+ô(Ÿ"#‹
+0j`\8«ä
+ô(€"#ﬁ
+0j`\8«ä
+ô(›"#‡
+0j`\8«ä
+ô(ﬂ"#‚
+0j`\8«ä
+ô(·"#‰
+0j`\8«ä
+ô(„"#Ê
+0j`\8«ä
+ô(Â"#Ë
+0j`\8«ä
+ô(Á"#Í
+0j`\8«ä
+ô(È"#Ï
+0j`\8«ä
+ô(Î"#Ó
+0j`\8«ä
+ô(Ì"08«ä
+ô(Ô"Ú08«ä
+ô(Ò"Ù08«ä
+ô(Û"I˜08FXá“
+8	*(ı,B.	/(ˆ
+1
+083"˘08«ä
+ô(¯"˚08«ä
+ô(˙"˝08«ä
+ô(¸"ˇ08«ä
+ô(˛"Å08«ä
+ô(Ä"IÇ08FXá“
+8	*(ı,B.	/(ˆ
+1
+083"IÉ08FXá“
+8	*(ı,B.	/(ˆ
+1
+083"IÑ08FXá“
+8	*(ı,B.	/(ˆ
+1
+083"IÖ08FXá“
+8	*(ı,B.	/(ˆ
+1
+083"IÜ08FXá“
+8	*(ı,B.	/(ˆ
+1
+083"Iá08FXá“
+8	*(ı,B.	/(ˆ
+1
+083"Ià08FXá“
+8	*(ı,B.	/(ˆ
+1
+083"ä08«ä
+ô(â"å08«ä
+ô(ã"é08«ä
+ô(ç"ê08«ä
+ô(èÿ
+‡
+ Í
+platform.Intents

@@ -1,0 +1,733 @@
+
+åH
+platform
+darwin
+NSObject
+kotlinx
+cinterop
+CPointer
+CPointed
+COpaquePointer
+	aSelector
+kotlin
+Any
+
+withObject
+Unit
+
+ObjCMethod
+selector
+'performSelectorInBackground:withObject:
+encoding
+v32@0:8:16@24
+isStret
+performSelectorInBackground
+
+Foundation
+NSTimeZoneMeta
+resetSystemTimeZone
+v16@0:8
+collections
+Map
+abbreviationDictionary
+@16@0:8
+
+NSTimeZone
+	aTimeZone
+Boolean
+isEqualToTimeZone:
+
+B24@0:8@16
+isEqualToTimeZone
+NSTimeZoneNameStyle
+style
+NSLocale
+locale
+String
+localizedName:locale:
+@32@0:8q16@24
+localizedName
+systemTimeZone
+defaultTimeZone
+setDefaultTimeZone:
+
+v24@0:8@16
+setDefaultTimeZone
+localTimeZone
+List
+knownTimeZoneNames
+setAbbreviationDictionary:
+setAbbreviationDictionary
+timeZoneDataVersion
+Long
+	NSInteger
+secondsFromGMT
+q16@0:8
+abbreviation
+isDaylightSavingTime
+B16@0:8
+Double
+NSTimeInterval
+daylightSavingTimeOffset
+d16@0:8
+NSDate
+ nextDaylightSavingTimeTransition
+description
+tzName
+timeZoneWithName:
+
+@24@0:8@16
+timeZoneWithName
+NSData
+data
+timeZoneWithName:data:
+@32@0:8@16@24
+
+Deprecated
+message
+Use factory method instead
+replaceWith
+ReplaceWith
+imports
+
+expression
+NSTimeZone.create(tzName)
+level
+DeprecationLevel
+ERROR
+initWithName:
+internal
+CCall
+ConsumesReceiver
+ReturnsRetained
+initWithName
+T
+ObjCClassOf
+name
+ObjCFactory
+create
+NSTimeZone.create(tzName, data)
+initWithName:data:
+seconds
+timeZoneForSecondsFromGMT:
+
+@24@0:8q16
+timeZoneForSecondsFromGMT
+timeZoneWithAbbreviation:
+timeZoneWithAbbreviation
+
+NSURLCache
+NSCachedURLResponse
+cachedResponse
+NSURLSessionDataTask
+forDataTask
+ storeCachedResponse:forDataTask:
+v32@0:8@16@24
+storeCachedResponse
+dataTask
+	Function1
+completionHandler
+/getCachedResponseForDataTask:completionHandler:
+v32@0:8@16@?24
+getCachedResponseForDataTask
+ removeCachedResponseForDataTask:
+removeCachedResponseForDataTask
+NSURLCredential
+user
+password
+NSURLCredentialPersistence
+persistence
+3NSURLCredential.create(user, password, persistence)
+"initWithUser:password:persistence:
+@40@0:8@16@24Q32
+initWithUser
+NSURLCredentialMeta
+(credentialWithUser:password:persistence:
+credentialWithUser
+hasPassword
+cnames
+structs
+__SecIdentity
+Security
+SecIdentityRef
+identity
+certificates
+;NSURLCredential.create(identity, certificates, persistence)
+*initWithIdentity:certificates:persistence:
+ @40@0:8^{__SecIdentity=}16@24Q32
+initWithIdentity
+0credentialWithIdentity:certificates:persistence:
+credentialWithIdentity
+^{__SecIdentity=}16@0:8
+
+__SecTrust
+SecTrustRef
+trust
+NSURLCredential.create(trust)
+initWithTrust:
+@24@0:8^{__SecTrust=}16
+initWithTrust
+credentialForTrust:
+credentialForTrust
+NSURLProtectionSpace
+distinguishedNames
+serverTrust
+^{__SecTrust=}16@0:8
+NSURLCredentialStorage
+protectionSpace
+NSURLSessionTask
+task
+8getCredentialsForProtectionSpace:task:completionHandler:
+v40@0:8@16@24@?32
+ getCredentialsForProtectionSpace
+
+credential
+forProtectionSpace
+&setCredential:forProtectionSpace:task:
+v40@0:8@16@24@32
+setCredential
+options
+1removeCredential:forProtectionSpace:options:task:
+v48@0:8@16@24@32@40
+removeCredential
+space
+>getDefaultCredentialForProtectionSpace:task:completionHandler:
+&getDefaultCredentialForProtectionSpace
+-setDefaultCredential:forProtectionSpace:task:
+setDefaultCredential
+NSURLProtocolMeta
+canInitWithTask:
+canInitWithTask
+NSURLProtocol
+NSURLProtocolClientProtocol
+client
+2NSURLProtocol.create(task, cachedResponse, client)
+#initWithTask:cachedResponse:client:
+@40@0:8@16@24@32
+initWithTask
+NSURLRequest
+field
+valueForHTTPHeaderField:
+valueForHTTPHeaderField
+
+HTTPMethod
+allHTTPHeaderFields
+HTTPBody
+NSInputStream
+HTTPBodyStream
+HTTPShouldHandleCookies
+HTTPShouldUsePipelining
+NSMutableURLRequest
+value
+forHTTPHeaderField
+setValue:forHTTPHeaderField:
+setValue
+addValue:forHTTPHeaderField:
+addValue
+setHTTPMethod:
+setHTTPMethod
+setAllHTTPHeaderFields:
+setAllHTTPHeaderFields
+setHTTPBody:
+setHTTPBody
+setHTTPBodyStream:
+setHTTPBodyStream
+setHTTPShouldHandleCookies:
+
+v20@0:8B16
+setHTTPShouldHandleCookies
+setHTTPShouldUsePipelining:
+setHTTPShouldUsePipelining
+NSXMLParser
+publicID
+systemID
+
+lineNumber
+columnNumber
+NSArray
+NSPredicate
+	predicate
+filteredArrayUsingPredicate:
+filteredArrayUsingPredicate
+NSMutableArray
+filterUsingPredicate:
+filterUsingPredicate
+NSSet
+Set
+filteredSetUsingPredicate:
+filteredSetUsingPredicate
+NSMutableSet
+NSOrderedSet
+p
+!filteredOrderedSetUsingPredicate:
+ filteredOrderedSetUsingPredicate
+NSMutableOrderedSet
+NSString
+CValue
+_NSRange
+NSRange
+range
+NSLinguisticTagScheme
+scheme
+ULong
+NSLinguisticTaggerOptions
+NSOrthography
+orthography
+ObjCObjectVar
+tokenRanges
+=linguisticTagsInRange:scheme:options:orthography:tokenRanges:
+#@64@0:8{_NSRange=QQ}16@32Q40@48^@56
+linguisticTagsInRange
+	Function4
+NSLinguisticTag
+BooleanVarOf
+
+BooleanVar
+
+usingBlock
+EenumerateLinguisticTagsInRange:scheme:options:orthography:usingBlock:
+#v64@0:8{_NSRange=QQ}16@32Q40@48@?56
+enumerateLinguisticTagsInRange
+NSURLSession
+request
+	Function3
+NSURLResponse
+NSError
+&dataTaskWithRequest:completionHandler:
+@32@0:8@16@?24
+dataTaskWithRequest
+NSURL
+url
+"dataTaskWithURL:completionHandler:
+dataTaskWithURL
+fromFile
+NSURLSessionUploadTask
+1uploadTaskWithRequest:fromFile:completionHandler:
+@40@0:8@16@24@?32
+uploadTaskWithRequest
+fromData
+1uploadTaskWithRequest:fromData:completionHandler:
+
+resumeData
++uploadTaskWithResumeData:completionHandler:
+uploadTaskWithResumeData
+NSURLSessionDownloadTask
+*downloadTaskWithRequest:completionHandler:
+downloadTaskWithRequest
+&downloadTaskWithURL:completionHandler:
+downloadTaskWithURL
+-downloadTaskWithResumeData:completionHandler:
+downloadTaskWithResumeData
+NSURLSessionConfigurationMeta
+
+identifier
+NSURLSessionConfiguration
+backgroundSessionConfiguration:
+backgroundSessionConfiguration
+NSAttributedStringKey
+id
+Kknifunptr_platform_Foundation167_NSAlternateDescriptionAttributeName_getter
+#NSAlternateDescriptionAttributeName
+8knifunptr_platform_Foundation168_NSArgumentDomain_getter
+NSArgumentDomain
+=knifunptr_platform_Foundation169_NSAssertionHandlerKey_getter
+NSAssertionHandlerKey
+NSKeyValueOperator
+Aknifunptr_platform_Foundation170_NSAverageKeyValueOperator_getter
+NSAverageKeyValueOperator
+:knifunptr_platform_Foundation171_NSBuddhistCalendar_getter
+NSBuddhistCalendar
+NSNotificationName
+Cknifunptr_platform_Foundation172_NSBundleDidLoadNotification_getter
+NSBundleDidLoadNotification
+Tknifunptr_platform_Foundation173_NSBundleResourceRequestLoadingPriorityUrgent_getter
+,NSBundleResourceRequestLoadingPriorityUrgent
+Wknifunptr_platform_Foundation174_NSBundleResourceRequestLowDiskSpaceNotification_getter
+/NSBundleResourceRequestLowDiskSpaceNotification
+Hknifunptr_platform_Foundation175_NSCalendarDayChangedNotification_getter
+ NSCalendarDayChangedNotification
+NSCalendarIdentifier
+Bknifunptr_platform_Foundation176_NSCalendarIdentifierBangla_getter
+NSCalendarIdentifierBangla
+Dknifunptr_platform_Foundation177_NSCalendarIdentifierBuddhist_getter
+NSCalendarIdentifierBuddhist
+Cknifunptr_platform_Foundation178_NSCalendarIdentifierChinese_getter
+NSCalendarIdentifierChinese
+Bknifunptr_platform_Foundation179_NSCalendarIdentifierCoptic_getter
+NSCalendarIdentifierCoptic
+Aknifunptr_platform_Foundation180_NSCalendarIdentifierDangi_getter
+NSCalendarIdentifierDangi
+Mknifunptr_platform_Foundation181_NSCalendarIdentifierEthiopicAmeteAlem_getter
+%NSCalendarIdentifierEthiopicAmeteAlem
+Oknifunptr_platform_Foundation182_NSCalendarIdentifierEthiopicAmeteMihret_getter
+'NSCalendarIdentifierEthiopicAmeteMihret
+Eknifunptr_platform_Foundation183_NSCalendarIdentifierGregorian_getter
+NSCalendarIdentifierGregorian
+Dknifunptr_platform_Foundation184_NSCalendarIdentifierGujarati_getter
+NSCalendarIdentifierGujarati
+Bknifunptr_platform_Foundation185_NSCalendarIdentifierHebrew_getter
+NSCalendarIdentifierHebrew
+Cknifunptr_platform_Foundation186_NSCalendarIdentifierISO8601_getter
+NSCalendarIdentifierISO8601
+Bknifunptr_platform_Foundation187_NSCalendarIdentifierIndian_getter
+NSCalendarIdentifierIndian
+Cknifunptr_platform_Foundation188_NSCalendarIdentifierIslamic_getter
+NSCalendarIdentifierIslamic
+Hknifunptr_platform_Foundation189_NSCalendarIdentifierIslamicCivil_getter
+ NSCalendarIdentifierIslamicCivil
+Jknifunptr_platform_Foundation190_NSCalendarIdentifierIslamicTabular_getter
+"NSCalendarIdentifierIslamicTabular
+Lknifunptr_platform_Foundation191_NSCalendarIdentifierIslamicUmmAlQura_getter
+$NSCalendarIdentifierIslamicUmmAlQura
+Dknifunptr_platform_Foundation192_NSCalendarIdentifierJapanese_getter
+NSCalendarIdentifierJapanese
+Cknifunptr_platform_Foundation193_NSCalendarIdentifierKannada_getter
+NSCalendarIdentifierKannada
+Eknifunptr_platform_Foundation194_NSCalendarIdentifierMalayalam_getter
+NSCalendarIdentifierMalayalam
+Cknifunptr_platform_Foundation195_NSCalendarIdentifierMarathi_getter
+NSCalendarIdentifierMarathi
+@knifunptr_platform_Foundation196_NSCalendarIdentifierOdia_getter
+NSCalendarIdentifierOdia
+Cknifunptr_platform_Foundation197_NSCalendarIdentifierPersian_getter
+NSCalendarIdentifierPersian
+Kknifunptr_platform_Foundation198_NSCalendarIdentifierRepublicOfChina_getter
+#NSCalendarIdentifierRepublicOfChinaé
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+	
+
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+" 
+$ 
+& 
+0 
+5 
+6 
+< 
+= 
+@ 
+G 
+K 
+O 
+T 
+W
+X 
+ Y 
+ Z 
+] 
+_ 
+i 
+j 
+l 
+r 
+y 
+| 
+Ç 
+Ü
+,á
+-à 
+ â
+/ä 
+-î 
+/ï 
+ù 
+° 
+£ 
+∂ 
+π 
+∫ 
+¿ 
+« 
+À 
+ﬂ 
+‰ 
+Â 
+È 
+Ï 
+Ì 
+ 
+Ò 
+ı 
+ˆ 
+˜ 
+¯ 
+˘ 
+˚ 
+˝ 
+˛ 
+ˇ 
+Å 
+Ü 
+á 
+à 
+â 
+é 
+ê 
+ë 
+í 
+ñ 
+õ 
+§ 
+´ 
+≠ 
+∞ 
+∏ 
+Ω 
+∆ ÈAR0
+*0200j`20	Há “
+ (( 00
+*0Há “
+ (( <0	0*0Há “
+ (( 8!0*020Há “
+ ((  D)0*02#02%0Há “
+ ('(( 0*0*0Há “
+ (*( 0+0*0Há “
+ (+( 8.0
+*02+0Há “
+ (,(- 0/0*0Há “
+ (/( 410*0Há “
+ (1( D30
+*020	0Há “
+ (2(- 040*0Há “
+ (4( 470j`*0Há “
+ (7(8 290*0Há “
+ (9( 0:0*0Há “
+ (:(; 4>0j`*0Há “
+ (>(? 2A0*0Há “
+ (A( 0B0*0Há “
+ (B( :F0*02C0Há “
+ (D(E DF0*02C02H0Há “
+ (I(J }[0*02C0Há “
+6L(MNBPQ(R
+S
+08U“
+ (V(E “
+!“
+"T`8Z"Z\*0*8Z0#2^0Há “
+ $(V(E “
+!“
+"á[0*02C02H0Há “
+6L(MNBPQ(a
+S
+08U“
+ (b(J “
+!“
+"^`8["[\*0*8[0#2^02H0Há “
+ $(b(J “
+!“
+"<f0*02
+c0j`Há “
+ (d(e :h0*0290Há “
+ (g(E @p0
+*0%2k0&2m0'Há “
+ (n(o Nv0
+*0%2q0'2s0&0
+0(Há “
+ (t(u 8x0
+*0%2q0'Há “
+ (w(- çÅ0)*0)2z02{02}0*Há “
+6L(MNBPQ(~
+S
+08U“
+!(	(Ä “
+!“
+"c`8\"\\*0)*8\0#2z02{02}0*Há “
+!$(	(Ä “
+!“
+"KÑ0)*0+2z02{02}0*Há “
+"	(É	(Ä 2z0*0)Há “
+ (z( 2{0*0)Há “
+ ({( 2Ö0*0)Há “
+!	(Ö(; •ê0)*0)2ã0.0j`02å02}0*Há “
+7L(MNBP	Q(ç
+S
+08U“
+"	(é	(è “
+!“
+"z`8]"]\*0)*8]0#2ã0.0j`02å02}0*Há “
+"$	(é	(è “
+!“
+"aí0)*0+2ã0.0j`02å02}0*Há “
+"	(ë	(è Aã0.0j`0*0)Há “
+"	(ã	(ì 6å0*0)Há “
+!	(å( éö0)*0)2ñ010j`2Há “
+7L(MNBP	Q(ó
+S
+08U“
+"	(ò	(ô “
+!“
+"c`8^"^\*0)*8^0#2ñ010j`2Há “
+"$	(ò	(ô “
+!“
+"Jú0)*0+2ñ010j`2Há “
+"	(õ	(ô 8û0*03Há “
+!	(û( Aü010j`2*03Há “
+"	(ü	(† gß0
+*042¢032§052 s0	00
+0(Há “
+"	(•	(¶ N¨0
+*042®0)2©032§05Há “
+"	(™	(´ e∞0
+*042®0)2©032≠0	02§05Há “
+"	(Æ	(Ø [≥0
+*042±032§052s0)0
+0(Há “
+"	(≤	(¶ Nµ0
+*042®0)2©032§05Há “
+"	(¥	(´ ;∏0*062§05Há “
+!	(∑(  ïø07*072§052k0&2	ª08Há “
+7L(MNBP	Q(º
+S
+08U“
+"	(Ω	(æ “
+!“
+"j`8_"_\*07*8_0#2§052k0&2	ª08Há “
+"$	(Ω	(æ “
+!“
+"4§05*07Há “
+!	(§( =√0*092¡0Há “
+!	(¬(E 4ƒ0*09Há “
+!	(ƒ( @≈0	0*09Há “
+!	(≈( 4∆0*09Há “
+!	(∆( 4»0:*09Há “
+!	(»( 2…0*09Há “
+!	(…(; 2 0*09Há “
+!	( (; Fœ0
+*0;2	Ã02Õ0Há “
+!	(Œ(o D—0
+*0;2Ã02Õ0Há “
+!	(–(o 2ƒ0*0;Há “
+!	(ƒ( ;”0
+*0;2ƒ0Há “
+!	(“(- @≈0	0*0;Há “
+!	(≈( I’0
+*0;2≈0	0Há “
+!	(‘(- 4∆0*0;Há “
+!	(∆( =◊0
+*0;2	∆0Há “
+!	(÷(- 4»0:*0;Há “
+!	(»( =Ÿ0
+*0;2	»0:Há “
+!	(ÿ(- 2…0*0;Há “
+!	(…(; <‹0
+*0;2…0Há “
+"	(⁄	(€ 2 0*0;Há “
+!	( (; <ﬁ0
+*0;2 0Há “
+"	(›	(€ 4‡0*0<Há “
+!	(‡( 4·0*0<Há “
+!	(·( 6‚0j`*0<Há “
+!	(‚(8 6„0j`*0<Há “
+!	(„(8 ?Ë0*0=2Ê0>Há “
+!	(Á(E ;Î0
+*0?2Ê0>Há “
+!	(Í(- ?Ô0A*0@2Ê0>Há “
+!	(Ó(E ;Î0
+*0B2Ê0>Há “
+!	(Í(- ;Ù0C*0C2Ú0>Há “
+!	(Û(E ;Î0
+*0D2Ú0>Há “
+!	(Í(- êÖ0*0E2˙0Gj`H0F2¸
+0j`I2≠0Jj`K2	Ä0L2Ç
+00M0Há “
+"	(É	(Ñ ƒç0
+*0E2˙0Gj`H0F2¸
+0j`I2≠0Jj`K2	Ä0L2SäN
+0j`O0Gj`H0F0Gj`H0F00Pj`Q00
+0NHá “
+"	(ã	(å bï0'*0R2è092$s 00T0U0
+0SHá “
+"	(ì	(î bô0'*0R2ó0V2$s 00T0U0
+0SHá “
+"	(ò	(î kû0W*0R2è092ö0V2$s 00T0U0
+0SHá “
+"	(ú	(ù mû0W*0R2è092	ü02$s 00T0U0
+0SHá “
+"	(†	(ù b£0W*0R2°02$s 00T0U0
+0SHá “
+"	(¢	(î b¶0X*0R2è092$s 0V0T0U0
+0SHá “
+"	(•	(î b®0X*0R2ó0V2$s 0V0T0U0
+0SHá “
+"	(ß	(î b™0X*0R2°02$s 0V0T0U0
+0SHá “
+"	(©	(î ;Ø0Z*0Y2¨0Há “
+!	(Æ(E "#≥
+0j`[8«ä 
+±(≤"µ08«ä 
+±(¥"∑08«ä 
+±(∂"#∫
+0j`\8«ä 
+±(π"º08«ä 
+±(ª"#ø
+0j`]8«ä 
+±(æ"¡08«ä 
+±(¿"#√
+0j`]8«ä 
+±(¬"#≈
+0j`]8«ä 
+±(ƒ"#»
+0j`^8«ä 
+±(«"# 
+0j`^8«ä 
+±(…"#Ã
+0j`^8«ä 
+±(À"#Œ
+0j`^8«ä 
+±(Õ"#–
+0j`^8«ä 
+±(œ"#“
+0j`^8«ä 
+±(—"#‘
+0j`^8«ä 
+±(”"#÷
+0j`^8«ä 
+±(’"#ÿ
+0j`^8«ä 
+±(◊"#⁄
+0j`^8«ä 
+±(Ÿ"#‹
+0j`^8«ä 
+±(€"#ﬁ
+0j`^8«ä 
+±(›"#‡
+0j`^8«ä 
+±(ﬂ"#‚
+0j`^8«ä 
+±(·"#‰
+0j`^8«ä 
+±(„"#Ê
+0j`^8«ä 
+±(Â"#Ë
+0j`^8«ä 
+±(Á"#Í
+0j`^8«ä 
+±(È"#Ï
+0j`^8«ä 
+±(Î"#Ó
+0j`^8«ä 
+±(Ì"#
+0j`^8«ä 
+±(Ô"#Ú
+0j`^8«ä 
+±(Ò"#Ù
+0j`^8«ä 
+±(Ûÿ
+‡
+ Í
+platform.Foundation

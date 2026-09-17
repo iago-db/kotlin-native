@@ -1,0 +1,727 @@
+
+ÖB
+platform
+	CoreImage
+CIImage
+kotlin
+collections
+List
+kotlinx
+cinterop
+
+ObjCMethod
+selector
+autoAdjustmentFilters
+encoding
+@16@0:8
+isStret
+Map
+Any
+options
+!autoAdjustmentFiltersWithOptions:
+
+@24@0:8@16
+ autoAdjustmentFiltersWithOptions
+"imageByConvertingWorkingSpaceToLab
+"imageByConvertingLabToWorkingSpace
+	objcnames
+classes
+AVDepthData
+data
+
+Deprecated
+message
+Use factory method instead
+replaceWith
+ReplaceWith
+imports
+
+expression
+CIImage.create(data, options)
+level
+DeprecationLevel
+ERROR
+initWithDepthData:options:
+@32@0:8@16@24
+internal
+CCall
+ConsumesReceiver
+ReturnsRetained
+initWithDepthData
+T
+ObjCClassOf
+	depthData
+ObjCFactory
+create
+CIImage.create(data)
+initWithDepthData:
+CIImageMeta
+imageWithDepthData:options:
+imageWithDepthData
+imageWithDepthData:
+AVPortraitEffectsMatte
+matte
+CIImage.create(matte, options)
+$initWithPortaitEffectsMatte:options:
+initWithPortaitEffectsMatte
+portaitEffectsMatte
+CIImage.create(matte)
+initWithPortaitEffectsMatte:
+%imageWithPortaitEffectsMatte:options:
+imageWithPortaitEffectsMatte
+imageWithPortaitEffectsMatte:
+portraitEffectsMatte
+AVSemanticSegmentationMatte
+*initWithSemanticSegmentationMatte:options:
+!initWithSemanticSegmentationMatte
+semanticSegmentationMatte
+"initWithSemanticSegmentationMatte:
++imageWithSemanticSegmentationMatte:options:
+"imageWithSemanticSegmentationMatte
+#imageWithSemanticSegmentationMatte:
+	CIContext
+image
+CValue
+CoreGraphics
+CGRect
+fromRect
+CPointer
+cnames
+structs
+CGImage
+
+CGImageRef
+createCGImage:fromRect:
+6^{CGImage=}56@0:8@16{CGRect={CGPoint=dd}{CGSize=dd}}24
+createCGImage
+Int
+CIFormat
+format
+CGColorSpace
+CGColorSpaceRef
+
+colorSpace
+)createCGImage:fromRect:format:colorSpace:
+K^{CGImage=}68@0:8@16{CGRect={CGPoint=dd}{CGSize=dd}}24i56^{CGColorSpace=}60
+Boolean
+deferred
+2createCGImage:fromRect:format:colorSpace:deferred:
+N^{CGImage=}72@0:8@16{CGRect={CGPoint=dd}{CGSize=dd}}24i56^{CGColorSpace=}60c68
+calculateHDRStats
+DcreateCGImage:fromRect:format:colorSpace:deferred:calculateHDRStats:
+Q^{CGImage=}76@0:8@16{CGRect={CGPoint=dd}{CGSize=dd}}24i56^{CGColorSpace=}60c68c72
+__IOSurface
+	IOSurface
+IOSurfaceRef
+surface
+Unit
+calculateHDRStatsForIOSurface:
+v24@0:8^{__IOSurface=}16
+calculateHDRStatsForIOSurface
+
+__CVBuffer
+	CoreVideo
+CVPixelBufferRef
+buffer
+"calculateHDRStatsForCVPixelBuffer:
+v24@0:8^{__CVBuffer=}16
+!calculateHDRStatsForCVPixelBuffer
+cgimage
+calculateHDRStatsForCGImage:
+^{CGImage=}24@0:8^{CGImage=}16
+calculateHDRStatsForCGImage
+calculateHDRStatsForImage:
+calculateHDRStatsForImage
+CIContextMeta
+UInt
+offlineGPUCount
+I16@0:8
+index
+contextForOfflineGPUAtIndex:
+
+@20@0:8I16
+contextForOfflineGPUAtIndex
+_CGLContextObject
+OpenGLCommon
+CGLContextObj
+sharedContext
+=contextForOfflineGPUAtIndex:colorSpace:options:sharedContext:
+6@44@0:8I16^{CGColorSpace=}20@28^{_CGLContextObject=}36
+
+Foundation
+NSData
+4TIFFRepresentationOfImage:format:colorSpace:options:
+"@44@0:8@16i24^{CGColorSpace=}28@36
+TIFFRepresentationOfImage
+-JPEGRepresentationOfImage:colorSpace:options:
+@40@0:8@16^{CGColorSpace=}24@32
+JPEGRepresentationOfImage
+4HEIFRepresentationOfImage:format:colorSpace:options:
+HEIFRepresentationOfImage
+ObjCObjectVar
+NSError
+error
+5HEIF10RepresentationOfImage:colorSpace:options:error:
+#@48@0:8@16^{CGColorSpace=}24@32^@40
+HEIF10RepresentationOfImage
+3PNGRepresentationOfImage:format:colorSpace:options:
+PNGRepresentationOfImage
++OpenEXRRepresentationOfImage:options:error:
+@40@0:8@16@24^@32
+OpenEXRRepresentationOfImage
+NSURL
+toURL
+EwriteTIFFRepresentationOfImage:toURL:format:colorSpace:options:error:
+)c60@0:8@16@24i32^{CGColorSpace=}36@44^@52
+writeTIFFRepresentationOfImage
+DwritePNGRepresentationOfImage:toURL:format:colorSpace:options:error:
+writePNGRepresentationOfImage
+>writeJPEGRepresentationOfImage:toURL:colorSpace:options:error:
+&c56@0:8@16@24^{CGColorSpace=}32@40^@48
+writeJPEGRepresentationOfImage
+EwriteHEIFRepresentationOfImage:toURL:format:colorSpace:options:error:
+writeHEIFRepresentationOfImage
+@writeHEIF10RepresentationOfImage:toURL:colorSpace:options:error:
+ writeHEIF10RepresentationOfImage
+6writeOpenEXRRepresentationOfImage:toURL:options:error:
+c48@0:8@16@24@32^@40
+!writeOpenEXRRepresentationOfImage
+url
+CIFilter
+)depthBlurEffectFilterForImageURL:options:
+ depthBlurEffectFilterForImageURL
+*depthBlurEffectFilterForImageData:options:
+!depthBlurEffectFilterForImageData
+disparityImage
+ImageIO
+CGImagePropertyOrientation
+orientation
+VdepthBlurEffectFilterForImage:disparityImage:portraitEffectsMatte:orientation:options:
+@52@0:8@16@24@32I40@44
+depthBlurEffectFilterForImage
+hairSemanticSegmentation
+odepthBlurEffectFilterForImage:disparityImage:portraitEffectsMatte:hairSemanticSegmentation:orientation:options:
+@60@0:8@16@24@32@40I48@52
+glassesMatte
+gainMap
+ÑdepthBlurEffectFilterForImage:disparityImage:portraitEffectsMatte:hairSemanticSegmentation:glassesMatte:gainMap:orientation:options:
+@76@0:8@16@24@32@40@48@56I64@68
+CIFilterMeta
+String
+name
+filterWithName:
+filterWithName
+keysAndValues
+Array
+args
+filterWithName:keysAndValues:
+withInputParameters
+#filterWithName:withInputParameters:
+category
+filterNamesInCategory:
+filterNamesInCategory
+
+categories
+filterNamesInCategories:
+filterNamesInCategories
+CIFilterConstructorProtocol
+constructor
+classAttributes
+/registerFilterName:constructor:classAttributes:
+v40@0:8@16@24@32
+registerFilterName
+
+filterName
+localizedNameForFilterName:
+localizedNameForFilterName
+localizedNameForCategory:
+localizedNameForCategory
+"localizedDescriptionForFilterName:
+!localizedDescriptionForFilterName
+-localizedReferenceDocumentationForFilterName:
+,localizedReferenceDocumentationForFilterName
+filters
+inputImageExtent
+*serializedXMPFromFilters:inputImageExtent:
+,@56@0:8@16{CGRect={CGPoint=dd}{CGSize=dd}}24
+serializedXMPFromFilters
+xmpData
+4filterArrayFromSerializedXMP:inputImageExtent:error:
+0@64@0:8@16{CGRect={CGPoint=dd}{CGSize=dd}}24^@56
+filterArrayFromSerializedXMP
+CIBlendKernelMeta
+CIBlendKernel
+componentAdd
+componentMultiply
+componentMin
+componentMax
+clear
+source
+destination
+
+sourceOver
+destinationOver
+sourceIn
+destinationIn
+	sourceOut
+destinationOut
+
+sourceAtop
+destinationAtop
+exclusiveOr
+multiply
+screen
+overlay
+darken
+lighten
+
+colorDodge
+	colorBurn
+	hardLight
+	softLight
+
+difference
+	exclusion
+hue
+
+saturation
+color
+
+luminosity
+subtract
+divide
+
+linearBurn
+linearDodge
+
+vividLight
+linearLight
+pinLight
+hardMix
+darkerColor
+lighterColor
+provider
+ULong
+posix
+size_t
+size
+_2
+7imageWithImageProvider:size::format:colorSpace:options:
+(@60@0:8@16Q24Q32i40^{CGColorSpace=}44@52
+imageWithImageProvider
+?CIImage.create(provider, size, _2, format, colorSpace, options)
+6initWithImageProvider:size::format:colorSpace:options:
+initWithImageProvider
+imageProvider
+darwin
+NSObject
+CPointed
+COpaquePointer
+bytesPerRow
+origin
+_3
+_5
+userInfo
+4provideImageData:bytesPerRow:origin::size::userInfo:
+v72@0:8^v16Q24Q32Q40Q48Q56@64
+provideImageData
+	protocols
+MTLTextureProtocol
+texture
+MTLCommandBufferProtocol
+commandBuffer
+originx
+originy
+width
+height
+MprovideImageToMTLTexture:commandBuffer:originx:originy:width:height:userInfo:
+v72@0:8@16@24Q32Q40Q48Q56@64
+provideImageToMTLTexture
+CIImageProcessorKernelMeta
+inputs
+	arguments
+outputs
+*processWithInputs:arguments:outputs:error:
+processWithInputs
+outputIndex
+outputFormatAtIndex:arguments:
+i28@0:8i16@20
+outputFormatAtIndex
+extents
+(applyWithExtents:inputs:arguments:error:
+@48@0:8@16@24@32^@40
+applyWithExtents
+filterWithImageURL:options:
+filterWithImageURL
+filterWithImageData:options:
+filterWithImageData
+pixelBuffer
+
+properties
++filterWithCVPixelBuffer:properties:options:
+@40@0:8^{__CVBuffer=}16@24@32
+filterWithCVPixelBuffer
+supportedRawCameraModels
+CIRenderDestination
+toDestination
+CGPoint
+atPoint
+CIRenderTask
+7startTaskToRender:fromRect:toDestination:atPoint:error:
+A@88@0:8@16{CGRect={CGPoint=dd}{CGSize=dd}}24@56{CGPoint=dd}64^@80
+startTaskToRender
+&startTaskToRender:toDestination:error:
+3prepareRender:fromRect:toDestination:atPoint:error:
+Ac88@0:8@16{CGRect={CGPoint=dd}{CGSize=dd}}24@56{CGPoint=dd}64^@80
+prepareRender
+startTaskToClear:error:
+@32@0:8@16^@24
+startTaskToClear
+NSUserActivity
+CIBarcodeDescriptor
+detectedBarcodeDescriptor
+!distanceGradientFromRedMaskFilter
+gaussianGradientFilter
+ hueSaturationValueGradientFilter
+linearGradientFilter
+radialGradientFilterˇ
+ 
+ 
+ 
+
+
+ 
+
+
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+# 
+'
+( 
+) 
+* 
+- 
+/ 
+3 
+7 
+C 
+K 
+M 
+ N
+O 
+Q 
+R
+S
+ T 
+U 
+Y 
+Z 
+ \ 
+] 
+a 
+ h 
+ i
+)j 
+l 
+ p 
+ q
+-r 
+} 
+~ 
+ Ö 
+ Ü
+2á 
+ ã
+4å 
+ï 
+4ñ 
+4† 
+≤ 
+ ∏
+:π 
+≈ 
+∆ 
+À 
+÷ 
+Ó 
+Ô 
+ö 
+ õ
+Cú 
+ ¶
+Eß 
+® 
+© 
+≤
+I≥ 
+Iµ 
+æ 
+÷ 
+ÿ 
+⁄ 
+4Â 
+Ê £S4
+0*0Há “
+ 	(
+( J0*020
+0	Há “
+ 	(( 00*0Há “
+ 	(( 00*0Há “
+ 	(( ì+0*02020
+0	Há “
+6(B (!
+"
+08$“
+ 	(%(& “
+“
+j08 " ,*0*8 02.020
+0	Há “
+ 	(%(& “
+“
+}+0*020Há “
+6(B (1
+"
+08$“
+ 	(2( “
+“
+T08",*0*802.0Há “
+ 	(2( “
+“
+P50*02020
+0	Há “
+ 	(4(& :50*020Há “
+ 	(6( 2.0*0Há “
+ 	(.( ì;0*028020
+0	Há “
+6(B (9
+"
+08$“
+ 	(:(& “
+“
+j08",*0*802<020
+0	Há “
+ 	(:(& “
+“
+};0*0280Há “
+6(B (=
+"
+08$“
+ 	(>( “
+“
+T08",*0*802<0Há “
+ 	(>( “
+“
+P@0*028020
+0	Há “
+ 	(?(& :@0*0280Há “
+ 	(A( 2B0*0Há “
+ 	(B( ìE0*028020
+0	Há “
+6(B (9
+"
+08$“
+ 	(D(& “
+“
+j08",*0*802F020
+0	Há “
+ 	(D(& “
+“
+}E0*0280Há “
+6(B (=
+"
+08$“
+ 	(G( “
+“
+T08",*0*802F0Há “
+ 	(G( “
+“
+PI0*028020
+0	Há “
+ 	(H(& :I0*0280Há “
+ 	(J( 2F0*0Há “
+ 	(F( TX0!0j`"*02L02P00Há “
+ 	(V(W vX0!0j`"*02L02P002
+[0#j`$2^0%0j`&Há “
+ 	(_(` ~X0!0j`"*02L02P002
+[0#j`$2^0%0j`&2b0'Há “
+ 	(c(d ÜX0!0j`"*02L02P002
+[0#j`$2^0%0j`&2b0'2e0'Há “
+ 	(f(g Fo0+*02k0(0j`*Há “
+ 	(m(n Fv0+*02s0,0j`.Há “
+ 	(t(u Tz0!0j`"*02w0!0j`"Há “
+ 	(x(y :|0*02L0Há “
+ 	({( 100*0/Há “
+!	(	(Ä >Ñ0*0/2Å00Há “
+"		(Ç	(É ÅÑ0*0/2Å002^0%0j`&20
+0	2à010j`3Há “
+"		(â	(ä sè05*02L02
+[0#j`$2^0%0j`&20
+0	Há “
+"		(ç	(é gí05*02L02^0%0j`&20
+0	Há “
+"		(ê	(ë sî05*02L02
+[0#j`$2^0%0j`&20
+0	Há “
+"		(ì	(é Äö05*02L02^0%0j`&20
+0	2ó
+07060Há “
+"		(ò	(ô sú05*02L02
+[0#j`$2^0%0j`&20
+0	Há “
+"		(õ	(é jü05*02L020
+0	2ó
+07060Há “
+"		(ù	(û ì§0'*02L02°082
+[0#j`$2^0%0j`&20
+0	2ó
+07060Há “
+"		(¢	(£ ì¶0'*02L02°082
+[0#j`$2^0%0j`&20
+0	2ó
+07060Há “
+"		(•	(£ á©0'*02L02°082^0%0j`&20
+0	2ó
+07060Há “
+"		(ß	(® ì´0'*02L02°082
+[0#j`$2^0%0j`&20
+0	2ó
+07060Há “
+"		(™	(£ á≠0'*02L02°082^0%0j`&20
+0	2ó
+07060Há “
+"		(¨	(® q∞0'*02L02°0820
+0	2ó
+07060Há “
+"		(Æ	(Ø S¥09*02±0820
+0	Há “
+!		(≥(& R∂09*020520
+0	Há “
+!		(µ(& sΩ09*02L02∑02B02∫00j`;20
+0	Há “
+"		(ª	(º ~Ω09*02L02∑02B02	æ02∫00j`;20
+0	Há “
+"		(ø	(¿ îΩ09*02L02∑02B02	æ02	¡02	¬02∫00j`;20
+0	Há “
+"		(√	(ƒ =…09*0<2«0=Há “
+!		(»( _…09*0<2«0=2	 0
+2Ã
+0
+0>"0
+Há “
+!		(Õ(& T…09*0<2«0=2Œ0
+0	Há “
+!		(œ(& A“0*0<2	–0=Há “
+!		(—( E’0*0<2”0Há “
+!		(‘( Z€0+*0<2«0=2◊0?2ÿ0
+0	Há “
+"		(Ÿ	(⁄ =ﬁ0=*0<2‹0=Há “
+!		(›( ;‡0=*0<2–0=Há “
+!		(ﬂ( =‚0=*0<2‹0=Há “
+!		(·( =‰08*0<2‹0=Há “
+!		(„( QÈ05*0<2Â02Ê00Há “
+"		(Á	(Ë hÌ0*0<2Í052Ê002ó
+07060Há “
+"		(Î	(Ï 20A*0@Há “
+!		(( 2Ò0A*0@Há “
+!		(Ò( 2Ú0A*0@Há “
+!		(Ú( 2Û0A*0@Há “
+!		(Û( 2Ù0A*0@Há “
+!		(Ù( 2ı0A*0@Há “
+!		(ı( 2ˆ0A*0@Há “
+!		(ˆ( 2˜0A*0@Há “
+!		(˜( 2¯0A*0@Há “
+!		(¯( 2˘0A*0@Há “
+!		(˘( 2˙0A*0@Há “
+!		(˙( 2˚0A*0@Há “
+!		(˚( 2¸0A*0@Há “
+!		(¸( 2˝0A*0@Há “
+!		(˝( 2˛0A*0@Há “
+!		(˛( 2ˇ0A*0@Há “
+!		(ˇ( 2Ä0A*0@Há “
+!		(Ä( 2Å0A*0@Há “
+!		(Å( 2Ç0A*0@Há “
+!		(Ç( 2É0A*0@Há “
+!		(É( 2Ñ0A*0@Há “
+!		(Ñ( 2Ö0A*0@Há “
+!		(Ö( 2Ü0A*0@Há “
+!		(Ü( 2á0A*0@Há “
+!		(á( 2à0A*0@Há “
+!		(à( 2â0A*0@Há “
+!		(â( 2ä0A*0@Há “
+!		(ä( 2ã0A*0@Há “
+!		(ã( 2å0A*0@Há “
+!		(å( 2ç0A*0@Há “
+!		(ç( 2é0A*0@Há “
+!		(é( 2è0A*0@Há “
+!		(è( 2ê0A*0@Há “
+!		(ê( 2ë0A*0@Há “
+!		(ë( 2í0A*0@Há “
+!		(í( 2ì0A*0@Há “
+!		(ì( 2î0A*0@Há “
+!		(î( 2ï0A*0@Há “
+!		(ï( 2ñ0A*0@Há “
+!		(ñ( 2ó0A*0@Há “
+!		(ó( 2ò0A*0@Há “
+!		(ò( é°0*02ô0
+2ù0Bj`D2û0Bj`D2
+[0#j`$2^0%0j`&20
+0	Há “
+"		(ü	(† “§0*02ô0
+2ù0Bj`D2û0Bj`D2
+[0#j`$2^0%0j`&20
+0	Há “
+7(B	 (¢
+"
+08$“
+"		(£	(† “
+“
+ß08",*0*802•0
+2ù0Bj`D2û0Bj`D2
+[0#j`$2^0%0j`&20
+0	Há “
+"		(£	(† “
+“
+ó±0+*0F20G0j`H2™0Bj`D2´0Bj`D2¨0Bj`D2ù0Bj`D2≠0Bj`D2	Æ0
+Há “
+"		(Ø	(∞ ÑΩ0+*0F2¥0J2∂0K2∑0Bj`D2∏0Bj`D2π0Bj`D2∫0Bj`D2	Æ0
+Há “
+"		(ª	(º √0'*0L2ø02¿0
+0	2¡02ó
+07060Há “
+"		(¬	(Ø W«0#j`$*0L2ƒ0#2¿0
+0	Há “
+"		(≈	(∆ ÖÀ0*0L2»02ø02¿0
+0	2ó
+07060Há “
+"		(…	(  UÕ09*0<2	±0820
+0	Há “
+!		(Ã(& Tœ09*0<20520
+0	Há “
+!		(Œ(& y‘09*0<2–0,0j`.2—0
+0	20
+0	Há “
+"		(“	(” 8’0*0<Há “
+!		(’( |›0O*02L02P002◊0M2Ÿ0N02ó
+07060Há “
+"		(€	(‹ _›0O*02L02◊0M2ó
+07060Há “
+"		(ﬁ	(û z·0'*02L02P002◊0M2Ÿ0N02ó
+07060Há “
+"		(ﬂ	(‡ W‰0O*02ˆ0M2ó
+07060Há “
+"		(‚	(„ 4Á0Q*0PHá “
+!		(Á( 2Ë09*0<Há “
+!		(Ë( 2È09*0<Há “
+!		(È( 2Í09*0<Há “
+!		(Í( 2Î09*0<Há “
+!		(Î( 2Ï09*0<Há “
+!		(Ï( ÿ
+‡
+ Í
+platform.CoreImage

@@ -1,0 +1,867 @@
+
+‡H
+kotlin
+UInt
+platform
+Matter
+MTRClusterIDType
+	clusterID
+String
+kotlinx
+cinterop
+internal
+CCall
+id
+/knifunptr_platform_Matter21_MTRClusterNameForID
+MTRClusterNameForID
+MTRAttributeIDType
+attributeID
+1knifunptr_platform_Matter22_MTRAttributeNameForID
+MTRAttributeNameForID
+MTRCommandIDType
+	commandID
+6knifunptr_platform_Matter23_MTRRequestCommandNameForID
+MTRRequestCommandNameForID
+7knifunptr_platform_Matter24_MTRResponseCommandNameForID
+MTRResponseCommandNameForID
+MTREventIDType
+eventID
+-knifunptr_platform_Matter25_MTREventNameForID
+MTREventNameForID
+
+Foundation
+NSNumber
+idleRetransmitMs
+activeRetransmitMs
+activeThresholdMs
+additionalRetransmitDelayMs
+Unit
+>knifunptr_platform_Matter26_MTRSetMessageReliabilityParameters
+"MTRSetMessageReliabilityParameters
+collections
+Set
+=knifunptr_platform_Matter27_MTRDeviceControllerStorageClasses
+!MTRDeviceControllerStorageClasses
+Long
+
+MTRLogType
+logTypeThreshold
+	Function3
+MTRLogCallback
+callback
+-knifunptr_platform_Matter28_MTRSetLogCallback
+MTRSetLogCallback
+MTRReadParams
+
+ObjCMethod
+selector
+fabricFiltered
+encoding
+@16@0:8
+isStret
+setFabricFiltered:
+
+v24@0:8@16
+setFabricFiltered
+MTRSubscribeParams
+
+Deprecated
+message
+Use factory method instead
+replaceWith
+ReplaceWith
+imports
+
+expression
+MTRSubscribeParams.create()
+level
+DeprecationLevel
+ERROR
+init
+ConsumesReceiver
+ReturnsRetained
+T
+ObjCClassOf
+ObjCFactory
+create
+MTRSubscribeParamsMeta
+new
+keepPreviousSubscriptions
+setKeepPreviousSubscriptions:
+setKeepPreviousSubscriptions
+autoResubscribe
+setAutoResubscribe:
+setAutoResubscribe
+MTRBaseDevice
+darwin
+NSObject
+dispatch_queue_t
+queue
+UShort
+posix
+uint16_t
+minInterval
+maxInterval
+params
+MTRAttributeCacheContainer
+cacheContainer
+	Function1
+List
+MTRDeviceReportHandler
+attributeReportHandler
+eventReportHandler
+NSError
+MTRDeviceErrorHandler
+errorHandler
+	Function0
+dispatch_block_t
+subscriptionEstablished
+	Function2
+'MTRDeviceResubscriptionScheduledHandler
+resubscriptionScheduled
+®subscribeWithQueue:minInterval:maxInterval:params:cacheContainer:attributeReportHandler:eventReportHandler:errorHandler:subscriptionEstablished:resubscriptionScheduled:
+*v88@0:8@16S24S28@32@40@?48@?56@?64@?72@?80
+subscribeWithQueue
+
+endpointId
+	clusterId
+attributeId
+clientQueue
+MTRDeviceResponseHandler
+
+completion
+PreadAttributeWithEndpointId:clusterId:attributeId:params:clientQueue:completion:
+v64@0:8@16@24@32@40@48@?56
+readAttributeWithEndpointId
+Any
+value
+timedWriteTimeout
+bwriteAttributeWithEndpointId:clusterId:attributeId:value:timedWriteTimeout:clientQueue:completion:
+v72@0:8@16@24@32@40@48@56@?64
+writeAttributeWithEndpointId
+	commandId
+commandFields
+timedInvokeTimeout
+hinvokeCommandWithEndpointId:clusterId:commandId:commandFields:timedInvokeTimeout:clientQueue:completion:
+invokeCommandWithEndpointId
+reportHandler
+àsubscribeAttributeWithEndpointId:clusterId:attributeId:minInterval:maxInterval:params:clientQueue:reportHandler:subscriptionEstablished:
+$v88@0:8@16@24@32@40@48@56@64@?72@?80
+ subscribeAttributeWithEndpointId
+3deregisterReportHandlersWithClientQueue:completion:
+v32@0:8@16@?24
+'deregisterReportHandlersWithClientQueue
+MTRAttributePathMeta
+MTRAttributePath
+2attributePathWithEndpointId:clusterId:attributeId:
+@40@0:8@16@24@32
+attributePathWithEndpointId
+MTREventPathMeta
+eventId
+MTREventPath
+*eventPathWithEndpointId:clusterId:eventId:
+eventPathWithEndpointId
+MTRCommandPathMeta
+MTRCommandPath
+.commandPathWithEndpointId:clusterId:commandId:
+commandPathWithEndpointId
+MTREventReport
+	timestamp
+MTRGroupsClusterAddGroupParams
+groupId
+setGroupId:
+
+setGroupId
+&MTRGroupsClusterAddGroupResponseParams
+MTRGroupsClusterViewGroupParams
+'MTRGroupsClusterViewGroupResponseParams
+!MTRGroupsClusterRemoveGroupParams
+)MTRGroupsClusterRemoveGroupResponseParams
++MTRGroupsClusterAddGroupIfIdentifyingParams
+"MTROnOffClusterOffWithEffectParams
+effectId
+setEffectId:
+setEffectId
+3MTROTASoftwareUpdateProviderClusterQueryImageParams
+vendorId
+setVendorId:
+setVendorId
+	productId
+setProductId:
+setProductId
+=MTROTASoftwareUpdateRequestorClusterAnnounceOTAProviderParams
+providerNodeId
+setProviderNodeId:
+setProviderNodeId
+2MTRDiagnosticLogsClusterRetrieveLogsResponseParams
+NSData
+content
+setContent:
+
+setContent
+	timeStamp
+setTimeStamp:
+setTimeStamp
+AMTRAdministratorCommissioningClusterOpenCommissioningWindowParams
+pakeVerifier
+setPakeVerifier:
+setPakeVerifier
+9MTROperationalCredentialsClusterAttestationResponseParams
+	signature
+setSignature:
+setSignature
+?MTROperationalCredentialsClusterAddTrustedRootCertificateParams
+rootCertificate
+setRootCertificate:
+setRootCertificate
+MTRDoorLockClusterSetUserParams
+userUniqueId
+setUserUniqueId:
+setUserUniqueId
+'MTRDoorLockClusterGetUserResponseParams
+2MTRColorControlClusterMoveToColorTemperatureParams
+colorTemperature
+setColorTemperature:
+setColorTemperature
+MTRCertificatesMeta
+MTRKeypairProtocol
+keypair
+issuerId
+fabricId
+CPointer
+ObjCObjectVar
+error
+0generateRootCertificate:issuerId:fabricId:error:
+@48@0:8@16@24@32^@40
+generateRootCertificate
+rootKeypair
+cnames
+structs
+__SecKey
+Security
+	SecKeyRef
+intermediatePublicKey
+^generateIntermediateCertificate:rootCertificate:intermediatePublicKey:issuerId:fabricId:error:
+%@64@0:8@16@24^{__SecKey=}32@40@48^@56
+generateIntermediateCertificate
+signingKeypair
+signingCertificate
+operationalPublicKey
+nodeId
+caseAuthenticatedTags
+sgenerateOperationalCertificate:signingCertificate:operationalPublicKey:fabricId:nodeId:caseAuthenticatedTags:error:
+(@72@0:8@16@24^{__SecKey=}32@40@48@56^@64
+generateOperationalCertificate
+(generateCertificateSigningRequest:error:
+@32@0:8@16^@24
+!generateCertificateSigningRequest
+MTRDeviceController
+ULong
+uint64_t
+deviceId
+%fetchAttestationChallengeForDeviceId:
+
+@24@0:8Q16
+$fetchAttestationChallengeForDeviceId
+deviceID
+MTRDeviceConnectionCallback
+completionHandler
+Boolean
+&getBaseDevice:queue:completionHandler:
+B40@0:8Q16@24@?32
+getBaseDevice
+discriminator
+uint32_t
+setupPINCode
+,pairDevice:discriminator:setupPINCode:error:
+B40@0:8Q16S24I28^@32
+
+pairDevice
+address
+port
++pairDevice:address:port:setupPINCode:error:
+B48@0:8Q16@24S32I36^@40
+onboardingPayload
+#pairDevice:onboardingPayload:error:
+B40@0:8Q16@24^@32
+MTRCommissioningParameters
+commissioningParams
++commissionDevice:commissioningParams:error:
+commissionDevice
+stopDevicePairing:error:
+B32@0:8Q16^@24
+stopDevicePairing
+!getDeviceBeingCommissioned:error:
+@32@0:8Q16^@24
+getDeviceBeingCommissioned
+
+NSUInteger
+duration
+!openPairingWindow:duration:error:
+B40@0:8Q16Q24^@32
+openPairingWindow
+setupPIN
+?openPairingWindowWithPIN:duration:discriminator:setupPIN:error:
+@56@0:8Q16Q24Q32Q40^@48
+openPairingWindowWithPIN
+setupPincode
+
+iterations
+salt
+$computePaseVerifier:iterations:salt:
+@32@0:8I16I20@24
+computePaseVerifier
+ MTRDevicePairingDelegateProtocol
+delegate
+setPairingDelegate:queue:
+v32@0:8@16@24
+setPairingDelegate
+MTRNOCChainIssuerProtocol
+nocChainIssuer
+setNocChainIssuer:queue:
+setNocChainIssuer
+controllerNodeId
+MTRBaseClusterIdentify
+device
+
+endpointID
+8MTRBaseClusterIdentify.create(device, endpointID, queue)
+ initWithDevice:endpointID:queue:
+initWithDevice
+MTRBaseClusterGroups
+6MTRBaseClusterGroups.create(device, endpointID, queue)
+MTRBaseClusterOnOff
+5MTRBaseClusterOnOff.create(device, endpointID, queue)
+MTRBaseClusterLevelControl
+<MTRBaseClusterLevelControl.create(device, endpointID, queue)
+MTRBaseClusterDescriptor
+:MTRBaseClusterDescriptor.create(device, endpointID, queue)
+MTRBaseClusterBinding
+7MTRBaseClusterBinding.create(device, endpointID, queue)
+MTRBaseClusterAccessControl
+=MTRBaseClusterAccessControl.create(device, endpointID, queue)
+MTRBaseClusterActions
+7MTRBaseClusterActions.create(device, endpointID, queue)
+MTRBaseClusterBasicInformation
+@MTRBaseClusterBasicInformation.create(device, endpointID, queue)
+'MTRBaseClusterOTASoftwareUpdateProvider
+IMTRBaseClusterOTASoftwareUpdateProvider.create(device, endpointID, queue)
+(MTRBaseClusterOTASoftwareUpdateRequestor
+JMTRBaseClusterOTASoftwareUpdateRequestor.create(device, endpointID, queue)
+'MTRBaseClusterLocalizationConfiguration
+IMTRBaseClusterLocalizationConfiguration.create(device, endpointID, queue)
+$MTRBaseClusterTimeFormatLocalization
+FMTRBaseClusterTimeFormatLocalization.create(device, endpointID, queue)
+MTRBaseClusterUnitLocalization
+@MTRBaseClusterUnitLocalization.create(device, endpointID, queue)
+&MTRBaseClusterPowerSourceConfiguration
+HMTRBaseClusterPowerSourceConfiguration.create(device, endpointID, queue)
+MTRBaseClusterPowerSource
+;MTRBaseClusterPowerSource.create(device, endpointID, queue)
+"MTRBaseClusterGeneralCommissioning
+DMTRBaseClusterGeneralCommissioning.create(device, endpointID, queue)
+"MTRBaseClusterNetworkCommissioning
+DMTRBaseClusterNetworkCommissioning.create(device, endpointID, queue)
+MTRBaseClusterDiagnosticLogs
+>MTRBaseClusterDiagnosticLogs.create(device, endpointID, queue)
+ MTRBaseClusterGeneralDiagnostics
+BMTRBaseClusterGeneralDiagnostics.create(device, endpointID, queue)
+!MTRBaseClusterSoftwareDiagnostics
+CMTRBaseClusterSoftwareDiagnostics.create(device, endpointID, queue)
+&MTRBaseClusterThreadNetworkDiagnostics
+HMTRBaseClusterThreadNetworkDiagnostics.create(device, endpointID, queue)–
+ 
+  
+
+
+ 
+  
+
+
+	
+
+ 
+ 
+ 
+ 
+
+ 
+ " 
+ %
+& 
+ ) 
+* 
+ , 
+- 
+1 
+2 
+; 
+ < 
+ @ 
+ E 
+	H 
+	I 
+K 
+L 
+N 
+V 
+W
+"X 
+"Y 
+ [ 
+\
+&] 
+a 
+ c 
+d 
+e 
+h 
+i 
+ k 
+"l 
+ n 
+o 
+x 
+ } 
+è 
+ê 
+î 
+ñ 
+ô 
+ö 
+ù 
+ü 
+£ 
+§ 
+• 
+¶ 
+ß 
+® 
+© 
+≠ 
+¥ 
+∏ 
+π 
+¿ 
+ƒ 
+» 
+Ã 
+– 
+— 
+’ 
+÷ 
+⁄ 
+€ 
+·
+Q‚
+R„ 
+‰
+TÂ 
+ı 
+ ˆ 
+&˜ 
+˝ 
+ ˇ 
+&Ñ 
+ê 
+"ö 
+© 
+Æ 
+≥ 
+π 
+ª 
+Ω 
+ø 
+¡ 
+√ 
+≈ 
+« 
+… 
+À 
+Õ 
+œ 
+— 
+” 
+’ 
+◊ 
+Ÿ 
+€ 
+› 
+ﬂ 
+· é`&02
+0j`Há “
+	(202
+0j`2
+0j`
+Há “
+	(202
+0j`2
+0j`Há “
+	(202
+0j`2
+0j`Há “
+	(202
+0j`2
+0j`Há “
+	(@$020202 02!0Há “
+	(#(0Há “
+	('T002
++0j`2..*0j`0000j`Há “
+	(/240*0Há “
+ 3(45(67 ::0*0240Há “
+ 3(85(97 sG0*0Há “
+6=(>?BAB(C
+D
+08F“
+ 3(G5(67 “
+“
+JM8 " J*0*8 0Há “
+ 3(G5(67 “
+“
+0O0*0 Há “
+ 3(O5(67 2P0*0Há “
+ 3(P5(67 :R0*02P0Há “
+ 3(Q5(97 2S0*0Há “
+ 3(S5(67 :U0*02S0Há “
+ 3(T5(97 äs0*0!2Z
+0#j`$2
+^0%j`'2
+_0%j`'2`02b0(2 f
+0*00)j`+2 g
+0*00)j`+2j0,00)j`-2m00.j`/2$p 0,0000j`1Há “
+ 3(q5(r7 í|0*0!2t02u02v02`02w
+0#j`$2(y$
+0*0,000j`2Há “
+ 3(z5({7 óÇ0*0!2t02u02v02~03202w
+0#j`$2(y$
+0*0,000j`2Há “
+"	3(Ä	5(Å7 öá0*0!2t02u02É02Ñ032	Ö02w
+0#j`$2(y$
+0*0,000j`2Há “
+"	3(Ü	5(Å7 ºã0*0!2t02u02v02^02_02`02w
+0#j`$2)à$
+0*0,000j`22m00.j`/Há “
+"	3(â	5(ä7 Yé0*0!2Z
+0#j`$2y00.j`/Há “
+"	3(å	5(ç7 Kì05*042t02u02v0Há “
+"	3(ë	5(í7 Lò07*062t02u02ï0Há “
+"	3(ó	5(í7 Lú09*082t02u02É0Há “
+"	3(õ	5(í7 2û0*0:Há “
+!	3(û5(67 2†0*0;Há “
+!	3(†5(67 ;¢0*0;2†0Há “
+!	3(°5(97 2†0*0<Há “
+!	3(†5(67 ;¢0*0<2†0Há “
+!	3(°5(97 2†0*0=Há “
+!	3(†5(67 ;¢0*0=2†0Há “
+!	3(°5(97 2†0*0>Há “
+!	3(†5(67 ;¢0*0>2†0Há “
+!	3(°5(97 2†0*0?Há “
+!	3(†5(67 ;¢0*0?2†0Há “
+!	3(°5(97 2†0*0@Há “
+!	3(†5(67 ;¢0*0@2†0Há “
+!	3(°5(97 2†0*0AHá “
+!	3(†5(67 ;¢0*0A2†0Há “
+!	3(°5(97 2™0*0BHá “
+!	3(™5(67 ;¨0*0B2™0Há “
+!	3(´5(97 2Æ0*0CHá “
+!	3(Æ5(67 ;∞0*0C2Æ0Há “
+!	3(Ø5(97 2±0*0CHá “
+!	3(±5(67 ;≥0*0C2±0Há “
+!	3(≤5(97 2µ0*0DHá “
+!	3(µ5(67 ;∑0*0D2µ0Há “
+!	3(∂5(97 2Æ0*0DHá “
+!	3(Æ5(67 ;∞0*0D2Æ0Há “
+!	3(Ø5(97 2∫0F*0EHá “
+!	3(∫5(67 ;º0*0E2∫0FHá “
+!	3(ª5(97 4Ω0*0EHá “
+!	3(Ω5(67 =ø0*0E2	Ω0Há “
+!	3(æ5(97 2¡0F*0GHá “
+!	3(¡5(67 ;√0*0G2¡0FHá “
+!	3(¬5(97 2≈0F*0HHá “
+!	3(≈5(67 ;«0*0H2≈0FHá “
+!	3(∆5(97 2…0F*0IHá “
+!	3(…5(67 ;À0*0I2…0FHá “
+!	3( 5(97 4Õ0*0JHá “
+!	3(Õ5(67 =œ0*0J2	Õ0Há “
+!	3(Œ5(97 4Õ0*0KHá “
+!	3(Õ5(67 =œ0*0K2	Õ0Há “
+!	3(Œ5(97 2“0*0LHá “
+!	3(“5(67 ;‘0*0L2“0Há “
+!	3(”5(97 mﬂ0F*0M2◊0N2	ÿ02	Ÿ02‹
+0,0P0OHá “
+"	3(›	5(ﬁ7 çÈ0F*0M2‡0N2…0F2Ê0S0Oj`U2	ÿ02	Ÿ02‹
+0,0P0OHá “
+"	3(Á	5(Ë7 òÒ0F*0M2Í0N2Î0F2Ï0S0Oj`U2Ÿ02Ì02Ó0*2‹
+0,0P0OHá “
+"	3(Ô	5(7 WÙ0F*0M2◊0N2‹
+0,0P0OHá “
+"	3(Ú	5(Û7 B˚0F*0V2¯0Wj`XHá “
+"	3(˘	5(˙7 wÇ0Z*0V2¸0Wj`X2Z
+0#j`$2%˛ 0!0,000j`YHá “
+"	3(Ä	5(Å7 sà0Z*0V2¸0Wj`X2É0%j`'2Ö0j`[2‹
+0,0P0OHá “
+"	3(Ü	5(á7 |à0Z*0V2¸0Wj`X2â02ä0%j`'2Ö0j`[2‹
+0,0P0OHá “
+"	3(ã	5(å7 bà0Z*0V2¸0Wj`X2ç02‹
+0,0P0OHá “
+"	3(é	5(è7 bì0Z*0V2¯0Wj`X2ë0\2‹
+0,0P0OHá “
+"	3(í	5(è7 Yñ0Z*0V2¸0Wj`X2‹
+0,0P0OHá “
+"	3(î	5(ï7 [ô0!*0V2¯0Wj`X2‹
+0,0P0OHá “
+"	3(ó	5(ò7 fû0Z*0V2¸0Wj`X2õ0Wj`]2‹
+0,0P0OHá “
+"	3(ú	5(ù7 Ç¢0*0V2¸0Wj`X2õ0Wj`]2É0Wj`]2ü0Wj`]2‹
+0,0P0OHá “
+"	3(†	5(°7 X®0F*0V2£0j`[2§0j`[2•0FHá “
+"	3(¶	5(ß7 L≠0*0V2™0^2Z
+0#j`$Há “
+"	3(´	5(¨7 L±0*0V2Ø0_2Z
+0#j`$Há “
+"	3(∞	5(¨7 4≤0*0VHá “
+!	3(≤5(67 õ∏0`*0`2¥0!2µ02Z
+0#j`$Há “
+7=(>?BA	B(∂
+D
+08F“
+"	3(∑	5(í7 “
+“
+pM8"J*0`*802¥0!2µ02Z
+0#j`$Há “
+"	3(∑	5(í7 “
+“
+õ∏0a*0a2¥0!2µ02Z
+0#j`$Há “
+7=(>?BA	B(∫
+D
+08F“
+"	3(∑	5(í7 “
+“
+pM8"J*0a*802¥0!2µ02Z
+0#j`$Há “
+"	3(∑	5(í7 “
+“
+õ∏0b*0b2¥0!2µ02Z
+0#j`$Há “
+7=(>?BA	B(º
+D
+08F“
+"	3(∑	5(í7 “
+“
+pM8"J*0b*802¥0!2µ02Z
+0#j`$Há “
+"	3(∑	5(í7 “
+“
+õ∏0c*0c2¥0!2µ02Z
+0#j`$Há “
+7=(>?BA	B(æ
+D
+08F“
+"	3(∑	5(í7 “
+“
+pM8"J*0c*802¥0!2µ02Z
+0#j`$Há “
+"	3(∑	5(í7 “
+“
+õ∏0d*0d2¥0!2µ02Z
+0#j`$Há “
+7=(>?BA	B(¿
+D
+08F“
+"	3(∑	5(í7 “
+“
+pM8"J*0d*802¥0!2µ02Z
+0#j`$Há “
+"	3(∑	5(í7 “
+“
+õ∏0e*0e2¥0!2µ02Z
+0#j`$Há “
+7=(>?BA	B(¬
+D
+08F“
+"	3(∑	5(í7 “
+“
+pM8"J*0e*802¥0!2µ02Z
+0#j`$Há “
+"	3(∑	5(í7 “
+“
+õ∏0f*0f2¥0!2µ02Z
+0#j`$Há “
+7=(>?BA	B(ƒ
+D
+08F“
+"	3(∑	5(í7 “
+“
+pM8"J*0f*802¥0!2µ02Z
+0#j`$Há “
+"	3(∑	5(í7 “
+“
+õ∏0g*0g2¥0!2µ02Z
+0#j`$Há “
+7=(>?BA	B(∆
+D
+08F“
+"	3(∑	5(í7 “
+“
+pM8"J*0g*802¥0!2µ02Z
+0#j`$Há “
+"	3(∑	5(í7 “
+“
+õ∏0h*0h2¥0!2µ02Z
+0#j`$Há “
+7=(>?BA	B(»
+D
+08F“
+"	3(∑	5(í7 “
+“
+pM8	"	J*0h*8	02¥0!2µ02Z
+0#j`$Há “
+"	3(∑	5(í7 “
+“
+õ∏0i*0i2¥0!2µ02Z
+0#j`$Há “
+7=(>?BA	B( 
+D
+08F“
+"	3(∑	5(í7 “
+“
+pM8
+"
+J*0i*8
+02¥0!2µ02Z
+0#j`$Há “
+"	3(∑	5(í7 “
+“
+õ∏0j*0j2¥0!2µ02Z
+0#j`$Há “
+7=(>?BA	B(Ã
+D
+08F“
+"	3(∑	5(í7 “
+“
+pM8"J*0j*802¥0!2µ02Z
+0#j`$Há “
+"	3(∑	5(í7 “
+“
+õ∏0k*0k2¥0!2µ02Z
+0#j`$Há “
+7=(>?BA	B(Œ
+D
+08F“
+"	3(∑	5(í7 “
+“
+pM8"J*0k*802¥0!2µ02Z
+0#j`$Há “
+"	3(∑	5(í7 “
+“
+õ∏0l*0l2¥0!2µ02Z
+0#j`$Há “
+7=(>?BA	B(–
+D
+08F“
+"	3(∑	5(í7 “
+“
+pM8"J*0l*802¥0!2µ02Z
+0#j`$Há “
+"	3(∑	5(í7 “
+“
+õ∏0m*0m2¥0!2µ02Z
+0#j`$Há “
+7=(>?BA	B(“
+D
+08F“
+"	3(∑	5(í7 “
+“
+pM8"J*0m*802¥0!2µ02Z
+0#j`$Há “
+"	3(∑	5(í7 “
+“
+õ∏0n*0n2¥0!2µ02Z
+0#j`$Há “
+7=(>?BA	B(‘
+D
+08F“
+"	3(∑	5(í7 “
+“
+pM8"J*0n*802¥0!2µ02Z
+0#j`$Há “
+"	3(∑	5(í7 “
+“
+õ∏0o*0o2¥0!2µ02Z
+0#j`$Há “
+7=(>?BA	B(÷
+D
+08F“
+"	3(∑	5(í7 “
+“
+pM8"J*0o*802¥0!2µ02Z
+0#j`$Há “
+"	3(∑	5(í7 “
+“
+õ∏0p*0p2¥0!2µ02Z
+0#j`$Há “
+7=(>?BA	B(ÿ
+D
+08F“
+"	3(∑	5(í7 “
+“
+pM8"J*0p*802¥0!2µ02Z
+0#j`$Há “
+"	3(∑	5(í7 “
+“
+õ∏0q*0q2¥0!2µ02Z
+0#j`$Há “
+7=(>?BA	B(⁄
+D
+08F“
+"	3(∑	5(í7 “
+“
+pM8"J*0q*802¥0!2µ02Z
+0#j`$Há “
+"	3(∑	5(í7 “
+“
+õ∏0r*0r2¥0!2µ02Z
+0#j`$Há “
+7=(>?BA	B(‹
+D
+08F“
+"	3(∑	5(í7 “
+“
+pM8"J*0r*802¥0!2µ02Z
+0#j`$Há “
+"	3(∑	5(í7 “
+“
+õ∏0s*0s2¥0!2µ02Z
+0#j`$Há “
+7=(>?BA	B(ﬁ
+D
+08F“
+"	3(∑	5(í7 “
+“
+pM8"J*0s*802¥0!2µ02Z
+0#j`$Há “
+"	3(∑	5(í7 “
+“
+õ∏0t*0t2¥0!2µ02Z
+0#j`$Há “
+7=(>?BA	B(‡
+D
+08F“
+"	3(∑	5(í7 “
+“
+pM8"J*0t*802¥0!2µ02Z
+0#j`$Há “
+"	3(∑	5(í7 “
+“
+õ∏0u*0u2¥0!2µ02Z
+0#j`$Há “
+7=(>?BA	B(‚
+D
+08F“
+"	3(∑	5(í7 “
+“
+ÿ
+‡
+ Í
+platform.Matter
