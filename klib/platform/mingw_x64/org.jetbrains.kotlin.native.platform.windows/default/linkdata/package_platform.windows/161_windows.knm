@@ -1,50 +1,29 @@
 
-±p
+éq
+kotlin
+String
 kotlinx
 cinterop
-CPointer
-UShortVarOf
-kotlin
-UShort
-platform
-windows
-WCHARVar
-LPWSTR
-lpBuffer
-	UIntVarOf
-UInt
-DWORDVar
-LPDWORD
-	pcbBuffer
-Int
-WINBOOL
 internal
 CCall
-id
-+knifunptr_platform_windows1152_GetUserNameW
-GetUserNameW
-String
 CString
 lpszUsername
 
 lpszDomain
 lpszPassword
+UInt
+platform
+windows
 DWORD
 dwLogonType
 dwLogonProvider
+CPointer
 CPointerVarOf
 CPointed
 HANDLE
 	HANDLEVar
 PHANDLE
 phToken
-)knifunptr_platform_windows1153_LogonUserA
-
-LogonUserA
-WCString
-)knifunptr_platform_windows1154_LogonUserW
-
-LogonUserW
 
 CValuesRef
 PSID
@@ -54,13 +33,20 @@ ppLogonSid
 PVOID
 PVOIDVar
 ppProfileBuffer
+	UIntVarOf
+DWORDVar
+LPDWORD
 pdwProfileLength
 _QUOTA_LIMITS
 PQUOTA_LIMITS
 pQuotaLimits
-+knifunptr_platform_windows1155_LogonUserExA
+Int
+WINBOOL
+id
++knifunptr_platform_windows1152_LogonUserExA
 LogonUserExA
-+knifunptr_platform_windows1156_LogonUserExW
+WCString
++knifunptr_platform_windows1153_LogonUserExW
 LogonUserExW
 hToken
 lpApplicationName
@@ -84,7 +70,7 @@ ppLogonSid
 _PROCESS_INFORMATION
 LPPROCESS_INFORMATION
 lpProcessInformation
-3knifunptr_platform_windows1157_CreateProcessAsUserA
+3knifunptr_platform_windows1154_CreateProcessAsUserA
 CreateProcessAsUserA
 
 lpUsername
@@ -92,14 +78,18 @@ lpUsername
 
 lpPassword
 dwLogonFlags
+UShortVarOf
+UShort
+WCHARVar
+LPWSTR
 _STARTUPINFOW
 LPSTARTUPINFOW
-6knifunptr_platform_windows1158_CreateProcessWithLogonW
+6knifunptr_platform_windows1155_CreateProcessWithLogonW
 CreateProcessWithLogonW
-6knifunptr_platform_windows1159_CreateProcessWithTokenW
+6knifunptr_platform_windows1156_CreateProcessWithTokenW
 CreateProcessWithTokenW
 TokenHandle
-/knifunptr_platform_windows1160_IsTokenUntrusted
+/knifunptr_platform_windows1157_IsTokenUntrusted
 IsTokenUntrusted
 phNewWaitObject
 hObject
@@ -114,11 +104,11 @@ lpPassword
 ULONG
 dwMilliseconds
 dwFlags
-:knifunptr_platform_windows1161_RegisterWaitForSingleObject
+:knifunptr_platform_windows1158_RegisterWaitForSingleObject
 RegisterWaitForSingleObject
 
 WaitHandle
--knifunptr_platform_windows1162_UnregisterWait
+-knifunptr_platform_windows1159_UnregisterWait
 UnregisterWait
 
 FileHandle
@@ -128,7 +118,7 @@ FileHandle
 LPOVERLAPPED_COMPLETION_ROUTINE
 Function
 Flags
-7knifunptr_platform_windows1163_BindIoCompletionCallback
+7knifunptr_platform_windows1160_BindIoCompletionCallback
 BindIoCompletionCallback
 
 TimerQueue
@@ -136,35 +126,35 @@ TimerQueue
 DueTime
 Period
 PreferIo
-1knifunptr_platform_windows1164_SetTimerQueueTimer
+1knifunptr_platform_windows1161_SetTimerQueueTimer
 SetTimerQueueTimer
 Timer
-4knifunptr_platform_windows1165_CancelTimerQueueTimer
+4knifunptr_platform_windows1162_CancelTimerQueueTimer
 CancelTimerQueueTimer
-/knifunptr_platform_windows1166_DeleteTimerQueue
+/knifunptr_platform_windows1163_DeleteTimerQueue
 DeleteTimerQueue
 lpPrivateNamespaceAttributes
 lpBoundaryDescriptor
 lpAliasPrefix
-6knifunptr_platform_windows1167_CreatePrivateNamespaceA
+6knifunptr_platform_windows1164_CreatePrivateNamespaceA
 CreatePrivateNamespaceA
-4knifunptr_platform_windows1168_OpenPrivateNamespaceA
+4knifunptr_platform_windows1165_OpenPrivateNamespaceA
 OpenPrivateNamespaceA
 Name
-8knifunptr_platform_windows1169_CreateBoundaryDescriptorA
+8knifunptr_platform_windows1166_CreateBoundaryDescriptorA
 CreateBoundaryDescriptorA
 BoundaryDescriptor
 IntegrityLabel
-Dknifunptr_platform_windows1170_AddIntegrityLabelToBoundaryDescriptor
+Dknifunptr_platform_windows1167_AddIntegrityLabelToBoundaryDescriptor
 %AddIntegrityLabelToBoundaryDescriptor
 tagHW_PROFILE_INFOA
 LPHW_PROFILE_INFOA
 lpHwProfileInfo
-3knifunptr_platform_windows1171_GetCurrentHwProfileA
+3knifunptr_platform_windows1168_GetCurrentHwProfileA
 GetCurrentHwProfileA
 tagHW_PROFILE_INFOW
 LPHW_PROFILE_INFOW
-3knifunptr_platform_windows1172_GetCurrentHwProfileW
+3knifunptr_platform_windows1169_GetCurrentHwProfileW
 GetCurrentHwProfileW
 _OSVERSIONINFOEXA
 LPOSVERSIONINFOEXA
@@ -174,11 +164,11 @@ dwTypeMask
 ULong
 	DWORDLONG
 dwlConditionMask
-1knifunptr_platform_windows1173_VerifyVersionInfoA
+1knifunptr_platform_windows1170_VerifyVersionInfoA
 VerifyVersionInfoA
 _OSVERSIONINFOEXW
 LPOSVERSIONINFOEXW
-1knifunptr_platform_windows1174_VerifyVersionInfoW
+1knifunptr_platform_windows1171_VerifyVersionInfoW
 VerifyVersionInfoW
 _TIME_ZONE_INFORMATION
 TIME_ZONE_INFORMATION
@@ -189,48 +179,48 @@ SYSTEMTIME
 lpUniversalTime
 LPSYSTEMTIME
 lpLocalTime
->knifunptr_platform_windows1175_SystemTimeToTzSpecificLocalTime
+>knifunptr_platform_windows1172_SystemTimeToTzSpecificLocalTime
 SystemTimeToTzSpecificLocalTime
->knifunptr_platform_windows1176_TzSpecificLocalTimeToSystemTime
+>knifunptr_platform_windows1173_TzSpecificLocalTimeToSystemTime
 TzSpecificLocalTimeToSystemTime
 	_FILETIME
 FILETIME
 
 lpFileTime
 lpSystemTime
-3knifunptr_platform_windows1177_FileTimeToSystemTime
+3knifunptr_platform_windows1174_FileTimeToSystemTime
 FileTimeToSystemTime
 
 LPFILETIME
-3knifunptr_platform_windows1178_SystemTimeToFileTime
+3knifunptr_platform_windows1175_SystemTimeToFileTime
 SystemTimeToFileTime
 LPTIME_ZONE_INFORMATION
-5knifunptr_platform_windows1179_GetTimeZoneInformation
+5knifunptr_platform_windows1176_GetTimeZoneInformation
 GetTimeZoneInformation
 _TIME_DYNAMIC_ZONE_INFORMATION
 PDYNAMIC_TIME_ZONE_INFORMATION
 pTimeZoneInformation
-<knifunptr_platform_windows1180_GetDynamicTimeZoneInformation
+<knifunptr_platform_windows1177_GetDynamicTimeZoneInformation
 GetDynamicTimeZoneInformation
 USHORT
 wYear
 pdtzi
 ptzi
-<knifunptr_platform_windows1181_GetTimeZoneInformationForYear
+<knifunptr_platform_windows1178_GetTimeZoneInformationForYear
 GetTimeZoneInformationForYear
-5knifunptr_platform_windows1182_SetTimeZoneInformation
+5knifunptr_platform_windows1179_SetTimeZoneInformation
 SetTimeZoneInformation
 DYNAMIC_TIME_ZONE_INFORMATION
-<knifunptr_platform_windows1183_SetDynamicTimeZoneInformation
+<knifunptr_platform_windows1180_SetDynamicTimeZoneInformation
 SetDynamicTimeZoneInformation
 _SYSTEM_POWER_STATUS
 LPSYSTEM_POWER_STATUS
 lpSystemPowerStatus
-3knifunptr_platform_windows1184_GetSystemPowerStatus
+3knifunptr_platform_windows1181_GetSystemPowerStatus
 GetSystemPowerStatus
 fSuspend
 fForce
-2knifunptr_platform_windows1185_SetSystemPowerState
+2knifunptr_platform_windows1182_SetSystemPowerState
 SetSystemPowerState
 hProcess
 
@@ -240,122 +230,122 @@ ULongVarOf
 PULONG_PTR
 NumberOfPages
 	PageArray
-8knifunptr_platform_windows1186_AllocateUserPhysicalPages
+8knifunptr_platform_windows1183_AllocateUserPhysicalPages
 AllocateUserPhysicalPages
-4knifunptr_platform_windows1187_FreeUserPhysicalPages
+4knifunptr_platform_windows1184_FreeUserPhysicalPages
 FreeUserPhysicalPages
 VirtualAddress
 	ULONG_PTR
-3knifunptr_platform_windows1188_MapUserPhysicalPages
+3knifunptr_platform_windows1185_MapUserPhysicalPages
 MapUserPhysicalPages
 VirtualAddresses
-:knifunptr_platform_windows1189_MapUserPhysicalPagesScatter
+:knifunptr_platform_windows1186_MapUserPhysicalPagesScatter
 MapUserPhysicalPagesScatter
 lpJobAttributes
 lpName
-/knifunptr_platform_windows1190_CreateJobObjectA
+/knifunptr_platform_windows1187_CreateJobObjectA
 CreateJobObjectA
-/knifunptr_platform_windows1191_CreateJobObjectW
+/knifunptr_platform_windows1188_CreateJobObjectW
 CreateJobObjectW
 dwDesiredAccess
 bInheritHandle
--knifunptr_platform_windows1192_OpenJobObjectA
+-knifunptr_platform_windows1189_OpenJobObjectA
 OpenJobObjectA
--knifunptr_platform_windows1193_OpenJobObjectW
+-knifunptr_platform_windows1190_OpenJobObjectW
 OpenJobObjectW
 hJob
-7knifunptr_platform_windows1194_AssignProcessToJobObject
+7knifunptr_platform_windows1191_AssignProcessToJobObject
 AssignProcessToJobObject
 UINT
 	uExitCode
-1knifunptr_platform_windows1195_TerminateJobObject
+1knifunptr_platform_windows1192_TerminateJobObject
 TerminateJobObject
 JOBOBJECTINFOCLASS
 JobObjectInformationClass
 lpJobObjectInformation
 cbJobObjectInformationLength
 lpReturnLength
-8knifunptr_platform_windows1196_QueryInformationJobObject
+8knifunptr_platform_windows1193_QueryInformationJobObject
 QueryInformationJobObject
-6knifunptr_platform_windows1197_SetInformationJobObject
+6knifunptr_platform_windows1194_SetInformationJobObject
 SetInformationJobObject
 NumJob
 _JOB_SET_ARRAY
 PJOB_SET_ARRAY
 
 UserJobSet
-+knifunptr_platform_windows1198_CreateJobSet
++knifunptr_platform_windows1195_CreateJobSet
 CreateJobSet
 lpszVolumeName
 cchBufferLength
-/knifunptr_platform_windows1199_FindFirstVolumeA
+/knifunptr_platform_windows1196_FindFirstVolumeA
 FindFirstVolumeA
 hFindVolume
-.knifunptr_platform_windows1200_FindNextVolumeA
+.knifunptr_platform_windows1197_FindNextVolumeA
 FindNextVolumeA
 lpszRootPathName
 lpszVolumeMountPoint
-9knifunptr_platform_windows1201_FindFirstVolumeMountPointA
+9knifunptr_platform_windows1198_FindFirstVolumeMountPointA
 FindFirstVolumeMountPointA
-9knifunptr_platform_windows1202_FindFirstVolumeMountPointW
+9knifunptr_platform_windows1199_FindFirstVolumeMountPointW
 FindFirstVolumeMountPointW
 hFindVolumeMountPoint
-8knifunptr_platform_windows1203_FindNextVolumeMountPointA
+8knifunptr_platform_windows1200_FindNextVolumeMountPointA
 FindNextVolumeMountPointA
-8knifunptr_platform_windows1204_FindNextVolumeMountPointW
+8knifunptr_platform_windows1201_FindNextVolumeMountPointW
 FindNextVolumeMountPointW
-8knifunptr_platform_windows1205_FindVolumeMountPointClose
+8knifunptr_platform_windows1202_FindVolumeMountPointClose
 FindVolumeMountPointClose
-3knifunptr_platform_windows1206_SetVolumeMountPointA
+3knifunptr_platform_windows1203_SetVolumeMountPointA
 SetVolumeMountPointA
-3knifunptr_platform_windows1207_SetVolumeMountPointW
+3knifunptr_platform_windows1204_SetVolumeMountPointW
 SetVolumeMountPointW
-6knifunptr_platform_windows1208_DeleteVolumeMountPointA
+6knifunptr_platform_windows1205_DeleteVolumeMountPointA
 DeleteVolumeMountPointA
-@knifunptr_platform_windows1209_GetVolumeNameForVolumeMountPointA
+@knifunptr_platform_windows1206_GetVolumeNameForVolumeMountPointA
 !GetVolumeNameForVolumeMountPointA
 lpszFileName
 lpszVolumePathName
-1knifunptr_platform_windows1210_GetVolumePathNameA
+1knifunptr_platform_windows1207_GetVolumePathNameA
 GetVolumePathNameA
 LPCH
 lpszVolumePathNames
 PDWORD
 lpcchReturnLength
-?knifunptr_platform_windows1211_GetVolumePathNamesForVolumeNameA
+?knifunptr_platform_windows1208_GetVolumePathNamesForVolumeNameA
  GetVolumePathNamesForVolumeNameA
 nndPreferred
-<knifunptr_platform_windows1212_AllocateUserPhysicalPagesNuma
+<knifunptr_platform_windows1209_AllocateUserPhysicalPagesNuma
 AllocateUserPhysicalPagesNuma
 
 tagACTCTXA
 ACTCTXA
 	PCACTCTXA
 pActCtx
-,knifunptr_platform_windows1213_CreateActCtxA
+,knifunptr_platform_windows1210_CreateActCtxA
 CreateActCtxA
 
 tagACTCTXW
 ACTCTXW
 	PCACTCTXW
-,knifunptr_platform_windows1214_CreateActCtxW
+,knifunptr_platform_windows1211_CreateActCtxW
 CreateActCtxW
 hActCtx
-+knifunptr_platform_windows1215_AddRefActCtx
++knifunptr_platform_windows1212_AddRefActCtx
 AddRefActCtx
-,knifunptr_platform_windows1216_ReleaseActCtx
+,knifunptr_platform_windows1213_ReleaseActCtx
 ReleaseActCtx
-,knifunptr_platform_windows1217_ZombifyActCtx
+,knifunptr_platform_windows1214_ZombifyActCtx
 ZombifyActCtx
 ULONG_PTRVar
 lpCookie
--knifunptr_platform_windows1218_ActivateActCtx
+-knifunptr_platform_windows1215_ActivateActCtx
 ActivateActCtx
 ulCookie
-/knifunptr_platform_windows1219_DeactivateActCtx
+/knifunptr_platform_windows1216_DeactivateActCtx
 DeactivateActCtx
 	lphActCtx
-/knifunptr_platform_windows1220_GetCurrentActCtx
+/knifunptr_platform_windows1217_GetCurrentActCtx
 GetCurrentActCtx
 posix
 _GUID
@@ -366,12 +356,12 @@ tagACTCTXW
 tagACTCTX_SECTION_KEYED_DATA
 PACTCTX_SECTION_KEYED_DATA
 ReturnedData
-7knifunptr_platform_windows1221_FindActCtxSectionStringA
+7knifunptr_platform_windows1218_FindActCtxSectionStringA
 FindActCtxSectionStringA
-7knifunptr_platform_windows1222_FindActCtxSectionStringW
+7knifunptr_platform_windows1219_FindActCtxSectionStringW
 FindActCtxSectionStringW
 lpGuidToFind
-4knifunptr_platform_windows1223_FindActCtxSectionGuid
+4knifunptr_platform_windows1220_FindActCtxSectionGuid
 FindActCtxSectionGuid
 pvSubInstance
 ulInfoClass
@@ -380,9 +370,9 @@ tagACTCTXW
 cbBuffer
 	SIZE_TVar
 pcbWrittenOrRequired
-+knifunptr_platform_windows1224_QueryActCtxW
++knifunptr_platform_windows1221_QueryActCtxW
 QueryActCtxW
-;knifunptr_platform_windows1225_WTSGetActiveConsoleSessionId
+;knifunptr_platform_windows1222_WTSGetActiveConsoleSessionId
 WTSGetActiveConsoleSessionId
 UCHAR
 	Processor
@@ -392,43 +382,43 @@ UByteVarOf
 PUCHAR
 
 NodeNumber
-3knifunptr_platform_windows1226_GetNumaProcessorNode
+3knifunptr_platform_windows1223_GetNumaProcessorNode
 GetNumaProcessorNode
 Node
 ULONGLONGVar
 
 PULONGLONG
 ProcessorMask
-7knifunptr_platform_windows1227_GetNumaNodeProcessorMask
+7knifunptr_platform_windows1224_GetNumaNodeProcessorMask
 GetNumaNodeProcessorMask
 AvailableBytes
-9knifunptr_platform_windows1228_GetNumaAvailableMemoryNode
+9knifunptr_platform_windows1225_GetNumaAvailableMemoryNode
 GetNumaAvailableMemoryNode
 ProximityId
-3knifunptr_platform_windows1229_GetNumaProximityNode
+3knifunptr_platform_windows1226_GetNumaProximityNode
 GetNumaProximityNode
 WORD
-;knifunptr_platform_windows1230_GetActiveProcessorGroupCount
+;knifunptr_platform_windows1227_GetActiveProcessorGroupCount
 GetActiveProcessorGroupCount
-<knifunptr_platform_windows1231_GetMaximumProcessorGroupCount
+<knifunptr_platform_windows1228_GetMaximumProcessorGroupCount
 GetMaximumProcessorGroupCount
 GroupNumber
-6knifunptr_platform_windows1232_GetActiveProcessorCount
+6knifunptr_platform_windows1229_GetActiveProcessorCount
 GetActiveProcessorCount
-7knifunptr_platform_windows1233_GetMaximumProcessorCount
+7knifunptr_platform_windows1230_GetMaximumProcessorCount
 GetMaximumProcessorCount
 hFile
 	USHORTVar
 PUSHORT
-:knifunptr_platform_windows1234_GetNumaNodeNumberFromHandle
+:knifunptr_platform_windows1231_GetNumaNodeNumberFromHandle
 GetNumaNodeNumberFromHandle
 _PROCESSOR_NUMBER
 PPROCESSOR_NUMBER
-5knifunptr_platform_windows1235_GetNumaProcessorNodeEx
+5knifunptr_platform_windows1232_GetNumaProcessorNodeEx
 GetNumaProcessorNodeEx
-;knifunptr_platform_windows1236_GetNumaAvailableMemoryNodeEx
+;knifunptr_platform_windows1233_GetNumaAvailableMemoryNodeEx
 GetNumaAvailableMemoryNodeEx
-5knifunptr_platform_windows1237_GetNumaProximityNodeEx
+5knifunptr_platform_windows1234_GetNumaProximityNodeEx
 GetNumaProximityNodeEx
 	Function1
 APPLICATION_RECOVERY_CALLBACK
@@ -436,43 +426,43 @@ PULONGLONG
 pvParameter
 dwPingInterval
 HRESULT
-Bknifunptr_platform_windows1238_RegisterApplicationRecoveryCallback
+Bknifunptr_platform_windows1235_RegisterApplicationRecoveryCallback
 #RegisterApplicationRecoveryCallback
-Dknifunptr_platform_windows1239_UnregisterApplicationRecoveryCallback
+Dknifunptr_platform_windows1236_UnregisterApplicationRecoveryCallback
 %UnregisterApplicationRecoveryCallback
 PCWSTR
 pwzCommandline
-9knifunptr_platform_windows1240_RegisterApplicationRestart
+9knifunptr_platform_windows1237_RegisterApplicationRestart
 RegisterApplicationRestart
-;knifunptr_platform_windows1241_UnregisterApplicationRestart
+;knifunptr_platform_windows1238_UnregisterApplicationRestart
 UnregisterApplicationRestart
  APPLICATION_RECOVERY_CALLBACKVar
 pRecoveryCallback
 ppvParameter
 pdwPingInterval
 pdwFlags
-=knifunptr_platform_windows1242_GetApplicationRecoveryCallback
+=knifunptr_platform_windows1239_GetApplicationRecoveryCallback
 GetApplicationRecoveryCallback
 PWSTR
 pcchSize
-<knifunptr_platform_windows1243_GetApplicationRestartSettings
+<knifunptr_platform_windows1240_GetApplicationRestartSettings
 GetApplicationRestartSettings
 IntVarOf
 
 WINBOOLVar
 PBOOL
 pbCancelled
-<knifunptr_platform_windows1244_ApplicationRecoveryInProgress
+<knifunptr_platform_windows1241_ApplicationRecoveryInProgress
 ApplicationRecoveryInProgress
 bSuccess
-:knifunptr_platform_windows1245_ApplicationRecoveryFinished
+:knifunptr_platform_windows1242_ApplicationRecoveryFinished
 ApplicationRecoveryFinished
 _FILE_INFO_BY_HANDLE_CLASS
 FILE_INFO_BY_HANDLE_CLASS
 FileInformationClass
 lpFileInformation
 dwBufferSize
-;knifunptr_platform_windows1246_GetFileInformationByHandleEx
+;knifunptr_platform_windows1243_GetFileInformationByHandleEx
 GetFileInformationByHandleEx
 hVolumeHint
 FILE_ID_DESCRIPTOR
@@ -481,82 +471,82 @@ WINBOOLVar
 dwShareMode
 lpSecurityAttributes
 dwFlagsAndAttributes
-+knifunptr_platform_windows1247_OpenFileById
++knifunptr_platform_windows1244_OpenFileById
 OpenFileById
 lpSymlinkFileName
 lpTargetFileName
-2knifunptr_platform_windows1248_CreateSymbolicLinkA
+2knifunptr_platform_windows1245_CreateSymbolicLinkA
 CreateSymbolicLinkA
-2knifunptr_platform_windows1249_CreateSymbolicLinkW
+2knifunptr_platform_windows1246_CreateSymbolicLinkW
 CreateSymbolicLinkW
 hTransaction
-<knifunptr_platform_windows1250_CreateSymbolicLinkTransactedA
+<knifunptr_platform_windows1247_CreateSymbolicLinkTransactedA
 CreateSymbolicLinkTransactedA
-<knifunptr_platform_windows1251_CreateSymbolicLinkTransactedW
+<knifunptr_platform_windows1248_CreateSymbolicLinkTransactedW
 CreateSymbolicLinkTransactedW
 settingsNameSpace
 settingName
 dwBuffer
 pdwWrittenOrRequired
-3knifunptr_platform_windows1252_QueryActCtxSettingsW
+3knifunptr_platform_windows1249_QueryActCtxSettingsW
 QueryActCtxSettingsW
 TargetPartition
 SparePartition
-3knifunptr_platform_windows1253_ReplacePartitionUnit
+3knifunptr_platform_windows1250_ReplacePartitionUnit
 ReplacePartitionUnit
 PSECURE_MEMORY_CACHE_CALLBACK
 pfnCallBack
-;knifunptr_platform_windows1254_AddSecureMemoryCacheCallback
+;knifunptr_platform_windows1251_AddSecureMemoryCacheCallback
 AddSecureMemoryCacheCallback
->knifunptr_platform_windows1255_RemoveSecureMemoryCacheCallback
+>knifunptr_platform_windows1252_RemoveSecureMemoryCacheCallback
 RemoveSecureMemoryCacheCallback
 _CONTEXT
 PCONTEXT
 Destination
 ContextFlags
 Source
-*knifunptr_platform_windows1256_CopyContext
+*knifunptr_platform_windows1253_CopyContext
 CopyContext
 Buffer
 PCONTEXTVar
 ContextLength
-0knifunptr_platform_windows1257_InitializeContext
+0knifunptr_platform_windows1254_InitializeContext
 InitializeContext
 DWORD64
-7knifunptr_platform_windows1258_GetEnabledXStateFeatures
+7knifunptr_platform_windows1255_GetEnabledXStateFeatures
 GetEnabledXStateFeatures
 PDWORD64
 FeatureMask
-4knifunptr_platform_windows1259_GetXStateFeaturesMask
+4knifunptr_platform_windows1256_GetXStateFeaturesMask
 GetXStateFeaturesMask
 	FeatureId
 Length
-2knifunptr_platform_windows1260_LocateXStateFeature
+2knifunptr_platform_windows1257_LocateXStateFeature
 LocateXStateFeature
-4knifunptr_platform_windows1261_SetXStateFeaturesMask
+4knifunptr_platform_windows1258_SetXStateFeaturesMask
 SetXStateFeaturesMask
 ThreadHandle
 HardwareCounters
 PerformanceDataHandle
-4knifunptr_platform_windows1262_EnableThreadProfiling
+4knifunptr_platform_windows1259_EnableThreadProfiling
 EnableThreadProfiling
-5knifunptr_platform_windows1263_DisableThreadProfiling
+5knifunptr_platform_windows1260_DisableThreadProfiling
 DisableThreadProfiling
 
 BOOLEANVar
 PBOOLEAN
 Enabled
-3knifunptr_platform_windows1264_QueryThreadProfiling
+3knifunptr_platform_windows1261_QueryThreadProfiling
 QueryThreadProfiling
 _PERFORMANCE_DATA
 PPERFORMANCE_DATA
 PerformanceData
-6knifunptr_platform_windows1265_ReadThreadProfilingData
+6knifunptr_platform_windows1262_ReadThreadProfilingData
 ReadThreadProfilingData
 arg0
-/knifunptr_platform_windows1266_AddFontResourceA
+/knifunptr_platform_windows1263_AddFontResourceA
 AddFontResourceA
-/knifunptr_platform_windows1267_AddFontResourceW
+/knifunptr_platform_windows1264_AddFontResourceW
 AddFontResourceW
 
 HPALETTE__
@@ -567,7 +557,7 @@ HPALETTE__
 tagPALETTEENTRY
 PALETTEENTRY
 ppe
--knifunptr_platform_windows1268_AnimatePalette
+-knifunptr_platform_windows1265_AnimatePalette
 AnimatePalette
 HDC__
 HDC
@@ -580,7 +570,7 @@ HPALETTE__
 y3
 x4
 y4
-"knifunptr_platform_windows1269_Arc
+"knifunptr_platform_windows1266_Arc
 Arc
 x
 y
@@ -588,20 +578,20 @@ HPALETTE__
 cy
 hdcSrc
 rop
-%knifunptr_platform_windows1270_BitBlt
+%knifunptr_platform_windows1267_BitBlt
 BitBlt
-'knifunptr_platform_windows1271_CancelDC
+'knifunptr_platform_windows1268_CancelDC
 CancelDC
-$knifunptr_platform_windows1272_Chord
+$knifunptr_platform_windows1269_Chord
 Chord
 tagPIXELFORMATDESCRIPTOR
 PIXELFORMATDESCRIPTOR
 ppfd
-0knifunptr_platform_windows1273_ChoosePixelFormat
+0knifunptr_platform_windows1270_ChoosePixelFormat
 ChoosePixelFormat
 HMETAFILE__
 	HMETAFILE
-,knifunptr_platform_windows1274_CloseMetaFile
+,knifunptr_platform_windows1271_CloseMetaFile
 CloseMetaFile
 HRGN__
 HRGN
@@ -609,13 +599,13 @@ $knifunptr_platform_windows1272_Chord
 hrgnSrc1
 hrgnSrc2
 iMode
-)knifunptr_platform_windows1275_CombineRgn
+)knifunptr_platform_windows1272_CombineRgn
 
 CombineRgn
 arg1
-,knifunptr_platform_windows1276_CopyMetaFileA
+,knifunptr_platform_windows1273_CopyMetaFileA
 CopyMetaFileA
-,knifunptr_platform_windows1277_CopyMetaFileW
+,knifunptr_platform_windows1274_CopyMetaFileW
 CopyMetaFileW
 nWidth
 nHeight
@@ -624,403 +614,461 @@ CombineRgn
 lpBits
 	HBITMAP__
 HBITMAP
-+knifunptr_platform_windows1278_CreateBitmap
++knifunptr_platform_windows1275_CreateBitmap
 CreateBitmap
 	tagBITMAP
 BITMAP
 pbm
-3knifunptr_platform_windows1279_CreateBitmapIndirect
-CreateBitmapIndirect∑
+3knifunptr_platform_windows1276_CreateBitmapIndirect
+CreateBitmapIndirect
+tagLOGBRUSH
+LOGBRUSH
+plbrush
+HBRUSH__
+HBRUSH
+2knifunptr_platform_windows1277_CreateBrushIndirect
+CreateBrushIndirect
+5knifunptr_platform_windows1278_CreateCompatibleBitmap
+CreateCompatibleBitmap
+6knifunptr_platform_windows1279_CreateDiscardableBitmap
+CreateDiscardableBitmap€
 
  
- 
- 
- 
-
+  
+
+
+
  
-
-
- 
-	 
- 
- 
- 
- 
- 
- 
-
- 
- 
- 
- 
- 
-  
-! 
-" 
-# 
-' 
-* 
-+ 
-, 
-. 
-/ 
-2 
-3 
-; 
-< 
-= 
-> 
-@ 
-A 
-F 
-I 
-J 
-L 
-M 
-U 
-V 
-` 
-a 
-b 
-c 
-d 
-e 
-h 
-q 
-r 
-s 
-t 
-ì 
-î 
-ò 
-ô 
-ú 
-ù 
-† 
-° 
-• 
-¶ 
-© 
-™ 
-¨ 
-≠ 
-Ø 
-µ 
-∂ 
-ª 
-æ 
-¡ 
-¬ 
-∆ 
-Œ 
-— 
-“ 
-€ 
-‹ 
-› 
-Â 
-˙ 
-˛ 
-à 
-â 
-≠ 
-Ø 
-∂ 
-∑ 
-∏ 
-º 
-Ω 
-æ 
-» 
-“
-d” 
-d‘ 
-ÿ 
-Ÿ 
-Â 
-Á 
-Ì 
-Ô 
- 
-Ò 
-ˆ 
-˜ 
-Å 
-å 
-ç 
-ê 
-ë 
-ò 
-ô 
-ù 
-¢ 
-® 
-Ø 
-≥ 
-¥ 
-µ 
-º 
-Ω 
-ƒ 
-≈ 
-· 
-Á 
-Ë 
-Ô 
-Û 
-ˆ 
-á 
-à 
-å 
-ç 
-ñ 
-ó 
-õ 
-ú 
-† 
-° 
-π 
-∫ 
-æ 
-ø 
-¬ 
-√ 
-‘ 
-’ 
-ÿ 
-Ÿ √a\0j`2
-00j`0j`	200
-j`0j`Há “
-(ì&0j`20“
-20“
-20“
-2
-0j`2
-0j`2*$&00j`0j`0j`Há “
-(%ì)0j`20“
-20“
-20“
-2
-0j`2
-0j`2*$&00j`0j`0j`Há “
-((ï60j`20“
-20“
-20“
-2
-0j`2
-0j`2*$&00j`0j`0j`2$- 00j`0j`02$0 00j`0j`02100
-j`0j`240 0j`!Há “
-(5ï80j`20“
-20“
-20“
-2
-0j`2
-0j`2*$&00j`0j`0j`2$- 00j`0j`02$0 00j`0j`02100
-j`0j`240 0j`!Há “
-(7˛P0j`2900j`2:0“
-2?0#0"j`$0j`%2B0&0j`'2C0&0j`'2
-D0j`2
-E0j`2G00j`(2H0“
-2K0)0j`*2N0+0j`,Há “
-(OÌX0j`2Q0“
-2R0“
-2S0“
-2
-T0j`2:0“
-2?00j`0j`	2
-E0j`2G00j`(2H0“
-2K0-0j`.2N0+0j`,Há “
-(W“Z0j`2900j`2
-T0j`2:0“
-2?00j`0j`	2
-E0j`2G00j`(2H0“
-2K0-0j`.2N0+0j`,Há “
-(Y4]0j`2[00j`Há “
-(\“l0j`2*^&00j`0j`0j`2_00j`2@f<0.*(00j`01j`203000/0j`42g00j`2
-i0j`52
-j0j`5Há “
-(k4o0j`2m00j`Há “
-(näx0j`2p00j`2HuD86200j`0j`070j`803060/0j`92
-v0j`5Há “
-(wæ00j`2y00j`2@f<0.*(00j`01j`203000/0j`42z00j`2
-{0j`2
-|0j`2
-}0j`Há “
-(~OÇ0j`2y00j`2Ä00j`Há “
-	(Å6Ñ0j`2y00j`Há “
-	(Élâ00j`2Ö0&0j`'2Ü00j`(2á0“
-Há “
-	(àUã00j`2Ü00j`(2á0“
-Há “
-	(äHé00j`2å0“
-2
-v0j`5Há “
-	(ç^í0j`2%è 00j`0j`02ê00j`Há “
-	(ë5ó0j`2ï0:0j`;Há “
-	(ñ5õ0j`2ï0<0j`=Há “
-	(öO§0j`2û0>0j`?2ü0j`2¢0@j`AHá “
-	(£O®0j`2û0B0j`C2ü0j`2¢0@j`AHá “
-	(ß_≤0j`2´0Dj`E02Æ0Fj`G02∞0F0j`HHá “
-	(±_¥0j`2´0Dj`E02∞0Fj`G02Æ0F0j`HHá “
-	(≥J∫0j`2∑0Ij`J02∏0F0j`HHá “
-	(πJΩ0j`2∏0Fj`G02∑0I0j`KHá “
-	(º5¿0j`2´0D0j`LHá “
-	(ø5≈0j`2√0M0j`NHá “
-	(ƒYÀ0j`2«0j`O2»0M0j`N2…0D0j`LHá “
-	( 3Õ0j`2´0Dj`E0Há “
-	(Ã3–0j`2´0Mj`P0Há “
-	(œ5’0j`2”0Q0j`RHá “
-	(‘8Ÿ0j`2÷0j`2◊0j`Há “
-	(ÿy·0j`2⁄00j`2ﬁ0@0Sj`T0j`U2ﬂ0@0Sj`T0j`UHá “
-	(‡y„0j`2⁄00j`2ﬁ0@0Sj`T0j`U2ﬂ0@0Sj`T0j`UHá “
-	(‚eÁ0j`2‰00j`2ﬁ0@j`V2ﬂ0@0Sj`T0j`UHá “
-	(ÊsÍ0j`2%Ë 00j`0j`02ﬁ0@j`V2ﬂ0@0Sj`T0j`UHá “
-	(ÈSÓ00j`2Î0&0j`'2Ï0“
-Há “
-	(ÌS00j`2Î0&0j`'2Ï0“
-Há “
-	(ÔVÙ00j`2Ò0j`2Ú0j`2Ï0“
-Há “
-	(ÛVˆ00j`2Ò0j`2Ú0j`2Ï0“
-Há “
-	(ıP˘0j`2˜00j`2⁄00j`Há “
-	(¯D˝0j`2˜00j`2˚0j`WHá “
-	(¸ãÑ0j`2˜00j`2ˇ0j`X2Ä00j`(2Å0j`2Ç00
-j`0j`Há “
-	(ÉjÜ0j`2˜00j`2ˇ0j`X2Ä00j`(2Å0j`Há “
-	(ÖNå0j`2á0j`52ä0Y0j`Z2
-v0j`5Há “
-	(ãXê00j`2ç0#0"j`$0j`%2é0j`Há “
-	(èeì0j`2ë00j`2ç0#0"j`$0j`%2é0j`Há “
-	(íjó00j`2î0“
-2ï0#0"j`$0j`%2é0j`Há “
-	(ñjô00j`2î0“
-2ï00j`0j`	2é0j`Há “
-	(òeú0j`2ö00j`2ï0#0"j`$0j`%2é0j`Há “
-	(õeû0j`2ö00j`2ï00j`0j`	2é0j`Há “
-	(ù7†0j`2ö00j`Há “
-	(üB¢0j`2ï0“
-2ç0“
-Há “
-	(°B§0j`2ï0“
-2ç0“
-Há “
-	(£0¶0j`2ï0“
-Há “
-	(•^®0j`2ï0“
-2ç0#0"j`$0j`%2é0j`Há “
-	(ß^¨0j`2©0“
-2™0#0"j`$0j`%2é0j`Há “
-	(´≤0j`2ç0“
-2Æ0#0"j`$0j`[2é0j`2∞00
-j`0j`\Há “
-	(±Üµ0j`2⁄00j`2ﬁ0@0Sj`T0j`U2ﬂ0@0Sj`T0j`U2≥0j`Há “
-	(¥Eª00j`2π0]j`^0j`_Há “
-	(∫E¿00j`2π0`j`a0j`bHá “
-	(ø3√032¡00j`Há “
-	(¬3≈032¡00j`Há “
-	(ƒ7«0j`2¡00j`Há “
-	(∆RÀ0j`2¡00j`2…0@0Sj`c0Há “
-	( 7Œ0j`2
-j0j`2Ã0@j`VHá “
-	(ÕE—0j`2%œ 00j`0j`0Há “
-	(–u‹0j`2
-j0j`2’0ej`f02÷0j`52◊0“
-2⁄0g0j`hHá “
-	(€uﬁ0j`2
-j0j`2’0ej`f02÷0j`52◊0“
-2⁄0g0j`hHá “
-	(›x·0j`2
-j0j`2’0ej`f02÷0j`52ﬂ0ej`f02⁄0g0j`hHá “
-	(‡™Í0j`2
-j0j`2¡00j`2‚00j`2„0j`52‰00j`2Ê0@j`i2Ë0@0Sj`j0Há “
-	(ÈÏ0j`Há “
-	(ÎLÙ0j`2Ó01j`k2Ú010lj`m0j`nHá “
-	(ÛL˙0j`2ı01j`k2¯0@0Sj`o0j`pHá “
-	(˘L˝0j`2ı01j`k2˚0@0Sj`o0j`pHá “
-	(¸LÄ0j`2˛0j`52Ú010lj`m0j`nHá “
-	(ˇÉ0j`qHá “
-	(ÇÖ0j`qHá “
-	(Ñ+à0j`2Ü0j`qHá “
-	(á+ä0j`2Ü0j`qHá “
-	(âXè0j`2ã00j`2Ú00j`r0j`sHá “
-	(éVì0j`2Ó0t0j`u2Ú00j`r0j`sHá “
-	(íLï0j`2ı0j`O2˚0@0Sj`o0j`pHá “
-	(îLó0j`2˛0j`52Ú00j`r0j`sHá “
-	(ñçü0j`x2;ö6*($"00j`0j`0v0/0j`w2õ00j`2ú0j`2
-j0j`Há “
-	(û°0j`xHá “
-	(†K•0j`x2£00j`0j`y2
-j0j`Há “
-	(§ß0j`xHá “
-	(¶ÎÆ0j`x2⁄00j`2I©D><42*($"00j`0j`0v0/0j`w0j`z02%™ 00j`0j`02´00
-j`0j`\2¨00
-j`0j`\Há “
-	(≠ö≤0j`x2⁄00j`2£00j`0j`{2∞00
-j`0j`\2¨00
-j`0j`\Há “
-	(±?∏0j`x2∂00|j`}0j`~Há “
-	(∑'ª032π0j`Há “
-	(∫k¬0j`2ã00j`2æ0j`Ä2ø00j`(2¿0j`Há “
-	(¡öÀ00j`2√00j`2∆0Å0j`Ç2Ò0j`2«0j`2»0&0j`'2…0j`Há “
-	( Nœ01j`22Ã0“
-2Õ0“
-2
-j0j`Há “
-	(ŒN—01j`22Ã0“
-2Õ0“
-2
-j0j`Há “
-	(–g‘01j`22Ã0“
-2Õ0“
-2
-j0j`2“00j`Há “
-	(”g÷01j`22Ã0“
-2Õ0“
-2
-j0j`2“00j`Há “
-	(’Œ‹0j`2
-j0j`2¡00j`2◊00j`0j`y2ÿ00j`0j`y2‰00j`0j`{2Ÿ0@j`i2⁄0@0Sj`j0Há “
-	(€l‡0j`2›00j`0j`{2ﬁ00j`0j`{2
-v0j`5Há “
-	(ﬂf‰0j`2F‚A42.,00j`0@j`i01j`2000/0j`ÉHá “
-	(„fÊ0j`2F‚A42.,00j`0@j`i01j`2000/0j`ÉHá “
-	(Â]Ì0j`2È0Ñ0j`Ö2Í0j`2Î0Ñ0j`ÖHá “
-	(ÏåÚ0j`2Ó00j`2Í0j`2%g!0Ñ0j`Ö0j`Ü0200
-j`0j`\Há “
-	(Òı0@j`áHá “
-	(ÙX˘0j`2g0Ñ0j`Ö2 ˜0@0Sj`T0j`àHá “
-	(¯p˝00j`2g0Ñ0j`Ö2˙0j`2˚00
-j`0j`\Há “
-	(¸Dˇ0j`2g0Ñ0j`Ö2˜0@j`áHá “
-	(˛xÑ0j`2Ä00j`2
-v0j`2Å0@j`á2%Ç 00j`0j`0Há “
-	(É7Ü0j`2Ç00j`Há “
-	(ÖZã0j`2Ä00j`2!â010lj`â0j`äHá “
-	(ä\ê0j`2Ç00j`2
-v0j`2é0ã0j`åHá “
-	(è-ì02ë0“
-Há†“
-	(í-ï02ë0“
-Há†“
-	(îhü0j`2ò0ç0j`é2ô0j`W2ö0j`W2ù
-0èj`ê0Há “
-	(û¨0j`2¢0ë0j`í2£02§02•02¶02ß02®02©02™0Há “
-	(´ì¥0j`2¢0ë0j`í2≠02Æ02Ø02∞02±0ë0j`í2£02§02≤0j`Há “
-	(≥7∂0j`2¢0ë0j`íHá “
-	(µ∏0j`2¢0ë0j`í2£02§02•02¶02ß02®02©02™0Há “
-	(∑JΩ02¢0ë0j`í2ª
-0ìj`î0Há “
-	(ºC¡0ï0j`ñ2¢0ë0j`íHá “
-	(¿n…02ƒ0ó0j`ò2≈0ó0j`ò2∆0ó0j`ò2«0Há “
-	(»VÃ0ï0j`ñ2ë0ï0j`ñ2 0“
-Há†“
-	(ÀVŒ0ï0j`ñ2ë0ï0j`ñ2 0“
-Há†“
-	(Õe◊0ô0j`ö2œ02–02—0j`W2“0j`W2”0Há “
-	(÷A‹0ô0j`ö2⁄
-0õj`ú0Há “
-	(€ÿ
-‡
+ 
+ 
+ 
+
+
+	 
+ 
+ 
+ 
+	 
+	 
+	 
+ 
+	 
+	 
+	 
+	 
+ 
+	 
+	  
+	" 
+	# 
+ % 
+	& 
+* 
+/ 
+ 0 
+	1 
+	2 
+	4 
+	5 
+	: 
+	= 
+	> 
+	@ 
+	A 
+I 
+ J 
+	K 
+	L 
+	M 
+	N 
+X 
+ Y 
+ Z 
+	[ 
+ \ 
+	] 
+	` 
+ i 
+	j 
+	k 
+	l 
+	ã 
+	å 
+	ê 
+	ë 
+	î 
+	ï 
+ ò 
+	ô 
+	ù 
+	û 
+	° 
+	¢ 
+	§ 
+	• 
+	ß 
+	≠ 
+	Æ 
+	≥ 
+	∂ 
+	π 
+	∫ 
+	æ 
+	∆ 
+	… 
+	  
+” 
+‘ 
+	’ 
+	› 
+	Ú 
+	ˆ 
+	Ä 
+	Å 
+	• 
+	ß 
+	Æ 
+	Ø 
+	∞ 
+	¥ 
+	µ 
+	∂ 
+	¿ 
+ 
+dÀ 
+dÃ 
+	– 
+	— 
+	› 
+	ﬂ 
+	Â 
+Á 
+	Ë 
+	È 
+	Ó 
+	Ô 
+	˘ 
+	Ñ 
+	Ö 
+	à 
+	â 
+ ê 
+	ë 
+	ï 
+	ö 
+	† 
+	ß 
+´ 
+	¨ 
+	≠ 
+	¥ 
+	µ 
+	º 
+	Ω 
+	Ÿ 
+	ﬂ 
+	‡ 
+	Á 
+	Î 
+	Ó 
+	ˇ 
+	Ä 
+	Ñ 
+	Ö 
+	é 
+	è 
+	ì 
+	î 
+	ò 
+	ô 
+	± 
+	≤ 
+	∂ 
+	∑ 
+	∫ 
+	ª 
+	Ã 
+	Õ 
+	– 
+	— 
+	’ 
+	÷ 
+	ÿ 
+	Ÿ †`ï)0j`20“
+20“
+2	0“
+2
+0j`
+2
+0j`
+2*&00j`0j`0j`2$ 00j`0j`02$ 00j`0j`02!00j`0j`2$00j`Há “
+'((ï,0j`20“
+20“
+2	0“
+2
+0j`
+2
+0j`
+2*&00j`0j`0j`2$ 00j`0j`02$ 00j`0j`02!00j`0j`2$00j`Há “
+'(+˛D0j`2-00j`2.0“
+2300j` 0j`!260"0j`#270"0j`#2
+80j`2
+90j`
+2;00j`$2<0“
+2?0%0j`&2B0'0j`(Há “
+'(CÌP0j`2E0“
+2F0“
+2G0“
+2
+H0j`
+2.0“
+230*0)j`+0j`,2
+90j`
+2;00j`$2<0“
+2?0-0j`.2B0'0j`(Há “
+'(O“R0j`2-00j`2
+H0j`
+2.0“
+230*0)j`+0j`,2
+90j`
+2;00j`$2<0“
+2?0-0j`.2B0'0j`(Há “
+'(Q4U0j`2S00j`Há “
+'(T“d0j`2*V&00j`0j`0j`2W00j`2@^<0.*(00j`01j`203000/0j`42_00j`2
+a0j`52
+b0j`5Há “
+'(c4g0j`2e00j`Há “
+'(fäp0j`2h00j`2HmD86200j`
+0j`
+070j`803060/0j`92
+n0j`5Há “
+'(oæw00j`2q00j`2@^<0.*(00j`01j`203000/0j`42r00j`2
+s0j`
+2
+t0j`
+2
+u0j`Há “
+'(vLz0j`2q00j`2x00j`Há “
+'(y4|0j`2q00j`Há “
+'({iÅ00j`2}0"0j`#2~00j`$20“
+Há “
+	'(ÄSÉ00j`2~00j`$20“
+Há “
+	'(ÇHÜ00j`2Ñ0“
+2
+n0j`5Há “
+	'(Ö^ä0j`2%á 00j`0j`02à00j`Há “
+	'(â5è0j`2ç0:0j`;Há “
+	'(é5ì0j`2ç0<0j`=Há “
+	'(íOú0j`2ñ0>0j`?2ó0j`
+2ö0@j`AHá “
+	'(õO†0j`2ñ0B0j`C2ó0j`
+2ö0@j`AHá “
+	'(ü_™0j`2£0Dj`E02¶0Fj`G02®0F0j`HHá “
+	'(©_¨0j`2£0Dj`E02®0Fj`G02¶0F0j`HHá “
+	'(´J≤0j`2Ø0Ij`J02∞0F0j`HHá “
+	'(±Jµ0j`2∞0Fj`G02Ø0I0j`KHá “
+	'(¥5∏0j`
+2£0D0j`LHá “
+	'(∑5Ω0j`
+2ª0M0j`NHá “
+	'(ºY√0j`2ø0*j`O2¿0M0j`N2¡0D0j`LHá “
+	'(¬3≈0j`2£0Dj`E0Há “
+	'(ƒ3»0j`2£0Mj`P0Há “
+	'(«5Õ0j`2À0Q0j`RHá “
+	'(Ã8—0j`2Œ0j`2œ0j`Há “
+	'(–yŸ0j`2“00j`2÷0@0Sj`T0j`U2◊0@0Sj`T0j`UHá “
+	'(ÿy€0j`2“00j`2÷0@0Sj`T0j`U2◊0@0Sj`T0j`UHá “
+	'(⁄eﬂ0j`2‹00j`2÷0@j`V2◊0@0Sj`T0j`UHá “
+	'(ﬁs‚0j`2%‡ 00j`0j`02÷0@j`V2◊0@0Sj`T0j`UHá “
+	'(·SÊ00j`2„0"0j`#2‰0“
+Há “
+	'(ÂSË00j`2„0"0j`#2‰0“
+Há “
+	'(ÁVÏ00j`2È0j`
+2Í0j`2‰0“
+Há “
+	'(ÎVÓ00j`2È0j`
+2Í0j`2‰0“
+Há “
+	'(ÌPÒ0j`2Ô00j`2“00j`Há “
+	'(Dı0j`2Ô00j`2Û0j`WHá “
+	'(Ùã¸0j`2Ô00j`2˜0j`X2¯00j`$2˘0j`
+2˙00j`0j`Há “
+	'(˚j˛0j`2Ô00j`2˜0j`X2¯00j`$2˘0j`
+Há “
+	'(˝NÑ0j`2ˇ0j`52Ç0Y0j`Z2
+n0j`5Há “
+	'(ÉXà00j`2Ö00j` 0j`!2Ü0j`
+Há “
+	'(áeã0j`2â00j`2Ö00j` 0j`!2Ü0j`
+Há “
+	'(äjè00j`2å0“
+2ç00j` 0j`!2Ü0j`
+Há “
+	'(éjë00j`2å0“
+2ç0*0)j`+0j`,2Ü0j`
+Há “
+	'(êeî0j`2í00j`2ç00j` 0j`!2Ü0j`
+Há “
+	'(ìeñ0j`2í00j`2ç0*0)j`+0j`,2Ü0j`
+Há “
+	'(ï7ò0j`2í00j`Há “
+	'(óBö0j`2ç0“
+2Ö0“
+Há “
+	'(ôBú0j`2ç0“
+2Ö0“
+Há “
+	'(õ0û0j`2ç0“
+Há “
+	'(ù^†0j`2ç0“
+2Ö00j` 0j`!2Ü0j`
+Há “
+	'(ü^§0j`2°0“
+2¢00j` 0j`!2Ü0j`
+Há “
+	'(£™0j`2Ö0“
+2¶00j` 0j`[2Ü0j`
+2®00j`0j`\Há “
+	'(©Ü≠0j`2“00j`2÷0@0Sj`T0j`U2◊0@0Sj`T0j`U2´0j`
+Há “
+	'(¨E≥00j`2±0]j`^0j`_Há “
+	'(≤E∏00j`2±0`j`a0j`bHá “
+	'(∑3ª032π00j`Há “
+	'(∫3Ω032π00j`Há “
+	'(º7ø0j`2π00j`Há “
+	'(æR√0j`2π00j`2¡0@0Sj`c0Há “
+	'(¬7∆0j`2
+b0j`
+2ƒ0@j`VHá “
+	'(≈E…0j`2%« 00j`0j`0Há “
+	'(»u‘0j`2
+b0j`
+2Õ0ej`f02Œ0j`52œ0“
+2“0g0j`hHá “
+	'(”u÷0j`2
+b0j`
+2Õ0ej`f02Œ0j`52œ0“
+2“0g0j`hHá “
+	'(’xŸ0j`2
+b0j`
+2Õ0ej`f02Œ0j`52◊0ej`f02“0g0j`hHá “
+	'(ÿ™‚0j`2
+b0j`
+2π00j`2⁄00j`2€0j`52‹00j`2ﬁ0@j`i2‡0@0Sj`j0Há “
+	'(·‰0j`
+Há “
+	'(„LÏ0j`2Ê01j`k2Í010lj`m0j`nHá “
+	'(ÎLÚ0j`2Ì01j`k20@0Sj`o0j`pHá “
+	'(ÒLı0j`2Ì01j`k2Û0@0Sj`o0j`pHá “
+	'(ÙL¯0j`2ˆ0j`52Í010lj`m0j`nHá “
+	'(˜˚0*j`qHá “
+	'(˙˝0*j`qHá “
+	'(¸+Ä0j`
+2˛0*j`qHá “
+	'(ˇ+Ç0j`
+2˛0*j`qHá “
+	'(ÅXá0j`2É00j`2Í0*0)j`r0j`sHá “
+	'(ÜVã0j`2Ê0t0j`u2Í0*0)j`r0j`sHá “
+	'(äLç0j`2Ì0*j`O2Û0@0Sj`o0j`pHá “
+	'(åLè0j`2ˆ0j`52Í0*0)j`r0j`sHá “
+	'(éçó0j`x2;í6*($"00j`0j`
+0v0/0j`w2ì00j`2î0j`
+2
+b0j`
+Há “
+	'(ñô0j`xHá “
+	'(òKù0j`x2õ0*0)j`+0j`y2
+b0j`
+Há “
+	'(úü0j`xHá “
+	'(ûÎ¶0j`x2“00j`2I°D><42*($"00j`0j`
+0v0/0j`w0j`z02%¢ 00j`0j`02£00j`0j`\2§00j`0j`\Há “
+	'(•ö™0j`x2“00j`2õ0*0)j`+0j`{2®00j`0j`\2§00j`0j`\Há “
+	'(©?∞0j`x2Æ00|j`}0j`~Há “
+	'(Ø'≥032±0j`Há “
+	'(≤k∫0j`2É00j`2∂0j`Ä2∑00j`$2∏0j`
+Há “
+	'(πö√00j`2ª00j`2æ0Å0j`Ç2È0j`
+2ø0j`
+2¿0"0j`#2¡0j`
+Há “
+	'(¬N«01j`22ƒ0“
+2≈0“
+2
+b0j`
+Há “
+	'(∆N…01j`22ƒ0“
+2≈0“
+2
+b0j`
+Há “
+	'(»gÃ01j`22ƒ0“
+2≈0“
+2
+b0j`
+2 00j`Há “
+	'(ÀgŒ01j`22ƒ0“
+2≈0“
+2
+b0j`
+2 00j`Há “
+	'(ÕŒ‘0j`2
+b0j`
+2π00j`2œ0*0)j`+0j`y2–0*0)j`+0j`y2‹0*0)j`+0j`{2—0@j`i2“0@0Sj`j0Há “
+	'(”lÿ0j`2’0*0)j`+0j`{2÷0*0)j`+0j`{2
+n0j`5Há “
+	'(◊f‹0j`2F⁄A42.,00j`0@j`i01j`2000/0j`ÉHá “
+	'(€fﬁ0j`2F⁄A42.,00j`0@j`i01j`2000/0j`ÉHá “
+	'(›]Â0j`2·0Ñ0j`Ö2‚0j`
+2„0Ñ0j`ÖHá “
+	'(‰åÍ0j`2Ê00j`2‚0j`
+2%_!0Ñ0j`Ö0j`Ü02Ë00j`0j`\Há “
+	'(ÈÌ0@j`áHá “
+	'(ÏXÒ0j`2_0Ñ0j`Ö2 Ô0@0Sj`T0j`àHá “
+	'(pı00j`2_0Ñ0j`Ö2Ú0j`
+2Û00j`0j`\Há “
+	'(ÙD˜0j`2_0Ñ0j`Ö2Ô0@j`áHá “
+	'(ˆx¸0j`
+2¯00j`2
+n0j`
+2˘0@j`á2%˙ 00j`0j`0Há “
+	'(˚7˛0j`
+2˙00j`Há “
+	'(˝ZÉ0j`
+2¯00j`2!Å010lj`â0j`äHá “
+	'(Ç\à0j`
+2˙00j`2
+n0j`
+2Ü0ã0j`åHá “
+	'(á-ã02â0“
+Há†“
+	'(ä-ç02â0“
+Há†“
+	'(åhó0j`2ê0ç0j`é2ë0j`W2í0j`W2ï
+0èj`ê0Há “
+	'(ñ§0j`2ö0ë0j`í2õ02ú02ù02û02ü02†02°02¢0Há “
+	'(£ì¨0j`2ö0ë0j`í2•02¶02ß02®02©0ë0j`í2õ02ú02™0j`
+Há “
+	'(´7Æ0j`2ö0ë0j`íHá “
+	'(≠∞0j`2ö0ë0j`í2õ02ú02ù02û02ü02†02°02¢0Há “
+	'(ØJµ02ö0ë0j`í2≥
+0ìj`î0Há “
+	'(¥Cπ0ï0j`ñ2ö0ë0j`íHá “
+	'(∏n¡02º0ó0j`ò2Ω0ó0j`ò2æ0ó0j`ò2ø0Há “
+	'(¿Vƒ0ï0j`ñ2â0ï0j`ñ2¬0“
+Há†“
+	'(√V∆0ï0j`ñ2â0ï0j`ñ2¬0“
+Há†“
+	'(≈eœ0ô0j`ö2«02»02…0j`W2 0j`W2À0Há “
+	'(ŒA‘0ô0j`ö2“
+0õj`ú0Há “
+	'(”A€0ü0j`†2◊
+0ùj`û0Há “
+	'(⁄U›0ô0j`ö2ö0ë0j`í2ß02®0Há “
+	'(‹Uﬂ0ô0j`ö2ö0ë0j`í2ß02®0Há “
+	'(ﬁÿ
+	‡
  Í
 platform.windows

@@ -1,5 +1,5 @@
 
-ür
+‰r
 kotlinx
 cinterop
 CPointer
@@ -11,31 +11,20 @@
 CFFileSecurityRef
 fileSec
 kotlin
-UInt
+UShort
 posix
-gid_t
-group
+mode_t
+mode
 Boolean
 internal
 CCall
 id
-;knifunptr_platform_CoreFoundation768_CFFileSecuritySetGroup
-CFFileSecuritySetGroup
-
-CValuesRef
-UShortVarOf
-UShort
-	mode_tVar
-mode
-:knifunptr_platform_CoreFoundation769_CFFileSecurityGetMode
-CFFileSecurityGetMode
-mode_t
-:knifunptr_platform_CoreFoundation770_CFFileSecuritySetMode
+:knifunptr_platform_CoreFoundation768_CFFileSecuritySetMode
 CFFileSecuritySetMode
 ULong
 CFFileSecurityClearOptions
 clearPropertyMask
-Bknifunptr_platform_CoreFoundation771_CFFileSecurityClearProperties
+Bknifunptr_platform_CoreFoundation769_CFFileSecurityClearProperties
 CFFileSecurityClearProperties
 
 __CFString
@@ -44,10 +33,10 @@ __CFString
 CValue
 CFRange
 range
-Lknifunptr_platform_CoreFoundation772_CFStringTokenizerCopyBestStringLanguage
+Lknifunptr_platform_CoreFoundation770_CFStringTokenizerCopyBestStringLanguage
 'CFStringTokenizerCopyBestStringLanguage
 CFTypeID
-?knifunptr_platform_CoreFoundation773_CFStringTokenizerGetTypeID
+?knifunptr_platform_CoreFoundation771_CFStringTokenizerGetTypeID
 CFStringTokenizerGetTypeID
 __CFAllocator
 CFAllocatorRef
@@ -60,35 +49,37 @@ __CFLocale
 locale
 __CFStringTokenizer
 CFStringTokenizerRef
-<knifunptr_platform_CoreFoundation774_CFStringTokenizerCreate
+<knifunptr_platform_CoreFoundation772_CFStringTokenizerCreate
 CFStringTokenizerCreate
 	tokenizer
 Unit
-?knifunptr_platform_CoreFoundation775_CFStringTokenizerSetString
+?knifunptr_platform_CoreFoundation773_CFStringTokenizerSetString
 CFStringTokenizerSetString
 Long
 CFIndex
 index
 CFStringTokenizerTokenType
-Fknifunptr_platform_CoreFoundation776_CFStringTokenizerGoToTokenAtIndex
+Fknifunptr_platform_CoreFoundation774_CFStringTokenizerGoToTokenAtIndex
 !CFStringTokenizerGoToTokenAtIndex
-Hknifunptr_platform_CoreFoundation777_CFStringTokenizerAdvanceToNextToken
+Hknifunptr_platform_CoreFoundation775_CFStringTokenizerAdvanceToNextToken
 #CFStringTokenizerAdvanceToNextToken
-Jknifunptr_platform_CoreFoundation778_CFStringTokenizerGetCurrentTokenRange
+Jknifunptr_platform_CoreFoundation776_CFStringTokenizerGetCurrentTokenRange
 %CFStringTokenizerGetCurrentTokenRange
 	attribute
 CPointed
 	CFTypeRef
-Oknifunptr_platform_CoreFoundation779_CFStringTokenizerCopyCurrentTokenAttribute
+Oknifunptr_platform_CoreFoundation777_CFStringTokenizerCopyCurrentTokenAttribute
 *CFStringTokenizerCopyCurrentTokenAttribute
+
+CValuesRef
 ranges
 maxRangeLength
 	__CFArray
 CFMutableArrayRef
 derivedSubTokens
-Iknifunptr_platform_CoreFoundation780_CFStringTokenizerGetCurrentSubTokens
+Iknifunptr_platform_CoreFoundation778_CFStringTokenizerGetCurrentSubTokens
 $CFStringTokenizerGetCurrentSubTokens
->knifunptr_platform_CoreFoundation781_CFFileDescriptorGetTypeID
+>knifunptr_platform_CoreFoundation779_CFFileDescriptorGetTypeID
 CFFileDescriptorGetTypeID
 	allocator
 Int
@@ -104,28 +95,28 @@ $CFStringTokenizerGetCurrentSubTokens
 callout
 CFFileDescriptorContext
 context
-;knifunptr_platform_CoreFoundation782_CFFileDescriptorCreate
+;knifunptr_platform_CoreFoundation780_CFFileDescriptorCreate
 CFFileDescriptorCreate
 f
-Hknifunptr_platform_CoreFoundation783_CFFileDescriptorGetNativeDescriptor
+Hknifunptr_platform_CoreFoundation781_CFFileDescriptorGetNativeDescriptor
 #CFFileDescriptorGetNativeDescriptor
-?knifunptr_platform_CoreFoundation784_CFFileDescriptorGetContext
+?knifunptr_platform_CoreFoundation782_CFFileDescriptorGetContext
 CFFileDescriptorGetContext
 callBackTypes
-Dknifunptr_platform_CoreFoundation785_CFFileDescriptorEnableCallBacks
+Dknifunptr_platform_CoreFoundation783_CFFileDescriptorEnableCallBacks
 CFFileDescriptorEnableCallBacks
-Eknifunptr_platform_CoreFoundation786_CFFileDescriptorDisableCallBacks
+Eknifunptr_platform_CoreFoundation784_CFFileDescriptorDisableCallBacks
  CFFileDescriptorDisableCallBacks
-?knifunptr_platform_CoreFoundation787_CFFileDescriptorInvalidate
+?knifunptr_platform_CoreFoundation785_CFFileDescriptorInvalidate
 CFFileDescriptorInvalidate
-<knifunptr_platform_CoreFoundation788_CFFileDescriptorIsValid
+<knifunptr_platform_CoreFoundation786_CFFileDescriptorIsValid
 CFFileDescriptorIsValid
 order
 __CFRunLoopSource
 CFRunLoopSourceRef
-Hknifunptr_platform_CoreFoundation789_CFFileDescriptorCreateRunLoopSource
+Hknifunptr_platform_CoreFoundation787_CFFileDescriptorCreateRunLoopSource
 #CFFileDescriptorCreateRunLoopSource
-@knifunptr_platform_CoreFoundation790_CFUserNotificationGetTypeID
+@knifunptr_platform_CoreFoundation788_CFUserNotificationGetTypeID
 CFUserNotificationGetTypeID
 Double
 CFTimeInterval
@@ -141,7 +132,7 @@ Hknifunptr_platform_CoreFoundation789_CFFileDescriptorCreateRunLoopSource
 dictionary
 __CFUserNotification
 CFUserNotificationRef
-=knifunptr_platform_CoreFoundation791_CFUserNotificationCreate
+=knifunptr_platform_CoreFoundation789_CFUserNotificationCreate
 CFUserNotificationCreate
 userNotification
 
@@ -149,21 +140,21 @@ ULongVarOf
 CFOptionFlagsVar
 responseFlags
 SInt32
-Fknifunptr_platform_CoreFoundation792_CFUserNotificationReceiveResponse
+Fknifunptr_platform_CoreFoundation790_CFUserNotificationReceiveResponse
 !CFUserNotificationReceiveResponse
 key
 idx
-Gknifunptr_platform_CoreFoundation793_CFUserNotificationGetResponseValue
+Gknifunptr_platform_CoreFoundation791_CFUserNotificationGetResponseValue
 "CFUserNotificationGetResponseValue
-Lknifunptr_platform_CoreFoundation794_CFUserNotificationGetResponseDictionary
+Lknifunptr_platform_CoreFoundation792_CFUserNotificationGetResponseDictionary
 'CFUserNotificationGetResponseDictionary
-=knifunptr_platform_CoreFoundation795_CFUserNotificationUpdate
+=knifunptr_platform_CoreFoundation793_CFUserNotificationUpdate
 CFUserNotificationUpdate
-=knifunptr_platform_CoreFoundation796_CFUserNotificationCancel
+=knifunptr_platform_CoreFoundation794_CFUserNotificationCancel
 CFUserNotificationCancel
 	Function2
 CFUserNotificationCallBack
-Jknifunptr_platform_CoreFoundation797_CFUserNotificationCreateRunLoopSource
+Jknifunptr_platform_CoreFoundation795_CFUserNotificationCreateRunLoopSource
 %CFUserNotificationCreateRunLoopSource
 __CFURL
 CFURLRef
@@ -173,21 +164,21 @@ Jknifunptr_platform_CoreFoundation797_CFUserNotificationCreateRunLoopSource
 alertHeader
 alertMessage
 defaultButtonTitle
-Dknifunptr_platform_CoreFoundation798_CFUserNotificationDisplayNotice
+Dknifunptr_platform_CoreFoundation796_CFUserNotificationDisplayNotice
 CFUserNotificationDisplayNotice
 alternateButtonTitle
 otherButtonTitle
-Cknifunptr_platform_CoreFoundation799_CFUserNotificationDisplayAlert
+Cknifunptr_platform_CoreFoundation797_CFUserNotificationDisplayAlert
 CFUserNotificationDisplayAlert
 i
-Fknifunptr_platform_CoreFoundation800_CFUserNotificationCheckBoxChecked
+Fknifunptr_platform_CoreFoundation798_CFUserNotificationCheckBoxChecked
 !CFUserNotificationCheckBoxChecked
-Fknifunptr_platform_CoreFoundation801_CFUserNotificationSecureTextField
+Fknifunptr_platform_CoreFoundation799_CFUserNotificationSecureTextField
 !CFUserNotificationSecureTextField
 n
-Eknifunptr_platform_CoreFoundation802_CFUserNotificationPopUpSelection
+Eknifunptr_platform_CoreFoundation800_CFUserNotificationPopUpSelection
  CFUserNotificationPopUpSelection
-7knifunptr_platform_CoreFoundation803_CFXMLNodeGetTypeID
+7knifunptr_platform_CoreFoundation801_CFXMLNodeGetTypeID
 CFXMLNodeGetTypeID
 CFXMLNodeTypeCode
 xmlType
@@ -197,28 +188,28 @@ dataString
 version
 __CFXMLNode
 CFXMLNodeRef
-4knifunptr_platform_CoreFoundation804_CFXMLNodeCreate
+4knifunptr_platform_CoreFoundation802_CFXMLNodeCreate
 CFXMLNodeCreate
 origNode
-8knifunptr_platform_CoreFoundation805_CFXMLNodeCreateCopy
+8knifunptr_platform_CoreFoundation803_CFXMLNodeCreateCopy
 CFXMLNodeCreateCopy
 node
-9knifunptr_platform_CoreFoundation806_CFXMLNodeGetTypeCode
+9knifunptr_platform_CoreFoundation804_CFXMLNodeGetTypeCode
 CFXMLNodeGetTypeCode
-7knifunptr_platform_CoreFoundation807_CFXMLNodeGetString
+7knifunptr_platform_CoreFoundation805_CFXMLNodeGetString
 CFXMLNodeGetString
-8knifunptr_platform_CoreFoundation808_CFXMLNodeGetInfoPtr
+8knifunptr_platform_CoreFoundation806_CFXMLNodeGetInfoPtr
 CFXMLNodeGetInfoPtr
-8knifunptr_platform_CoreFoundation809_CFXMLNodeGetVersion
+8knifunptr_platform_CoreFoundation807_CFXMLNodeGetVersion
 CFXMLNodeGetVersion
 __CFTree
 CFXMLTreeRef
-<knifunptr_platform_CoreFoundation810_CFXMLTreeCreateWithNode
+<knifunptr_platform_CoreFoundation808_CFXMLTreeCreateWithNode
 CFXMLTreeCreateWithNode
 xmlTree
-5knifunptr_platform_CoreFoundation811_CFXMLTreeGetNode
+5knifunptr_platform_CoreFoundation809_CFXMLTreeGetNode
 CFXMLTreeGetNode
-9knifunptr_platform_CoreFoundation812_CFXMLParserGetTypeID
+9knifunptr_platform_CoreFoundation810_CFXMLParserGetTypeID
 CFXMLParserGetTypeID
 __CFData
 	CFDataRef
@@ -232,188 +223,193 @@ dataSource
 CFXMLParserContext
 __CFXMLParser
 CFXMLParserRef
-6knifunptr_platform_CoreFoundation813_CFXMLParserCreate
+6knifunptr_platform_CoreFoundation811_CFXMLParserCreate
 CFXMLParserCreate
-Eknifunptr_platform_CoreFoundation814_CFXMLParserCreateWithDataFromURL
+Eknifunptr_platform_CoreFoundation812_CFXMLParserCreateWithDataFromURL
  CFXMLParserCreateWithDataFromURL
 parser
-:knifunptr_platform_CoreFoundation815_CFXMLParserGetContext
+:knifunptr_platform_CoreFoundation813_CFXMLParserGetContext
 CFXMLParserGetContext
-<knifunptr_platform_CoreFoundation816_CFXMLParserGetCallBacks
+<knifunptr_platform_CoreFoundation814_CFXMLParserGetCallBacks
 CFXMLParserGetCallBacks
-<knifunptr_platform_CoreFoundation817_CFXMLParserGetSourceURL
+<knifunptr_platform_CoreFoundation815_CFXMLParserGetSourceURL
 CFXMLParserGetSourceURL
-;knifunptr_platform_CoreFoundation818_CFXMLParserGetLocation
+;knifunptr_platform_CoreFoundation816_CFXMLParserGetLocation
 CFXMLParserGetLocation
-=knifunptr_platform_CoreFoundation819_CFXMLParserGetLineNumber
+=knifunptr_platform_CoreFoundation817_CFXMLParserGetLineNumber
 CFXMLParserGetLineNumber
-;knifunptr_platform_CoreFoundation820_CFXMLParserGetDocument
+;knifunptr_platform_CoreFoundation818_CFXMLParserGetDocument
 CFXMLParserGetDocument
 CFXMLParserStatusCode
-=knifunptr_platform_CoreFoundation821_CFXMLParserGetStatusCode
+=knifunptr_platform_CoreFoundation819_CFXMLParserGetStatusCode
 CFXMLParserGetStatusCode
-Dknifunptr_platform_CoreFoundation822_CFXMLParserCopyErrorDescription
+Dknifunptr_platform_CoreFoundation820_CFXMLParserCopyErrorDescription
 CFXMLParserCopyErrorDescription
 	errorCode
 errorDescription
-5knifunptr_platform_CoreFoundation823_CFXMLParserAbort
+5knifunptr_platform_CoreFoundation821_CFXMLParserAbort
 CFXMLParserAbort
-5knifunptr_platform_CoreFoundation824_CFXMLParserParse
+5knifunptr_platform_CoreFoundation822_CFXMLParserParse
 CFXMLParserParse
-<knifunptr_platform_CoreFoundation825_CFXMLTreeCreateFromData
+<knifunptr_platform_CoreFoundation823_CFXMLTreeCreateFromData
 CFXMLTreeCreateFromData
 CPointerVarOf
 CFDictionaryRefVar
 	errorDict
-Eknifunptr_platform_CoreFoundation826_CFXMLTreeCreateFromDataWithError
+Eknifunptr_platform_CoreFoundation824_CFXMLTreeCreateFromDataWithError
  CFXMLTreeCreateFromDataWithError
-Cknifunptr_platform_CoreFoundation827_CFXMLTreeCreateWithDataFromURL
+Cknifunptr_platform_CoreFoundation825_CFXMLTreeCreateWithDataFromURL
 CFXMLTreeCreateWithDataFromURL
-;knifunptr_platform_CoreFoundation828_CFXMLTreeCreateXMLData
+;knifunptr_platform_CoreFoundation826_CFXMLTreeCreateXMLData
 CFXMLTreeCreateXMLData
 entitiesDictionary
-Hknifunptr_platform_CoreFoundation829_CFXMLCreateStringByEscapingEntities
+Hknifunptr_platform_CoreFoundation827_CFXMLCreateStringByEscapingEntities
 #CFXMLCreateStringByEscapingEntities
-Jknifunptr_platform_CoreFoundation830_CFXMLCreateStringByUnescapingEntities
+Jknifunptr_platform_CoreFoundation828_CFXMLCreateStringByUnescapingEntities
 %CFXMLCreateStringByUnescapingEntities
-Lknifunptr_platform_CoreFoundation831_kCFAbsoluteTimeIntervalSince1904_getter
+Lknifunptr_platform_CoreFoundation829_kCFAbsoluteTimeIntervalSince1904_getter
  kCFAbsoluteTimeIntervalSince1904
-Lknifunptr_platform_CoreFoundation832_kCFAbsoluteTimeIntervalSince1970_getter
+Lknifunptr_platform_CoreFoundation830_kCFAbsoluteTimeIntervalSince1970_getter
  kCFAbsoluteTimeIntervalSince1970
-CFCalendarIdentifier
-=knifunptr_platform_CoreFoundation833_kCFBanglaCalendar_getter
-kCFBanglaCalendar
 __CFBoolean
 CFBooleanRef
-;knifunptr_platform_CoreFoundation834_kCFBooleanFalse_getter
+;knifunptr_platform_CoreFoundation831_kCFBooleanFalse_getter
 kCFBooleanFalse
-:knifunptr_platform_CoreFoundation835_kCFBooleanTrue_getter
+:knifunptr_platform_CoreFoundation832_kCFBooleanTrue_getter
 kCFBooleanTrue
-?knifunptr_platform_CoreFoundation836_kCFBuddhistCalendar_getter
+CFCalendarIdentifier
+?knifunptr_platform_CoreFoundation833_kCFBuddhistCalendar_getter
 kCFBuddhistCalendar
-Iknifunptr_platform_CoreFoundation837_kCFBundleDevelopmentRegionKey_getter
+Iknifunptr_platform_CoreFoundation834_kCFBundleDevelopmentRegionKey_getter
 kCFBundleDevelopmentRegionKey
-Bknifunptr_platform_CoreFoundation838_kCFBundleExecutableKey_getter
+Bknifunptr_platform_CoreFoundation835_kCFBundleExecutableKey_getter
 kCFBundleExecutableKey
-Bknifunptr_platform_CoreFoundation839_kCFBundleIdentifierKey_getter
+Bknifunptr_platform_CoreFoundation836_kCFBundleIdentifierKey_getter
 kCFBundleIdentifierKey
-Mknifunptr_platform_CoreFoundation840_kCFBundleInfoDictionaryVersionKey_getter
+Mknifunptr_platform_CoreFoundation837_kCFBundleInfoDictionaryVersionKey_getter
 !kCFBundleInfoDictionaryVersionKey
-Eknifunptr_platform_CoreFoundation841_kCFBundleLocalizationsKey_getter
+Eknifunptr_platform_CoreFoundation838_kCFBundleLocalizationsKey_getter
 kCFBundleLocalizationsKey
-<knifunptr_platform_CoreFoundation842_kCFBundleNameKey_getter
+<knifunptr_platform_CoreFoundation839_kCFBundleNameKey_getter
 kCFBundleNameKey
-?knifunptr_platform_CoreFoundation843_kCFBundleVersionKey_getter
+?knifunptr_platform_CoreFoundation840_kCFBundleVersionKey_getter
 kCFBundleVersionKey
->knifunptr_platform_CoreFoundation844_kCFChineseCalendar_getter
+>knifunptr_platform_CoreFoundation841_kCFChineseCalendar_getter
 kCFChineseCalendar
 CFBagCallBacks
-Eknifunptr_platform_CoreFoundation845_kCFCopyStringBagCallBacks_getter
+Eknifunptr_platform_CoreFoundation842_kCFCopyStringBagCallBacks_getter
 kCFCopyStringBagCallBacks
 CFDictionaryKeyCallBacks
-Oknifunptr_platform_CoreFoundation846_kCFCopyStringDictionaryKeyCallBacks_getter
+Oknifunptr_platform_CoreFoundation843_kCFCopyStringDictionaryKeyCallBacks_getter
 #kCFCopyStringDictionaryKeyCallBacks
 CFSetCallBacks
-Eknifunptr_platform_CoreFoundation847_kCFCopyStringSetCallBacks_getter
+Eknifunptr_platform_CoreFoundation844_kCFCopyStringSetCallBacks_getter
 kCFCopyStringSetCallBacks
-<knifunptr_platform_CoreFoundation848_kCFDangiCalendar_getter
-kCFDangiCalendar
 CFDateFormatterKey
-Dknifunptr_platform_CoreFoundation849_kCFDateFormatterAMSymbol_getter
+Dknifunptr_platform_CoreFoundation845_kCFDateFormatterAMSymbol_getter
 kCFDateFormatterAMSymbol
-Dknifunptr_platform_CoreFoundation850_kCFDateFormatterCalendar_getter
+Dknifunptr_platform_CoreFoundation846_kCFDateFormatterCalendar_getter
 kCFDateFormatterCalendar
-Hknifunptr_platform_CoreFoundation851_kCFDateFormatterCalendarName_getter
+Hknifunptr_platform_CoreFoundation847_kCFDateFormatterCalendarName_getter
 kCFDateFormatterCalendarName
-Gknifunptr_platform_CoreFoundation852_kCFDateFormatterDefaultDate_getter
+Gknifunptr_platform_CoreFoundation848_kCFDateFormatterDefaultDate_getter
 kCFDateFormatterDefaultDate
-Iknifunptr_platform_CoreFoundation853_kCFDateFormatterDefaultFormat_getter
+Iknifunptr_platform_CoreFoundation849_kCFDateFormatterDefaultFormat_getter
 kCFDateFormatterDefaultFormat
-Yknifunptr_platform_CoreFoundation854_kCFDateFormatterDoesRelativeDateFormattingKey_getter
+Yknifunptr_platform_CoreFoundation850_kCFDateFormatterDoesRelativeDateFormattingKey_getter
 -kCFDateFormatterDoesRelativeDateFormattingKey
-Fknifunptr_platform_CoreFoundation855_kCFDateFormatterEraSymbols_getter
+Fknifunptr_platform_CoreFoundation851_kCFDateFormatterEraSymbols_getter
 kCFDateFormatterEraSymbols
-Nknifunptr_platform_CoreFoundation856_kCFDateFormatterGregorianStartDate_getter
+Nknifunptr_platform_CoreFoundation852_kCFDateFormatterGregorianStartDate_getter
 "kCFDateFormatterGregorianStartDate
-Eknifunptr_platform_CoreFoundation857_kCFDateFormatterIsLenient_getter
+Eknifunptr_platform_CoreFoundation853_kCFDateFormatterIsLenient_getter
 kCFDateFormatterIsLenient
-Jknifunptr_platform_CoreFoundation858_kCFDateFormatterLongEraSymbols_getter
+Jknifunptr_platform_CoreFoundation854_kCFDateFormatterLongEraSymbols_getter
 kCFDateFormatterLongEraSymbols
-Hknifunptr_platform_CoreFoundation859_kCFDateFormatterMonthSymbols_getter
+Hknifunptr_platform_CoreFoundation855_kCFDateFormatterMonthSymbols_getter
 kCFDateFormatterMonthSymbols
-Dknifunptr_platform_CoreFoundation860_kCFDateFormatterPMSymbol_getter
+Dknifunptr_platform_CoreFoundation856_kCFDateFormatterPMSymbol_getter
 kCFDateFormatterPMSymbol
-Jknifunptr_platform_CoreFoundation861_kCFDateFormatterQuarterSymbols_getter
+Jknifunptr_platform_CoreFoundation857_kCFDateFormatterQuarterSymbols_getter
 kCFDateFormatterQuarterSymbols
-Mknifunptr_platform_CoreFoundation862_kCFDateFormatterShortMonthSymbols_getter
+Mknifunptr_platform_CoreFoundation858_kCFDateFormatterShortMonthSymbols_getter
 !kCFDateFormatterShortMonthSymbols
-Oknifunptr_platform_CoreFoundation863_kCFDateFormatterShortQuarterSymbols_getter
+Oknifunptr_platform_CoreFoundation859_kCFDateFormatterShortQuarterSymbols_getter
 #kCFDateFormatterShortQuarterSymbols
-Wknifunptr_platform_CoreFoundation864_kCFDateFormatterShortStandaloneMonthSymbols_getter
+Wknifunptr_platform_CoreFoundation860_kCFDateFormatterShortStandaloneMonthSymbols_getter
 +kCFDateFormatterShortStandaloneMonthSymbols
-Yknifunptr_platform_CoreFoundation865_kCFDateFormatterShortStandaloneQuarterSymbols_getter
+Yknifunptr_platform_CoreFoundation861_kCFDateFormatterShortStandaloneQuarterSymbols_getter
 -kCFDateFormatterShortStandaloneQuarterSymbols
-Yknifunptr_platform_CoreFoundation866_kCFDateFormatterShortStandaloneWeekdaySymbols_getter
+Yknifunptr_platform_CoreFoundation862_kCFDateFormatterShortStandaloneWeekdaySymbols_getter
 -kCFDateFormatterShortStandaloneWeekdaySymbols
-Oknifunptr_platform_CoreFoundation867_kCFDateFormatterShortWeekdaySymbols_getter
+Oknifunptr_platform_CoreFoundation863_kCFDateFormatterShortWeekdaySymbols_getter
 #kCFDateFormatterShortWeekdaySymbols
-Rknifunptr_platform_CoreFoundation868_kCFDateFormatterStandaloneMonthSymbols_getter
+Rknifunptr_platform_CoreFoundation864_kCFDateFormatterStandaloneMonthSymbols_getter
 &kCFDateFormatterStandaloneMonthSymbols
-Tknifunptr_platform_CoreFoundation869_kCFDateFormatterStandaloneQuarterSymbols_getter
+Tknifunptr_platform_CoreFoundation865_kCFDateFormatterStandaloneQuarterSymbols_getter
 (kCFDateFormatterStandaloneQuarterSymbols
-Tknifunptr_platform_CoreFoundation870_kCFDateFormatterStandaloneWeekdaySymbols_getter
+Tknifunptr_platform_CoreFoundation866_kCFDateFormatterStandaloneWeekdaySymbols_getter
 (kCFDateFormatterStandaloneWeekdaySymbols
-Dknifunptr_platform_CoreFoundation871_kCFDateFormatterTimeZone_getter
+Dknifunptr_platform_CoreFoundation867_kCFDateFormatterTimeZone_getter
 kCFDateFormatterTimeZone
-Mknifunptr_platform_CoreFoundation872_kCFDateFormatterTwoDigitStartDate_getter
+Mknifunptr_platform_CoreFoundation868_kCFDateFormatterTwoDigitStartDate_getter
 !kCFDateFormatterTwoDigitStartDate
-Qknifunptr_platform_CoreFoundation873_kCFDateFormatterVeryShortMonthSymbols_getter
+Qknifunptr_platform_CoreFoundation869_kCFDateFormatterVeryShortMonthSymbols_getter
 %kCFDateFormatterVeryShortMonthSymbols
-[knifunptr_platform_CoreFoundation874_kCFDateFormatterVeryShortStandaloneMonthSymbols_getter
+[knifunptr_platform_CoreFoundation870_kCFDateFormatterVeryShortStandaloneMonthSymbols_getter
 /kCFDateFormatterVeryShortStandaloneMonthSymbols
-]knifunptr_platform_CoreFoundation875_kCFDateFormatterVeryShortStandaloneWeekdaySymbols_getter
+]knifunptr_platform_CoreFoundation871_kCFDateFormatterVeryShortStandaloneWeekdaySymbols_getter
 1kCFDateFormatterVeryShortStandaloneWeekdaySymbols
-Sknifunptr_platform_CoreFoundation876_kCFDateFormatterVeryShortWeekdaySymbols_getter
+Sknifunptr_platform_CoreFoundation872_kCFDateFormatterVeryShortWeekdaySymbols_getter
 'kCFDateFormatterVeryShortWeekdaySymbols
-Jknifunptr_platform_CoreFoundation877_kCFDateFormatterWeekdaySymbols_getter
+Jknifunptr_platform_CoreFoundation873_kCFDateFormatterWeekdaySymbols_getter
 kCFDateFormatterWeekdaySymbols
-Bknifunptr_platform_CoreFoundation878_kCFErrorDescriptionKey_getter
+Bknifunptr_platform_CoreFoundation874_kCFErrorDescriptionKey_getter
 kCFErrorDescriptionKey
 CFErrorDomain
-?knifunptr_platform_CoreFoundation879_kCFErrorDomainCocoa_getter
+?knifunptr_platform_CoreFoundation875_kCFErrorDomainCocoa_getter
 kCFErrorDomainCocoa
->knifunptr_platform_CoreFoundation880_kCFErrorDomainMach_getter
+>knifunptr_platform_CoreFoundation876_kCFErrorDomainMach_getter
 kCFErrorDomainMach
-Bknifunptr_platform_CoreFoundation881_kCFErrorDomainOSStatus_getter
+Bknifunptr_platform_CoreFoundation877_kCFErrorDomainOSStatus_getter
 kCFErrorDomainOSStatus
-?knifunptr_platform_CoreFoundation882_kCFErrorDomainPOSIX_getter
+?knifunptr_platform_CoreFoundation878_kCFErrorDomainPOSIX_getter
 kCFErrorDomainPOSIX
-?knifunptr_platform_CoreFoundation883_kCFErrorFilePathKey_getter
+?knifunptr_platform_CoreFoundation879_kCFErrorFilePathKey_getter
 kCFErrorFilePathKey
-Kknifunptr_platform_CoreFoundation884_kCFErrorLocalizedDescriptionKey_getter
+Kknifunptr_platform_CoreFoundation880_kCFErrorLocalizedDescriptionKey_getter
 kCFErrorLocalizedDescriptionKey
-Gknifunptr_platform_CoreFoundation885_kCFErrorLocalizedFailureKey_getter
+Gknifunptr_platform_CoreFoundation881_kCFErrorLocalizedFailureKey_getter
 kCFErrorLocalizedFailureKey
-Mknifunptr_platform_CoreFoundation886_kCFErrorLocalizedFailureReasonKey_getter
+Mknifunptr_platform_CoreFoundation882_kCFErrorLocalizedFailureReasonKey_getter
 !kCFErrorLocalizedFailureReasonKey
-Rknifunptr_platform_CoreFoundation887_kCFErrorLocalizedRecoverySuggestionKey_getter
+Rknifunptr_platform_CoreFoundation883_kCFErrorLocalizedRecoverySuggestionKey_getter
 &kCFErrorLocalizedRecoverySuggestionKey
-:knifunptr_platform_CoreFoundation888_kCFErrorURLKey_getter
+:knifunptr_platform_CoreFoundation884_kCFErrorURLKey_getter
 kCFErrorURLKey
-Fknifunptr_platform_CoreFoundation889_kCFErrorUnderlyingErrorKey_getter
+Fknifunptr_platform_CoreFoundation885_kCFErrorUnderlyingErrorKey_getter
 kCFErrorUnderlyingErrorKey
-@knifunptr_platform_CoreFoundation890_kCFGregorianCalendar_getter
+@knifunptr_platform_CoreFoundation886_kCFGregorianCalendar_getter
 kCFGregorianCalendar
-?knifunptr_platform_CoreFoundation891_kCFGujaratiCalendar_getter
-kCFGujaratiCalendar
-=knifunptr_platform_CoreFoundation892_kCFHebrewCalendar_getter
+=knifunptr_platform_CoreFoundation887_kCFHebrewCalendar_getter
 kCFHebrewCalendar
->knifunptr_platform_CoreFoundation893_kCFISO8601Calendar_getter
+>knifunptr_platform_CoreFoundation888_kCFISO8601Calendar_getter
 kCFISO8601Calendar
-=knifunptr_platform_CoreFoundation894_kCFIndianCalendar_getter
+=knifunptr_platform_CoreFoundation889_kCFIndianCalendar_getter
 kCFIndianCalendar
->knifunptr_platform_CoreFoundation895_kCFIslamicCalendar_getter
-kCFIslamicCalendarË
+>knifunptr_platform_CoreFoundation890_kCFIslamicCalendar_getter
+kCFIslamicCalendar
+Cknifunptr_platform_CoreFoundation891_kCFIslamicCivilCalendar_getter
+kCFIslamicCivilCalendar
+Eknifunptr_platform_CoreFoundation892_kCFIslamicTabularCalendar_getter
+kCFIslamicTabularCalendar
+Gknifunptr_platform_CoreFoundation893_kCFIslamicUmmAlQuraCalendar_getter
+kCFIslamicUmmAlQuraCalendar
+?knifunptr_platform_CoreFoundation894_kCFJapaneseCalendar_getter
+kCFJapaneseCalendar
+CFLocaleKey
+Xknifunptr_platform_CoreFoundation895_kCFLocaleAlternateQuotationBeginDelimiterKey_getter
+,kCFLocaleAlternateQuotationBeginDelimiterKey 
  
  
  
@@ -431,176 +427,170 @@ Fknifunptr_platform_CoreFoundation889_kCFErrorUnderlyingErrorKey_getter
 	 
 
  
- 
- 
-	 
- 
- 
-	 
-  
-$ 
-% 
-' 
+	 
+ 
+ 
+ 
+ 
+ 
+" 
+% 
+& 
 ( 
-, 
-/ 
-0 
-2 
-4 
-5 
-7 
+* 
++ 
+- 
+. 
+	2 
+	5 
+6 
 8 
-	< 
-	? 
-@ 
-B 
-J 
-K 
-P 
-Q 
-	X 
-Y 
-\ 
-	] 
-^ 
-_ 
-` 
-a 
-c 
-v 
-w 
-	| 
-} 
-Ä 
-Å
-9Ç 
-Ñ 
-Ö 
-á 
-à 
-å 
-ç 
-9è 
-	ú 
-ù 
-† 
-° 
-∏ 
-Ω 
-æ 
+@ 
+A 
+D 
+G 
+H 
+	O 
+P 
+S 
+	T 
+U 
+V 
+W 
+X 
+Z 
+m 
+n 
+	s 
+t 
+w 
+x
+5y 
+{ 
+| 
+~ 
+ 
+É 
+Ñ 
+5Ü 
+	ì 
+î 
+ó 
+ò 
+Ø 
+¥ 
+µ 
+ƒ 
+≈ 
 Õ 
 Œ 
+” 
+’ 
 ÷ 
 ◊ 
-‹ 
-ﬁ 
-ﬂ 
-‡ 
-Ú 
-ˇ 
-Ä 
-ë 
-î 
-ï 
-¨ 
-Ø 
-≤ 
-∑ 
-Ù Ö>:02	00j`2
+È 
+ˆ 
+˜ 
+à 
+â 
+é 
+° 
+§ 
+ß 
+™ 
+Á 
+ê –=:02	00j`2
 0
 j`Há “
-(H02	00j`200j`0Há “
-(:02	00j`2
-0j`Há “
-(:#02	00j`2
-!0j`Há “
-("J+00j`2&00j`2)00Há “
-(*.0j`Há “
-(-Ç:0!0j`"2100j`2&00j`2)002
-30j`2600j` Há “
-(9R>0#2;0!0j`"2&00j`2)00Há “
-(=>D0j`&2;0!0j`"2
-A0$j`%Há “
-(C2F0j`&2;0!0j`"Há “
-(E4H002;0!0j`"Há “
-(GJM0'0j`(2;0!0j`"2
-I0j`Há “
-(LdT0$j`%2;0!0j`"2N
-002
-O0$j`%2R0)0j`*Há “
-(SV0j`Há “
-(U∂f0/0j`02W00j`2
-Z0+j`,2[02TbPDB><0/0j`00j`0'0j`10#0.0-0j`22d
-030Há “
-(e2i0+j`,2g0/0j`0Há “
-(h>k0#2g0/0j`02d
-030Há “
-(j:n0#2g0/0j`02
-l0j`Há “
-(m:p0#2g0/0j`02
-l0j`Há “
-(o.r0#2g0/0j`0Há “
-(q.t02g0/0j`0Há “
-(s^y040j`52W00j`2g0/0j`02
-u0$j`%Há “
-(x{0j`Há “
-(zàä0=0j`>2W00j`2
-~06j`72
-0j`2É0+08j`:02Ü0;0j`<Há “
-	(â\ë0+j`A2ã0=0j`>2
-~06j`72é00?j`@0Há “
-	(êcï00j`2ã0=0j`>2í00j`2ì0$j`%Há “
-	(î?ó0;0j`<2ã0=0j`>Há “
-	(ñdô0+j`A2ã0=0j`>2
-~06j`72
-0j`2Ü0;0j`<Há “
-	(ò5õ0+j`A2ã0=0j`>Há “
-	(ö°ü040j`52W00j`2ã0=0j`>2>b:.,(&0=0j`>0j`0#0B0-0j`C2
-u0$j`%Há “
-	(û¿©0+j`A2
-~06j`72
-0j`2¢0D0j`E2£0D0j`E2§0D0j`E2•00j`2¶00j`2ß00j`Há “
-	(®â≠0+j`A2
-~06j`72
-0j`2¢0D0j`E2£0D0j`E2§0D0j`E2•00j`2¶00j`2ß00j`2™00j`2´00j`2é00?j`@0Há “
-	(¨+∞0j`2Æ0$j`%Há “
-	(Ø+≤0j`2Æ0$j`%Há “
-	(±+µ0j`2≥0$j`%Há “
-	(¥∑0j`Há “
-	(∂~¿0G0j`H2100j`2π0$j`F2∫00j`2ª02º0$j`%Há “
-	(øU√0G0j`H2100j`2¡0G0j`HHá “
-	(¬5∆0$j`F2ƒ0G0j`HHá “
-	(≈?»00j`2ƒ0G0j`HHá “
-	(«A 0'0j`12ƒ0G0j`HHá “
-	(…5Ã0$j`%2ƒ0G0j`HHá “
-	(ÀU–0I0j`J2W00j`2ƒ0G0j`HHá “
-	(œ?”0G0j`H2—0I0j`JHá “
-	(“’0j`Há “
-	(‘ß‚0O0j`P2W00j`2ÿ0K0j`L2Ÿ0D0j`E2⁄0j`2€0$j`%2›
-0M02d
-0N0Há “
-	(·ê‰0O0j`P2W00j`2Ÿ0D0j`E2⁄0j`2€0$j`%2›
-0M02d
-0N0Há “
-	(„AÁ0#2Â0O0j`P2d
-0N0Há “
-	(ÊBÈ0#2Â0O0j`P2›
-0M0Há “
-	(Ë?Î0D0j`E2Â0O0j`PHá “
-	(Í5Ì0$j`%2Â0O0j`PHá “
-	(Ï5Ô0$j`%2Â0O0j`PHá “
-	(ÓAÒ0'0j`12Â0O0j`PHá “
-	(5Ù0$j`Q2Â0O0j`PHá “
-	(Û?ˆ00j`2Â0O0j`PHá “
-	(ıU˙0#2Â0O0j`P2˜0$j`Q2¯00j`Há “
-	(˘1¸02Â0O0j`PHá “
-	(˚Ü˛0I0j`J2W00j`2ÿ0K0j`L2Ÿ0D0j`E2⁄0j`2€0$j`%Há “
-	(˝´É0I0j`J2W00j`2ÿ0K0j`L2Ÿ0D0j`E2⁄0j`2€0$j`%2#Å0;0j`<0Rj`S0Há “
-	(ÇoÖ0I0j`J2W00j`2Ÿ0D0j`E2⁄0j`2€0$j`%Há “
-	(ÑUá0K0j`L2W00j`2—0I0j`JHá “
-	(Ükä00j`2W00j`2&00j`2à0;0j`<Há “
-	(âkå00j`2W00j`2&00j`2à0;0j`<Há “
-	(ã"é06j`78«ä	(ç"ê06j`78«ä	(è"(ì00j`T8«ä	(í"(ó0U0j`V8«ä	(ñ"(ô0U0j`V8«ä	(ò"(õ00j`T8«ä	(ö"(ù00j`8«ä	(ú"(ü00j`8«ä	(û"(°00j`8«ä	(†"(£00j`8«ä	(¢"(•00j`8«ä	(§"(ß00j`8«ä	(¶"(©00j`8«ä	(®"(´00j`T8«ä	(™"Æ0W8«ä	(≠"±0X8«ä	(∞"¥0Y8«ä	(≥"(∂00j`T8«ä	(µ"(π00j`Z8«ä	(∏"(ª00j`Z8«ä	(∫"(Ω00j`Z8«ä	(º"(ø00j`Z8«ä	(æ"(¡00j`Z8«ä	(¿"(√00j`Z8«ä	(¬"(≈00j`Z8«ä	(ƒ"(«00j`Z8«ä	(∆"(…00j`Z8«ä	(»"(À00j`Z8«ä	( "(Õ00j`Z8«ä	(Ã"(œ00j`Z8«ä	(Œ"(—00j`Z8«ä	(–"(”00j`Z8«ä	(“"(’00j`Z8«ä	(‘"(◊00j`Z8«ä	(÷"(Ÿ00j`Z8«ä	(ÿ"(€00j`Z8«ä	(⁄"(›00j`Z8«ä	(‹"(ﬂ00j`Z8«ä	(ﬁ"(·00j`Z8«ä	(‡"(„00j`Z8«ä	(‚"(Â00j`Z8«ä	(‰"(Á00j`Z8«ä	(Ê"(È00j`Z8«ä	(Ë"(Î00j`Z8«ä	(Í"(Ì00j`Z8«ä	(Ï"(Ô00j`Z8«ä	(Ó"(Ò00j`Z8«ä	("(Û00j`8«ä	(Ú"(ˆ00j`[8«ä	(ı"(¯00j`[8«ä	(˜"(˙00j`[8«ä	(˘"(¸00j`[8«ä	(˚"(˛00j`8«ä	(˝"(Ä00j`8«ä	(ˇ"(Ç00j`8«ä	(Å"(Ñ00j`8«ä	(É"(Ü00j`8«ä	(Ö"(à00j`8«ä	(á"(ä00j`8«ä	(â"(å00j`T8«ä	(ã"(é00j`T8«ä	(ç"(ê00j`T8«ä	(è"(í00j`T8«ä	(ë"(î00j`T8«ä	(ì"(ñ00j`T8«ä	(ïÿ
+(:02	00j`2
+0j`Há “
+(J!00j`200j`200Há “
+( $0j`Há “
+(#Ç000j`2'00j`200j`2002
+)0j`2,00j`Há “
+(/R402100j`200j`200Há “
+(3>:0j`!2100j`2
+70j` Há “
+(92<0j`!2100j`Há “
+(;4>002100j`Há “
+(=JC0"0j`#2100j`2
+?0j`Há “
+(BdK0j` 2100j`2E
+00$2
+F0j` 2I0%0j`&Há “
+(JM0j`Há “
+(L∂]0+0j`,2N00j`2
+Q0'j`(2R02TYPDB><0+0j`,0j`0"0j`-00*0)0j`.2[
+0/0$Há “
+(\2`0'j`(2^0+0j`,Há “
+(_>b02^0+0j`,2[
+0/0$Há “
+(a:e02^0+0j`,2
+c0j`Há “
+(d:g02^0+0j`,2
+c0j`Há “
+(f.i02^0+0j`,Há “
+(h.k02^0+0j`,Há “
+(j^p000j`12N00j`2^0+0j`,2
+l0j` Há “
+(or0j`Há “
+(qÜÅ090j`:2N00j`2
+u02j`32
+v0j`2z0'04j`60$2}070j`8Há “
+	(Ä\à0'j`=2Ç090j`:2
+u02j`32Ö00;j`<0$Há “
+	(ácå00j`2Ç090j`:2â00j`2ä0j` Há “
+	(ã?é070j`82Ç090j`:Há “
+	(çcê0'j`=2Ç090j`:2
+u02j`32
+v0j`2}070j`8Há “
+	(è5í0'j`=2Ç090j`:Há “
+	(ë°ñ000j`12N00j`2Ç090j`:2>Y:.,(&090j`:0j`00>0)0j`?2
+l0j` Há “
+	(ï¿†0'j`=2
+u02j`32
+v0j`2ô0@0j`A2ö0@0j`A2õ0@0j`A2ú00j`2ù00j`2û00j`Há “
+	(üâ§0'j`=2
+u02j`32
+v0j`2ô0@0j`A2ö0@0j`A2õ0@0j`A2ú00j`2ù00j`2û00j`2°00j`2¢00j`2Ö00;j`<0$Há “
+	(£+ß0j`2•0j` Há “
+	(¶+©0j`2•0j` Há “
+	(®+¨0j`2™0j` Há “
+	(´Æ0j`Há “
+	(≠~∑0C0j`D2'00j`2∞0j`B2±00j`2≤0$2≥0j` Há “
+	(∂U∫0C0j`D2'00j`2∏0C0j`DHá “
+	(π5Ω0j`B2ª0C0j`DHá “
+	(º?ø00j`2ª0C0j`DHá “
+	(æA¡0"0j`-2ª0C0j`DHá “
+	(¿5√0j` 2ª0C0j`DHá “
+	(¬U«0E0j`F2N00j`2ª0C0j`DHá “
+	(∆? 0C0j`D2»0E0j`FHá “
+	(…Ã0j`Há “
+	(ÀßŸ0K0j`L2N00j`2œ0G0j`H2–0@0j`A2—0j`2“0j` 2‘
+0I0$2[
+0J0$Há “
+	(ÿê€0K0j`L2N00j`2–0@0j`A2—0j`2“0j` 2‘
+0I0$2[
+0J0$Há “
+	(⁄Aﬁ02‹0K0j`L2[
+0J0$Há “
+	(›B‡02‹0K0j`L2‘
+0I0$Há “
+	(ﬂ?‚0@0j`A2‹0K0j`LHá “
+	(·5‰0j` 2‹0K0j`LHá “
+	(„5Ê0j` 2‹0K0j`LHá “
+	(ÂAË0"0j`-2‹0K0j`LHá “
+	(Á5Î0j`M2‹0K0j`LHá “
+	(Í?Ì00j`2‹0K0j`LHá “
+	(ÏUÒ02‹0K0j`L2Ó0j`M2Ô00j`Há “
+	(1Û02‹0K0j`LHá “
+	(ÚÜı0E0j`F2N00j`2œ0G0j`H2–0@0j`A2—0j`2“0j` Há “
+	(Ù´˙0E0j`F2N00j`2œ0G0j`H2–0@0j`A2—0j`2“0j` 2#¯070j`80Nj`O0$Há “
+	(˘o¸0E0j`F2N00j`2–0@0j`A2—0j`2“0j` Há “
+	(˚U˛0G0j`H2N00j`2»0E0j`FHá “
+	(˝kÅ00j`2N00j`200j`2ˇ070j`8Há “
+	(ÄkÉ00j`2N00j`200j`2ˇ070j`8Há “
+	(Ç"Ö02j`38«ä	(Ñ"á02j`38«ä	(Ü"(ã0P0j`Q8«ä	(ä"(ç0P0j`Q8«ä	(å"(ê00j`R8«ä	(è"(í00j`8«ä	(ë"(î00j`8«ä	(ì"(ñ00j`8«ä	(ï"(ò00j`8«ä	(ó"(ö00j`8«ä	(ô"(ú00j`8«ä	(õ"(û00j`8«ä	(ù"(†00j`R8«ä	(ü"£0S8«ä	(¢"¶0T8«ä	(•"©0U8«ä	(®"(¨00j`V8«ä	(´"(Æ00j`V8«ä	(≠"(∞00j`V8«ä	(Ø"(≤00j`V8«ä	(±"(¥00j`V8«ä	(≥"(∂00j`V8«ä	(µ"(∏00j`V8«ä	(∑"(∫00j`V8«ä	(π"(º00j`V8«ä	(ª"(æ00j`V8«ä	(Ω"(¿00j`V8«ä	(ø"(¬00j`V8«ä	(¡"(ƒ00j`V8«ä	(√"(∆00j`V8«ä	(≈"(»00j`V8«ä	(«"( 00j`V8«ä	(…"(Ã00j`V8«ä	(À"(Œ00j`V8«ä	(Õ"(–00j`V8«ä	(œ"(“00j`V8«ä	(—"(‘00j`V8«ä	(”"(÷00j`V8«ä	(’"(ÿ00j`V8«ä	(◊"(⁄00j`V8«ä	(Ÿ"(‹00j`V8«ä	(€"(ﬁ00j`V8«ä	(›"(‡00j`V8«ä	(ﬂ"(‚00j`V8«ä	(·"(‰00j`V8«ä	(„"(Ê00j`8«ä	(Â"(È00j`W8«ä	(Ë"(Î00j`W8«ä	(Í"(Ì00j`W8«ä	(Ï"(Ô00j`W8«ä	(Ó"(Ò00j`8«ä	("(Û00j`8«ä	(Ú"(ı00j`8«ä	(Ù"(˜00j`8«ä	(ˆ"(˘00j`8«ä	(¯"(˚00j`8«ä	(˙"(˝00j`8«ä	(¸"(ˇ00j`R8«ä	(˛"(Å00j`R8«ä	(Ä"(É00j`R8«ä	(Ç"(Ö00j`R8«ä	(Ñ"(á00j`R8«ä	(Ü"(â00j`R8«ä	(à"(ã00j`R8«ä	(ä"(ç00j`R8«ä	(å"(è00j`R8«ä	(é"(í00j`X8«ä	(ëÿ
 ‡
  Í
 platform.CoreFoundation

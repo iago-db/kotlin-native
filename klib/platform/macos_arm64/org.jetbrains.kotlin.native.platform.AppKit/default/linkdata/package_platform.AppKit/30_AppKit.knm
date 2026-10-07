@@ -1,93 +1,11 @@
 
-ä_
+°^
 platform
 AppKit
-NSTypesetter
-kotlin
-ULong
-darwin
-
-NSUInteger
-	charIndex
-"NSTypesetterControlCharacterAction
-kotlinx
-cinterop
-
-ObjCMethod
-selector
-!actionForControlCharacterAtIndex:
-encoding
-
-Q24@0:8Q16
-isStret
- actionForControlCharacterAtIndex
-CValue
-
-Foundation
-_NSRange
-NSRange
-glyphsRange
-CPointer
-	UIntVarOf
-UInt
-
-NSGlyphVar
-glyphs
-
-ULongVarOf
-NSUIntegerVar
-characterIndexes
-NSGlyphInscriptionVar
-glyphInscriptions
-BooleanVarOf
-Boolean
-
-BooleanVar
-elasticBits
-
-UByteVarOf
-UByte
-UByteVar
-
-bidiLevels
-RgetGlyphsInRange:glyphs:characterIndexes:glyphInscriptions:elasticBits:bidiLevels:
-)Q72@0:8{_NSRange=QQ}16^I32^Q40^Q48^B56*64
-getGlyphsInRange
-
-glyphRange
-
-withGlyphs
-Unit
-#substituteGlyphsInRange:withGlyphs:
-v40@0:8{_NSRange=QQ}16^I32
-substituteGlyphsInRange
-NSGlyph
-glyph
-atGlyphIndex
-characterIndex
-(insertGlyph:atGlyphIndex:characterIndex:
-v36@0:8I16Q20Q28
-insertGlyph
-deleteGlyphsInRange:
-v32@0:8{_NSRange=QQ}16
-deleteGlyphsInRange
 NSATSTypesetter
-CoreGraphics
-CGRect
-NSRect
-proposedRect
-NSRectPointer
-remainingRect
-.lineFragmentRectForProposedRect:remainingRect:
-k{CGRect={CGPoint=dd}{CGSize=dd}}56@0:8{CGRect={CGPoint=dd}{CGSize=dd}}16^{CGRect={CGPoint=dd}{CGSize=dd}}48
-lineFragmentRectForProposedRect
-NSFont
-originalFont
-substituteFontForFont:
-
-@24@0:8@16
-substituteFontForFont
+kotlin
 Double
+CoreGraphics
 CGFloat
 glyphLocation
 Long
@@ -95,22 +13,42 @@ k{CGRect={CGPoint=dd}{CGSize=dd}}56@0:8{CGRect={CGPoint=dd}{CGSize=dd}}16^{CGRec
 writingDirection
 maxLocation
 	NSTextTab
+kotlinx
+cinterop
+
+ObjCMethod
+selector
 5textTabForGlyphLocation:writingDirection:maxLocation:
+encoding
 @40@0:8d16q24d32
+isStret
 textTabForGlyphLocation
+CValue
+
+Foundation
+_NSRange
+NSRange
 paragraphRange
 separatorGlyphRange
+Unit
 +setParagraphGlyphRange:separatorGlyphRange:
 %v48@0:8{_NSRange=QQ}16{_NSRange=QQ}32
 setParagraphGlyphRange
+CPointer
 CGPoint
 NSPoint
 lineFragmentOrigin
+ULong
+darwin
+
+NSUInteger
 layoutParagraphAtPoint:
 Q24@0:8^{CGPoint=dd}16
 layoutParagraphAtPoint
 
 glyphIndex
+CGRect
+NSRect
 withProposedLineFragmentRect
 :lineSpacingAfterGlyphAtIndex:withProposedLineFragmentRect:
 ,d56@0:8Q16{CGRect={CGPoint=dd}{CGSize=dd}}24
@@ -119,6 +57,7 @@ glyphIndex
 "paragraphSpacingBeforeGlyphAtIndex
 ?paragraphSpacingAfterGlyphAtIndex:withProposedLineFragmentRect:
 !paragraphSpacingAfterGlyphAtIndex
+Boolean
 flag
 forGlyphRange
 "setHardInvalidation:forGlyphRange:
@@ -182,6 +121,7 @@ CGFloatVar
 >willSetLineFragmentRect:forGlyphRange:usedRect:baselineOffset:
 `v56@0:8^{CGRect={CGPoint=dd}{CGSize=dd}}16{_NSRange=QQ}24^{CGRect={CGPoint=dd}{CGSize=dd}}40^d48
 willSetLineFragmentRect
+	charIndex
 ,shouldBreakLineByWordBeforeCharacterAtIndex:
 
 B24@0:8Q16
@@ -192,6 +132,7 @@ B24@0:8Q16
 
 f24@0:8Q16
  hyphenationFactorForGlyphAtIndex
+UInt
 	UTF32Char
 hyphenCharacterForGlyphAtIndex:
 
@@ -200,11 +141,28 @@ I24@0:8Q16
 forTextContainer
 proposedLineFragment
 glyphPosition
+characterIndex
 eboundingBoxForControlGlyphAtIndex:forTextContainer:proposedLineFragment:glyphPosition:characterIndex:
 _{CGRect={CGPoint=dd}{CGSize=dd}}88@0:8Q16@24{CGRect={CGPoint=dd}{CGSize=dd}}32{CGPoint=dd}64Q80
 !boundingBoxForControlGlyphAtIndex
+glyphsRange
+	UIntVarOf
+
+NSGlyphVar
+glyphs
+
+ULongVarOf
+NSUIntegerVar
+characterIndexes
+NSGlyphInscriptionVar
+glyphInscriptions
+BooleanVarOf
+
+BooleanVar
+elasticBits
 GgetGlyphsInRange:glyphs:characterIndexes:glyphInscriptions:elasticBits:
 &Q64@0:8{_NSRange=QQ}16^I32^Q40^Q48^B56
+getGlyphsInRange
 NSSearchField
 
 isCentered
@@ -322,6 +280,8 @@ v24@0:8#16
 NSResponderMeta
 keyPath
 (allowedClassesForRestorableStateKeyPath:
+
+@24@0:8@16
 'allowedClassesForRestorableStateKeyPath
 restorableStateKeyPaths
 extendStateRestoration
@@ -358,101 +318,117 @@ attributes
 internal
 CCall
 id
-@knifunptr_platform_AppKit241_NS16BitBigEndianBitmapFormat_getter
+@knifunptr_platform_AppKit240_NS16BitBigEndianBitmapFormat_getter
 NS16BitBigEndianBitmapFormat
-Cknifunptr_platform_AppKit242_NS16BitLittleEndianBitmapFormat_getter
+Cknifunptr_platform_AppKit241_NS16BitLittleEndianBitmapFormat_getter
 NS16BitLittleEndianBitmapFormat
-@knifunptr_platform_AppKit243_NS32BitBigEndianBitmapFormat_getter
+@knifunptr_platform_AppKit242_NS32BitBigEndianBitmapFormat_getter
 NS32BitBigEndianBitmapFormat
-Cknifunptr_platform_AppKit244_NS32BitLittleEndianBitmapFormat_getter
+Cknifunptr_platform_AppKit243_NS32BitLittleEndianBitmapFormat_getter
 NS32BitLittleEndianBitmapFormat
 Short
 NSEventSubtype
-2knifunptr_platform_AppKit245_NSAWTEventType_getter
+2knifunptr_platform_AppKit244_NSAWTEventType_getter
 NSAWTEventType
 NSExceptionName
 value
-9knifunptr_platform_AppKit246_NSAbortModalException_getter
-9knifunptr_platform_AppKit247_NSAbortModalException_setter
+9knifunptr_platform_AppKit245_NSAbortModalException_getter
+9knifunptr_platform_AppKit246_NSAbortModalException_setter
 NSAbortModalException
-<knifunptr_platform_AppKit248_NSAbortPrintingException_getter
-<knifunptr_platform_AppKit249_NSAbortPrintingException_setter
+<knifunptr_platform_AppKit247_NSAbortPrintingException_getter
+<knifunptr_platform_AppKit248_NSAbortPrintingException_setter
 NSAbortPrintingException
 NSAboutPanelOptionKey
-Eknifunptr_platform_AppKit250_NSAboutPanelOptionApplicationIcon_getter
+Eknifunptr_platform_AppKit249_NSAboutPanelOptionApplicationIcon_getter
 !NSAboutPanelOptionApplicationIcon
-Eknifunptr_platform_AppKit251_NSAboutPanelOptionApplicationName_getter
+Eknifunptr_platform_AppKit250_NSAboutPanelOptionApplicationName_getter
 !NSAboutPanelOptionApplicationName
-Hknifunptr_platform_AppKit252_NSAboutPanelOptionApplicationVersion_getter
+Hknifunptr_platform_AppKit251_NSAboutPanelOptionApplicationVersion_getter
 $NSAboutPanelOptionApplicationVersion
-=knifunptr_platform_AppKit253_NSAboutPanelOptionCredits_getter
+=knifunptr_platform_AppKit252_NSAboutPanelOptionCredits_getter
 NSAboutPanelOptionCredits
-=knifunptr_platform_AppKit254_NSAboutPanelOptionVersion_getter
+=knifunptr_platform_AppKit253_NSAboutPanelOptionVersion_getter
 NSAboutPanelOptionVersion
 NSButtonType
-7knifunptr_platform_AppKit255_NSAcceleratorButton_getter
+7knifunptr_platform_AppKit254_NSAcceleratorButton_getter
 NSAcceleratorButton
 NSAccessibilityAttributeName
-Kknifunptr_platform_AppKit256_NSAccessibilityActivationPointAttribute_getter
+Kknifunptr_platform_AppKit255_NSAccessibilityActivationPointAttribute_getter
 'NSAccessibilityActivationPointAttribute
-Iknifunptr_platform_AppKit257_NSAccessibilityAllowedValuesAttribute_getter
+Iknifunptr_platform_AppKit256_NSAccessibilityAllowedValuesAttribute_getter
 %NSAccessibilityAllowedValuesAttribute
-Nknifunptr_platform_AppKit258_NSAccessibilityAlternateUIVisibleAttribute_getter
+Nknifunptr_platform_AppKit257_NSAccessibilityAlternateUIVisibleAttribute_getter
 *NSAccessibilityAlternateUIVisibleAttribute
 %NSAccessibilityAnnotationAttributeKey
-Dknifunptr_platform_AppKit259_NSAccessibilityAnnotationElement_getter
+Dknifunptr_platform_AppKit258_NSAccessibilityAnnotationElement_getter
  NSAccessibilityAnnotationElement
-Bknifunptr_platform_AppKit260_NSAccessibilityAnnotationLabel_getter
+Bknifunptr_platform_AppKit259_NSAccessibilityAnnotationLabel_getter
 NSAccessibilityAnnotationLabel
-Eknifunptr_platform_AppKit261_NSAccessibilityAnnotationLocation_getter
+Eknifunptr_platform_AppKit260_NSAccessibilityAnnotationLocation_getter
 !NSAccessibilityAnnotationLocation
 NSAttributedStringKey
-Jknifunptr_platform_AppKit262_NSAccessibilityAnnotationTextAttribute_getter
+Jknifunptr_platform_AppKit261_NSAccessibilityAnnotationTextAttribute_getter
 &NSAccessibilityAnnotationTextAttribute
 &NSAccessibilityNotificationUserInfoKey
-Bknifunptr_platform_AppKit263_NSAccessibilityAnnouncementKey_getter
+Bknifunptr_platform_AppKit262_NSAccessibilityAnnouncementKey_getter
 NSAccessibilityAnnouncementKey
 NSAccessibilityNotificationName
-Tknifunptr_platform_AppKit264_NSAccessibilityAnnouncementRequestedNotification_getter
+Tknifunptr_platform_AppKit263_NSAccessibilityAnnouncementRequestedNotification_getter
 0NSAccessibilityAnnouncementRequestedNotification
-NSAccessibilitySearchKey
-Cknifunptr_platform_AppKit265_NSAccessibilityAnyTypeSearchKey_getter
-NSAccessibilityAnyTypeSearchKey
-Sknifunptr_platform_AppKit266_NSAccessibilityApplicationActivatedNotification_getter
+Sknifunptr_platform_AppKit264_NSAccessibilityApplicationActivatedNotification_getter
 /NSAccessibilityApplicationActivatedNotification
-Uknifunptr_platform_AppKit267_NSAccessibilityApplicationDeactivatedNotification_getter
+Uknifunptr_platform_AppKit265_NSAccessibilityApplicationDeactivatedNotification_getter
 1NSAccessibilityApplicationDeactivatedNotification
-Pknifunptr_platform_AppKit268_NSAccessibilityApplicationHiddenNotification_getter
+Pknifunptr_platform_AppKit266_NSAccessibilityApplicationHiddenNotification_getter
 ,NSAccessibilityApplicationHiddenNotification
 NSAccessibilityRole
-Bknifunptr_platform_AppKit269_NSAccessibilityApplicationRole_getter
+Bknifunptr_platform_AppKit267_NSAccessibilityApplicationRole_getter
 NSAccessibilityApplicationRole
-Oknifunptr_platform_AppKit270_NSAccessibilityApplicationShownNotification_getter
+Oknifunptr_platform_AppKit268_NSAccessibilityApplicationShownNotification_getter
 +NSAccessibilityApplicationShownNotification
-Cknifunptr_platform_AppKit271_NSAccessibilityArticleSearchKey_getter
-NSAccessibilityArticleSearchKey
 !NSAccessibilitySortDirectionValue
-Nknifunptr_platform_AppKit272_NSAccessibilityAscendingSortDirectionValue_getter
+Nknifunptr_platform_AppKit269_NSAccessibilityAscendingSortDirectionValue_getter
 *NSAccessibilityAscendingSortDirectionValue
-Jknifunptr_platform_AppKit273_NSAccessibilityAttachmentTextAttribute_getter
+Jknifunptr_platform_AppKit270_NSAccessibilityAttachmentTextAttribute_getter
 &NSAccessibilityAttachmentTextAttribute
 )NSAccessibilityParameterizedAttributeName
-aknifunptr_platform_AppKit274_NSAccessibilityAttributedStringForRangeParameterizedAttribute_getter
+aknifunptr_platform_AppKit271_NSAccessibilityAttributedStringForRangeParameterizedAttribute_getter
 =NSAccessibilityAttributedStringForRangeParameterizedAttribute
-Lknifunptr_platform_AppKit275_NSAccessibilityAutoInteractableAttribute_getter
-(NSAccessibilityAutoInteractableAttribute
-Mknifunptr_platform_AppKit276_NSAccessibilityAutocorrectedTextAttribute_getter
+Mknifunptr_platform_AppKit272_NSAccessibilityAutocorrectedTextAttribute_getter
 )NSAccessibilityAutocorrectedTextAttribute
-Uknifunptr_platform_AppKit277_NSAccessibilityAutocorrectionOccurredNotification_getter
-1NSAccessibilityAutocorrectionOccurredNotification
-Oknifunptr_platform_AppKit278_NSAccessibilityBackgroundColorTextAttribute_getter
+Oknifunptr_platform_AppKit273_NSAccessibilityBackgroundColorTextAttribute_getter
 +NSAccessibilityBackgroundColorTextAttribute
-Kknifunptr_platform_AppKit279_NSAccessibilityBlockQuoteLevelAttribute_getter
-'NSAccessibilityBlockQuoteLevelAttribute
-Oknifunptr_platform_AppKit280_NSAccessibilityBlockquoteSameLevelSearchKey_getter
-+NSAccessibilityBlockquoteSameLevelSearchKey
-Fknifunptr_platform_AppKit281_NSAccessibilityBlockquoteSearchKey_getter
-"NSAccessibilityBlockquoteSearchKeyÏ
+Wknifunptr_platform_AppKit274_NSAccessibilityBoundsForRangeParameterizedAttribute_getter
+3NSAccessibilityBoundsForRangeParameterizedAttribute
+>knifunptr_platform_AppKit275_NSAccessibilityBrowserRole_getter
+NSAccessibilityBrowserRole
+Dknifunptr_platform_AppKit276_NSAccessibilityBusyIndicatorRole_getter
+ NSAccessibilityBusyIndicatorRole
+=knifunptr_platform_AppKit277_NSAccessibilityButtonRole_getter
+NSAccessibilityButtonRole
+NSAccessibilityActionName
+?knifunptr_platform_AppKit278_NSAccessibilityCancelAction_getter
+NSAccessibilityCancelAction
+Hknifunptr_platform_AppKit279_NSAccessibilityCancelButtonAttribute_getter
+$NSAccessibilityCancelButtonAttribute
+\knifunptr_platform_AppKit280_NSAccessibilityCellForColumnAndRowParameterizedAttribute_getter
+8NSAccessibilityCellForColumnAndRowParameterizedAttribute
+;knifunptr_platform_AppKit281_NSAccessibilityCellRole_getter
+NSAccessibilityCellRole
+#NSAccessibilityRulerMarkerTypeValue
+Oknifunptr_platform_AppKit282_NSAccessibilityCenterTabStopMarkerTypeValue_getter
++NSAccessibilityCenterTabStopMarkerTypeValue
+NSAccessibilityRulerUnitValue
+Gknifunptr_platform_AppKit283_NSAccessibilityCentimetersUnitValue_getter
+#NSAccessibilityCentimetersUnitValue
+?knifunptr_platform_AppKit284_NSAccessibilityCheckBoxRole_getter
+NSAccessibilityCheckBoxRole
+Dknifunptr_platform_AppKit285_NSAccessibilityChildrenAttribute_getter
+ NSAccessibilityChildrenAttribute
+Gknifunptr_platform_AppKit286_NSAccessibilityClearButtonAttribute_getter
+#NSAccessibilityClearButtonAttribute
+Gknifunptr_platform_AppKit287_NSAccessibilityCloseButtonAttribute_getter
+#NSAccessibilityCloseButtonAttributeæ
  
  
  
@@ -460,381 +436,290 @@ Fknifunptr_platform_AppKit281_NSAccessibilityBlockquoteSearchKey_getter
  
  
  
- 
-	
-
-
-	 
-	 
- 
- 
- 
-	 
-	 
- 
- 
-	 
- 
- 
-	! 
-" 
-	# 
-	% 
-& 
-	' 
-. 
-2 
-< 
- =
-> 
-? 
-A 
-F 
-K 
-L 
-N 
-O 
-R 
-[ 
-\ 
-{ 
-Å 
-è 
-ò 
-ö 
-	ù 
-û 
-´ 
-∑ 
-√ 
-ƒ
-5≈
-6∆ 
-	… 
-  
-œ 
- ‘
-;’ 
-Ÿ 
-› 
-‰ 
-Â 
-Î 
-Ï 
-Ó
-CÔ 
+ 
+	 
+ 
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+  
+! 
+" 
+$ 
+ %
+& 
++ 
+, 
+5 
+G 
+M 
+[ 
+d 
+f 
+i 
+j 
+x 
+y 
+Ö 
+Ü 
+à 
+â 
+ã 
+ç 
+é 
+ì 
+ü 
+†
+-°
+.¢ 
+• 
+¶ 
+´ 
+ ∞
+3± 
+µ 
+π 
+¿ 
+¡ 
+« 
+» 
+ 
+;À 
+– 
+— 
+› 
+ﬂ 
+· 
+‚ 
+Ó 
 Ù 
-ı 
-Å 
-É 
-Ö 
-Ü 
-í 
-ò 
-ú 
-£ 
-™ 
+¯ 
+ˇ 
+á 
+ã 
+å 
+ê 
+ë 
+î 
+ï 
+ô 
+ö 
+;ú 
+° 
+¢
+R£ 
+≠ 
 Æ 
-Ø 
-≥ 
-¥ 
-∑ 
-∏ 
-º 
-Ω 
-Cø 
+± 
+π 
 ƒ 
-	≈
-Z∆ 
-– 
-— 
-‘ 
-‹ 
-Á 
-Í 
-Ò 
-¯ 
-˚ 
-˛ 
-Å 
-ä 
-ë 
-ñ Æ=@0j`*02
-0j`Há “
- 
-(( »+0j`*020j`0200j`0200j`02 00j`02$00j`02(00j`0Há “
- 
-()(* \10*02,0j`02-00j`0Há “
- 
-(/(0 T80*02
-30j`2
-40j`2
-50j`Há “
- 
-(6(7 B;0*02,0j`0Há “
- 
-(9(: fE0 j`!0*02@0 j`!02B0 j`!0j`"Há “
- 
-(C(D 8J0#*02G0#Há “
- 
-(H(I VU0(*02
-M0$j`%2
-P0&j`'2
-Q0$j`%Há “
- 
-(S(T TZ0*02V0j`02W0j`0Há “
- 
-(X(Y H`0j`*02]0)j`*0Há “
- 
-(^(_ Re0$j`%*02
-a0j`2b0 j`!0Há “
- 
-(c(d Rg0$j`%*02
-a0j`2b0 j`!0Há “
- 
-(f(d Ri0$j`%*02
-a0j`2b0 j`!0Há “
- 
-(h(d Jn0*02j02k0j`0Há “
- 
-(l(m |u0*02o0 j`!02p0 j`!02q0j`02r0)j`*0Há “
- 
-(s(t 0v0*0Há “
- 
-(v(w 8z0*02v0Há “
- 
-(x(y 4|0&j`+*0Há “
- 
-(|(} =Ä0*02
-|0&j`+Há “
- 
-(~( 3Ç0,*0Há “
-"
-	(Ç	(É <Ü0*02Ç0,Há “
-"
-	(Ñ	(Ö 7á0$j`%*0Há “
-"
-	(á	(à @ã0*02á0$j`%Há “
-"
-	(â	(ä 2å0*0Há “
-!
-	(å(w ;é0*02å0Há “
-!
-	(ç(y 5ê0-*0Há “
-"
-	(ê	(ë >î0*02	ê0-Há “
-"
-	(í	(ì =ï0j`0*0Há “
-"
-	(ï	(ñ =ó0j`0*0Há “
-"
-	(ó	(ñ 5ô0.*0Há “
-"
-	(ô	(ë 5õ0/*0Há “
-"
-	(õ	(ë â¢0*02ú0 j`!02k0j`02p0 j`!02ü0$00j`10Há “
-"
-	(†	(° ?•0*02
-0j`Há “
-"
-	(£	(§ ?ß0*02
-0j`Há “
-"
-	(¶	(§ ?™0,*02
-a0j`Há “
-"
-	(®	(© CÆ0j`2*02
-a0j`Há “
-"
-	(¨	(≠ Ñ¥0 j`!0*02
-a0j`2Ø0/2∞0 j`!02±0)j`*02
-50j`Há “
-"
-	(≤	(≥ ∞+0j`*020j`0200j`0200j`02 00j`02$00j`0Há “
-"
-	(µ	(∂ Fª0 j`!0*032∏0Há “
-"
-	(π	(∫ FΩ0 j`!0*032∏0Há “
-"
-	(º	(∫ Fø0 j`!0*032∏0Há “
-"
-	(æ	(∫ 2¿0*03Há “
-!
-	(¿(w ;¬0*032¿0Há “
-!
-	(¡(y `Œ0*042	«072»02À
-09080Há “
-"
-	(Ã	(Õ >“0*042	–0:Há “
-"
-	(—	(ì 3”07*04Há “
-"
-	(”	(ë 5÷0<*04Há “
-"
-	(÷	(ë >ÿ0*042	÷0<Há “
-"
-	(◊	(ì 5⁄0=*04Há “
-"
-	(⁄	(ë >‹0*042	⁄0=Há “
-"
-	(€	(ì 5ﬁ0>*04Há “
-"
-	(ﬁ	(ë >‡0*042	ﬁ0>Há “
-"
-	(ﬂ	(ì 2·0*04Há “
-!
-	(·(w ;„0*042·0Há “
-!
-	(‚(y bÍ0*0?2	Ê0@2	Á0=2À
-09080Há “
-"
-	(Ë	(È 5Ì0B*0AHá “
-"
-	(Ì	(ë 70D*0AHá “
-"
-	(	(ë @Û0*0A2Ò0DHá “
-"
-	(Ú	(ì <¯0*0E2ˆ0FHá “
-"
-	(˜	(ì <˙0*0E2ˆ0FHá “
-"
-	(˘	(ì m˚0*0E2˚0=2¸0=2˝0j`02˛0j`0Há “
-"
-	(ˇ	(Ä lä0*0E2Ç
-0=j`G2Ñ0H2á0J0900IHá “
-"
-	(à	(â 3ã0*0JHá “
-"
-	(ã	(å 3ç0*0JHá “
-"
-	(ç	(å 2é0*0JHá “
-!
-	(é(w ;ë0*0J2è0Há “
-!
-	(ê(y 5ì0K*0JHá “
-"
-	(ì	(î >ó0*0J2	ì0KHá “
-"
-	(ï	(ñ <õ0*0L2ô0HHá “
-"
-	(ö	(ì Eõ0*0L2ô0H2ù0MHá “
-"
-	(û	(ü <°0*0L2ô0HHá “
-"
-	(†	(ì 3¢0*0LHá “
-"
-	(¢	(å ?¶0D*0N2§0=Há “
-!
-	(•(I 7ß0D*0NHá “
-"
-	(ß	(ë 3®0*0EHá “
-"
-	(®	(å 3©0*0EHá “
-"
-	(©	(å l≠0*0O2Ç
-0=j`G2Ñ0H2á0J0900IHá “
-"
-	(´	(¨ <õ0*0O2ô0HHá “
-"
-	(ö	(ì Eõ0*0O2ô0H2ù0MHá “
-"
-	(û	(ü <°0*0O2ô0HHá “
-"
-	(†	(ì 3¢0*0OHá “
-"
-	(¢	(å ?¶0D*0P2§0=Há “
-!
-	(•(I 7ß0D*0PHá “
-"
-	(ß	(ë =∞0 j`!0*0QHá “
-"
-	(∞	(± =≤0 j`!0*0QHá “
-"
-	(≤	(± =µ0Rj`S0*0QHá “
-"
-	(µ	(∂ 5π0U*0THá “
-"
-	(π	(ë >ª0*0T2	π0UHá “
-"
-	(∫	(ì Q√0-*0V2æ0W2¿0:0XHá “
-"
-	(¡	(¬ "…0j`Y8«ä[
-«(»"À0j`Y8«ä[
-«( "Õ0j`Y8«ä[
-«(Ã"œ0j`Y8«ä[
-«(Œ"”0\j`]8«ä[
-«(“"Kÿ
-0=j`^2’
-0=j`^8«@«XÜä[
-«(÷í[
-«(◊"K€
-0=j`^2’
-0=j`^8«@«XÜä[
-«(Ÿí[
-«(⁄"#ﬁ
-0=j`_8«ä[
-«(›"#‡
-0=j`_8«ä[
-«(ﬂ"#‚
-0=j`_8«ä[
-«(·"#‰
-0=j`_8«ä[
-«(„"#Ê
-0=j`_8«ä[
-«(Â"È0j``8«ä[
-«(Ë"#Ï
-0=j`a8«ä[
-«(Î"#Ó
-0=j`a8«ä[
-«(Ì"#
-0=j`a8«ä[
-«(Ô"#Û
-0=j`b8«ä[
-«(Ú"#ı
-0=j`b8«ä[
-«(Ù"#˜
-0=j`b8«ä[
-«(ˆ"#˙
-0=j`c8«ä[
-«(˘"#˝
-0=j`d8«ä[
-«(¸"#Ä
-0=j`e8«ä[
-«(ˇ"#É
-0=j`f8«ä[
-«(Ç"#Ö
-0=j`e8«ä[
-«(Ñ"#á
-0=j`e8«ä[
-«(Ü"#â
-0=j`e8«ä[
-«(à"#å
-0=j`g8«ä[
-«(ã"#é
-0=j`e8«ä[
-«(ç"#ê
-0=j`f8«ä[
-«(è"#ì
-0=j`h8«ä[
-«(í"#ï
-0=j`c8«ä[
-«(î"#ò
-0=j`i8«ä[
-«(ó"#ö
-0=j`a8«ä[
-«(ô"#ú
-0=j`c8«ä[
-«(õ"#û
-0=j`e8«ä[
-«(ù"#†
-0=j`c8«ä[
-«(ü"#¢
-0=j`a8«ä[
-«(°"#§
-0=j`f8«ä[
-«(£"#¶
-0=j`f8«ä[
-«(•ÿ
+« 
+Œ 
+’ 
+ÿ 
+€ 
+‰ 
+È 
+Ó 
+˝ 
+Ü 
+â √9V0	*02
+0j`2
+
+0j`2
+0j`Há “
+ (( T0*020j`020j`0Há “
+ (( H)0j`*02#0j`0Há “
+ ('(( R00j`*02
+*0j`2-0j`0Há “
+ (.(/ R20j`*02
+*0j`2-0j`0Há “
+ (1(/ R40j`*02
+*0j`2-0j`0Há “
+ (3(/ J:0*0260270j`0Há “
+ (8(9 |A0*02;0j`02<0j`02=0j`02>0j`0Há “
+ (?(@ 0B0*0Há “
+ (B(C 8F0*02B0Há “
+ (D(E 4H0j`*0Há “
+ (H(I <L0*02
+H0j`Há “
+ (J(K 0N0*0Há “
+ (N(O 8R0*02N0Há “
+ (P(Q 4S0j`*0Há “
+ (S(T <W0*02
+S0j`Há “
+ (U(V 0X0*0Há “
+ (X(C 8Z0*02X0Há “
+ (Y(E 2\0*0Há “
+ (\(] :`0*02\0Há “
+ (^(_ :a0j`0*0Há “
+ (a(b :c0j`0*0Há “
+ (c(b 2e0*0Há “
+ (e(] 2g0*0Há “
+ (g(] Ñn0*02h0j`0270j`02<0j`02k00 j`!0Há “
+ (l(m <r0*02
+o0j`Há “
+ (p(q <t0*02
+o0j`Há “
+ (s(q <w0*02
+*0j`Há “
+ (u(v @|0"j`#*02
+*0j`Há “
+ (z({ ÇÉ0j`0*02
+*0j`2}02~0j`020j`02Ä0j`Há “
+"	(Å	(Ç ∂í0j`*02Ñ0j`02á0"0$j`%02ä00&j`'02å00&j`(02è00)j`*0Há “
+"	(ê	(ë Fó0j`0*0+2î0Há “
+"	(ï	(ñ Fô0j`0*0+2î0Há “
+"	(ò	(ñ Fõ0j`0*0+2î0Há “
+"	(ö	(ñ 2ú0*0+Há “
+!	(ú(C ;û0*0+2ú0Há “
+!	(ù(E `™0*0,2	£0/2§02ß
+01000Há “
+"	(®	(© =Æ0*0,2	¨02Há “
+!	(≠(_ 2Ø0/*0,Há “
+!	(Ø(] 4≤04*0,Há “
+!	(≤(] =¥0*0,2	≤04Há “
+!	(≥(_ 4∂05*0,Há “
+!	(∂(] =∏0*0,2	∂05Há “
+!	(∑(_ 4∫06*0,Há “
+!	(∫(] =º0*0,2	∫06Há “
+!	(ª(_ 2Ω0*0,Há “
+!	(Ω(C ;ø0*0,2Ω0Há “
+!	(æ(E b∆0*072	¬082	√052ß
+01000Há “
+"	(ƒ	(≈ 4…0:*09Há “
+!	(…(] 6Ã0<*09Há “
+!	(Ã(] ?œ0*092Õ0<Há “
+!	(Œ(_ ;‘0*0=2“0>Há “
+!	(”(_ ;÷0*0=2“0>Há “
+!	(’(_ m◊0*0=2◊052ÿ052Ÿ0j`02⁄0j`0Há “
+"	(€	(‹ lÊ0*0=2ﬁ
+05j`?2‡0@2„0B0100AHá “
+"	(‰	(Â 3Á0*0BHá “
+"	(Á	(Ë 3È0*0BHá “
+"	(È	(Ë 2Í0*0BHá “
+!	(Í(C ;Ì0*0B2Î0Há “
+!	(Ï(E 5Ô0C*0BHá “
+"	(Ô	( >Û0*0B2	Ô0CHá “
+"	(Ò	(Ú ;˜0*0D2ı0@Há “
+!	(ˆ(_ E˜0*0D2ı0@2˘0EHá “
+"	(˙	(˚ ;˝0*0D2ı0@Há “
+!	(¸(_ 3˛0*0DHá “
+"	(˛	(Ë @É0<*0F2Ä05Há “
+"	(Å	(Ç 6Ñ0<*0FHá “
+!	(Ñ(] 3Ö0*0=Há “
+"	(Ö	(Ë 3Ü0*0=Há “
+"	(Ü	(Ë lä0*0G2ﬁ
+05j`?2‡0@2„0B0100AHá “
+"	(à	(â ;˜0*0G2ı0@Há “
+!	(ˆ(_ E˜0*0G2ı0@2˘0EHá “
+"	(˙	(˚ ;˝0*0G2ı0@Há “
+!	(¸(_ 3˛0*0GHá “
+"	(˛	(Ë @É0<*0H2Ä05Há “
+"	(Å	(Ç 6Ñ0<*0HHá “
+!	(Ñ(] =ç0j`0*0IHá “
+"	(ç	(é =è0j`0*0IHá “
+"	(è	(é =í0Jj`K0*0IHá “
+"	(í	(ì 4ñ0M*0LHá “
+!	(ñ(] =ò0*0L2	ñ0MHá “
+!	(ó(_ Q†0*0N2õ0O2ù020PHá “
+"	(û	(ü "¶0j`Q8«äS
+§(•"®0j`Q8«äS
+§(ß"™0j`Q8«äS
+§(©"¨0j`Q8«äS
+§(´"∞0Tj`U8«äS
+§(Ø"Kµ
+05j`V2≤
+05j`V8«@«XÜäS
+§(≥íS
+§(¥"K∏
+05j`V2≤
+05j`V8«@«XÜäS
+§(∂íS
+§(∑"#ª
+05j`W8«äS
+§(∫"#Ω
+05j`W8«äS
+§(º"#ø
+05j`W8«äS
+§(æ"#¡
+05j`W8«äS
+§(¿"#√
+05j`W8«äS
+§(¬"∆0j`X8«äS
+§(≈"#…
+05j`Y8«äS
+§(»"#À
+05j`Y8«äS
+§( "#Õ
+05j`Y8«äS
+§(Ã"#–
+05j`Z8«äS
+§(œ"#“
+05j`Z8«äS
+§(—"#‘
+05j`Z8«äS
+§(”"#◊
+05j`[8«äS
+§(÷"#⁄
+05j`\8«äS
+§(Ÿ"#›
+05j`]8«äS
+§(‹"#ﬂ
+05j`]8«äS
+§(ﬁ"#·
+05j`]8«äS
+§(‡"#„
+05j`]8«äS
+§(‚"#Ê
+05j`^8«äS
+§(Â"#Ë
+05j`]8«äS
+§(Á"#Î
+05j`_8«äS
+§(Í"#Ì
+05j`[8«äS
+§(Ï"#
+05j``8«äS
+§(Ô"#Ú
+05j`[8«äS
+§(Ò"#Ù
+05j`[8«äS
+§(Û"#ˆ
+05j``8«äS
+§(ı"#¯
+05j`^8«äS
+§(˜"#˙
+05j`^8«äS
+§(˘"#¸
+05j`^8«äS
+§(˚"#ˇ
+05j`a8«äS
+§(˛"#Å
+05j`Y8«äS
+§(Ä"#É
+05j``8«äS
+§(Ç"#Ö
+05j`^8«äS
+§(Ñ"#à
+05j`b8«äS
+§(á"#ã
+05j`c8«äS
+§(ä"#ç
+05j`^8«äS
+§(å"#è
+05j`Y8«äS
+§(é"#ë
+05j`Y8«äS
+§(ê"#ì
+05j`Y8«äS
+§(íÿ
 ‡
  Í
 platform.AppKit

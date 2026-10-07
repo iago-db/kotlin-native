@@ -1,29 +1,21 @@
 
-»d
-kotlin
-String
+ád
 kotlinx
 cinterop
-internal
-CCall
-CString
-szFile
+CPointer
+platform
+windows
+HWND__
+HWND
+hwnd
+kotlin
+UInt
+UINT
+uiFlags
+Int
+nStreams
 
 CValuesRef
-platform
-posix
-_GUID
-CLSID
-pclsidHandler
-CPointer
-	CFunction
-	Function1
-Int
-windows
-WINBOOL
-AVISAVECALLBACK
-lpfnCallback
-nStreams
 CPointerVarOf
 
 IAVIStream
@@ -36,31 +28,15 @@ PAVISTREAM
 LPAVICOMPRESSOPTIONSVar
 
 plpOptions
-HRESULT
-id
-(knifunptr_platform_windows7040_AVISaveVA
-	AVISaveVA
-WCString
-pfile
-	lpOptions
-Array
-Any
-variadicArguments
-'knifunptr_platform_windows7041_AVISaveW
-AVISaveW
-(knifunptr_platform_windows7042_AVISaveVW
-	AVISaveVW
-HWND__
-HWND
-hwnd
-UInt
-UINT
-uiFlags
 Long
 INT_PTR
--knifunptr_platform_windows7043_AVISaveOptions
+internal
+CCall
+id
+-knifunptr_platform_windows7040_AVISaveOptions
 AVISaveOptions
-1knifunptr_platform_windows7044_AVISaveOptionsFree
+HRESULT
+1knifunptr_platform_windows7041_AVISaveOptionsFree
 AVISaveOptionsFree
 UShortVarOf
 UShort
@@ -70,14 +46,15 @@ plpOptions
 lpszFilter
 LONG
 cbFilter
+WINBOOL
 fSaving
-.knifunptr_platform_windows7045_AVIBuildFilterW
+.knifunptr_platform_windows7042_AVIBuildFilterW
 AVIBuildFilterW
 	ByteVarOf
 Byte
 CHARVar
 LPSTR
-.knifunptr_platform_windows7046_AVIBuildFilterA
+.knifunptr_platform_windows7043_AVIBuildFilterA
 AVIBuildFilterA
 IAVIFile
 PAVIFILE
@@ -85,26 +62,26 @@ lpszFilter
 ppfile
 
 papStreams
-5knifunptr_platform_windows7047_AVIMakeFileFromStreams
+5knifunptr_platform_windows7044_AVIMakeFileFromStreams
 AVIMakeFileFromStreams
 cfFormat
 CPointed
 HANDLE
 hGlobal
 ppstream
-9knifunptr_platform_windows7048_AVIMakeStreamFromClipboard
+9knifunptr_platform_windows7045_AVIMakeStreamFromClipboard
 AVIMakeStreamFromClipboard
 pf
-4knifunptr_platform_windows7049_AVIPutFileOnClipboard
+4knifunptr_platform_windows7046_AVIPutFileOnClipboard
 AVIPutFileOnClipboard
 lppf
-2knifunptr_platform_windows7050_AVIGetFromClipboard
+2knifunptr_platform_windows7047_AVIGetFromClipboard
 AVIGetFromClipboard
-0knifunptr_platform_windows7051_AVIClearClipboard
+0knifunptr_platform_windows7048_AVIClearClipboard
 AVIClearClipboard
 ppsEditable
 psSource
-3knifunptr_platform_windows7052_CreateEditableStream
+3knifunptr_platform_windows7049_CreateEditableStream
 CreateEditableStream
 pavi
 IntVarOf
@@ -112,32 +89,35 @@ papStreams
 plStart
 plLength
 ppResult
-,knifunptr_platform_windows7053_EditStreamCut
+,knifunptr_platform_windows7050_EditStreamCut
 EditStreamCut
--knifunptr_platform_windows7054_EditStreamCopy
+-knifunptr_platform_windows7051_EditStreamCopy
 EditStreamCopy
 plPos
 pstream
 lStart
 lEnd
-.knifunptr_platform_windows7055_EditStreamPaste
+.knifunptr_platform_windows7052_EditStreamPaste
 EditStreamPaste
-.knifunptr_platform_windows7056_EditStreamClone
+.knifunptr_platform_windows7053_EditStreamClone
 EditStreamClone
+String
+CString
 lpszName
-1knifunptr_platform_windows7057_EditStreamSetNameA
+1knifunptr_platform_windows7054_EditStreamSetNameA
 EditStreamSetNameA
-1knifunptr_platform_windows7058_EditStreamSetNameW
+WCString
+1knifunptr_platform_windows7055_EditStreamSetNameW
 EditStreamSetNameW
 _AVISTREAMINFOW
 LPAVISTREAMINFOW
 lpInfo
 cbInfo
-1knifunptr_platform_windows7059_EditStreamSetInfoW
+1knifunptr_platform_windows7056_EditStreamSetInfoW
 EditStreamSetInfoW
 _AVISTREAMINFOA
 LPAVISTREAMINFOA
-1knifunptr_platform_windows7060_EditStreamSetInfoA
+1knifunptr_platform_windows7057_EditStreamSetInfoA
 EditStreamSetInfoA
 
 hwndParent
@@ -146,11 +126,12 @@ hwndParent
 	hInstance
 DWORD
 dwStyle
-,knifunptr_platform_windows7061_MCIWndCreateA
+szFile
+,knifunptr_platform_windows7058_MCIWndCreateA
 MCIWndCreateA
-,knifunptr_platform_windows7062_MCIWndCreateW
+,knifunptr_platform_windows7059_MCIWndCreateW
 MCIWndCreateW
-2knifunptr_platform_windows7063_MCIWndRegisterClass
+2knifunptr_platform_windows7060_MCIWndRegisterClass
 MCIWndRegisterClass
 lpszWindowName
 x
@@ -158,19 +139,19 @@ hwndParent
 nWidth
 nHeight
 nID
-6knifunptr_platform_windows7064_capCreateCaptureWindowA
+6knifunptr_platform_windows7061_capCreateCaptureWindowA
 capCreateCaptureWindowA
 wDriverIndex
 cbName
 lpszVer
 cbVer
-7knifunptr_platform_windows7065_capGetDriverDescriptionA
+7knifunptr_platform_windows7062_capGetDriverDescriptionA
 capGetDriverDescriptionA
-6knifunptr_platform_windows7066_capCreateCaptureWindowW
+6knifunptr_platform_windows7063_capCreateCaptureWindowW
 capCreateCaptureWindowW
-7knifunptr_platform_windows7067_capGetDriverDescriptionW
+7knifunptr_platform_windows7064_capGetDriverDescriptionW
 capGetDriverDescriptionW
-,knifunptr_platform_windows7068_acmGetVersion
+,knifunptr_platform_windows7065_acmGetVersion
 acmGetVersion
 	HACMOBJ__
 HACMOBJ
@@ -179,9 +160,10 @@ hwndParent
 LPVOID
 pMetric
 MMRESULT
-)knifunptr_platform_windows7069_acmMetrics
+)knifunptr_platform_windows7066_acmMetrics
 
 acmMetrics
+	CFunction
 	Function3
 HACMDRIVERID__
 HACMDRIVERID
@@ -193,13 +175,13 @@ fnCallback
 
 dwInstance
 fdwEnum
-,knifunptr_platform_windows7070_acmDriverEnum
+,knifunptr_platform_windows7067_acmDriverEnum
 acmDriverEnum
 HACMDRIVERIDVar
 LPHACMDRIVERID
 phadid
 fdwDriverID
-*knifunptr_platform_windows7071_acmDriverID
+*knifunptr_platform_windows7068_acmDriverID
 acmDriverID
 hinstModule
 LPARAM
@@ -207,13 +189,13 @@ dwInstance
 
 dwPriority
 fdwAdd
-,knifunptr_platform_windows7072_acmDriverAddA
+,knifunptr_platform_windows7069_acmDriverAddA
 acmDriverAddA
-,knifunptr_platform_windows7073_acmDriverAddW
+,knifunptr_platform_windows7070_acmDriverAddW
 acmDriverAddW
 hadid
 	fdwRemove
-.knifunptr_platform_windows7074_acmDriverRemove
+.knifunptr_platform_windows7071_acmDriverRemove
 acmDriverRemove
 HACMDRIVER__
 
@@ -222,62 +204,62 @@ HACMDRIVER
 LPHACMDRIVER
 phad
 fdwOpen
-,knifunptr_platform_windows7075_acmDriverOpen
+,knifunptr_platform_windows7072_acmDriverOpen
 acmDriverOpen
 had
 fdwClose
--knifunptr_platform_windows7076_acmDriverClose
+-knifunptr_platform_windows7073_acmDriverClose
 acmDriverClose
 uMsg
 lParam1
 lParam2
 LRESULT
-/knifunptr_platform_windows7077_acmDriverMessage
+/knifunptr_platform_windows7074_acmDriverMessage
 acmDriverMessage
 fdwPriority
-0knifunptr_platform_windows7078_acmDriverPriority
+0knifunptr_platform_windows7075_acmDriverPriority
 acmDriverPriority
 tACMDRIVERDETAILSA
 LPACMDRIVERDETAILSA
 padd
 
 fdwDetails
-0knifunptr_platform_windows7079_acmDriverDetailsA
+0knifunptr_platform_windows7076_acmDriverDetailsA
 acmDriverDetailsA
 tACMDRIVERDETAILSW
 LPACMDRIVERDETAILSW
-0knifunptr_platform_windows7080_acmDriverDetailsW
+0knifunptr_platform_windows7077_acmDriverDetailsW
 acmDriverDetailsW
 tACMFORMATTAGDETAILSA
 LPACMFORMATTAGDETAILSA
 paftd
-3knifunptr_platform_windows7081_acmFormatTagDetailsA
+3knifunptr_platform_windows7078_acmFormatTagDetailsA
 acmFormatTagDetailsA
 tACMFORMATTAGDETAILSW
 LPACMFORMATTAGDETAILSW
-3knifunptr_platform_windows7082_acmFormatTagDetailsW
+3knifunptr_platform_windows7079_acmFormatTagDetailsW
 acmFormatTagDetailsW
 	Function4
 ACMFORMATTAGENUMCBA
-0knifunptr_platform_windows7083_acmFormatTagEnumA
+0knifunptr_platform_windows7080_acmFormatTagEnumA
 acmFormatTagEnumA
 ACMFORMATTAGENUMCBW
-0knifunptr_platform_windows7084_acmFormatTagEnumW
+0knifunptr_platform_windows7081_acmFormatTagEnumW
 acmFormatTagEnumW
 tACMFORMATDETAILSA
 LPACMFORMATDETAILSA
 pafd
-0knifunptr_platform_windows7085_acmFormatDetailsA
+0knifunptr_platform_windows7082_acmFormatDetailsA
 acmFormatDetailsA
 tACMFORMATDETAILSW
 LPACMFORMATDETAILSW
-0knifunptr_platform_windows7086_acmFormatDetailsW
+0knifunptr_platform_windows7083_acmFormatDetailsW
 acmFormatDetailsW
 ACMFORMATENUMCBA
--knifunptr_platform_windows7087_acmFormatEnumA
+-knifunptr_platform_windows7084_acmFormatEnumA
 acmFormatEnumA
 ACMFORMATENUMCBW
--knifunptr_platform_windows7088_acmFormatEnumW
+-knifunptr_platform_windows7085_acmFormatEnumW
 acmFormatEnumW
 tWAVEFORMATEX
 LPWAVEFORMATEX
@@ -286,53 +268,53 @@ fdwDetails
 cbwfxDst
 
 fdwSuggest
-/knifunptr_platform_windows7089_acmFormatSuggest
+/knifunptr_platform_windows7086_acmFormatSuggest
 acmFormatSuggest
 tACMFORMATCHOOSEA
 LPACMFORMATCHOOSEA
 pafmtc
-/knifunptr_platform_windows7090_acmFormatChooseA
+/knifunptr_platform_windows7087_acmFormatChooseA
 acmFormatChooseA
 tACMFORMATCHOOSEW
 LPACMFORMATCHOOSEW
-/knifunptr_platform_windows7091_acmFormatChooseW
+/knifunptr_platform_windows7088_acmFormatChooseW
 acmFormatChooseW
 tACMFILTERTAGDETAILSA
 LPACMFILTERTAGDETAILSA
-3knifunptr_platform_windows7092_acmFilterTagDetailsA
+3knifunptr_platform_windows7089_acmFilterTagDetailsA
 acmFilterTagDetailsA
 tACMFILTERTAGDETAILSW
 LPACMFILTERTAGDETAILSW
-3knifunptr_platform_windows7093_acmFilterTagDetailsW
+3knifunptr_platform_windows7090_acmFilterTagDetailsW
 acmFilterTagDetailsW
 ACMFILTERTAGENUMCBA
-0knifunptr_platform_windows7094_acmFilterTagEnumA
+0knifunptr_platform_windows7091_acmFilterTagEnumA
 acmFilterTagEnumA
 ACMFILTERTAGENUMCBW
-0knifunptr_platform_windows7095_acmFilterTagEnumW
+0knifunptr_platform_windows7092_acmFilterTagEnumW
 acmFilterTagEnumW
 tACMFILTERDETAILSA
 LPACMFILTERDETAILSA
-0knifunptr_platform_windows7096_acmFilterDetailsA
+0knifunptr_platform_windows7093_acmFilterDetailsA
 acmFilterDetailsA
 tACMFILTERDETAILSW
 LPACMFILTERDETAILSW
-0knifunptr_platform_windows7097_acmFilterDetailsW
+0knifunptr_platform_windows7094_acmFilterDetailsW
 acmFilterDetailsW
 ACMFILTERENUMCBA
--knifunptr_platform_windows7098_acmFilterEnumA
+-knifunptr_platform_windows7095_acmFilterEnumA
 acmFilterEnumA
 ACMFILTERENUMCBW
--knifunptr_platform_windows7099_acmFilterEnumW
+-knifunptr_platform_windows7096_acmFilterEnumW
 acmFilterEnumW
 tACMFILTERCHOOSEA
 LPACMFILTERCHOOSEA
 pafltrc
-/knifunptr_platform_windows7100_acmFilterChooseA
+/knifunptr_platform_windows7097_acmFilterChooseA
 acmFilterChooseA
 tACMFILTERCHOOSEW
 LPACMFILTERCHOOSEW
-/knifunptr_platform_windows7101_acmFilterChooseW
+/knifunptr_platform_windows7098_acmFilterChooseW
 acmFilterChooseW
 HACMSTREAM__
 
@@ -345,10 +327,10 @@ HACMSTREAM
 pwfltr
 
 dwCallback
-,knifunptr_platform_windows7102_acmStreamOpen
+,knifunptr_platform_windows7099_acmStreamOpen
 acmStreamOpen
 has
--knifunptr_platform_windows7103_acmStreamClose
+-knifunptr_platform_windows7100_acmStreamClose
 acmStreamClose
 cbInput
 	UIntVarOf
@@ -356,39 +338,39 @@ dwCallback
 LPDWORD
 pdwOutputBytes
 fdwSize
-,knifunptr_platform_windows7104_acmStreamSize
+,knifunptr_platform_windows7101_acmStreamSize
 acmStreamSize
 fdwReset
--knifunptr_platform_windows7105_acmStreamReset
+-knifunptr_platform_windows7102_acmStreamReset
 acmStreamReset
-/knifunptr_platform_windows7106_acmStreamMessage
+/knifunptr_platform_windows7103_acmStreamMessage
 acmStreamMessage
 tACMSTREAMHEADER
 LPACMSTREAMHEADER
 pash
 
 fdwConvert
-/knifunptr_platform_windows7107_acmStreamConvert
+/knifunptr_platform_windows7104_acmStreamConvert
 acmStreamConvert
 
 fdwPrepare
-5knifunptr_platform_windows7108_acmStreamPrepareHeader
+5knifunptr_platform_windows7105_acmStreamPrepareHeader
 acmStreamPrepareHeader
 fdwUnprepare
-7knifunptr_platform_windows7109_acmStreamUnprepareHeader
+7knifunptr_platform_windows7106_acmStreamUnprepareHeader
 acmStreamUnprepareHeader
 tagOFNA
 LPOPENFILENAMEA
 lpofn
-6knifunptr_platform_windows7110_GetOpenFileNamePreviewA
+6knifunptr_platform_windows7107_GetOpenFileNamePreviewA
 GetOpenFileNamePreviewA
-6knifunptr_platform_windows7111_GetSaveFileNamePreviewA
+6knifunptr_platform_windows7108_GetSaveFileNamePreviewA
 GetSaveFileNamePreviewA
 tagOFNW
 LPOPENFILENAMEW
-6knifunptr_platform_windows7112_GetOpenFileNamePreviewW
+6knifunptr_platform_windows7109_GetOpenFileNamePreviewW
 GetOpenFileNamePreviewW
-6knifunptr_platform_windows7113_GetSaveFileNamePreviewW
+6knifunptr_platform_windows7110_GetSaveFileNamePreviewW
 GetSaveFileNamePreviewW
 _SYSTEMTIME
 
@@ -397,15 +379,15 @@ SYSTEMTIME
 dwRFC
 lpszTime
 cbTime
-:knifunptr_platform_windows7114_InternetTimeFromSystemTimeA
+:knifunptr_platform_windows7111_InternetTimeFromSystemTimeA
 InternetTimeFromSystemTimeA
-:knifunptr_platform_windows7115_InternetTimeFromSystemTimeW
+:knifunptr_platform_windows7112_InternetTimeFromSystemTimeW
 InternetTimeFromSystemTimeW
 
 dwReserved
-8knifunptr_platform_windows7116_InternetTimeToSystemTimeA
+8knifunptr_platform_windows7113_InternetTimeToSystemTimeA
 InternetTimeToSystemTimeA
-8knifunptr_platform_windows7117_InternetTimeToSystemTimeW
+8knifunptr_platform_windows7114_InternetTimeToSystemTimeW
 InternetTimeToSystemTimeW
 lpszUrl
 dwUrlLength
@@ -413,41 +395,41 @@ dwReserved
 URL_COMPONENTSA
 LPURL_COMPONENTSA
 lpUrlComponents
-0knifunptr_platform_windows7118_InternetCrackUrlA
+0knifunptr_platform_windows7115_InternetCrackUrlA
 InternetCrackUrlA
 URL_COMPONENTSW
 LPURL_COMPONENTSW
-0knifunptr_platform_windows7119_InternetCrackUrlW
+0knifunptr_platform_windows7116_InternetCrackUrlW
 InternetCrackUrlW
 lpdwUrlLength
-1knifunptr_platform_windows7120_InternetCreateUrlA
+1knifunptr_platform_windows7117_InternetCreateUrlA
 InternetCreateUrlA
-1knifunptr_platform_windows7121_InternetCreateUrlW
+1knifunptr_platform_windows7118_InternetCreateUrlW
 InternetCreateUrlW
 
 lpszBuffer
 lpdwBufferLength
-7knifunptr_platform_windows7122_InternetCanonicalizeUrlA
+7knifunptr_platform_windows7119_InternetCanonicalizeUrlA
 InternetCanonicalizeUrlA
-7knifunptr_platform_windows7123_InternetCanonicalizeUrlW
+7knifunptr_platform_windows7120_InternetCanonicalizeUrlW
 InternetCanonicalizeUrlW
 lpszBaseUrl
 lpszRelativeUrl
-2knifunptr_platform_windows7124_InternetCombineUrlA
+2knifunptr_platform_windows7121_InternetCombineUrlA
 InternetCombineUrlA
-2knifunptr_platform_windows7125_InternetCombineUrlW
+2knifunptr_platform_windows7122_InternetCombineUrlW
 InternetCombineUrlW
 	lpszAgent
 dwAccessType
 	lpszProxy
 lpszProxyBypass
 	HINTERNET
-,knifunptr_platform_windows7126_InternetOpenA
+,knifunptr_platform_windows7123_InternetOpenA
 InternetOpenA
-,knifunptr_platform_windows7127_InternetOpenW
+,knifunptr_platform_windows7124_InternetOpenW
 InternetOpenW
 	hInternet
-2knifunptr_platform_windows7128_InternetCloseHandle
+2knifunptr_platform_windows7125_InternetCloseHandle
 InternetCloseHandle
 lpszServerName
 INTERNET_PORT
@@ -456,493 +438,599 @@ lpszBuffer
 lpszPassword
 	dwService
 	dwContext
-/knifunptr_platform_windows7129_InternetConnectA
+/knifunptr_platform_windows7126_InternetConnectA
 InternetConnectA
-/knifunptr_platform_windows7130_InternetConnectW
+/knifunptr_platform_windows7127_InternetConnectW
 InternetConnectW
 lpszHeaders
 dwHeadersLength
-/knifunptr_platform_windows7131_InternetOpenUrlA
+/knifunptr_platform_windows7128_InternetOpenUrlA
 InternetOpenUrlA
-/knifunptr_platform_windows7132_InternetOpenUrlW
+/knifunptr_platform_windows7129_InternetOpenUrlW
 InternetOpenUrlW
 hFile
 lpBuffer
 dwNumberOfBytesToRead
 lpdwNumberOfBytesRead
-/knifunptr_platform_windows7133_InternetReadFile
+/knifunptr_platform_windows7130_InternetReadFile
 InternetReadFile
 _INTERNET_BUFFERSA
 LPINTERNET_BUFFERSA
 lpBuffersOut
-2knifunptr_platform_windows7134_InternetReadFileExA
+2knifunptr_platform_windows7131_InternetReadFileExA
 InternetReadFileExA
 _INTERNET_BUFFERSW
 LPINTERNET_BUFFERSW
-2knifunptr_platform_windows7135_InternetReadFileExW
+2knifunptr_platform_windows7132_InternetReadFileExW
 InternetReadFileExW
 lDistanceToMove
 PVOID
 	pReserved
 dwMoveMethod
-5knifunptr_platform_windows7136_InternetSetFilePointer
+5knifunptr_platform_windows7133_InternetSetFilePointer
 InternetSetFilePointer
 LPCVOID
 dwNumberOfBytesToWrite
 lpdwNumberOfBytesWritten
-0knifunptr_platform_windows7137_InternetWriteFile
+0knifunptr_platform_windows7134_InternetWriteFile
 InternetWriteFile
 lpdwNumberOfBytesAvailable
-9knifunptr_platform_windows7138_InternetQueryDataAvailable
+9knifunptr_platform_windows7135_InternetQueryDataAvailable
 InternetQueryDataAvailable
 hFind
 lpvFindData
-4knifunptr_platform_windows7139_InternetFindNextFileA
+4knifunptr_platform_windows7136_InternetFindNextFileA
 InternetFindNextFileA
-4knifunptr_platform_windows7140_InternetFindNextFileW
+4knifunptr_platform_windows7137_InternetFindNextFileW
 InternetFindNextFileW
 dwOption
-3knifunptr_platform_windows7141_InternetQueryOptionA
+3knifunptr_platform_windows7138_InternetQueryOptionA
 InternetQueryOptionA
-3knifunptr_platform_windows7142_InternetQueryOptionW
+3knifunptr_platform_windows7139_InternetQueryOptionW
 InternetQueryOptionW
 dwBufferLength
-1knifunptr_platform_windows7143_InternetSetOptionA
+1knifunptr_platform_windows7140_InternetSetOptionA
 InternetSetOptionA
-1knifunptr_platform_windows7144_InternetSetOptionW
+1knifunptr_platform_windows7141_InternetSetOptionW
 InternetSetOptionW
-3knifunptr_platform_windows7145_InternetSetOptionExA
+3knifunptr_platform_windows7142_InternetSetOptionExA
 InternetSetOptionExA
-3knifunptr_platform_windows7146_InternetSetOptionExW
+3knifunptr_platform_windows7143_InternetSetOptionExW
 InternetSetOptionExW
 	HANDLEVar
 lphLockRequestInfo
-6knifunptr_platform_windows7147_InternetLockRequestFile
+6knifunptr_platform_windows7144_InternetLockRequestFile
 InternetLockRequestFile
 hLockRequestInfo
-8knifunptr_platform_windows7148_InternetUnlockRequestFile
+8knifunptr_platform_windows7145_InternetUnlockRequestFile
 InternetUnlockRequestFile
 	lpdwError
-;knifunptr_platform_windows7149_InternetGetLastResponseInfoA
+;knifunptr_platform_windows7146_InternetGetLastResponseInfoA
 InternetGetLastResponseInfoA
-;knifunptr_platform_windows7150_InternetGetLastResponseInfoW
+;knifunptr_platform_windows7147_InternetGetLastResponseInfoW
 InternetGetLastResponseInfoW
 	Function5
 Unit
 INTERNET_STATUS_CALLBACK
 lpfnInternetCallback
-9knifunptr_platform_windows7151_InternetSetStatusCallbackA
+9knifunptr_platform_windows7148_InternetSetStatusCallbackA
 InternetSetStatusCallbackA
-9knifunptr_platform_windows7152_InternetSetStatusCallbackW
+9knifunptr_platform_windows7149_InternetSetStatusCallbackW
 InternetSetStatusCallbackW
 hConnect
 lpszSearchFile
 _WIN32_FIND_DATAA
 LPWIN32_FIND_DATAA
 lpFindFileData
-0knifunptr_platform_windows7153_FtpFindFirstFileA
+0knifunptr_platform_windows7150_FtpFindFirstFileA
 FtpFindFirstFileA
 _WIN32_FIND_DATAW
 LPWIN32_FIND_DATAW
-0knifunptr_platform_windows7154_FtpFindFirstFileW
+0knifunptr_platform_windows7151_FtpFindFirstFileW
 FtpFindFirstFileW
 lpszRemoteFile
 lpszNewFile
 fFailIfExists
 dwFlagsAndAttributes
-*knifunptr_platform_windows7155_FtpGetFileA
+*knifunptr_platform_windows7152_FtpGetFileA
 FtpGetFileA
-*knifunptr_platform_windows7156_FtpGetFileW
+*knifunptr_platform_windows7153_FtpGetFileW
 FtpGetFileW
 lpszLocalFile
 lpszNewRemoteFile
-*knifunptr_platform_windows7157_FtpPutFileA
+*knifunptr_platform_windows7154_FtpPutFileA
 FtpPutFileA
-*knifunptr_platform_windows7158_FtpPutFileW
+*knifunptr_platform_windows7155_FtpPutFileW
 FtpPutFileW
 hFtpSession
-+knifunptr_platform_windows7159_FtpGetFileEx
++knifunptr_platform_windows7156_FtpGetFileEx
 FtpGetFileEx
-+knifunptr_platform_windows7160_FtpPutFileEx
++knifunptr_platform_windows7157_FtpPutFileEx
 FtpPutFileEx
 lpszFileName
--knifunptr_platform_windows7161_FtpDeleteFileA
+-knifunptr_platform_windows7158_FtpDeleteFileA
 FtpDeleteFileA
--knifunptr_platform_windows7162_FtpDeleteFileW
+-knifunptr_platform_windows7159_FtpDeleteFileW
 FtpDeleteFileW
 lpszExisting
 lpszNew
--knifunptr_platform_windows7163_FtpRenameFileA
+-knifunptr_platform_windows7160_FtpRenameFileA
 FtpRenameFileA
--knifunptr_platform_windows7164_FtpRenameFileW
+-knifunptr_platform_windows7161_FtpRenameFileW
 FtpRenameFileW
 dwAccess
-+knifunptr_platform_windows7165_FtpOpenFileA
++knifunptr_platform_windows7162_FtpOpenFileA
 FtpOpenFileA
-+knifunptr_platform_windows7166_FtpOpenFileW
++knifunptr_platform_windows7163_FtpOpenFileW
 FtpOpenFileW
 lpszDirectory
-2knifunptr_platform_windows7167_FtpCreateDirectoryA
-FtpCreateDirectoryAó
-
+2knifunptr_platform_windows7164_FtpCreateDirectoryA
+FtpCreateDirectoryA
+2knifunptr_platform_windows7165_FtpCreateDirectoryW
+FtpCreateDirectoryW
+2knifunptr_platform_windows7166_FtpRemoveDirectoryA
+FtpRemoveDirectoryA
+2knifunptr_platform_windows7167_FtpRemoveDirectoryW
+FtpRemoveDirectoryW›	
  
-  
-
-
+ 
+ 
+
 
  
- 
- 
-	
-
-
-	 
-	 
- 
- 
-  
-  
-
- 
- 
- 
- 
- 
- 
- 
- 
- 
-  
-$ 
- ' 
- ( 
-. 
-/ 
- 1 
-2 
- 4 
-5 
-: 
- ; 
-< 
-= 
-? 
-D 
- E 
-F 
-G 
-J 
-K 
-L 
-R 
-S 
-e 
-f 
-{ 
-| 
-Å 
-Ç 
-Ü 
-á 
-â 
-• 
-¶ 
-© 
-´ 
- Æ 
-Ø 
-∞ 
- ± 
-≤ 
-≥ 
-π 
-∫ 
-¿ 
-Ã 
-Õ 
-Œ 
-œ 
-€ 
-· 
-‚ 
-Á 
-Ë 
-Î 
-Ï 
- 
-Ò 
- Ù 
-ı 
-¯ 
-˚ 
-¸ 
-Ä 
-Å 
-Ñ 
-á 
-ä 
-ã 
-í 
-ì 
-ó 
-ò 
-õ 
-ú 
-ü 
-† 
-£ 
-¶ 
-© 
-™ 
-≠ 
-Æ 
-± 
-¥ 
-∑ 
-∏ 
-º 
-Ω 
-¿ 
-¡ 
-¬ 
-√ 
-≈ 
-∆ 
-œ 
-– 
-— 
-€ 
-‹ 
-Á 
-Ë 
-Ó 
-Ô 
-Ù 
-ı 
-Ü 
-á 
-ã 
-å 
-§ 
-≠ 
-√ 
-ƒ 
-» 
-… 
-Õ 
-“ 
-Ó 
- ˙ 
- ˚ 
-¸ 
-Ñ 
-Ö 
-â 
-ä πsΩ#0j`20“
-20
-j`02*&00j`000j`202"00j`0j`02"00j`0j`0Há “
-!("∑+0j`20“
-20
-j`02*&00j`000j`202%00j`2&00j`2)
-00"0Há “
-!(*Ω-0j`20“
-20
-j`02*&00j`000j`202"00j`0j`02"00j`0j`0Há “
-!(,é70"j`#2000j`2
-30 j`!202"00j`0j`02"00j`0j`0Há “
-!(6H90j`202"00j`0j`0Há “
-!(8TC0j`2>0%0$j`&0j`'2
-@0j`(2
-A0j`Há “
-!(BTI0j`2>0*0)j`+0j`,2
-@0j`(2
-A0j`Há “
-!(HlP0j`2"M0-0j`.0j`/0202"N00j`0j`0Há “
-!(OdW0j`2
-Q0 j`!2T000j`12"U00j`0j`0Há “
-!(V2Z0j`2X0-0j`.Há “
-!(Y@]0j`2"[0-0j`.0j`/0Há “
-!(\_0j`Há “
-!(^Vc0j`2"`00j`0j`02a00j`Há “
-!(bäk0j`2d00j`2g002j`302h002j`302"i00j`0j`0Há “
-!(jäm0j`2d00j`2g002j`302h002j`302"i00j`0j`0Há “
-!(lîs0j`2d00j`2n002j`302h002j`302o00j`2
-p0j`(2
-q0j`(Há “
-!(rVu0j`2d00j`2"i00j`0j`0Há “
-!(tCx0j`2d00j`2v0“
-Há “
-!(wCz0j`2d00j`2v0“
-Há “
-!(yUÄ0j`2d00j`2}040j`52
-~0j`(Há “
-!(VÑ0j`2d00j`2}060j`72
-~0j`(Há “
-	!(Étå00j`2Ö00j`2à080j`92ä0 j`:20“
-Há “
-	!(ãté00j`2Ö00j`2à080j`92ä0 j`:20“
-Há “
-	!(çê0j`Há “
-	!(èãò00j`2ë0“
-2ä0 j`:2í02ì02î02ï02Ö00j`2ñ0Há “
-	!(ó~û0j`2ô0 j`!2v0*0)j`+0j`,2ö02õ0*0)j`+0j`,2ú0Há “
-	!(ùã†00j`2ë0“
-2ä0 j`:2í02ì02î02ï02Ö00j`2ñ0Há “
-	!(ü~¢0j`2ô0 j`!2v0%0$j`&0j`'2ö02õ0%0$j`&0j`'2ú0Há “
-	!(°§0 j`:Há “
-	!(£[≠0 j`>2ß0;0j`<2®0 j`!2™000j`=Há “
-	!(¨á∏0 j`>2M¥H<:640@0j`A0Bj`C0 j`:0j`0?00j`D2µ0Bj`C2∂0 j`:Há “
-	!(∑mæ0 j`>2ß0;0j`<2)ª$0@0j`A0j`E0j`F2º0 j`:Há “
-	!(Ωá≈0 j`>2)ª$0@0j`A0j`E0j`F2ø080j`92¡0"j`G2¬0 j`:2√0 j`:Há “
-	!(ƒá«0 j`>2)ª$0@0j`A0j`E0j`F2ø080j`92¡0"j`G2¬0 j`:2√0 j`:Há “
-	!(∆BÀ0 j`>2»0@0j`A2…0 j`:Há “
-	!( m”0 j`>2)–$0H0j`I0j`J0j`K2»0@0j`A2—0 j`:Há “
-	!(“B◊0 j`>2‘0H0j`I2’0 j`:Há “
-	!(÷\›0"j`L2‘0H0j`I2ÿ0 j`!2Ÿ0"j`G2⁄0"j`GHá “
-	!(‹O‡0 j`>2»0@0j`A2¬0 j`:2ﬁ0 j`:Há “
-	!(ﬂYÊ0 j`>2»0@0j`A2„0M0j`N2‰0 j`:Há “
-	!(ÂYÍ0 j`>2»0@0j`A2„0O0j`P2‰0 j`:Há “
-	!(ÈYÔ0 j`>2‘0H0j`I2Ì0Q0j`R2‰0 j`:Há “
-	!(ÓYÛ0 j`>2‘0H0j`I2Ì0S0j`T2‰0 j`:Há “
-	!(Ú…˜0 j`>2‘0H0j`I2Ì0Q0j`R2a¥\PNJH0@0j`A0Q0j`R0Bj`C0 j`:0j`0U00j`V2µ0Bj`C2∂0 j`:Há “
-	!(ˆ…˙0 j`>2‘0H0j`I2Ì0S0j`T2a¥\PNJH0@0j`A0S0j`T0Bj`C0 j`:0j`0U00j`W2µ0Bj`C2∂0 j`:Há “
-	!(˘Yˇ0 j`>2‘0H0j`I2˝0X0j`Y2‰0 j`:Há “
-	!(˛YÉ0 j`>2‘0H0j`I2˝0Z0j`[2‰0 j`:Há “
-	!(Ç…Ü0 j`>2‘0H0j`I2˝0X0j`Y2a¥\PNJH0@0j`A0X0j`Y0Bj`C0 j`:0j`0U00j`\2µ0Bj`C2∂0 j`:Há “
-	!(Ö…â0 j`>2‘0H0j`I2˝0Z0j`[2a¥\PNJH0@0j`A0Z0j`[0Bj`C0 j`:0j`0U00j`]2µ0Bj`C2∂0 j`:Há “
-	!(à}ë0 j`>2‘0H0j`I2å0^0j`_2ç0^0j`_2é0 j`:2è0 j`:Há “
-	!(ê5ñ0 j`>2î0`0j`aHá “
-	!(ï5ö0 j`>2î0b0j`cHá “
-	!(ôYû0 j`>2‘0H0j`I2Ì0d0j`e2‰0 j`:Há “
-	!(ùY¢0 j`>2‘0H0j`I2Ì0f0j`g2‰0 j`:Há “
-	!(°…•0 j`>2‘0H0j`I2Ì0d0j`e2a¥\PNJH0@0j`A0d0j`e0Bj`C0 j`:0j`0U00j`h2µ0Bj`C2∂0 j`:Há “
-	!(§…®0 j`>2‘0H0j`I2Ì0f0j`g2a¥\PNJH0@0j`A0f0j`g0Bj`C0 j`:0j`0U00j`i2µ0Bj`C2∂0 j`:Há “
-	!(ßY¨0 j`>2‘0H0j`I2˝0j0j`k2‰0 j`:Há “
-	!(´Y∞0 j`>2‘0H0j`I2˝0l0j`m2‰0 j`:Há “
-	!(Ø…≥0 j`>2‘0H0j`I2˝0j0j`k2a¥\PNJH0@0j`A0j0j`k0Bj`C0 j`:0j`0U00j`n2µ0Bj`C2∂0 j`:Há “
-	!(≤…∂0 j`>2‘0H0j`I2˝0l0j`m2a¥\PNJH0@0j`A0l0j`m0Bj`C0 j`:0j`0U00j`o2µ0Bj`C2∂0 j`:Há “
-	!(µ5ª0 j`>2π0p0j`qHá “
-	!(∫5ø0 j`>2π0r0j`sHá “
-	!(æÃ 0 j`>2)ƒ$0t0j`u0j`v0j`w2‘0H0j`I2å0^0j`_2ç0^0j`_2«0x0j`y2»0Bj`C2µ0Bj`C2—0 j`:Há “
-	!(…BÕ0 j`>2À0t0j`u2’0 j`:Há “
-	!(Ãp’0 j`>2À0t0j`u2Œ0 j`:2“0 0zj`{0j`|2”0 j`:Há “
-	!(‘Bÿ0 j`>2À0t0j`u2÷0 j`:Há “
-	!(◊\⁄0 j`>2À0t0j`u2ÿ0 j`!2Ÿ0"j`G2⁄0"j`GHá “
-	!(ŸY‡0 j`>2À0t0j`u2›0}0j`~2ﬁ0 j`:Há “
-	!(ﬂY„0 j`>2À0t0j`u2›0}0j`~2·0 j`:Há “
-	!(‚YÊ0 j`>2À0t0j`u2›0}0j`~2‰0 j`:Há “
-	!(Â6Î0j`2È00j`ÄHá “
-	!(Í6Ì0j`2È00j`ÄHá “
-	!(Ï7Ò0j`2È0Å0j`ÇHá “
-	!(7Û0j`2È0Å0j`ÇHá “
-	!(Úp˚0j`2ˆ
-0Éj`Ñ02˜0 j`:2¯0*0)j`+0j`,2˘0 j`:Há “
-	!(˙p˝0j`2ˆ
-0Éj`Ñ02˜0 j`:2¯0%0$j`&0j`'2˘0 j`:Há “
-	!(¸TÄ0j`2¯0“
-2ˆ
-0Éj`Ñ02˛0 j`:Há “
-	!(ˇTÇ0j`2¯0“
-2ˆ
-0Éj`Ñ02˛0 j`:Há “
-	!(Åcä0j`2É0“
-2Ñ0 j`:2Ö0 j`:2à0Ö0j`ÜHá “
-	!(âcé0j`2É0“
-2Ñ0 j`:2Ö0 j`:2à0á0j`àHá “
-	!(çÜë0j`2à0Ö0j`Ü2Ö0 j`:2É0*0)j`+0j`,2è0 0zj`{0j`|Há “
-	!(êÜì0j`2à0á0j`à2Ö0 j`:2É0%0$j`&0j`'2è0 0zj`{0j`|Há “
-	!(íó0j`2É0“
-2î0*0)j`+0j`,2ï0 0zj`{0j`|2Ö0 j`:Há “
-	!(ñô0j`2É0“
-2î0%0$j`&0j`'2ï0 0zj`{0j`|2Ö0 j`:Há “
-	!(òëù0j`2ö0“
-2õ0“
-2î0*0)j`+0j`,2ï0 0zj`{0j`|2Ö0 j`:Há “
-	!(úëü0j`2ö0“
-2õ0“
-2î0%0$j`&0j`'2ï0 0zj`{0j`|2Ö0 j`:Há “
-	!(û{¶000j`â2†0“
-2°0 j`:2¢0“
-2£0“
-2Ö0 j`:Há “
-	!(•{®000j`â2†0“
-2°0 j`:2¢0“
-2£0“
-2Ö0 j`:Há “
-	!(ß8´0j`2©000j`âHá “
-	!(™∞¥000j`â2©000j`â2¨0“
-2Æ0%j`ä2Ø0“
-2∞0“
-2±0 j`:2Ö0 j`:2≤0Bj`CHá “
-	!(≥∞∂000j`â2©000j`â2¨0“
-2Æ0%j`ä2Ø0“
-2∞0“
-2±0 j`:2Ö0 j`:2≤0Bj`CHá “
-	!(µê∫000j`â2©000j`â2É0“
-2∑0“
-2∏0 j`:2Ö0 j`:2≤0Bj`CHá “
-	!(πêº000j`â2©000j`â2É0“
-2∑0“
-2∏0 j`:2Ö0 j`:2≤0Bj`CHá “
-	!(ª¬0j`2Ω000j`â2æ000j`=2ø0 j`:2¿0 0zj`{0j`|Há “
-	!(¡k«0j`2Ω000j`â2≈0ã0j`å2Ö0 j`:2≤0Bj`CHá “
-	!(∆kÀ0j`2Ω000j`â2≈0ç0j`é2Ö0 j`:2≤0Bj`CHá “
-	!( y—0 j`:2Ω000j`â2Ã0j`(2Œ000j`è2œ0 j`:2≤0Bj`CHá “
-	!(–Ä÷0j`2Ω000j`â2æ000j`ê2”0 j`:2‘0 0zj`{0j`|Há “
-	!(’sŸ0j`2Ω000j`â2◊0 0zj`{0j`|2Ö0 j`:2≤0Bj`CHá “
-	!(ÿQ›0j`2⁄000j`â2€000j`=Há “
-	!(‹Qﬂ0j`2⁄000j`â2€000j`=Há “
-	!(ﬁ‚0j`2©000j`â2‡0 j`:2æ000j`=2ï0 0zj`{0j`|Há “
-	!(·‰0j`2©000j`â2‡0 j`:2æ000j`=2ï0 0zj`{0j`|Há “
-	!(„kÁ0j`2©000j`â2‡0 j`:2æ000j`=2Â0 j`:Há “
-	!(ÊkÈ0j`2©000j`â2‡0 j`:2æ000j`=2Â0 j`:Há “
-	!(ËxÎ0j`2©000j`â2‡0 j`:2æ000j`=2Â0 j`:2Ö0 j`:Há “
-	!(ÍxÌ0j`2©000j`â2‡0 j`:2æ000j`=2Â0 j`:2Ö0 j`:Há “
-	!(Ï`Ò0j`2©000j`â2&Ô!000j`10j`ë0Há “
-	!(7Ù0j`2Ú000j`1Há “
-	!(ÛÅ˜0j`2ı0 0zj`{0j`|2î0*0)j`+0j`,2ï0 0zj`{0j`|Há “
-	!(ˆÅ˘0j`2ı0 0zj`{0j`|2î0%0$j`&0j`'2ï0 0zj`{0j`|Há “
-	!(¯çˇj][WU000j`â0Bj`C0 j`:000j`=0 j`:0ì0í00j`î2©000j`â2o˝j][WU000j`â0Bj`C0 j`:000j`=0 j`:0ì0í00j`îHá “
-	!(˛çÅj][WU000j`â0Bj`C0 j`:000j`=0 j`:0ì0í00j`î2©000j`â2o˝j][WU000j`â0Bj`C0 j`:000j`=0 j`:0ì0í00j`îHá “
-	!(Ääà000j`â2Ç000j`â2É0“
-2Ü0ï0j`ñ2Ö0 j`:2≤0Bj`CHá “
-	!(áäå000j`â2Ç000j`â2É0“
-2Ü0ó0j`ò2Ö0 j`:2≤0Bj`CHá “
-	!(ãêí0j`2Ç000j`â2ç0“
-2é0“
-2è0j`2ê0 j`:2Ö0 j`:2≤0Bj`CHá “
-	!(ëêî0j`2Ç000j`â2ç0“
-2é0“
-2è0j`2ê0 j`:2Ö0 j`:2≤0Bj`CHá “
-	!(ìvò0j`2Ç000j`â2ï0“
-2ñ0“
-2Ö0 j`:2≤0Bj`CHá “
-	!(óvö0j`2Ç000j`â2ï0“
-2ñ0“
-2Ö0 j`:2≤0Bj`CHá “
-	!(ôêù0j`2õ000j`â2ç0“
-2é0“
-2è0j`2ê0 j`:2Ö0 j`:2≤0Bj`CHá “
-	!(úvü0j`2õ000j`â2ï0“
-2ñ0“
-2Ö0 j`:2≤0Bj`CHá “
-	!(ûJ¢0j`2Ç000j`â2†0“
-Há “
-	!(°J§0j`2Ç000j`â2†0“
-Há “
-	!(£\®0j`2Ç000j`â2•0“
-2¶0“
-Há “
-	!(ß\™0j`2Ç000j`â2•0“
-2¶0“
-Há “
-	!(©~≠000j`â2Ç000j`â2†0“
-2´0 j`:2Ö0 j`:2≤0Bj`CHá “
-	!(¨~Ø000j`â2Ç000j`â2†0“
-2´0 j`:2Ö0 j`:2≤0Bj`CHá “
-	!(ÆJ≤0j`2Ç000j`â2∞0“
-Há “
-	!(±ÿ
-‡
+ 
+
+	 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+" 
+# 
+$ 
+% 
+' 
+) 
+- 
+. 
+/ 
+0 
+3 
+4 
+5 
+; 
+< 
+N 
+O 
+_ 
+` 
+d 
+g 
+h 
+m 
+n 
+r 
+s 
+u 
+í 
+ì 
+ñ 
+ò 
+õ 
+ú 
+ù 
+û 
+ü 
+† 
+° 
+ß 
+® 
+Æ 
+∫ 
+ª 
+º 
+Ω 
+… 
+œ 
+– 
+’ 
+÷ 
+Ÿ 
+⁄ 
+ﬁ 
+ﬂ 
+‚ 
+„ 
+Ê 
+È 
+Í 
+Ó 
+Ô 
+Ú 
+ı 
+¯ 
+˘ 
+Ä 
+Å 
+Ö 
+Ü 
+â 
+ä 
+ç 
+é 
+ë 
+î 
+ó 
+ò 
+õ 
+ú 
+ü 
+¢ 
+• 
+¶ 
+™ 
+´ 
+Æ 
+Ø 
+∞ 
+± 
+≥ 
+¥ 
+Ω 
+æ 
+ø 
+… 
+  
+’ 
+÷ 
+‹ 
+› 
+‚ 
+„ 
+Ù 
+ı 
+˘ 
+˙ 
+í 
+õ 
+± 
+≤ 
+∂ 
+∑ 
+ª 
+¿ 
+‹ 
+Ë 
+È 
+Í 
+Ú 
+Û 
+˜ 
+¯ ∫pé0j`200j`2
+0j`	20
+2"00j`0j`02"00j`0j`0Há “
+(H!0
+j`20
+2"00j`0j`0Há “
+( T,0
+j`2&00j`0j`2
+(0
+j`2
+*0
+j`Há “
+(+T20
+j`2&00j` 0j`!2
+(0
+j`2
+*0
+j`Há “
+(1l90
+j`2"60"0j`#0j`$020
+2"700j`0j`0Há “
+(8d@0
+j`2
+:0j`	2=0%0j`&2">00j`0j`0Há “
+(?2C0
+j`2A0"0j`#Há “
+(B@F0
+j`2"D0"0j`#0j`$0Há “
+(EH0
+j`Há “
+(GVL0
+j`2"I00j`0j`02J00j`Há “
+(KäT0
+j`2M00j`2P0
+0'j`(02Q0
+0'j`(02"R00j`0j`0Há “
+(SäV0
+j`2M00j`2P0
+0'j`(02Q0
+0'j`(02"R00j`0j`0Há “
+(Uî\0
+j`2M00j`2W0
+0'j`(02Q0
+0'j`(02X00j`2
+Y0
+j`2
+Z0
+j`Há “
+([V^0
+j`2M00j`2"R00j`0j`0Há “
+(]Cc0
+j`2M00j`2a0)“
+*Há “
+(bCf0
+j`2M00j`2a0)“
++Há “
+(eTl0
+j`2M00j`2i0,0j`-2
+j0
+j`Há “
+(kTp0
+j`2M00j`2i0.0j`/2
+j0
+j`Há “
+(ooy00j`2q00j`2t000j`12
+v0j`22w0)“
+*Há “
+(xo{00j`2q00j`2t000j`12
+v0j`22w0)“
++Há “
+(z}0
+j`Há “
+(|áÖ00j`2~0)“
+*2
+v0j`220
+2Ä0
+2Å0
+2Ç0
+2q00j`2É0
+Há “
+	(Ñ~ã0
+j`2Ü0j`	2a00j` 0j`!2á0
+2à00j` 0j`!2â0
+Há “
+	(äáç00j`2~0)“
++2
+v0j`220
+2Ä0
+2Å0
+2Ç0
+2q00j`2É0
+Há “
+	(å~è0
+j`2Ü0j`	2a00j`0j`2á0
+2à00j`0j`2â0
+Há “
+	(éë0j`2Há “
+	(ê[ö0j`62î030j`42ï0j`	2ó0%0j`5Há “
+	(ôá¶0j`62M¢H<:64090j`:0;j`<0j`20
+j`08070j`=2£0;j`<2§0j`2Há “
+	(•m¨0j`62î030j`42)©$090j`:0j`>0j`?2™0j`2Há “
+	(´á≥0j`62)©$090j`:0j`>0j`?2≠000j`12Ø0j`@2∞0j`22±0j`2Há “
+	(≤áµ0j`62)©$090j`:0j`>0j`?2≠000j`12Ø0j`@2∞0j`22±0j`2Há “
+	(¥Bπ0j`62∂090j`:2∑0j`2Há “
+	(∏m¡0j`62)æ$0A0j`B0j`C0j`D2∂090j`:2ø0j`2Há “
+	(¿B≈0j`62¬0A0j`B2√0j`2Há “
+	(ƒ\À0j`E2¬0A0j`B2∆0j`	2«0j`@2»0j`@Há “
+	( OŒ0j`62∂090j`:2∞0j`22Ã0j`2Há “
+	(ÕY‘0j`62∂090j`:2—0F0j`G2“0j`2Há “
+	(”Yÿ0j`62∂090j`:2—0H0j`I2“0j`2Há “
+	(◊Y›0j`62¬0A0j`B2€0J0j`K2“0j`2Há “
+	(‹Y·0j`62¬0A0j`B2€0L0j`M2“0j`2Há “
+	(‡…Â0j`62¬0A0j`B2€0J0j`K2a¢\PNJH090j`:0J0j`K0;j`<0j`20
+j`0N070j`O2£0;j`<2§0j`2Há “
+	(‰…Ë0j`62¬0A0j`B2€0L0j`M2a¢\PNJH090j`:0L0j`M0;j`<0j`20
+j`0N070j`P2£0;j`<2§0j`2Há “
+	(ÁYÌ0j`62¬0A0j`B2Î0Q0j`R2“0j`2Há “
+	(ÏYÒ0j`62¬0A0j`B2Î0S0j`T2“0j`2Há “
+	(…Ù0j`62¬0A0j`B2Î0Q0j`R2a¢\PNJH090j`:0Q0j`R0;j`<0j`20
+j`0N070j`U2£0;j`<2§0j`2Há “
+	(Û…˜0j`62¬0A0j`B2Î0S0j`T2a¢\PNJH090j`:0S0j`T0;j`<0j`20
+j`0N070j`V2£0;j`<2§0j`2Há “
+	(ˆ}ˇ0j`62¬0A0j`B2˙0W0j`X2˚0W0j`X2¸0j`22˝0j`2Há “
+	(˛5Ñ0j`62Ç0Y0j`ZHá “
+	(É5à0j`62Ç0[0j`\Há “
+	(áYå0j`62¬0A0j`B2€0]0j`^2“0j`2Há “
+	(ãYê0j`62¬0A0j`B2€0_0j``2“0j`2Há “
+	(è…ì0j`62¬0A0j`B2€0]0j`^2a¢\PNJH090j`:0]0j`^0;j`<0j`20
+j`0N070j`a2£0;j`<2§0j`2Há “
+	(í…ñ0j`62¬0A0j`B2€0_0j``2a¢\PNJH090j`:0_0j``0;j`<0j`20
+j`0N070j`b2£0;j`<2§0j`2Há “
+	(ïYö0j`62¬0A0j`B2Î0c0j`d2“0j`2Há “
+	(ôYû0j`62¬0A0j`B2Î0e0j`f2“0j`2Há “
+	(ù…°0j`62¬0A0j`B2Î0c0j`d2a¢\PNJH090j`:0c0j`d0;j`<0j`20
+j`0N070j`g2£0;j`<2§0j`2Há “
+	(†…§0j`62¬0A0j`B2Î0e0j`f2a¢\PNJH090j`:0e0j`f0;j`<0j`20
+j`0N070j`h2£0;j`<2§0j`2Há “
+	(£5©0j`62ß0i0j`jHá “
+	(®5≠0j`62ß0k0j`lHá “
+	(¨Ã∏0j`62)≤$0m0j`n0j`o0j`p2¬0A0j`B2˙0W0j`X2˚0W0j`X2µ0q0j`r2∂0;j`<2£0;j`<2ø0j`2Há “
+	(∑Bª0j`62π0m0j`n2√0j`2Há “
+	(∫p√0j`62π0m0j`n2º0j`22¿00sj`t0j`u2¡0j`2Há “
+	(¬B∆0j`62π0m0j`n2ƒ0j`2Há “
+	(≈\»0j`62π0m0j`n2∆0j`	2«0j`@2»0j`@Há “
+	(«YŒ0j`62π0m0j`n2À0v0j`w2Ã0j`2Há “
+	(ÕY—0j`62π0m0j`n2À0v0j`w2œ0j`2Há “
+	(–Y‘0j`62π0m0j`n2À0v0j`w2“0j`2Há “
+	(”5Ÿ0
+j`2◊0x0j`yHá “
+	(ÿ5€0
+j`2◊0x0j`yHá “
+	(⁄5ﬂ0
+j`2◊0z0j`{Há “
+	(ﬁ5·0
+j`2◊0z0j`{Há “
+	(‡nÈ0
+j`2‰0|j`}02Â0j`22Ê00j` 0j`!2Á0j`2Há “
+	(ËnÎ0
+j`2‰0|j`}02Â0j`22Ê00j`0j`2Á0j`2Há “
+	(ÍRÓ0
+j`2Ê0)“
+*2‰0|j`}02Ï0j`2Há “
+	(ÌR0
+j`2Ê0)“
++2‰0|j`}02Ï0j`2Há “
+	(Ôa¯0
+j`2Ò0)“
+*2Ú0j`22Û0j`22ˆ0~0j`Há “
+	(˜c¸0
+j`2Ò0)“
++2Ú0j`22Û0j`22ˆ0Ä0j`ÅHá “
+	(˚Ñˇ0
+j`2ˆ0~0j`2Û0j`22Ò00j` 0j`!2˝00sj`t0j`uHá “
+	(˛ÜÅ0
+j`2ˆ0Ä0j`Å2Û0j`22Ò00j`0j`2˝00sj`t0j`uHá “
+	(ÄÖ0
+j`2Ò0)“
+*2Ç00j` 0j`!2É00sj`t0j`u2Û0j`2Há “
+	(Ñá0
+j`2Ò0)“
++2Ç00j`0j`2É00sj`t0j`u2Û0j`2Há “
+	(Üëã0
+j`2à0)“
+*2â0)“
+*2Ç00j` 0j`!2É00sj`t0j`u2Û0j`2Há “
+	(äëç0
+j`2à0)“
++2â0)“
++2Ç00j`0j`2É00sj`t0j`u2Û0j`2Há “
+	(å{î0%0j`Ç2é0)“
+*2è0j`22ê0)“
+*2ë0)“
+*2Û0j`2Há “
+	(ì{ñ0%0j`Ç2é0)“
++2è0j`22ê0)“
++2ë0)“
++2Û0j`2Há “
+	(ï8ô0
+j`2ó0%0j`ÇHá “
+	(ò∞¢0%0j`Ç2ó0%0j`Ç2ö0)“
+*2ú0j`É2ù0)“
+*2û0)“
+*2ü0j`22Û0j`22†0;j`<Há “
+	(°∞§0%0j`Ç2ó0%0j`Ç2ö0)“
++2ú0j`É2ù0)“
++2û0)“
++2ü0j`22Û0j`22†0;j`<Há “
+	(£ê®0%0j`Ç2ó0%0j`Ç2Ò0)“
+*2•0)“
+*2¶0j`22Û0j`22†0;j`<Há “
+	(ßê™0%0j`Ç2ó0%0j`Ç2Ò0)“
++2•0)“
++2¶0j`22Û0j`22†0;j`<Há “
+	(©∞0
+j`2´0%0j`Ç2¨0%0j`52≠0j`22Æ00sj`t0j`uHá “
+	(Økµ0
+j`2´0%0j`Ç2≥0Ñ0j`Ö2Û0j`22†0;j`<Há “
+	(¥kπ0
+j`2´0%0j`Ç2≥0Ü0j`á2Û0j`22†0;j`<Há “
+	(∏yø0j`22´0%0j`Ç2∫0
+j`2º0%0j`à2Ω0j`22†0;j`<Há “
+	(æÄƒ0
+j`2´0%0j`Ç2¨0%0j`â2¡0j`22¬00sj`t0j`uHá “
+	(√s«0
+j`2´0%0j`Ç2≈00sj`t0j`u2Û0j`22†0;j`<Há “
+	(∆QÀ0
+j`2»0%0j`Ç2…0%0j`5Há “
+	( QÕ0
+j`2»0%0j`Ç2…0%0j`5Há “
+	(Ã–0
+j`2ó0%0j`Ç2Œ0j`22¨0%0j`52É00sj`t0j`uHá “
+	(œ“0
+j`2ó0%0j`Ç2Œ0j`22¨0%0j`52É00sj`t0j`uHá “
+	(—k’0
+j`2ó0%0j`Ç2Œ0j`22¨0%0j`52”0j`2Há “
+	(‘k◊0
+j`2ó0%0j`Ç2Œ0j`22¨0%0j`52”0j`2Há “
+	(÷xŸ0
+j`2ó0%0j`Ç2Œ0j`22¨0%0j`52”0j`22Û0j`2Há “
+	(ÿx€0
+j`2ó0%0j`Ç2Œ0j`22¨0%0j`52”0j`22Û0j`2Há “
+	(⁄`ﬂ0
+j`2ó0%0j`Ç2&›!0%0j`&0j`ä0Há “
+	(ﬁ7‚0
+j`2‡0%0j`&Há “
+	(·ÅÂ0
+j`2„00sj`t0j`u2Ç00j` 0j`!2É00sj`t0j`uHá “
+	(‰ÅÁ0
+j`2„00sj`t0j`u2Ç00j`0j`2É00sj`t0j`uHá “
+	(ÊçÌj][WU0%0j`Ç0;j`<0j`20%0j`50j`20å0ã070j`ç2ó0%0j`Ç2oÎj][WU0%0j`Ç0;j`<0j`20%0j`50j`20å0ã070j`çHá “
+	(ÏçÔj][WU0%0j`Ç0;j`<0j`20%0j`50j`20å0ã070j`ç2ó0%0j`Ç2oÎj][WU0%0j`Ç0;j`<0j`20%0j`50j`20å0ã070j`çHá “
+	(Óäˆ0%0j`Ç20%0j`Ç2Ò0)“
+*2Ù0é0j`è2Û0j`22†0;j`<Há “
+	(ıä˙0%0j`Ç20%0j`Ç2Ò0)“
++2Ù0ê0j`ë2Û0j`22†0;j`<Há “
+	(˘êÄ0
+j`20%0j`Ç2˚0)“
+*2¸0)“
+*2˝0
+j`2˛0j`22Û0j`22†0;j`<Há “
+	(ˇêÇ0
+j`20%0j`Ç2˚0)“
++2¸0)“
++2˝0
+j`2˛0j`22Û0j`22†0;j`<Há “
+	(ÅvÜ0
+j`20%0j`Ç2É0)“
+*2Ñ0)“
+*2Û0j`22†0;j`<Há “
+	(Övà0
+j`20%0j`Ç2É0)“
++2Ñ0)“
++2Û0j`22†0;j`<Há “
+	(áêã0
+j`2â0%0j`Ç2˚0)“
+*2¸0)“
++2˝0
+j`2˛0j`22Û0j`22†0;j`<Há “
+	(ävç0
+j`2â0%0j`Ç2É0)“
++2Ñ0)“
+*2Û0j`22†0;j`<Há “
+	(åJê0
+j`20%0j`Ç2é0)“
+*Há “
+	(èJí0
+j`20%0j`Ç2é0)“
++Há “
+	(ë\ñ0
+j`20%0j`Ç2ì0)“
+*2î0)“
+*Há “
+	(ï\ò0
+j`20%0j`Ç2ì0)“
++2î0)“
++Há “
+	(ó~õ0%0j`Ç20%0j`Ç2é0)“
+*2ô0j`22Û0j`22†0;j`<Há “
+	(ö~ù0%0j`Ç20%0j`Ç2é0)“
++2ô0j`22Û0j`22†0;j`<Há “
+	(úJ†0
+j`20%0j`Ç2û0)“
+*Há “
+	(üJ¢0
+j`20%0j`Ç2û0)“
++Há “
+	(°J§0
+j`20%0j`Ç2û0)“
+*Há “
+	(£J¶0
+j`20%0j`Ç2û0)“
++Há “
+	(•ÿ
+‡
  Í
 platform.windows

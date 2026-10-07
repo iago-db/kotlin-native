@@ -159,84 +159,21 @@ $@32@0:8{CLLocationCoordinate2D=dd}16
 !{CLLocationCoordinate2D=dd}16@0:8
 MKCoordinateSpanValue
 {?=dd}16@0:8
-MKDirectionsRequest
-ULong
-MKDirectionsTransportType
-transportType
-Q16@0:8
-setTransportType:
-
-v24@0:8Q16
-setTransportType
-requestsAlternateRoutes
-c16@0:8
-setRequestsAlternateRoutes:
-
-v20@0:8c16
-setRequestsAlternateRoutes
-NSDate
-departureDate
+NSUserActivity
+	MKMapItem
+mapItem
 @16@0:8
-setDepartureDate:
+setMapItem:
 
 v24@0:8@16
-setDepartureDate
-arrivalDate
-setArrivalDate:
-setArrivalDate
-Long
-MKDirectionsRoutePreference
-tollPreference
-q16@0:8
-setTollPreference:
 
-v24@0:8q16
-setTollPreference
-highwayPreference
-setHighwayPreference:
-setHighwayPreference
-NSURL
-url
-
-Deprecated
-message
-Use factory method instead
-replaceWith
-ReplaceWith
-imports
-
-expression
-MKDirectionsRequest.create(url)
-level
-DeprecationLevel
-ERROR
-initWithContentsOfURL:
-
-@24@0:8@16
-ConsumesReceiver
-ReturnsRetained
-initWithContentsOfURL
-T
-ObjCClassOf
-contentsOfURL
-ObjCFactory
-create
-MKDirectionsRequestMeta
-isDirectionsRequestURL:
-
-c24@0:8@16
-isDirectionsRequestURL
-MKLocalSearchRequest
-MKLocalSearchCompletion
-
-completion
-'MKLocalSearchRequest.create(completion)
-initWithCompletion:
-initWithCompletion
+setMapItem
 	MKMapView
 MKOverlayProtocol
 overlay
+Long
 MKOverlayLevel
+level
 addOverlay:level:
 v32@0:8@16q24
 
@@ -250,6 +187,7 @@ addOverlay
 removeOverlay
 removeOverlays:
 removeOverlays
+ULong
 darwin
 
 NSUInteger
@@ -272,6 +210,8 @@ NSUInteger
 overlaysInLevel
 MKOverlayRenderer
 rendererForOverlay:
+
+@24@0:8@16
 rendererForOverlay
 addOverlay:
 addOverlays:
@@ -282,12 +222,72 @@ NSUInteger
 *exchangeOverlayAtIndex:withOverlayAtIndex:
 v32@0:8Q16Q24
 exchangeOverlayAtIndex
-NSUserActivity
-	MKMapItem
-mapItem
-setMapItem:
+MKLocalSearchRequest
+MKLocalSearchCompletion
 
-setMapItem
+completion
+
+Deprecated
+message
+Use factory method instead
+replaceWith
+ReplaceWith
+imports
+
+expression
+'MKLocalSearchRequest.create(completion)
+DeprecationLevel
+ERROR
+initWithCompletion:
+ConsumesReceiver
+ReturnsRetained
+initWithCompletion
+T
+ObjCClassOf
+ObjCFactory
+create
+MKDirectionsRequest
+MKDirectionsTransportType
+transportType
+Q16@0:8
+setTransportType:
+
+v24@0:8Q16
+setTransportType
+requestsAlternateRoutes
+c16@0:8
+setRequestsAlternateRoutes:
+
+v20@0:8c16
+setRequestsAlternateRoutes
+NSDate
+departureDate
+setDepartureDate:
+setDepartureDate
+arrivalDate
+setArrivalDate:
+setArrivalDate
+MKDirectionsRoutePreference
+tollPreference
+q16@0:8
+setTollPreference:
+
+v24@0:8q16
+setTollPreference
+highwayPreference
+setHighwayPreference:
+setHighwayPreference
+NSURL
+url
+MKDirectionsRequest.create(url)
+initWithContentsOfURL:
+initWithContentsOfURL
+contentsOfURL
+MKDirectionsRequestMeta
+isDirectionsRequestURL:
+
+c24@0:8@16
+isDirectionsRequestURL
 MKTileOverlay
 MKTileOverlayPath
 path
@@ -326,85 +326,85 @@ Cknifunptr_platform_MapKit55_MKFeatureDisplayPriorityRequired_getter
  MKFeatureDisplayPriorityRequired
 ;knifunptr_platform_MapKit56_MKLaunchOptionsCameraKey_getter
 MKLaunchOptionsCameraKey
-Gknifunptr_platform_MapKit57_MKLaunchOptionsDirectionsModeCycling_getter
-$MKLaunchOptionsDirectionsModeCycling
-Gknifunptr_platform_MapKit58_MKLaunchOptionsDirectionsModeDefault_getter
+Gknifunptr_platform_MapKit57_MKLaunchOptionsDirectionsModeDefault_getter
 $MKLaunchOptionsDirectionsModeDefault
-Gknifunptr_platform_MapKit59_MKLaunchOptionsDirectionsModeDriving_getter
+Gknifunptr_platform_MapKit58_MKLaunchOptionsDirectionsModeDriving_getter
 $MKLaunchOptionsDirectionsModeDriving
-Cknifunptr_platform_MapKit60_MKLaunchOptionsDirectionsModeKey_getter
+Cknifunptr_platform_MapKit59_MKLaunchOptionsDirectionsModeKey_getter
  MKLaunchOptionsDirectionsModeKey
-Gknifunptr_platform_MapKit61_MKLaunchOptionsDirectionsModeTransit_getter
+Gknifunptr_platform_MapKit60_MKLaunchOptionsDirectionsModeTransit_getter
 $MKLaunchOptionsDirectionsModeTransit
-Gknifunptr_platform_MapKit62_MKLaunchOptionsDirectionsModeWalking_getter
+Gknifunptr_platform_MapKit61_MKLaunchOptionsDirectionsModeWalking_getter
 $MKLaunchOptionsDirectionsModeWalking
->knifunptr_platform_MapKit63_MKLaunchOptionsMapCenterKey_getter
+>knifunptr_platform_MapKit62_MKLaunchOptionsMapCenterKey_getter
 MKLaunchOptionsMapCenterKey
-<knifunptr_platform_MapKit64_MKLaunchOptionsMapSpanKey_getter
+<knifunptr_platform_MapKit63_MKLaunchOptionsMapSpanKey_getter
 MKLaunchOptionsMapSpanKey
-<knifunptr_platform_MapKit65_MKLaunchOptionsMapTypeKey_getter
+<knifunptr_platform_MapKit64_MKLaunchOptionsMapTypeKey_getter
 MKLaunchOptionsMapTypeKey
-Aknifunptr_platform_MapKit66_MKLaunchOptionsShowsTrafficKey_getter
+Aknifunptr_platform_MapKit65_MKLaunchOptionsShowsTrafficKey_getter
 MKLaunchOptionsShowsTrafficKey
-9knifunptr_platform_MapKit67_MKMapCameraZoomDefault_getter
+9knifunptr_platform_MapKit66_MKMapCameraZoomDefault_getter
 MKMapCameraZoomDefault
-:knifunptr_platform_MapKit68_MKMapItemTypeIdentifier_getter
+:knifunptr_platform_MapKit67_MKMapItemTypeIdentifier_getter
 MKMapItemTypeIdentifier
-0knifunptr_platform_MapKit69_MKMapRectNull_getter
+0knifunptr_platform_MapKit68_MKMapRectNull_getter
 MKMapRectNull
-1knifunptr_platform_MapKit70_MKMapRectWorld_getter
+1knifunptr_platform_MapKit69_MKMapRectWorld_getter
 MKMapRectWorld
-1knifunptr_platform_MapKit71_MKMapSizeWorld_getter
+1knifunptr_platform_MapKit70_MKMapSizeWorld_getter
 MKMapSizeWorld
-Pknifunptr_platform_MapKit72_MKMapViewDefaultAnnotationViewReuseIdentifier_getter
+Pknifunptr_platform_MapKit71_MKMapViewDefaultAnnotationViewReuseIdentifier_getter
 -MKMapViewDefaultAnnotationViewReuseIdentifier
-Wknifunptr_platform_MapKit73_MKMapViewDefaultClusterAnnotationViewReuseIdentifier_getter
+Wknifunptr_platform_MapKit72_MKMapViewDefaultClusterAnnotationViewReuseIdentifier_getter
 4MKMapViewDefaultClusterAnnotationViewReuseIdentifier
 MKPointOfInterestCategory
-?knifunptr_platform_MapKit74_MKPointOfInterestCategoryATM_getter
+?knifunptr_platform_MapKit73_MKPointOfInterestCategoryATM_getter
 MKPointOfInterestCategoryATM
-Cknifunptr_platform_MapKit75_MKPointOfInterestCategoryAirport_getter
+Cknifunptr_platform_MapKit74_MKPointOfInterestCategoryAirport_getter
  MKPointOfInterestCategoryAirport
-Iknifunptr_platform_MapKit76_MKPointOfInterestCategoryAmusementPark_getter
+Iknifunptr_platform_MapKit75_MKPointOfInterestCategoryAmusementPark_getter
 &MKPointOfInterestCategoryAmusementPark
-Iknifunptr_platform_MapKit77_MKPointOfInterestCategoryAnimalService_getter
+Iknifunptr_platform_MapKit76_MKPointOfInterestCategoryAnimalService_getter
 &MKPointOfInterestCategoryAnimalService
-Dknifunptr_platform_MapKit78_MKPointOfInterestCategoryAquarium_getter
+Dknifunptr_platform_MapKit77_MKPointOfInterestCategoryAquarium_getter
 !MKPointOfInterestCategoryAquarium
-Lknifunptr_platform_MapKit79_MKPointOfInterestCategoryAutomotiveRepair_getter
+Lknifunptr_platform_MapKit78_MKPointOfInterestCategoryAutomotiveRepair_getter
 )MKPointOfInterestCategoryAutomotiveRepair
-Bknifunptr_platform_MapKit80_MKPointOfInterestCategoryBakery_getter
+Bknifunptr_platform_MapKit79_MKPointOfInterestCategoryBakery_getter
 MKPointOfInterestCategoryBakery
-@knifunptr_platform_MapKit81_MKPointOfInterestCategoryBank_getter
+@knifunptr_platform_MapKit80_MKPointOfInterestCategoryBank_getter
 MKPointOfInterestCategoryBank
-Dknifunptr_platform_MapKit82_MKPointOfInterestCategoryBaseball_getter
+Dknifunptr_platform_MapKit81_MKPointOfInterestCategoryBaseball_getter
 !MKPointOfInterestCategoryBaseball
-Fknifunptr_platform_MapKit83_MKPointOfInterestCategoryBasketball_getter
+Fknifunptr_platform_MapKit82_MKPointOfInterestCategoryBasketball_getter
 #MKPointOfInterestCategoryBasketball
-Aknifunptr_platform_MapKit84_MKPointOfInterestCategoryBeach_getter
+Aknifunptr_platform_MapKit83_MKPointOfInterestCategoryBeach_getter
 MKPointOfInterestCategoryBeach
-Bknifunptr_platform_MapKit85_MKPointOfInterestCategoryBeauty_getter
+Bknifunptr_platform_MapKit84_MKPointOfInterestCategoryBeauty_getter
 MKPointOfInterestCategoryBeauty
-Cknifunptr_platform_MapKit86_MKPointOfInterestCategoryBowling_getter
+Cknifunptr_platform_MapKit85_MKPointOfInterestCategoryBowling_getter
  MKPointOfInterestCategoryBowling
-Cknifunptr_platform_MapKit87_MKPointOfInterestCategoryBrewery_getter
+Cknifunptr_platform_MapKit86_MKPointOfInterestCategoryBrewery_getter
  MKPointOfInterestCategoryBrewery
-@knifunptr_platform_MapKit88_MKPointOfInterestCategoryCafe_getter
+@knifunptr_platform_MapKit87_MKPointOfInterestCategoryCafe_getter
 MKPointOfInterestCategoryCafe
-Fknifunptr_platform_MapKit89_MKPointOfInterestCategoryCampground_getter
+Fknifunptr_platform_MapKit88_MKPointOfInterestCategoryCampground_getter
 #MKPointOfInterestCategoryCampground
-Eknifunptr_platform_MapKit90_MKPointOfInterestCategoryCarRental_getter
+Eknifunptr_platform_MapKit89_MKPointOfInterestCategoryCarRental_getter
 "MKPointOfInterestCategoryCarRental
-Bknifunptr_platform_MapKit91_MKPointOfInterestCategoryCastle_getter
+Bknifunptr_platform_MapKit90_MKPointOfInterestCategoryCastle_getter
 MKPointOfInterestCategoryCastle
-Lknifunptr_platform_MapKit92_MKPointOfInterestCategoryConventionCenter_getter
+Lknifunptr_platform_MapKit91_MKPointOfInterestCategoryConventionCenter_getter
 )MKPointOfInterestCategoryConventionCenter
-Fknifunptr_platform_MapKit93_MKPointOfInterestCategoryDistillery_getter
+Fknifunptr_platform_MapKit92_MKPointOfInterestCategoryDistillery_getter
 #MKPointOfInterestCategoryDistillery
-Eknifunptr_platform_MapKit94_MKPointOfInterestCategoryEVCharger_getter
+Eknifunptr_platform_MapKit93_MKPointOfInterestCategoryEVCharger_getter
 "MKPointOfInterestCategoryEVCharger
-Fknifunptr_platform_MapKit95_MKPointOfInterestCategoryFairground_getter
-#MKPointOfInterestCategoryFairgroundû
+Fknifunptr_platform_MapKit94_MKPointOfInterestCategoryFairground_getter
+#MKPointOfInterestCategoryFairground
+Gknifunptr_platform_MapKit95_MKPointOfInterestCategoryFireStation_getter
+$MKPointOfInterestCategoryFireStationû
  
   
 
@@ -437,32 +437,32 @@ Fknifunptr_platform_MapKit95_MKPointOfInterestCategoryFairground_getter
 â 
 ä 
 ã 
-ô 
- ö 
-õ 
-¶ 
- Ø 
-∞ 
-π 
- ª 
- ø 
- ƒ 
-» 
-… 
-Ã 
-Œ 
-– 
-‘ 
-’ 
-⁄ 
-€ 
-› 
- ·
-2‚ 
-Í
-4Î 
-¸ 
-à 
+ô 
+ö 
+† 
+° 
+ £ 
+§ 
+ ©
+$™ 
+ ≤ 
+≥
+'¥ 
+≈ 
+“ 
+” 
+ ’ 
+ Ÿ 
+ › 
+‡ 
+· 
+‰ 
+Â 
+Á 
+Ë 
+Û 
+˙ 
+É 
 â 
 ç 
 é 
@@ -472,7 +472,7 @@ Fknifunptr_platform_MapKit95_MKPointOfInterestCategoryFairground_getter
  ú 
 ù 
 ™ 
-’ ‚260	02
+” Í260	02
 0j`2
 0j`Há “
 (:0020020	0Há “
@@ -531,131 +531,132 @@ Fknifunptr_platform_MapKit95_MKPointOfInterestCategoryFairground_getter
 é(ñ	ê <ó0	0*0Há “
 %
 å(ó
-é(ò	ê :ú0j` *0Há “
+é(ò	ê 8õ0*0Há “
 %
-å(ú
-é(ù	ê C†0*02ú0j` Há “
+å(õ
+é(ú	ê Aü0*02	õ0Há “
 %
-å(û
-é(ü	ê 6°0*0Há “
+å(ù
+é(û	ê L®0*0 2¢0!2•0"j`#Há “
 %
-å(°
-é(¢	ê ?•0*02°0Há “
-%
-å(£
-é(§	ê 8ß0!*0Há “
-%
-å(ß
-é(®	ê A´0*02	ß0!Há “
-%
-å(©
-é(™	ê 8¨0!*0Há “
+å(¶
+é(ß	ê P≠0*0 2´0%2•0"j`#Há “
 %
 å(¨
-é(®	ê AÆ0*02	¨0!Há “
+é(ß	ê ?Ø0*0 2¢0!Há “
 %
-å(≠
-é(™	ê :±0"j`#*0Há “
+å(Æ
+é(û	ê C±0*0 2´0%Há “
 %
-å(±
-é(≤	ê Cµ0*02±0"j`#Há “
-%
-å(≥
-é(¥	ê :∂0"j`#*0Há “
+å(∞
+é(û	ê Y∏0*0 2¢0!2µ0&j`(2•0"j`#Há “
 %
 å(∂
-é(≤	ê C∏0*02∂0"j`#Há “
+é(∑	ê H∏0*0 2¢0!2π0!Há “
 %
-å(∑
-é(¥	ê ä 0*02∫0$Há “
->%
-º(Ω æB&¿
-¡(¬√
-0'8≈“
+å(∫
+é(ª	ê H∏0*0 2¢0!2º0!Há “
+%
+å(Ω
+é(ª	ê H¡0*0 2æ0!2ø0!Há “
+%
+å(¿
+é(ª	ê Gƒ0%*0 2•0"j`#Há “
+%
+å(¬
+é(√	ê A»0)*0 2¢0!Há “
 %
 å(∆
+é(«	ê ?®0*0 2¢0!Há “
+%
+å(…
+é(û	ê C≠0*0 2´0%Há “
+%
+å( 
+é(û	ê L∏0*0 2¢0!2µ0&j`(Há “
+%
+å(À
+é(Ã	ê P—0*0 2Õ0&j`(2Œ0&j`(Há “
+%
+å(œ
+é(–	ê :´0%*0 Há “
+%
+å(´
+é(ú	ê ä‚0**0*2‘0+Há “
+>,
+÷(◊ ÿB-⁄
+€(‹•
+0.8ﬁ“
+%
+å(ﬂ
 é(«	ê “
-(“
-)Zœ8 "	 À*0*8 0*2Õ0$Há “
-%+
-å(∆
+/“
+0ZÊ8 "	 „*0**8 012‘0+Há “
+%2
+å(ﬂ
 é(«	ê “
-(“
-)?”0*0,2∫0$Há “
+/“
+0:È0&j`4*03Há “
 %
-å(—
-é(“	ê äŸ0-*0-2÷0.Há “
->%
-º(Ω æB&¿
-¡(◊√
-0'8≈“
+å(È
+é(Í	ê CÌ0*032È0&j`4Há “
 %
-å(ÿ
-é(«	ê “
-(“
-)Zœ8"	À*0-*80*2÷0.Há “
-%+
-å(ÿ
-é(«	ê “
-(“
-)L‡0*0/2‹002√0"j`1Há “
+å(Î
+é(Ï	ê 6Ó0*03Há “
 %
-å(ﬁ
-é(ﬂ	ê PÂ0*0/2„032√0"j`1Há “
+å(Ó
+é(Ô	ê ?Ú0*032Ó0Há “
 %
-å(‰
-é(ﬂ	ê ?Á0*0/2‹00Há “
-%
-å(Ê
-é(™	ê CÈ0*0/2„03Há “
-%
-å(Ë
-é(™	ê YÔ0*0/2‹002Ï0j`52√0"j`1Há “
-%
-å(Ì
-é(Ó	ê HÔ0*0/2‹00200Há “
-%
-å(Ò
-é(Ú	ê HÔ0*0/2‹002Û00Há “
+å(
+é(Ò	ê 8Ù05*03Há “
 %
 å(Ù
-é(Ú	ê H¯0*0/2ı002ˆ00Há “
+é(ú	ê Aˆ0*032	Ù05Há “
+%
+å(ı
+é(û	ê 8˜05*03Há “
 %
 å(˜
-é(Ú	ê G˚03*0/2√0"j`1Há “
+é(ú	ê A˘0*032	˜05Há “
 %
-å(˘
-é(˙	ê A˛06*0/2‹00Há “
+å(¯
+é(û	ê :˚0"j`6*03Há “
+%
+å(˚
+é(¸	ê Cˇ0*032˚0"j`6Há “
 %
 å(˝
-é(«	ê ?‡0*0/2‹00Há “
-%
-å(ˇ
-é(™	ê CÂ0*0/2„03Há “
+é(˛	ê :Ä0"j`6*03Há “
 %
 å(Ä
-é(™	ê LÔ0*0/2‹002Ï0j`5Há “
+é(¸	ê CÇ0*032Ä0"j`6Há “
 %
 å(Å
-é(Ç	ê Pá0*0/2É0j`52Ñ0j`5Há “
+é(˛	ê äá03*032Ñ07Há “
+>,
+÷(◊ ÿB-⁄
+€(Ö•
+0.8ﬁ“
 %
-å(Ö
-é(Ü	ê :„03*0/Há “
-%
-å(„
-é(®	ê 8ä08*07Há “
+å(Ü
+é(«	ê “
+/“
+0ZÊ8"	„*03*8012à07Há “
+%2
+å(Ü
+é(«	ê “
+/“
+0?å0*082Ñ07Há “
 %
 å(ä
-é(®	ê Aå0*072	ä08Há “
-%
-å(ã
-é(™	ê Eí0$*092è0:0Há “
+é(ã	ê Eí07*092è0:0Há “
 %
 å(ê
 é(ë	ê dô0*092è0:02ñ0<0=00;Há “
 %
 å(ó
-é(ò	ê "õ08«ä	(ö"ü0>j`?8«ä	(û"°0>j`?8«ä	(†"£0>j`?8«ä	(¢"•0>j`?8«ä	(§"9©02¶08«@«XÜä	(ßí	(®"¨0>j`@8«ä	(´"Æ0>j`@8«ä	(≠"∞0>j`@8«ä	(Ø"≤08«ä	(±"¥08«ä	(≥"∂08«ä	(µ"∏08«ä	(∑"∫08«ä	(π"º08«ä	(ª"æ08«ä	(Ω"¿08«ä	(ø"¬08«ä	(¡"ƒ08«ä	(√"∆08«ä	(≈"»0j`8«ä	(«" 08«ä	(…"Ã08«ä	(À"Œ08«ä	(Õ"–08«ä	(œ"“08«ä	(—"‘08«ä	(”""◊
+é(ò	ê "õ08«ä	(ö"ü0>j`?8«ä	(û"°0>j`?8«ä	(†"£0>j`?8«ä	(¢"•0>j`?8«ä	(§"9©02¶08«@«XÜä	(ßí	(®"¨0>j`@8«ä	(´"Æ0>j`@8«ä	(≠"∞0>j`@8«ä	(Ø"≤08«ä	(±"¥08«ä	(≥"∂08«ä	(µ"∏08«ä	(∑"∫08«ä	(π"º08«ä	(ª"æ08«ä	(Ω"¿08«ä	(ø"¬08«ä	(¡"ƒ08«ä	(√"∆0j`8«ä	(≈"»08«ä	(«" 08«ä	(…"Ã08«ä	(À"Œ08«ä	(Õ"–08«ä	(œ"“08«ä	(—""’
+0j`A8«ä	(‘""◊
 0j`A8«ä	(÷""Ÿ
 0j`A8«ä	(ÿ""€
 0j`A8«ä	(⁄""›

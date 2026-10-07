@@ -1,32 +1,63 @@
 
-øµ
+À≥
 platform
 UIKit
--UIPickerViewAccessibilityDelegateProtocolMeta
  UIPickerViewDelegateProtocolMeta
+darwin
+NSObjectProtocolMeta
 kotlinx
 cinterop
 ExternalObjCClass
 protocolGetter
-:kniprot_platform_UIKit64_UIPickerViewAccessibilityDelegate
-)UIPickerViewAccessibilityDelegateProtocol
+-kniprot_platform_UIKit64_UIPickerViewDelegate
 UIPickerViewDelegateProtocol
+NSObjectProtocol
 UIPickerView
 
 pickerView
 kotlin
 Long
-darwin
 	NSInteger
-accessibilityLabelForComponent
-String
+widthForComponent
+Double
+CoreGraphics
+CGFloat
 
 ObjCMethod
 selector
-*pickerView:accessibilityLabelForComponent:
+pickerView:widthForComponent:
 encoding
-@32@0:8@16q24
+d32@0:8@16q24
 isStret
+rowHeightForComponent
+!pickerView:rowHeightForComponent:
+titleForRow
+forComponent
+String
+$pickerView:titleForRow:forComponent:
+@40@0:8@16q24q32
+attributedTitleForRow
+
+Foundation
+NSAttributedString
+.pickerView:attributedTitleForRow:forComponent:
+
+viewForRow
+UIView
+reusingView
+/pickerView:viewForRow:forComponent:reusingView:
+@48@0:8@16q24q32@40
+didSelectRow
+inComponent
+Unit
+$pickerView:didSelectRow:inComponent:
+v40@0:8@16q24q32
+-UIPickerViewAccessibilityDelegateProtocolMeta
+:kniprot_platform_UIKit65_UIPickerViewAccessibilityDelegate
+)UIPickerViewAccessibilityDelegateProtocol
+accessibilityLabelForComponent
+*pickerView:accessibilityLabelForComponent:
+@32@0:8@16q24
 accessibilityHintForComponent
 )pickerView:accessibilityHintForComponent:
 (accessibilityUserInputLabelsForComponent
@@ -34,9 +65,6 @@ ObjCMethod
 List
 4pickerView:accessibilityUserInputLabelsForComponent:
 (accessibilityAttributedLabelForComponent
-
-Foundation
-NSAttributedString
 4pickerView:accessibilityAttributedLabelForComponent:
 'accessibilityAttributedHintForComponent
 3pickerView:accessibilityAttributedHintForComponent:
@@ -44,7 +72,7 @@ Foundation
 >pickerView:accessibilityAttributedUserInputLabelsForComponent:
 -UIScrollViewAccessibilityDelegateProtocolMeta
  UIScrollViewDelegateProtocolMeta
-:kniprot_platform_UIKit65_UIScrollViewAccessibilityDelegate
+:kniprot_platform_UIKit66_UIScrollViewAccessibilityDelegate
 )UIScrollViewAccessibilityDelegateProtocol
 UIScrollViewDelegateProtocol
 UIScrollView
@@ -57,10 +85,8 @@ scrollView
 1accessibilityAttributedScrollStatusForScrollView:
 0accessibilityAttributedScrollStatusForScrollView
 1UIAccessibilityContainerDataTableCellProtocolMeta
-NSObjectProtocolMeta
->kniprot_platform_UIKit66_UIAccessibilityContainerDataTableCell
+>kniprot_platform_UIKit67_UIAccessibilityContainerDataTableCell
 -UIAccessibilityContainerDataTableCellProtocol
-NSObjectProtocol
 CValue
 _NSRange
 NSRange
@@ -68,7 +94,7 @@ scrollView
 {_NSRange=QQ}16@0:8
 accessibilityColumnRange
 -UIAccessibilityContainerDataTableProtocolMeta
-:kniprot_platform_UIKit67_UIAccessibilityContainerDataTable
+:kniprot_platform_UIKit68_UIAccessibilityContainerDataTable
 )UIAccessibilityContainerDataTableProtocol
 ULong
 
@@ -88,7 +114,7 @@ NSUInteger
 %accessibilityHeaderElementsForColumn:
 $accessibilityHeaderElementsForColumn
 %UIDropInteractionDelegateProtocolMeta
-2kniprot_platform_UIKit68_UIDropInteractionDelegate
+2kniprot_platform_UIKit69_UIDropInteractionDelegate
 !UIDropInteractionDelegateProtocol
 UIDropInteraction
 interaction
@@ -99,7 +125,6 @@ $accessibilityHeaderElementsForColumn
 B32@0:8@16@24
 dropInteraction
 sessionDidEnter
-Unit
  dropInteraction:sessionDidEnter:
 v32@0:8@16@24
 sessionDidUpdate
@@ -129,7 +154,7 @@ UIDragItem
 UIDropSessionProtocolMeta
 UIDragDropSessionProtocolMeta
 NSProgressReportingProtocolMeta
-&kniprot_platform_UIKit69_UIDropSession
+&kniprot_platform_UIKit70_UIDropSession
 UIDragDropSessionProtocol
 NSProgressReportingProtocol
 NSItemProviderReadingProtocol
@@ -153,10 +178,8 @@ v24@0:8Q16
 setProgressIndicatorStyle
 debugDescription
 value
-*kniprot_platform_UIKit70_UIDragDropSession
-UIView
+*kniprot_platform_UIKit71_UIDragDropSession
 view
-CoreGraphics
 CGPoint
 locationInView:
 {CGPoint=dd}24@0:8@16
@@ -176,7 +199,7 @@ B24@0:8#16
 !isRestrictedToDraggingApplication
 restrictedToDraggingApplication
 UIDragSessionProtocolMeta
-&kniprot_platform_UIKit71_UIDragSession
+&kniprot_platform_UIKit72_UIDragSession
 Any
 localContext
 setLocalContext:
@@ -184,7 +207,7 @@ B24@0:8#16
 v24@0:8@16
 setLocalContext
 UIDragAnimatingProtocolMeta
-(kniprot_platform_UIKit72_UIDragAnimating
+(kniprot_platform_UIKit73_UIDragAnimating
 	Function0
 
 animations
@@ -195,11 +218,10 @@ animations
 addCompletion:
 addCompletion
 UIViewAnimatingProtocolMeta
-(kniprot_platform_UIKit73_UIViewAnimating
+(kniprot_platform_UIKit74_UIViewAnimating
 UIViewAnimatingProtocol
 startAnimation
 v16@0:8
-Double
 NSTimeInterval
 delay
 startAnimationAfterDelay:
@@ -226,14 +248,13 @@ isReversed
 reversed
 setReversed:
 setReversed
-CGFloat
 fractionComplete
 d16@0:8
 setFractionComplete:
 setFractionComplete
 running
 %UIViewImplicitlyAnimatingProtocolMeta
-2kniprot_platform_UIKit74_UIViewImplicitlyAnimating
+2kniprot_platform_UIKit75_UIViewImplicitlyAnimating
 !UIViewImplicitlyAnimatingProtocol
 	animation
 delayFactor
@@ -249,7 +270,7 @@ parameters
 !UITimingCurveProviderProtocolMeta
 NSCodingProtocolMeta
 NSCopyingProtocolMeta
-.kniprot_platform_UIKit75_UITimingCurveProvider
+.kniprot_platform_UIKit76_UITimingCurveProvider
 NSCodingProtocol
 NSCopyingProtocol
 UITimingCurveType
@@ -267,7 +288,7 @@ parameters
 ReturnsRetained
 initWithCoder
 %UIDragInteractionDelegateProtocolMeta
-2kniprot_platform_UIKit76_UIDragInteractionDelegate
+2kniprot_platform_UIKit77_UIDragInteractionDelegate
 !UIDragInteractionDelegateProtocol
 UIDragInteraction
 itemsForBeginningSession
@@ -312,7 +333,7 @@ parameters
 3dragInteraction:item:willAnimateCancelWithAnimator:
 UITextDraggableProtocolMeta
 UITextInputProtocolMeta
-(kniprot_platform_UIKit77_UITextDraggable
+(kniprot_platform_UIKit78_UITextDraggable
 UITextDraggableProtocol
 UITextInputProtocol
 UITextDragDelegateProtocol
@@ -327,7 +348,7 @@ parameters
 setTextDragOptions
 textDragActive
 UITextDragDelegateProtocolMeta
-+kniprot_platform_UIKit78_UITextDragDelegate
++kniprot_platform_UIKit79_UITextDragDelegate
 textDraggableView
 UITextDragRequestProtocol
 itemsForDrag
@@ -341,7 +362,7 @@ parameters
 withOperation
 2textDraggableView:dragSessionDidEnd:withOperation:
 UITextDragRequestProtocolMeta
-*kniprot_platform_UIKit79_UITextDragRequest
+*kniprot_platform_UIKit80_UITextDragRequest
 UITextRange
 	dragRange
 suggestedItems
@@ -351,7 +372,7 @@ isSelected
 dragSession
 selected
 UITextPasteDelegateProtocolMeta
-,kniprot_platform_UIKit80_UITextPasteDelegate
+,kniprot_platform_UIKit81_UITextPasteDelegate
 UITextPasteDelegateProtocol
 *UITextPasteConfigurationSupportingProtocol
  textPasteConfigurationSupporting
@@ -369,13 +390,13 @@ NtextPasteConfigurationSupporting:shouldAnimatePasteOfAttributedString:toRange:
 B40@0:8@16@24@32
 .UITextPasteConfigurationSupportingProtocolMeta
 *UIPasteConfigurationSupportingProtocolMeta
-;kniprot_platform_UIKit81_UITextPasteConfigurationSupporting
+;kniprot_platform_UIKit82_UITextPasteConfigurationSupporting
 &UIPasteConfigurationSupportingProtocol
 pasteDelegate
 setPasteDelegate:
 setPasteDelegate
 UITextPasteItemProtocolMeta
-(kniprot_platform_UIKit82_UITextPasteItem
+(kniprot_platform_UIKit83_UITextPasteItem
 string
 setStringResult:
 setStringResult
@@ -393,7 +414,7 @@ NtextPasteConfigurationSupporting:shouldAnimatePasteOfAttributedString:toRange:
 Map
 defaultAttributes
 UITextDroppableProtocolMeta
-(kniprot_platform_UIKit83_UITextDroppable
+(kniprot_platform_UIKit84_UITextDroppable
 UITextDroppableProtocol
 UITextDropDelegateProtocol
 textDropDelegate
@@ -403,7 +424,7 @@ NtextPasteConfigurationSupporting:shouldAnimatePasteOfAttributedString:toRange:
 isTextDropActive
 textDropActive
 UITextDropDelegateProtocolMeta
-+kniprot_platform_UIKit84_UITextDropDelegate
++kniprot_platform_UIKit85_UITextDropDelegate
 textDroppableView
 UITextDropRequestProtocol
 willBecomeEditableForDrop
@@ -426,7 +447,7 @@ NtextPasteConfigurationSupporting:shouldAnimatePasteOfAttributedString:toRange:
 dropSessionDidEnd
 $textDroppableView:dropSessionDidEnd:
 UITextDropRequestProtocolMeta
-*kniprot_platform_UIKit85_UITextDropRequest
+*kniprot_platform_UIKit86_UITextDropRequest
 UITextPosition
 dropPosition
 suggestedProposal
@@ -435,13 +456,13 @@ isSameView
 dropSession
 sameView
 *UIContentSizeCategoryAdjustingProtocolMeta
-7kniprot_platform_UIKit86_UIContentSizeCategoryAdjusting
+7kniprot_platform_UIKit87_UIContentSizeCategoryAdjusting
 &UIContentSizeCategoryAdjustingProtocol
 !adjustsFontForContentSizeCategory
 %setAdjustsFontForContentSizeCategory:
 $setAdjustsFontForContentSizeCategory
 &UILetterformAwareAdjustingProtocolMeta
-3kniprot_platform_UIKit87_UILetterformAwareAdjusting
+3kniprot_platform_UIKit88_UILetterformAwareAdjusting
 "UILetterformAwareAdjustingProtocol
 UILetterformAwareSizingRule
 
@@ -449,7 +470,7 @@ sizingRule
 setSizingRule:
 setSizingRule
 UITextFieldDelegateProtocolMeta
-,kniprot_platform_UIKit88_UITextFieldDelegate
+,kniprot_platform_UIKit89_UITextFieldDelegate
 UITextFieldDelegateProtocol
 UITextField
 	textField
@@ -469,8 +490,6 @@ sizingRule
 replacementString
 :textField:shouldChangeCharactersInRange:replacementString:
 B48@0:8@16{_NSRange=QQ}24@40
-shouldChangeCharactersInRanges
-;textField:shouldChangeCharactersInRanges:replacementString:
 textFieldDidChangeSelection:
 textFieldDidChangeSelection
 textFieldShouldClear:
@@ -482,18 +501,13 @@ sizingRule
 UIMenu
 8textField:editMenuForCharactersInRange:suggestedActions:
 @48@0:8@16{_NSRange=QQ}24@40
-editMenuForCharactersInRanges
-9textField:editMenuForCharactersInRanges:suggestedActions:
 &UIEditMenuInteractionAnimatingProtocol
 willPresentEditMenuWithAnimator
 *textField:willPresentEditMenuWithAnimator:
 willDismissEditMenuWithAnimator
 *textField:willDismissEditMenuWithAnimator:
-UIInputSuggestion
-insertInputSuggestion
- textField:insertInputSuggestion:
 !UIActionSheetDelegateProtocolMeta
-.kniprot_platform_UIKit89_UIActionSheetDelegate
+.kniprot_platform_UIKit90_UIActionSheetDelegate
 UIActionSheetDelegateProtocol
 UIActionSheet
 actionSheet
@@ -510,23 +524,23 @@ sizingRule
 didDismissWithButtonIndex
 &actionSheet:didDismissWithButtonIndex:
 UIBarPositioningProtocolMeta
-)kniprot_platform_UIKit90_UIBarPositioning
+)kniprot_platform_UIKit91_UIBarPositioning
 UIBarPositioningProtocol
 UIBarPosition
 barPosition
 UIToolbarDelegateProtocolMeta
 $UIBarPositioningDelegateProtocolMeta
-*kniprot_platform_UIKit91_UIToolbarDelegate
+*kniprot_platform_UIKit92_UIToolbarDelegate
 UIToolbarDelegateProtocol
  UIBarPositioningDelegateProtocol
-1kniprot_platform_UIKit92_UIBarPositioningDelegate
+1kniprot_platform_UIKit93_UIBarPositioningDelegate
 bar
 positionForBar:
 
 q24@0:8@16
 positionForBar
 UITabBarDelegateProtocolMeta
-)kniprot_platform_UIKit93_UITabBarDelegate
+)kniprot_platform_UIKit94_UITabBarDelegate
 UITabBarDelegateProtocol
 UITabBar
 tabBar
@@ -544,7 +558,7 @@ q24@0:8@16
 didEndCustomizingItems
 &tabBar:didEndCustomizingItems:changed:
 UIAlertViewDelegateProtocolMeta
-,kniprot_platform_UIKit94_UIAlertViewDelegate
+,kniprot_platform_UIKit95_UIAlertViewDelegate
 UIAlertViewDelegateProtocol
 UIAlertView
 	alertView
@@ -560,7 +574,7 @@ $alertView:didDismissWithButtonIndex:
 &alertViewShouldEnableFirstOtherButton:
 %alertViewShouldEnableFirstOtherButton
 !UIApplicationDelegateProtocolMeta
-.kniprot_platform_UIKit95_UIApplicationDelegate
+.kniprot_platform_UIKit96_UIApplicationDelegate
 UIApplicationDelegateProtocol
 UIApplication
 application
@@ -574,10 +588,6 @@ $alertView:didDismissWithButtonIndex:
 applicationDidBecomeActive
 applicationWillResignActive:
 applicationWillResignActive
-applicationDidEnterBackground:
-applicationDidEnterBackground
-applicationWillEnterForeground:
-applicationWillEnterForeground
 NSURL
 handleOpenURL
 application:handleOpenURL:
@@ -659,6 +669,10 @@ Bapplication:handleEventsForBackgroundURLSession:completionHandler:
 handleIntent
 INIntentResponse
 +application:handleIntent:completionHandler:
+applicationDidEnterBackground:
+applicationDidEnterBackground
+applicationWillEnterForeground:
+applicationWillEnterForeground
 .applicationProtectedDataWillBecomeUnavailable:
 -applicationProtectedDataWillBecomeUnavailable
 +applicationProtectedDataDidBecomeAvailable:
@@ -715,7 +729,7 @@ $application:didDiscardSceneSessions:
 setWindow:
 	setWindow
 UIStateRestoringProtocolMeta
-)kniprot_platform_UIKit96_UIStateRestoring
+)kniprot_platform_UIKit97_UIStateRestoring
 UIStateRestoringProtocol
 encodeRestorableStateWithCoder:
 encodeRestorableStateWithCoder
@@ -732,15 +746,15 @@ setWindow:
 identifierComponents
 *objectWithRestorationIdentifierPath:coder:
 #objectWithRestorationIdentifierPath
-,kniprot_platform_UIKit97_UIObjectRestoration
+,kniprot_platform_UIKit98_UIObjectRestoration
 
 ObjCObject
 'UIViewControllerRestorationProtocolMeta
 2viewControllerWithRestorationIdentifierPath:coder:
-4kniprot_platform_UIKit98_UIViewControllerRestoration
+4kniprot_platform_UIKit99_UIViewControllerRestoration
 #UIViewControllerRestorationProtocol
 (UIDataSourceModelAssociationProtocolMeta
-5kniprot_platform_UIKit99_UIDataSourceModelAssociation
+6kniprot_platform_UIKit100_UIDataSourceModelAssociation
 $UIDataSourceModelAssociationProtocol
 NSIndexPath
 idx
@@ -752,14 +766,14 @@ identifier
 .indexPathForElementWithModelIdentifier:inView:
 &indexPathForElementWithModelIdentifier
 "UILookToDictateCapableProtocolMeta
-0kniprot_platform_UIKit100_UILookToDictateCapable
+0kniprot_platform_UIKit101_UILookToDictateCapable
 UILookToDictateCapableProtocol
 isLookToDictateEnabled
 lookToDictateEnabled
 setLookToDictateEnabled:
 setLookToDictateEnabled
 UISearchBarDelegateProtocolMeta
--kniprot_platform_UIKit101_UISearchBarDelegate
+-kniprot_platform_UIKit102_UISearchBarDelegate
 UISearchBarDelegateProtocol
 UISearchBar
 	searchBar
@@ -776,8 +790,6 @@ identifier
 shouldChangeTextInRange
 replacementText
 2searchBar:shouldChangeTextInRange:replacementText:
-shouldChangeTextInRanges
-3searchBar:shouldChangeTextInRanges:replacementText:
 searchBarSearchButtonClicked:
 searchBarSearchButtonClicked
 searchBarBookmarkButtonClicked:
@@ -789,7 +801,7 @@ identifier
 !selectedScopeButtonIndexDidChange
 ,searchBar:selectedScopeButtonIndexDidChange:
 #UISearchDisplayDelegateProtocolMeta
-1kniprot_platform_UIKit102_UISearchDisplayDelegate
+1kniprot_platform_UIKit103_UISearchDisplayDelegate
 UISearchDisplayDelegateProtocol
 UISearchDisplayController
 
@@ -822,7 +834,7 @@ $searchDisplayControllerDidEndSearch:
 8searchDisplayController:shouldReloadTableForSearchScope:
 B32@0:8@16q24
 #UIDataSourceTranslatingProtocolMeta
-1kniprot_platform_UIKit103_UIDataSourceTranslating
+1kniprot_platform_UIKit104_UIDataSourceTranslating
 UIDataSourceTranslatingProtocol
 dataSourceSectionIndex
 2presentationSectionIndexForDataSourceSectionIndex:
@@ -843,7 +855,7 @@ q24@0:8q16
 performUsingPresentationValues
  UIConfigurationStateProtocolMeta
 NSSecureCodingProtocolMeta
-.kniprot_platform_UIKit104_UIConfigurationState
+.kniprot_platform_UIKit105_UIConfigurationState
 UIConfigurationStateProtocol
 NSSecureCodingProtocol
 UITraitCollection
@@ -867,13 +879,13 @@ q24@0:8q16
 setTraitCollection:
 setTraitCollection
 "UIContentConfigurationProtocolMeta
-0kniprot_platform_UIKit105_UIContentConfiguration
+0kniprot_platform_UIKit106_UIContentConfiguration
 UIContentConfigurationProtocol
 makeContentView
 updatedConfigurationForState:
 updatedConfigurationForState
 UIContentViewProtocolMeta
-'kniprot_platform_UIKit106_UIContentView
+'kniprot_platform_UIKit107_UIContentView
 UIContentViewProtocol
 configuration
 supportsConfiguration:
@@ -881,7 +893,7 @@ q24@0:8q16
 setConfiguration:
 setConfiguration
 !UITableViewDataSourceProtocolMeta
-/kniprot_platform_UIKit107_UITableViewDataSource
+/kniprot_platform_UIKit108_UITableViewDataSource
 UITableViewDataSourceProtocol
 	tableView
 numberOfRowsInSection
@@ -915,7 +927,7 @@ q24@0:8q16
 toIndexPath
 )tableView:moveRowAtIndexPath:toIndexPath:
 UITableViewDelegateProtocolMeta
--kniprot_platform_UIKit108_UITableViewDelegate
+-kniprot_platform_UIKit109_UITableViewDelegate
 UITableViewDelegateProtocol
 willDisplayCell
 ,tableView:willDisplayCell:forRowAtIndexPath:
@@ -937,7 +949,6 @@ forSection
 d32@0:8@16@24
 heightForHeaderInSection
 #tableView:heightForHeaderInSection:
-d32@0:8@16q24
 heightForFooterInSection
 #tableView:heightForFooterInSection:
  estimatedHeightForRowAtIndexPath
@@ -1051,7 +1062,7 @@ DtableView:willPerformPreviewActionForMenuWithConfiguration:animator:
 .willEndContextMenuInteractionWithConfiguration
 BtableView:willEndContextMenuInteractionWithConfiguration:animator:
 ,UISpringLoadedInteractionContextProtocolMeta
-:kniprot_platform_UIKit109_UISpringLoadedInteractionContext
+:kniprot_platform_UIKit110_UISpringLoadedInteractionContext
 $UISpringLoadedInteractionEffectState
 
 targetView
@@ -1062,14 +1073,14 @@ targetItem
 setTargetItem:
 setTargetItem
 ,UITableViewDataSourcePrefetchingProtocolMeta
-:kniprot_platform_UIKit110_UITableViewDataSourcePrefetching
+:kniprot_platform_UIKit111_UITableViewDataSourcePrefetching
 (UITableViewDataSourcePrefetchingProtocol
 prefetchRowsAtIndexPaths
 #tableView:prefetchRowsAtIndexPaths:
 $cancelPrefetchingForRowsAtIndexPaths
 /tableView:cancelPrefetchingForRowsAtIndexPaths:
 #UITableViewDragDelegateProtocolMeta
-1kniprot_platform_UIKit111_UITableViewDragDelegate
+1kniprot_platform_UIKit112_UITableViewDragDelegate
 UITableViewDragDelegateProtocol
 itemsForBeginningDragSession
 atIndexPath
@@ -1087,7 +1098,7 @@ $cancelPrefetchingForRowsAtIndexPaths
 ,dragSessionIsRestrictedToDraggingApplication
 7tableView:dragSessionIsRestrictedToDraggingApplication:
 #UITableViewDropDelegateProtocolMeta
-1kniprot_platform_UIKit112_UITableViewDropDelegate
+1kniprot_platform_UIKit113_UITableViewDropDelegate
 UITableViewDropDelegateProtocol
 "UITableViewDropCoordinatorProtocol
 performDropWithCoordinator
@@ -1103,7 +1114,7 @@ $cancelPrefetchingForRowsAtIndexPaths
 &dropPreviewParametersForRowAtIndexPath
 1tableView:dropPreviewParametersForRowAtIndexPath:
 &UITableViewDropCoordinatorProtocolMeta
-4kniprot_platform_UIKit113_UITableViewDropCoordinator
+4kniprot_platform_UIKit114_UITableViewDropCoordinator
 dragItem
 UITableViewDropPlaceholder
 toPlaceholder
@@ -1122,14 +1133,14 @@ $cancelPrefetchingForRowsAtIndexPaths
 destinationIndexPath
 proposal
 -UITableViewDropPlaceholderContextProtocolMeta
-;kniprot_platform_UIKit114_UITableViewDropPlaceholderContext
+;kniprot_platform_UIKit115_UITableViewDropPlaceholderContext
 dataSourceUpdates
 %commitInsertionWithDataSourceUpdates:
 B24@0:8@?16
 $commitInsertionWithDataSourceUpdates
 deletePlaceholder
 *UINavigationItemRenameDelegateProtocolMeta
-8kniprot_platform_UIKit115_UINavigationItemRenameDelegate
+8kniprot_platform_UIKit116_UINavigationItemRenameDelegate
 &UINavigationItemRenameDelegateProtocol
 UINavigationItem
 navigationItem
@@ -1144,7 +1155,7 @@ AnavigationItem:willBeginRenamingWithSuggestedTitle:selectedRange:
 shouldEndRenamingWithTitle
 *navigationItem:shouldEndRenamingWithTitle:
 1UIViewControllerTransitioningDelegateProtocolMeta
-?kniprot_platform_UIKit116_UIViewControllerTransitioningDelegate
+?kniprot_platform_UIKit117_UIViewControllerTransitioningDelegate
 -UIViewControllerTransitioningDelegateProtocol
 	presented
 presentingController
@@ -1166,7 +1177,7 @@ $interactionControllerForPresentation
 _presentationControllerForPresentedViewController:presentingViewController:sourceViewController:
 0presentationControllerForPresentedViewController
 1UIViewControllerAnimatedTransitioningProtocolMeta
-?kniprot_platform_UIKit117_UIViewControllerAnimatedTransitioning
+?kniprot_platform_UIKit118_UIViewControllerAnimatedTransitioning
 ,UIViewControllerContextTransitioningProtocol
 transitionContext
 transitionDuration:
@@ -1181,7 +1192,7 @@ d24@0:8@16
 animationEnded:
 animationEnded
 0UIViewControllerContextTransitioningProtocolMeta
->kniprot_platform_UIKit118_UIViewControllerContextTransitioning
+>kniprot_platform_UIKit119_UIViewControllerContextTransitioning
 percentComplete
 updateInteractiveTransition:
 updateInteractiveTransition
@@ -1217,7 +1228,7 @@ isAnimated
 animated
 interactive
 4UIViewControllerInteractiveTransitioningProtocolMeta
-Bkniprot_platform_UIKit119_UIViewControllerInteractiveTransitioning
+Bkniprot_platform_UIKit120_UIViewControllerInteractiveTransitioning
 startInteractiveTransition:
 startInteractiveTransition
 completionSpeed
@@ -1225,7 +1236,7 @@ Bkniprot_platform_UIKit119_UIViewControllerInteractiveTransitioning
 completionCurve
 wantsInteractiveStart
 4UIAdaptivePresentationControllerDelegateProtocolMeta
-Bkniprot_platform_UIKit120_UIAdaptivePresentationControllerDelegate
+Bkniprot_platform_UIKit121_UIAdaptivePresentationControllerDelegate
 0UIAdaptivePresentationControllerDelegateProtocol
 3adaptivePresentationStyleForPresentationController:
 2adaptivePresentationStyleForPresentationController
@@ -1248,7 +1259,7 @@ $presentationControllerShouldDismiss:
 *presentationControllerDidAttemptToDismiss:
 )presentationControllerDidAttemptToDismiss
 #UISearchResultsUpdatingProtocolMeta
-1kniprot_platform_UIKit121_UISearchResultsUpdating
+1kniprot_platform_UIKit122_UISearchResultsUpdating
 UISearchResultsUpdatingProtocol
 UISearchController
 searchController
@@ -1258,7 +1269,7 @@ $presentationControllerShouldDismiss:
 selectingSearchSuggestion
 AupdateSearchResultsForSearchController:selectingSearchSuggestion:
 UISearchSuggestionProtocolMeta
-,kniprot_platform_UIKit122_UISearchSuggestion
+,kniprot_platform_UIKit123_UISearchSuggestion
 localizedSuggestion
 localizedDescription
 UIImage
@@ -1268,7 +1279,7 @@ AupdateSearchResultsForSearchController:selectingSearchSuggestion:
 setRepresentedObject:
 setRepresentedObject
 &UISearchControllerDelegateProtocolMeta
-4kniprot_platform_UIKit123_UISearchControllerDelegate
+4kniprot_platform_UIKit124_UISearchControllerDelegate
 "UISearchControllerDelegateProtocol
 willPresentSearchController:
 willPresentSearchController
@@ -1286,14 +1297,14 @@ AupdateSearchResultsForSearchController:selectingSearchSuggestion:
 didChangeFromSearchBarPlacement
 1searchController:didChangeFromSearchBarPlacement:
 1UISheetPresentationControllerDelegateProtocolMeta
-?kniprot_platform_UIKit124_UISheetPresentationControllerDelegate
+?kniprot_platform_UIKit125_UISheetPresentationControllerDelegate
 -UISheetPresentationControllerDelegateProtocol
 UISheetPresentationController
 sheetPresentationController
 =sheetPresentationControllerDidChangeSelectedDetentIdentifier:
 <sheetPresentationControllerDidChangeSelectedDetentIdentifier
 3UIPopoverPresentationControllerDelegateProtocolMeta
-Akniprot_platform_UIKit125_UIPopoverPresentationControllerDelegate
+Akniprot_platform_UIKit126_UIPopoverPresentationControllerDelegate
 /UIPopoverPresentationControllerDelegateProtocol
 UIPopoverPresentationController
 popoverPresentationController
@@ -1313,939 +1324,913 @@ ApopoverPresentationController:willRepositionPopoverToRect:inView:
 contentViewInsets
 {UIEdgeInsets=dddd}16@0:8
 arrowHeight
-8kniprot_platform_UIKit126_UIPopoverBackgroundViewMethods
-&UIPopoverBackgroundViewMethodsProtocol
-&UIViewControllerPreviewingProtocolMeta
-4kniprot_platform_UIKit127_UIViewControllerPreviewing
-"UIViewControllerPreviewingProtocol
-UIGestureRecognizer
-1previewingGestureRecognizerForFailureRelationship
-*UIViewControllerPreviewingDelegateProtocol
-delegate
-
-sourceView
-
-sourceRect
-&{CGRect={CGPoint=dd}{CGSize=dd}}16@0:8
-setSourceRect:
-)v48@0:8{CGRect={CGPoint=dd}{CGSize=dd}}16
-setSourceRect¥
+8kniprot_platform_UIKit127_UIPopoverBackgroundViewMethods
+&UIPopoverBackgroundViewMethodsProtocolç
  
  
  
- 
-
-
- 
-	 
+ 
+ 
+
+
+ 
 
  
- 
-
-
- 
- 
- 
-
- 
- 
-
-
- 
-  
-! 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ #
+$ 
 ' 
-( 
-* 
-+ 
-, 
-3 
-4 
-6 
-7 
-8 
-9 
-: 
-> 
-@ 
-
-A 
-B 
+- 
+0 
+2 
+9
+: 
+B 
+C 
+E 
+F 
+G 
+N 
 P 
-R 
-S 
-U 
-
-W 
-
-\ 
-` 
+Q 
+R 
+S 
+W 
+Y 
+Z 
+[ 
+i 
 k 
-m 
-r 
-v 
-w 
-x 
-z 
-{ 
-| 
-
-~ 
-Ä 
-Ñ 
-á 
+l 
+n 
+p 
+x 
+É 
+Ö 
+ä 
+é 
 è 
- ë
-9í 
-¢ 
-
-§ 
-© 
-
-´ 
-∞ 
-≥ 
-µ 
-
-∏ 
-π 
-« 
-9œ 
-’ 
-◊ 
+ê 
+í 
+ì 
+î 
+ñ 
+ò 
+ú 
+ü 
+® 
+∏ 
+∫ 
+ø 
+¡ 
+∆ 
+… 
+À 
+Œ 
 ‹ 
-‚ 
-„ 
-‰ 
-Ê 
-Á 
-Ë 
-Í 
-Ï 
-Ó 
-Ò
-RÚ 
-SÛ 
-SÙ 
+È 
+Î 
+ 
 ˆ 
-¯ 
-˘ 
+˜ 
+¯ 
+˙ 
+˚ 
+¸ 
+˛ 
+Ä 
+Ç 
+Ö
+RÜ 
+Sá 
+Sà 
+ä 
 å 
-¢ 
-£ 
-• 
-¶ 
-ß 
-≠ 
-≤ 
-µ 
-¿ 
-¬ 
+ç 
+† 
+∂ 
+∑ 
+π 
+∫ 
+ª 
+¡ 
+∆ 
 … 
-À 
-Ã 
-Œ 
-⁄ 
-€ 
+‘ 
+÷ 
 › 
-· 
-Ë 
-Ó 
-Ò 
-Û 
+ﬂ 
+‡ 
+‚ 
+Ó 
+Ô 
+Ò 
 ı 
-ˆ 
-˝ 
-Ä 
-Ç 
-Ü 
+¸ 
+Ç 
+Ö 
+á 
+â 
+ä 
+ë 
 î 
 ñ 
-ú 
-û 
-¢ 
-§ 
-• 
-© 
-´ 
-¨ 
+ö 
+® 
+™ 
+∞ 
+≤ 
 ∂ 
-» 
-Õ 
-“ 
-’ 
-◊ 
-ÿ 
-Ê 
-Ë 
-È 
-Î 
-Ï 
-Ó 
-Ô 
+∏ 
+π 
+Ω 
+ø 
+¿ 
+  
+⁄ 
+› 
+‚ 
+‰ 
+Â 
+Û 
 ı 
-˜ 
+ˆ 
 ¯ 
-˙ 
+˘ 
+˚ 
+¸ 
+Ç 
+Ñ 
+Ö 
 á 
-â 
-ä 
+î 
+ñ 
 ó 
-ô 
-ö 
-™ 
-ª 
-9¬ 
-» 
-À 
-Œ 
-” 
-· 
-Ë 
-Ú
-°Û
-¢Ù 
-¢¯ 
-˛ 
-Ä 
-Ç 
-Ü 
-ñ 
-¢† 
-£ 
-• 
-¶ 
-® 
+§ 
+¶ 
+ß 
+≥ 
+ƒ 
+À 
+— 
+‘ 
+◊ 
+‹ 
+Í 
+Ò 
+˚
+†¸
+°˝ 
+°Å 
+ã 
+ç 
+è 
+ì 
+£ 
+°≠ 
 ∞ 
 ≤ 
-π 
-º 
-Ω 
-æ 
-√ 
-ƒ 
-« 
-» 
-  
-À 
-” 
+≥ 
+µ 
+Ω 
+ø 
+∆ 
+… 
+  
+À 
+– 
+— 
+‘ 
 ’ 
-⁄ 
-‹ 
-› 
-¯ 
-˙ 
-˚ 
+◊ 
+ÿ 
+‡ 
+‚ 
+Á 
+È 
+Í 
+É 
 Ö 
-ò 
-ö 
-´ 
-¨ 
-Æ 
-Ø 
-∞ 
-¥ 
-ƒ 
-∆ 
-  
-Ã 
-“ 
-‘ 
-⁄ 
-Ï 
-Ù 
-ˆ 
-ò 
-∂ 
-« 
-» 
-… 
-” 
-◊ 
-ﬂ 
-Í 
-Ì 
-Ú 
-ˆ 
-˙ 
+Ü 
+ê 
+£ 
+• 
+∂ 
+∑ 
+π 
+∫ 
+ª 
+ø 
+œ 
+— 
+’ 
+◊ 
+› 
+ﬂ 
+Â 
+˜ 
+ˇ 
+Å 
+¢ 
+¿ 
+— 
+“ 
+” 
+› 
+· 
+È 
+Ù 
+˜ 
 ¸ 
-É 
-Ö 
-ä 
-å 
+Ä 
+Ñ 
+Ü 
+ç 
+è 
 î 
-ú 
+ñ 
 û 
-ü 
 ¶ 
-¨ 
-Ø 
-± 
-∫ 
-ø 
-∆ 
-» 
+® 
+© 
+∞ 
+∂ 
+π 
+ª 
+ƒ 
 … 
-’ 
-◊ 
-€ 
+– 
+“ 
+” 
+ﬂ 
 · 
-Ë 
+Â 
 Î 
-Ì 
-˘ 
-Ñ	 
-á	 
-î	 
-9ñ	 
-õ	 
-†	 
-£	 
+Ú 
+ı 
+˜ 
+É	 
+é	 
+ë	 
+û	 
+†	 
 •	 
+™	 
+≠	 
 Ø	 
-∫	 
-º	 
-Ω	 
-¡	 
+π	 
 ƒ	 
-»	 
+∆	 
+«	 
+À	 
 Œ	 
-–	 
-€	 
-‡	 
-‚	 
-„	 
-Á	 
-È	 
+“	 
+ÿ	 
+⁄	 
+Â	 
 Í	 
-Û	 
-ˆ	 
-¯	 
-˝	 
-˛	 
+Ï	 
+Ì	 
+Ò	 
+Û	 
+Ù	 
+˝	 
 Ä
  
-Å
+Ç
  
-É
- "g20“
-("≠g20JA020	2
-0j`H“
- (( JA020	2
-0j`H“
- (( JC020	2
-0j`H“
- (( JA020	2
-0j`H“
- ("( JA020	2
-#0j`H“
- ($( JC020	2
-%0j`H“
- (&( “
-("g20“
-()"Ög20J5002-0H“
- (.(/ J5202-0H“
- (1(/ “
-()"g20“
-(5"Ög20J5;0j`0H'“
- (;(< J5=0j`0H'“
- (=(< “
-(5"g 20“
-(?"æg!20JEG02
-C0"j`#2
-D0"j`#H'“
- (E(F J/H0"j`#H'“
- (H(I J/J0"j`#H'“
- (J(I J=M02
-C0"j`#H“
- (K(L J=O02
-D0"j`#H“
- (N(L “
-(?"g$20“
-(Q"Œg%20J;Z0(2T0&2V0'H“
- (X(Y J;Z0)2T0&2[0'H“
- (](^ J;Z0*2T0&2_0'H“
- (a(b J;Z0)2T0&2c0'H“
- (d(^ J;Z0)2T0&2e0'H“
- (f(^ J;Z0)2T0&2g0'H“
- (h(^ J;Z0)2T0&2i0'H“
- (j(^ JEZ0,2T0&2l0+2n0,H“
- (o(p JCZ0)2T0&2q0+2s0-H“
- (t(u “
-(Q"g.20/200“
-(y"–g'201202JPÉ052}032
-00)04H'“
-"	(Å	(Ç J0Ö06H'“
-"	(Ö	(Ü J-à07H'“
-!	(à(I J7ã0)2à07H'“
-"	(â	(ä J0å0H“
-"	(å	(Ü R1Ö068«ä"	(Ö	(Ü Rbà072ç078«@«XÜä!	(à(I í"	(â	(ä “
-(y"g/20“
-	(é"˜g120J=ï0:02ê08H'“
-"	(ì	(î J;ô0(2ñ0H'“
-"	(ó	(ò J6ú0(2}03H'“
-"	(ö	(õ J2ù0H'“
-"	(ù	(Ü J.û0(H'“
-"	(û	(ü J.†0(H'“
-"	(†	(ü R3ù08«ä"	(ù	(Ü R/û0(8«ä"	(û	(ü R/°0(8«ä"	(†	(ü “
-	(é"g;20/“
-	(£"Óg6201J0•0<H'“
-"	(•	(Ü J9®0)2	•0<H'“
-"	(¶	(ß Rg•0<2	ç0<8«@«XÜä"	(•	(Ü í"	(¶	(ß “
-	(£"g=20“
-	(™"õg-20J=Ø0)2¨0)0>H'“
-"	(≠	(Æ JB≤0)20?0)04H'“
-"	(±	(Æ “
-	(™"g@20“
-	(¥"ïgA20J.∂0)H'“
-"	(∂	(∑ J;Ω0)2∫0Bj`CH'“
-"	(ª	(º J.æ0)H'“
-"	(æ	(∑ J7¬0)2ø0(H'“
-"	(¿	(¡ J7∆0)2√0?H'“
-"	(ƒ	(≈ J.»0DH'“
-"	(»	(… J. 0(H'“
-"	( 	(ü J.À0(H'“
-"	(À	(ü J7Œ0)2Ã0(H'“
-"	(Õ	(¡ J2–0Bj`EH'“
-"	(–	(— J;”0)2–0Bj`EH'“
-"	(“	(º R/»0D8«ä"	(»	(… R/‘0(8«ä"	( 	(ü RcÃ0(2ç0(8«@«XÜä"	(À	(ü í"	(Õ	(¡ Rk–0Bj`E2ç0Bj`E8«@«XÜä"	(–	(— í"	(“	(º “
-	(¥"gF20@“
-	(÷"ØgG20AJJØ0)2ÿ0)0>2Ÿ0Bj`EH“
-"	(⁄	(€ J=Ø0)2ÿ0)0>H“
-"	(≠	(Æ JB≤0)20?0)04H“
-"	(±	(Æ JF·0)2	›0H2ﬁ0Bj`EH“
-"	(ﬂ	(‡ “
-	(÷"gI20J20K“
-	(Â"ãgH20L20MJ.È0NH'“
-"	(È	(… J0Î0OH'“
-"	(Î	(Ü J0Ì0PH'“
-"	(Ì	(Ü JBı0H2Ô0QH'“
-!	((/ “
+á
+ "g20“
+(	"„g20	JC0j`20
+2
+0j`H“
+ (( JC0j`20
+2
+0j`H“
+ (( JM020
+2
+0j`2
+0j`H“
+ ( (! JM020
+2
+"0j`2
+0j`H“
+ (%(! JU020
+2
+&0j`2
+0j`2(0H“
+ ()(* JK020
+2
++0j`2
+,0j`H“
+ (.(/ “
+(	"g20“
+(1"≠g20JA020
+2
+30j`H“
+ (4(5 JA020
+2
+60j`H“
+ (7(5 JC020
+2
+80j`H“
+ (;(5 JA020
+2
+<0j`H“
+ (=(5 JA020
+2
+>0j`H“
+ (?(5 JC020
+2
+@0j`H“
+ (A(5 “
+(1"g20“
+(D"Ög20J5K02H0H“
+ (I(J J5M02H0H“
+ (L(J “
+(D"g 20“
+(O"Ög!20	J5T0#j`$0"H'“
+ (T(U J5V0#j`$0"H'“
+ (V(U “
+(O"g%20“
+(X"æg&20	JE`0!2
+\0'j`(2
+]0'j`(H'“
+ (^(_ J/a0'j`(H'“
+ (a(b J/c0'j`(H'“
+ (c(b J=f02
+\0'j`(H“
+ (d(e J=h02
+]0'j`(H“
+ (g(e “
+(X"g)20“
+(j"Ÿg*20	J;s0-2m0+2o0,H“
+ (q(r J;s02m0+2t0,H“
+ (u(v J;s0.2m0+2w0,H“
+ (y(z J;s02m0+2{0,H“
+ (|(v J;s02m0+2}0,H“
+ (~(v J<s02m0+20,H“
+!	(Ä(v J=s02m0+2Å0,H“
+!	(Ç(v JIs002m0+2Ñ0/2Ü00H“
+"	(á	(à JGs02m0+2â0/2ã01H“
+"	(å	(ç “
+(j"g2203204“
+	(ë"”g,205206JRõ092ï072ó
+0008H'“
+"	(ô	(ö J0ù0:H'“
+"	(ù	(û J-†0;H'“
+!	(†(b J7£02†0;H'“
+"	(°	(¢ J0§0H“
+"	(§	(û R1ù0:8«ä"	(ù	(û Rb†0;2•0;8«@«XÜä!	(†(b í"	(°	(¢ “
+	(ë"g320“
+	(¶"¯g520	J=´0<0"2ß0H'“
+"	(©	(™ J;Ø0-2¨0H'“
+"	(≠	(Æ J7≤0-2ï07H'“
+"	(∞	(± J2≥0H'“
+"	(≥	(û J.¥0-H'“
+"	(¥	(µ J.∂0-H'“
+"	(∂	(µ R3≥08«ä"	(≥	(û R/¥0-8«ä"	(¥	(µ R/∑0-8«ä"	(∂	(µ “
+	(¶"g=203“
+	(π"Óg:205J0ª0>H'“
+"	(ª	(û J9æ02	ª0>H'“
+"	(º	(Ω Rgª0>2	•0>8«@«XÜä"	(ª	(û í"	(º	(Ω “
+	(π"g?20“
+	(¿"úg120	J=≈02¬00@H'“
+"	(√	(ƒ JC»02ó0A008H'“
+"	(«	(ƒ “
+	(¿"gB20“
+	( "ïgC20	J.Ã0H'“
+"	(Ã	(Õ J;“02œ0j`DH'“
+"	(–	(— J.”0H'“
+"	(”	(Õ J7◊02‘0-H'“
+"	(’	(÷ J7€02ÿ0AH'“
+"	(Ÿ	(⁄ J.›0EH'“
+"	(›	(ﬁ J.ﬂ0-H'“
+"	(ﬂ	(µ J.‡0-H'“
+"	(‡	(µ J7„02·0-H'“
+"	(‚	(÷ J2‰0j`H'“
+"	(‰	(Â J;Á02‰0j`H'“
+"	(Ê	(— R/›0E8«ä"	(›	(ﬁ R/Ë0-8«ä"	(ﬂ	(µ Rc·0-2•0-8«@«XÜä"	(‡	(µ í"	(‚	(÷ Rk‰0j`2•0j`8«@«XÜä"	(‰	(Â í"	(Ê	(— “
+	( "gF20B“
+	(Í"∞gG20CJJ≈02Ï00@2Ì0j`H“
+"	(Ó	(Ô J=≈02Ï00@H“
+"	(√	(ƒ JC»02ó0A008H“
+"	(«	(ƒ JFı02	Ò0H2Ú0j`H“
+"	(Û	(Ù “
+	(Í"gI20J20K“
+	(˘"ãgH20L20MJ.˝0NH'“
+"	(˝	(ﬁ J0ˇ0OH'“
+"	(ˇ	(û J0Å0PH'“
+"	(Å	(û JBâ0H2É0QH'“
+!	(Ñ(J “
 T“
-UR/È0N8«ä"	(È	(… R1Î0O8«ä"	(Î	(Ü R1Ì0P8«ä"	(Ì	(Ü “
-	(Â"gV20“
-	(˜"ü	gW20JB¸02T0X2˙06H'“
-!	(˚(b JI¸0,2T0X2˝0+2˛06H“
-!	(ˇ(p JG¸0)2T0X2Ä0-2˛06H“
-!	(Å(u J>¸0)2T0X2Ç06H“
-!	(É(^ J>¸0(2T0X2Ñ06H“
-!	(Ö(Y J>¸0(2T0X2Ü06H“
-!	(á(Y J>¸0(2T0X2à06H“
-!	(â(Y J>¸0)2T0X2ä06H“
-!	(ã(^ JL¸0)2T0X2˛062ç0"j`YH“
-"	(é	(è JL¸0)2T0X2˛062ê0"j`YH“
-"	(ë	(è J>¸0)2T0X2í06H“
-!	(ì(^ JR¸02T0X2î062ï0:0H“
-"	(ñ	(ó JT¸062T0X2ò02ï0:0H“
-"	(ô	(ó JU¸0)2T0X2˛062ö02õ0XH“
-"	(ú	(ù JH¸0,2T0X2û0+2n0,H“
-!	(ü(p JF¸0)2T0X2q0+2†0-H“
-!	(°(u “
-	(˜"gZ20[“
-	(§"íg\20]J0®0^H'“
-"	(®	(Ü J9™0)2	®0^H'“
-"	(©	(ß J0´0XH'“
-"	(´	(Ü J.¨0(H'“
-"	(¨	(ü J2Æ0j`_H'“
-"	(Æ	(… J;∞0)2Æ0j`_H'“
-"	(Ø	(≈ Rg®0^2	ç0^8«@«XÜä"	(®	(Ü í"	(©	(ß R1´0X8«ä"	(´	(Ü R/±0(8«ä"	(¨	(ü RkÆ0j`_2ç0j`_8«@«XÜä"	(Æ	(… í"	(Ø	(≈ “
-	(§"g`20“
-	(≥"Ég^20JC¥02¥082∂0aH“
-!	(∑(b JJ¥0,2¥082∏0+2˛06H“
-!	(π(p JH¥0)2¥082Ä0-2˛06H“
-!	(∫(u J?¥0)2¥082ª06H“
-!	(º(^ JM¥0)2¥082Ω062æ0"j`YH“
-"	(ø	(è “
-	(≥"gb20“
-	(¡"çga20J.√0cH'“
-"	(√	(Ü J2ƒ0H'“
-"	(ƒ	(Ü J2≈0H'“
-"	(≈	(Ü J.∆0(H'“
-"	(∆	(ü J.«06H'“
-"	(«	(Ü R/√0c8«ä"	(√	(Ü R3ƒ08«ä"	(ƒ	(Ü R3≈08«ä"	(≈	(Ü R/»0(8«ä"	(∆	(ü R/«068«ä"	(«	(Ü “
-	(¡"gd20“
-	( "ºge20J?Õ0)2Õ0f2œ0gH“
-!	(–(^ JLÕ02Õ0f2—02“0cH“
-!	(”(p JHÕ0c2Õ0f2‘02’0cH“
-!	(÷(p JIÕ0(2Õ0f2◊02’0cH“
-"	(ÿ	(Ÿ “
-	( "gh20i“
-	(‹"Ógf20jJ0ﬁ0eH'“
-"	(ﬁ	(Ü J9‡0)2	ﬁ0eH'“
-"	(ﬂ	(ß Rgﬁ0e2	ç0e8«@«XÜä"	(ﬁ	(Ü í"	(ﬂ	(ß “
-	(‹"gk20“
-	(‚"‚gg20J7Â0)2„0H'“
-"	(‰	(ß J7Á0)2„0H'“
-"	(Ê	(ß J7Î0)2È0lH'“
-"	(Í	(ß J.Ï0)H'“
-"	(Ï	(∑ J.Ì0)H'“
-"	(Ì	(∑ J.Ô0mH'“
-"	(Ô	(Ü J00<H'“
-"	(	(Ü J:Ú0<0nH'“
-"	(Ú	(Ü R/Ô0m8«ä"	(Ô	(Ü R10<8«ä"	(	(Ü R;Ú0<0n8«ä"	(Ú	(Ü “
-	(‚"go20[20h“
-	(Ù"Ígp20]20fJ0˜0qH'“
-"	(˜	(Ü J9˘0)2	˜0qH'“
-"	(¯	(ß J0˙0&H'“
-"	(˙	(Ü J.˚0(H'“
-"	(˚	(ü J0å0H“
-"	(å	(Ü Rg˜0q2	ç0q8«@«XÜä"	(˜	(Ü í"	(¯	(ß R1˙0&8«ä"	(˙	(Ü R/¸0(8«ä"	(˚	(ü “
-	(Ù"gr20“
-	(˛"ßgq20JDˇ0"j`t2ˇ082Å0sH“
-"	(É	(Ñ J?ˇ0u2ˇ082Ö0sH“
-!	(á(b J?ˇ0)2ˇ082à0sH“
-!	(â(^ JAˇ0,2ˇ082ä0,H“
-!	(ã(b J?ˇ0)2ˇ082å0'H“
-!	(ç(^ J?ˇ0)2ˇ082é0'H“
-!	(è(^ J?ˇ0)2ˇ082ê0'H“
-!	(ë(^ J?ˇ0)2ˇ082í0'H“
-!	(ì(^ “
-	(˛"gv20“
-	(ï"úgs20J.ó0wH'“
-"	(ó	(Ü J.ò0uH'“
-"	(ò	(Ü J.ô0(H'“
-"	(ô	(ü J.ö0'H'“
-"	(ö	(Ü R/ó0w8«ä"	(ó	(Ü R/ò0u8«ä"	(ò	(Ü R/õ0(8«ä"	(ô	(ü R/ö0'8«ä"	(ö	(Ü “
-	(ï"gx20“
-	(ù"Êgy20J.ü0(H'“
-"	(ü	(ü J7°0)2ü0(H'“
-"	(†	(¡ Rcü0(2ç0(8«@«XÜä"	(ü	(ü í"	(†	(¡ “
-	(ù"gz20“
-	(£"Êg{20J.¶0|H'“
-"	(¶	(… J7®0)2¶0|H'“
-"	(ß	(≈ Rc¶0|2ç0|8«@«XÜä"	(¶	(… í"	(ß	(≈ “
-	(£"g}20“
-	(™"Ög~20J7Ø0(2≠0H“
-"	(Æ	(ò J7±0)2≠0H“
-"	(∞	(ß J7≥0(2≠0H“
-"	(≤	(ò J7µ0)2≠0H“
-"	(¥	(ß JAµ0)2≠02∑0ÄH“
-"	(∏	(π JS≠0(2≠02∫0j`02ª0H“
-"	(º	(Ω JM≠0(2≠02æ02ª0H“
-"	(ø	(Ÿ J7¡0)2≠0H“
-"	(¿	(ß J7√0(2≠0H“
-"	(¬	(ò J7≈0(2≠0H“
-"	(ƒ	(ò JZ≠0Å2≠02∆0j`02«0H“
-"	(…	(  JS≠0Å2≠02À02«0H“
-!	(Ã(p J@≠0)2≠02Œ0ÇH“
-!	(œ(^ J@≠0)2≠02–0ÇH“
-!	(—(^ J@≠0)2≠02”0ÉH“
-!	(‘(^ “
-	(™"gÑ20“
-	(÷"úgÖ20JEŸ0)2Ÿ0Ü2⁄0j`H“
-"	(€	(π J8›0)2Ÿ0ÜH“
-"	(‹	(ß J8ﬂ0)2Ÿ0ÜH“
-"	(ﬁ	(ß J8·0)2Ÿ0ÜH“
-"	(‡	(ß JEŸ0)2Ÿ0Ü2‚0j`H“
-"	(„	(π JEŸ0)2Ÿ0Ü2‰0j`H“
-"	(Â	(π “
-	(÷"gá20“
-	(Á"Ñgà20J3Í0j`âH'“
-"	(Í	(… R4Í0j`â8«ä"	(Í	(… “
-	(Á"gä20ã“
-	(Ì"gå20ç“
-	(Ì"gã20“
-	("Xgç20J=Ù0j`â2Ò0àH“
-"	(Ú	(Û “
-	("gé20“
-	(ˆ"àgè20JA˘0)2˘0ê2˚0ëH“
-!	(¸(^ JD˘0)2˘0ê2˝0H“
-!	(˛(^ JD˘0)2˘0ê2ˇ0H“
-!	(Ä(^ JN˘0)2˘0ê2Å02Ç0(H“
-"	(É	(Ñ JN˘0)2˘0ê2Ö02Ç0(H“
-"	(Ü	(Ñ “
-	(ˆ"gí20“
-	(à"÷gì20JEã0)2ã0î2⁄0j`H“
-"	(å	(π J8é0)2ã0îH“
-"	(ç	(ß J8ê0)2ã0îH“
-"	(è	(ß J8í0)2ã0îH“
-"	(ë	(ß JEã0)2ã0î2‚0j`H“
-"	(ì	(π JEã0)2ã0î2‰0j`H“
-"	(î	(π J8ñ0(2ã0îH“
-"	(ï	(ò “
-	(à"gï20“
-	(ò"Û gñ20J8ù0)2õ0óH“
-"	(ú	(ß JNõ0(2õ0ó2û0<0nH“
-!	(ü(Y JNõ0(2õ0ó2†0<0nH“
-!	(°(Y J8£0)2õ0óH“
-"	(¢	(ß J8•0)2õ0óH“
-"	(§	(ß J8ß0)2õ0óH“
-"	(¶	(ß J8©0)2õ0óH“
-"	(®	(ß JAõ0(2õ0ó2´0òH“
-!	(¨(Y JVõ0(2õ0ó2≠0ò2	Æ02Ø0<H“
-"	(∞	(± JWõ0(2≤0ó2≠0ò2≥0<0nH“
-"	(¥	(Ÿ J8∂0)2õ0óH“
-"	(µ	(ß J8∏0)2õ0óH“
-"	(∑	(ß J8∫0)2õ0óH“
-"	(π	(ß JSõ0)2õ0ó2º0j`ô2Ω0Bj`CH“
-"	(æ	(ø JFõ0)2õ0ó2¿0j`ôH“
-"	(¡	(π JHõ0)2õ0ó2√	0ö0H“
-"	(ƒ	(≈ JHõ0)2õ0ó2∆	0ö0H“
-"	(«	(≈ JAõ0)2õ0ó2…0õH“
-!	( (^ JAõ0)2õ0ó2Ã0úH“
-!	(Õ(^ JAõ0)2õ0ó2œ0ùH“
-!	(–(^ JLõ0)2õ0ó2—0<0nH“
-!	(“(^ JAõ0)2õ0ó2‘0ûH“
-!	(’(^ J\õ0)2õ0ó2	÷02◊0û2ÿ0)0>H“
-"	(Ÿ	(⁄ J|õ0)2õ0ó2	÷02€0<0n2‹0<0n2ÿ0)0>H“
-"	(›	(ﬁ Jgõ0)2õ0ó2	÷02€0<0n2ÿ0)0>H“
-"	(ﬂ	(⁄ Jqõ0)2õ0ó2	÷02◊0û2‹0<0n2ÿ0)0>H“
-"	(‡	(ﬁ Jcõ0)2õ0ó2—0<0n2‚0ü0)04H“
-"	(„	(‰ JNõ0)2õ0ó2Â0ü0)04H“
-"	(Ê	(Á JWõ0)2õ0ó2È0†2ÿ0(0)04H“
-"	(Í	(‰ JPõ0)2õ0ó2Î02ÿ0)0>H“
-"	(Ï	(‰ Jrõ0)2õ0ó2Ì0<0n2!Ó0<0n0)04H“
-"	(Ô	(‰ J8Ò0)2õ0óH“
-"	(	(ß JCõ0<2õ0ó2ı0£H“
-!	(ˆ(b JZõ0)2õ0ó2˜0£2ÿ0§0)04H“
-"	(˘	(‰ J8˚0)2õ0óH“
-"	(˙	(ß J8˝0)2õ0óH“
-"	(¸	(ß JIõ0"j`¶2õ0ó2
-ˇ0•H“
-"	(Å	(Ñ JIõ0(2õ0ó2É0j`ßH“
-!	(Ñ(Y JPõ0®2õ0ó2Ö02Ô0QH“
-!	(á(p J@õ0(2õ0ó2à0QH“
-!	(â(Y J@õ0(2õ0ó2ä0QH“
-!	(ã(Y J@õ0)2õ0ó2å0QH“
-!	(ç(^ J@õ0)2õ0ó2é0QH“
-!	(è(^ J@õ0(2õ0ó2ê0QH“
-!	(ë(Y J@õ0(2õ0ó2í0QH“
-!	(ì(Y J@õ0(2õ0ó2î0H“
-!	(ï(Y J]õ0(2õ0ó2ó0©2ò
-00)04H“
-"	(ô	(ö JJõ0)2õ0ó2õ02ú0ùH“
-!	(ù(u JAõ0)2õ0ó2û0©H“
-!	(ü(^ JAõ0)2õ0ó2°0™H“
-!	(¢(^ JLõ0≠2õ0ó2§0´2≥0¨H“
-!	(ß(p JEõ0)2õ0ó2©0ÆH“
-!	(™(^ J8¨0(2õ0óH“
-"	(´	(ò J1≠0•H“
-"	(≠	(Ü J:Ø0)2
-≠0•H“
-"	(Æ	(ß Ri≠0•2
-ç0•8«@«XÜä"	(≠	(Ü í"	(Æ	(ß “
-	(ò"gØ20“
-	(±"âg∞20J7¥0)2Ô0QH“
-"	(≥	(ß J7∂0)2Ô0QH“
-"	(µ	(ß J.∑0)H“
-"	(∑	(∑ J1∏0∞H“
-"	(∏	(Ü J1∫0±H“
-"	(∫	(ª R2∏0∞8«ä"	(∏	(Ü R2∫0±8«ä"	(∫	(ª “
-	(±"gg≤20≥j`¥JF¡0∞2ø02Ô0QH'“
-!	(¿(b “
-	(¬"g±20µ“
-	(¬"gg∂20≥j`¥JFÖ0®2ø02Ô0QH'“
-!	(≈(b “
-	(∆"g∑20µ“
-	(∆"g∏20≥j`¥“
-	(…"¢gπ20µJBœ02Ã0∫2Õ08H'“
-!	(Œ(b JB“0∫2–02Õ08H'“
-!	(—(b “
-	(…"gª20“
-	(‘"Ágº20J.÷0(H'“
-"	(÷	(ü J7Ÿ0)2◊0(H'“
-"	(ÿ	(¡ Rc◊0(2ç0(8«@«XÜä"	(÷	(ü í"	(ÿ	(¡ “
-	(‘"gΩ20ã“
-	(€"ôgæ20çJ8‡0(2ﬁ0øH“
-"	(ﬂ	(ò J8‚0)2ﬁ0øH“
-"	(·	(ß J8‰0(2ﬁ0øH“
-"	(„	(ò J8Ê0)2ﬁ0øH“
-"	(Â	(ß J@ﬁ0)2ﬁ0ø2Á0H“
-!	(Ë(^ JTﬁ0(2ﬁ0ø2È0j`02Í0H“
-"	(Î	(Ω JNﬁ0(2ﬁ0ø2Ï02Í0H“
-"	(Ì	(Ÿ J8Ô0)2ﬁ0øH“
-"	(Ó	(ß J8Ò0)2ﬁ0øH“
-"	(	(ß J8Û0)2ﬁ0øH“
-"	(Ú	(ß J8ı0)2ﬁ0øH“
-"	(Ù	(ß JEﬁ0)2ﬁ0ø2ˆ0j`H“
-"	(˜	(π “
-	(€"g¿20“
-	(˘"ûg¡20J8˛0)2¸0¬H“
-"	(˝	(ß J8Ä0)2¸0¬H“
-"	(ˇ	(ß J8Ç0)2¸0¬H“
-"	(Å	(ß J8Ñ0)2¸0¬H“
-"	(É	(ß JAà0)2¸0¬2Ü0√H“
-!	(á(^ JAà0)2¸0¬2â0√H“
-!	(ä(^ JAà0)2¸0¬2ã0√H“
-!	(å(^ JAà0)2¸0¬2ç0√H“
-!	(é(^ JAà0)2¸0¬2è0√H“
-!	(ê(^ JAà0)2¸0¬2ë0√H“
-!	(í(^ JBà0(2¸0¬2	ì0H“
-!	(î(Y JEà0(2¸0¬2ï0j`H“
-"	(ñ	(ó “
-	(˘"gƒ20“
-	(ô"÷g≈20J?û0j`2õ0j`H'“
-"	(ú	(ù J?°0j`2ü0j`H'“
-"	(†	(ù J<§0∫2
-¢0∫H'“
-!	(£(/ J<ß0∫2
-•0∫H'“
-!	(¶(/ J=™0)2®0)0>H'“
-"	(©	(Æ “
-	(ô""g∆2020K20«“
-	(≠"õg»2020M20…JB≥0»2±0 H'“
-!	(≤(/ “
+UR/˝0N8«ä"	(˝	(ﬁ R1ˇ0O8«ä"	(ˇ	(û R1Å0P8«ä"	(Å	(û “
+	(˘"gV20“
+	(ã"•	gW20	JBê02m0X2é0:H'“
+!	(è(z JJê002m0X2ë0/2í0:H“
+"	(ì	(à JHê02m0X2î012í0:H“
+"	(ï	(ç J>ê02m0X2ñ0:H“
+!	(ó(v J>ê0-2m0X2ò0:H“
+!	(ô(r J>ê0-2m0X2ö0:H“
+!	(õ(r J>ê0-2m0X2ú0:H“
+!	(ù(r J>ê02m0X2û0:H“
+!	(ü(v JLê02m0X2í0:2°0'j`YH“
+"	(¢	(£ JLê02m0X2í0:2§0'j`YH“
+"	(•	(£ J>ê02m0X2¶0:H“
+!	(ß(v JRê02m0X2®0:2©0<0"H“
+"	(™	(´ JTê0:2m0X2¨02©0<0"H“
+"	(≠	(´ JUê02m0X2í0:2Æ02Ø0XH“
+"	(∞	(± JJê002m0X2≤0/2Ü00H“
+"	(≥	(à JHê02m0X2â0/2¥01H“
+"	(µ	(ç “
+	(ã"gZ20[“
+	(∏"íg\20]J0º0^H'“
+"	(º	(û J9æ02	º0^H'“
+"	(Ω	(Ω J0ø0XH'“
+"	(ø	(û J.¿0-H'“
+"	(¿	(µ J2¬0j`_H'“
+"	(¬	(ﬁ J;ƒ02¬0j`_H'“
+"	(√	(⁄ Rgº0^2	•0^8«@«XÜä"	(º	(û í"	(Ω	(Ω R1ø0X8«ä"	(ø	(û R/≈0-8«ä"	(¿	(µ Rk¬0j`_2•0j`_8«@«XÜä"	(¬	(ﬁ í"	(√	(⁄ “
+	(∏"g`20“
+	(«"Ög^20	JC»02»02 0aH“
+!	(À(z JK»002»02Ã0/2í0:H“
+"	(Õ	(à JI»02»02î012í0:H“
+"	(Œ	(ç J?»02»02œ0:H“
+!	(–(v JM»02»02—0:2“0'j`YH“
+"	(”	(£ “
+	(«"gb20“
+	(’"çga20	J.◊0cH'“
+"	(◊	(û J2ÿ0H'“
+"	(ÿ	(û J2Ÿ0H'“
+"	(Ÿ	(û J.⁄0-H'“
+"	(⁄	(µ J.€0:H'“
+"	(€	(û R/◊0c8«ä"	(◊	(û R3ÿ08«ä"	(ÿ	(û R3Ÿ08«ä"	(Ÿ	(û R/‹0-8«ä"	(⁄	(µ R/€0:8«ä"	(€	(û “
+	(’"gd20“
+	(ﬁ"æge20	J?·02·0f2„0gH“
+!	(‰(v JM·02·0f2Â02Ê0cH“
+"	(Á	(à JI·0c2·0f2Ë02È0cH“
+"	(Í	(à JI·0-2·0f2Î02È0cH“
+"	(Ï	(Ì “
+	(ﬁ"gh20i“
+	("Ógf20jJ0Ú0eH'“
+"	(Ú	(û J9Ù02	Ú0eH'“
+"	(Û	(Ω RgÚ0e2	•0e8«@«XÜä"	(Ú	(û í"	(Û	(Ω “
+	("gk20“
+	(ˆ"‚gg20	J7˘02˜0H'“
+"	(¯	(Ω J7˚02˜0H'“
+"	(˙	(Ω J7ˇ02˝0lH'“
+"	(˛	(Ω J.Ä0H'“
+"	(Ä	(Õ J.Å0H'“
+"	(Å	(Õ J.É0mH'“
+"	(É	(û J0Ñ0>H'“
+"	(Ñ	(û J:Ü0>0nH'“
+"	(Ü	(û R/É0m8«ä"	(É	(û R1Ñ0>8«ä"	(Ñ	(û R;Ü0>0n8«ä"	(Ü	(û “
+	(ˆ"go20[20h“
+	(à"Ígp20]20fJ0ã0qH'“
+"	(ã	(û J9ç02	ã0qH'“
+"	(å	(Ω J0é0+H'“
+"	(é	(û J.è0-H'“
+"	(è	(µ J0§0H“
+"	(§	(û Rgã0q2	•0q8«@«XÜä"	(ã	(û í"	(å	(Ω R1é0+8«ä"	(é	(û R/ê0-8«ä"	(è	(µ “
+	(à"gr20“
+	(í"ßgq20	JDì0'j`t2ì02ï0sH“
+"	(ó	(ò J?ì0u2ì02ô0sH“
+!	(õ(z J?ì02ì02ú0sH“
+!	(ù(v JAì002ì02û00H“
+!	(ü(z J?ì02ì02†0,H“
+!	(°(v J?ì02ì02¢0,H“
+!	(£(v J?ì02ì02§0,H“
+!	(•(v J?ì02ì02¶0,H“
+!	(ß(v “
+	(í"gv20“
+	(©"úgs20	J.´0wH'“
+"	(´	(û J.¨0uH'“
+"	(¨	(û J.≠0-H'“
+"	(≠	(µ J.Æ0,H'“
+"	(Æ	(û R/´0w8«ä"	(´	(û R/¨0u8«ä"	(¨	(û R/Ø0-8«ä"	(≠	(µ R/Æ0,8«ä"	(Æ	(û “
+	(©"gx20“
+	(±"Êgy20	J.≥0-H'“
+"	(≥	(µ J7µ02≥0-H'“
+"	(¥	(÷ Rc≥0-2•0-8«@«XÜä"	(≥	(µ í"	(¥	(÷ “
+	(±"gz20“
+	(∑"Êg{20	J.∫0|H'“
+"	(∫	(ﬁ J7º02∫0|H'“
+"	(ª	(⁄ Rc∫0|2•0|8«@«XÜä"	(∫	(ﬁ í"	(ª	(⁄ “
+	(∑"g}20“
+	(æ"üg~20	J7√0-2¡0H“
+"	(¬	(Æ J7≈02¡0H“
+"	(ƒ	(Ω J7«0-2¡0H“
+"	(∆	(Æ J7…02¡0H“
+"	(»	(Ω JA…02¡02À0ÄH“
+"	(Ã	(Õ JS¡0-2¡02Œ0#j`$0"2œ0H“
+"	(–	(— J7”02¡0H“
+"	(“	(Ω J7’0-2¡0H“
+"	(‘	(Æ J7◊0-2¡0H“
+"	(÷	(Æ JZ¡0Å2¡02ÿ0#j`$0"2Ÿ0H“
+"	(€	(‹ J@¡02¡02ﬁ0ÇH“
+!	(ﬂ(v J@¡02¡02‡0ÇH“
+!	(·(v “
+	(æ"gÉ20“
+	(„"úgÑ20	JEÊ02Ê0Ö2Á0j`H“
+"	(Ë	(Õ J8Í02Ê0ÖH“
+"	(È	(Ω J8Ï02Ê0ÖH“
+"	(Î	(Ω J8Ó02Ê0ÖH“
+"	(Ì	(Ω JEÊ02Ê0Ö2Ô0j`H“
+"	(	(Õ JEÊ02Ê0Ö2Ò0j`H“
+"	(Ú	(Õ “
+	(„"gÜ20“
+	(Ù"Ñgá20	J3˜0j`àH'“
+"	(˜	(ﬁ R4˜0j`à8«ä"	(˜	(ﬁ “
+	(Ù"gâ20ä“
+	(˙"gã20å“
+	(˙"gä20“
+	(˝"Xgå20	J=Å0j`à2˛0áH“
+"	(ˇ	(Ä “
+	(˝"gç20“
+	(É"àgé20	JAÜ02Ü0è2à0êH“
+!	(â(v JDÜ02Ü0è2ä0H“
+!	(ã(v JDÜ02Ü0è2å0H“
+!	(ç(v JNÜ02Ü0è2é02è0-H“
+"	(ê	(ë JNÜ02Ü0è2í02è0-H“
+"	(ì	(ë “
+	(É"gë20“
+	(ï"÷gí20	JEò02ò0ì2Á0j`H“
+"	(ô	(Õ J8õ02ò0ìH“
+"	(ö	(Ω J8ù02ò0ìH“
+"	(ú	(Ω J8ü02ò0ìH“
+"	(û	(Ω JEò02ò0ì2Ô0j`H“
+"	(†	(Õ JEò02ò0ì2Ò0j`H“
+"	(°	(Õ J8£0-2ò0ìH“
+"	(¢	(Æ “
+	(ï"gî20“
+	(•"ˆ gï20	J8™02®0ñH“
+"	(©	(Ω JN®0-2®0ñ2´0>0nH“
+!	(¨(r JN®0-2®0ñ2≠0>0nH“
+!	(Æ(r J8∞02®0ñH“
+"	(Ø	(Ω J8≤02®0ñH“
+"	(±	(Ω JA®0-2®0ñ2¥0óH“
+!	(µ(r JV®0-2®0ñ2∂0ó2	∑02∏0>H“
+"	(π	(∫ JW®0-2ª0ñ2∂0ó2º0>0nH“
+"	(Ω	(Ì J8ø02®0ñH“
+"	(æ	(Ω J8¡02®0ñH“
+"	(¿	(Ω J8√02®0ñH“
+"	(¬	(Ω JS®02®0ñ2≈0j`ò2∆0j`DH“
+"	(«	(» JF®02®0ñ2…0j`òH“
+"	( 	(Õ JH®02®0ñ2Ã	0ô0"H“
+"	(Õ	(Œ JH®02®0ñ2œ	0ô0"H“
+"	(–	(Œ JA®02®0ñ2“0öH“
+!	(”(v JA®02®0ñ2’0õH“
+!	(÷(v JA®02®0ñ2ÿ0úH“
+!	(Ÿ(v JL®02®0ñ2⁄0>0nH“
+!	(€(v JA®02®0ñ2›0ùH“
+!	(ﬁ(v J\®02®0ñ2	ﬂ02‡0ù2·00@H“
+"	(‚	(„ J|®02®0ñ2	ﬂ02‰0>0n2Â0>0n2·00@H“
+"	(Ê	(Á Jg®02®0ñ2	ﬂ02‰0>0n2·00@H“
+"	(Ë	(„ Jq®02®0ñ2	ﬂ02‡0ù2Â0>0n2·00@H“
+"	(È	(Á Jc®02®0ñ2⁄0>0n2Î0û008H“
+"	(Ï	(Ì JN®02®0ñ2Ó0û008H“
+"	(Ô	( JW®02®0ñ2Ú0ü2·0-008H“
+"	(Û	(Ì JP®02®0ñ2Ù02·00@H“
+"	(ı	(Ì Jr®02®0ñ2ˆ0>0n2!˜0>0n008H“
+"	(¯	(Ì J8˙02®0ñH“
+"	(˘	(Ω JC®0>2®0ñ2˛0¢H“
+!	(ˇ(z JZ®02®0ñ2Ä0¢2·0£008H“
+"	(Ç	(Ì J8Ñ02®0ñH“
+"	(É	(Ω J8Ü02®0ñH“
+"	(Ö	(Ω J8à02®0ñH“
+"	(á	(Ω J8ä02®0ñH“
+"	(â	(Ω JI®0'j`•2®0ñ2
+å0§H“
+"	(é	(ò JI®0-2®0ñ2ê0j`¶H“
+!	(ë(r JQ®0ß2®0ñ2í02É0QH“
+"	(î	(à J@®0-2®0ñ2ï0QH“
+!	(ñ(r J@®0-2®0ñ2ó0QH“
+!	(ò(r J@®02®0ñ2ô0QH“
+!	(ö(v J@®02®0ñ2õ0QH“
+!	(ú(v J@®0-2®0ñ2ù0QH“
+!	(û(r J@®0-2®0ñ2ü0QH“
+!	(†(r J@®0-2®0ñ2°0H“
+!	(¢(r J]®0-2®0ñ2§0®2•
+0008H“
+"	(¶	(ß JK®02®0ñ2®02©0úH“
+"	(™	(ç JA®02®0ñ2´0®H“
+!	(¨(v JA®02®0ñ2Æ0©H“
+!	(Ø(v JM®0¨2®0ñ2±0™2º0´H“
+"	(¥	(à JE®02®0ñ2∂0≠H“
+!	(∑(v J8π0-2®0ñH“
+"	(∏	(Æ J1∫0§H“
+"	(∫	(û J:º02
+∫0§H“
+"	(ª	(Ω Ri∫0§2
+•0§8«@«XÜä"	(∫	(û í"	(ª	(Ω “
+	(•"gÆ20“
+	(æ"âgØ20	J7¡02É0QH“
+"	(¿	(Ω J7√02É0QH“
+"	(¬	(Ω J.ƒ0H“
+"	(ƒ	(Õ J1≈0ØH“
+"	(≈	(û J1«0∞H“
+"	(«	(» R2≈0Ø8«ä"	(≈	(û R2«0∞8«ä"	(«	(» “
+	(æ"gg±20≤j`≥JFŒ0Ø2Ã02É0QH'“
+!	(Õ(z “
+	(œ"g∞20¥“
+	(œ"ggµ20≤j`≥JFí0ß2Ã02É0QH'“
+!	(“(z “
+	(”"g∂20¥“
+	(”"g∑20≤j`≥“
+	(÷"¢g∏20¥JB‹02Ÿ0π2⁄0H'“
+!	(€(z JBﬂ0π2›02⁄0H'“
+!	(ﬁ(z “
+	(÷"g∫20“
+	(·"Ágª20	J.„0-H'“
+"	(„	(µ J7Ê02‰0-H'“
+"	(Â	(÷ Rc‰0-2•0-8«@«XÜä"	(„	(µ í"	(Â	(÷ “
+	(·"gº20ä“
+	(Ë"…gΩ20åJ8Ì0-2Î0æH“
+"	(Ï	(Æ J8Ô02Î0æH“
+"	(Ó	(Ω J8Ò0-2Î0æH“
+"	(	(Æ J8Û02Î0æH“
+"	(Ú	(Ω J@Î02Î0æ2Ù0H“
+!	(ı(v JTÎ0-2Î0æ2ˆ0#j`$0"2˜0H“
+"	(¯	(— J8˙02Î0æH“
+"	(˘	(Ω J8¸02Î0æH“
+"	(˚	(Ω J8˛02Î0æH“
+"	(˝	(Ω J8Ä02Î0æH“
+"	(ˇ	(Ω JEÎ02Î0æ2Å0j`H“
+"	(Ç	(Õ “
+	(Ë"gø20“
+	(Ñ"ûg¿20	J8â02á0¡H“
+"	(à	(Ω J8ã02á0¡H“
+"	(ä	(Ω J8ç02á0¡H“
+"	(å	(Ω J8è02á0¡H“
+"	(é	(Ω JAì02á0¡2ë0¬H“
+!	(í(v JAì02á0¡2î0¬H“
+!	(ï(v JAì02á0¡2ñ0¬H“
+!	(ó(v JAì02á0¡2ò0¬H“
+!	(ô(v JAì02á0¡2ö0¬H“
+!	(õ(v JAì02á0¡2ú0¬H“
+!	(ù(v JBì0-2á0¡2	û0H“
+!	(ü(r JEì0-2á0¡2†0j`H“
+"	(°	(¢ “
+	(Ñ"g√20“
+	(§"÷gƒ20	J?©0j`2¶0j`H'“
+"	(ß	(® J?¨0j`2™0j`H'“
+"	(´	(® J<Ø0π2
+≠0πH'“
+!	(Æ(J J<≤0π2
+∞0πH'“
+!	(±(J J=µ02≥00@H'“
+"	(¥	(ƒ “
+	(§""g≈2020K20∆“
+	(∏"õg«20	20M20»JBæ0«2º0…H'“
+!	(Ω(J “
 T“
-UJA∑0<2µ0j`ÀH'“
-!	(∂(/ JJª0)2	∏0<2π0j`ÀH'“
-!	(∫(^ JAΩ0<2µ0j`ÀH'“
-!	(º(/ JJ¡0)2	æ0<2ø0j`ÀH'“
-!	(¿(^ J/±0 H'“
-"	(±	(Ü J8√0)2±0 H'“
-"	(¬	(ß JCı0»2Ô0QH'“
-!	((/ “
+UJA¬0>2¿0j` H'“
+!	(¡(J JJ∆02	√0>2ƒ0j` H'“
+!	(≈(v JA»0>2¿0j` H'“
+!	(«(J JJÃ02	…0>2 0j` H'“
+!	(À(v J/º0…H'“
+"	(º	(û J8Œ02º0…H'“
+"	(Õ	(Ω JCâ0«2É0QH'“
+!	(Ñ(J “
 T“
-URe±0 2ç0 8«@«XÜä"	(±	(Ü í"	(¬	(ß “
-	(≠"gÃ2020K“
-	(≈"ágÕ2020MJ.«08H'“
-"	(«	(Ü J8…0Õ2»0»H'“
-!	(»(/ “
-	(≈"gŒ20“
-	(À"•gœ20J8œ0(2Õ0ÕH“
-"	(Œ	(ò J/Õ0ÕH'“
-"	(Õ	(Ü J8—0)2Õ0ÕH'“
-"	(–	(ß ReÕ0Õ2ç0Õ8«@«XÜä"	(Õ	(Ü í"	(–	(ß “
-	(À"g–20“
-	(”"™g—20JI’0j`2’0√2÷0j`H'“
-"	(◊	(ÿ JB’0“2’0√2Ÿ0∫H'“
-!	(€(b J<›0j`2’0√H“
-"	(‹	(Û JF’02’0√2ﬁ0j`H“
-!	(ﬂ( JF’02’0√2‡0j`H“
-!	(·( JA’0(2’0√2‚0∫H“
-!	(„(Y JA’0(2’0√2‰0∫H“
-!	(Â(Y J=Á02’0√H“
-!	(Ê(/ JR’0j`2’0√2Ë02È0j`H“
-"	(Í	(Î JL’0)2’0√2Ì0”2Ó0∫H“
-"	(Ô	( JK’0)2’0√2Ò0∫2Ú0∫H“
-!	(Û(u “
-	(”"g‘2020“
-	(ı"‰g’2020JK’0)2’0√2˜0“2Ó0∫H“
-!	(¯(u JN’0)2’0√2˘082˙0j`H“
-"	(˚	(¸ JN’0)2’0√2˝082˙0j`H“
-"	(˛	(¸ JK’0)2’0√2ˇ0“2Ó0∫H“
-!	(Ä(u JN’0)2’0√2Å082˙0j`H“
-"	(Ç	(¸ JN’0)2’0√2É082˙0j`H“
-"	(Ñ	(¸ JF’0Bj`E2’0√2Ö0∫H“
-"	(Ü	(á JI’0Bj`E2’0√2à0j`H“
-"	(â	(ä JI’0Bj`E2’0√2ã0j`H“
-"	(å	(ä JF’0Bj`E2’0√2ç0∫H“
-"	(é	(á JI’0Bj`E2’0√2è0j`H“
-"	(ê	(ä JI’0Bj`E2’0√2ë0j`H“
-"	(í	(ä JF’082’0√2ì0j`H“
-!	(î( JF’082’0√2ï0j`H“
-!	(ñ( JC’0÷2’0√2ó0∫H“
-"	(ô	(ö JA’0)2’0√2õ0∫H“
-!	(ú(^ JA’0(2’0√2ù0∫H“
-!	(û(Y JA’0)2’0√2ü0∫H“
-!	(†(^ JA’0)2’0√2°0∫H“
-!	(¢(^ JD’0∫2’0√2£0∫H“
-!	(§(b JD’0∫2’0√2•0∫H“
-!	(¶(b JA’0)2’0√2ß0∫H“
-!	(®(^ JA’0)2’0√2©0∫H“
-!	(™(^ JA’0(2’0√2´0∫H“
-!	(¨(Y JA’0)2’0√2≠0∫H“
-!	(Æ(^ JC’0”2’0√2Ø0∫H“
-"	(∞	(ö JC’02’0√2±0∫H“
-!	(≤(b JG’02’0√2≥0∫H“
-!	(¥(b JD’0◊2’0√2µ0∫H“
-!	(∑(b JD’0◊2’0√2∏0∫H“
-!	(π(b JA’0(2’0√2∫0∫H“
-!	(ª(Y JA’0)2’0√2º0∫H“
-!	(Ω(^ JC’0)2’0√2
-æ0∫H“
-!	(ø(^ JL’0∫2’0√2¿0∫2¡0∫H“
-!	(¬(p JF’0j`2’0√2√0∫H“
-"	(ƒ	(ö JA’0(2’0√2≈0∫H“
-!	(∆(Y Ji’0(2’0√2 0Ÿ0ÿj`⁄2Ó0∫2	À0<H“
-"	(Ã	(Õ Ji’0)2’0√2Œ0Ÿ0ÿj`⁄2Ó0∫2	À0<H“
-"	(œ	(– JA’0(2’0√2—0∫H“
-!	(“(Y JA’0(2’0√2‘0€H“
-!	(’(Y JK’0)2’0√2÷0€2ÿ0‹H“
-!	(Ÿ(u J:€0∫2’0√H“
-!	(⁄(/ JA’0(2’0√2‹0∫H“
-!	(›(Y JL’0(2’0√2ﬁ0∫2‡0›H“
-"	(·	(Ÿ JA’0(2’0√2‚0∫H“
-!	(„(Y JA’0)2’0√2‰0∫H“
-!	(Â(^ J8Á0)2’0√H“
-"	(Ê	(ß JT’0ﬁ2’0√2Ë0∫2È0:0H“
-"	(Î	(ó JD’0ﬂ2’0√2Ï0ﬁH“
-!	(Ó(b JD’0ﬂ2’0√2Ô0ﬁH“
-!	((b JK’0)2’0√2Ò0ﬁ2Û0‡H“
-!	(Ù(u JM’0)2’0√2ı0ﬁ2
-Û0·H“
-!	(˜(u JM’0)2’0√2¯0ﬁ2
-Û0·H“
-!	(˘(u J0å0H“
-"	(å	(Ü “
-	(ı"g‚20“
-	(˚"Èg›20J?ï0:02	ê08H'“
-"	(ì	(î J/»0„H'“
-"	(»	(… J0˝08H'“
-"	(˝	(Ü J9ˇ0)2	˝08H'“
-"	(˛	(ß J0Ä0<H'“
-"	(Ä	(Ü J9Ç0)2	Ä0<H'“
-"	(Å	(ß R0»0„8«ä"	(»	(… Rg˝082	ç088«@«XÜä"	(˝	(Ü í"	(˛	(ß RgÄ0<2	ç0<8«@«XÜä"	(Ä	(Ü í"	(Å	(ß “
-	(˚"g‰20“
-	(Ñ"•gÂ20JD’0)2’0√2Ü0H'“
-!	(á(^ JD’0)2’0√2à0H“
-!	(â(^ “
-	(Ñ"gÊ20“
-	(ã"ógÁ20JN’02’0√2ç062é0∫H'“
-!	(è(p J^’02’0√2ê062é0∫2È0:0H“
-"	(ë	(í JD’0Ë2’0√2ì0∫H“
-!	(ï(b J@’0)2’0√2ª06H“
-!	(ñ(^ J@’0)2’0√2Ω06H“
-!	(ó(^ J@’0(2’0√2ò06H“
-!	(ô(Y J@’0(2’0√2ö06H“
-!	(õ(Y “
-	(ã"gÈ20“
-	(ù"˘gÍ20JA’0)2’0√2†0ÎH'“
-!	(°(^ J@’0(2’0√2¢0'H“
-!	(£(Y J@’0)2’0√2å0'H“
-!	(§(^ JM’0Ï2’0√2é0'2
-•0∫H“
-!	(ß(p J@’0)2’0√2ê0'H“
-!	(®(^ J@’0)2’0√2í0'H“
-!	(©(^ JD’0Ë2’0√2™0∫H“
-!	(´(b “
-	(ù"gÌ20“
-	(≠"«gÎ20JA≥0Ô2Æ0+2∞0ÓH'“
-!	(≤(b J@≥0-2Æ0+2¥0∫H'“
-!	(µ(b JQ≥0-2Æ0+2∂0∫2∑	0ö0H'“
-"	(∏	(π J@≥0-2Æ0+2ª0H'“
-!	(º(b J2ù0H'“
-"	(ù	(Ü J1Ω0∫H'“
-"	(Ω	(Ü J/æ0ÏH'“
-"	(æ	(Ü J.˛0'H'“
-"	(˛	(Ü R3ù08«ä"	(ù	(Ü R2Ω0∫8«ä"	(Ω	(Ü R0æ0Ï8«ä"	(æ	(Ü R/˛0'8«ä"	(˛	(Ü “
-	(≠"gÒ20=“
-	(¿"ÚgÔ20-JFƒ0(2¡0∫0)04H'“
-"	(¬	(√ J.≈0(H'“
-"	(≈	(ü J.Æ0+H'“
-"	(Æ	(Ü R/Æ0+8«ä"	(Æ	(Ü “
-	(¿"gÚ20“
-	(«"∞gÛ20J@ 0)2 0Ù2À0H'“
-!	(Ã(^ J8Œ0(2 0ÙH“
-"	(Õ	(ò JW 02 0Ù2œ02–0j`0ÿH“
-"	(—	(“ J@ 0(2 0Ù2”0H“
-!	(‘(Y “
-	(«"gı20“
-	(÷"Ôgˆ20JN›0˜2ÿ0®2Ÿ0®2⁄0®H“
-!	(‹(p J:‡0˜2ﬁ0®H“
-!	(ﬂ(/ J:„0¯2Û0˜H“
-!	(‚(/ J:Â0¯2Û0˜H“
-!	(‰(/ JPÍ0˘2ÿ0®2
-Ê0®2Á0®H“
-!	(È(p “
-	(÷"g˙20“
-	(Ï"Ög˜20J>Ò0Bj`C2
-Ó0˚H'“
-"	(Ô	( J8Û0)2Ó0˚H'“
-"	(Ú	(ß J7ı0G2Ó0˚H“
-!	(Ù(/ J7¯0)2ˆ0(H“
-"	(˜	(¡ “
-	(Ï"g¸20“
-	(˙"Ü	g˚20J;˝0)2˚0Bj`EH'“
-"	(¸	(º J.˛0)H'“
-"	(˛	(∑ J.ˇ0)H'“
-"	(ˇ	(∑ J.Ä	0)H'“
-"	(Ä		(∑ J7É	0)2Å	0(H'“
-"	(Ç		(¡ JBÜ	0®2µ0j`˝H'“
-!	(Ö	(/ JAâ	082µ0j`˛H'“
-!	(à	(/ J?ç		0ö02ä	0®H'“
-"	(ã		(å	 J?è		0ö02ä	0®H'“
-"	(é		(å	 J.ê	08H'“
-"	(ê		(Ü J.ë	0(H'“
-"	(ë		(ü J.í	0(H'“
-"	(í		(ü J.ì	0(H'“
-"	(ì		(ü J3ï	0j`ˇH'“
-"	(ï		(… J5ó		0Ä0H'“
-"	(ó		(ò	 R/ê	088«ä"	(ê		(Ü R/ô	0(8«ä"	(ë		(ü R/ö	0(8«ä"	(í		(ü R/ì	0(8«ä"	(ì		(ü R4ï	0j`ˇ8«ä"	(ï		(… R6ó		0Ä08«ä"	(ó		(ò	 “
-	(˙"gÅ20“
-	(ú	"Äg¯20J8û	0)2Ó0˚H'“
-"	(ù		(ß J2ü	0Bj`EH“
-"	(ü		(— J/°	0ÇH“
-"	(°		(… J.¢	0(H“
-"	(¢		(ü R3ü	0Bj`E8«ä"	(ü		(— R0°	0Ç8«ä"	(°		(… R/¢	0(8«ä"	(¢		(ü “
-	(ú	"gÉ20“
-	(§	"ÍgÑ20J=ß	0j`ˇ2¸0˘H“
-"	(¶		(Û JGß	0j`ˇ2¸0˘2±0 H“
-"	(®		(ö JA©	0)2©	0˘2™	0˘H“
-!	(´	(^ JH©	0®2¸0˘2¨	0j`ˇH“
-!	(≠	( JR©	0)2©	0˘2Æ	0j`ˇ2
-∞	0ÖH“
-"	(±		( J8≥	0(2©	0˘H“
-"	(≤		(ò J8µ	0)2©	0˘H“
-"	(¥		(ß J8∑	0)2©	0˘H“
-"	(∂		(ß J8π	0)2©	0˘H“
-"	(∏		(ß “
-	(§	"gÜ20“
-	(ª	"ñgá20J8¿	0)2æ	0àH'“
-"	(ø		(ß JA¿	0)2æ	0à2¬	0âH“
-!	(√	(^ “
-	(ª	"gä20“
-	(≈	"Ögâ20J0∆	0H'“
-"	(∆		(Ü J0«	0H“
-"	(«		(Ü J1…	0ãH“
-"	(…		(Ü J0 	0H'“
-"	( 		(Ü J0À	0<H'“
-"	(À		(Ü J9Õ	0)2	À	0<H'“
-"	(Ã		(ß R1∆	08«ä"	(∆		(Ü R1«	08«ä"	(«		(Ü R2…	0ã8«ä"	(…		(Ü R1 	08«ä"	( 		(Ü RgÀ	0<2	ç0<8«@«XÜä"	(À		(Ü í"	(Ã		(ß “
-	(≈	"gå20“
-	(œ	"√gç20J8“	0)2æ	0àH“
-"	(—		(ß J8‘	0)2æ	0àH“
-"	(”		(ß J8÷	0)2æ	0àH“
-"	(’		(ß J8ÿ	0)2æ	0àH“
-"	(◊		(ß J8⁄	0)2æ	0àH“
-"	(Ÿ		(ß JBæ	0)2æ	0à2‹	0éH“
-"	(›		(π JBæ	0)2æ	0à2ﬁ	0éH“
-"	(ﬂ		(π “
-	(œ	"gè20É“
-	(·	"Tgê20ÑJ8Ê	0)2‰	0ëH“
-"	(Â		(ß “
-	(·	"gí20É“
-	(Ë	"∞gì20ÑJ8Ì	0)2Î	0îH“
-"	(Ï		(ß J8Ô	0(2Î	0îH“
-"	(Ó		(ò J8Ò	0)2Î	0îH“
-"	(		(ß JfÎ	0)2Î	0î2Ú	0ö0ÿ2Õ080ï0ÿH“
-"	(Ù		(ı	 “
-	(Ë	"ægñ20≥j`¥J2˜	0Bj`EH'“
-"	(˜		(— J5˘		0ó0H'“
-"	(˘		(˙	 J2˚	0Bj`EH'“
-"	(˚		(— “
-	(¸	"gò20µ“
-	(¸	"gô20“
-	(ˇ	"™gö20J/Ç
-0õH'“
-"	(Ç
-	(Ü J/Ñ
-0úH'“
-"	(Ñ
-	(Ü J.Ö
-08H'“
-"	(Ö
-	(Ü J5Ü
-	0ö0H'“
-"	(Ü
-	(á
- J>ä
-0)2Ü
-	0ö0H'“
-"	(à
-	(â
- R0Ç
-0õ8«ä"	(Ç
-	(Ü R0Ñ
-0ú8«ä"	(Ñ
-	(Ü R/Ö
-088«ä"	(Ö
-	(Ü RqÜ
-	0ö02ç	0ö08«@«XÜä"	(Ü
-	(á
- í"	(à
-	(â
- “
-	(ˇ	‡
+UReº0…2•0…8«@«XÜä"	(º	(û í"	(Õ	(Ω “
+	(∏"gÀ2020K“
+	(–"ágÃ20	20MJ.“0H'“
+"	(“	(û J8‘0Ã2›0«H'“
+!	(”(J “
+	(–"gÕ20“
+	(÷"•gŒ20	J8⁄0-2ÿ0ÃH“
+"	(Ÿ	(Æ J/ÿ0ÃH'“
+"	(ÿ	(û J8‹02ÿ0ÃH'“
+"	(€	(Ω Reÿ0Ã2•0Ã8«@«XÜä"	(ÿ	(û í"	(€	(Ω “
+	(÷"gœ20“
+	(ﬁ"´g–20	JI‡0j`2‡0¬2·0j`H'“
+"	(‚	(„ JB‡0—2‡0¬2‰0πH'“
+!	(Ê(z J<Ë0j`2‡0¬H“
+"	(Á	(Ä JF‡02‡0¬2È0j`H“
+!	(Í(5 JF‡02‡0¬2Î0j`H“
+!	(Ï(5 JA‡0-2‡0¬2Ì0πH“
+!	(Ó(r JA‡0-2‡0¬2Ô0πH“
+!	((r J=Ú02‡0¬H“
+!	(Ò(J JR‡0j`2‡0¬2Û02Ù0j`H“
+"	(ı	(ˆ JL‡02‡0¬2¯0“2˘0πH“
+"	(˙	(˚ JL‡02‡0¬2¸0π2˝0πH“
+"	(˛	(ç “
+	(ﬁ"g”2020“
+	(Ä"Ág‘20	20JL‡02‡0¬2Ç0—2˘0πH“
+"	(É	(ç JN‡02‡0¬2Ñ02Ö0j`H“
+"	(Ü	(á JN‡02‡0¬2à02Ö0j`H“
+"	(â	(á JL‡02‡0¬2ä0—2˘0πH“
+"	(ã	(ç JN‡02‡0¬2å02Ö0j`H“
+"	(ç	(á JN‡02‡0¬2é02Ö0j`H“
+"	(è	(á JF‡0j`2‡0¬2ê0πH“
+"	(ë	(í JH‡0j`2‡0¬2ì0j`H“
+!	(î( JH‡0j`2‡0¬2ï0j`H“
+!	(ñ( JF‡0j`2‡0¬2ó0πH“
+"	(ò	(í JH‡0j`2‡0¬2ô0j`H“
+!	(ö( JH‡0j`2‡0¬2õ0j`H“
+!	(ú( JF‡02‡0¬2ù0j`H“
+!	(û(5 JF‡02‡0¬2ü0j`H“
+!	(†(5 JC‡0’2‡0¬2°0πH“
+"	(£	(§ JA‡02‡0¬2•0πH“
+!	(¶(v JA‡0-2‡0¬2ß0πH“
+!	(®(r JA‡02‡0¬2©0πH“
+!	(™(v JA‡02‡0¬2´0πH“
+!	(¨(v JD‡0π2‡0¬2≠0πH“
+!	(Æ(z JD‡0π2‡0¬2Ø0πH“
+!	(∞(z JA‡02‡0¬2±0πH“
+!	(≤(v JA‡02‡0¬2≥0πH“
+!	(¥(v JA‡0-2‡0¬2µ0πH“
+!	(∂(r JA‡02‡0¬2∑0πH“
+!	(∏(v JC‡0“2‡0¬2π0πH“
+"	(∫	(§ JC‡02‡0¬2ª0πH“
+!	(º(z JG‡02‡0¬2Ω0πH“
+!	(æ(z JD‡0÷2‡0¬2ø0πH“
+!	(¡(z JD‡0÷2‡0¬2¬0πH“
+!	(√(z JA‡0-2‡0¬2ƒ0πH“
+!	(≈(r JA‡02‡0¬2∆0πH“
+!	(«(v JC‡02‡0¬2
+»0πH“
+!	(…(v JM‡0π2‡0¬2 0π2À0πH“
+"	(Ã	(à JF‡0j`2‡0¬2Õ0πH“
+"	(Œ	(§ JA‡0-2‡0¬2œ0πH“
+!	(–(r Ji‡0-2‡0¬2‘0ÿ0◊j`Ÿ2˘0π2	’0>H“
+"	(÷	(◊ Ji‡02‡0¬2ÿ0ÿ0◊j`Ÿ2˘0π2	’0>H“
+"	(Ÿ	(⁄ JA‡0-2‡0¬2€0πH“
+!	(‹(r JA‡0-2‡0¬2ﬁ0⁄H“
+!	(ﬂ(r JL‡02‡0¬2‡0⁄2‚0€H“
+"	(„	(ç J:Â0π2‡0¬H“
+!	(‰(J JA‡0-2‡0¬2Ê0πH“
+!	(Á(r JL‡0-2‡0¬2Ë0π2Í0‹H“
+"	(Î	(Ì JA‡0-2‡0¬2Ï0πH“
+!	(Ì(r JA‡02‡0¬2Ó0πH“
+!	(Ô(v J8Ò02‡0¬H“
+"	(	(Ω JT‡0›2‡0¬2Ú0π2Û0<0"H“
+"	(ı	(´ JD‡0ﬁ2‡0¬2ˆ0›H“
+!	(¯(z JD‡0ﬁ2‡0¬2˘0›H“
+!	(˙(z JL‡02‡0¬2˚0›2˝0ﬂH“
+"	(˛	(ç JN‡02‡0¬2ˇ0›2
+˝0‡H“
+"	(Å	(ç JN‡02‡0¬2Ç0›2
+˝0‡H“
+"	(É	(ç J0§0H“
+"	(§	(û “
+	(Ä"g·20“
+	(Ö"Èg‹20	J?´0<0"2	ß0H'“
+"	(©	(™ J/›0‚H'“
+"	(›	(ﬁ J0á0H'“
+"	(á	(û J9â02	á0H'“
+"	(à	(Ω J0ä0>H'“
+"	(ä	(û J9å02	ä0>H'“
+"	(ã	(Ω R0›0‚8«ä"	(›	(ﬁ Rgá02	•08«@«XÜä"	(á	(û í"	(à	(Ω Rgä0>2	•0>8«@«XÜä"	(ä	(û í"	(ã	(Ω “
+	(Ö"g„20“
+	(é"•g‰20	JD‡02‡0¬2ê0H'“
+!	(ë(v JD‡02‡0¬2í0H“
+!	(ì(v “
+	(é"gÂ20“
+	(ï"ògÊ20	JO‡02‡0¬2ó0:2ò0πH'“
+"	(ô	(à J^‡02‡0¬2ö0:2ò0π2Û0<0"H“
+"	(õ	(ú JD‡0Á2‡0¬2ù0πH“
+!	(ü(z J@‡02‡0¬2œ0:H“
+!	(†(v J@‡02‡0¬2—0:H“
+!	(°(v J@‡0-2‡0¬2¢0:H“
+!	(£(r J@‡0-2‡0¬2§0:H“
+!	(•(r “
+	(ï"gË20“
+	(ß"˙gÈ20	JA‡02‡0¬2™0ÍH'“
+!	(´(v J@‡0-2‡0¬2¨0,H“
+!	(≠(r J@‡02‡0¬2†0,H“
+!	(Æ(v JN‡0Î2‡0¬2¢0,2
+Ø0πH“
+"	(±	(à J@‡02‡0¬2§0,H“
+!	(≤(v J@‡02‡0¬2¶0,H“
+!	(≥(v JD‡0Á2‡0¬2¥0πH“
+!	(µ(z “
+	(ß"gÏ20“
+	(∑"«gÍ20	JAΩ0Ó2∏0/2∫0ÌH'“
+!	(º(z J@Ω012∏0/2æ0πH'“
+!	(ø(z JQΩ012∏0/2¿0π2¡	0ô0"H'“
+"	(¬	(√ J@Ω012∏0/2≈0ÔH'“
+!	(∆(z J2≥0H'“
+"	(≥	(û J1«0πH'“
+"	(«	(û J/»0ÎH'“
+"	(»	(û J.í0,H'“
+"	(í	(û R3≥08«ä"	(≥	(û R2«0π8«ä"	(«	(û R0»0Î8«ä"	(»	(û R/í0,8«ä"	(í	(û “
+	(∑"g20?“
+	( "ÚgÓ201JFŒ0-2À0π008H'“
+"	(Ã	(Õ J.œ0-H'“
+"	(œ	(µ J.∏0/H'“
+"	(∏	(û R/∏0/8«ä"	(∏	(û “
+	( "gÒ20“
+	(—"∞gÚ20	J@‘02‘0Û2’0H'“
+!	(÷(v J8ÿ0-2‘0ÛH“
+"	(◊	(Æ JW‘02‘0Û2Ÿ02⁄0#j`$0◊H“
+"	(€	(‹ J@‘0-2‘0Û2›0H“
+!	(ﬁ(r “
+	(—"gÙ20“
+	(‡"Ògı20	JOÁ0ˆ2‚0ß2„0ß2‰0ßH“
+"	(Ê	(à J:Í0ˆ2Ë0ßH“
+!	(È(J J:Ì0˜2˝0ˆH“
+!	(Ï(J J:Ô0˜2˝0ˆH“
+!	(Ó(J JQÙ0¯2‚0ß2
+0ß2Ò0ßH“
+"	(Û	(à “
+	(‡"g˘20“
+	(ˆ"Ögˆ20	J>˚0j`D2
+¯0˙H'“
+"	(˘	(˙ J8˝02¯0˙H'“
+"	(¸	(Ω J7ˇ0G2¯0˙H“
+!	(˛(J J7Ç	02Ä	0-H“
+"	(Å		(÷ “
+	(ˆ"g˚20“
+	(Ñ	"Ü	g˙20	J;á	02Ö	0j`H'“
+"	(Ü		(— J.à	0H'“
+"	(à		(Õ J.â	0H'“
+"	(â		(Õ J.ä	0H'“
+"	(ä		(Õ J7ç	02ã	0-H'“
+"	(å		(÷ JBê	0ß2¿0j`¸H'“
+!	(è	(J JAì	02¿0j`˝H'“
+!	(í	(J J?ó		0ô0"2î	0ßH'“
+"	(ï		(ñ	 J?ô		0ô0"2î	0ßH'“
+"	(ò		(ñ	 J.ö	0H'“
+"	(ö		(û J.õ	0-H'“
+"	(õ		(µ J.ú	0-H'“
+"	(ú		(µ J.ù	0-H'“
+"	(ù		(µ J3ü	0j`˛H'“
+"	(ü		(ﬁ J5°		0ˇ0"H'“
+"	(°		(¢	 R/ö	08«ä"	(ö		(û R/£	0-8«ä"	(õ		(µ R/§	0-8«ä"	(ú		(µ R/ù	0-8«ä"	(ù		(µ R4ü	0j`˛8«ä"	(ü		(ﬁ R6°		0ˇ0"8«ä"	(°		(¢	 “
+	(Ñ	"gÄ20“
+	(¶	"Äg˜20	J8®	02¯0˙H'“
+"	(ß		(Ω J2©	0j`H“
+"	(©		(Â J/´	0ÅH“
+"	(´		(ﬁ J.¨	0-H“
+"	(¨		(µ R3©	0j`8«ä"	(©		(Â R0´	0Å8«ä"	(´		(ﬁ R/¨	0-8«ä"	(¨		(µ “
+	(¶	"gÇ20“
+	(Æ	"ÍgÉ20	J=±	0j`˛2á0¯H“
+"	(∞		(Ä JG±	0j`˛2á0¯2º0…H“
+"	(≤		(§ JA≥	02≥	0¯2¥	0¯H“
+!	(µ	(v JH≥	0ß2á0¯2∂	0j`˛H“
+!	(∑	(5 JR≥	02≥	0¯2∏	0j`˛2
+∫	0ÑH“
+"	(ª		(˚ J8Ω	0-2≥	0¯H“
+"	(º		(Æ J8ø	02≥	0¯H“
+"	(æ		(Ω J8¡	02≥	0¯H“
+"	(¿		(Ω J8√	02≥	0¯H“
+"	(¬		(Ω “
+	(Æ	"gÖ20“
+	(≈	"ñgÜ20	J8 	02»	0áH'“
+"	(…		(Ω JA 	02»	0á2Ã	0àH“
+!	(Õ	(v “
+	(≈	"gâ20“
+	(œ	"Ögà20	J0–	0H'“
+"	(–		(û J0—	0H“
+"	(—		(û J1”	0äH“
+"	(”		(û J0‘	0H'“
+"	(‘		(û J0’	0>H'“
+"	(’		(û J9◊	02	’	0>H'“
+"	(÷		(Ω R1–	08«ä"	(–		(û R1—	08«ä"	(—		(û R2”	0ä8«ä"	(”		(û R1‘	08«ä"	(‘		(û Rg’	0>2	•0>8«@«XÜä"	(’		(û í"	(÷		(Ω “
+	(œ	"gã20“
+	(Ÿ	"√gå20	J8‹	02»	0áH“
+"	(€		(Ω J8ﬁ	02»	0áH“
+"	(›		(Ω J8‡	02»	0áH“
+"	(ﬂ		(Ω J8‚	02»	0áH“
+"	(·		(Ω J8‰	02»	0áH“
+"	(„		(Ω JB»	02»	0á2Ê	0çH“
+"	(Á		(Õ JB»	02»	0á2Ë	0çH“
+"	(È		(Õ “
+	(Ÿ	"gé20Ç“
+	(Î	"Tgè20ÉJ8	02Ó	0êH“
+"	(Ô		(Ω “
+	(Î	"gë20Ç“
+	(Ú	"∞gí20ÉJ8˜	02ı	0ìH“
+"	(ˆ		(Ω J8˘	0-2ı	0ìH“
+"	(¯		(Æ J8˚	02ı	0ìH“
+"	(˙		(Ω Jfı	02ı	0ì2¸	0ô0◊2⁄00î0◊H“
+"	(˛		(ˇ	 “
+	(Ú	"ægï20≤j`≥J2Å
+0j`H'“
+"	(Å
+	(Â J5É
+	0ñ0"H'“
+"	(É
+	(Ñ
+ J2Ö
+0j`H'“
+"	(Ö
+	(Â “
+	(Ü
+"gó20¥“
+	(Ü
+‡
  Í
 platform.UIKitÚ
-Œ !$%.'/1;6=-@AFGIHVWZ\`^badehfkgoprqvsxyz{}~ÑÖáàäåãçéèíìïñØ∞≤±∂∑∏πªºΩæ¿¡ƒ≈∆»ÃÕŒœ–—‘’‚›‰ÂÊÁÈÍÌÎÒÔÚÛıˆ˙˜¸˚Å¯ÉÑÜáäâåçèêíìñòôö
+Ã !%&)*2,35=:?1BCFGIHVWZ\`^badehfkgoprqvsxyz{}~ÉÑÜáâãäåçéëíîïÆØ±∞µ∂∑∏∫ªºΩø¿√ƒ≈«ÀÃÕŒœ–”‘·‹„‰ÂÊËÈÏÍÓÒÚÙı˘ˆ˚˙Ä˜ÇÉÖÜâàãåéèëíïó

@@ -1,5 +1,5 @@
 
-±Å
+’Å
 platform
 darwin
 NSObject
@@ -7,19 +7,6 @@
 nw_browse_result_t
 result
 kotlin
-ULong
-posix
-size_t
-kotlinx
-cinterop
-internal
-CCall
-id
-Cknifunptr_platform_Network160_nw_browse_result_get_interfaces_count
-%nw_browse_result_get_interfaces_count
-nw_txt_record_t
-Eknifunptr_platform_Network161_nw_browse_result_copy_txt_record_object
-'nw_browse_result_copy_txt_record_object
 	Function1
 nw_interface_t
 Boolean
@@ -27,17 +14,22 @@ Eknifunptr_platform_Network161_nw_browse_result_copy_txt_record_object
 
 enumerator
 Unit
-Cknifunptr_platform_Network162_nw_browse_result_enumerate_interfaces
+kotlinx
+cinterop
+internal
+CCall
+id
+Cknifunptr_platform_Network160_nw_browse_result_enumerate_interfaces
 %nw_browse_result_enumerate_interfaces
 
 nw_error_t
 error
 UInt
 nw_error_domain_t
-7knifunptr_platform_Network163_nw_error_get_error_domain
+7knifunptr_platform_Network161_nw_error_get_error_domain
 nw_error_get_error_domain
 Int
-5knifunptr_platform_Network164_nw_error_get_error_code
+5knifunptr_platform_Network162_nw_error_get_error_code
 nw_error_get_error_code
 CPointer
 cnames
@@ -46,7 +38,7 @@ nw_error_t
 CoreFoundation
 
 CFErrorRef
-4knifunptr_platform_Network165_nw_error_copy_cf_error
+4knifunptr_platform_Network163_nw_error_copy_cf_error
 nw_error_copy_cf_error
 nw_browse_descriptor_t
 
@@ -55,153 +47,150 @@ descriptor
 
 parameters
 nw_browser_t
-/knifunptr_platform_Network166_nw_browser_create
+/knifunptr_platform_Network164_nw_browser_create
 nw_browser_create
 browser
 dispatch_queue_t
 queue
-2knifunptr_platform_Network167_nw_browser_set_queue
+2knifunptr_platform_Network165_nw_browser_set_queue
 nw_browser_set_queue
 	Function3
 +nw_browser_browse_results_changed_handler_t
 handler
-Kknifunptr_platform_Network168_nw_browser_set_browse_results_changed_handler
+Kknifunptr_platform_Network166_nw_browser_set_browse_results_changed_handler
 -nw_browser_set_browse_results_changed_handler
 	Function2
 nw_browser_state_t
 "nw_browser_state_changed_handler_t
 state_changed_handler
-Bknifunptr_platform_Network169_nw_browser_set_state_changed_handler
+Bknifunptr_platform_Network167_nw_browser_set_state_changed_handler
 $nw_browser_set_state_changed_handler
-.knifunptr_platform_Network170_nw_browser_start
+.knifunptr_platform_Network168_nw_browser_start
 nw_browser_start
-/knifunptr_platform_Network171_nw_browser_cancel
+/knifunptr_platform_Network169_nw_browser_cancel
 nw_browser_cancel
-8knifunptr_platform_Network172_nw_browser_copy_parameters
+8knifunptr_platform_Network170_nw_browser_copy_parameters
 nw_browser_copy_parameters
-?knifunptr_platform_Network173_nw_browser_copy_browse_descriptor
+?knifunptr_platform_Network171_nw_browser_copy_browse_descriptor
 !nw_browser_copy_browse_descriptor
 	nw_path_t
 path
 nw_path_status_t
-0knifunptr_platform_Network174_nw_path_get_status
+0knifunptr_platform_Network172_nw_path_get_status
 nw_path_get_status
 nw_path_unsatisfied_reason_t
-<knifunptr_platform_Network175_nw_path_get_unsatisfied_reason
+<knifunptr_platform_Network173_nw_path_get_unsatisfied_reason
 nw_path_get_unsatisfied_reason
 $nw_path_enumerate_interfaces_block_t
 enumerate_block
-:knifunptr_platform_Network176_nw_path_enumerate_interfaces
+:knifunptr_platform_Network174_nw_path_enumerate_interfaces
 nw_path_enumerate_interfaces
 
 other_path
-.knifunptr_platform_Network177_nw_path_is_equal
+.knifunptr_platform_Network175_nw_path_is_equal
 nw_path_is_equal
-2knifunptr_platform_Network178_nw_path_is_expensive
+2knifunptr_platform_Network176_nw_path_is_expensive
 nw_path_is_expensive
-4knifunptr_platform_Network179_nw_path_is_constrained
+4knifunptr_platform_Network177_nw_path_is_constrained
 nw_path_is_constrained
-:knifunptr_platform_Network180_nw_path_is_ultra_constrained
-nw_path_is_ultra_constrained
-.knifunptr_platform_Network181_nw_path_has_ipv4
+.knifunptr_platform_Network178_nw_path_has_ipv4
 nw_path_has_ipv4
-.knifunptr_platform_Network182_nw_path_has_ipv6
+.knifunptr_platform_Network179_nw_path_has_ipv6
 nw_path_has_ipv6
--knifunptr_platform_Network183_nw_path_has_dns
+-knifunptr_platform_Network180_nw_path_has_dns
 nw_path_has_dns
 nw_interface_type_t
 interface_type
-9knifunptr_platform_Network184_nw_path_uses_interface_type
+9knifunptr_platform_Network181_nw_path_uses_interface_type
 nw_path_uses_interface_type
 nw_endpoint_t
-Cknifunptr_platform_Network185_nw_path_copy_effective_local_endpoint
+Cknifunptr_platform_Network182_nw_path_copy_effective_local_endpoint
 %nw_path_copy_effective_local_endpoint
-Dknifunptr_platform_Network186_nw_path_copy_effective_remote_endpoint
+Dknifunptr_platform_Network183_nw_path_copy_effective_remote_endpoint
 &nw_path_copy_effective_remote_endpoint
 "nw_path_enumerate_gateways_block_t
-8knifunptr_platform_Network187_nw_path_enumerate_gateways
+8knifunptr_platform_Network184_nw_path_enumerate_gateways
 nw_path_enumerate_gateways
-nw_link_quality_t
-6knifunptr_platform_Network188_nw_path_get_link_quality
-nw_path_get_link_quality
 String
 CString
 context_identifier
 nw_content_context_t
-7knifunptr_platform_Network189_nw_content_context_create
+7knifunptr_platform_Network185_nw_content_context_create
 nw_content_context_create
 context
 	ByteVarOf
 Byte
 ByteVar
-?knifunptr_platform_Network190_nw_content_context_get_identifier
+?knifunptr_platform_Network186_nw_content_context_get_identifier
 !nw_content_context_get_identifier
-=knifunptr_platform_Network191_nw_content_context_get_is_final
+=knifunptr_platform_Network187_nw_content_context_get_is_final
 nw_content_context_get_is_final
 is_final
-=knifunptr_platform_Network192_nw_content_context_set_is_final
+=knifunptr_platform_Network188_nw_content_context_set_is_final
 nw_content_context_set_is_final
+ULong
+posix
 uint64_t
-Lknifunptr_platform_Network193_nw_content_context_get_expiration_milliseconds
+Lknifunptr_platform_Network189_nw_content_context_get_expiration_milliseconds
 .nw_content_context_get_expiration_milliseconds
 expiration_milliseconds
-Lknifunptr_platform_Network194_nw_content_context_set_expiration_milliseconds
+Lknifunptr_platform_Network190_nw_content_context_set_expiration_milliseconds
 .nw_content_context_set_expiration_milliseconds
 Double
-Fknifunptr_platform_Network195_nw_content_context_get_relative_priority
+Fknifunptr_platform_Network191_nw_content_context_get_relative_priority
 (nw_content_context_get_relative_priority
 relative_priority
-Fknifunptr_platform_Network196_nw_content_context_set_relative_priority
+Fknifunptr_platform_Network192_nw_content_context_set_relative_priority
 (nw_content_context_set_relative_priority
 antecedent_context
-?knifunptr_platform_Network197_nw_content_context_set_antecedent
+?knifunptr_platform_Network193_nw_content_context_set_antecedent
 !nw_content_context_set_antecedent
-@knifunptr_platform_Network198_nw_content_context_copy_antecedent
+@knifunptr_platform_Network194_nw_content_context_copy_antecedent
 "nw_content_context_copy_antecedent
 nw_protocol_metadata_t
 protocol_metadata
-Jknifunptr_platform_Network199_nw_content_context_set_metadata_for_protocol
+Jknifunptr_platform_Network195_nw_content_context_set_metadata_for_protocol
 ,nw_content_context_set_metadata_for_protocol
 nw_protocol_definition_t
 protocol
-Gknifunptr_platform_Network200_nw_content_context_copy_protocol_metadata
+Gknifunptr_platform_Network196_nw_content_context_copy_protocol_metadata
 )nw_content_context_copy_protocol_metadata
 foreach_block
-Jknifunptr_platform_Network201_nw_content_context_foreach_protocol_metadata
+Jknifunptr_platform_Network197_nw_content_context_foreach_protocol_metadata
 ,nw_content_context_foreach_protocol_metadata
 endpoint
 nw_connection_t
-2knifunptr_platform_Network202_nw_connection_create
+2knifunptr_platform_Network198_nw_connection_create
 nw_connection_create
 
 connection
-9knifunptr_platform_Network203_nw_connection_copy_endpoint
+9knifunptr_platform_Network199_nw_connection_copy_endpoint
 nw_connection_copy_endpoint
-;knifunptr_platform_Network204_nw_connection_copy_parameters
+;knifunptr_platform_Network200_nw_connection_copy_parameters
 nw_connection_copy_parameters
 nw_connection_state_t
 %nw_connection_state_changed_handler_t
-Eknifunptr_platform_Network205_nw_connection_set_state_changed_handler
+Eknifunptr_platform_Network201_nw_connection_set_state_changed_handler
 'nw_connection_set_state_changed_handler
 %nw_connection_boolean_event_handler_t
-Iknifunptr_platform_Network206_nw_connection_set_viability_changed_handler
+Iknifunptr_platform_Network202_nw_connection_set_viability_changed_handler
 +nw_connection_set_viability_changed_handler
-Mknifunptr_platform_Network207_nw_connection_set_better_path_available_handler
+Mknifunptr_platform_Network203_nw_connection_set_better_path_available_handler
 /nw_connection_set_better_path_available_handler
 "nw_connection_path_event_handler_t
-Dknifunptr_platform_Network208_nw_connection_set_path_changed_handler
+Dknifunptr_platform_Network204_nw_connection_set_path_changed_handler
 &nw_connection_set_path_changed_handler
-5knifunptr_platform_Network209_nw_connection_set_queue
+5knifunptr_platform_Network205_nw_connection_set_queue
 nw_connection_set_queue
-1knifunptr_platform_Network210_nw_connection_start
+1knifunptr_platform_Network206_nw_connection_start
 nw_connection_start
-3knifunptr_platform_Network211_nw_connection_restart
+3knifunptr_platform_Network207_nw_connection_restart
 nw_connection_restart
-2knifunptr_platform_Network212_nw_connection_cancel
+2knifunptr_platform_Network208_nw_connection_cancel
 nw_connection_cancel
-8knifunptr_platform_Network213_nw_connection_force_cancel
+8knifunptr_platform_Network209_nw_connection_force_cancel
 nw_connection_force_cancel
-Cknifunptr_platform_Network214_nw_connection_cancel_current_endpoint
+Cknifunptr_platform_Network210_nw_connection_cancel_current_endpoint
 %nw_connection_cancel_current_endpoint
 uint32_t
 minimum_incomplete_length
@@ -211,193 +200,193 @@ Cknifunptr_platform_Network214_nw_connection_cancel_current_endpoint
 "nw_connection_receive_completion_t
 
 completion
-3knifunptr_platform_Network215_nw_connection_receive
+3knifunptr_platform_Network211_nw_connection_receive
 nw_connection_receive
-;knifunptr_platform_Network216_nw_connection_receive_message
+;knifunptr_platform_Network212_nw_connection_receive_message
 nw_connection_receive_message
 content
 is_complete
 nw_connection_send_completion_t
-0knifunptr_platform_Network217_nw_connection_send
+0knifunptr_platform_Network213_nw_connection_send
 nw_connection_send
 	Function0
 dispatch_block_t
 batch_block
-1knifunptr_platform_Network218_nw_connection_batch
+1knifunptr_platform_Network214_nw_connection_batch
 nw_connection_batch
-<knifunptr_platform_Network219_nw_connection_copy_description
+<knifunptr_platform_Network215_nw_connection_copy_description
 nw_connection_copy_description
-=knifunptr_platform_Network220_nw_connection_copy_current_path
+=knifunptr_platform_Network216_nw_connection_copy_current_path
 nw_connection_copy_current_path
 
 definition
-Bknifunptr_platform_Network221_nw_connection_copy_protocol_metadata
+Bknifunptr_platform_Network217_nw_connection_copy_protocol_metadata
 $nw_connection_copy_protocol_metadata
-Eknifunptr_platform_Network222_nw_connection_get_maximum_datagram_size
+Eknifunptr_platform_Network218_nw_connection_get_maximum_datagram_size
 'nw_connection_get_maximum_datagram_size
 remote_endpoint
 nw_group_descriptor_t
-Bknifunptr_platform_Network223_nw_group_descriptor_create_multiplex
+Bknifunptr_platform_Network219_nw_group_descriptor_create_multiplex
 $nw_group_descriptor_create_multiplex
 multicast_group
-Bknifunptr_platform_Network224_nw_group_descriptor_create_multicast
+Bknifunptr_platform_Network220_nw_group_descriptor_create_multicast
 $nw_group_descriptor_create_multicast
->knifunptr_platform_Network225_nw_group_descriptor_add_endpoint
+>knifunptr_platform_Network221_nw_group_descriptor_add_endpoint
  nw_group_descriptor_add_endpoint
 /nw_group_descriptor_enumerate_endpoints_block_t
-Eknifunptr_platform_Network226_nw_group_descriptor_enumerate_endpoints
+Eknifunptr_platform_Network222_nw_group_descriptor_enumerate_endpoints
 'nw_group_descriptor_enumerate_endpoints
 multicast_descriptor
 source
-Oknifunptr_platform_Network227_nw_multicast_group_descriptor_set_specific_source
+Oknifunptr_platform_Network223_nw_multicast_group_descriptor_set_specific_source
 1nw_multicast_group_descriptor_set_specific_source
 disable_unicast_traffic
-Wknifunptr_platform_Network228_nw_multicast_group_descriptor_set_disable_unicast_traffic
+Wknifunptr_platform_Network224_nw_multicast_group_descriptor_set_disable_unicast_traffic
 9nw_multicast_group_descriptor_set_disable_unicast_traffic
-Wknifunptr_platform_Network229_nw_multicast_group_descriptor_get_disable_unicast_traffic
+Wknifunptr_platform_Network225_nw_multicast_group_descriptor_get_disable_unicast_traffic
 9nw_multicast_group_descriptor_get_disable_unicast_traffic
 group_descriptor
 nw_connection_group_t
-8knifunptr_platform_Network230_nw_connection_group_create
+8knifunptr_platform_Network226_nw_connection_group_create
 nw_connection_group_create
 group
-Aknifunptr_platform_Network231_nw_connection_group_copy_descriptor
+Aknifunptr_platform_Network227_nw_connection_group_copy_descriptor
 #nw_connection_group_copy_descriptor
-Aknifunptr_platform_Network232_nw_connection_group_copy_parameters
+Aknifunptr_platform_Network228_nw_connection_group_copy_parameters
 #nw_connection_group_copy_parameters
-;knifunptr_platform_Network233_nw_connection_group_set_queue
+;knifunptr_platform_Network229_nw_connection_group_set_queue
 nw_connection_group_set_queue
 nw_connection_group_state_t
 +nw_connection_group_state_changed_handler_t
-Kknifunptr_platform_Network234_nw_connection_group_set_state_changed_handler
+Kknifunptr_platform_Network230_nw_connection_group_set_state_changed_handler
 -nw_connection_group_set_state_changed_handler
 maximum_message_size
 reject_oversized_messages
 %nw_connection_group_receive_handler_t
 receive_handler
-Eknifunptr_platform_Network235_nw_connection_group_set_receive_handler
+Eknifunptr_platform_Network231_nw_connection_group_set_receive_handler
 'nw_connection_group_set_receive_handler
-7knifunptr_platform_Network236_nw_connection_group_start
+7knifunptr_platform_Network232_nw_connection_group_start
 nw_connection_group_start
-8knifunptr_platform_Network237_nw_connection_group_cancel
+8knifunptr_platform_Network233_nw_connection_group_cancel
 nw_connection_group_cancel
-Rknifunptr_platform_Network238_nw_connection_group_copy_remote_endpoint_for_message
+Rknifunptr_platform_Network234_nw_connection_group_copy_remote_endpoint_for_message
 4nw_connection_group_copy_remote_endpoint_for_message
-Qknifunptr_platform_Network239_nw_connection_group_copy_local_endpoint_for_message
+Qknifunptr_platform_Network235_nw_connection_group_copy_local_endpoint_for_message
 3nw_connection_group_copy_local_endpoint_for_message
-Gknifunptr_platform_Network240_nw_connection_group_copy_path_for_message
+Gknifunptr_platform_Network236_nw_connection_group_copy_path_for_message
 )nw_connection_group_copy_path_for_message
-Tknifunptr_platform_Network241_nw_connection_group_copy_protocol_metadata_for_message
+Tknifunptr_platform_Network237_nw_connection_group_copy_protocol_metadata_for_message
 6nw_connection_group_copy_protocol_metadata_for_message
-Pknifunptr_platform_Network242_nw_connection_group_extract_connection_for_message
+Pknifunptr_platform_Network238_nw_connection_group_extract_connection_for_message
 2nw_connection_group_extract_connection_for_message
 inbound_message
 outbound_message
-7knifunptr_platform_Network243_nw_connection_group_reply
+7knifunptr_platform_Network239_nw_connection_group_reply
 nw_connection_group_reply
 nw_protocol_options_t
 protocol_options
-Dknifunptr_platform_Network244_nw_connection_group_extract_connection
+Dknifunptr_platform_Network240_nw_connection_group_extract_connection
 &nw_connection_group_extract_connection
-Oknifunptr_platform_Network245_nw_connection_group_reinsert_extracted_connection
+Oknifunptr_platform_Network241_nw_connection_group_reinsert_extracted_connection
 1nw_connection_group_reinsert_extracted_connection
 %nw_connection_group_send_completion_t
->knifunptr_platform_Network246_nw_connection_group_send_message
+>knifunptr_platform_Network242_nw_connection_group_send_message
  nw_connection_group_send_message
 ,nw_connection_group_new_connection_handler_t
 new_connection_handler
-Lknifunptr_platform_Network247_nw_connection_group_set_new_connection_handler
+Lknifunptr_platform_Network243_nw_connection_group_set_new_connection_handler
 .nw_connection_group_set_new_connection_handler
-Hknifunptr_platform_Network248_nw_connection_group_copy_protocol_metadata
+Hknifunptr_platform_Network244_nw_connection_group_copy_protocol_metadata
 *nw_connection_group_copy_protocol_metadata
 nw_establishment_report_t
 &nw_establishment_report_access_block_t
 access_block
-Gknifunptr_platform_Network249_nw_connection_access_establishment_report
+Gknifunptr_platform_Network245_nw_connection_access_establishment_report
 )nw_connection_access_establishment_report
 report
-Oknifunptr_platform_Network250_nw_establishment_report_get_duration_milliseconds
+Oknifunptr_platform_Network246_nw_establishment_report_get_duration_milliseconds
 1nw_establishment_report_get_duration_milliseconds
-\knifunptr_platform_Network251_nw_establishment_report_get_attempt_started_after_milliseconds
+\knifunptr_platform_Network247_nw_establishment_report_get_attempt_started_after_milliseconds
 >nw_establishment_report_get_attempt_started_after_milliseconds
-Pknifunptr_platform_Network252_nw_establishment_report_get_previous_attempt_count
+Pknifunptr_platform_Network248_nw_establishment_report_get_previous_attempt_count
 2nw_establishment_report_get_previous_attempt_count
-Dknifunptr_platform_Network253_nw_establishment_report_get_used_proxy
+Dknifunptr_platform_Network249_nw_establishment_report_get_used_proxy
 &nw_establishment_report_get_used_proxy
-Jknifunptr_platform_Network254_nw_establishment_report_get_proxy_configured
+Jknifunptr_platform_Network250_nw_establishment_report_get_proxy_configured
 ,nw_establishment_report_get_proxy_configured
-Iknifunptr_platform_Network255_nw_establishment_report_copy_proxy_endpoint
+Iknifunptr_platform_Network251_nw_establishment_report_copy_proxy_endpoint
 +nw_establishment_report_copy_proxy_endpoint
 nw_resolution_report_t
 resolution_report
 nw_report_resolution_source_t
-=knifunptr_platform_Network256_nw_resolution_report_get_source
+=knifunptr_platform_Network252_nw_resolution_report_get_source
 nw_resolution_report_get_source
-Cknifunptr_platform_Network257_nw_resolution_report_get_milliseconds
+Cknifunptr_platform_Network253_nw_resolution_report_get_milliseconds
 %nw_resolution_report_get_milliseconds
-Eknifunptr_platform_Network258_nw_resolution_report_get_endpoint_count
+Eknifunptr_platform_Network254_nw_resolution_report_get_endpoint_count
 'nw_resolution_report_get_endpoint_count
-Kknifunptr_platform_Network259_nw_resolution_report_copy_successful_endpoint
+Kknifunptr_platform_Network255_nw_resolution_report_copy_successful_endpoint
 -nw_resolution_report_copy_successful_endpoint
-Jknifunptr_platform_Network260_nw_resolution_report_copy_preferred_endpoint
+Jknifunptr_platform_Network256_nw_resolution_report_copy_preferred_endpoint
 ,nw_resolution_report_copy_preferred_endpoint
 nw_report_resolution_protocol_t
-?knifunptr_platform_Network261_nw_resolution_report_get_protocol
+?knifunptr_platform_Network257_nw_resolution_report_get_protocol
 !nw_resolution_report_get_protocol
 	Function5
 !nw_report_resolution_enumerator_t
-Kknifunptr_platform_Network262_nw_establishment_report_enumerate_resolutions
+Kknifunptr_platform_Network258_nw_establishment_report_enumerate_resolutions
 -nw_establishment_report_enumerate_resolutions
 (nw_report_resolution_report_enumerator_t
-Rknifunptr_platform_Network263_nw_establishment_report_enumerate_resolution_reports
+Rknifunptr_platform_Network259_nw_establishment_report_enumerate_resolution_reports
 4nw_establishment_report_enumerate_resolution_reports
 nw_report_protocol_enumerator_t
-Iknifunptr_platform_Network264_nw_establishment_report_enumerate_protocols
+Iknifunptr_platform_Network260_nw_establishment_report_enumerate_protocols
 +nw_establishment_report_enumerate_protocols
 nw_data_transfer_report_t
-Kknifunptr_platform_Network265_nw_connection_create_new_data_transfer_report
+Kknifunptr_platform_Network261_nw_connection_create_new_data_transfer_report
 -nw_connection_create_new_data_transfer_report
 nw_data_transfer_report_state_t
-?knifunptr_platform_Network266_nw_data_transfer_report_get_state
+?knifunptr_platform_Network262_nw_data_transfer_report_get_state
 !nw_data_transfer_report_get_state
 'nw_data_transfer_report_collect_block_t
 collect_block
-=knifunptr_platform_Network267_nw_data_transfer_report_collect
+=knifunptr_platform_Network263_nw_data_transfer_report_collect
 nw_data_transfer_report_collect
-Oknifunptr_platform_Network268_nw_data_transfer_report_get_duration_milliseconds
+Oknifunptr_platform_Network264_nw_data_transfer_report_get_duration_milliseconds
 1nw_data_transfer_report_get_duration_milliseconds
-Dknifunptr_platform_Network269_nw_data_transfer_report_get_path_count
+Dknifunptr_platform_Network265_nw_data_transfer_report_get_path_count
 &nw_data_transfer_report_get_path_count
 
 path_index
-Rknifunptr_platform_Network270_nw_data_transfer_report_get_received_ip_packet_count
+Rknifunptr_platform_Network266_nw_data_transfer_report_get_received_ip_packet_count
 4nw_data_transfer_report_get_received_ip_packet_count
-Nknifunptr_platform_Network271_nw_data_transfer_report_get_sent_ip_packet_count
+Nknifunptr_platform_Network267_nw_data_transfer_report_get_sent_ip_packet_count
 0nw_data_transfer_report_get_sent_ip_packet_count
-Wknifunptr_platform_Network272_nw_data_transfer_report_get_received_transport_byte_count
+Wknifunptr_platform_Network268_nw_data_transfer_report_get_received_transport_byte_count
 9nw_data_transfer_report_get_received_transport_byte_count
-aknifunptr_platform_Network273_nw_data_transfer_report_get_received_transport_duplicate_byte_count
+aknifunptr_platform_Network269_nw_data_transfer_report_get_received_transport_duplicate_byte_count
 Cnw_data_transfer_report_get_received_transport_duplicate_byte_count
-dknifunptr_platform_Network274_nw_data_transfer_report_get_received_transport_out_of_order_byte_count
+dknifunptr_platform_Network270_nw_data_transfer_report_get_received_transport_out_of_order_byte_count
 Fnw_data_transfer_report_get_received_transport_out_of_order_byte_count
-Sknifunptr_platform_Network275_nw_data_transfer_report_get_sent_transport_byte_count
+Sknifunptr_platform_Network271_nw_data_transfer_report_get_sent_transport_byte_count
 5nw_data_transfer_report_get_sent_transport_byte_count
-aknifunptr_platform_Network276_nw_data_transfer_report_get_sent_transport_retransmitted_byte_count
+aknifunptr_platform_Network272_nw_data_transfer_report_get_sent_transport_retransmitted_byte_count
 Cnw_data_transfer_report_get_sent_transport_retransmitted_byte_count
-]knifunptr_platform_Network277_nw_data_transfer_report_get_transport_smoothed_rtt_milliseconds
+]knifunptr_platform_Network273_nw_data_transfer_report_get_transport_smoothed_rtt_milliseconds
 ?nw_data_transfer_report_get_transport_smoothed_rtt_milliseconds
-\knifunptr_platform_Network278_nw_data_transfer_report_get_transport_minimum_rtt_milliseconds
+\knifunptr_platform_Network274_nw_data_transfer_report_get_transport_minimum_rtt_milliseconds
 >nw_data_transfer_report_get_transport_minimum_rtt_milliseconds
-Pknifunptr_platform_Network279_nw_data_transfer_report_get_transport_rtt_variance
+Pknifunptr_platform_Network275_nw_data_transfer_report_get_transport_rtt_variance
 2nw_data_transfer_report_get_transport_rtt_variance
-Yknifunptr_platform_Network280_nw_data_transfer_report_get_received_application_byte_count
+Yknifunptr_platform_Network276_nw_data_transfer_report_get_received_application_byte_count
 ;nw_data_transfer_report_get_received_application_byte_count
-Uknifunptr_platform_Network281_nw_data_transfer_report_get_sent_application_byte_count
+Uknifunptr_platform_Network277_nw_data_transfer_report_get_sent_application_byte_count
 7nw_data_transfer_report_get_sent_application_byte_count
-Iknifunptr_platform_Network282_nw_data_transfer_report_copy_path_interface
+Iknifunptr_platform_Network278_nw_data_transfer_report_copy_path_interface
 +nw_data_transfer_report_copy_path_interface
 nw_interface_radio_type_t
-Iknifunptr_platform_Network283_nw_data_transfer_report_get_path_radio_type
+Iknifunptr_platform_Network279_nw_data_transfer_report_get_path_radio_type
 +nw_data_transfer_report_get_path_radio_type
 UShort
 uint16_t
@@ -405,17 +394,30 @@ Iknifunptr_platform_Network283_nw_data_transfer_report_get_path_radio_type
 ether_type
 	interface
 nw_ethernet_channel_t
-8knifunptr_platform_Network284_nw_ethernet_channel_create
+8knifunptr_platform_Network280_nw_ethernet_channel_create
 nw_ethernet_channel_create
-Hknifunptr_platform_Network285_nw_ethernet_channel_create_with_parameters
+Hknifunptr_platform_Network281_nw_ethernet_channel_create_with_parameters
 *nw_ethernet_channel_create_with_parameters
 ethernet_channel
 nw_ethernet_channel_state_t
 +nw_ethernet_channel_state_changed_handler_t
-Kknifunptr_platform_Network286_nw_ethernet_channel_set_state_changed_handler
+Kknifunptr_platform_Network282_nw_ethernet_channel_set_state_changed_handler
 -nw_ethernet_channel_set_state_changed_handler
-;knifunptr_platform_Network287_nw_ethernet_channel_set_queue
-nw_ethernet_channel_set_queueÖ
+;knifunptr_platform_Network283_nw_ethernet_channel_set_queue
+nw_ethernet_channel_set_queue
+Jknifunptr_platform_Network284_nw_ethernet_channel_get_maximum_payload_size
+,nw_ethernet_channel_get_maximum_payload_size
+7knifunptr_platform_Network285_nw_ethernet_channel_start
+nw_ethernet_channel_start
+8knifunptr_platform_Network286_nw_ethernet_channel_cancel
+nw_ethernet_channel_cancel
+
+UByteVarOf
+UByte
+UByteVar
+%nw_ethernet_channel_receive_handler_t
+Eknifunptr_platform_Network287_nw_ethernet_channel_set_receive_handler
+'nw_ethernet_channel_set_receive_handlerê
  
  
  
@@ -423,454 +425,520 @@ Kknifunptr_platform_Network286_nw_ethernet_channel_set_state_changed_handler
  
 
  
- 
-	 
+ 
+	 
+
+ 
+ 
 
-
-	
-
-
- 
- 
- 
- 
+
+
+ 
+ 
  
  
- 
- 
- 
- 
-" 
-
-% 
-&
-'
-( 
- )
-* 
-- 
-/ 
-1 
-5 
-9 
-: 
-> 
-? 
-@ 
+ 
+ 
+
+
+  
+ !
+" 
+% 
+' 
+) 
+- 
+1 
+2 
+6 
+7 
+8 
+D 
+F 
+I 
 L 
-N 
-Q 
-T 
-g 
-k 
-p 
-s 
-v 
-w 
-y 
-
-} 
-~ 
-
- 
-á 
-ç 
-ò 
-ú 
-§ 
-¨ 
-≠ 
-∞ 
-µ 
-ƒ 
-« 
-» 
-… 
-— 
-‘ 
-’ 
-„ 
-Î 
+] 
+a 
+f 
+i 
+j 
+l 
+p 
+q 
+r 
+z 
+ {
+0| 
+Ç 
+ç 
+ë 
+ô 
+° 
+¢ 
+• 
+™ 
+0π 
+º 
+Ω 
+æ 
+∆ 
+… 
+  
+ÿ 
+‡ 
+Ì 
+˜ 
 ¯ 
-Ç 
-É 
-à 
-û 
-§ 
-ß 
-≠ 
-Æ 
-ø 
+˝ 
+ì 
+ô 
+ú 
+¢ 
+£ 
+¥ 
+∂ 
 ¡ 
-Ã 
-œ 
-– 
-” 
-÷ 
-Ÿ 
-‹ 
-ﬂ 
-Ç 
-Ö 
-Ü 
-â 
-è 
-ê ò?,0j`2
-0j`Há “
-(0
-0j`2
-0j`Há “
-(L02
-0j`2"
-0j`00j`Há “
-(,!0j`2
-0j`Há “
-( ($02
-0j`Há “
-(#6,00j`2
-0j`Há “
-(+@3
-0j`2.
-0j`20
-0j`Há “
-(288024
-0j`26
-0j` Há “
-(7`=024
-0j`26;2
-0j`
-0j`000!j`"Há “
-(<VC024
-0j`2,A(0j`$
-0j`00#j`%Há “
-(B(E024
-0j`Há “
-(D(G024
-0j`Há “
-(F0I
-0j`24
-0j`Há “
-(H0K
-0j`24
-0j`Há “
-(J,P0j`'2M
-0j`&Há “
-(O,S0j`(2M
-0j`&Há “
-(RLW02M
-0j`&2"U
-0j`00j`)Há “
-(V8Z02M
-0j`&2X
-0j`&Há “
-(Y(\02M
-0j`&Há “
-([(^02M
-0j`&Há “
-(](`02M
-0j`&Há “
-(_(b02M
-0j`&Há “
-(a(d02M
-0j`&Há “
-(c(f02M
-0j`&Há “
-(e4j02M
-0j`&2
-h0j`*Há “
-(i0m
-0j`+2M
-0j`&Há “
-(l0o
-0j`+2M
-0j`&Há “
-(nLr02M
-0j`&2"U
-0j`+00j`,Há “
-(q,u0j`-2M
-0j`&Há “
-(t1{
-0j`02x0.“
-/Há “
-(z<Å0201j`302|
-0j`0Há “
-	(Ä*É02|
-0j`0Há “
-	(Ç3Ü02|
-0j`02Ñ0Há “
-	(Ö.â0j`42|
-0j`0Há “
-	(à7å02|
-0j`02ä0j`4Há “
-	(ã*è052|
-0j`0Há “
-	(é3í02|
-0j`02ê05Há “
-	(ë;ï02|
-0j`02ì
-0j`0Há “
-	(î2ó
-0j`02|
-0j`0Há “
-	(ñ;õ02|
-0j`02ô
-0j`6Há “
-	(öCü
-0j`62|
-0j`02ù
-0j`7Há “
-	(ûU¢02|
-0j`02)†$
-0j`7
-0j`600#Há “
-	(°C¶
-0j`82£
-0j`+20
-0j`Há “
-	(•3©
-0j`+2ß
-0j`8Há “
-	(®3´
-0j`2ß
-0j`8Há “
-	(™YØ02ß
-0j`82,;(0j`9
-0j`00#j`:Há “
-	(ÆG≤02ß
-0j`82;000j`;Há “
-	(±G¥02ß
-0j`82;000j`;Há “
-	(≥O∑02ß
-0j`82";
-0j`&00j`<Há “
-	(∂;π02ß
-0j`826
-0j` Há “
-	(∏+ª02ß
-0j`8Há “
-	(∫+Ω02ß
-0j`8Há “
-	(º+ø02ß
-0j`8Há “
-	(æ+¡02ß
-0j`8Há “
-	(¿+√02ß
-0j`8Há “
-	(¬åÃ02ß
-0j`82≈0j`=2∆0j`=2E @
-0j`?
-0j`00
-0j`00>j`@Há “
-	(ÀrŒ02ß
-0j`82E @
-0j`?
-0j`00
-0j`00>j`@Há “
-	(Õz”02ß
-0j`82œ
-0j`?2|
-0j`02–02# 
-0j`00j`AHá “
-	(“Bÿ02ß
-0j`82÷00Bj`CHá “
-	(◊=⁄0201j`302ß
-0j`8Há “
-	(Ÿ3‹
-0j`&2ß
-0j`8Há “
-	(€Dﬂ
-0j`62ß
-0j`82›
-0j`7Há “
-	(ﬁ/·0j`=2ß
-0j`8Há “
-	(‡3Â
-0j`D2‚
-0j`+Há “
-	(‰3Ë
-0j`D2Ê
-0j`+Há “
-	(Á;Í02.
-0j`D2£
-0j`+Há “
-	(ÈNÌ02.
-0j`D2"U
-0j`+00j`EHá “
-	(Ï<Ò02Ó
-0j`D2Ô
-0j`+Há “
-	(4Ù02Ó
-0j`D2Ú0Há “
-	(Û+ˆ02Ó
-0j`DHá “
-	(ıC˙
-0j`F2˜
-0j`D20
-0j`Há “
-	(˘3˝
-0j`D2˚
-0j`FHá “
-	(¸3ˇ
-0j`2˚
-0j`FHá “
-	(˛;Å02˚
-0j`F26
-0j` Há “
-	(ÄYÖ02˚
-0j`F2,A(0j`G
-0j`00#j`HHá “
-	(Ñzã02˚
-0j`F2Ü0j`=2á027â2
-0j`?
-0j`0000!j`IHá “
-	(ä+ç02˚
-0j`FHá “
-	(å+è02˚
-0j`FHá “
-	(éCë
-0j`+2˚
-0j`F2|
-0j`0Há “
-	(êCì
-0j`+2˚
-0j`F2|
-0j`0Há “
-	(íCï
-0j`&2˚
-0j`F2|
-0j`0Há “
-	(îTó
-0j`62˚
-0j`F2|
-0j`02›
-0j`7Há “
-	(ñCô
-0j`82˚
-0j`F2|
-0j`0Há “
-	(ò^ù02˚
-0j`F2ö
-0j`02õ
-0j`02œ
-0j`?Há “
-	(úU°
-0j`82˚
-0j`F2£
-0j`+2ü
-0j`JHá “
-	(†<£02˚
-0j`F2ß
-0j`8Há “
-	(¢Ç¶02˚
-0j`F2œ
-0j`?2£
-0j`+2|
-0j`02# 
-0j`00j`KHá “
-	(•P™02˚
-0j`F2#®
-0j`800j`LHá “
-	(©D¨
-0j`62˚
-0j`F2›
-0j`7Há “
-	(´`±02ß
-0j`826
-0j` 2#Ø
-0j`M00j`NHá “
-	(∞/¥0j`42≤
-0j`MHá “
-	(≥/∂0j`42≤
-0j`MHá “
-	(µ/∏0j`=2≤
-0j`MHá “
-	(∑+∫02≤
-0j`MHá “
-	(π+º02≤
-0j`MHá “
-	(ª3æ
-0j`+2≤
-0j`MHá “
-	(Ω/√0j`P2¿
-0j`OHá “
-	(¬/≈0j`42¿
-0j`OHá “
-	(ƒ/«0j`=2¿
-0j`OHá “
-	(∆3…
-0j`+2¿
-0j`OHá “
-	(»3À
-0j`+2¿
-0j`OHá “
-	( /Œ0j`Q2¿
-0j`OHá “
-	(Õ{“02≤
-0j`M2NUJ0j`P0j`40j`=
-0j`+
-0j`+00Rj`SHá “
-	(—O’02≤
-0j`M2"U
-0j`O00j`THá “
-	(‘cÿ02≤
-0j`M26U2
-0j`70j`40j`400!j`UHá “
-	(◊3€
-0j`V2ß
-0j`8Há “
-	(⁄/ﬁ0j`W2≤
-0j`VHá “
-	(›`‚02≤
-0j`V26
-0j` 2#‡
-0j`V00j`XHá “
-	(·/‰0j`42≤
-0j`VHá “
-	(„/Ê0j`=2≤
-0j`VHá “
-	(Â<È0j`42≤
-0j`V2Á0j`=Há “
-	(Ë<Î0j`42≤
-0j`V2Á0j`=Há “
-	(Í<Ì0j`42≤
-0j`V2Á0j`=Há “
-	(Ï<Ô0j`42≤
-0j`V2Á0j`=Há “
-	(Ó<Ò0j`42≤
-0j`V2Á0j`=Há “
-	(<Û0j`42≤
-0j`V2Á0j`=Há “
-	(Ú<ı0j`42≤
-0j`V2Á0j`=Há “
-	(Ù<˜0j`42≤
-0j`V2Á0j`=Há “
-	(ˆ<˘0j`42≤
-0j`V2Á0j`=Há “
-	(¯<˚0j`42≤
-0j`V2Á0j`=Há “
-	(˙<˝0j`42≤
-0j`V2Á0j`=Há “
-	(¸<ˇ0j`42≤
-0j`V2Á0j`=Há “
-	(˛@Å
-0j`2≤
-0j`V2Á0j`=Há “
-	(Ä<Ñ0j`Y2≤
-0j`V2Á0j`=Há “
-	(É@ã
-0j`\2á0Zj`[2à
+ƒ 
+≈ 
+» 
+À 
+Œ 
+— 
+‘ 
+˜ 
+˙ 
+0˚ 
+˛ 
+Ñ 
+Ö 
+ê 
+ë 
+í 
+ì Ì?L0
+2
+0j`2"
+0j`00j`	Há “
+(,0j`2
 0j`Há “
-	(äPç
-0j`\2á0Zj`[2à
-0j`20
-0j`Há “
-	(åYí02é
-0j`\2,;(0j`]
-0j`00#j`^Há “
-	(ë;î02é
-0j`\26
-0j` Há “
-	(ìÿ
+((02
+0j`Há “
+(6$00j`2
+0j`Há “
+(#@+
+0j`2&
+0j`2(
+0j`Há “
+(*800
+2,
+0j`2.
+0j`Há “
+(/`50
+2,
+0j`2632
+0j`
+0j`00
+0j`Há “
+(4V;0
+2,
+0j`2,9(0j` 
+0j`0
+0j`!Há “
+(:(=0
+2,
+0j`Há “
+(<(?0
+2,
+0j`Há “
+(>0A
+0j`2,
+0j`Há “
+(@0C
+0j`2,
+0j`Há “
+(B,H0j`#2E
+0j`"Há “
+(G,K0j`$2E
+0j`"Há “
+(JLO0
+2E
+0j`"2"M
+0j`00j`%Há “
+(N8R02E
+0j`"2P
+0j`"Há “
+(Q(T02E
+0j`"Há “
+(S(V02E
+0j`"Há “
+(U(X02E
+0j`"Há “
+(W(Z02E
+0j`"Há “
+(Y(\02E
+0j`"Há “
+([4`02E
+0j`"2
+^0j`&Há “
+(_0c
+0j`'2E
+0j`"Há “
+(b0e
+0j`'2E
+0j`"Há “
+(dLh0
+2E
+0j`"2"M
+0j`'00j`(Há “
+(g1n
+0j`+2k0)“
+*Há “
+(m:t0-0,j`.02o
+0j`+Há “
+(s(v02o
+0j`+Há “
+(u0y0
+2o
+0j`+2w0Há “
+(x,~0/j`12o
+0j`+Há “
+(}6Å0
+2o
+0j`+2
+0/j`1Há “
+	(Ä*Ñ022o
+0j`+Há “
+	(É3á0
+2o
+0j`+2Ö02Há “
+	(Ü;ä0
+2o
+0j`+2à
+0j`+Há “
+	(â2å
+0j`+2o
+0j`+Há “
+	(ã;ê0
+2o
+0j`+2é
+0j`3Há “
+	(èCî
+0j`32o
+0j`+2í
+0j`4Há “
+	(ìUó0
+2o
+0j`+2)ï$
+0j`4
+0j`30
+0Há “
+	(ñCõ
+0j`52ò
+0j`'2(
+0j`Há “
+	(ö3û
+0j`'2ú
+0j`5Há “
+	(ù3†
+0j`2ú
+0j`5Há “
+	(üY§0
+2ú
+0j`52,3(0j`6
+0j`0
+0j`7Há “
+	(£Gß0
+2ú
+0j`52300
+0j`8Há “
+	(¶G©0
+2ú
+0j`52300
+0j`8Há “
+	(®O¨0
+2ú
+0j`52"3
+0j`"0
+0j`9Há “
+	(´;Æ0
+2ú
+0j`52.
+0j`Há “
+	(≠+∞0
+2ú
+0j`5Há “
+	(Ø+≤0
+2ú
+0j`5Há “
+	(±+¥0
+2ú
+0j`5Há “
+	(≥+∂0
+2ú
+0j`5Há “
+	(µ+∏0
+2ú
+0j`5Há “
+	(∑å¡0
+2ú
+0j`52∫0j`:2ª0j`:2Eø@
+0j`<
+0j`+0
+0j`0
+0;j`=Há “
+	(¿r√0
+2ú
+0j`52Eø@
+0j`<
+0j`+0
+0j`0
+0;j`=Há “
+	(¬z»0
+2ú
+0j`52ƒ
+0j`<2o
+0j`+2≈02#ø
+0j`0
+0j`>Há “
+	(«BÕ0
+2ú
+0j`52À0
+0?j`@Há “
+	(Ã=œ0-0,j`.02ú
+0j`5Há “
+	(Œ3—
+0j`"2ú
+0j`5Há “
+	(–D‘
+0j`32ú
+0j`52“
+0j`4Há “
+	(”/÷0j`:2ú
+0j`5Há “
+	(’3⁄
+0j`A2◊
+0j`'Há “
+	(Ÿ3›
+0j`A2€
+0j`'Há “
+	(‹;ﬂ02&
+0j`A2ò
+0j`'Há “
+	(ﬁN‚0
+2&
+0j`A2"M
+0j`'00j`BHá “
+	(·<Ê0
+2„
+0j`A2‰
+0j`'Há “
+	(Â4È0
+2„
+0j`A2Á0Há “
+	(Ë+Î02„
+0j`AHá “
+	(ÍCÔ
+0j`C2Ï
+0j`A2(
+0j`Há “
+	(Ó3Ú
+0j`A2
+0j`CHá “
+	(Ò3Ù
+0j`2
+0j`CHá “
+	(Û;ˆ0
+2
+0j`C2.
+0j`Há “
+	(ıY˙0
+2
+0j`C2,9(0j`D
+0j`0
+0j`EHá “
+	(˘zÄ0
+2
+0j`C2˚0j`:2¸027˛2
+0j`<
+0j`+00
+0j`FHá “
+	(ˇ+Ç0
+2
+0j`CHá “
+	(Å+Ñ0
+2
+0j`CHá “
+	(ÉCÜ
+0j`'2
+0j`C2o
+0j`+Há “
+	(ÖCà
+0j`'2
+0j`C2o
+0j`+Há “
+	(áCä
+0j`"2
+0j`C2o
+0j`+Há “
+	(âTå
+0j`32
+0j`C2o
+0j`+2“
+0j`4Há “
+	(ãCé
+0j`52
+0j`C2o
+0j`+Há “
+	(ç^í0
+2
+0j`C2è
+0j`+2ê
+0j`+2ƒ
+0j`<Há “
+	(ëUñ
+0j`52
+0j`C2ò
+0j`'2î
+0j`GHá “
+	(ï<ò02
+0j`C2ú
+0j`5Há “
+	(óÇõ0
+2
+0j`C2ƒ
+0j`<2ò
+0j`'2o
+0j`+2#ø
+0j`0
+0j`HHá “
+	(öPü0
+2
+0j`C2#ù
+0j`50
+0j`IHá “
+	(ûD°
+0j`32
+0j`C2“
+0j`4Há “
+	(†`¶0
+2ú
+0j`52.
+0j`2#§
+0j`J0
+0j`KHá “
+	(•/©0/j`12ß
+0j`JHá “
+	(®/´0/j`12ß
+0j`JHá “
+	(™/≠0j`:2ß
+0j`JHá “
+	(¨+Ø02ß
+0j`JHá “
+	(Æ+±02ß
+0j`JHá “
+	(∞3≥
+0j`'2ß
+0j`JHá “
+	(≤/∏0j`M2µ
+0j`LHá “
+	(∑/∫0/j`12µ
+0j`LHá “
+	(π/º0j`:2µ
+0j`LHá “
+	(ª3æ
+0j`'2µ
+0j`LHá “
+	(Ω3¿
+0j`'2µ
+0j`LHá “
+	(ø/√0j`N2µ
+0j`LHá “
+	(¬{«0
+2ß
+0j`J2NMJ0j`M0/j`10j`:
+0j`'
+0j`'00Oj`PHá “
+	(∆O 0
+2ß
+0j`J2"M
+0j`L00j`QHá “
+	(…cÕ0
+2ß
+0j`J26M2
+0j`40/j`10/j`100j`RHá “
+	(Ã3–
+0j`S2ú
+0j`5Há “
+	(œ/”0j`T2ß
+0j`SHá “
+	(“`◊0
+2ß
+0j`S2.
+0j`2#’
+0j`S0
+0j`UHá “
+	(÷/Ÿ0/j`12ß
+0j`SHá “
+	(ÿ/€0j`:2ß
+0j`SHá “
+	(⁄<ﬁ0/j`12ß
+0j`S2‹0j`:Há “
+	(›<‡0/j`12ß
+0j`S2‹0j`:Há “
+	(ﬂ<‚0/j`12ß
+0j`S2‹0j`:Há “
+	(·<‰0/j`12ß
+0j`S2‹0j`:Há “
+	(„<Ê0/j`12ß
+0j`S2‹0j`:Há “
+	(Â<Ë0/j`12ß
+0j`S2‹0j`:Há “
+	(Á<Í0/j`12ß
+0j`S2‹0j`:Há “
+	(È<Ï0/j`12ß
+0j`S2‹0j`:Há “
+	(Î<Ó0/j`12ß
+0j`S2‹0j`:Há “
+	(Ì<0/j`12ß
+0j`S2‹0j`:Há “
+	(Ô<Ú0/j`12ß
+0j`S2‹0j`:Há “
+	(Ò<Ù0/j`12ß
+0j`S2‹0j`:Há “
+	(Û@ˆ
+0j`2ß
+0j`S2‹0j`:Há “
+	(ı<˘0j`V2ß
+0j`S2‹0j`:Há “
+	(¯@Ä
+0j`Y2¸0Wj`X2˝
+0j`Há “
+	(ˇPÇ
+0j`Y2¸0Wj`X2˝
+0j`2(
+0j`Há “
+	(ÅYá0
+2É
+0j`Y2,3(0j`Z
+0j`0
+0j`[Há “
+	(Ü;â0
+2É
+0j`Y2.
+0j`Há “
+	(à/ã0j`:2É
+0j`YHá “
+	(ä+ç0
+2É
+0j`YHá “
+	(å+è0
+2É
+0j`YHá “
+	(éâï0
+2É
+0j`Y2\3X
+0j`<0Wj`X0]0\j`^00]0\j`^00
+0;j`_Há “
+	(îÿ
 ‡
  Í
 platform.Network

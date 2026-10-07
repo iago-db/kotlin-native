@@ -1,973 +1,857 @@
 
-µc
+˚I
 kotlin
-ULong
+UShort
 platform
-darwin
-dispatch_block_flags_t
-flags
-UInt
-dispatch_qos_class_t
-	qos_class
-Int
-relative_priority
-	Function0
-Unit
-dispatch_block_t
-block
+posix
+uint16_t
+dnsclass
 kotlinx
 cinterop
-internal
-CCall
-id
-Aknifunptr_platform_darwin280_dispatch_block_create_with_qos_class
-$dispatch_block_create_with_qos_class
-3knifunptr_platform_darwin281_dispatch_block_perform
-dispatch_block_perform
-dispatch_time_t
-timeout
-Long
-posix
-intptr_t
-0knifunptr_platform_darwin282_dispatch_block_wait
-dispatch_block_wait
-NSObject
-dispatch_queue_t
-queue
-notification_block
-2knifunptr_platform_darwin283_dispatch_block_notify
-dispatch_block_notify
-2knifunptr_platform_darwin284_dispatch_block_cancel
-dispatch_block_cancel
-6knifunptr_platform_darwin285_dispatch_block_testcancel
-dispatch_block_testcancel
-
-CValuesRef
-mach_msg_header_t
-msg
-mach_msg_option_t
-option
-mach_msg_size_t
-	send_size
-rcv_size
-mach_port_name_t
-rcv_name
-mach_msg_timeout_t
-notify
-rcv_msg
-	rcv_limit
-mach_msg_return_t
-/knifunptr_platform_darwin286_mach_msg_overwrite
-mach_msg_overwrite
-%knifunptr_platform_darwin287_mach_msg
-mach_msg
-voucher
-kern_return_t
-4knifunptr_platform_darwin288_mach_voucher_deallocate
-mach_voucher_deallocate
 CPointer
-cnames
-structs
-dispatch_source_type_s
-dispatch_source_type_t
-type
-	uintptr_t
-handle
-mask
-dispatch_source_t
-3knifunptr_platform_darwin289_dispatch_source_create
-dispatch_source_create
-source
-handler
->knifunptr_platform_darwin290_dispatch_source_set_event_handler
-!dispatch_source_set_event_handler
-	CFunction
-	Function1
-CPointed
-COpaquePointer
-dispatch_function_t
-@knifunptr_platform_darwin291_dispatch_source_set_event_handler_f
-#dispatch_source_set_event_handler_f
-?knifunptr_platform_darwin292_dispatch_source_set_cancel_handler
-"dispatch_source_set_cancel_handler
-Aknifunptr_platform_darwin293_dispatch_source_set_cancel_handler_f
-$dispatch_source_set_cancel_handler_f
-3knifunptr_platform_darwin294_dispatch_source_cancel
-dispatch_source_cancel
-7knifunptr_platform_darwin295_dispatch_source_testcancel
-dispatch_source_testcancel
-7knifunptr_platform_darwin296_dispatch_source_get_handle
-dispatch_source_get_handle
-5knifunptr_platform_darwin297_dispatch_source_get_mask
-dispatch_source_get_mask
-5knifunptr_platform_darwin298_dispatch_source_get_data
-dispatch_source_get_data
-value
-7knifunptr_platform_darwin299_dispatch_source_merge_data
-dispatch_source_merge_data
-start
-uint64_t
-interval
-leeway
-6knifunptr_platform_darwin300_dispatch_source_set_timer
-dispatch_source_set_timer
-Eknifunptr_platform_darwin301_dispatch_source_set_registration_handler
-(dispatch_source_set_registration_handler
-Gknifunptr_platform_darwin302_dispatch_source_set_registration_handler_f
-*dispatch_source_set_registration_handler_f
-dispatch_group_t
-2knifunptr_platform_darwin303_dispatch_group_create
-dispatch_group_create
-group
-1knifunptr_platform_darwin304_dispatch_group_async
-dispatch_group_async
-context
-work
-3knifunptr_platform_darwin305_dispatch_group_async_f
-dispatch_group_async_f
-0knifunptr_platform_darwin306_dispatch_group_wait
-dispatch_group_wait
-2knifunptr_platform_darwin307_dispatch_group_notify
-dispatch_group_notify
-4knifunptr_platform_darwin308_dispatch_group_notify_f
-dispatch_group_notify_f
-1knifunptr_platform_darwin309_dispatch_group_enter
-dispatch_group_enter
-1knifunptr_platform_darwin310_dispatch_group_leave
-dispatch_group_leave
-dispatch_semaphore_t
-6knifunptr_platform_darwin311_dispatch_semaphore_create
-dispatch_semaphore_create
-dsema
-4knifunptr_platform_darwin312_dispatch_semaphore_wait
-dispatch_semaphore_wait
-6knifunptr_platform_darwin313_dispatch_semaphore_signal
-dispatch_semaphore_signal
-	LongVarOf
-dispatch_once_tVar
-	predicate
-*knifunptr_platform_darwin314_dispatch_once
-dispatch_once
-+knifunptr_platform_darwin315__dispatch_once
-_dispatch_once
-function
-,knifunptr_platform_darwin316_dispatch_once_f
-dispatch_once_f
--knifunptr_platform_darwin317__dispatch_once_f
-_dispatch_once_f
-buffer
-size_t
-size
-
-destructor
-dispatch_data_t
-1knifunptr_platform_darwin318_dispatch_data_create
-dispatch_data_create
-data
-3knifunptr_platform_darwin319_dispatch_data_get_size
-dispatch_data_get_size
-CPointerVarOf
-COpaquePointerVar
-
-buffer_ptr
-
-ULongVarOf
-	size_tVar
-size_ptr
-5knifunptr_platform_darwin320_dispatch_data_create_map
-dispatch_data_create_map
-data1
-data2
-8knifunptr_platform_darwin321_dispatch_data_create_concat
-dispatch_data_create_concat
-offset
-length
-:knifunptr_platform_darwin322_dispatch_data_create_subrange
-dispatch_data_create_subrange
-	Function4
-Boolean
-dispatch_data_applier_t
-applier
-0knifunptr_platform_darwin323_dispatch_data_apply
-dispatch_data_apply
-location
-
-offset_ptr
-6knifunptr_platform_darwin324_dispatch_data_copy_region
-dispatch_data_copy_region
-dispatch_fd_t
-fd
-	Function2
-*knifunptr_platform_darwin325_dispatch_read
-dispatch_read
-+knifunptr_platform_darwin326_dispatch_write
-dispatch_write
-dispatch_io_type_t
-cleanup_handler
-dispatch_io_t
-/knifunptr_platform_darwin327_dispatch_io_create
-dispatch_io_create
-String
-CString
-path
-oflag
-UShort
-mode_t
-mode
-9knifunptr_platform_darwin328_dispatch_io_create_with_path
-dispatch_io_create_with_path
-io
-7knifunptr_platform_darwin329_dispatch_io_create_with_io
-dispatch_io_create_with_io
-channel
-off_t
-	Function3
-dispatch_io_handler_t
-
-io_handler
--knifunptr_platform_darwin330_dispatch_io_read
-dispatch_io_read
-.knifunptr_platform_darwin331_dispatch_io_write
-dispatch_io_write
-dispatch_io_close_flags_t
-.knifunptr_platform_darwin332_dispatch_io_close
-dispatch_io_close
-barrier
-0knifunptr_platform_darwin333_dispatch_io_barrier
-dispatch_io_barrier
-7knifunptr_platform_darwin334_dispatch_io_get_descriptor
-dispatch_io_get_descriptor
-
-high_water
-7knifunptr_platform_darwin335_dispatch_io_set_high_water
-dispatch_io_set_high_water
-	low_water
-6knifunptr_platform_darwin336_dispatch_io_set_low_water
-dispatch_io_set_low_water
-dispatch_io_interval_flags_t
-5knifunptr_platform_darwin337_dispatch_io_set_interval
-dispatch_io_set_interval
-label
-dispatch_workloop_t
-5knifunptr_platform_darwin338_dispatch_workloop_create
-dispatch_workloop_create
->knifunptr_platform_darwin339_dispatch_workloop_create_inactive
-!dispatch_workloop_create_inactive
-workloop
- dispatch_autorelease_frequency_t
-	frequency
-Hknifunptr_platform_darwin340_dispatch_workloop_set_autorelease_frequency
-+dispatch_workloop_set_autorelease_frequency
-OS_os_workgroup
-os_workgroup_t
-	workgroup
-?knifunptr_platform_darwin341_dispatch_workloop_set_os_workgroup
-"dispatch_workloop_set_os_workgroup
-property
-result
-	UIntVarOf
-uint32_tVar
-DNSServiceErrorType
-2knifunptr_platform_darwin342_DNSServiceGetProperty
-DNSServiceGetProperty
-_DNSServiceRef_t
-DNSServiceRef
-sdRef
-dnssd_sock_t
-0knifunptr_platform_darwin343_DNSServiceRefSockFD
-DNSServiceRefSockFD
-4knifunptr_platform_darwin344_DNSServiceProcessResult
-DNSServiceProcessResult
-4knifunptr_platform_darwin345_DNSServiceRefDeallocate
-DNSServiceRefDeallocate
-DNSServiceRefVar
-DNSServiceFlags
-uint32_t
-interfaceIndex
-	Function6
 	ByteVarOf
 Byte
 ByteVar
-DNSServiceDomainEnumReply
-callBack
-7knifunptr_platform_darwin346_DNSServiceEnumerateDomains
-DNSServiceEnumerateDomains
-name
-regtype
-domain
-host
-uint16_t
-port
-txtLen
-	txtRecord
-	Function7
-DNSServiceRegisterReply
-/knifunptr_platform_darwin347_DNSServiceRegister
-DNSServiceRegister
-_DNSRecordRef_t
-DNSRecordRef
-DNSRecordRefVar
-	RecordRef
-rrtype
-rdlen
-rdata
-ttl
-0knifunptr_platform_darwin348_DNSServiceAddRecord
-DNSServiceAddRecord
-	recordRef
-3knifunptr_platform_darwin349_DNSServiceUpdateRecord
-DNSServiceUpdateRecord
-DNSServiceAttribute_s
-DNSServiceAttribute
-DNSServiceAttributeRef
-attr
-@knifunptr_platform_darwin350_DNSServiceUpdateRecordWithAttribute
-#DNSServiceUpdateRecordWithAttribute
-3knifunptr_platform_darwin351_DNSServiceRemoveRecord
-DNSServiceRemoveRecord
-	Function8
-DNSServiceBrowseReply
--knifunptr_platform_darwin352_DNSServiceBrowse
-DNSServiceBrowse
+internal
+CCall
+id
+-knifunptr_platform_darwin407_dns_class_string
+dns_class_string
+String
+CString
+c
 
-Function10
+CValuesRef
+UShortVarOf
+uint16_tVar
+n
+Int
+int32_t
+-knifunptr_platform_darwin408_dns_class_number
+dns_class_number
+dnstype
+,knifunptr_platform_darwin409_dns_type_string
+dns_type_string
+t
+,knifunptr_platform_darwin410_dns_type_number
+dns_type_number
+cnames
+structs
+__dns_handle_private_struct
+darwin
+dns_handle_t
+d
+__sFILE
+FILE
+f
+Unit
+-knifunptr_platform_darwin411_dns_print_handle
+dns_print_handle
+dns_question_t
+q
+/knifunptr_platform_darwin412_dns_print_question
+dns_print_question
+dns_resource_record_t
+r
+6knifunptr_platform_darwin413_dns_print_resource_record
+dns_print_resource_record
+dns_reply_t
+mask
+,knifunptr_platform_darwin414_dns_print_reply
+dns_print_reply
+CPointerVarOf
+CPointed
+COpaquePointer
+COpaquePointerVar
+arg0
+arg1
+&knifunptr_platform_darwin415_backtrace
+	backtrace
+startfp
+array
+size
+.knifunptr_platform_darwin416_backtrace_from_fp
+backtrace_from_fp
+CPointerVar
+.knifunptr_platform_darwin417_backtrace_symbols
+backtrace_symbols
+arg2
+1knifunptr_platform_darwin418_backtrace_symbols_fd
+backtrace_symbols_fd
+image_offset
+image_offsets
+4knifunptr_platform_darwin419_backtrace_image_offsets
+backtrace_image_offsets
+ULong
+size_t
+length
+	UIntVarOf
+UInt
+uint32_tVar
+task_id
+,knifunptr_platform_darwin420_backtrace_async
+backtrace_async
+Long
+arg3
+arg4
+arg5
+#knifunptr_platform_darwin421_fmtmsg
+fmtmsg
+fstab
+%knifunptr_platform_darwin422_getfsent
+getfsent
+&knifunptr_platform_darwin423_getfsspec
+	getfsspec
+&knifunptr_platform_darwin424_getfsfile
+	getfsfile
+%knifunptr_platform_darwin425_setfsent
+setfsent
+%knifunptr_platform_darwin426_endfsent
+endfsent
+	CFunction
+	Function2
+glob_t
+!knifunptr_platform_darwin427_glob
+glob
+#knifunptr_platform_darwin428_glob_b
+glob_b
+%knifunptr_platform_darwin429_globfree
+globfree
+ifaddrs
+'knifunptr_platform_darwin430_getifaddrs
+
+getifaddrs
+(knifunptr_platform_darwin431_freeifaddrs
+freeifaddrs
+ifmaddrs
+(knifunptr_platform_darwin432_getifmaddrs
+getifmaddrs
+)knifunptr_platform_darwin433_freeifmaddrs
+freeifmaddrs
+nl_item
+(knifunptr_platform_darwin434_nl_langinfo
+nl_langinfo
+unw_context_t
++knifunptr_platform_darwin435_unw_getcontext
+unw_getcontext
+unw_cursor_t
++knifunptr_platform_darwin436_unw_init_local
+unw_init_local
+%knifunptr_platform_darwin437_unw_step
+unw_step
+unw_regnum_t
+
+ULongVarOf
+unw_word_tVar
+(knifunptr_platform_darwin438_unw_get_reg
+unw_get_reg
+DoubleVarOf
+Double
+unw_fpreg_tVar
+*knifunptr_platform_darwin439_unw_get_fpreg
+unw_get_fpreg
+
+unw_word_t
+(knifunptr_platform_darwin440_unw_set_reg
+unw_set_reg
+unw_fpreg_t
+*knifunptr_platform_darwin441_unw_set_fpreg
+unw_set_fpreg
+'knifunptr_platform_darwin442_unw_resume
+
+unw_resume
+(knifunptr_platform_darwin443_unw_regname
+unw_regname
+unw_proc_info_t
+.knifunptr_platform_darwin444_unw_get_proc_info
+unw_get_proc_info
+)knifunptr_platform_darwin445_unw_is_fpreg
+unw_is_fpreg
+0knifunptr_platform_darwin446_unw_is_signal_frame
+unw_is_signal_frame
+.knifunptr_platform_darwin447_unw_get_proc_name
+unw_get_proc_name
+uid_t
+uid
 
 UByteVarOf
 UByte
 UByteVar
-DNSServiceResolveReply
-.knifunptr_platform_darwin353_DNSServiceResolve
-DNSServiceResolve
-fullname
-rrclass
+uuid_t
+uu
+,knifunptr_platform_darwin448_mbr_uid_to_uuid
+mbr_uid_to_uuid
+gid_t
+gid
+,knifunptr_platform_darwin449_mbr_gid_to_uuid
+mbr_gid_to_uuid
+nt_sid_t
+sid
+,knifunptr_platform_darwin450_mbr_sid_to_uuid
+mbr_sid_to_uuid
+id_type
 
-Function11
-DNSServiceQueryRecordReply
-2knifunptr_platform_darwin354_DNSServiceQueryRecord
-DNSServiceQueryRecord
-DNSServiceProtocol
-protocol
-hostname
-sockaddr
-DNSServiceGetAddrInfoReply
-2knifunptr_platform_darwin355_DNSServiceGetAddrInfo
-DNSServiceGetAddrInfo
-7knifunptr_platform_darwin356_DNSServiceCreateConnection
-DNSServiceCreateConnection
-	Function5
-DNSServiceRegisterRecordReply
-5knifunptr_platform_darwin357_DNSServiceRegisterRecord
-DNSServiceRegisterRecord
-6knifunptr_platform_darwin358_DNSServiceReconfirmRecord
-DNSServiceReconfirmRecord
-2knifunptr_platform_darwin359_PeerConnectionRelease
-PeerConnectionRelease
-internalPort
-externalPort
-DNSServiceNATPortMappingReply
-;knifunptr_platform_darwin360_DNSServiceNATPortMappingCreate
-DNSServiceNATPortMappingCreate
-fullName
-service
-8knifunptr_platform_darwin361_DNSServiceConstructFullName
-DNSServiceConstructFullName
-_TXTRecordRef_t
-TXTRecordRef
-	bufferLen
-,knifunptr_platform_darwin362_TXTRecordCreate
-TXTRecordCreate
-0knifunptr_platform_darwin363_TXTRecordDeallocate
-TXTRecordDeallocate
-key
-uint8_t
-	valueSize
-.knifunptr_platform_darwin364_TXTRecordSetValue
-TXTRecordSetValue
-1knifunptr_platform_darwin365_TXTRecordRemoveValue
-TXTRecordRemoveValue
-/knifunptr_platform_darwin366_TXTRecordGetLength
-TXTRecordGetLength
-1knifunptr_platform_darwin367_TXTRecordGetBytesPtr
-TXTRecordGetBytesPtr
-1knifunptr_platform_darwin368_TXTRecordContainsKey
-TXTRecordContainsKey
+identifier
+identifier_size
+3knifunptr_platform_darwin451_mbr_identifier_to_uuid
+mbr_identifier_to_uuid
+id_tVar
 
-uint8_tVar
-valueLen
-1knifunptr_platform_darwin369_TXTRecordGetValuePtr
-TXTRecordGetValuePtr
-.knifunptr_platform_darwin370_TXTRecordGetCount
-TXTRecordGetCount
-	itemIndex
-	keyBufLen
-4knifunptr_platform_darwin371_TXTRecordGetItemAtIndex
-TXTRecordGetItemAtIndex
-7knifunptr_platform_darwin372_DNSServiceSetDispatchQueue
-DNSServiceSetDispatchQueue
-DNSServiceSleepKeepaliveReply
-5knifunptr_platform_darwin373_DNSServiceSleepKeepalive
-DNSServiceSleepKeepalive
-6knifunptr_platform_darwin374_DNSServiceAttributeCreate
-DNSServiceAttributeCreate
-DNSServiceAAAAPolicy
-policy
-=knifunptr_platform_darwin375_DNSServiceAttributeSetAAAAPolicy
- DNSServiceAttributeSetAAAAPolicy
-	timestamp
-<knifunptr_platform_darwin376_DNSServiceAttributeSetTimestamp
-DNSServiceAttributeSetTimestamp
-hostkeyhash
->knifunptr_platform_darwin377_DNSServiceAttributeSetHostKeyHash
-!DNSServiceAttributeSetHostKeyHash
-:knifunptr_platform_darwin378_DNSServiceAttributeDeallocate
-DNSServiceAttributeDeallocate
-ifindex
-callback
-?knifunptr_platform_darwin379_DNSServiceQueryRecordWithAttribute
-"DNSServiceQueryRecordWithAttribute
-portInNetworkByteOrder
-<knifunptr_platform_darwin380_DNSServiceRegisterWithAttribute
-DNSServiceRegisterWithAttribute
-Bknifunptr_platform_darwin381_DNSServiceRegisterRecordWithAttribute
-%DNSServiceRegisterRecordWithAttribute
-9knifunptr_platform_darwin382_DNSServiceSendQueuedRequests
-DNSServiceSendQueuedRequests
-arg0
-	in_addr_t
-&knifunptr_platform_darwin383_inet_addr
-	inet_addr
+uid_or_gid
+IntVarOf
+IntVar
++knifunptr_platform_darwin452_mbr_uuid_to_id
+mbr_uuid_to_id
+,knifunptr_platform_darwin453_mbr_uuid_to_sid
+mbr_uuid_to_sid
+string
+.knifunptr_platform_darwin454_mbr_sid_to_string
+mbr_sid_to_string
+.knifunptr_platform_darwin455_mbr_string_to_sid
+mbr_string_to_sid
+user
+group
+ismember
+1knifunptr_platform_darwin456_mbr_check_membership
+mbr_check_membership
+servicename
+9knifunptr_platform_darwin457_mbr_check_service_membership
+mbr_check_service_membership
+Array
+Any
+variadicArguments
+ssize_t
+$knifunptr_platform_darwin458_strfmon
+strfmon
+pgno_t
+MPOOL
+'knifunptr_platform_darwin459_mpool_open
+
+mpool_open
+	Function3
+)knifunptr_platform_darwin460_mpool_filter
+mpool_filter
+	pgno_tVar
+&knifunptr_platform_darwin461_mpool_new
+	mpool_new
+&knifunptr_platform_darwin462_mpool_get
+	mpool_get
+&knifunptr_platform_darwin463_mpool_put
+	mpool_put
+'knifunptr_platform_darwin464_mpool_sync
+
+mpool_sync
+(knifunptr_platform_darwin465_mpool_close
+mpool_close
+DBM
+)knifunptr_platform_darwin466_dbm_clearerr
+dbm_clearerr
+&knifunptr_platform_darwin467_dbm_close
+	dbm_close
 CValue
-in_addr
-&knifunptr_platform_darwin384_inet_ntoa
-	inet_ntoa
-arg1
-arg2
-	socklen_t
+datum
+'knifunptr_platform_darwin468_dbm_delete
+
+dbm_delete
+'knifunptr_platform_darwin469_dbm_dirfno
+
+dbm_dirfno
+&knifunptr_platform_darwin470_dbm_error
+	dbm_error
+&knifunptr_platform_darwin471_dbm_fetch
+	dbm_fetch
+)knifunptr_platform_darwin472_dbm_firstkey
+dbm_firstkey
+(knifunptr_platform_darwin473_dbm_nextkey
+dbm_nextkey
+mode_t
+%knifunptr_platform_darwin474_dbm_open
+dbm_open
+&knifunptr_platform_darwin475_dbm_store
+	dbm_store
+
+__nl_cat_d
+nl_catd
+$knifunptr_platform_darwin476_catopen
+catopen
+$knifunptr_platform_darwin477_catgets
+catgets
+%knifunptr_platform_darwin478_catclose
+catclose
+name
+uint32_t
+(knifunptr_platform_darwin479_notify_post
+notify_post
+	out_token
+NSObject
+dispatch_queue_t
+queue
+	Function1
+notify_handler_t
+handler
+5knifunptr_platform_darwin480_notify_register_dispatch
+notify_register_dispatch
+2knifunptr_platform_darwin481_notify_register_check
+notify_register_check
+sig
+3knifunptr_platform_darwin482_notify_register_signal
+notify_register_signal
+mach_port_tVar
+notify_port
+flags
+6knifunptr_platform_darwin483_notify_register_mach_port
+notify_register_mach_port
+	notify_fd
+<knifunptr_platform_darwin484_notify_register_file_descriptor
+notify_register_file_descriptor
+token
+check
+)knifunptr_platform_darwin485_notify_check
+notify_check
+*knifunptr_platform_darwin486_notify_cancel
+notify_cancel
++knifunptr_platform_darwin487_notify_suspend
+notify_suspend
+*knifunptr_platform_darwin488_notify_resume
+notify_resume
+uint64_t
+state64
+-knifunptr_platform_darwin489_notify_set_state
+notify_set_state
+uint64_tVar
+-knifunptr_platform_darwin490_notify_get_state
+notify_get_state
+val
+Boolean
+2knifunptr_platform_darwin491_notify_is_valid_token
+notify_is_valid_token
+_xlocale
+locale_t
+*knifunptr_platform_darwin492_nl_langinfo_l
+nl_langinfo_l
+&knifunptr_platform_darwin493_strfmon_l
+	strfmon_l
+_printf_domain
+printf_domain_t
+__domain
+/knifunptr_platform_darwin494_copy_printf_domain
+copy_printf_domain
+/knifunptr_platform_darwin495_free_printf_domain
+free_printf_domain
+.knifunptr_platform_darwin496_new_printf_domain
+new_printf_domain
+__spec
+printf_info
+printf_function
+__render
+printf_arginfo_function
+	__arginfo
+	__context
+<knifunptr_platform_darwin497_register_printf_domain_function
+register_printf_domain_function
+__specs
+>knifunptr_platform_darwin498_register_printf_domain_render_std
+!register_printf_domain_render_std
+__ret
+__loc
+__format
+&knifunptr_platform_darwin499_asxprintf
+	asxprintf
+__fd
+%knifunptr_platform_darwin500_dxprintf
+dxprintf
+__stream
+%knifunptr_platform_darwin501_fxprintf
+fxprintf
+__str
 __size
-&knifunptr_platform_darwin385_inet_ntop
-	inet_ntop
-&knifunptr_platform_darwin386_inet_pton
-	inet_pton
-'knifunptr_platform_darwin387_ascii2addr
+%knifunptr_platform_darwin502_sxprintf
+sxprintf
+$knifunptr_platform_darwin503_xprintf
+xprintf
+__va_list_tag
+va_list
+__ap
+'knifunptr_platform_darwin504_vasxprintf
 
-ascii2addr
-arg3
-'knifunptr_platform_darwin388_addr2ascii
+vasxprintf
+&knifunptr_platform_darwin505_vdxprintf
+	vdxprintf
+&knifunptr_platform_darwin506_vfxprintf
+	vfxprintf
+&knifunptr_platform_darwin507_vsxprintf
+	vsxprintf
+%knifunptr_platform_darwin508_vxprintf
+vxprintf
+_printf_compiled
+printf_comp_t
+__pc
+-knifunptr_platform_darwin509_free_printf_comp
+free_printf_comp
+__fmt
+,knifunptr_platform_darwin510_new_printf_comp
+new_printf_comp
++knifunptr_platform_darwin511_asxprintf_exec
+asxprintf_exec
+*knifunptr_platform_darwin512_dxprintf_exec
+dxprintf_exec
+*knifunptr_platform_darwin513_fxprintf_exec
+fxprintf_exec
+*knifunptr_platform_darwin514_sxprintf_exec
+sxprintf_exec
+)knifunptr_platform_darwin515_xprintf_exec
+xprintf_exec
+,knifunptr_platform_darwin516_vasxprintf_exec
+vasxprintf_exec
++knifunptr_platform_darwin517_vdxprintf_exec
+vdxprintf_exec
++knifunptr_platform_darwin518_vfxprintf_exec
+vfxprintf_exec
++knifunptr_platform_darwin519_vsxprintf_exec
+vsxprintf_exec
+*knifunptr_platform_darwin520_vxprintf_exec
+vxprintf_exec
++knifunptr_platform_darwin521_readpassphrase
+readpassphrase
+_removefile_state
+removefile_state_t
+3knifunptr_platform_darwin522_removefile_state_alloc
+removefile_state_alloc
+2knifunptr_platform_darwin523_removefile_state_free
+removefile_state_free
+state
+key
+dst
+1knifunptr_platform_darwin524_removefile_state_get
+removefile_state_get
+value
+1knifunptr_platform_darwin525_removefile_state_set
+removefile_state_set
+path
+removefile_flags_t
+'knifunptr_platform_darwin526_removefile
 
-addr2ascii
-&knifunptr_platform_darwin389_inet_aton
-	inet_aton
-'knifunptr_platform_darwin390_inet_lnaof
+removefile
+fd
+)knifunptr_platform_darwin527_removefileat
+removefileat
+.knifunptr_platform_darwin528_removefile_cancel
+removefile_cancel
+profile
+errorbuf
+)knifunptr_platform_darwin529_sandbox_init
+sandbox_init
+/knifunptr_platform_darwin530_sandbox_free_error
+sandbox_free_error
+_stringlist
 
-inet_lnaof
-*knifunptr_platform_darwin391_inet_makeaddr
-inet_makeaddr
-'knifunptr_platform_darwin392_inet_netof
-
-inet_netof
-)knifunptr_platform_darwin393_inet_network
-inet_network
-__darwin_size_t
-*knifunptr_platform_darwin394_inet_net_ntop
-inet_net_ntop
-*knifunptr_platform_darwin395_inet_net_pton
-inet_net_pton
-&knifunptr_platform_darwin396_inet_neta
-	inet_neta
-__maxlen
-+knifunptr_platform_darwin397_inet_nsap_addr
-inet_nsap_addr
-__binlen
-+knifunptr_platform_darwin398_inet_nsap_ntoa
-inet_nsap_ntoa
-__dns_handle_private_struct
-dns_handle_t
-dns
-dnsclass
-dnstype
-dns_reply_t
-'knifunptr_platform_darwin399_dns_lookup
-
-dns_lookup
-d
-0knifunptr_platform_darwin400_dns_get_buffer_size
-dns_get_buffer_size
-len
-0knifunptr_platform_darwin401_dns_set_buffer_size
-dns_set_buffer_size
-buf
--knifunptr_platform_darwin402_dns_parse_packet
-dns_parse_packet
-r
-+knifunptr_platform_darwin403_dns_free_reply
-dns_free_reply
-dns_question_t
-/knifunptr_platform_darwin404_dns_parse_question
-dns_parse_question
-q
-.knifunptr_platform_darwin405_dns_free_question
-dns_free_question
-dns_resource_record_t
-6knifunptr_platform_darwin406_dns_parse_resource_record
-dns_parse_resource_record
-rr
-5knifunptr_platform_darwin407_dns_free_resource_record
-dns_free_resource_record©
+StringList
+$knifunptr_platform_darwin531_sl_init
+sl_init
+#knifunptr_platform_darwin532_sl_add
+sl_add
+$knifunptr_platform_darwin533_sl_free
+sl_free
+$knifunptr_platform_darwin534_sl_find
+sl_findâ
  
   
 
 
  
-  
- 
- 	 
-  
-  
- 
-
-
-
- 
- 
-  
-
- 
- 
-  
-) 
-* 
-, 
-. 
-1 
-3 
-7 
-= 
-@ 
-A
-B
-C 
-D 
-F 
-I 
-P 
+
+
+ 
+	 
+ 
+ 
+ 
+
+ 
+  
+ 
+ 
+ 
+ 
+  
+ 
+"
+#
+$ 
+%
+& 
+( 
+) 
+ + 
+. 
+2 
+6 
+: 
+; 
+< 
+= 
+G 
+M 
  Q 
-R 
-S 
-T 
-i 
-r 
-Ü 
-é 
-è 
-õ 
-û 
-§ 
-• 
-ß 
-® 
- ¥ 
- µ 
-∂ 
-æ 
- ¿ 
-≈ 
-« 
-   
-À 
- Œ 
-œ 
-◊ 
- ÿ 
-Ÿ 
-ﬂ 
-Ì 
-Ò 
-˜ 
-˚ 
+R 
+T 
+ U 
+V 
+ Z 
+` 
+k 
+ l 
+m 
+t 
+y 
+~ 
+Å 
+Ñ 
+â 
+ä 
+ã 
+é 
+ è 
+ê 
+ì 
+ñ 
+ù 
+¶ 
+® 
+ © 
+™ 
+´ 
+Ø 
+≥ 
+º 
+æ 
+ø 
+ — 
+ “ 
+‘ 
+◊ 
+ÿ 
+ € 
+ﬁ 
+È 
+Ó 
+Ô 
 ¸ 
-Ç 
-É 
-Ñ 
-á 
-à 
+Å 
+Ç 
 ä 
-ë 
-í 
-ì 
- ï 
-ñ 
- ó 
-ò 
-ô 
-° 
- • 
-¶ 
-© 
-™ 
-´ 
-∂ 
-∑ 
-∏ 
- æ 
-ø 
- ¬ 
-√ 
- ƒ 
-≈ 
-∆ 
- À 
-Ã 
-œ 
-“ 
-” 
- ÿ 
-Ÿ 
-‚ 
-È 
-Í 
-Ò 
-˝ 
-â 
-é 
-¶ 
-© 
-™ 
-Ø 
-ƒ 
-— 
-“ 
-÷ 
-Â 
-Î ›f\0	0j`
-2
-0j`2
-0j`2
-020	0j`
-Há “
-(:0	2
-0j`20	0j`
-Há “
-(>0j`20	0j`
-2
-0j`Há “
-(T$0	20	0j`
-2!
-0j`2"0	0j`
-Há “
-(#.&0	20	0j`
-Há “
-(%2(0j`20	0j`
-Há “
-('ê90j`2+
-002
--0j`2
-/0j`2
-00j`2
-20j`2
-0j`2
-40j`25
-002
-60j`Há “
-(8t;0j`2+
-002
--0j`2
-/0j`2
-00j`2
-20j`2
-0j`2
-40j`Há “
-(:(?0j`2
-<0j`Há “
-(>^K
-0j`#2E0 0j`!2
-G0j`"2
-H0j`"2!
-0j`Há “
-(J>O0	2L
-0j`#2M0	0j`
-Há “
-(N`V0	2L
-0j`#26M2&$ 0&0j`'0	0%0$0j`(Há “
-(U>X0	2L
-0j`#2M0	0j`
-Há “
-(W`Z0	2L
-0j`#26M2&$ 0&0j`'0	0%0$0j`(Há “
-(Y(\0	2L
-0j`#Há “
-([,^0j`2L
-0j`#Há “
-(],`0j`"2L
-0j`#Há “
-(_,b0j`"2L
-0j`#Há “
-(a,d0j`"2L
-0j`#Há “
-(c4g0	2L
-0j`#2
-e0j`"Há “
-(fLm0	2L
-0j`#2
-h0j`2
-j0j`)2
-k0j`)Há “
-(l>o0	2L
-0j`#2M0	0j`
-Há “
-(n`q0	2L
-0j`#26M2&$ 0&0j`'0	0%0$0j`(Há “
-(p t
-0j`*Há “
-(sNw0	2u
-0j`*2!
-0j`20	0j`
-Há “
-(v~{0	2u
-0j`*2!
-0j`2x026y2&$ 0&0j`'0	0%0$0j`(Há “
-(z8}0j`2u
-0j`*2
-0j`Há “
-(|N0	2u
-0j`*2!
-0j`20	0j`
-Há “
-(~ÄÅ0	2u
-0j`*2!
-0j`2x026y2&$ 0&0j`'0	0%0$0j`(Há “
-	(Ä*É0	2u
-0j`*Há “
-	(Ç*Ö0	2u
-0j`*Há “
-	(Ñ.à
-0j`+2
-e0j`Há “
-	(á;ã0j`2â
-0j`+2
-0j`Há “
-	(ä/ç0j`2â
-0j`+Há “
-	(åKí0	2ê00,j`-020	0j`
-Há “
-	(ëKî0	2ê00,j`-020	0j`
-Há “
-	(ì|ó0	2ê00,j`-02x027ï2&$ 0&0j`'0	0%0$0j`(Há “
-	(ñ|ô0	2ê00,j`-02x027ï2&$ 0&0j`'0	0%0$0j`(Há “
-	(òe†
-0j`/2ö02ú0j`.2!
-0j`2ù0	0j`
-Há “
-	(ü/£0j`.2°
-0j`/Há “
-	(¢u´
-0j`/2°
-0j`/2%¶ 0&0j`'00j`102©002j`30Há “
-	(™DØ
-0j`/2¨
-0j`/2≠
-0j`/Há “
-	(ÆM≥
-0j`/2°
-0j`/2∞0j`.2±0j`.Há “
-	(≤zπ052°
-0j`/2M∑H
-0j`/0j`.0&0j`'0j`.0504j`6Há “
-	(∏[Ω
-0j`/2°
-0j`/2∫0j`.2ª002j`30Há “
-	(ºf¬0	2ø0j`72±0j`.2!
-0j`2 M
-0j`/00	08Há “
-	(¡jƒ0	2ø0j`72°
-0j`/2!
-0j`2 M
-0j`/00	08Há “
-	(√`…
-0j`:2
-E0j`92ø0j`72!
-0j`2∆00	0%Há “
-	(»{“
-0j`:2
-E0j`92Ã0;“
-<2Õ02–0=j`>2!
-0j`2∆00	0%Há “
-	(—d’
-0j`:2
-E0j`92”
-0j`:2!
-0j`2∆00	0%Há “
-	(‘Ü‹0	2÷
-0j`:2∞0j`?2±0j`.2!
-0j`2/⁄*05
-0j`/00	0@j`AHá “
-	(€äﬁ0	2÷
-0j`:2∞0j`?2°
-0j`/2!
-0j`2/⁄*05
-0j`/00	0@j`AHá “
-	(›7·0	2÷
-0j`:2
-0j`BHá “
-	(‡B‰0	2÷
-0j`:2‚0	0j`
-Há “
-	(„/Ê0j`72÷
-0j`:Há “
-	(Â8È0	2÷
-0j`:2Á0j`.Há “
-	(Ë8Ï0	2÷
-0j`:2Í0j`.Há “
-	(ÎCÔ0	2÷
-0j`:2
-j0j`)2
-0j`CHá “
-	(Ó4Û
-0j`D20;“
-<Há “
-	(Ú4ı
-0j`D20;“
-<Há “
-	(Ù8˙0	2ˆ
-0j`D2¯0j`EHá “
-	(˘<ˇ0	2ˆ
-0j`D2˝
-0Fj`GHá “
-	(˛ZÜ0j`J2Ä0;“
-<2Å02ú00Hj`I0Há “
-	(Ö5å0j`M2â0K0j`LHá “
-	(ã5é0j`J2â0K0j`LHá “
-	(ç1ê0	2â0K0j`LHá “
-	(èÓú0j`J2#â0K0j`L00j`N02
-0j`O2î0j`P2Åö|pnjh0K0j`L0j`O0j`P0j`J0S0Rj`T00&0j`'0	0Q0$0j`U2x0Há “
-	(õä®0j`J2#â0K0j`L00j`N02
-0j`O2î0j`P2ù0;“
-<2û0;“
-<2ü0;“
-<2†0;“
-<2¢0=j`V2£0=j`V2§02¨ö¶ôñëé0K0j`L0j`O0j`J0S0Rj`T00S0Rj`T00S0Rj`T00&0j`'0	0W0$0j`X2x0Há “
-	(ßú≤0j`J2â0K0j`L2#¨0Y0j`Z00j`[02
-0j`O2≠0=j`V2Æ0=j`V2Ø02∞0j`PHá “
-	(±Åµ0j`J2â0K0j`L2≥0Y0j`Z2
-0j`O2Æ0=j`V2Ø02∞0j`PHá “
-	(¥úª0j`J2â0K0j`L2≥0Y0j`Z2
-0j`O2Æ0=j`V2Ø02∞0j`P2π0\j`]0j`^Há “
-	(∫XΩ0j`J2â0K0j`L2¨0Y0j`Z2
-0j`OHá “
-	(º«¡0j`J2#â0K0j`L00j`N02
-0j`O2î0j`P2û0;“
-<2ü0;“
-<2∂ö∞£†õò0K0j`L0j`O0j`P0j`J0S0Rj`T00S0Rj`T00S0Rj`T00&0j`'0	0_0$0j``2x0Há “
-	(¿Ì»0j`J2#â0K0j`L00j`N02
-0j`O2î0j`P2ù0;“
-<2û0;“
-<2ü0;“
-<2 öƒ∑¥Ø¨0K0j`L0j`O0j`P0j`J0S0Rj`T00S0Rj`T00=j`V0=j`V0c0bj`d00&0j`'0	0a0$0j`e2x0Há “
-	(«›Œ0j`J2#â0K0j`L00j`N02
-0j`O2î0j`P2…0;“
-<2≠0=j`V2 0=j`V2ƒöæ±Æ©¶0K0j`L0j`O0j`P0j`J0S0Rj`T00=j`V0=j`V0=j`V0&0j`'0j`P0&0j`'0	0f0$0j`g2x0Há “
-	(Õ™’0j`J2#â0K0j`L00j`N02
-0j`O2î0j`P2–0j`h2—0;“
-<2ûöòãàÉÄ0K0j`L0j`O0j`P0j`J0S0Rj`T0
-0i00j`P0&0j`'0	0_0$0j`j2x0Há “
-	(‘C◊0j`J2#â0K0j`L00j`N0Há “
-	(÷À€0j`J2â0K0j`L2#¨0Y0j`Z00j`[02
-0j`O2î0j`P2…0;“
-<2≠0=j`V2 0=j`V2Æ0=j`V2Ø02∞0j`P2sönb`\Z0K0j`L0Y0j`Z0j`O0j`J0&0j`'0	0k0$0j`l2x0Há “
-	(⁄›0j`J2
-0j`O2î0j`P2…0;“
-<2≠0=j`V2 0=j`V2Æ0=j`V2Ø0Há “
-	(‹`ﬂ0j`J2
-0j`O2ù0;“
-<2û0;“
-<2ü0;“
-<Há “
-	(ﬁ¡‰0j`J2#â0K0j`L00j`N02
-0j`O2î0j`P2–0j`h2‡0=j`V2·0=j`V2∞0j`P2†ööçäÖÇ0K0j`L0j`O0j`P0j`J0j`P0j`h0=j`V0=j`V0j`P0&0j`'0	0a0$0j`m2x0Há “
-	(„oË0j`J2Â0S0Rj`T02Ê0;“
-<2û0;“
-<2ü0;“
-<Há “
-	(ÁKÌ0	2§0nj`o02Î0=j`V2ö0Há “
-	(Ï/Ô0	2§0nj`o0Há “
-	(Ó`Ù0j`J2§0nj`o020;“
-<2Ú0cj`p2e0Há “
-	(ÛEˆ0j`J2§0nj`o020;“
-<Há “
-	(ı3¯0=j`V2§0nj`o0Há “
-	(˜?˙0&0j`'2§0nj`o0Há “
-	(˘H¸02£0=j`V2§020;“
-<Há “
-	(˚sÄ0&0j`'2£0=j`V2§020;“
-<2˛0c0bj`q0Há “
-	(ˇ:Ç0=j`V2£0=j`V2§0Há “
-	(Å∞Ü0j`J2£0=j`V2§02É0=j`V2Ñ0=j`V20S0Rj`T02˛0c0bj`q02$e 0&0j`'00j`10Há “
-	(ÖEà0j`J2Ê0K0j`L2!
-0j`Há “
-	(á≈ã0j`J2#â0K0j`L00j`N02
-0j`O2ø0202UöPDB><0K0j`L0j`J0&0j`'0	0@0$0j`r2x0Há “
-	(ä,ç0\j`]0j`^Há “
-	(åFë0j`J2π0\j`]0j`^2è0j`sHá “
-	(êFî0j`J2π0\j`]0j`^2í0j`PHá “
-	(ìFó0j`J2π0\j`]0j`^2ï0j`PHá “
-	(ñ5ô0	2π0\j`]0j`^Há “
-	(òÚù0j`J2#â0K0j`L00j`N02
-0j`O2ö0j`P2ù0;“
-<2≠0=j`V2 0=j`V2π0\j`]02ƒõæ±Æ©¶0K0j`L0j`O0j`P0j`J0S0Rj`T00=j`V0=j`V0=j`V0&0j`'0j`P0&0j`'0	0f0$0j`g2x0Há “
-	(ú•†0j`J2#â0K0j`L00j`N02
-0j`O2î0j`P2ù0;“
-<2û0;“
-<2ü0;“
-<2†0;“
-<2û0=j`V2£0=j`V2§02π0\j`]0j`^2¨ö¶ôñëé0K0j`L0j`O0j`J0S0Rj`T00S0Rj`T00S0Rj`T00&0j`'0	0W0$0j`X2x0Há “
-	(üÊ¢0j`J2â0K0j`L2#≥0Y0j`Z00j`[02
-0j`O2î0j`P2…0;“
-<2≠0=j`V2 0=j`V2Æ0=j`V2Ø02∞0j`P2π0\j`]0j`^2sönb`\Z0K0j`L0Y0j`Z0j`O0j`J0&0j`'0	0k0$0j`l2x0Há “
-	(°5§0j`J2â0K0j`LHá “
-	(£1®0j`t2•0;“
-<Há†“
-	(ß<¨0S0Rj`T02•0v0uHá†“
-	(´m≤0S0Rj`T02•02≠02Æ0S0Rj`T02∞0j`wHá†“
-	(±E¥02•02≠0;“
-<2Æ0Há†“
-	(≥E∂02•02≠0;“
-<2Æ0Há†“
-	(µiπ0S0Rj`T02•02≠02∞02∑0S0Rj`T0Há†“
-	(∏>ª02•0;“
-<2≠
-0v0Há†“
-	(∫.Ω0j`t2•0v0uHá†“
-	(º;ø0v0u2•0j`t2≠0j`tHá†“
-	(æ.¡0j`t2•0v0uHá†“
-	(¿1√0j`t2•0;“
-<Há†“
-	(¬v∆0S0Rj`T02•02≠02Æ02∑0S0Rj`T02∞0j`xHá†“
-	(≈R»02•02≠0;“
-<2Æ02∞0j`xHá†“
-	(«b 0S0Rj`T02•0j`t2≠0S0Rj`T02∞0j`xHá†“
-	(…QÕ02•0;“
-<2≠0c0bj`d02À0Há†“
-	(Ãl–0S0Rj`T02Œ02≠0c0bj`d02Æ0S0Rj`T0Há†“
-	(œeÿ
-0{02”0y0j`z2ù0;“
-<2‘0j`P2’0j`PHá “
-	(◊5€0j`P2Ÿ0y0j`zHá “
-	(⁄>ﬁ0	2Ÿ0y0j`z2‹0j`PHá “
-	(›A·
-0{02ﬂ0;“
-<2‹0j`PHá “
-	(‡+‰0	2‚
-0{0Há “
-	(„AÁ
-0|02ﬂ0;“
-<2‹0j`PHá “
-	(Ê+Í0	2Ë
-0|0Há “
-	(ÈAÌ
-0}02ﬂ0;“
-<2‹0j`PHá “
-	(Ï+0	2Ó
-0}0Há “
-	(Ôÿ
-‡
+é 
+è 
+ ë 
+í 
+õ 
+≠ 
+± 
+ µ 
+∏ 
+π 
+æ 
+ø 
+» 
+… 
+À 
+‰ 
+Â 
+Ò 
+Ú 
+è 
+ê 
+û 
+¨ 
+≠ üQ60	0j`
+02
+0j`Há “
+(G0j`20“
+200j`0Há “
+(60	0j`
+02
+0j`Há “
+(G!0j`20“
+200j`0Há “
+( B-02'00j`2*0j`0Há “
+(,<102/
+002*0j`0Há “
+(0<5023
+002*0j`0Há “
+(4H9023
+002*0j`02
+70j`Há “
+(8GA02$> 0 0j`!0j`"02?0Há†“
+(@TF02B02$C 0 0j`!0j`"02D0Há “
+(EyI4.,0	0j`
+00j0	0j`
+`#02$> 0 0j`!0j`"02?0Há†“
+(HOL02$> 0 0j`!0j`"02?02J0Há†“
+(KVP02$C 0 0j`!0j`"02N
+0$02D0Há “
+(OhY0%j`&2$C 0 0j`!0j`"02
+S0%j`&2W0(0'j`)0Há “
+(Xm_02>0*2?0“
+2J02[0“
+2\0“
+2]0“
+Há†“
+(^ b
+0+0Há “
+(a2d
+0+02>0“
+Há†“
+(c2f
+0+02>0“
+Há†“
+(eh0Há “
+(gj0Há “
+(i|o02>0“
+2?028J4.,(&0	0j`
+0000-0,02[
+0.0Há†“
+(npq02>0“
+2?02,J(0	0j`
+0000-2[
+0.0Há†“
+(p)s02>
+0.0Há†“
+(r?v02$> 
+0/00j0/`#0Há†“
+(u)x02>
+0/0Há†“
+(w?{02$> 
+0000j00`#0Há†“
+(z)}02>
+000Há†“
+(|8Ä0	0j`
+02
+>0j`1Há†“
+(+É02>
+020Há†“
+	(Ç;Ü02>
+0302?
+020Há†“
+	(Ö+à02>
+030Há†“
+	(áQç02>
+0302
+?0j`42J0%05j`60Há†“
+	(åQí02>
+0302
+?0j`42J0807j`90Há†“
+	(ëCï02>
+0302
+?0j`42
+J0%j`:Há†“
+	(îCò02>
+0302
+?0j`42
+J08j`;Há†“
+	(ó+ö02>
+030Há†“
+	(ôIú0	0j`
+02>
+0302
+?0j`4Há†“
+	(õ;ü02>
+0302?
+0<0Há†“
+	(û7°02>
+0302
+?0j`4Há†“
+	(†+£02>
+030Há†“
+	(¢k•02>
+0302?0	0j`
+02
+J0%j`&2[0%05j`60Há†“
+	(§HÆ02ß0(j`=2¨0?0>j`@0j`AHá “
+	(≠H≤02∞0(j`B2¨0?0>j`@0j`AHá “
+	(±L∂02¥
+0C02¨0?0>j`@0j`AHá “
+	(µ`ª02∑02∏02π0%j`&2¨0?0>j`@0j`AHá “
+	(∫q¡02¨0?0>j`@0j`A2Ω0(0'j`D02∑00Ej`F0Há “
+	(¿L√02¨0?0>j`@0j`A2¥
+0C0Há “
+	(¬F∆02¥
+0C02ƒ0	0j`
+0Há “
+	(≈=»02ƒ0“
+2¥
+0C0Há “
+	(«wÕ02…0?0>j`@0j`A2 0?0>j`@0j`A2À00Ej`F0Há “
+	(Ãh–02…0?0>j`@0j`A2Œ0“
+2À00Ej`F0Há “
+	(œm÷0*j`I2>0	0j`
+02
+?0%j`&2J0“
+2”
+0H0G"0HHá†“
+	(’Q⁄
+0K02>02?02
+J0(j`J2
+[0(j`JHá†“
+	(Ÿ››02>
+0K02P?LFD@>0 0j`!0(j`J0 0j`!00L0,02PJLFD@>0 0j`!0(j`J0 0j`!00L0,02[0Há†“
+	(‹U‡0 0j`!2>
+0K02?0(0'j`M0Há†“
+	(ﬂO‚0 0j`!2>
+0K02
+?0(j`J2J0(Há†“
+	(·A‰02>
+0K02?02J0(Há†“
+	(„+Ê02>
+0K0Há†“
+	(Â+Ë02>
+0K0Há†“
+	(Á+Î02>
+0N0Há†“
+	(Í+Ì02>
+0N0Há†“
+	(Ï9Ò02>
+0N02?0P0OHá†“
+	(+Û02>
+0N0Há†“
+	(Ú+ı02>
+0N0Há†“
+	(Ù?˜0P0O2>
+0N02?0P0OHá†“
+	(ˆ1˘0P0O2>
+0N0Há†“
+	(¯1˚0P0O2>
+0N0Há†“
+	(˙H˛
+0N02>0“
+2?02
+J0j`QHá†“
+	(˝OÄ02>
+0N02?0P0O2J0P0O2[0Há†“
+	(ˇBÑ0R0j`S2>0“
+2?0Há†“
+	(ÉdÜ0	0j`
+02>0R0j`S2?02J02[0“
+Há†“
+	(Ö1à02>0R0j`SHá†“
+	(á0å0(j`T2â0“
+Há “
+	(ãyï0(j`T2â0“
+2ç00Ej`F02ê
+0Uj`V2ì000Wj`XHá “
+	(îKó0(j`T2â0“
+2ç00Ej`F0Há “
+	(ñTö0(j`T2â0“
+2ò02ç00Ej`F0Há “
+	(ôoü0(j`T2â0“
+2ú0(0'j`Y02ù02ç00Ej`F0Há “
+	(ûo¢0(j`T2â0“
+2†00Ej`F02ù02ç00Ej`F0Há “
+	(°B¶0(j`T2£02§00Ej`F0Há “
+	(•'®0(j`T2£0Há “
+	(ß'™0(j`T2£0Há “
+	(©'¨0(j`T2£0Há “
+	(´4∞0(j`T2£02Æ0%j`ZHá “
+	(ØB≥0(j`T2£02Æ0%05j`[0Há “
+	(≤#∑0\2¥0Há “
+	(∂Oª0	0j`
+02
+>0j`12?0]0j`^Há†“
+	(∫ÉΩ0*j`I2>0	0j`
+02
+?0%j`&2J0]0j`^2[0“
+2”
+0H0G"0HHá†“
+	(º?¬0_0j``2¿0_0j``Há “
+	(¡1ƒ02¿0_0j``Há “
+	(√(∆0_0j``Há “
+	(≈ˇœ02¿0_0j``2«02c ^XVNL0j`0
+0a0" 0 0j`!0j`"000L0,j`b02OÃJDB:8
+0a00%j`&00Ej`F000L0,j`c02Õ0Há “
+	(ŒC“02¿0_0j``2–0“
+Há “
+	(—¨◊029”4.,0	0j`
+00j0	0j`
+`#02¿0_0j``2‘0]0j`^2’0“
+2”
+0H0G"0HHá “
+	(÷z⁄02ÿ02¿0_0j``2‘0]0j`^2’0“
+2”
+0H0G"0HHá “
+	(ŸÜ›02€0j`02¿0_0j``2‘0]0j`^2’0“
+2”
+0H0G"0HHá “
+	(‹ô·02ﬁ0	0j`
+02ﬂ0%j`&2¿0_0j``2‘0]0j`^2’0“
+2”
+0H0G"0HHá “
+	(‡q„02¿0_0j``2‘0]0j`^2’0“
+2”
+0H0G"0HHá “
+	(‚¨Ë029”4.,0	0j`
+00j0	0j`
+`#02¿0_0j``2‘0]0j`^2’0“
+2Ê0d0j`eHá “
+	(ÁzÍ02ÿ02¿0_0j``2‘0]0j`^2’0“
+2Ê0d0j`eHá “
+	(ÈÜÏ02€0j`02¿0_0j``2‘0]0j`^2’0“
+2Ê0d0j`eHá “
+	(ÎôÓ02ﬁ0	0j`
+02ﬂ0%j`&2¿0_0j``2‘0]0j`^2’0“
+2Ê0d0j`eHá “
+	(Ìq02¿0_0j``2‘0]0j`^2’0“
+2Ê0d0j`eHá “
+	(Ô1ı02Û0f0j`gHá “
+	(Ùh¯0f0j`g2¿0_0j``2‘0]0j`^2ˆ0“
+Há “
+	(˜É˙029”4.,0	0j`
+00j0	0j`
+`#02Û0f0j`g2”
+0H0G"0HHá “
+	(˘Q¸02ÿ02Û0f0j`g2”
+0H0G"0HHá “
+	(˚]˛02€0j`02Û0f0j`g2”
+0H0G"0HHá “
+	(˝pÄ02ﬁ0	0j`
+02ﬂ0%j`&2Û0f0j`g2”
+0H0G"0HHá “
+	(ˇHÇ02Û0f0j`g2”
+0H0G"0HHá “
+	(ÅÉÑ029”4.,0	0j`
+00j0	0j`
+`#02Û0f0j`g2Ê0d0j`eHá “
+	(ÉQÜ02ÿ02Û0f0j`g2Ê0d0j`eHá “
+	(Ö]à02€0j`02Û0f0j`g2Ê0d0j`eHá “
+	(ápä02ﬁ0	0j`
+02ﬂ0%j`&2Û0f0j`g2Ê0d0j`eHá “
+	(âHå02Û0f0j`g2Ê0d0j`eHá “
+	(ãlé0	0j`
+02>0“
+2?0	0j`
+02
+J0%j`&2[0Há†“
+	(ç(í0h0j`iHá “
+	(ë1î02>0h0j`iHá†“
+	(ìMô02ï0h0j`i2ñ0(j`T2ó0Há “
+	(òMú02ï0h0j`i2ñ0(j`T2ö0Há “
+	(õP†02ù0“
+2ï0h0j`i2ù0(j`jHá “
+	(üY£02°02ù0“
+2ï0h0j`i2ù0(j`jHá “
+	(¢1•02ï0h0j`iHá “
+	(§t©02¶0“
+2ù0%j`Z29ß4.,0	0j`
+00j0	0j`
+`#0Há “
+	(®5´02ß0	0j`
+0Há “
+	(™&Ø0kj`l0Há “
+	(ÆI±02>0kj`l02?0	0j`
+0Há†“
+	(∞7≥02>0kj`l02?0Há†“
+	(≤[µ0	0j`
+02>0kj`l02?0	0j`
+0Há†“
+	(¥ÿ
+‡
  Í
 platform.darwin
