@@ -1,5 +1,5 @@
 
-–_
+Íb
 kotlinx
 cinterop
 CPointer
@@ -11,167 +11,186 @@
 MusicSequence
 
 inSequence
-__CFDictionary
-CoreFoundation
-CFDictionaryRef
-internal
-CCall
-id
-Aknifunptr_platform_AudioToolbox258_MusicSequenceGetInfoDictionary
-MusicSequenceGetInfoDictionary
+	CFunction
+kotlin
+	Function7
+CPointed
+COpaquePointer
 OpaqueMusicTrack
 
 MusicTrack
-inTrack
+Double
+MusicTimeStamp
+MusicEventUserData
+Unit
+MusicSequenceUserCallback
+
+inCallback
 
 CValuesRef
-CPointerVarOf
-MusicSequenceVar
-outSequence
-kotlin
+inClientData
 Int
 darwin
 OSStatus
-8knifunptr_platform_AudioToolbox259_MusicTrackGetSequence
+internal
+CCall
+id
+?knifunptr_platform_AudioToolbox258_MusicSequenceSetUserCallback
+MusicSequenceSetUserCallback
+inBeats
+UInt
+UInt32
+inSubbeatDivisor
+CABarBeatTime
+outBarBeatTime
+Bknifunptr_platform_AudioToolbox259_MusicSequenceBeatsToBarBeatTime
+MusicSequenceBeatsToBarBeatTime
+inBarBeatTime
+DoubleVarOf
+MusicTimeStampVar
+outBeats
+Bknifunptr_platform_AudioToolbox260_MusicSequenceBarBeatTimeToBeats
+MusicSequenceBarBeatTimeToBeats
+__CFDictionary
+CoreFoundation
+CFDictionaryRef
+Aknifunptr_platform_AudioToolbox261_MusicSequenceGetInfoDictionary
+MusicSequenceGetInfoDictionary
+inTrack
+CPointerVarOf
+MusicSequenceVar
+outSequence
+8knifunptr_platform_AudioToolbox262_MusicTrackGetSequence
 MusicTrackGetSequence
 AUNode
 inNode
-8knifunptr_platform_AudioToolbox260_MusicTrackSetDestNode
+8knifunptr_platform_AudioToolbox263_MusicTrackSetDestNode
 MusicTrackSetDestNode
-UInt
 CoreMIDI
 MIDIEndpointRef
 
 inEndpoint
-@knifunptr_platform_AudioToolbox261_MusicTrackSetDestMIDIEndpoint
+@knifunptr_platform_AudioToolbox264_MusicTrackSetDestMIDIEndpoint
 MusicTrackSetDestMIDIEndpoint
 IntVarOf
 	AUNodeVar
 outNode
-8knifunptr_platform_AudioToolbox262_MusicTrackGetDestNode
+8knifunptr_platform_AudioToolbox265_MusicTrackGetDestNode
 MusicTrackGetDestNode
 	UIntVarOf
 MIDIEndpointRefVar
 outEndpoint
-@knifunptr_platform_AudioToolbox263_MusicTrackGetDestMIDIEndpoint
+@knifunptr_platform_AudioToolbox266_MusicTrackGetDestMIDIEndpoint
 MusicTrackGetDestMIDIEndpoint
-UInt32
 inPropertyID
 inData
 inLength
-8knifunptr_platform_AudioToolbox264_MusicTrackSetProperty
+8knifunptr_platform_AudioToolbox267_MusicTrackSetProperty
 MusicTrackSetProperty
 outData
 	UInt32Var
 ioLength
-8knifunptr_platform_AudioToolbox265_MusicTrackGetProperty
+8knifunptr_platform_AudioToolbox268_MusicTrackGetProperty
 MusicTrackGetProperty
-Double
-MusicTimeStamp
 inStartTime
 	inEndTime
 
 inMoveTime
-7knifunptr_platform_AudioToolbox266_MusicTrackMoveEvents
+7knifunptr_platform_AudioToolbox269_MusicTrackMoveEvents
 MusicTrackMoveEvents
-2knifunptr_platform_AudioToolbox267_MusicTrackClear
+2knifunptr_platform_AudioToolbox270_MusicTrackClear
 MusicTrackClear
-0knifunptr_platform_AudioToolbox268_MusicTrackCut
+0knifunptr_platform_AudioToolbox271_MusicTrackCut
 MusicTrackCut
 inSourceTrack
 inSourceStartTime
 inSourceEndTime
 inDestTrack
 inDestInsertTime
-7knifunptr_platform_AudioToolbox269_MusicTrackCopyInsert
+7knifunptr_platform_AudioToolbox272_MusicTrackCopyInsert
 MusicTrackCopyInsert
-2knifunptr_platform_AudioToolbox270_MusicTrackMerge
+2knifunptr_platform_AudioToolbox273_MusicTrackMerge
 MusicTrackMerge
 inTimeStamp
 MIDINoteMessage
 	inMessage
-=knifunptr_platform_AudioToolbox271_MusicTrackNewMIDINoteEvent
+=knifunptr_platform_AudioToolbox274_MusicTrackNewMIDINoteEvent
 MusicTrackNewMIDINoteEvent
 MIDIChannelMessage
-@knifunptr_platform_AudioToolbox272_MusicTrackNewMIDIChannelEvent
+@knifunptr_platform_AudioToolbox275_MusicTrackNewMIDIChannelEvent
 MusicTrackNewMIDIChannelEvent
 MIDIRawData
 	inRawData
-@knifunptr_platform_AudioToolbox273_MusicTrackNewMIDIRawDataEvent
+@knifunptr_platform_AudioToolbox276_MusicTrackNewMIDIRawDataEvent
 MusicTrackNewMIDIRawDataEvent
 ExtendedNoteOnEvent
 inInfo
-Aknifunptr_platform_AudioToolbox274_MusicTrackNewExtendedNoteEvent
+Aknifunptr_platform_AudioToolbox277_MusicTrackNewExtendedNoteEvent
 MusicTrackNewExtendedNoteEvent
 ParameterEvent
->knifunptr_platform_AudioToolbox275_MusicTrackNewParameterEvent
+>knifunptr_platform_AudioToolbox278_MusicTrackNewParameterEvent
 MusicTrackNewParameterEvent
 Float64
 inBPM
-Bknifunptr_platform_AudioToolbox276_MusicTrackNewExtendedTempoEvent
+Bknifunptr_platform_AudioToolbox279_MusicTrackNewExtendedTempoEvent
 MusicTrackNewExtendedTempoEvent
 MIDIMetaEvent
 inMetaEvent
-9knifunptr_platform_AudioToolbox277_MusicTrackNewMetaEvent
+9knifunptr_platform_AudioToolbox280_MusicTrackNewMetaEvent
 MusicTrackNewMetaEvent
-MusicEventUserData
 
 inUserData
-9knifunptr_platform_AudioToolbox278_MusicTrackNewUserEvent
+9knifunptr_platform_AudioToolbox281_MusicTrackNewUserEvent
 MusicTrackNewUserEvent
 AUPresetEvent
 inPresetEvent
-=knifunptr_platform_AudioToolbox279_MusicTrackNewAUPresetEvent
+=knifunptr_platform_AudioToolbox282_MusicTrackNewAUPresetEvent
 MusicTrackNewAUPresetEvent
 OpaqueMusicEventIterator
 MusicEventIterator
 MusicEventIteratorVar
 outIterator
-8knifunptr_platform_AudioToolbox280_NewMusicEventIterator
+8knifunptr_platform_AudioToolbox283_NewMusicEventIterator
 NewMusicEventIterator
 
 inIterator
-<knifunptr_platform_AudioToolbox281_DisposeMusicEventIterator
+<knifunptr_platform_AudioToolbox284_DisposeMusicEventIterator
 DisposeMusicEventIterator
-9knifunptr_platform_AudioToolbox282_MusicEventIteratorSeek
+9knifunptr_platform_AudioToolbox285_MusicEventIteratorSeek
 MusicEventIteratorSeek
->knifunptr_platform_AudioToolbox283_MusicEventIteratorNextEvent
+>knifunptr_platform_AudioToolbox286_MusicEventIteratorNextEvent
 MusicEventIteratorNextEvent
-Bknifunptr_platform_AudioToolbox284_MusicEventIteratorPreviousEvent
+Bknifunptr_platform_AudioToolbox287_MusicEventIteratorPreviousEvent
 MusicEventIteratorPreviousEvent
-DoubleVarOf
-MusicTimeStampVar
 outTimeStamp
 MusicEventTypeVar
 outEventType
-CPointed
-COpaquePointer
 COpaquePointerVar
 outEventData
 outEventDataSize
-Aknifunptr_platform_AudioToolbox285_MusicEventIteratorGetEventInfo
+Aknifunptr_platform_AudioToolbox288_MusicEventIteratorGetEventInfo
 MusicEventIteratorGetEventInfo
 MusicEventType
 inEventType
 inEventData
-Aknifunptr_platform_AudioToolbox286_MusicEventIteratorSetEventInfo
+Aknifunptr_platform_AudioToolbox289_MusicEventIteratorSetEventInfo
 MusicEventIteratorSetEventInfo
-Aknifunptr_platform_AudioToolbox287_MusicEventIteratorSetEventTime
+Aknifunptr_platform_AudioToolbox290_MusicEventIteratorSetEventTime
 MusicEventIteratorSetEventTime
-@knifunptr_platform_AudioToolbox288_MusicEventIteratorDeleteEvent
+@knifunptr_platform_AudioToolbox291_MusicEventIteratorDeleteEvent
 MusicEventIteratorDeleteEvent
 BooleanVarOf
 Boolean
 
 BooleanVar
 outHasPrevEvent
-Eknifunptr_platform_AudioToolbox289_MusicEventIteratorHasPreviousEvent
+Eknifunptr_platform_AudioToolbox292_MusicEventIteratorHasPreviousEvent
 "MusicEventIteratorHasPreviousEvent
 outHasNextEvent
-Aknifunptr_platform_AudioToolbox290_MusicEventIteratorHasNextEvent
+Aknifunptr_platform_AudioToolbox293_MusicEventIteratorHasNextEvent
 MusicEventIteratorHasNextEvent
 outHasCurEvent
-Dknifunptr_platform_AudioToolbox291_MusicEventIteratorHasCurrentEvent
+Dknifunptr_platform_AudioToolbox294_MusicEventIteratorHasCurrentEvent
 !MusicEventIteratorHasCurrentEvent
 __CFURL
 CFURLRef
@@ -181,14 +200,14 @@ __CFString
 CFStringRef
 CFStringRefVar
 outName
-8knifunptr_platform_AudioToolbox292_CopyNameFromSoundBank
+8knifunptr_platform_AudioToolbox295_CopyNameFromSoundBank
 CopyNameFromSoundBank
 	__CFArray
 
 CFArrayRef
 CFArrayRefVar
 outInstrumentInfo
-Bknifunptr_platform_AudioToolbox293_CopyInstrumentInfoFromSoundBank
+Bknifunptr_platform_AudioToolbox296_CopyInstrumentInfoFromSoundBank
 CopyInstrumentInfoFromSoundBank
 AUAudioUnit
 ObjCObjectVar
@@ -204,7 +223,6 @@ ObjCMethod
 B24@0:8^@16
 isStret
 startHardwareAndReturnError
-Unit
 stopHardware
 v16@0:8
 canPerformInput
@@ -269,7 +287,6 @@ v20@0:8B16
 flag
 setRenderResourcesAllocated:
 setRenderResourcesAllocated
-	Function7
 AURenderEvent
 AUInternalRenderBlock
 internalRenderBlock
@@ -388,57 +405,60 @@ $AUImplementorValueFromStringCallback
 (implementorDisplayNameWithLengthCallback
 ,setImplementorDisplayNameWithLengthCallback:
 +setImplementorDisplayNameWithLengthCallback
-Yknifunptr_platform_AudioToolbox294_kAudioComponentInstanceInvalidationNotification_getter
+Yknifunptr_platform_AudioToolbox297_kAudioComponentInstanceInvalidationNotification_getter
 /kAudioComponentInstanceInvalidationNotification
-Yknifunptr_platform_AudioToolbox295_kAudioComponentRegistrationsChangedNotification_getter
+Yknifunptr_platform_AudioToolbox298_kAudioComponentRegistrationsChangedNotification_getter
 /kAudioComponentRegistrationsChangedNotification
-Nknifunptr_platform_AudioToolbox296_kAudioSessionInputRoute_BluetoothHFP_getter
+!Unable to import this declaration
+ 
+-kAudioServicesDetailIntendedSpatialExperience
+Nknifunptr_platform_AudioToolbox300_kAudioSessionInputRoute_BluetoothHFP_getter
 $kAudioSessionInputRoute_BluetoothHFP
-Lknifunptr_platform_AudioToolbox297_kAudioSessionInputRoute_BuiltInMic_getter
+Lknifunptr_platform_AudioToolbox301_kAudioSessionInputRoute_BuiltInMic_getter
 "kAudioSessionInputRoute_BuiltInMic
-Lknifunptr_platform_AudioToolbox298_kAudioSessionInputRoute_HeadsetMic_getter
+Lknifunptr_platform_AudioToolbox302_kAudioSessionInputRoute_HeadsetMic_getter
 "kAudioSessionInputRoute_HeadsetMic
-Hknifunptr_platform_AudioToolbox299_kAudioSessionInputRoute_LineIn_getter
+Hknifunptr_platform_AudioToolbox303_kAudioSessionInputRoute_LineIn_getter
 kAudioSessionInputRoute_LineIn
-Jknifunptr_platform_AudioToolbox300_kAudioSessionInputRoute_USBAudio_getter
+Jknifunptr_platform_AudioToolbox304_kAudioSessionInputRoute_USBAudio_getter
  kAudioSessionInputRoute_USBAudio
-Jknifunptr_platform_AudioToolbox301_kAudioSessionOutputRoute_AirPlay_getter
+Jknifunptr_platform_AudioToolbox305_kAudioSessionOutputRoute_AirPlay_getter
  kAudioSessionOutputRoute_AirPlay
-Pknifunptr_platform_AudioToolbox302_kAudioSessionOutputRoute_BluetoothA2DP_getter
+Pknifunptr_platform_AudioToolbox306_kAudioSessionOutputRoute_BluetoothA2DP_getter
 &kAudioSessionOutputRoute_BluetoothA2DP
-Oknifunptr_platform_AudioToolbox303_kAudioSessionOutputRoute_BluetoothHFP_getter
+Oknifunptr_platform_AudioToolbox307_kAudioSessionOutputRoute_BluetoothHFP_getter
 %kAudioSessionOutputRoute_BluetoothHFP
-Rknifunptr_platform_AudioToolbox304_kAudioSessionOutputRoute_BuiltInReceiver_getter
+Rknifunptr_platform_AudioToolbox308_kAudioSessionOutputRoute_BuiltInReceiver_getter
 (kAudioSessionOutputRoute_BuiltInReceiver
-Qknifunptr_platform_AudioToolbox305_kAudioSessionOutputRoute_BuiltInSpeaker_getter
+Qknifunptr_platform_AudioToolbox309_kAudioSessionOutputRoute_BuiltInSpeaker_getter
 'kAudioSessionOutputRoute_BuiltInSpeaker
-Gknifunptr_platform_AudioToolbox306_kAudioSessionOutputRoute_HDMI_getter
+Gknifunptr_platform_AudioToolbox310_kAudioSessionOutputRoute_HDMI_getter
 kAudioSessionOutputRoute_HDMI
-Mknifunptr_platform_AudioToolbox307_kAudioSessionOutputRoute_Headphones_getter
+Mknifunptr_platform_AudioToolbox311_kAudioSessionOutputRoute_Headphones_getter
 #kAudioSessionOutputRoute_Headphones
-Jknifunptr_platform_AudioToolbox308_kAudioSessionOutputRoute_LineOut_getter
+Jknifunptr_platform_AudioToolbox312_kAudioSessionOutputRoute_LineOut_getter
  kAudioSessionOutputRoute_LineOut
-Kknifunptr_platform_AudioToolbox309_kAudioSessionOutputRoute_USBAudio_getter
+Kknifunptr_platform_AudioToolbox313_kAudioSessionOutputRoute_USBAudio_getter
 !kAudioSessionOutputRoute_USBAudio
-cknifunptr_platform_AudioToolbox310_kAudioSession_AudioRouteChangeKey_CurrentRouteDescription_getter
+cknifunptr_platform_AudioToolbox314_kAudioSession_AudioRouteChangeKey_CurrentRouteDescription_getter
 9kAudioSession_AudioRouteChangeKey_CurrentRouteDescription
-dknifunptr_platform_AudioToolbox311_kAudioSession_AudioRouteChangeKey_PreviousRouteDescription_getter
+dknifunptr_platform_AudioToolbox315_kAudioSession_AudioRouteChangeKey_PreviousRouteDescription_getter
 :kAudioSession_AudioRouteChangeKey_PreviousRouteDescription
-Lknifunptr_platform_AudioToolbox312_kAudioSession_AudioRouteKey_Inputs_getter
+Lknifunptr_platform_AudioToolbox316_kAudioSession_AudioRouteKey_Inputs_getter
 "kAudioSession_AudioRouteKey_Inputs
-Mknifunptr_platform_AudioToolbox313_kAudioSession_AudioRouteKey_Outputs_getter
+Mknifunptr_platform_AudioToolbox317_kAudioSession_AudioRouteKey_Outputs_getter
 #kAudioSession_AudioRouteKey_Outputs
-Jknifunptr_platform_AudioToolbox314_kAudioSession_AudioRouteKey_Type_getter
+Jknifunptr_platform_AudioToolbox318_kAudioSession_AudioRouteKey_Type_getter
  kAudioSession_AudioRouteKey_Type
-Rknifunptr_platform_AudioToolbox315_kAudioSession_InputSourceKey_Description_getter
+Rknifunptr_platform_AudioToolbox319_kAudioSession_InputSourceKey_Description_getter
 (kAudioSession_InputSourceKey_Description
-Iknifunptr_platform_AudioToolbox316_kAudioSession_InputSourceKey_ID_getter
+Iknifunptr_platform_AudioToolbox320_kAudioSession_InputSourceKey_ID_getter
 kAudioSession_InputSourceKey_ID
-Xknifunptr_platform_AudioToolbox317_kAudioSession_OutputDestinationKey_Description_getter
+Xknifunptr_platform_AudioToolbox321_kAudioSession_OutputDestinationKey_Description_getter
 .kAudioSession_OutputDestinationKey_Description
-Oknifunptr_platform_AudioToolbox318_kAudioSession_OutputDestinationKey_ID_getter
+Oknifunptr_platform_AudioToolbox322_kAudioSession_OutputDestinationKey_ID_getter
 %kAudioSession_OutputDestinationKey_ID
-Mknifunptr_platform_AudioToolbox319_kAudioSession_RouteChangeKey_Reason_getter
+Mknifunptr_platform_AudioToolbox323_kAudioSession_RouteChangeKey_Reason_getter
 #kAudioSession_RouteChangeKey_Reason
 AUDIO_TOOLBOX_VERSION
 ValidationResult
@@ -472,15 +492,7 @@ value type
 kAudioSettings_Hint
 kAudioSettings_Unit
 AU_SUPPORT_INTERAPP_AUDIO
-kAUPresetVersionKey
-type
-kAUPresetTypeKey
-subtype
-kAUPresetSubtypeKey
-manufacturer
-kAUPresetManufacturerKey
-data
-kAUPresetDataKeyπ
+kAUPresetVersionKey–
  
  
  
@@ -490,384 +502,407 @@ value type
 
 
  
-
+
  
-
+
 
  
-
- 
- 
+ 
+ 
+ 
+ 
+
+ 
+ 
  
- 
- 
- 
-
- 
-
- 
- 
-# 
-$
-% 
-) 
-* 
-. 
-/ 
-3 
-: 
-> 
-? 
-S 
-W 
-Z 
-^ 
-b 
-e 
-i 
-m 
+
+ 
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+" 
+# 
+% 
+* 
++ 
+/ 
+0
+!1 
+5 
+6 
+: 
+>
+&? 
+C 
+D 
+H 
+&I 
+S 
+j 
+n 
 q 
-u 
-v 
-w 
-Ñ 
-Ö 
+u 
+y 
+| 
+Ä 
 á 
-â 
-ä 
-ã 
-ê 
-ô 
-ö 
-õ 
-• 
+ã 
+å 
+ç 
+õ 
+ù 
+¢ 
+´ 
 
-¶ 
-® 
+¨ 
+≠ 
+∑ 
+!∏ 
+∫ 
+!ª 
+!º 
+¿ 
+!¡ 
+!¬ 
+∆ 
+« 
+»
+H… 
+À 
 
-© 
+‡ 
+· 
+‚
+M„ 
+‰ 
 
-™ 
-Æ 
-
-Ø 
-
-∞ 
-¥ 
-µ 
-∂
-C∑ 
-π 
-¿ 
-œ 
-– 
-—
-I“ 
-” 
-‘ 
-’ 
-I÷ 
-◊ 
-ÿ 
-ﬁ 
-ﬂ 
-‰ 
-Â 
+Â 
+Ê 
+MÁ 
 Ë 
-È 
-Î 
-Ï 
-Ó 
-Ù
-Zı
-[ˆ 
-¯ 
-Ä 
-Å 
-Ç 
-Ñ 
-Ö 
-Ü 
-é 
-í 
-ó 
-õ 
-ú 
-ü 
-† 
-¢
-k£ 
-® 
-Æ 
-≤ 
-¥ 
-µ 
-∑ 
+È 
+
+Ô 
+ 
+ı 
+ˆ 
+˘ 
+˙ 
+¸ 
+˝ 
+
+ˇ 
+Ö
+^Ü
+_á 
+â 
+ë 
+í 
+
+î 
+ï 
+ñ 
+
+û 
+
+¢ 
+
+ß 
+´ 
+¨ 
+Ø 
+∞ 
+
+≤
+n≥ 
 ∏ 
-ª 
 æ 
 ¬ 
-« 
-” 
-÷ 
-◊ 
-ÿ 
-‹ 
-‡ 
-· 
-‚ 
+
+ƒ 
+≈ 
+
+« 
+» 
+À 
+Œ 
+“ 
+◊ 
+„ 
 Ê 
-Í ©B<0	0j`2	00j`Há “
-(V0j`200j`2"00j`0j`0Há “
-(>"0j`200j`2
- 0j`Há “
-(!>(0j`200j`2
-&0j`Há “
-('L-0j`200j`2+00j`0Há “
-(,L20j`200j`2000j`0Há “
-(1X80j`200j`2
-40j`2502
-60j`Há “
-(7f=0j`200j`2
-40j`2902;00j` 0Há “
-(<VD0j`200j`2
-@0!j`"2
-A0!j`"2
-B0!j`"Há “
-(CJF0j`200j`2
-@0!j`"2
-A0!j`"Há “
-(EJH0j`200j`2
-@0!j`"2
-A0!j`"Há “
-(GlO0j`2I00j`2
-J0!j`"2
-K0!j`"2L00j`2
-M0!j`"Há “
-(NlQ0j`2I00j`2
-J0!j`"2
-K0!j`"2L00j`2
-M0!j`"Há “
-(PNV0j`200j`2
-R0!j`"2T
-0#0Há “
-(UNY0j`200j`2
-R0!j`"2T
-0$0Há “
-(XN]0j`200j`2
-R0!j`"2[
-0%0Há “
-(\Na0j`200j`2
-R0!j`"2_
-0&0Há “
-(`Nd0j`200j`2
-R0!j`"2_
-0'0Há “
-(cJh0j`200j`2
-R0!j`"2
-f0!j`(Há “
-(gNl0j`200j`2
-R0!j`"2j
-0)0Há “
-(kNp0j`200j`2
-R0!j`"2n
-0*0Há “
-(oNt0j`200j`2
-R0!j`"2r
-0+0Há “
-(sVz0j`200j`2"x0,0j`-0j`.0Há “
-(y2}0j`2{0,0j`-Há “
-(|>0j`2{0,0j`-2
-R0!j`"Há “
-(~4Å0j`2{0,0j`-Há “
-	(Ä4É0j`2{0,0j`-Há “
-	(Ç¨è0j`2{0,0j`-2Ü0!0/j`002à00j`102%å 020j`30j`402ç00j` 0Há “
-	(éPî0j`2{0,0j`-2ë0j`52í0Há “
-	(ì@ñ0j`2{0,0j`-2
-R0!j`"Há “
-	(ï4ò0j`2{0,0j`-Há “
-	(óOû0j`2{0,0j`-2ú0706j`80Há “
-	(ùO°0j`2{0,0j`-2ü0706j`80Há “
-	(†O§0j`2{0,0j`-2¢0706j`80Há “
-	(£Z≠0j`2ß090j`:2#´0;0j`<0j`=0Há “
-	(¨Z≥0j`2ß090j`:2#±0>0j`?0j`@0Há “
-	(≤Oø07*0A2∏
-0D0B0Há “
-%E
-∫(ª
-º(Ω	æ 6¡0F*0AHá “
-%E
-∫(¡
-º(¬	æ 6√07*0AHá “
-%E
-∫(√
-º(ƒ	æ 6≈07*0AHá “
-%E
-∫(≈
-º(ƒ	æ 6∆07*0AHá “
-%E
-∫(∆
-º(ƒ	æ ? 0F*0A2«07Há “
-%E
-∫(»
-º(…	æ 6À07*0AHá “
-%E
-∫(À
-º(ƒ	æ ?Œ0F*0A2Ã07Há “
-%E
-∫(Õ
-º(…	æ êŸ\00j`H0
-0J00j`K0Lj`M
-0N00j`O0Gj`P*0AHá “
-%E
-∫(Ÿ
-º(⁄	æ ô›0F*0A2aŸ\00j`H0
-0J00j`K0Lj`M
-0N00j`O0Gj`PHá “
-%E
-∫(€
-º(‹	æ ~‡J00j`H0
-0J00j`K0Lj`M0F0Qj`R*0AHá “
-%E
-∫(‡
-º(⁄	æ á‚0F*0A2O‡J00j`H0
-0J00j`K0Lj`M0F0Qj`RHá “
-%E
-∫(·
-º(‹	æ 6„07*0AHá “
-%E
-∫(„
-º(ƒ	æ >Ê
-0Sj`T*0AHá “
-%E
-∫(Ê
-º(Á	æ dÛ0F*0U2Í0V2Ì0X0W2Ô0Y20j`Há “
-%E
-∫(Ò
-º(Ú	æ H¸07*0A2˜0\2˘0]Há “
-%E
-∫(˙
-º(˚	æ ?ˇ0F*0A2˝07Há “
-%E
-∫(˛
-º(…	æ ˇÉ 00j`H0
-0J00j`K0Lj`M
-0N0
-0_0^\00j`H0
-0J00j`K0Lj`M
-0N00j`O0Gj`P0j`O0^j``*0AHá “
-%E
-∫(É
-º(⁄	æ Rá
-0b00F0aj`c*0AHá “
-%E
-∫(á
-º(⁄	æ :à0Lj`M*0AHá “
-%E
-∫(à
-º(â	æ Cå0F*0A2à0Lj`MHá “
-%E
-∫(ä
-º(ã	æ •ù0]*0]2˜0\2ç
-0D0B0Há “
->d
-è(ê ëBeì
-î(ïñ
-0f8ò“
-%E
-∫(ô
-º(ö	æ “
-g“
-hu°8 "	 û*0]*8 0i2˜0\2ç
-0D0B0Há “
-%j
-∫(ô
-º(ö	æ “
-g“
-h<§0l*0]Há “
-%E
-∫(§
-º(Á	æ Eß0F*0]2§0lHá “
-%E
-∫(•
-º(¶	æ :©0j`m*0]Há “
-%E
-∫(©
-º(™	æ C≠0F*0]2©0j`mHá “
-%E
-∫(´
-º(¨	æ C±0F*0n2Ø0lHá “
-%E
-∫(∞
-º(¶	æ ≤≈0v*0o2≥0Y2Ô0Y2∂0pj`q2π0rj`s2∫0rj`s2º0j`t2	Ω0Y2ø0j`u2¿0l2¡0lHá “
-%E
-∫(√
-º(ƒ	æ U 0w*0o2≥0Y2Ô0Y2∆0lHá “
-%E
-∫(»
-º(…	æ CÕ0w*0o2∆0lHá “
-%E
-∫(À
-º(Ã	æ ^“0w*0o2Œ0w2≥0Y2Ô0Y2œ0pj`qHá “
-%E
-∫(–
-º(—	æ C’0x*0o2∆0lHá “
-%E
-∫(‘
-º(Ã	æ VŸ"0v0rj`s0F0zj`{*0yHá “
-%E
-∫(Ÿ
-º(⁄	æ _€0F*0y2'Ÿ"0v0rj`s0F0zj`{Há “
-%E
-∫(⁄
-º(‹	æ P›0v0rj`s0aj`|*0yHá “
-%E
-∫(›
-º(⁄	æ Yﬂ0F*0y2!›0v0rj`s0aj`|Há “
-%E
-∫(ﬁ
-º(‹	æ f„20v0r0}j`~00Y0zj`*0yHá “
-%E
-∫(„
-º(⁄	æ oÂ0F*0y27„20v0r0}j`~00Y0zj`Há “
-%E
-∫(‰
-º(‹	æ YÁ%0v0Y0rj`s0zj`Ä*0yHá “
-%E
-∫(Á
-º(⁄	æ bÈ0F*0y2*Á%0v0Y0rj`s0zj`ÄHá “
-%E
-∫(Ë
-º(‹	æ YÎ%0y0Lj`M0Y0zj`Å*0yHá “
-%E
-∫(Î
-º(⁄	æ bÌ0F*0y2*Î%0y0Lj`M0Y0zj`ÅHá “
-%E
-∫(Ï
-º(‹	æ "(Ô0;0j`<8«ä	(Ó"(Ò0;0j`<8«ä	("(Û0;0j`<8«ä	(Ú"(ı0;0j`<8«ä	(Ù"(˜0;0j`<8«ä	(ˆ"(˘0;0j`<8«ä	(¯"(˚0;0j`<8«ä	(˙"(˝0;0j`<8«ä	(¸"(ˇ0;0j`<8«ä	(˛"(Å0;0j`<8«ä	(Ä"(É0;0j`<8«ä	(Ç"(Ö0;0j`<8«ä	(Ñ"(á0;0j`<8«ä	(Ü"(â0;0j`<8«ä	(à"(ã0;0j`<8«ä	(ä"(ç0;0j`<8«ä	(å"(è0;0j`<8«ä	(é"(ë0;0j`<8«ä	(ê"(ì0;0j`<8«ä	(í"(ï0;0j`<8«ä	(î"(ó0;0j`<8«ä	(ñ"(ô0;0j`<8«ä	(ò"(õ0;0j`<8«ä	(ö"(ù0;0j`<8«ä	(ú"(ü0;0j`<8«ä	(û"(°0;0j`<8«ä	(†"¢08XÜTÍ
-»"§0Y8XÜTÍ
-(£"¶0Y8XÜTÍ
-(•"®0Y8XÜTÍ
-(ß"™0Y8XÜTÍ
-(©"´0Y8XÜTÍ
-(Ô"¨0Y8XÜTÍ
-("Æ0Y8XÜTÍ
-(≠"∞0Y8XÜTÍ
-(Ø"±0Y8XÜTÍ
-(Ô"≥0Y8XÜTÍ
-(≤"µ0Y8XÜTÍ
-(¥"∑0Y8XÜTÍ
-(∂"π0Y8XÜTÍ
-(∏"ª0Y8XÜTÍ
-(∫"Ω0Y8XÜTÍ
-(º"æ0Y8XÜTÍ
-(º"ø08XÜTÍ
-"¿0Y8XÜTÍ
-("¬0Y8XÜTÍ
-(¡"ƒ0Y8XÜTÍ
-(√"∆0Y8XÜTÍ
-(≈"»0Y8XÜTÍ
-(«ÿ
+
+Á 
+Ë 
+Ï 
+ 
+Ò 
+Ú 
+ˆ 
+˙ ⁄EŒ 0j`2	00j`2ãÜzxtr00j`00j`00j`0j`
+000j`0j`000	0j`20Há “
+(Z(0j`2	00j`2
+!0j`2
+$0j`2&
+00Há “
+('\.0j`2	00j`2)
+002,00j`0Há “
+(-<30 0j`"2	00j`Há “
+(2V90j`2400j`2"700j`0#j`$0Há “
+(8>=0j`2400j`2
+;0j`%Há “
+(<>B0j`2400j`2
+@0j`'Há “
+(ALG0j`2400j`2E00(j`)0Há “
+(FLL0j`2400j`2J00*j`+0Há “
+(KXQ0j`2400j`2
+M0j`2N02
+O0j`Há “
+(PfV0j`2400j`2
+M0j`2R02T00*j`,0Há “
+(UV[0j`2400j`2
+W0j`2
+X0j`2
+Y0j`Há “
+(ZJ]0j`2400j`2
+W0j`2
+X0j`Há “
+(\J_0j`2400j`2
+W0j`2
+X0j`Há “
+(^lf0j`2`00j`2
+a0j`2
+b0j`2c00j`2
+d0j`Há “
+(elh0j`2`00j`2
+a0j`2
+b0j`2c00j`2
+d0j`Há “
+(gNm0j`2400j`2
+i0j`2k
+0-0Há “
+(lNp0j`2400j`2
+i0j`2k
+0.0Há “
+(oNt0j`2400j`2
+i0j`2r
+0/0Há “
+(sNx0j`2400j`2
+i0j`2v
+000Há “
+(wN{0j`2400j`2
+i0j`2v
+010Há “
+(zJ0j`2400j`2
+i0j`2
+}0j`2Há “
+(~QÉ0j`2400j`2
+i0j`2Å
+030Há “
+	(ÇQÜ0j`2400j`2
+i0j`2Ñ
+00Há “
+	(ÖQä0j`2400j`2
+i0j`2à
+040Há “
+	(âYê0j`2400j`2#é050j`60#j`70Há “
+	(è5ì0j`2ë050j`6Há “
+	(íAï0j`2ë050j`62
+i0j`Há “
+	(î5ó0j`2ë050j`6Há “
+	(ñ5ô0j`2ë050j`6Há “
+	(ò≠°0j`2ë050j`62ö00j`02ú00*j`802%û 00j`0#j`902ü00*j`,0Há “
+	(†Q¶0j`2ë050j`62£0j`:2§0Há “
+	(•A®0j`2ë050j`62
+i0j`Há “
+	(ß5™0j`2ë050j`6Há “
+	(©P∞0j`2ë050j`62Æ0<0;j`=0Há “
+	(ØP≥0j`2ë050j`62±0<0;j`=0Há “
+	(≤P∂0j`2ë050j`62¥0<0;j`=0Há “
+	(µZø0j`2π0>0j`?2#Ω0@0j`A0#j`B0Há “
+	(æZ≈0j`2π0>0j`?2#√0C0j`D0#j`E0Há “
+	(ƒO—0<*0F2 
+0I0G0Há “
+%J
+Ã(Õ
+Œ(œ	– 6“0*0FHá “
+%J
+Ã(“
+Œ(”	– 6‘0<*0FHá “
+%J
+Ã(‘
+Œ(’	– 6÷0<*0FHá “
+%J
+Ã(÷
+Œ(’	– 6◊0<*0FHá “
+%J
+Ã(◊
+Œ(’	– ?€0*0F2ÿ0<Há “
+%J
+Ã(Ÿ
+Œ(⁄	– 6‹0<*0FHá “
+%J
+Ã(‹
+Œ(’	– ?ﬂ0*0F2›0<Há “
+%J
+Ã(ﬁ
+Œ(⁄	– êÍ\00*j`L0
+0N00j`O0Pj`Q
+0R00j`S0Kj`T*0FHá “
+%J
+Ã(Í
+Œ(Î	– ôÓ0*0F2aÍ\00*j`L0
+0N00j`O0Pj`Q
+0R00j`S0Kj`THá “
+%J
+Ã(Ï
+Œ(Ì	– ~ÒJ00*j`L0
+0N00j`O0Pj`Q00Uj`V*0FHá “
+%J
+Ã(Ò
+Œ(Î	– áÛ0*0F2OÒJ00*j`L0
+0N00j`O0Pj`Q00Uj`VHá “
+%J
+Ã(Ú
+Œ(Ì	– 6Ù0<*0FHá “
+%J
+Ã(Ù
+Œ(’	– >˜
+0Wj`X*0FHá “
+%J
+Ã(˜
+Œ(¯	– dÑ0*0Y2˚0Z2˛0\0[2Ä0]2Å0j`Há “
+%J
+Ã(Ç
+Œ(É	– Hç0<*0F2à0`2ä0aHá “
+%J
+Ã(ã
+Œ(å	– ?ê0*0F2é0<Há “
+%J
+Ã(è
+Œ(⁄	– ˇì 00*j`L0
+0N00j`O0Pj`Q
+0R0
+0b0^\00*j`L0
+0N00j`O0Pj`Q
+0R00j`S0Kj`T0j`S0j`c*0FHá “
+%J
+Ã(ì
+Œ(Î	– Ró
+0e000dj`f*0FHá “
+%J
+Ã(ó
+Œ(Î	– :ò0Pj`Q*0FHá “
+%J
+Ã(ò
+Œ(ô	– Cú0*0F2ò0Pj`QHá “
+%J
+Ã(ö
+Œ(õ	– •≠0a*0a2à0`2ù
+0I0G0Há “
+>g
+ü(† °Bh£
+§(•¶
+0i8®“
+%J
+Ã(©
+Œ(™	– “
+j“
+ku±8 "	 Æ*0a*8 0l2à0`2ù
+0I0G0Há “
+%m
+Ã(©
+Œ(™	– “
+j“
+k<¥0o*0aHá “
+%J
+Ã(¥
+Œ(¯	– E∑0*0a2¥0oHá “
+%J
+Ã(µ
+Œ(∂	– :π0j`p*0aHá “
+%J
+Ã(π
+Œ(∫	– CΩ0*0a2π0j`pHá “
+%J
+Ã(ª
+Œ(º	– C¡0*0q2ø0oHá “
+%J
+Ã(¿
+Œ(∂	– ≤’0y*0r2√0]2Ä0]2∆0sj`t2…0uj`v2 0uj`v2Ã0j`w2	Õ0]2œ0j`x2–0o2—0oHá “
+%J
+Ã(”
+Œ(‘	– U⁄0z*0r2√0]2Ä0]2÷0oHá “
+%J
+Ã(ÿ
+Œ(Ÿ	– C›0z*0r2÷0oHá “
+%J
+Ã(€
+Œ(‹	– ^‚0z*0r2ﬁ0z2√0]2Ä0]2ﬂ0sj`tHá “
+%J
+Ã(‡
+Œ(·	– CÂ0{*0r2÷0oHá “
+%J
+Ã(‰
+Œ(‹	– VÈ"0y0uj`v00}j`~*0|Há “
+%J
+Ã(È
+Œ(Î	– _Î0*0|2'È"0y0uj`v00}j`~Há “
+%J
+Ã(Í
+Œ(Ì	– PÌ0y0uj`v0dj`*0|Há “
+%J
+Ã(Ì
+Œ(Î	– YÔ0*0|2!Ì0y0uj`v0dj`Há “
+%J
+Ã(Ó
+Œ(Ì	– iÛ50y0u0Äj`Å00]0}j`Ç*0|Há “
+%J
+Ã(Û
+Œ(Î	– rı0*0|2:Û50y0u0Äj`Å00]0}j`ÇHá “
+%J
+Ã(Ù
+Œ(Ì	– Y˜%0y0]0uj`v0}j`É*0|Há “
+%J
+Ã(˜
+Œ(Î	– b˘0*0|2*˜%0y0]0uj`v0}j`ÉHá “
+%J
+Ã(¯
+Œ(Ì	– Y˚%0|0Pj`Q0]0}j`Ñ*0|Há “
+%J
+Ã(˚
+Œ(Î	– b˝0*0|2*˚%0|0Pj`Q0]0}j`ÑHá “
+%J
+Ã(¸
+Œ(Ì	– "(ˇ0@0j`A8«ä	(˛"(Å0@0j`A8«ä	(Ä"[Ñ0@0j`A8FXá“
+>g
+ü(Ç °Bh£
+§(É¶
+0i8®"(Ü0@0j`A8«ä	(Ö"(à0@0j`A8«ä	(á"(ä0@0j`A8«ä	(â"(å0@0j`A8«ä	(ã"(é0@0j`A8«ä	(ç"(ê0@0j`A8«ä	(è"(í0@0j`A8«ä	(ë"(î0@0j`A8«ä	(ì"(ñ0@0j`A8«ä	(ï"(ò0@0j`A8«ä	(ó"(ö0@0j`A8«ä	(ô"(ú0@0j`A8«ä	(õ"(û0@0j`A8«ä	(ù"(†0@0j`A8«ä	(ü"(¢0@0j`A8«ä	(°"(§0@0j`A8«ä	(£"(¶0@0j`A8«ä	(•"(®0@0j`A8«ä	(ß"(™0@0j`A8«ä	(©"(¨0@0j`A8«ä	(´"(Æ0@0j`A8«ä	(≠"(∞0@0j`A8«ä	(Ø"(≤0@0j`A8«ä	(±"(¥0@0j`A8«ä	(≥"µ08XÜTÍ
+»"∑0]8XÜTÍ
+(∂"π0]8XÜTÍ
+(∏"ª0]8XÜTÍ
+(∫"Ω0]8XÜTÍ
+(º"æ0]8XÜTÍ
+(Ä"ø0]8XÜTÍ
+(Å"¡0]8XÜTÍ
+(¿"√0]8XÜTÍ
+(¬"ƒ0]8XÜTÍ
+(Ä"∆0]8XÜTÍ
+(≈"»0]8XÜTÍ
+(«" 0]8XÜTÍ
+(…"Ã0]8XÜTÍ
+(À"Œ0]8XÜTÍ
+(Õ"–0]8XÜTÍ
+(œ"—0]8XÜTÍ
+(Ã"“08XÜTÍ
+"”0]8XÜTÍ
+(Åÿ
 ‡
  Í
 platform.AudioToolbox

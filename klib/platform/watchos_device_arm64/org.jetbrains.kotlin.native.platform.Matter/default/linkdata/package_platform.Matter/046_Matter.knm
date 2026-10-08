@@ -1,589 +1,688 @@
 
-§z
+ã[
 platform
 Matter
-MTRBaseClusterColorControlMeta
-MTRAttributeCacheContainer
-attributeCacheContainer
+MTRBaseClusterFixedLabel
 
 Foundation
 NSNumber
-endpoint
-darwin
-NSObject
-dispatch_queue_t
-queue
+minInterval
+maxInterval
+MTRSubscribeParams
+params
 kotlin
+	Function0
+Unit
+!MTRSubscriptionEstablishedHandler
+subscriptionEstablished
 	Function2
 NSError
-Unit
-completionHandler
+reportHandler
 kotlinx
 cinterop
 
 ObjCMethod
 selector
-IreadAttributeCurrentXWithAttributeCache:endpoint:queue:completionHandler:
+esubscribeAttributeFeatureMapWithMinInterval:maxInterval:params:subscriptionEstablished:reportHandler:
 encoding
-v48@0:8@16@24@32@?40
-isStret
-'readAttributeCurrentXWithAttributeCache
-MTRBaseClusterColorControl
-+readAttributeCurrentYWithCompletionHandler:
-v24@0:8@?16
-*readAttributeCurrentYWithCompletionHandler
-minInterval
-maxInterval
-MTRSubscribeParams
-params
-	Function0
-!MTRSubscriptionEstablishedHandler
-subscriptionEstablished
-reportHandler
-csubscribeAttributeCurrentYWithMinInterval:maxInterval:params:subscriptionEstablished:reportHandler:
 v56@0:8@16@24@32@?40@?48
-)subscribeAttributeCurrentYWithMinInterval
-IreadAttributeCurrentYWithAttributeCache:endpoint:queue:completionHandler:
-'readAttributeCurrentYWithAttributeCache
-4readAttributeDriftCompensationWithCompletionHandler:
-3readAttributeDriftCompensationWithCompletionHandler
-lsubscribeAttributeDriftCompensationWithMinInterval:maxInterval:params:subscriptionEstablished:reportHandler:
-2subscribeAttributeDriftCompensationWithMinInterval
-RreadAttributeDriftCompensationWithAttributeCache:endpoint:queue:completionHandler:
-0readAttributeDriftCompensationWithAttributeCache
-String
-3readAttributeCompensationTextWithCompletionHandler:
-2readAttributeCompensationTextWithCompletionHandler
-ksubscribeAttributeCompensationTextWithMinInterval:maxInterval:params:subscriptionEstablished:reportHandler:
-1subscribeAttributeCompensationTextWithMinInterval
-QreadAttributeCompensationTextWithAttributeCache:endpoint:queue:completionHandler:
-/readAttributeCompensationTextWithAttributeCache
-9readAttributeColorTemperatureMiredsWithCompletionHandler:
-8readAttributeColorTemperatureMiredsWithCompletionHandler
-qsubscribeAttributeColorTemperatureMiredsWithMinInterval:maxInterval:params:subscriptionEstablished:reportHandler:
-7subscribeAttributeColorTemperatureMiredsWithMinInterval
-WreadAttributeColorTemperatureMiredsWithAttributeCache:endpoint:queue:completionHandler:
-5readAttributeColorTemperatureMiredsWithAttributeCache
-,readAttributeColorModeWithCompletionHandler:
-+readAttributeColorModeWithCompletionHandler
-dsubscribeAttributeColorModeWithMinInterval:maxInterval:params:subscriptionEstablished:reportHandler:
-*subscribeAttributeColorModeWithMinInterval
-JreadAttributeColorModeWithAttributeCache:endpoint:queue:completionHandler:
-(readAttributeColorModeWithAttributeCache
-*readAttributeOptionsWithCompletionHandler:
-)readAttributeOptionsWithCompletionHandler
+isStret
++subscribeAttributeFeatureMapWithMinInterval
+MTRBaseClusterFixedLabelMeta
+MTRAttributeCacheContainer
+attributeCacheContainer
+endpoint
+darwin
+NSObject
+dispatch_queue_t
+queue
+completionHandler
+KreadAttributeFeatureMapWithAttributeCache:endpoint:queue:completionHandler:
+v48@0:8@16@24@32@?40
+)readAttributeFeatureMapWithAttributeCache
+2readAttributeClusterRevisionWithCompletionHandler:
+v24@0:8@?16
+1readAttributeClusterRevisionWithCompletionHandler
+jsubscribeAttributeClusterRevisionWithMinInterval:maxInterval:params:subscriptionEstablished:reportHandler:
+0subscribeAttributeClusterRevisionWithMinInterval
+PreadAttributeClusterRevisionWithAttributeCache:endpoint:queue:completionHandler:
+.readAttributeClusterRevisionWithAttributeCache
+MTRBaseClusterUserLabel
+MTRBaseDevice
+device
+UShort
+posix
+uint16_t
+
+Deprecated
+message
+Use factory method instead
+replaceWith
+ReplaceWith
+imports
+
+expression
+7MTRBaseClusterUserLabel.create(device, endpoint, queue)
+level
+DeprecationLevel
+ERROR
+initWithDevice:endpoint:queue:
+@36@0:8@16S24@28
+internal
+CCall
+ConsumesReceiver
+ReturnsRetained
+initWithDevice
+T
+ObjCClassOf
+ObjCFactory
+create
+collections
+List
+,readAttributeLabelListWithCompletionHandler:
++readAttributeLabelListWithCompletionHandler
 value
 	Function1
 MTRStatusCompletion
-1writeAttributeOptionsWithValue:completionHandler:
+3writeAttributeLabelListWithValue:completionHandler:
 v32@0:8@16@?24
-writeAttributeOptionsWithValue
+ writeAttributeLabelListWithValue
 MTRWriteParams
-8writeAttributeOptionsWithValue:params:completionHandler:
+:writeAttributeLabelListWithValue:params:completionHandler:
 v40@0:8@16@24@?32
-bsubscribeAttributeOptionsWithMinInterval:maxInterval:params:subscriptionEstablished:reportHandler:
-(subscribeAttributeOptionsWithMinInterval
-HreadAttributeOptionsWithAttributeCache:endpoint:queue:completionHandler:
-&readAttributeOptionsWithAttributeCache
-4readAttributeNumberOfPrimariesWithCompletionHandler:
-3readAttributeNumberOfPrimariesWithCompletionHandler
-lsubscribeAttributeNumberOfPrimariesWithMinInterval:maxInterval:params:subscriptionEstablished:reportHandler:
-2subscribeAttributeNumberOfPrimariesWithMinInterval
-RreadAttributeNumberOfPrimariesWithAttributeCache:endpoint:queue:completionHandler:
-0readAttributeNumberOfPrimariesWithAttributeCache
-,readAttributePrimary1XWithCompletionHandler:
-+readAttributePrimary1XWithCompletionHandler
-dsubscribeAttributePrimary1XWithMinInterval:maxInterval:params:subscriptionEstablished:reportHandler:
-*subscribeAttributePrimary1XWithMinInterval
-JreadAttributePrimary1XWithAttributeCache:endpoint:queue:completionHandler:
-(readAttributePrimary1XWithAttributeCache
-,readAttributePrimary1YWithCompletionHandler:
-+readAttributePrimary1YWithCompletionHandler
-dsubscribeAttributePrimary1YWithMinInterval:maxInterval:params:subscriptionEstablished:reportHandler:
-*subscribeAttributePrimary1YWithMinInterval
-JreadAttributePrimary1YWithAttributeCache:endpoint:queue:completionHandler:
-(readAttributePrimary1YWithAttributeCache
-4readAttributePrimary1IntensityWithCompletionHandler:
-3readAttributePrimary1IntensityWithCompletionHandler
-lsubscribeAttributePrimary1IntensityWithMinInterval:maxInterval:params:subscriptionEstablished:reportHandler:
-2subscribeAttributePrimary1IntensityWithMinInterval
-RreadAttributePrimary1IntensityWithAttributeCache:endpoint:queue:completionHandler:
-0readAttributePrimary1IntensityWithAttributeCache
-,readAttributePrimary2XWithCompletionHandler:
-+readAttributePrimary2XWithCompletionHandler
-dsubscribeAttributePrimary2XWithMinInterval:maxInterval:params:subscriptionEstablished:reportHandler:
-*subscribeAttributePrimary2XWithMinInterval
-JreadAttributePrimary2XWithAttributeCache:endpoint:queue:completionHandler:
-(readAttributePrimary2XWithAttributeCache
-,readAttributePrimary2YWithCompletionHandler:
-+readAttributePrimary2YWithCompletionHandler
-dsubscribeAttributePrimary2YWithMinInterval:maxInterval:params:subscriptionEstablished:reportHandler:
-*subscribeAttributePrimary2YWithMinInterval
-JreadAttributePrimary2YWithAttributeCache:endpoint:queue:completionHandler:
-(readAttributePrimary2YWithAttributeCache
-4readAttributePrimary2IntensityWithCompletionHandler:
-3readAttributePrimary2IntensityWithCompletionHandler
-lsubscribeAttributePrimary2IntensityWithMinInterval:maxInterval:params:subscriptionEstablished:reportHandler:
-2subscribeAttributePrimary2IntensityWithMinInterval
-RreadAttributePrimary2IntensityWithAttributeCache:endpoint:queue:completionHandler:
-0readAttributePrimary2IntensityWithAttributeCache
-,readAttributePrimary3XWithCompletionHandler:
-+readAttributePrimary3XWithCompletionHandler
-dsubscribeAttributePrimary3XWithMinInterval:maxInterval:params:subscriptionEstablished:reportHandler:
-*subscribeAttributePrimary3XWithMinInterval
-JreadAttributePrimary3XWithAttributeCache:endpoint:queue:completionHandler:
-(readAttributePrimary3XWithAttributeCache
-,readAttributePrimary3YWithCompletionHandler:
-+readAttributePrimary3YWithCompletionHandler
-dsubscribeAttributePrimary3YWithMinInterval:maxInterval:params:subscriptionEstablished:reportHandler:
-*subscribeAttributePrimary3YWithMinInterval
-JreadAttributePrimary3YWithAttributeCache:endpoint:queue:completionHandler:
-(readAttributePrimary3YWithAttributeCache
-4readAttributePrimary3IntensityWithCompletionHandler:
-3readAttributePrimary3IntensityWithCompletionHandler
-lsubscribeAttributePrimary3IntensityWithMinInterval:maxInterval:params:subscriptionEstablished:reportHandler:
-2subscribeAttributePrimary3IntensityWithMinInterval
-RreadAttributePrimary3IntensityWithAttributeCache:endpoint:queue:completionHandler:
-0readAttributePrimary3IntensityWithAttributeCache
-,readAttributePrimary4XWithCompletionHandler:
-+readAttributePrimary4XWithCompletionHandler
-dsubscribeAttributePrimary4XWithMinInterval:maxInterval:params:subscriptionEstablished:reportHandler:
-*subscribeAttributePrimary4XWithMinInterval
-JreadAttributePrimary4XWithAttributeCache:endpoint:queue:completionHandler:
-(readAttributePrimary4XWithAttributeCache
-,readAttributePrimary4YWithCompletionHandler:
-+readAttributePrimary4YWithCompletionHandler
-dsubscribeAttributePrimary4YWithMinInterval:maxInterval:params:subscriptionEstablished:reportHandler:
-*subscribeAttributePrimary4YWithMinInterval
-JreadAttributePrimary4YWithAttributeCache:endpoint:queue:completionHandler:
-(readAttributePrimary4YWithAttributeCache
-4readAttributePrimary4IntensityWithCompletionHandler:
-3readAttributePrimary4IntensityWithCompletionHandler
-lsubscribeAttributePrimary4IntensityWithMinInterval:maxInterval:params:subscriptionEstablished:reportHandler:
-2subscribeAttributePrimary4IntensityWithMinInterval
-RreadAttributePrimary4IntensityWithAttributeCache:endpoint:queue:completionHandler:
-0readAttributePrimary4IntensityWithAttributeCache
-,readAttributePrimary5XWithCompletionHandler:
-+readAttributePrimary5XWithCompletionHandler
-dsubscribeAttributePrimary5XWithMinInterval:maxInterval:params:subscriptionEstablished:reportHandler:
-*subscribeAttributePrimary5XWithMinInterval
-JreadAttributePrimary5XWithAttributeCache:endpoint:queue:completionHandler:
-(readAttributePrimary5XWithAttributeCache
-,readAttributePrimary5YWithCompletionHandler:
-+readAttributePrimary5YWithCompletionHandler
-dsubscribeAttributePrimary5YWithMinInterval:maxInterval:params:subscriptionEstablished:reportHandler:
-*subscribeAttributePrimary5YWithMinInterval
-JreadAttributePrimary5YWithAttributeCache:endpoint:queue:completionHandler:
-(readAttributePrimary5YWithAttributeCache
-4readAttributePrimary5IntensityWithCompletionHandler:
-3readAttributePrimary5IntensityWithCompletionHandler
-lsubscribeAttributePrimary5IntensityWithMinInterval:maxInterval:params:subscriptionEstablished:reportHandler:
-2subscribeAttributePrimary5IntensityWithMinInterval
-RreadAttributePrimary5IntensityWithAttributeCache:endpoint:queue:completionHandler:
-0readAttributePrimary5IntensityWithAttributeCache
-,readAttributePrimary6XWithCompletionHandler:
-+readAttributePrimary6XWithCompletionHandler
-dsubscribeAttributePrimary6XWithMinInterval:maxInterval:params:subscriptionEstablished:reportHandler:
-*subscribeAttributePrimary6XWithMinInterval
-JreadAttributePrimary6XWithAttributeCache:endpoint:queue:completionHandler:
-(readAttributePrimary6XWithAttributeCache
-,readAttributePrimary6YWithCompletionHandler:
-+readAttributePrimary6YWithCompletionHandler
-dsubscribeAttributePrimary6YWithMinInterval:maxInterval:params:subscriptionEstablished:reportHandler:
-*subscribeAttributePrimary6YWithMinInterval
-JreadAttributePrimary6YWithAttributeCache:endpoint:queue:completionHandler:
-(readAttributePrimary6YWithAttributeCache
-4readAttributePrimary6IntensityWithCompletionHandler:
-3readAttributePrimary6IntensityWithCompletionHandler
-lsubscribeAttributePrimary6IntensityWithMinInterval:maxInterval:params:subscriptionEstablished:reportHandler:
-2subscribeAttributePrimary6IntensityWithMinInterval
-RreadAttributePrimary6IntensityWithAttributeCache:endpoint:queue:completionHandler:
-0readAttributePrimary6IntensityWithAttributeCache
-.readAttributeWhitePointXWithCompletionHandler:
--readAttributeWhitePointXWithCompletionHandler
-5writeAttributeWhitePointXWithValue:completionHandler:
-"writeAttributeWhitePointXWithValue
-<writeAttributeWhitePointXWithValue:params:completionHandler:
-fsubscribeAttributeWhitePointXWithMinInterval:maxInterval:params:subscriptionEstablished:reportHandler:
-,subscribeAttributeWhitePointXWithMinInterval
-LreadAttributeWhitePointXWithAttributeCache:endpoint:queue:completionHandler:
-*readAttributeWhitePointXWithAttributeCache
-.readAttributeWhitePointYWithCompletionHandler:
--readAttributeWhitePointYWithCompletionHandler
-5writeAttributeWhitePointYWithValue:completionHandler:
-"writeAttributeWhitePointYWithValue
-<writeAttributeWhitePointYWithValue:params:completionHandler:
-fsubscribeAttributeWhitePointYWithMinInterval:maxInterval:params:subscriptionEstablished:reportHandler:
-,subscribeAttributeWhitePointYWithMinInterval
-LreadAttributeWhitePointYWithAttributeCache:endpoint:queue:completionHandler:
-*readAttributeWhitePointYWithAttributeCache
-/readAttributeColorPointRXWithCompletionHandler:
-.readAttributeColorPointRXWithCompletionHandler
-6writeAttributeColorPointRXWithValue:completionHandler:
-#writeAttributeColorPointRXWithValue
-=writeAttributeColorPointRXWithValue:params:completionHandler:
-gsubscribeAttributeColorPointRXWithMinInterval:maxInterval:params:subscriptionEstablished:reportHandler:
--subscribeAttributeColorPointRXWithMinInterval
-MreadAttributeColorPointRXWithAttributeCache:endpoint:queue:completionHandler:
-+readAttributeColorPointRXWithAttributeCache
-/readAttributeColorPointRYWithCompletionHandler:
-.readAttributeColorPointRYWithCompletionHandler
-6writeAttributeColorPointRYWithValue:completionHandler:
-#writeAttributeColorPointRYWithValue
-=writeAttributeColorPointRYWithValue:params:completionHandler:
-gsubscribeAttributeColorPointRYWithMinInterval:maxInterval:params:subscriptionEstablished:reportHandler:
--subscribeAttributeColorPointRYWithMinInterval
-MreadAttributeColorPointRYWithAttributeCache:endpoint:queue:completionHandler:
-+readAttributeColorPointRYWithAttributeCache
-7readAttributeColorPointRIntensityWithCompletionHandler:
-6readAttributeColorPointRIntensityWithCompletionHandler
->writeAttributeColorPointRIntensityWithValue:completionHandler:
-+writeAttributeColorPointRIntensityWithValue
-EwriteAttributeColorPointRIntensityWithValue:params:completionHandler:
-osubscribeAttributeColorPointRIntensityWithMinInterval:maxInterval:params:subscriptionEstablished:reportHandler:
-5subscribeAttributeColorPointRIntensityWithMinInterval
-UreadAttributeColorPointRIntensityWithAttributeCache:endpoint:queue:completionHandler:
-3readAttributeColorPointRIntensityWithAttributeCache
-/readAttributeColorPointGXWithCompletionHandler:
-.readAttributeColorPointGXWithCompletionHandler
-6writeAttributeColorPointGXWithValue:completionHandler:
-#writeAttributeColorPointGXWithValue
-=writeAttributeColorPointGXWithValue:params:completionHandler:
-gsubscribeAttributeColorPointGXWithMinInterval:maxInterval:params:subscriptionEstablished:reportHandler:
--subscribeAttributeColorPointGXWithMinInterval
-MreadAttributeColorPointGXWithAttributeCache:endpoint:queue:completionHandler:
-+readAttributeColorPointGXWithAttributeCache
-/readAttributeColorPointGYWithCompletionHandler:
-.readAttributeColorPointGYWithCompletionHandler
-6writeAttributeColorPointGYWithValue:completionHandler:
-#writeAttributeColorPointGYWithValue
-=writeAttributeColorPointGYWithValue:params:completionHandler:
-gsubscribeAttributeColorPointGYWithMinInterval:maxInterval:params:subscriptionEstablished:reportHandler:
--subscribeAttributeColorPointGYWithMinInterval
-MreadAttributeColorPointGYWithAttributeCache:endpoint:queue:completionHandler:
-+readAttributeColorPointGYWithAttributeCache
-7readAttributeColorPointGIntensityWithCompletionHandler:
-6readAttributeColorPointGIntensityWithCompletionHandler
->writeAttributeColorPointGIntensityWithValue:completionHandler:
-+writeAttributeColorPointGIntensityWithValue
-EwriteAttributeColorPointGIntensityWithValue:params:completionHandler:
-osubscribeAttributeColorPointGIntensityWithMinInterval:maxInterval:params:subscriptionEstablished:reportHandler:
-5subscribeAttributeColorPointGIntensityWithMinInterval
-UreadAttributeColorPointGIntensityWithAttributeCache:endpoint:queue:completionHandler:
-3readAttributeColorPointGIntensityWithAttributeCache
-/readAttributeColorPointBXWithCompletionHandler:
-.readAttributeColorPointBXWithCompletionHandler
-6writeAttributeColorPointBXWithValue:completionHandler:
-#writeAttributeColorPointBXWithValue
-=writeAttributeColorPointBXWithValue:params:completionHandler:
-gsubscribeAttributeColorPointBXWithMinInterval:maxInterval:params:subscriptionEstablished:reportHandler:
--subscribeAttributeColorPointBXWithMinInterval
-MreadAttributeColorPointBXWithAttributeCache:endpoint:queue:completionHandler:
-+readAttributeColorPointBXWithAttributeCache
-/readAttributeColorPointBYWithCompletionHandler:
-.readAttributeColorPointBYWithCompletionHandler
-6writeAttributeColorPointBYWithValue:completionHandler:
-#writeAttributeColorPointBYWithValue
-=writeAttributeColorPointBYWithValue:params:completionHandler:
-gsubscribeAttributeColorPointBYWithMinInterval:maxInterval:params:subscriptionEstablished:reportHandler:
--subscribeAttributeColorPointBYWithMinInterval
-MreadAttributeColorPointBYWithAttributeCache:endpoint:queue:completionHandler:
-+readAttributeColorPointBYWithAttributeCache¨
+dsubscribeAttributeLabelListWithMinInterval:maxInterval:params:subscriptionEstablished:reportHandler:
+*subscribeAttributeLabelListWithMinInterval
+MTRBaseClusterUserLabelMeta
+JreadAttributeLabelListWithAttributeCache:endpoint:queue:completionHandler:
+(readAttributeLabelListWithAttributeCache
+7readAttributeGeneratedCommandListWithCompletionHandler:
+6readAttributeGeneratedCommandListWithCompletionHandler
+osubscribeAttributeGeneratedCommandListWithMinInterval:maxInterval:params:subscriptionEstablished:reportHandler:
+5subscribeAttributeGeneratedCommandListWithMinInterval
+UreadAttributeGeneratedCommandListWithAttributeCache:endpoint:queue:completionHandler:
+3readAttributeGeneratedCommandListWithAttributeCache
+6readAttributeAcceptedCommandListWithCompletionHandler:
+5readAttributeAcceptedCommandListWithCompletionHandler
+nsubscribeAttributeAcceptedCommandListWithMinInterval:maxInterval:params:subscriptionEstablished:reportHandler:
+4subscribeAttributeAcceptedCommandListWithMinInterval
+TreadAttributeAcceptedCommandListWithAttributeCache:endpoint:queue:completionHandler:
+2readAttributeAcceptedCommandListWithAttributeCache
+0readAttributeAttributeListWithCompletionHandler:
+/readAttributeAttributeListWithCompletionHandler
+hsubscribeAttributeAttributeListWithMinInterval:maxInterval:params:subscriptionEstablished:reportHandler:
+.subscribeAttributeAttributeListWithMinInterval
+NreadAttributeAttributeListWithAttributeCache:endpoint:queue:completionHandler:
+,readAttributeAttributeListWithAttributeCache
+-readAttributeFeatureMapWithCompletionHandler:
+,readAttributeFeatureMapWithCompletionHandler
+MTRBaseClusterBooleanState
+:MTRBaseClusterBooleanState.create(device, endpoint, queue)
+-readAttributeStateValueWithCompletionHandler:
+,readAttributeStateValueWithCompletionHandler
+esubscribeAttributeStateValueWithMinInterval:maxInterval:params:subscriptionEstablished:reportHandler:
++subscribeAttributeStateValueWithMinInterval
+MTRBaseClusterBooleanStateMeta
+KreadAttributeStateValueWithAttributeCache:endpoint:queue:completionHandler:
+)readAttributeStateValueWithAttributeCache
+MTRBaseClusterModeSelect
+8MTRBaseClusterModeSelect.create(device, endpoint, queue)
+&MTRModeSelectClusterChangeToModeParams
+)changeToModeWithParams:completionHandler:
+changeToModeWithParams
+String
+.readAttributeDescriptionWithCompletionHandler:
+-readAttributeDescriptionWithCompletionHandler
+fsubscribeAttributeDescriptionWithMinInterval:maxInterval:params:subscriptionEstablished:reportHandler:
+,subscribeAttributeDescriptionWithMinInterval
+MTRBaseClusterModeSelectMeta
+LreadAttributeDescriptionWithAttributeCache:endpoint:queue:completionHandler:
+*readAttributeDescriptionWithAttributeCache
+4readAttributeStandardNamespaceWithCompletionHandler:
+3readAttributeStandardNamespaceWithCompletionHandler
+lsubscribeAttributeStandardNamespaceWithMinInterval:maxInterval:params:subscriptionEstablished:reportHandler:
+2subscribeAttributeStandardNamespaceWithMinInterval
+RreadAttributeStandardNamespaceWithAttributeCache:endpoint:queue:completionHandler:
+0readAttributeStandardNamespaceWithAttributeCache
+1readAttributeSupportedModesWithCompletionHandler:
+0readAttributeSupportedModesWithCompletionHandler
+isubscribeAttributeSupportedModesWithMinInterval:maxInterval:params:subscriptionEstablished:reportHandler:
+/subscribeAttributeSupportedModesWithMinInterval
+OreadAttributeSupportedModesWithAttributeCache:endpoint:queue:completionHandler:
+-readAttributeSupportedModesWithAttributeCache
+.readAttributeCurrentModeWithCompletionHandler:
+-readAttributeCurrentModeWithCompletionHandler
+fsubscribeAttributeCurrentModeWithMinInterval:maxInterval:params:subscriptionEstablished:reportHandler:
+,subscribeAttributeCurrentModeWithMinInterval
+LreadAttributeCurrentModeWithAttributeCache:endpoint:queue:completionHandler:
+*readAttributeCurrentModeWithAttributeCache
+.readAttributeStartUpModeWithCompletionHandler:
+-readAttributeStartUpModeWithCompletionHandler
+5writeAttributeStartUpModeWithValue:completionHandler:
+"writeAttributeStartUpModeWithValue
+<writeAttributeStartUpModeWithValue:params:completionHandler:
+fsubscribeAttributeStartUpModeWithMinInterval:maxInterval:params:subscriptionEstablished:reportHandler:
+,subscribeAttributeStartUpModeWithMinInterval
+LreadAttributeStartUpModeWithAttributeCache:endpoint:queue:completionHandler:
+*readAttributeStartUpModeWithAttributeCache
+)readAttributeOnModeWithCompletionHandler:
+(readAttributeOnModeWithCompletionHandler
+0writeAttributeOnModeWithValue:completionHandler:
+writeAttributeOnModeWithValue
+7writeAttributeOnModeWithValue:params:completionHandler:
+asubscribeAttributeOnModeWithMinInterval:maxInterval:params:subscriptionEstablished:reportHandler:
+'subscribeAttributeOnModeWithMinInterval
+GreadAttributeOnModeWithAttributeCache:endpoint:queue:completionHandler:
+%readAttributeOnModeWithAttributeCache
+MTRBaseClusterDoorLock
+6MTRBaseClusterDoorLock.create(device, endpoint, queue)
+ MTRDoorLockClusterLockDoorParams
+%lockDoorWithParams:completionHandler:
+lockDoorWithParams
+"MTRDoorLockClusterUnlockDoorParams
+'unlockDoorWithParams:completionHandler:
+unlockDoorWithParams
+)MTRDoorLockClusterUnlockWithTimeoutParams
+.unlockWithTimeoutWithParams:completionHandler:
+unlockWithTimeoutWithParams
+*MTRDoorLockClusterSetWeekDayScheduleParams
+/setWeekDayScheduleWithParams:completionHandler:
+setWeekDayScheduleWithParams
+*MTRDoorLockClusterGetWeekDayScheduleParams
+2MTRDoorLockClusterGetWeekDayScheduleResponseParams
+/getWeekDayScheduleWithParams:completionHandler:
+getWeekDayScheduleWithParams
+,MTRDoorLockClusterClearWeekDayScheduleParams
+1clearWeekDayScheduleWithParams:completionHandler:
+clearWeekDayScheduleWithParams
+*MTRDoorLockClusterSetYearDayScheduleParams
+/setYearDayScheduleWithParams:completionHandler:
+setYearDayScheduleWithParams
+*MTRDoorLockClusterGetYearDayScheduleParams
+2MTRDoorLockClusterGetYearDayScheduleResponseParams
+/getYearDayScheduleWithParams:completionHandler:
+getYearDayScheduleWithParams
+,MTRDoorLockClusterClearYearDayScheduleParams
+1clearYearDayScheduleWithParams:completionHandler:
+clearYearDayScheduleWithParams
+*MTRDoorLockClusterSetHolidayScheduleParams
+/setHolidayScheduleWithParams:completionHandler:
+setHolidayScheduleWithParams
+*MTRDoorLockClusterGetHolidayScheduleParams
+2MTRDoorLockClusterGetHolidayScheduleResponseParams
+/getHolidayScheduleWithParams:completionHandler:
+getHolidayScheduleWithParams
+,MTRDoorLockClusterClearHolidayScheduleParams
+1clearHolidayScheduleWithParams:completionHandler:
+clearHolidayScheduleWithParams
+MTRDoorLockClusterSetUserParams
+$setUserWithParams:completionHandler:
+setUserWithParams
+MTRDoorLockClusterGetUserParams
+'MTRDoorLockClusterGetUserResponseParams
+$getUserWithParams:completionHandler:
+getUserWithParams
+!MTRDoorLockClusterClearUserParams
+&clearUserWithParams:completionHandler:
+clearUserWithParams
+%MTRDoorLockClusterSetCredentialParams
+-MTRDoorLockClusterSetCredentialResponseParams
+*setCredentialWithParams:completionHandler:
+setCredentialWithParams
++MTRDoorLockClusterGetCredentialStatusParams
+3MTRDoorLockClusterGetCredentialStatusResponseParams
+0getCredentialStatusWithParams:completionHandler:
+getCredentialStatusWithParams
+'MTRDoorLockClusterClearCredentialParams
+,clearCredentialWithParams:completionHandler:
+clearCredentialWithParams
+,readAttributeLockStateWithCompletionHandler:
++readAttributeLockStateWithCompletionHandler
+dsubscribeAttributeLockStateWithMinInterval:maxInterval:params:subscriptionEstablished:reportHandler:
+*subscribeAttributeLockStateWithMinInterval
+MTRBaseClusterDoorLockMeta
+JreadAttributeLockStateWithAttributeCache:endpoint:queue:completionHandler:
+(readAttributeLockStateWithAttributeCache
++readAttributeLockTypeWithCompletionHandler:
+*readAttributeLockTypeWithCompletionHandler
+csubscribeAttributeLockTypeWithMinInterval:maxInterval:params:subscriptionEstablished:reportHandler:
+)subscribeAttributeLockTypeWithMinInterval
+IreadAttributeLockTypeWithAttributeCache:endpoint:queue:completionHandler:
+'readAttributeLockTypeWithAttributeCache
+2readAttributeActuatorEnabledWithCompletionHandler:
+1readAttributeActuatorEnabledWithCompletionHandler
+jsubscribeAttributeActuatorEnabledWithMinInterval:maxInterval:params:subscriptionEstablished:reportHandler:
+0subscribeAttributeActuatorEnabledWithMinInterval
+PreadAttributeActuatorEnabledWithAttributeCache:endpoint:queue:completionHandler:
+.readAttributeActuatorEnabledWithAttributeCache
+,readAttributeDoorStateWithCompletionHandler:
++readAttributeDoorStateWithCompletionHandler
+dsubscribeAttributeDoorStateWithMinInterval:maxInterval:params:subscriptionEstablished:reportHandler:
+*subscribeAttributeDoorStateWithMinInterval
+JreadAttributeDoorStateWithAttributeCache:endpoint:queue:completionHandler:
+(readAttributeDoorStateWithAttributeCache
+1readAttributeDoorOpenEventsWithCompletionHandler:
+0readAttributeDoorOpenEventsWithCompletionHandler
+8writeAttributeDoorOpenEventsWithValue:completionHandler:
+%writeAttributeDoorOpenEventsWithValue
+?writeAttributeDoorOpenEventsWithValue:params:completionHandler:
+isubscribeAttributeDoorOpenEventsWithMinInterval:maxInterval:params:subscriptionEstablished:reportHandler:
+/subscribeAttributeDoorOpenEventsWithMinInterval
+OreadAttributeDoorOpenEventsWithAttributeCache:endpoint:queue:completionHandler:
+-readAttributeDoorOpenEventsWithAttributeCache
+3readAttributeDoorClosedEventsWithCompletionHandler:
+2readAttributeDoorClosedEventsWithCompletionHandler
+:writeAttributeDoorClosedEventsWithValue:completionHandler:
+'writeAttributeDoorClosedEventsWithValue
+AwriteAttributeDoorClosedEventsWithValue:params:completionHandler:
+ksubscribeAttributeDoorClosedEventsWithMinInterval:maxInterval:params:subscriptionEstablished:reportHandler:
+1subscribeAttributeDoorClosedEventsWithMinInterval¡
  
  
  
- 
- 
- 
- 
-	 
+ 
+ 
+ 
+	
 
  
-
-	 
- 
-	 
+ 
+ 
+ 
+ 
 
-
- 
+
+ 
  
-  
-	" 
-# 
-	1 
-	G 
-H 
-L ˜in0*020202
-0j`20000
+ 
+ 
+ 
+  
+- 
+. 
+0 
+ 1
+2 
+3 
+7 
+< 
+@
+A 
+B 
+C 
+F 
+G 
+I
+"J 
+N 
+O 
+S 
+X 
+o 
+u 
+x 
+z 
+} 
+Ç 
+© 
+´ 
+Æ 
+± 
+¥ 
+∑ 
+∏ 
+ª 
+æ 
+¡ 
+¬ 
+≈ 
+» 
+À 
+Ã 
+œ 
+“ 
+’ 
+÷ 
+Ÿ 
+‹ 
+› 
+‡ 
+· 
+‰ 
+Î òk~0*0202020200j`	20000
+Há “
+ (( n%0*020202!
+0j`2"0000
+Há “
+ (#($ N(0*02"0000
+Há “
+ (&(' ~*0*0202020200j`	20000
+Há “
+ ()( n,0*020202!
+0j`2"0000
+Há “
+ (+($ ôD0*02/02
+0j`2!
+0j`Há “
+64(56B89(:
+;
+08=“
+ (>(? “
+“
+sH8ç"	çE*0*	8ç0 2/02
+0j`2!
+0j`Há “
+ !(>(? “
+“
+RL0*02 "
+0#000
+Há “
+ (K(' ZR0*02
+M0#2"000$j`%Há “
+ (P(Q dR0*02
+M0#20&2"000$j`%Há “
+ (T(U ÇW0*0202020200j`	2 
+0#000
+Há “
+ (V( rZ0*0'20202!
+0j`2 "
+0#000
+Há “
+ (Y($ R\0*02 "
+0#000
+Há “
+ ([(' Ç^0*0202020200j`	2 
+0#000
+Há “
+ (]( r`0*0'20202!
+0j`2 "
+0#000
 Há “
- (( N0*020000
+ (_($ Rb0*02 "
+0#000
 Há “
- (( ~(0*020202!02$00j`2%0000
+ (a(' Çd0*0202020200j`	2 
+0#000
 Há “
- (&(' n*0*020202
-0j`20000
+ (c( rf0*0'20202!
+0j`2 "
+0#000
 Há “
- ()( N,0*020000
+ (e($ Rh0*02 "
+0#000
 Há “
- (+( ~.0*020202!02$00j`2%0000
+ (g(' Çj0*0202020200j`	2 
+0#000
 Há “
- (-(' n00*020202
-0j`20000
+ (i( rl0*0'20202!
+0j`2 "
+0#000
 Há “
- (/( N30*020000
+ (k($ Nn0*02"0000
 Há “
- (2( ~50*020202!02$00j`2%0000
+ (m(' ~0*0202020200j`	20000
 Há “
- (4(' n70*020202
-0j`20000
+ (( n%0*0'20202!
+0j`2"0000
 Há “
- (6( N90*020000
+ (#($ N(0*02"0000
 Há “
- (8( ~;0*020202!02$00j`2%0000
+ (&(' ~*0*0202020200j`	20000
 Há “
- (:(' n=0*020202
-0j`20000
+ ()( n,0*0'20202!
+0j`2"0000
 Há “
- (<( N?0*020000
+ (+($ ôD0(*0(2/02
+0j`2!
+0j`Há “
+64(56B89(p
+;
+08=“
+ (>(? “
+“
+sH8é"	éE*0(*	8é0 2/02
+0j`2!
+0j`Há “
+ !(>(? “
+“
+Nr0*0(2"0000
 Há “
- (>( ~A0*020202!02$00j`2%0000
+ (q(' ~t0*0(202020200j`	20000
 Há “
- (@(' nC0*020202
-0j`20000
+ (s( nw0*0)20202!
+0j`2"0000
 Há “
- (B( NE0*020000
+ (v($ R\0*0(2 "
+0#000
 Há “
- (D( VK0*02F02000j`Há “
- (I(J `K0*02F02!02000j`Há “
- (M(N ~P0*020202!02$00j`2%0000
+ ([(' Ç^0*0(202020200j`	2 
+0#000
 Há “
- (O(' nR0*020202
-0j`20000
+ (]( r`0*0)20202!
+0j`2 "
+0#000
 Há “
- (Q( NT0*020000
+ (_($ Rb0*0(2 "
+0#000
 Há “
- (S( ~V0*020202!02$00j`2%0000
+ (a(' Çd0*0(202020200j`	2 
+0#000
 Há “
- (U(' nX0*020202
-0j`20000
+ (c( rf0*0)20202!
+0j`2 "
+0#000
 Há “
- (W( NZ0*020000
+ (e($ Rh0*0(2 "
+0#000
 Há “
- (Y( ~\0*020202!02$00j`2%0000
+ (g(' Çj0*0(202020200j`	2 
+0#000
 Há “
- ([(' n^0*020202
-0j`20000
+ (i( rl0*0)20202!
+0j`2 "
+0#000
 Há “
- (]( N`0*020000
+ (k($ Nn0*0(2"0000
 Há “
- (_( ~b0*020202!02$00j`2%0000
+ (m(' ~0*0(202020200j`	20000
 Há “
- (a(' nd0*020202
-0j`20000
+ (( n%0*0)20202!
+0j`2"0000
 Há “
- (c( Nf0*020000
+ (#($ N(0*0(2"0000
 Há “
- (e( ~h0*020202!02$00j`2%0000
+ (&(' ~*0*0(202020200j`	20000
 Há “
- (g(' nj0*020202
-0j`20000
+ ()( n,0*0)20202!
+0j`2"0000
 Há “
- (i( Nl0*020000
+ (+($ ôD0**0*2/02
+0j`2!
+0j`Há “
+64(56B89(y
+;
+08=“
+ (>(? “
+“
+sH8è"	èE*0**	8è0 2/02
+0j`2!
+0j`Há “
+ !(>(? “
+“
+V|0*0*20+2"000$j`%Há “
+ ({(Q N0*0*2"0,000
 Há “
- (k( ~n0*020202!02$00j`2%0000
+ (~(' ÄÅ0*0*202020200j`	20,000
 Há “
- (m(' np0*020202
-0j`20000
+!	(Ä( pÑ0*0-20202!
+0j`2"0,000
 Há “
- (o( Nr0*020000
+!	(É($ PÜ0*0*2"0000
 Há “
- (q( ~t0*020202!02$00j`2%0000
+!	(Ö(' Äà0*0*202020200j`	20000
 Há “
- (s(' nv0*020202
-0j`20000
+!	(á( pä0*0-20202!
+0j`2"0000
 Há “
- (u( Nx0*020000
+!	(â($ Tå0*0*2 "
+0#000
 Há “
- (w( ~z0*020202!02$00j`2%0000
+!	(ã(' Ñé0*0*202020200j`	2 
+0#000
 Há “
- (y(' n|0*020202
-0j`20000
+!	(ç( tê0*0-20202!
+0j`2 "
+0#000
 Há “
- ({( N~0*020000
+!	(è($ Pí0*0*2"0000
 Há “
- (}( Ä0*020202!02$00j`2%0000
+!	(ë(' Äî0*0*202020200j`	20000
 Há “
- ((' pÇ0*020202
-0j`20000
+!	(ì( pñ0*0-20202!
+0j`2"0000
 Há “
-!	(Å( PÑ0*020000
+!	(ï($ Pò0*0*2"0000
 Há “
-!	(É( ÄÜ0*020202!02$00j`2%0000
+!	(ó(' Zö0*0*2M02"000$j`%Há “
+!	(ô(Q dö0*0*2M020&2"000$j`%Há “
+!	(õ(U Äù0*0*202020200j`	20000
 Há “
-!	(Ö(' pà0*020202
-0j`20000
+!	(ú( pü0*0-20202!
+0j`2"0000
 Há “
-!	(á( Pä0*020000
+!	(û($ P°0*0*2"0000
 Há “
-!	(â( Äå0*020202!02$00j`2%0000
+!	(†(' Z£0*0*2M02"000$j`%Há “
+!	(¢(Q d£0*0*2M020&2"000$j`%Há “
+!	(§(U Ä¶0*0*202020200j`	20000
 Há “
-!	(ã(' pé0*020202
-0j`20000
+!	(•( p®0*0-20202!
+0j`2"0000
 Há “
-!	(ç( Pê0*020000
+!	(ß($ R\0*0*2 "
+0#000
 Há “
-!	(è( Äí0*020202!02$00j`2%0000
+ ([(' Ç^0*0*202020200j`	2 
+0#000
 Há “
-!	(ë(' pî0*020202
-0j`20000
+ (]( r`0*0-20202!
+0j`2 "
+0#000
 Há “
-!	(ì( Pñ0*020000
+ (_($ Rb0*0*2 "
+0#000
 Há “
-!	(ï( Äò0*020202!02$00j`2%0000
+ (a(' Çd0*0*202020200j`	2 
+0#000
 Há “
-!	(ó(' pö0*020202
-0j`20000
+ (c( rf0*0-20202!
+0j`2 "
+0#000
 Há “
-!	(ô( Pú0*020000
+ (e($ Rh0*0*2 "
+0#000
 Há “
-!	(õ( Äû0*020202!02$00j`2%0000
+ (g(' Çj0*0*202020200j`	2 
+0#000
 Há “
-!	(ù(' p†0*020202
-0j`20000
+ (i( rl0*0-20202!
+0j`2 "
+0#000
 Há “
-!	(ü( P¢0*020000
+ (k($ Nn0*0*2"0000
 Há “
-!	(°( Ä§0*020202!02$00j`2%0000
+ (m(' ~0*0*202020200j`	20000
 Há “
-!	(£(' p¶0*020202
-0j`20000
+ (( n%0*0-20202!
+0j`2"0000
 Há “
-!	(•( P®0*020000
+ (#($ N(0*0*2"0000
 Há “
-!	(ß( Ä™0*020202!02$00j`2%0000
+ (&(' ~*0*0*202020200j`	20000
 Há “
-!	(©(' p¨0*020202
-0j`20000
+ ()( n,0*0-20202!
+0j`2"0000
 Há “
-!	(´( PÆ0*020000
+ (+($ öD0.*0.2/02
+0j`2!
+0j`Há “
+74(56B8	9(™
+;
+08=“
+ (>(? “
+“
+sH8ê"	êE*0.*	8ê0 2/02
+0j`2!
+0j`Há “
+ !(>(? “
+“
+Z≠0*0.20/2"000$j`%Há “
+!	(¨(Q Z∞0*0.2002"000$j`%Há “
+!	(Ø(Q X≥0*0.2012"000$j`%Há “
+!	(≤(Q X∂0*0.2022"000$j`%Há “
+!	(µ(Q X∫0*0.2032"04000
 Há “
-!	(≠( Ä∞0*020202!02$00j`2%0000
+!	(π(Q XΩ0*0.2052"000$j`%Há “
+!	(º(Q X¿0*0.2062"000$j`%Há “
+!	(ø(Q Xƒ0*0.2072"08000
 Há “
-!	(Ø(' p≤0*020202
-0j`20000
+!	(√(Q X«0*0.2092"000$j`%Há “
+!	(∆(Q X 0*0.20:2"000$j`%Há “
+!	(…(Q XŒ0*0.20;2"0<000
 Há “
-!	(±( P¥0*020000
+!	(Õ(Q X—0*0.20=2"000$j`%Há “
+!	(–(Q X‘0*0.20>2"000$j`%Há “
+!	(”(Q Xÿ0*0.20?2"0@000
 Há “
-!	(≥( Ä∂0*020202!02$00j`2%0000
+!	(◊(Q X€0*0.20A2"000$j`%Há “
+!	(⁄(Q Xﬂ0*0.20B2"0C000
 Há “
-!	(µ(' p∏0*020202
-0j`20000
+!	(ﬁ(Q X„0*0.20D2"0E000
 Há “
-!	(∑( P∫0*020000
+!	(‚(Q XÊ0*0.20F2"000$j`%Há “
+!	(Â(Q PË0*0.2"0000
 Há “
-!	(π( Äº0*020202!02$00j`2%0000
+!	(Á(' ÄÍ0*0.202020200j`	20000
 Há “
-!	(ª(' pæ0*020202
-0j`20000
+!	(È( pÌ0*0G20202!
+0j`2"0000
 Há “
-!	(Ω( P¿0*020000
+!	(Ï($ PÔ0*0.2"0000
 Há “
-!	(ø( Ä¬0*020202!02$00j`2%0000
+!	(Ó(' ÄÒ0*0.202020200j`	20000
 Há “
-!	(¡(' pƒ0*020202
-0j`20000
+!	(( pÛ0*0G20202!
+0j`2"0000
 Há “
-!	(√( P∆0*020000
+!	(Ú($ Pı0*0.2"0000
 Há “
-!	(≈( X»0*02F02000j`Há “
-!	(«(J b»0*02F02!02000j`Há “
-!	(…(N ÄÀ0*020202!02$00j`2%0000
+!	(Ù(' Ä˜0*0.202020200j`	20000
 Há “
-!	( (' pÕ0*020202
-0j`20000
+!	(ˆ( p˘0*0G20202!
+0j`2"0000
 Há “
-!	(Ã( Pœ0*020000
+!	(¯($ P˚0*0.2"0000
 Há “
-!	(Œ( X—0*02F02000j`Há “
-!	(–(J b—0*02F02!02000j`Há “
-!	(“(N Ä‘0*020202!02$00j`2%0000
+!	(˙(' Ä˝0*0.202020200j`	20000
 Há “
-!	(”(' p÷0*020202
-0j`20000
+!	(¸( pˇ0*0G20202!
+0j`2"0000
 Há “
-!	(’( Pÿ0*020000
+!	(˛($ PÅ0*0.2"0000
 Há “
-!	(◊( X⁄0*02F02000j`Há “
-!	(Ÿ(J b⁄0*02F02!02000j`Há “
-!	(€(N Ä›0*020202!02$00j`2%0000
+!	(Ä(' XÉ0*0.2M02"000$j`%Há “
+!	(Ç(Q bÉ0*0.2M020&2"000$j`%Há “
+!	(Ñ(U ÄÜ0*0.202020200j`	20000
 Há “
-!	(‹(' pﬂ0*020202
-0j`20000
+!	(Ö( pà0*0G20202!
+0j`2"0000
 Há “
-!	(ﬁ( P·0*020000
+!	(á($ Pä0*0.2"0000
 Há “
-!	(‡( X„0*02F02000j`Há “
-!	(‚(J b„0*02F02!02000j`Há “
-!	(‰(N ÄÊ0*020202!02$00j`2%0000
+!	(â(' Xå0*0.2M02"000$j`%Há “
+!	(ã(Q bå0*0.2M020&2"000$j`%Há “
+!	(ç(U Äè0*0.202020200j`	20000
 Há “
-!	(Â(' pË0*020202
-0j`20000
-Há “
-!	(Á( PÍ0*020000
-Há “
-!	(È( ZÏ0*02F02000j`Há “
-!	(Î(J dÏ0*02F02!02000j`Há “
-!	(Ì(N ÄÔ0*020202!02$00j`2%0000
-Há “
-!	(Ó(' pÒ0*020202
-0j`20000
-Há “
-!	(( PÛ0*020000
-Há “
-!	(Ú( Xı0*02F02000j`Há “
-!	(Ù(J bı0*02F02!02000j`Há “
-!	(ˆ(N Ä¯0*020202!02$00j`2%0000
-Há “
-!	(˜(' p˙0*020202
-0j`20000
-Há “
-!	(˘( P¸0*020000
-Há “
-!	(˚( X˛0*02F02000j`Há “
-!	(˝(J b˛0*02F02!02000j`Há “
-!	(ˇ(N ÄÅ0*020202!02$00j`2%0000
-Há “
-!	(Ä(' pÉ0*020202
-0j`20000
-Há “
-!	(Ç( PÖ0*020000
-Há “
-!	(Ñ( Zá0*02F02000j`Há “
-!	(Ü(J dá0*02F02!02000j`Há “
-!	(à(N Ää0*020202!02$00j`2%0000
-Há “
-!	(â(' på0*020202
-0j`20000
-Há “
-!	(ã( Pé0*020000
-Há “
-!	(ç( Xê0*02F02000j`Há “
-!	(è(J bê0*02F02!02000j`Há “
-!	(ë(N Äì0*020202!02$00j`2%0000
-Há “
-!	(í(' pï0*020202
-0j`20000
-Há “
-!	(î( Pó0*020000
-Há “
-!	(ñ( Xô0*02F02000j`Há “
-!	(ò(J bô0*02F02!02000j`Há “
-!	(ö(N Äú0*020202!02$00j`2%0000
-Há “
-!	(õ(' pû0*020202
-0j`20000
-Há “
-!	(ù( ÿ
+!	(é( ÿ
 ‡
  Í
 platform.Matter

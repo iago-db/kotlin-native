@@ -1,20 +1,40 @@
 
-¢K
+¥Q
 kotlinx
 cinterop
 
 CValuesRef
-
-ULongVarOf
+CPointerVarOf
+CPointer
+CPointed
+COpaquePointer
+COpaquePointerVar
+uvap
 kotlin
 ULong
 platform
+posix
+size_t
+size
 
 Hypervisor
+hv_allocate_flags_t
+flags
+Int
+osx
+hv_return_t
+internal
+CCall
+id
+-knifunptr_platform_Hypervisor4_hv_vm_allocate
+hv_vm_allocate
+uva
+/knifunptr_platform_Hypervisor5_hv_vm_deallocate
+hv_vm_deallocate
+
+ULongVarOf
 hv_vcpu_tVar
 vcpu
-CPointerVarOf
-CPointer
 hv_vcpu_exit_t
 CPointerVar
 exit
@@ -22,42 +42,65 @@ Hypervisor
 NSObject
 hv_vcpu_config_t
 config
-Int
-osx
-hv_return_t
-internal
-CCall
-id
--knifunptr_platform_Hypervisor4_hv_vcpu_create
+-knifunptr_platform_Hypervisor6_hv_vcpu_create
 hv_vcpu_create
 	hv_vcpu_t
-.knifunptr_platform_Hypervisor5_hv_vcpu_destroy
+.knifunptr_platform_Hypervisor7_hv_vcpu_destroy
 hv_vcpu_destroy
 UInt
 hv_reg_t
 reg
-posix
 uint64_tVar
 value
-.knifunptr_platform_Hypervisor6_hv_vcpu_get_reg
+.knifunptr_platform_Hypervisor8_hv_vcpu_get_reg
 hv_vcpu_get_reg
 uint64_t
-.knifunptr_platform_Hypervisor7_hv_vcpu_set_reg
+.knifunptr_platform_Hypervisor9_hv_vcpu_set_reg
 hv_vcpu_set_reg
 hv_simd_fp_reg_t
 Vector128VarOf
 	Vector128
 hv_simd_fp_uchar16_tVar
-6knifunptr_platform_Hypervisor8_hv_vcpu_get_simd_fp_reg
+7knifunptr_platform_Hypervisor10_hv_vcpu_get_simd_fp_reg
 hv_vcpu_get_simd_fp_reg
 hv_simd_fp_uchar16_t
-6knifunptr_platform_Hypervisor9_hv_vcpu_set_simd_fp_reg
+7knifunptr_platform_Hypervisor11_hv_vcpu_set_simd_fp_reg
 hv_vcpu_set_simd_fp_reg
+hv_vcpu_sme_state_t
+	sme_state
+5knifunptr_platform_Hypervisor12_hv_vcpu_get_sme_state
+hv_vcpu_get_sme_state
+5knifunptr_platform_Hypervisor13_hv_vcpu_set_sme_state
+hv_vcpu_set_sme_state
+hv_sme_z_reg_t
+
+UByteVarOf
+UByte
+
+uint8_tVar
+length
+5knifunptr_platform_Hypervisor14_hv_vcpu_get_sme_z_reg
+hv_vcpu_get_sme_z_reg
+5knifunptr_platform_Hypervisor15_hv_vcpu_set_sme_z_reg
+hv_vcpu_set_sme_z_reg
+hv_sme_p_reg_t
+5knifunptr_platform_Hypervisor16_hv_vcpu_get_sme_p_reg
+hv_vcpu_get_sme_p_reg
+5knifunptr_platform_Hypervisor17_hv_vcpu_set_sme_p_reg
+hv_vcpu_set_sme_p_reg
+6knifunptr_platform_Hypervisor18_hv_vcpu_get_sme_za_reg
+hv_vcpu_get_sme_za_reg
+6knifunptr_platform_Hypervisor19_hv_vcpu_set_sme_za_reg
+hv_vcpu_set_sme_za_reg
+7knifunptr_platform_Hypervisor20_hv_vcpu_get_sme_zt0_reg
+hv_vcpu_get_sme_zt0_reg
+7knifunptr_platform_Hypervisor21_hv_vcpu_set_sme_zt0_reg
+hv_vcpu_set_sme_zt0_reg
 UShort
 hv_sys_reg_t
-3knifunptr_platform_Hypervisor10_hv_vcpu_get_sys_reg
+3knifunptr_platform_Hypervisor22_hv_vcpu_get_sys_reg
 hv_vcpu_get_sys_reg
-3knifunptr_platform_Hypervisor11_hv_vcpu_set_sys_reg
+3knifunptr_platform_Hypervisor23_hv_vcpu_set_sys_reg
 hv_vcpu_set_sys_reg
 hv_interrupt_type_t
 type
@@ -66,210 +109,206 @@ Hypervisor
 
 BooleanVar
 pending
-=knifunptr_platform_Hypervisor12_hv_vcpu_get_pending_interrupt
+=knifunptr_platform_Hypervisor24_hv_vcpu_get_pending_interrupt
 hv_vcpu_get_pending_interrupt
-=knifunptr_platform_Hypervisor13_hv_vcpu_set_pending_interrupt
+=knifunptr_platform_Hypervisor25_hv_vcpu_set_pending_interrupt
 hv_vcpu_set_pending_interrupt
-Aknifunptr_platform_Hypervisor14_hv_vcpu_get_trap_debug_exceptions
+Aknifunptr_platform_Hypervisor26_hv_vcpu_get_trap_debug_exceptions
 !hv_vcpu_get_trap_debug_exceptions
-Aknifunptr_platform_Hypervisor15_hv_vcpu_set_trap_debug_exceptions
+Aknifunptr_platform_Hypervisor27_hv_vcpu_set_trap_debug_exceptions
 !hv_vcpu_set_trap_debug_exceptions
-Cknifunptr_platform_Hypervisor16_hv_vcpu_get_trap_debug_reg_accesses
+Cknifunptr_platform_Hypervisor28_hv_vcpu_get_trap_debug_reg_accesses
 #hv_vcpu_get_trap_debug_reg_accesses
-Cknifunptr_platform_Hypervisor17_hv_vcpu_set_trap_debug_reg_accesses
+Cknifunptr_platform_Hypervisor29_hv_vcpu_set_trap_debug_reg_accesses
 #hv_vcpu_set_trap_debug_reg_accesses
-+knifunptr_platform_Hypervisor18_hv_vcpu_run
++knifunptr_platform_Hypervisor30_hv_vcpu_run
 hv_vcpu_run
 vcpus
 uint32_t
 
 vcpu_count
--knifunptr_platform_Hypervisor19_hv_vcpus_exit
+-knifunptr_platform_Hypervisor31_hv_vcpus_exit
 hv_vcpus_exit
 time
-5knifunptr_platform_Hypervisor20_hv_vcpu_get_exec_time
+5knifunptr_platform_Hypervisor32_hv_vcpu_get_exec_time
 hv_vcpu_get_exec_time
 vtimer_is_masked
-7knifunptr_platform_Hypervisor21_hv_vcpu_get_vtimer_mask
+7knifunptr_platform_Hypervisor33_hv_vcpu_get_vtimer_mask
 hv_vcpu_get_vtimer_mask
-7knifunptr_platform_Hypervisor22_hv_vcpu_set_vtimer_mask
+7knifunptr_platform_Hypervisor34_hv_vcpu_set_vtimer_mask
 hv_vcpu_set_vtimer_mask
 vtimer_offset
-9knifunptr_platform_Hypervisor23_hv_vcpu_get_vtimer_offset
+9knifunptr_platform_Hypervisor35_hv_vcpu_get_vtimer_offset
 hv_vcpu_get_vtimer_offset
-9knifunptr_platform_Hypervisor24_hv_vcpu_set_vtimer_offset
+9knifunptr_platform_Hypervisor36_hv_vcpu_set_vtimer_offset
 hv_vcpu_set_vtimer_offset
 hv_gic_config_t
 
 gic_config
--knifunptr_platform_Hypervisor25_hv_gic_create
+-knifunptr_platform_Hypervisor37_hv_gic_create
 hv_gic_create
 intid
 level
-.knifunptr_platform_Hypervisor26_hv_gic_set_spi
+.knifunptr_platform_Hypervisor38_hv_gic_set_spi
 hv_gic_set_spi
 hv_ipa_t
 address
-/knifunptr_platform_Hypervisor27_hv_gic_send_msi
+/knifunptr_platform_Hypervisor39_hv_gic_send_msi
 hv_gic_send_msi
 hv_gic_distributor_reg_t
-:knifunptr_platform_Hypervisor28_hv_gic_get_distributor_reg
+:knifunptr_platform_Hypervisor40_hv_gic_get_distributor_reg
 hv_gic_get_distributor_reg
-:knifunptr_platform_Hypervisor29_hv_gic_set_distributor_reg
+:knifunptr_platform_Hypervisor41_hv_gic_set_distributor_reg
 hv_gic_set_distributor_reg
 hv_ipa_tVar
 redistributor_base_address
-=knifunptr_platform_Hypervisor30_hv_gic_get_redistributor_base
+=knifunptr_platform_Hypervisor42_hv_gic_get_redistributor_base
 hv_gic_get_redistributor_base
 hv_gic_redistributor_reg_t
-<knifunptr_platform_Hypervisor31_hv_gic_get_redistributor_reg
+<knifunptr_platform_Hypervisor43_hv_gic_get_redistributor_reg
 hv_gic_get_redistributor_reg
-<knifunptr_platform_Hypervisor32_hv_gic_set_redistributor_reg
+<knifunptr_platform_Hypervisor44_hv_gic_set_redistributor_reg
 hv_gic_set_redistributor_reg
 hv_gic_icc_reg_t
-2knifunptr_platform_Hypervisor33_hv_gic_get_icc_reg
+2knifunptr_platform_Hypervisor45_hv_gic_get_icc_reg
 hv_gic_get_icc_reg
-2knifunptr_platform_Hypervisor34_hv_gic_set_icc_reg
+2knifunptr_platform_Hypervisor46_hv_gic_set_icc_reg
 hv_gic_set_icc_reg
 hv_gic_ich_reg_t
-2knifunptr_platform_Hypervisor35_hv_gic_get_ich_reg
+2knifunptr_platform_Hypervisor47_hv_gic_get_ich_reg
 hv_gic_get_ich_reg
-2knifunptr_platform_Hypervisor36_hv_gic_set_ich_reg
+2knifunptr_platform_Hypervisor48_hv_gic_set_ich_reg
 hv_gic_set_ich_reg
 hv_gic_icv_reg_t
-2knifunptr_platform_Hypervisor37_hv_gic_get_icv_reg
+2knifunptr_platform_Hypervisor49_hv_gic_get_icv_reg
 hv_gic_get_icv_reg
-2knifunptr_platform_Hypervisor38_hv_gic_set_icv_reg
+2knifunptr_platform_Hypervisor50_hv_gic_set_icv_reg
 hv_gic_set_icv_reg
 hv_gic_msi_reg_t
-2knifunptr_platform_Hypervisor39_hv_gic_get_msi_reg
+2knifunptr_platform_Hypervisor51_hv_gic_get_msi_reg
 hv_gic_get_msi_reg
-2knifunptr_platform_Hypervisor40_hv_gic_set_msi_reg
+2knifunptr_platform_Hypervisor52_hv_gic_set_msi_reg
 hv_gic_set_msi_reg
 gic_state_data
-size_t
 gic_state_size
-0knifunptr_platform_Hypervisor41_hv_gic_set_state
+0knifunptr_platform_Hypervisor53_hv_gic_set_state
 hv_gic_set_state
-,knifunptr_platform_Hypervisor42_hv_gic_reset
+,knifunptr_platform_Hypervisor54_hv_gic_reset
 hv_gic_reset
-4knifunptr_platform_Hypervisor43_hv_gic_config_create
+4knifunptr_platform_Hypervisor55_hv_gic_config_create
 hv_gic_config_create
 distributor_base_address
-Bknifunptr_platform_Hypervisor44_hv_gic_config_set_distributor_base
+Bknifunptr_platform_Hypervisor56_hv_gic_config_set_distributor_base
 "hv_gic_config_set_distributor_base
-Dknifunptr_platform_Hypervisor45_hv_gic_config_set_redistributor_base
+Dknifunptr_platform_Hypervisor57_hv_gic_config_set_redistributor_base
 $hv_gic_config_set_redistributor_base
 msi_region_base_address
-Aknifunptr_platform_Hypervisor46_hv_gic_config_set_msi_region_base
+Aknifunptr_platform_Hypervisor58_hv_gic_config_set_msi_region_base
 !hv_gic_config_set_msi_region_base
 msi_intid_base
 msi_intid_count
-Eknifunptr_platform_Hypervisor47_hv_gic_config_set_msi_interrupt_range
+Eknifunptr_platform_Hypervisor59_hv_gic_config_set_msi_interrupt_range
 %hv_gic_config_set_msi_interrupt_range
 	size_tVar
 distributor_size
-;knifunptr_platform_Hypervisor48_hv_gic_get_distributor_size
+;knifunptr_platform_Hypervisor60_hv_gic_get_distributor_size
 hv_gic_get_distributor_size
 distributor_base_alignment
-Eknifunptr_platform_Hypervisor49_hv_gic_get_distributor_base_alignment
+Eknifunptr_platform_Hypervisor61_hv_gic_get_distributor_base_alignment
 %hv_gic_get_distributor_base_alignment
 redistributor_region_size
-Dknifunptr_platform_Hypervisor50_hv_gic_get_redistributor_region_size
+Dknifunptr_platform_Hypervisor62_hv_gic_get_redistributor_region_size
 $hv_gic_get_redistributor_region_size
 redistributor_size
-=knifunptr_platform_Hypervisor51_hv_gic_get_redistributor_size
+=knifunptr_platform_Hypervisor63_hv_gic_get_redistributor_size
 hv_gic_get_redistributor_size
 redistributor_base_alignment
-Gknifunptr_platform_Hypervisor52_hv_gic_get_redistributor_base_alignment
+Gknifunptr_platform_Hypervisor64_hv_gic_get_redistributor_base_alignment
 'hv_gic_get_redistributor_base_alignment
 msi_region_size
-:knifunptr_platform_Hypervisor53_hv_gic_get_msi_region_size
+:knifunptr_platform_Hypervisor65_hv_gic_get_msi_region_size
 hv_gic_get_msi_region_size
 msi_region_base_alignment
-Dknifunptr_platform_Hypervisor54_hv_gic_get_msi_region_base_alignment
+Dknifunptr_platform_Hypervisor66_hv_gic_get_msi_region_base_alignment
 $hv_gic_get_msi_region_base_alignment
 	UIntVarOf
 uint32_tVar
 spi_intid_base
 spi_intid_count
->knifunptr_platform_Hypervisor55_hv_gic_get_spi_interrupt_range
+>knifunptr_platform_Hypervisor67_hv_gic_get_spi_interrupt_range
 hv_gic_get_spi_interrupt_range
 hv_gic_intid_t
 	interrupt
-0knifunptr_platform_Hypervisor56_hv_gic_get_intid
+0knifunptr_platform_Hypervisor68_hv_gic_get_intid
 hv_gic_get_intid
 hv_gic_state_t
-3knifunptr_platform_Hypervisor57_hv_gic_state_create
+3knifunptr_platform_Hypervisor69_hv_gic_state_create
 hv_gic_state_create
 state
-5knifunptr_platform_Hypervisor58_hv_gic_state_get_size
+5knifunptr_platform_Hypervisor70_hv_gic_state_get_size
 hv_gic_state_get_size
-5knifunptr_platform_Hypervisor59_hv_gic_state_get_data
+5knifunptr_platform_Hypervisor71_hv_gic_state_get_data
 hv_gic_state_get_data
-5knifunptr_platform_Hypervisor60_hv_vcpu_config_create
+?knifunptr_platform_Hypervisor72_hv_sme_config_get_max_svl_bytes
+hv_sme_config_get_max_svl_bytes
+5knifunptr_platform_Hypervisor73_hv_vcpu_config_create
 hv_vcpu_config_create
 hv_feature_reg_t
 feature_reg
->knifunptr_platform_Hypervisor61_hv_vcpu_config_get_feature_reg
+>knifunptr_platform_Hypervisor74_hv_vcpu_config_get_feature_reg
 hv_vcpu_config_get_feature_reg
 hv_cache_type_t
 
 cache_type
 values
-Lknifunptr_platform_Hypervisor62_hv_vcpu_config_get_ccsidr_el1_sys_reg_values
+Lknifunptr_platform_Hypervisor75_hv_vcpu_config_get_ccsidr_el1_sys_reg_values
 ,hv_vcpu_config_get_ccsidr_el1_sys_reg_values
 max_vcpu_count
-8knifunptr_platform_Hypervisor63_hv_vm_get_max_vcpu_count
+8knifunptr_platform_Hypervisor76_hv_vm_get_max_vcpu_count
 hv_vm_get_max_vcpu_count
 hv_vm_config_t
-,knifunptr_platform_Hypervisor64_hv_vm_create
+,knifunptr_platform_Hypervisor77_hv_vm_create
 hv_vm_create
--knifunptr_platform_Hypervisor65_hv_vm_destroy
+-knifunptr_platform_Hypervisor78_hv_vm_destroy
 hv_vm_destroy
 addr
 ipa
-size
 hv_memory_flags_t
-flags
-)knifunptr_platform_Hypervisor66_hv_vm_map
+)knifunptr_platform_Hypervisor79_hv_vm_map
 	hv_vm_map
-+knifunptr_platform_Hypervisor67_hv_vm_unmap
++knifunptr_platform_Hypervisor80_hv_vm_unmap
 hv_vm_unmap
--knifunptr_platform_Hypervisor68_hv_vm_protect
+-knifunptr_platform_Hypervisor81_hv_vm_protect
 hv_vm_protect
-3knifunptr_platform_Hypervisor69_hv_vm_config_create
+3knifunptr_platform_Hypervisor82_hv_vm_config_create
 hv_vm_config_create
 ipa_bit_length
-=knifunptr_platform_Hypervisor70_hv_vm_config_get_max_ipa_size
+=knifunptr_platform_Hypervisor83_hv_vm_config_get_max_ipa_size
 hv_vm_config_get_max_ipa_size
-Aknifunptr_platform_Hypervisor71_hv_vm_config_get_default_ipa_size
+Aknifunptr_platform_Hypervisor84_hv_vm_config_get_default_ipa_size
 !hv_vm_config_get_default_ipa_size
-9knifunptr_platform_Hypervisor72_hv_vm_config_set_ipa_size
+9knifunptr_platform_Hypervisor85_hv_vm_config_set_ipa_size
 hv_vm_config_set_ipa_size
-9knifunptr_platform_Hypervisor73_hv_vm_config_get_ipa_size
+9knifunptr_platform_Hypervisor86_hv_vm_config_get_ipa_size
 hv_vm_config_get_ipa_size
 el2_supported
->knifunptr_platform_Hypervisor74_hv_vm_config_get_el2_supported
+>knifunptr_platform_Hypervisor87_hv_vm_config_get_el2_supported
 hv_vm_config_get_el2_supported
 el2_enabled
-<knifunptr_platform_Hypervisor75_hv_vm_config_get_el2_enabled
+<knifunptr_platform_Hypervisor88_hv_vm_config_get_el2_enabled
 hv_vm_config_get_el2_enabled
-<knifunptr_platform_Hypervisor76_hv_vm_config_set_el2_enabled
+<knifunptr_platform_Hypervisor89_hv_vm_config_set_el2_enabled
 hv_vm_config_set_el2_enabled
-CPointed
-COpaquePointer
-COpaquePointerVar
-uvap
-hv_allocate_flags_t
-.knifunptr_platform_Hypervisor77_hv_vm_allocate
-hv_vm_allocate
-uva
-0knifunptr_platform_Hypervisor78_hv_vm_deallocate
-hv_vm_deallocate
-HV_APIC_STATE_EXT_VER
-HV_ATPIC_STATE_EXT_VER
-HV_IOAPIC_STATE_EXT_VER
+hv_ipa_granule_t
+Var
+granule
+Dknifunptr_platform_Hypervisor90_hv_vm_config_get_default_ipa_granule
+$hv_vm_config_get_default_ipa_granule
+<knifunptr_platform_Hypervisor91_hv_vm_config_get_ipa_granule
+hv_vm_config_get_ipa_granule
+<knifunptr_platform_Hypervisor92_hv_vm_config_set_ipa_granule
+hv_vm_config_set_ipa_granule
+HV_ALLOCATE_DEFAULT
 HV_GIC_INT_PERFORMANCE_MONITOR
 HV_GIC_INT_MAINTENANCE
 HV_GIC_INT_EL2_PHYSICAL_TIMER
@@ -307,291 +346,314 @@ $HV_GIC_DISTRIBUTOR_REG_GICD_IGROUPR9
 %HV_GIC_DISTRIBUTOR_REG_GICD_IGROUPR27
 %HV_GIC_DISTRIBUTOR_REG_GICD_IGROUPR28
 %HV_GIC_DISTRIBUTOR_REG_GICD_IGROUPR29
-%HV_GIC_DISTRIBUTOR_REG_GICD_IGROUPR30
-%HV_GIC_DISTRIBUTOR_REG_GICD_IGROUPR31
-&HV_GIC_DISTRIBUTOR_REG_GICD_ISENABLER0
-&HV_GIC_DISTRIBUTOR_REG_GICD_ISENABLER1
-&HV_GIC_DISTRIBUTOR_REG_GICD_ISENABLER2
-&HV_GIC_DISTRIBUTOR_REG_GICD_ISENABLER3
-&HV_GIC_DISTRIBUTOR_REG_GICD_ISENABLER4
-&HV_GIC_DISTRIBUTOR_REG_GICD_ISENABLER5
-&HV_GIC_DISTRIBUTOR_REG_GICD_ISENABLER6
-&HV_GIC_DISTRIBUTOR_REG_GICD_ISENABLER7
-&HV_GIC_DISTRIBUTOR_REG_GICD_ISENABLER8
-&HV_GIC_DISTRIBUTOR_REG_GICD_ISENABLER9
-'HV_GIC_DISTRIBUTOR_REG_GICD_ISENABLER10Ë
+%HV_GIC_DISTRIBUTOR_REG_GICD_IGROUPR30¨
  
  
  
  
-
- 
-
-
- 
-
+ 
+ 
+ 
+ 
+	
+
  
- 
- 
- 
-
+
+
+
+ 
+
+
  
- 
- 
-
- 
-
- 
- 
- 
- 
-!
-" 
-& 
-) 
-* 
-+ 
-, 
-/ 
-2 
-3 
-8 
-: 
-; 
-< 
-M 
-^ 
-f 
-j 
-o 
-s 
-x 
-} 
-Ç 
-á 
-ç 
-° 
-∑ 
-∏ 
-Ω 
-¡ 
-À 
-œ 
-◊ 
-ﬂ 
-˙ 
-˚ 
-¸ 
-˛ ≈0l0j`2	00j`02$ 
-00
-0	j0`02
-0j`Há “
-((0j`2
-	0j`Há “
-(N%0j`2
-	0j`2
- 0j`2#00j`0Há “
-($@(0j`2
-	0j`2
- 0j`2
-#0j`Há “
-('J.0j`2
-	0j`2 02#00j`0Há “
-(-<10j`2
-	0j`2 02
-#0j`Há “
-(0N50j`2
-	0j`2
- 0 j`!2#00j`0Há “
-(4@70j`2
-	0j`2
- 0 j`!2
-#0j`Há “
-(6J?0j`2
-	0j`290"2=0$0#j`%0Há “
-(>8A0j`2
-	0j`290"2=0$Há “
-(@BC0j`2
-	0j`2#0$0#j`%0Há “
-(B0E0j`2
-	0j`2#0$Há “
-(DBG0j`2
-	0j`2#0$0#j`%0Há “
-(F0I0j`2
-	0j`2#0$Há “
-(H(K0j`2
-	0j`Há “
-(JBP0j`2L00j`02
-N0j`&Há “
-(OBS0j`2
-	0j`2Q00j`0Há “
-(RBV0j`2
-	0j`2T0$0#j`%0Há “
-(U0X0j`2
-	0j`2T0$Há “
-(WB[0j`2
-	0j`2Y00j`0Há “
-(Z4]0j`2
-	0j`2
-Y0j`Há “
-(\,a0j`2_
-0j`'Há “
-(`0e0j`2
-b0j`&2c0$Há “
-(d4i0j`2
-g0j`(2
-b0j`&Há “
-(hBl0j`2
- 0 j`)2#00j`0Há “
-(k4n0j`2
- 0 j`)2
-#0j`Há “
-(mBr0j`2
-	0j`2p00j`*0Há “
-(qNu0j`2
-	0j`2
- 0j`+2#00j`0Há “
-(t@w0j`2
-	0j`2
- 0j`+2
-#0j`Há “
-(vNz0j`2
-	0j`2
- 0 j`,2#00j`0Há “
-(y@|0j`2
-	0j`2
- 0 j`,2
-#0j`Há “
-({N0j`2
-	0j`2
- 0 j`-2#00j`0Há “
-(~BÅ0j`2
-	0j`2
- 0 j`-2
-#0j`Há “
-	(ÄPÑ0j`2
-	0j`2
- 0 j`.2#00j`0Há “
-	(ÉBÜ0j`2
-	0j`2
- 0 j`.2
-#0j`Há “
-	(ÖDâ0j`2
- 0 j`/2#00j`0Há “
-	(à6ã0j`2
- 0 j`/2
-#0j`Há “
-	(ä:ê0j`2å02é0j`0Há “
-	(èí0j`Há “
-	(ë"î
-0j`'Há “
-	(ì;ó0j`2
-0j`'2ï0j`(Há “
-	(ñ:ô0j`2
-0j`'2
-p0j`(Há “
-	(ò;ú0j`2
-0j`'2ö0j`(Há “
-	(õH†0j`2
-0j`'2ù0j`&2û0j`&Há “
-	(ü9§0j`2¢00j`10Há “
-	(£9ß0j`2•00j`10Há “
-	(¶9™0j`2®00j`10Há “
-	(©9≠0j`2´00j`10Há “
-	(¨9∞0j`2Æ00j`10Há “
-	(Ø9≥0j`2±00j`10Há “
-	(≤9∂0j`2¥00j`10Há “
-	(µTº0j`2π002j`302∫002j`30Há “
-	(ªE¿0j`2æ0 j`42b002j`30Há “
-	(ø"√
-0j`5Há “
-	(¬J∆0j`2ƒ
-0j`52é00j`10Há “
-	(≈>»0j`2ƒ
-0j`52å0Há “
-	(«" 
-0j`Há “
-	(…QŒ0j`2
-0j`2Ã062#00j`0Há “
-	(ÕR”0j`2
-0j`2–072—00j`0Há “
-	(“9÷0j`2‘002j`30Há “
-	(’.Ÿ0j`2
-0j`8Há “
-	(ÿ€0j`Há “
-	(⁄T‚0j`2‹02›0j`(2ﬁ0j`02‡0j`9Há “
-	(·8‰0j`2›0j`(2ﬁ0j`0Há “
-	(„EÊ0j`2›0j`(2ﬁ0j`02‡0j`9Há “
-	(Â"Ë
-0j`8Há “
-	(Á9Î0j`2È002j`30Há “
-	(Í9Ì0j`2È002j`30Há “
-	(Ï;Ô0j`2
-0j`82È0j`&Há “
-	(ÓIÒ0j`2
-0j`82È002j`30Há “
-	(9Ù0j`2Ú0$0#j`%0Há “
-	(ÛI˜0j`2
-0j`82ı0$0#j`%0Há “
-	(ˆ7˘0j`2
-0j`82ı0$Há “
-	(¯_Ä0j`2%˝ 0:0
-j`;0	j`<02ﬁ0j`02‡0j`=Há “
-	(ˇ:É0j`2Å02ﬁ0j`0Há “
-	(Ç"Ñ08XÜTÍ
-»"Ö08XÜTÍ
-»"Ü08XÜTÍ
-»"á0 j`48XÜTÍ
-.P"à0 j`48XÜTÍ
-2P"â0 j`48XÜTÍ
-4P"ä0 j`48XÜTÍ
-6P"ã0 j`48XÜTÍ
-<P"å0 j`)8XÜTÍ
- P"ç0 j`)8XÜTÍ
-P"é0 j`)8XÜTÍ
-ÄP"è0 j`)8XÜTÍ
-àP"ê0 j`)8XÜTÍ
-êP"ë0 j`)8XÜTÍ
-òP"í0 j`)8XÜTÍ
-†P"ì0 j`)8XÜTÍ
-®P"î0 j`)8XÜTÍ
-∞P"ï0 j`)8XÜTÍ
-∏P"ñ0 j`)8XÜTÍ
-¿P"ó0 j`)8XÜTÍ
-»P"ò0 j`)8XÜTÍ
-–P"ô0 j`)8XÜTÍ
-ÿP"ö0 j`)8XÜTÍ
-‡P"õ0 j`)8XÜTÍ
-ËP"ú0 j`)8XÜTÍ
-P"ù0 j`)8XÜTÍ
-¯P"û0 j`)8XÜTÍ
-ÄP"ü0 j`)8XÜTÍ
-àP"†0 j`)8XÜTÍ
-êP"°0 j`)8XÜTÍ
-òP"¢0 j`)8XÜTÍ
-†P"£0 j`)8XÜTÍ
-®P"§0 j`)8XÜTÍ
-∞P"•0 j`)8XÜTÍ
-∏P"¶0 j`)8XÜTÍ
-¿P"ß0 j`)8XÜTÍ
-»P"®0 j`)8XÜTÍ
-–P"©0 j`)8XÜTÍ
-ÿP"™0 j`)8XÜTÍ
-‡P"´0 j`)8XÜTÍ
-ËP"¨0 j`)8XÜTÍ
-P"≠0 j`)8XÜTÍ
-¯P"Æ0 j`)8XÜTÍ
-ÄP"Ø0 j`)8XÜTÍ
-àP"∞0 j`)8XÜTÍ
-êP"±0 j`)8XÜTÍ
-òP"≤0 j`)8XÜTÍ
-†P"≥0 j`)8XÜTÍ
-®P"¥0 j`)8XÜTÍ
-∞P"µ0 j`)8XÜTÍ
-∏P"∂0 j`)8XÜTÍ
-¿P"∑0 j`)8XÜTÍ
-»P"∏0 j`)8XÜTÍ
-–Pÿ
-‡
+ 
+
+
+ 
+
+ 
+ 
+ 
+  
+! 
+
+#
+$ 
+% 
+) 
+, 
+- 
+/ 
+3 
+6 
+7 
+8 
+9 
+< 
+? 
+E 
+F 
+G 
+H 
+N 
+[ 
+\ 
+a 
+c 
+d 
+e 
+v 
+á 
+è 
+ì 
+ò 
+ú 
+° 
+¶ 
+´ 
+∞ 
+… 
+ﬂ 
+‡ 
+Â 
+È 
+ı 
+˘ 
+Å 
+à 
+¢ 
+D£ ´5Z0j`2$ 00j`0j`02
+0	j`2
+0	j`Há “
+(60j`202
+0	j`Há “
+(l(0j`20	0j`02$" 
+000j0`02&
+0j`Há “
+('(+0j`2
+0	j`Há “
+(*N20j`2
+0	j`2
+.0j`200	0j`0Há “
+(1@50j`2
+0	j`2
+.0j`2
+00	j`Há “
+(4J;0j`2
+0	j`2.0 200"0!j`#0Há “
+(:<>0j`2
+0	j`2.0 2
+00"j`$Há “
+(=8B0j`2
+0	j`2@
+0%0Há “
+(A8D0j`2
+0	j`2@
+0%0Há “
+(CVK0j`2
+0	j`2.0&200(0'j`)02
+I0	j`Há “
+(JVM0j`2
+0	j`2.0&200(0'j`)02
+I0	j`Há “
+(LVP0j`2
+0	j`2.0*200(0'j`)02
+I0	j`Há “
+(OVR0j`2
+0	j`2.0*200(0'j`)02
+I0	j`Há “
+(QNT0j`2
+0	j`200(0'j`)02
+I0	j`Há “
+(SNV0j`2
+0	j`200(0'j`)02
+I0	j`Há “
+(U6X0j`2
+0	j`200Há “
+(W6Z0j`2
+0	j`200Há “
+(YN^0j`2
+0	j`2
+.0+j`,200	0j`0Há “
+(]@`0j`2
+0	j`2
+.0+j`,2
+00	j`Há “
+(_Jh0j`2
+0	j`2b0-2f0/0.j`00Há “
+(g8j0j`2
+0	j`2b0-2f0/Há “
+(iBl0j`2
+0	j`200/0.j`00Há “
+(k0n0j`2
+0	j`200/Há “
+(mBp0j`2
+0	j`200/0.j`00Há “
+(o0r0j`2
+0	j`200/Há “
+(q(t0j`2
+0	j`Há “
+(sBy0j`2u0	0j`02
+w0j`1Há “
+(xB|0j`2
+0	j`2z0	0j`0Há “
+({B0j`2
+0	j`2}0/0.j`00Há “
+(~2Å0j`2
+0	j`2}0/Há “
+	(ÄEÑ0j`2
+0	j`2Ç0	0j`0Há “
+	(É7Ü0j`2
+0	j`2Ç0	j`Há “
+	(Ö/ä0j`2à
+0j`2Há “
+	(â4é0j`2ã0j`12å0/Há “
+	(ç8í0j`2ê0	j`32ã0j`1Há “
+	(ëDï0j`2
+.0+j`4200	0j`0Há “
+	(î6ó0j`2
+.0+j`42
+00	j`Há “
+	(ñEõ0j`2
+0	j`2ô0	0j`50Há “
+	(öPû0j`2
+0	j`2
+.0j`6200	0j`0Há “
+	(ùB†0j`2
+0	j`2
+.0j`62
+00	j`Há “
+	(üP£0j`2
+0	j`2
+.0+j`7200	0j`0Há “
+	(¢B•0j`2
+0	j`2
+.0+j`72
+00	j`Há “
+	(§P®0j`2
+0	j`2
+.0+j`8200	0j`0Há “
+	(ßB™0j`2
+0	j`2
+.0+j`82
+00	j`Há “
+	(©P≠0j`2
+0	j`2
+.0+j`9200	0j`0Há “
+	(¨BØ0j`2
+0	j`2
+.0+j`92
+00	j`Há “
+	(ÆD≤0j`2
+.0+j`:200	0j`0Há “
+	(±6¥0j`2
+.0+j`:2
+00	j`Há “
+	(≥:∏0j`2µ02∂0	j`Há “
+	(∑∫0j`Há “
+	(π"º
+0j`2Há “
+	(ª;ø0j`2&
+0j`22Ω0	j`3Há “
+	(æ;¡0j`2&
+0j`22ô0	j`3Há “
+	(¿;ƒ0j`2&
+0j`22¬0	j`3Há “
+	(√H»0j`2&
+0j`22≈0j`12∆0j`1Há “
+	(«9Ã0j`2 0	0j`;0Há “
+	(À9œ0j`2Õ0	0j`;0Há “
+	(Œ9“0j`2–0	0j`;0Há “
+	(—9’0j`2”0	0j`;0Há “
+	(‘9ÿ0j`2÷0	0j`;0Há “
+	(◊9€0j`2Ÿ0	0j`;0Há “
+	(⁄9ﬁ0j`2‹0	0j`;0Há “
+	(›T‰0j`2·00<j`=02‚00<j`=0Há “
+	(„FË0j`2Ê0+j`>2ã00<j`=0Há “
+	(Á"Î
+0j`?Há “
+	(ÍJÓ0j`2Ï
+0j`?2∂0	0j`;0Há “
+	(Ì>0j`2Ï
+0j`?2µ0Há “
+	(Ô8Ú0j`200	0j`;0Há “
+	(Ò"Ù
+0j`Há “
+	(ÛQ¯0j`2&
+0j`2ˆ0@200	0j`0Há “
+	(˜R˝0j`2&
+0j`2˙0A2˚0	0j`0Há “
+	(¸9Ä0j`2˛00<j`=0Há “
+	(ˇ.É0j`2&
+0j`BHá “
+	(ÇÖ0j`Há “
+	(ÑRä0j`2Ü02á0	j`32
+0	j`2
+0	j`CHá “
+	(â7å0j`2á0	j`32
+0	j`Há “
+	(ãCé0j`2á0	j`32
+0	j`2
+0	j`CHá “
+	(ç"ê
+0j`BHá “
+	(è9ì0j`2ë00<j`=0Há “
+	(í9ï0j`2ë00<j`=0Há “
+	(î;ó0j`2&
+0j`B2ë0j`1Há “
+	(ñIô0j`2&
+0j`B2ë00<j`=0Há “
+	(ò9ú0j`2ö0/0.j`00Há “
+	(õIü0j`2&
+0j`B2ù0/0.j`00Há “
+	(û7°0j`2&
+0j`B2ù0/Há “
+	(†/¶0j`2§
+0E0Há “
+	(•?®0j`2&
+0j`B2§
+0E0Há “
+	(ß7™0j`2&
+0j`B2§0DHá “
+	(©"´08XÜTÍ
+ P"¨0+j`>8XÜTÍ
+.P"≠0+j`>8XÜTÍ
+2P"Æ0+j`>8XÜTÍ
+4P"Ø0+j`>8XÜTÍ
+6P"∞0+j`>8XÜTÍ
+<P"±0+j`48XÜTÍ
+ P"≤0+j`48XÜTÍ
+P"≥0+j`48XÜTÍ
+ÄP"¥0+j`48XÜTÍ
+àP"µ0+j`48XÜTÍ
+êP"∂0+j`48XÜTÍ
+òP"∑0+j`48XÜTÍ
+†P"∏0+j`48XÜTÍ
+®P"π0+j`48XÜTÍ
+∞P"∫0+j`48XÜTÍ
+∏P"ª0+j`48XÜTÍ
+¿P"º0+j`48XÜTÍ
+»P"Ω0+j`48XÜTÍ
+–P"æ0+j`48XÜTÍ
+ÿP"ø0+j`48XÜTÍ
+‡P"¿0+j`48XÜTÍ
+ËP"¡0+j`48XÜTÍ
+P"¬0+j`48XÜTÍ
+¯P"√0+j`48XÜTÍ
+ÄP"ƒ0+j`48XÜTÍ
+àP"≈0+j`48XÜTÍ
+êP"∆0+j`48XÜTÍ
+òP"«0+j`48XÜTÍ
+†P"»0+j`48XÜTÍ
+®P"…0+j`48XÜTÍ
+∞P" 0+j`48XÜTÍ
+∏P"À0+j`48XÜTÍ
+¿P"Ã0+j`48XÜTÍ
+»P"Õ0+j`48XÜTÍ
+–P"Œ0+j`48XÜTÍ
+ÿP"œ0+j`48XÜTÍ
+‡P"–0+j`48XÜTÍ
+ËP"—0+j`48XÜTÍ
+Pÿ
+‡
  Í
 platform.Hypervisor

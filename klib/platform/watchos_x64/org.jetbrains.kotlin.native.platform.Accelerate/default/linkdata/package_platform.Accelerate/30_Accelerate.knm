@@ -1,5 +1,5 @@
 
-ôw
+¯h
 kotlinx
 cinterop
 
@@ -10,18 +10,20 @@ Accelerate
 vImage_Buffer
 src
 dest
-kotlin
-ULong
-vImagePixelCount
-srcOffsetToROI_X
-srcOffsetToROI_Y
 
-FloatVarOf
-Float
-FloatVar
-kernel
-kernel_height
-kernel_width
+tempBuffer
+vImage_AffineTransform_Double
+	transform
+CPointer
+
+ShortVarOf
+kotlin
+Short
+posix
+
+int16_tVar
+Pixel_ARGB_16S
+	backColor
 UInt
 vImage_Flags
 flags
@@ -30,1052 +32,979 @@ FloatVarOf
 internal
 CCall
 id
-6knifunptr_platform_Accelerate3201_vImageDilate_PlanarF
-vImageDilate_PlanarF
+;knifunptr_platform_Accelerate3201_vImageAffineWarpD_ARGB16S
+vImageAffineWarpD_ARGB16S
 
-UByteVarOf
-UByte
-UByteVar
-7knifunptr_platform_Accelerate3202_vImageDilate_ARGB8888
-vImageDilate_ARGB8888
-7knifunptr_platform_Accelerate3203_vImageDilate_ARGBFFFF
-vImageDilate_ARGBFFFF
-5knifunptr_platform_Accelerate3204_vImageErode_Planar8
-vImageErode_Planar8
-5knifunptr_platform_Accelerate3205_vImageErode_PlanarF
-vImageErode_PlanarF
-6knifunptr_platform_Accelerate3206_vImageErode_ARGB8888
-vImageErode_ARGB8888
-6knifunptr_platform_Accelerate3207_vImageErode_ARGBFFFF
-vImageErode_ARGBFFFF
-
-tempBuffer
-3knifunptr_platform_Accelerate3208_vImageMax_Planar8
-vImageMax_Planar8
-3knifunptr_platform_Accelerate3209_vImageMax_PlanarF
-vImageMax_PlanarF
-4knifunptr_platform_Accelerate3210_vImageMax_ARGB8888
-vImageMax_ARGB8888
-4knifunptr_platform_Accelerate3211_vImageMax_ARGBFFFF
-vImageMax_ARGBFFFF
-3knifunptr_platform_Accelerate3212_vImageMin_Planar8
-vImageMin_Planar8
-3knifunptr_platform_Accelerate3213_vImageMin_PlanarF
-vImageMin_PlanarF
-4knifunptr_platform_Accelerate3214_vImageMin_ARGB8888
-vImageMin_ARGB8888
-4knifunptr_platform_Accelerate3215_vImageMin_ARGBFFFF
-vImageMin_ARGBFFFF
-buffer
-startScanline
-scanlineCount
-posix
-uint32_t
-bitsPerPixel
-filterMethodNumber
-
-filterType
->knifunptr_platform_Accelerate3216_vImagePNGDecompressionFilter
-vImagePNGDecompressionFilter
-CPointerVarOf
-CPointer
-CPointerVar
-srcs
-dests
-
-src_planes
-dest_planes
-
-ShortVarOf
-Short
-
-int16_tVar
-matrix
-Int
-int32_t
-divisor
-pre_bias
-IntVarOf
-
-int32_tVar
-	post_bias
-@knifunptr_platform_Accelerate3217_vImageMatrixMultiply_Planar16S
-vImageMatrixMultiply_Planar16S
->knifunptr_platform_Accelerate3218_vImageMatrixMultiply_Planar8
-vImageMatrixMultiply_Planar8
->knifunptr_platform_Accelerate3219_vImageMatrixMultiply_PlanarF
-vImageMatrixMultiply_PlanarF
-?knifunptr_platform_Accelerate3220_vImageMatrixMultiply_ARGB8888
-vImageMatrixMultiply_ARGB8888
-?knifunptr_platform_Accelerate3221_vImageMatrixMultiply_ARGBFFFF
-vImageMatrixMultiply_ARGBFFFF
-Hknifunptr_platform_Accelerate3222_vImageMatrixMultiply_ARGB8888ToPlanar8
-&vImageMatrixMultiply_ARGB8888ToPlanar8
-Hknifunptr_platform_Accelerate3223_vImageMatrixMultiply_ARGBFFFFToPlanarF
-&vImageMatrixMultiply_ARGBFFFFToPlanarF
-gamma
-
-gamma_type
-CPointed
-GammaFunction
-;knifunptr_platform_Accelerate3224_vImageCreateGammaFunction
-vImageCreateGammaFunction
-f
-Unit
-<knifunptr_platform_Accelerate3225_vImageDestroyGammaFunction
-vImageDestroyGammaFunction
->knifunptr_platform_Accelerate3226_vImageGamma_Planar8toPlanarF
-vImageGamma_Planar8toPlanarF
->knifunptr_platform_Accelerate3227_vImageGamma_PlanarFtoPlanar8
-vImageGamma_PlanarFtoPlanar8
-5knifunptr_platform_Accelerate3228_vImageGamma_PlanarF
-vImageGamma_PlanarF
-exponentialCoeffs
-linearCoeffs
-Pixel_8
-boundary
->knifunptr_platform_Accelerate3229_vImagePiecewiseGamma_Planar8
-vImagePiecewiseGamma_Planar8
-Kknifunptr_platform_Accelerate3230_vImagePiecewiseGamma_Planar8toPlanar16Q12
-)vImagePiecewiseGamma_Planar8toPlanar16Q12
-	Pixel_16S
-Bknifunptr_platform_Accelerate3231_vImagePiecewiseGamma_Planar16Q12
- vImagePiecewiseGamma_Planar16Q12
-Kknifunptr_platform_Accelerate3232_vImagePiecewiseGamma_Planar16Q12toPlanar8
-)vImagePiecewiseGamma_Planar16Q12toPlanar8
-Gknifunptr_platform_Accelerate3233_vImagePiecewiseGamma_Planar8toPlanarF
-%vImagePiecewiseGamma_Planar8toPlanarF
->knifunptr_platform_Accelerate3234_vImagePiecewiseGamma_PlanarF
-vImagePiecewiseGamma_PlanarF
-Gknifunptr_platform_Accelerate3235_vImagePiecewiseGamma_PlanarFtoPlanar8
-%vImagePiecewiseGamma_PlanarFtoPlanar8
-Kknifunptr_platform_Accelerate3236_vImageSymmetricPiecewiseGamma_Planar16Q12
-)vImageSymmetricPiecewiseGamma_Planar16Q12
-Gknifunptr_platform_Accelerate3237_vImageSymmetricPiecewiseGamma_PlanarF
-%vImageSymmetricPiecewiseGamma_PlanarF
-coefficients
-
-boundaries
-order
-log2segments
-Cknifunptr_platform_Accelerate3238_vImagePiecewisePolynomial_PlanarF
-!vImagePiecewisePolynomial_PlanarF
-Lknifunptr_platform_Accelerate3239_vImagePiecewisePolynomial_Planar8toPlanarF
-*vImagePiecewisePolynomial_Planar8toPlanarF
-Lknifunptr_platform_Accelerate3240_vImagePiecewisePolynomial_PlanarFtoPlanar8
-*vImagePiecewisePolynomial_PlanarFtoPlanar8
-Lknifunptr_platform_Accelerate3241_vImageSymmetricPiecewisePolynomial_PlanarF
-*vImageSymmetricPiecewisePolynomial_PlanarF
-topCoefficients
-bottomCoefficients
-topOrder
-bottomOrder
-Aknifunptr_platform_Accelerate3242_vImagePiecewiseRational_PlanarF
-vImagePiecewiseRational_PlanarF
-UShortVarOf
-UShort
-Pixel_16UVar
-table
-Eknifunptr_platform_Accelerate3243_vImageLookupTable_Planar8toPlanar16
-#vImageLookupTable_Planar8toPlanar16
-	UIntVarOf
-uint32_tVar
-Eknifunptr_platform_Accelerate3244_vImageLookupTable_Planar8toPlanar24
-#vImageLookupTable_Planar8toPlanar24
-
-ULongVarOf
-uint64_tVar
-Eknifunptr_platform_Accelerate3245_vImageLookupTable_Planar8toPlanar48
-#vImageLookupTable_Planar8toPlanar48
+FloatVarOf
+Float
+FloatVar
 
 Pixel_FFFF
-Eknifunptr_platform_Accelerate3246_vImageLookupTable_Planar8toPlanar96
-#vImageLookupTable_Planar8toPlanar96
-Fknifunptr_platform_Accelerate3247_vImageLookupTable_Planar8toPlanar128
-$vImageLookupTable_Planar8toPlanar128
-
-Pixel_FVar
-Dknifunptr_platform_Accelerate3248_vImageLookupTable_Planar8toPlanarF
-"vImageLookupTable_Planar8toPlanarF
-
-Pixel_8Var
-Dknifunptr_platform_Accelerate3249_vImageLookupTable_PlanarFtoPlanar8
-"vImageLookupTable_PlanarFtoPlanar8
-LUT
-:knifunptr_platform_Accelerate3250_vImageLookupTable_8to64U
-vImageLookupTable_8to64U
-<knifunptr_platform_Accelerate3251_vImageLookupTable_Planar16
-vImageLookupTable_Planar16
-tableEntries
-maxFloat
-minFloat
-Gknifunptr_platform_Accelerate3252_vImageInterpolatedLookupTable_PlanarF
-%vImageInterpolatedLookupTable_PlanarF
+<knifunptr_platform_Accelerate3202_vImageAffineWarpD_ARGBFFFF
+vImageAffineWarpD_ARGBFFFF
+UShort
+	Pixel_16F
+=knifunptr_platform_Accelerate3203_vImageAffineWarpD_Planar16F
+vImageAffineWarpD_Planar16F
+UShortVarOf
 uint16_tVar
-	tableData
-numSrcChannels
-numDestChannels
+Pixel_16F16F
+;knifunptr_platform_Accelerate3204_vImageAffineWarpD_CbCr16F
+vImageAffineWarpD_CbCr16F
+Pixel_ARGB_16F
+;knifunptr_platform_Accelerate3205_vImageAffineWarpD_ARGB16F
+vImageAffineWarpD_ARGB16F
+vImage_CGAffineTransform
+UByte
+Pixel_8
+<knifunptr_platform_Accelerate3206_vImageAffineWarpCG_Planar8
+vImageAffineWarpCG_Planar8
+Pixel_F
+<knifunptr_platform_Accelerate3207_vImageAffineWarpCG_PlanarF
+vImageAffineWarpCG_PlanarF
+
+UByteVarOf
 
 uint8_tVar
-table_entries_per_dimension
-vImageMDTableUsageHint
-hint
-	LongVarOf
-vImage_ErrorVar
-err
-cnames
-structs
- vImage_MultidimensionalTableData
-vImage_MultidimensionalTable
-Dknifunptr_platform_Accelerate3253_vImageMultidimensionalTable_Create
-"vImageMultidimensionalTable_Create
-Dknifunptr_platform_Accelerate3254_vImageMultidimensionalTable_Retain
-"vImageMultidimensionalTable_Retain
-Eknifunptr_platform_Accelerate3255_vImageMultidimensionalTable_Release
-#vImageMultidimensionalTable_Release
-vImage_InterpolationMethod
-method
-Wknifunptr_platform_Accelerate3256_vImageMultiDimensionalInterpolatedLookupTable_PlanarF
-5vImageMultiDimensionalInterpolatedLookupTable_PlanarF
-[knifunptr_platform_Accelerate3257_vImageMultiDimensionalInterpolatedLookupTable_Planar16Q12
-9vImageMultiDimensionalInterpolatedLookupTable_Planar16Q12
-srcDest
-seedX
-seedY
-newValue
-connectivity
-9knifunptr_platform_Accelerate3258_vImageFloodFill_Planar8
-vImageFloodFill_Planar8
-	Pixel_16U
-;knifunptr_platform_Accelerate3259_vImageFloodFill_Planar16U
-vImageFloodFill_Planar16U
 
 Pixel_8888
-:knifunptr_platform_Accelerate3260_vImageFloodFill_ARGB8888
-vImageFloodFill_ARGB8888
+=knifunptr_platform_Accelerate3208_vImageAffineWarpCG_ARGB8888
+vImageAffineWarpCG_ARGB8888
 Pixel_ARGB_16U
-9knifunptr_platform_Accelerate3261_vImageFloodFill_ARGB16U
-vImageFloodFill_ARGB16U
-buf
-height
-width
-	pixelBits
-3knifunptr_platform_Accelerate3262_vImageBuffer_Init
-vImageBuffer_Init
-CValue
-CoreGraphics
-CGSize
-6knifunptr_platform_Accelerate3263_vImageBuffer_GetSize
-vImageBuffer_GetSize
-vImage_CGImageFormat
-format
-Gknifunptr_platform_Accelerate3264_vImageCGImageFormat_GetComponentCount
-%vImageCGImageFormat_GetComponentCount
-f1
-f2
-Boolean
-=knifunptr_platform_Accelerate3265_vImageCGImageFormat_IsEqual
-vImageCGImageFormat_IsEqual
-DoubleVarOf
+<knifunptr_platform_Accelerate3209_vImageAffineWarpCG_ARGB16U
+vImageAffineWarpCG_ARGB16U
+<knifunptr_platform_Accelerate3210_vImageAffineWarpCG_ARGB16S
+vImageAffineWarpCG_ARGB16S
+=knifunptr_platform_Accelerate3211_vImageAffineWarpCG_ARGBFFFF
+vImageAffineWarpCG_ARGBFFFF
+	srcPoints
+
+destPoints
+vImage_PerpsectiveTransform
+:knifunptr_platform_Accelerate3212_vImageGetPerspectiveWarp
+vImageGetPerspectiveWarp
+Int
+vImage_WarpInterpolation
+interpolation
+?knifunptr_platform_Accelerate3213_vImagePerspectiveWarp_Planar8
+vImagePerspectiveWarp_Planar8
+@knifunptr_platform_Accelerate3214_vImagePerspectiveWarp_ARGB8888
+vImagePerspectiveWarp_ARGB8888
+	Pixel_16U
+Aknifunptr_platform_Accelerate3215_vImagePerspectiveWarp_Planar16U
+vImagePerspectiveWarp_Planar16U
+?knifunptr_platform_Accelerate3216_vImagePerspectiveWarp_ARGB16U
+vImagePerspectiveWarp_ARGB16U
+Aknifunptr_platform_Accelerate3217_vImagePerspectiveWarp_Planar16F
+vImagePerspectiveWarp_Planar16F
+?knifunptr_platform_Accelerate3218_vImagePerspectiveWarp_ARGB16F
+vImagePerspectiveWarp_ARGB16F
+Aknifunptr_platform_Accelerate3219_vImageHorizontalReflect_Planar8
+vImageHorizontalReflect_Planar8
+Cknifunptr_platform_Accelerate3220_vImageHorizontalReflect_Planar16U
+!vImageHorizontalReflect_Planar16U
+Aknifunptr_platform_Accelerate3221_vImageHorizontalReflect_PlanarF
+vImageHorizontalReflect_PlanarF
+Bknifunptr_platform_Accelerate3222_vImageHorizontalReflect_ARGB8888
+ vImageHorizontalReflect_ARGB8888
+Aknifunptr_platform_Accelerate3223_vImageHorizontalReflect_ARGB16U
+vImageHorizontalReflect_ARGB16U
+Aknifunptr_platform_Accelerate3224_vImageHorizontalReflect_ARGB16S
+vImageHorizontalReflect_ARGB16S
+Bknifunptr_platform_Accelerate3225_vImageHorizontalReflect_ARGBFFFF
+ vImageHorizontalReflect_ARGBFFFF
+Cknifunptr_platform_Accelerate3226_vImageHorizontalReflect_Planar16F
+!vImageHorizontalReflect_Planar16F
+Aknifunptr_platform_Accelerate3227_vImageHorizontalReflect_CbCr16F
+vImageHorizontalReflect_CbCr16F
+Aknifunptr_platform_Accelerate3228_vImageHorizontalReflect_ARGB16F
+vImageHorizontalReflect_ARGB16F
+?knifunptr_platform_Accelerate3229_vImageVerticalReflect_Planar8
+vImageVerticalReflect_Planar8
+Aknifunptr_platform_Accelerate3230_vImageVerticalReflect_Planar16U
+vImageVerticalReflect_Planar16U
+?knifunptr_platform_Accelerate3231_vImageVerticalReflect_PlanarF
+vImageVerticalReflect_PlanarF
+@knifunptr_platform_Accelerate3232_vImageVerticalReflect_ARGB8888
+vImageVerticalReflect_ARGB8888
+?knifunptr_platform_Accelerate3233_vImageVerticalReflect_ARGB16U
+vImageVerticalReflect_ARGB16U
+?knifunptr_platform_Accelerate3234_vImageVerticalReflect_ARGB16S
+vImageVerticalReflect_ARGB16S
+@knifunptr_platform_Accelerate3235_vImageVerticalReflect_ARGBFFFF
+vImageVerticalReflect_ARGBFFFF
+Aknifunptr_platform_Accelerate3236_vImageVerticalReflect_Planar16F
+vImageVerticalReflect_Planar16F
+?knifunptr_platform_Accelerate3237_vImageVerticalReflect_CbCr16F
+vImageVerticalReflect_CbCr16F
+?knifunptr_platform_Accelerate3238_vImageVerticalReflect_ARGB16F
+vImageVerticalReflect_ARGB16F
+uint8_t
+rotationConstant
+8knifunptr_platform_Accelerate3239_vImageRotate90_Planar8
+vImageRotate90_Planar8
+:knifunptr_platform_Accelerate3240_vImageRotate90_Planar16U
+vImageRotate90_Planar16U
+8knifunptr_platform_Accelerate3241_vImageRotate90_PlanarF
+vImageRotate90_PlanarF
+9knifunptr_platform_Accelerate3242_vImageRotate90_ARGB8888
+vImageRotate90_ARGB8888
+8knifunptr_platform_Accelerate3243_vImageRotate90_ARGB16U
+vImageRotate90_ARGB16U
+8knifunptr_platform_Accelerate3244_vImageRotate90_ARGB16S
+vImageRotate90_ARGB16S
+9knifunptr_platform_Accelerate3245_vImageRotate90_ARGBFFFF
+vImageRotate90_ARGBFFFF
+:knifunptr_platform_Accelerate3246_vImageRotate90_Planar16F
+vImageRotate90_Planar16F
+8knifunptr_platform_Accelerate3247_vImageRotate90_CbCr16F
+vImageRotate90_CbCr16F
+8knifunptr_platform_Accelerate3248_vImageRotate90_ARGB16F
+vImageRotate90_ARGB16F
+ULong
+vImagePixelCount
+srcOffsetToROI_X
+srcOffsetToROI_Y
+
+xTranslate
+
+shearSlope
+CPointed
+ResamplingFilter
+filter
+?knifunptr_platform_Accelerate3249_vImageHorizontalShear_Planar8
+vImageHorizontalShear_Planar8
+	Pixel_16S
+Aknifunptr_platform_Accelerate3250_vImageHorizontalShear_Planar16S
+vImageHorizontalShear_Planar16S
+Aknifunptr_platform_Accelerate3251_vImageHorizontalShear_Planar16U
+vImageHorizontalShear_Planar16U
+?knifunptr_platform_Accelerate3252_vImageHorizontalShear_PlanarF
+vImageHorizontalShear_PlanarF
+@knifunptr_platform_Accelerate3253_vImageHorizontalShear_ARGB8888
+vImageHorizontalShear_ARGB8888
+?knifunptr_platform_Accelerate3254_vImageHorizontalShear_ARGB16U
+vImageHorizontalShear_ARGB16U
+?knifunptr_platform_Accelerate3255_vImageHorizontalShear_ARGB16S
+vImageHorizontalShear_ARGB16S
+@knifunptr_platform_Accelerate3256_vImageHorizontalShear_ARGBFFFF
+vImageHorizontalShear_ARGBFFFF
+Aknifunptr_platform_Accelerate3257_vImageHorizontalShear_Planar16F
+vImageHorizontalShear_Planar16F
+?knifunptr_platform_Accelerate3258_vImageHorizontalShear_CbCr16F
+vImageHorizontalShear_CbCr16F
+?knifunptr_platform_Accelerate3259_vImageHorizontalShear_ARGB16F
+vImageHorizontalShear_ARGB16F
+
+yTranslate
+=knifunptr_platform_Accelerate3260_vImageVerticalShear_Planar8
+vImageVerticalShear_Planar8
+?knifunptr_platform_Accelerate3261_vImageVerticalShear_Planar16S
+vImageVerticalShear_Planar16S
+?knifunptr_platform_Accelerate3262_vImageVerticalShear_Planar16U
+vImageVerticalShear_Planar16U
+=knifunptr_platform_Accelerate3263_vImageVerticalShear_PlanarF
+vImageVerticalShear_PlanarF
+>knifunptr_platform_Accelerate3264_vImageVerticalShear_ARGB8888
+vImageVerticalShear_ARGB8888
+=knifunptr_platform_Accelerate3265_vImageVerticalShear_ARGB16U
+vImageVerticalShear_ARGB16U
+=knifunptr_platform_Accelerate3266_vImageVerticalShear_ARGB16S
+vImageVerticalShear_ARGB16S
+>knifunptr_platform_Accelerate3267_vImageVerticalShear_ARGBFFFF
+vImageVerticalShear_ARGBFFFF
+?knifunptr_platform_Accelerate3268_vImageVerticalShear_Planar16F
+vImageVerticalShear_Planar16F
+=knifunptr_platform_Accelerate3269_vImageVerticalShear_CbCr16F
+vImageVerticalShear_CbCr16F
+=knifunptr_platform_Accelerate3270_vImageVerticalShear_ARGB16F
+vImageVerticalShear_ARGB16F
 Double
-
-CGFloatVar
-backgroundColor
-CGImage
-
-CGImageRef
-image
->knifunptr_platform_Accelerate3266_vImageBuffer_InitWithCGImage
-vImageBuffer_InitWithCGImage
+@knifunptr_platform_Accelerate3271_vImageHorizontalShearD_Planar8
+vImageHorizontalShearD_Planar8
+@knifunptr_platform_Accelerate3272_vImageHorizontalShearD_PlanarF
+vImageHorizontalShearD_PlanarF
+Aknifunptr_platform_Accelerate3273_vImageHorizontalShearD_ARGB8888
+vImageHorizontalShearD_ARGB8888
+@knifunptr_platform_Accelerate3274_vImageHorizontalShearD_ARGB16U
+vImageHorizontalShearD_ARGB16U
+@knifunptr_platform_Accelerate3275_vImageHorizontalShearD_ARGB16S
+vImageHorizontalShearD_ARGB16S
+Aknifunptr_platform_Accelerate3276_vImageHorizontalShearD_ARGBFFFF
+vImageHorizontalShearD_ARGBFFFF
+Bknifunptr_platform_Accelerate3277_vImageHorizontalShearD_Planar16F
+ vImageHorizontalShearD_Planar16F
+@knifunptr_platform_Accelerate3278_vImageHorizontalShearD_CbCr16F
+vImageHorizontalShearD_CbCr16F
+@knifunptr_platform_Accelerate3279_vImageHorizontalShearD_ARGB16F
+vImageHorizontalShearD_ARGB16F
+>knifunptr_platform_Accelerate3280_vImageVerticalShearD_Planar8
+vImageVerticalShearD_Planar8
+>knifunptr_platform_Accelerate3281_vImageVerticalShearD_PlanarF
+vImageVerticalShearD_PlanarF
+?knifunptr_platform_Accelerate3282_vImageVerticalShearD_ARGB8888
+vImageVerticalShearD_ARGB8888
+>knifunptr_platform_Accelerate3283_vImageVerticalShearD_ARGB16U
+vImageVerticalShearD_ARGB16U
+>knifunptr_platform_Accelerate3284_vImageVerticalShearD_ARGB16S
+vImageVerticalShearD_ARGB16S
+?knifunptr_platform_Accelerate3285_vImageVerticalShearD_ARGBFFFF
+vImageVerticalShearD_ARGBFFFF
+@knifunptr_platform_Accelerate3286_vImageVerticalShearD_Planar16F
+vImageVerticalShearD_Planar16F
+>knifunptr_platform_Accelerate3287_vImageVerticalShearD_CbCr16F
+vImageVerticalShearD_CbCr16F
+>knifunptr_platform_Accelerate3288_vImageVerticalShearD_ARGB16F
+vImageVerticalShearD_ARGB16F
+Pixel_88
+=knifunptr_platform_Accelerate3289_vImageHorizontalShear_CbCr8
+vImageHorizontalShear_CbCr8
+Pixel_16U16U
+?knifunptr_platform_Accelerate3290_vImageHorizontalShear_CbCr16U
+vImageHorizontalShear_CbCr16U
+@knifunptr_platform_Accelerate3291_vImageHorizontalShearD_CbCr16U
+vImageHorizontalShearD_CbCr16U
+Pixel_16S16S
+?knifunptr_platform_Accelerate3292_vImageHorizontalShear_CbCr16S
+vImageHorizontalShear_CbCr16S
+@knifunptr_platform_Accelerate3293_vImageHorizontalShearD_CbCr16S
+vImageHorizontalShearD_CbCr16S
+;knifunptr_platform_Accelerate3294_vImageVerticalShear_CbCr8
+vImageVerticalShear_CbCr8
+=knifunptr_platform_Accelerate3295_vImageVerticalShear_CbCr16U
+vImageVerticalShear_CbCr16U
+>knifunptr_platform_Accelerate3296_vImageVerticalShearD_CbCr16U
+vImageVerticalShearD_CbCr16U
+=knifunptr_platform_Accelerate3297_vImageVerticalShear_CbCr16S
+vImageVerticalShear_CbCr16S
+>knifunptr_platform_Accelerate3298_vImageVerticalShearD_CbCr16S
+vImageVerticalShearD_CbCr16S
+	Pixel_32U
+Dknifunptr_platform_Accelerate3299_vImageHorizontalShear_XRGB2101010W
+"vImageHorizontalShear_XRGB2101010W
+Bknifunptr_platform_Accelerate3300_vImageVerticalShear_XRGB2101010W
+ vImageVerticalShear_XRGB2101010W
+scale
+;knifunptr_platform_Accelerate3301_vImageNewResamplingFilter
+vImageNewResamplingFilter
+Unit
+?knifunptr_platform_Accelerate3302_vImageDestroyResamplingFilter
+vImageDestroyResamplingFilter
 	CFunction
-	Function2
+	Function4
 COpaquePointer
-callback
+
+kernelFunc
+kernelWidth
 userData
-error
-?knifunptr_platform_Accelerate3267_vImageCreateCGImageFromBuffer
-vImageCreateCGImageFromBuffer
-vImageConverter
-vImageConverterRef
-	converter
-8knifunptr_platform_Accelerate3268_vImageConverter_Retain
-vImageConverter_Retain
-9knifunptr_platform_Accelerate3269_vImageConverter_Release
-vImageConverter_Release
-	srcFormat
+Qknifunptr_platform_Accelerate3303_vImageNewResamplingFilterForFunctionUsingBuffer
+/vImageNewResamplingFilterForFunctionUsingBuffer
+size_t
+?knifunptr_platform_Accelerate3304_vImageGetResamplingFilterSize
+vImageGetResamplingFilterSize
+Aknifunptr_platform_Accelerate3305_vImageGetResamplingFilterExtent
+vImageGetResamplingFilterExtent
 
-destFormat
-Iknifunptr_platform_Accelerate3270_vImageConverter_CreateWithCGImageFormat
-'vImageConverter_CreateWithCGImageFormat
-CoreFoundation
-	CFTypeRef
-codeFragment
-Qknifunptr_platform_Accelerate3271_vImageConverter_CreateWithColorSyncCodeFragment
-/vImageConverter_CreateWithColorSyncCodeFragment
-CGColorConversionInfo
-CGColorConversionInfoRef
-colorConversionInfoRef
-sFormat
-dFormat
-bg
-Qknifunptr_platform_Accelerate3272_vImageConverter_CreateWithCGColorConversionInfo
-/vImageConverter_CreateWithCGColorConversionInfo
-Gknifunptr_platform_Accelerate3273_vImageConverter_MustOperateOutOfPlace
-%vImageConverter_MustOperateOutOfPlace
-Jknifunptr_platform_Accelerate3274_vImageConverter_GetNumberOfSourceBuffers
-(vImageConverter_GetNumberOfSourceBuffers
-Oknifunptr_platform_Accelerate3275_vImageConverter_GetNumberOfDestinationBuffers
--vImageConverter_GetNumberOfDestinationBuffers
-vImageBufferTypeCodeVar
-Fknifunptr_platform_Accelerate3276_vImageConverter_GetSourceBufferOrder
-$vImageConverter_GetSourceBufferOrder
-Kknifunptr_platform_Accelerate3277_vImageConverter_GetDestinationBufferOrder
-)vImageConverter_GetDestinationBufferOrder
-8knifunptr_platform_Accelerate3278_vImageConvert_AnyToAny
-vImageConvert_AnyToAny
-desiredFormat
-
-__CVBuffer
-	CoreVideo
-CVPixelBufferRef
-cvPixelBuffer
-vImageCVImageFormat
-vImageCVImageFormatRef
-cvImageFormat
-Dknifunptr_platform_Accelerate3279_vImageBuffer_InitWithCVPixelBuffer
-"vImageBuffer_InitWithCVPixelBuffer
-bufferFormat
-Bknifunptr_platform_Accelerate3280_vImageBuffer_CopyToCVPixelBuffer
- vImageBuffer_CopyToCVPixelBuffer
-Mknifunptr_platform_Accelerate3281_vImageCVImageFormat_CreateWithCVPixelBuffer
-+vImageCVImageFormat_CreateWithCVPixelBuffer
-imageFormatType
-vImage_ARGBToYpCbCrMatrix
-
-__CFString
-CFStringRef
-cvImageBufferChromaLocation
-CGColorSpace
-CGColorSpaceRef
-baseColorspace
-alphaIsOneHint
-<knifunptr_platform_Accelerate3282_vImageCVImageFormat_Create
-vImageCVImageFormat_Create
-vImageConstCVImageFormatRef
-:knifunptr_platform_Accelerate3283_vImageCVImageFormat_Copy
-vImageCVImageFormat_Copy
-fmt
-<knifunptr_platform_Accelerate3284_vImageCVImageFormat_Retain
-vImageCVImageFormat_Retain
-=knifunptr_platform_Accelerate3285_vImageCVImageFormat_Release
-vImageCVImageFormat_Release
-Cknifunptr_platform_Accelerate3286_vImageCVImageFormat_GetFormatCode
-!vImageCVImageFormat_GetFormatCode
-Eknifunptr_platform_Accelerate3287_vImageCVImageFormat_GetChannelCount
-#vImageCVImageFormat_GetChannelCount
-Eknifunptr_platform_Accelerate3288_vImageCVImageFormat_GetChannelNames
-#vImageCVImageFormat_GetChannelNames
-Cknifunptr_platform_Accelerate3289_vImageCVImageFormat_GetColorSpace
-!vImageCVImageFormat_GetColorSpace
-
-colorspace
-Cknifunptr_platform_Accelerate3290_vImageCVImageFormat_SetColorSpace
-!vImageCVImageFormat_SetColorSpace
-Eknifunptr_platform_Accelerate3291_vImageCVImageFormat_GetChromaSiting
-#vImageCVImageFormat_GetChromaSiting
-siting
-Eknifunptr_platform_Accelerate3292_vImageCVImageFormat_SetChromaSiting
-#vImageCVImageFormat_SetChromaSiting
-vImageMatrixTypeVar
-outType
-Iknifunptr_platform_Accelerate3293_vImageCVImageFormat_GetConversionMatrix
-'vImageCVImageFormat_GetConversionMatrix
-vImageMatrixType
-inType
-Jknifunptr_platform_Accelerate3294_vImageCVImageFormat_CopyConversionMatrix
-(vImageCVImageFormat_CopyConversionMatrix
-Bknifunptr_platform_Accelerate3295_vImageCVImageFormat_GetAlphaHint
- vImageCVImageFormat_GetAlphaHint
-
-alphaIsOne
-Bknifunptr_platform_Accelerate3296_vImageCVImageFormat_SetAlphaHint
- vImageCVImageFormat_SetAlphaHint
-vImageBufferTypeCode
-type
-vImageChannelDescription
-Kknifunptr_platform_Accelerate3297_vImageCVImageFormat_GetChannelDescription
-)vImageCVImageFormat_GetChannelDescription
-desc
-Lknifunptr_platform_Accelerate3298_vImageCVImageFormat_CopyChannelDescription
-*vImageCVImageFormat_CopyChannelDescription
-Aknifunptr_platform_Accelerate3299_vImageCVImageFormat_GetUserData
-vImageCVImageFormat_GetUserData
-userDataReleaseCallback
-Aknifunptr_platform_Accelerate3300_vImageCVImageFormat_SetUserData
-vImageCVImageFormat_SetUserData
-vImageRGBPrimaries
-	primaries
-vImageTransferFunction
-tf
-CGColorRenderingIntent
-intent
-[knifunptr_platform_Accelerate3301_vImageCreateRGBColorSpaceWithPrimariesAndTransferFunction
-9vImageCreateRGBColorSpaceWithPrimariesAndTransferFunction
-vImageWhitePoint
-
-whitePoint
-cknifunptr_platform_Accelerate3302_vImageCreateMonochromeColorSpaceWithWhitePointAndTransferFunction
-AvImageCreateMonochromeColorSpaceWithWhitePointAndTransferFunction
-Lknifunptr_platform_Accelerate3303_vImageConverter_CreateForCGToCVImageFormat
-*vImageConverter_CreateForCGToCVImageFormat
-Lknifunptr_platform_Accelerate3304_vImageConverter_CreateForCVToCGImageFormat
-*vImageConverter_CreateForCVToCGImageFormat
-buffers
-pixelBuffer
-Iknifunptr_platform_Accelerate3305_vImageBuffer_InitForCopyToCVPixelBuffer
-'vImageBuffer_InitForCopyToCVPixelBuffer
-Kknifunptr_platform_Accelerate3306_vImageBuffer_InitForCopyFromCVPixelBuffer
-)vImageBuffer_InitForCopyFromCVPixelBuffer
-SparseNumericFactorOptions
-Rknifunptr_platform_Accelerate3307__SparseDefaultNumericFactorOptions_Double_getter
-)_SparseDefaultNumericFactorOptions_Double
-Qknifunptr_platform_Accelerate3308__SparseDefaultNumericFactorOptions_Float_getter
-(_SparseDefaultNumericFactorOptions_Float
-SparseSymbolicFactorOptions
-Lknifunptr_platform_Accelerate3309__SparseDefaultSymbolicFactorOptions_getter
-#_SparseDefaultSymbolicFactorOptions
-SparseMatrix_Double
-Aknifunptr_platform_Accelerate3310__SparseNullMatrix_Double_getter
-_SparseNullMatrix_Double
-SparseMatrix_Float
-@knifunptr_platform_Accelerate3311__SparseNullMatrix_Float_getter
-_SparseNullMatrix_Float
-value
-Gknifunptr_platform_Accelerate3312_kvImageDecodeArray_16Q12Format_getter
-Gknifunptr_platform_Accelerate3313_kvImageDecodeArray_16Q12Format_setter
-kvImageDecodeArray_16Q12Format
-Oknifunptr_platform_Accelerate3314_kvImage_ARGBToYpCbCrMatrix_ITU_R_601_4_getter
-Oknifunptr_platform_Accelerate3315_kvImage_ARGBToYpCbCrMatrix_ITU_R_601_4_setter
-&kvImage_ARGBToYpCbCrMatrix_ITU_R_601_4
-Oknifunptr_platform_Accelerate3316_kvImage_ARGBToYpCbCrMatrix_ITU_R_709_2_getter
-Oknifunptr_platform_Accelerate3317_kvImage_ARGBToYpCbCrMatrix_ITU_R_709_2_setter
-&kvImage_ARGBToYpCbCrMatrix_ITU_R_709_2
-vImage_YpCbCrToARGBMatrix
-Oknifunptr_platform_Accelerate3318_kvImage_YpCbCrToARGBMatrix_ITU_R_601_4_getter
-Oknifunptr_platform_Accelerate3319_kvImage_YpCbCrToARGBMatrix_ITU_R_601_4_setter
-&kvImage_YpCbCrToARGBMatrix_ITU_R_601_4
-Oknifunptr_platform_Accelerate3320_kvImage_YpCbCrToARGBMatrix_ITU_R_709_2_getter
-Oknifunptr_platform_Accelerate3321_kvImage_YpCbCrToARGBMatrix_ITU_R_709_2_setter
-&kvImage_YpCbCrToARGBMatrix_ITU_R_709_2
-__VECLIBTYPES_VDOUBLE__
-vDSP_Version0
-vDSP_Version1
- USE_NON_APPLE_STANDARD_DATATYPES
-LA_DEFAULT_ATTRIBUTES
-LA_ATTRIBUTE_ENABLE_LOGGING
-
-LA_SUCCESS
-LA_WARNING_POORLY_CONDITIONED
-LA_INTERNAL_ERROR
-LA_INVALID_PARAMETER_ERROR
-LA_DIMENSION_MISMATCH_ERROR
-LA_PRECISION_MISMATCH_ERRORÎ
+ULongVarOf
+vImagePixelCountVar
+	histogram
+Dknifunptr_platform_Accelerate3306_vImageHistogramCalculation_Planar8
+"vImageHistogramCalculation_Planar8
+histogram_entries
+minVal
+maxVal
+Dknifunptr_platform_Accelerate3307_vImageHistogramCalculation_PlanarF
+"vImageHistogramCalculation_PlanarF
+CPointerVarOf
+CPointerVar
+Eknifunptr_platform_Accelerate3308_vImageHistogramCalculation_ARGB8888
+#vImageHistogramCalculation_ARGB8888
+Eknifunptr_platform_Accelerate3309_vImageHistogramCalculation_ARGBFFFF
+#vImageHistogramCalculation_ARGBFFFF
+<knifunptr_platform_Accelerate3310_vImageEqualization_Planar8
+vImageEqualization_Planar8
+<knifunptr_platform_Accelerate3311_vImageEqualization_PlanarF
+vImageEqualization_PlanarF
+=knifunptr_platform_Accelerate3312_vImageEqualization_ARGB8888
+vImageEqualization_ARGB8888
+=knifunptr_platform_Accelerate3313_vImageEqualization_ARGBFFFF
+vImageEqualization_ARGBFFFF
+desired_histogram
+Fknifunptr_platform_Accelerate3314_vImageHistogramSpecification_Planar8
+$vImageHistogramSpecification_Planar8
+Fknifunptr_platform_Accelerate3315_vImageHistogramSpecification_PlanarF
+$vImageHistogramSpecification_PlanarF
+Gknifunptr_platform_Accelerate3316_vImageHistogramSpecification_ARGB8888
+%vImageHistogramSpecification_ARGB8888
+Gknifunptr_platform_Accelerate3317_vImageHistogramSpecification_ARGBFFFF
+%vImageHistogramSpecification_ARGBFFFF
+?knifunptr_platform_Accelerate3318_vImageContrastStretch_Planar8
+vImageContrastStretch_Planar8
+?knifunptr_platform_Accelerate3319_vImageContrastStretch_PlanarF
+vImageContrastStretch_PlanarF
+@knifunptr_platform_Accelerate3320_vImageContrastStretch_ARGB8888
+vImageContrastStretch_ARGB8888
+@knifunptr_platform_Accelerate3321_vImageContrastStretch_ARGBFFFF
+vImageContrastStretch_ARGBFFFF
+percent_low
+percent_high
+Eknifunptr_platform_Accelerate3322_vImageEndsInContrastStretch_Planar8
+#vImageEndsInContrastStretch_Planar8
+Eknifunptr_platform_Accelerate3323_vImageEndsInContrastStretch_PlanarF
+#vImageEndsInContrastStretch_PlanarF
+	UIntVarOf
+UIntVar
+Fknifunptr_platform_Accelerate3324_vImageEndsInContrastStretch_ARGB8888
+$vImageEndsInContrastStretch_ARGB8888
+Fknifunptr_platform_Accelerate3325_vImageEndsInContrastStretch_ARGBFFFF
+$vImageEndsInContrastStretch_ARGBFFFF
+UByteVar
+kernel
+kernel_height
+kernel_width
+6knifunptr_platform_Accelerate3326_vImageDilate_Planar8
+vImageDilate_Planar8
+6knifunptr_platform_Accelerate3327_vImageDilate_PlanarF
+vImageDilate_PlanarF
+7knifunptr_platform_Accelerate3328_vImageDilate_ARGB8888
+vImageDilate_ARGB8888ã
  
  
  
 
 
  
-
-	 
-
- 
- 
- 
- 
- 
+	 
+ 
+ 
+
+	 
+
+ 
+ 
+	 
  
- 
+	 
  
 
- 
+ 
  
- 
+	 
  
-@
-A 
-G 
-H 
-I 
-N 
-O 
-P 
-R 
-S 
-V 
-W 
-i 
-j 
-n 
-y 
- 
-† 
-° 
-¢ 
-¶ 
-ß 
-™ 
-´ 
-Æ 
-≥ 
-∂ 
-√ 
-« 
-… 
-À 
-Ã 
-Œ
-5œ
-6– 
-— 
-ÿ 
-Â 
-Ë 
-Î 
-Ù 
-ı
->ˆ 
-˘ 
-ˇ 
-Ç 
-É 
->Ñ 
-6Ü 
->á 
-ã 
-å 
-ç 
-6ì 
-î 
-û
-Lü 
-6£ 
->§ 
-± 
-6π 
-∫
-Rª 
-6Ω 
-æ 
-» 
-6… 
-L  
-6Ã 
->Õ 
-“ 
-Í 
-Ó 
-˜ 
-˘ 
-Ñ 
-Ü 
->à 
-å 
-ö 
-ü 
-¢ 
-• 
-≤ Âhí0j`2
+  
+	# 
+$ 
+' 
+( 
+) 
+, 
+/ 
+	0 
+1 
+4 
+7 
+8 
+9 
+< 
+E 
+	H 
+I 
+O 
+Ä 
+	ñ 
+ó 
+ú 
+ù 
+° 
+	Õ 
+Ú 
+ı 
+˙ 
+â 
+	ë 
+î 
+	ï 
+ñ 
+ú 
+° 
+¢ 
+´ 
+¨ 
+– 
+— 
+÷ “áÜ0j`2
+002
+00202
+
+0020
+0j`0j`2
+0j`Há “
+(Ü"0j`2
+002
+00202
+
+00200j`0j`2
+0j`Há “
+(!r&0j`2
+002
+00202
+
+002
+0j`2
+0j`Há “
+(%Ü+0j`2
+002
+00202
+
+00200j`0j`2
+0j`Há “
+(*Ü.0j`2
+002
+00202
+
+00200j`0j`2
+0j`Há “
+(-v30j`2
+002
+00202
+0j`02
+0j` 2
+0j`Há “
+(2v60j`2
+002
+00202
+0j`02
+0j`!2
+0j`Há “
+(5ä;0j`2
+002
+00202
+0j`0200"j`#0j`$2
+0j`Há “
+(:ä>0j`2
+002
+00202
+0j`0200j`0j`%2
+0j`Há “
+(=ä@0j`2
+002
+00202
+0j`020
+0j`0j`2
+0j`Há “
+(?äB0j`2
+002
+00202
+0j`0200j`0j`2
+0j`Há “
+(AlG0j`2C00j`02D00j`02
+
+0&02
+0j`Há “
+(F~L0j`2
+002
+00202
+
+0&02
+J0'j`(2
+0j` 2
+0j`Há “
+(KíN0j`2
+002
+00202
+
+0&02
+J0'j`(200"j`#0j`$2
+0j`Há “
+(M~Q0j`2
+002
+00202
+
+0&02
+J0'j`(2
+0j`)2
+0j`Há “
+(PíS0j`2
+002
+00202
+
+0&02
+J0'j`(200j`0j`%2
+0j`Há “
+(R~U0j`2
+002
+00202
+
+0&02
+J0'j`(2
+0j`2
+0j`Há “
+(TíW0j`2
+002
+00202
+
+0&02
+J0'j`(200j`0j`2
+0j`Há “
+(VHY0j`2
 002
 002
-0j`2
-0j`20
-0	j`02
-0j`2
-0j`2
-0j`Há “
-(í!0j`2
+0j`Há “
+(XH[0j`2
 002
 002
-0j`2
-0j`200j`02
-0j`2
-0j`2
-0j`Há “
-( í#0j`2
+0j`Há “
+(ZH]0j`2
 002
 002
-0j`2
-0j`20
-0	j`02
-0j`2
-0j`2
-0j`Há “
-("í%0j`2
+0j`Há “
+(\H_0j`2
 002
 002
-0j`2
-0j`200j`02
-0j`2
-0j`2
-0j`Há “
-($í'0j`2
+0j`Há “
+(^Ha0j`2
 002
 002
-0j`2
-0j`20
-0	j`02
-0j`2
-0j`2
-0j`Há “
-(&í)0j`2
+0j`Há “
+(`Hc0j`2
 002
 002
-0j`2
-0j`200j`02
-0j`2
-0j`2
-0j`Há “
-((í+0j`2
+0j`Há “
+(bHe0j`2
 002
 002
-0j`2
-0j`20
-0	j`02
-0j`2
-0j`2
-0j`Há “
-(*Ü.0j`2
+0j`Há “
+(dHg0j`2
 002
-002,02
-0j`2
-0j`2
-0j`2
-0j`2
-0j`Há “
-(-Ü00j`2
-002
-002,02
-0j`2
-0j`2
-0j`2
-0j`2
-0j`Há “
-(/Ü20j`2
-002
-002,02
-0j`2
-0j`2
-0j`2
-0j`2
-0j`Há “
-(1Ü40j`2
-002
-002,02
-0j`2
-0j`2
-0j`2
-0j`2
-0j`Há “
-(3Ü60j`2
-002
-002,02
-0j`2
-0j`2
-0j`2
-0j`2
-0j`Há “
-(5Ü80j`2
-002
-002,02
-0j`2
-0j`2
-0j`2
-0j`2
-0j`Há “
-(7Ü:0j`2
-002
-002,02
-0j`2
-0j`2
-0j`2
-0j`2
-0j`Há “
-(9Ü<0j`2
-002
-002,02
-0j`2
-0j`2
-0j`2
-0j`2
-0j`Há “
-(;tF0j`2=
 002
->0j`2
-?0j`2
-B0j`2
-C0j`2
-D0j`2
-0j`Há “
-(EÊZ0j`2$J 
-000j0`02$K 
-000j0`02
-L0j`2
-M0j`2Q00j`02
-T0j`2U00j`02X00j` 02
-0j`Há “
-(YÊ\0j`2$J 
-000j0`02$K 
-000j0`02
-L0j`2
-M0j`2Q00j`02
-T0j`2U00j`02X00j` 02
-0j`Há “
-([⁄^0j`2$J 
-000j0`02$K 
-000j0`02
-L0j`2
-M0j`2Q0
-0	j`02U0
-0	j`02X0
-0	j`02
-0j`Há “
-(]¢`0j`2
+0j`Há “
+(fHi0j`2
 002
-002Q00j`02
-T0j`2U00j`02X00j` 02
-0j`Há “
-(_ñb0j`2
-002
-002Q0
-0	j`02U0
-0	j`02X0
-0	j`02
-0j`Há “
-(aîd0j`2
-002
-002Q00j`02
-T0j`2U00j`02
-X0j`2
-0j`Há “
-(cÑf0j`2
-002
-002Q0
-0	j`02U0
-0	j`02X0
-2
-0j`Há “
-(eDl0!0j`"2g0
-2h02
-0j`Há “
-(k0p0#2m0!0j`"Há “
-(o`r0j`2
-002
-002g0!0j`"2
-0j`Há “
-(q`t0j`2
-002
-002g0!0j`"2
-0j`Há “
-(s`v0j`2
-002
-002g0!0j`"2
-0j`Há “
-(uê|0j`2
-002
-002w0
-0	j`02g0
-2x0
-0	j`02
-z0j`$2
-0j`Há “
-({ê~0j`2
-002
-002w0
-0	j`02g0
-2x0
-0	j`02
-z0j`$2
-0j`Há “
-(}íÅ0j`2
-002
-002w0
-0	j`02g0
-2x0
-0	j`02
-z0j`%2
-0j`Há “
-	(ÄíÉ0j`2
-002
-002w0
-0	j`02g0
-2x0
-0	j`02
-z0j`%2
-0j`Há “
-	(ÇíÖ0j`2
-002
-002w0
-0	j`02g0
-2x0
-0	j`02
-z0j`$2
-0j`Há “
-	(Ñéá0j`2
-002
-002w0
-0	j`02g0
-2x0
-0	j`02z0
-2
-0j`Há “
-	(Üéâ0j`2
-002
-002w0
-0	j`02g0
-2x0
-0	j`02z0
-2
-0j`Há “
-	(àíã0j`2
-002
-002w0
-0	j`02g0
-2x0
-0	j`02
-z0j`%2
-0j`Há “
-	(äéç0j`2
-002
-002w0
-0	j`02g0
-2x0
-0	j`02z0
-2
-0j`Há “
-	(å∫ì0j`2
-002
-0029é4.,0
-0	j`00j0
-0	j``02è0
-0	j`02ê0j`2ë0j`2
-0j`Há “
-	(í∫ï0j`2
-002
-0029é4.,0
-0	j`00j0
-0	j``02è0
-0	j`02ê0j`2ë0j`2
-0j`Há “
-	(î∫ó0j`2
-002
-0029é4.,0
-0	j`00j0
-0	j``02è0
-0	j`02ê0j`2ë0j`2
-0j`Há “
-	(ñ∫ô0j`2
-002
-0029é4.,0
-0	j`00j0
-0	j``02è0
-0	j`02ê0j`2ë0j`2
-0j`Há “
-	(òÇü0j`2
-002
-0029ö4.,0
-0	j`00j0
-0	j``029õ4.,0
-0	j`00j0
-0	j``02è0
-0	j`02ú0j`2ù0j`2ë0j`2
-0j`Há “
-	(ûe•0j`2
-002
-002£0'0&j`(02
-0j`Há “
-	(§e©0j`2
-002
-002£00)j`*02
-0j`Há “
-	(®e≠0j`2
-002
-002£00+j`,02
-0j`Há “
-	(¨k∞0j`2
-002
-002£0
-0	j`0j`-2
-0j`Há “
-	(Øk≤0j`2
-002
-002£0
-0	j`0j`-2
-0j`Há “
-	(±eµ0j`2
-002
-002£0
-0	j`.02
-0j`Há “
-	(¥e∏0j`2
-002
-002£00j`/02
-0j`Há “
-	(∑eª0j`2
-002
-002π00+j`,02
-0j`Há “
-	(∫eΩ0j`2
-002
-002£0'0&j`(02
-0j`Há “
-	(ºÑ¬0j`2
-002
-002£0
-0	j`.02æ0j`2ø0
-2¿0
-2
-0j`Há “
-	(¡¨”070j`82ƒ0'0&j`002≈0j`2∆0j`2»00j`102 0j`22
-0j`2Õ003j`40Há “
-	(“5’0j`2£070j`8Há “
-	(‘5◊0j`2£070j`8Há “
-	(÷|€0j`2J
-002K
-002,02£070j`82Ÿ0j`92
-0j`Há “
-	(⁄|›0j`2J
-002K
-002,02£070j`82Ÿ0j`92
-0j`Há “
-	(‹y‰0j`2ﬁ
-002,02ﬂ0j`2‡0j`2·0j`$2‚02
-0j`Há “
-	(„yÁ0j`2ﬁ
-002,02ﬂ0j`2‡0j`2·0'j`:2‚02
-0j`Há “
-	(ÊçÍ0j`2ﬁ
-002,02ﬂ0j`2‡0j`2·00j`10j`;2‚02
-0j`Há “
-	(ÈçÌ0j`2ﬁ
-002,02ﬂ0j`2‡0j`2·0'0&j`00j`<2‚02
-0j`Há “
-	(ÏbÛ0j`2Ó
-002Ô0j`20j`2Ò0j`2
-0j`Há “
-	(Ú1¯0?0=2Ó
-00Há “
-	(˜/¸0j`2˙
-0@0Há “
-	(˚<Å0A2˝
-0@02˛
-0@0Há “
-	(Ä~ä0j`2Ó
-002˙
-0@02Ö0C0Bj`D02à0E0j`F2
-0j`Há “
-	(â…í0E0j`F2Ó
-002˙
-0@02GéB<:640!0j`I0!0j`I0#0H0G02è02
-0j`2ê003j`40Há “
-	(ë1ó0#2ï0J0j`KHá “
-	(ñ1ô0#2ï0J0j`KHá “
-	(òåù0J0j`K2ö
-0@02õ
-0@02Ö0C0Bj`D02
-0j`2ê003j`40Há “
-	(ú•¢0J0j`K2†0!0j`M2ö
-0@02õ
-0@02Ö0C0Bj`D02
-0j`2ê003j`40Há “
-	(°£™0J0j`K2•0N0j`O2¶
-0@02ß
-0@02®0C0Bj`D02
-0j`2ê003j`40Há “
-	(©a¨0j`2ï0J0j`K2J
-002K
 002
-0j`Há “
-	(´1Æ02ï0J0j`KHá “
-	(≠1∞02ï0J0j`KHá “
-	(ØC≥00)j`P02ï0J0j`KHá “
-	(≤Cµ00)j`P02ï0J0j`KHá “
-	(¥o∑0j`2ï0J0j`K2J
-002K
-002,02
-0j`Há “
-	(∂î¡0j`2=
-002∏
-0@02º0Q0j`S2ø0T0j`U2Ö0C0Bj`D02
-0j`Há “
-	(¿îƒ0j`2=
-002¬
-0@02º0Q0j`S2ø0T0j`U2Ö0C0Bj`D02
-0j`Há “
-	(√>∆0T0j`U2=0Q0j`SHá “
-	(≈|—0T0j`U2«0j`2Q
-0V02À0W0j`X2Œ0Y0j`Z2œ0Há “
-	(–?‘0T0j`U2˙0T0j`[Há “
-	(”1◊0#2’0T0j`UHá “
-	(÷1Ÿ0#2’0T0j`UHá “
-	(ÿ5€0j`2˙0T0j`[Há “
-	(⁄5›0j`2˙0T0j`[Há “
-	(‹Cﬂ00)j`P02˙0T0j`[Há “
-	(ﬁ?·0Y0j`Z2˙0T0j`[Há “
-	(‡L‰0j`2˙0T0j`U2‚0Y0j`ZHá “
-	(„?Ê0W0j`X2˙0T0j`[Há “
-	(ÂLÈ0j`2˙0T0j`U2Á0W0j`XHá “
-	(Ë\Ì0!0j`I2˙0T0j`[2Î00)j`\0Há “
-	(ÏPÒ0j`2˙0T0j`U2Q02Ô0j`]Há “
-	(1Û02˙0T0j`[Há “
-	(Ú>ˆ0j`2˙0T0j`U2Ù0Há “
-	(ıF˚
-0_02˙0T0j`[2¯0j`^Há “
-	(˙S˛0j`2˙0T0j`U2¸
-0_02¯0j`^Há “
-	(˝AÄ0!0j`I2˙0T0j`[Há “
-	(ˇãÉ0j`2˙0T0j`U2è02EÅ@:8420T0j`U0!0j`I0#0H0G0Há “
-	(Çzã0Y0j`Z2Ö
-0`02á
-0a02â0b2
-0j`2ê003j`40Há “
-	(äzè0Y0j`Z2ç
-0c02á
-0a02â0b2
-0j`2ê003j`40Há “
-	(éíë0J0j`K2ö
-0@02õ0T0j`U2Ö0C0Bj`D02
-0j`2ê003j`40Há “
-	(êíì0J0j`K2ö0T0j`U2õ
-0@02Ö0C0Bj`D02
-0j`2ê003j`40Há “
-	(íió0j`2î
-002ï0J0j`K2ï0Q0j`S2
-0j`Há “
-	(ñiô0j`2î
-002ï0J0j`K2ï0Q0j`S2
-0j`Há “
-	(ò"ú0d8«ä	(õ"û0d8«ä	(ù"°0e8«ä	(†"§0f8«ä	(£"ß0g8«ä	(¶"]´0C0Bj`D02®0C0Bj`D08«@«XÜä	(©í	(™"IÆ
-0V02®
-0V08«@«XÜä	(¨í	(≠"I±
-0V02®
-0V08«@«XÜä	(Øí	(∞"Iµ
-0h02®
-0h08«@«XÜä	(≥í	(¥"I∏
-0h02®
-0h08«@«XÜä	(∂í	(∑"π08XÜTÍ
-"∫08XÜTÍ
-ÿ"ª08XÜTÍ
- "º08XÜTÍ
-"Ω08XÜTÍ
- "æ08XÜTÍ
-P"ø08XÜTÍ
- "¿08XÜTÍ
-–"¡08XÜTÍ
-œ"¬08XÜTÍ
-—"√08XÜTÍ
-”"ƒ08XÜTÍ
-’ÿ
+0j`Há “
+(hHk0j`2
+002
+002
+0j`Há “
+(jHm0j`2
+002
+002
+0j`Há “
+(lHo0j`2
+002
+002
+0j`Há “
+(nHq0j`2
+002
+002
+0j`Há “
+(pHs0j`2
+002
+002
+0j`Há “
+(rHu0j`2
+002
+002
+0j`Há “
+(tHw0j`2
+002
+002
+0j`Há “
+(vHy0j`2
+002
+002
+0j`Há “
+(xH{0j`2
+002
+002
+0j`Há “
+(zH}0j`2
+002
+002
+0j`Há “
+(|H0j`2
+002
+002
+0j`Há “
+(~cÉ0j`2
+002
+002Å0j`*2
+0j` 2
+0j`Há “
+	(ÇcÖ0j`2
+002
+002Å0j`*2
+0j`)2
+0j`Há “
+	(Ñcá0j`2
+002
+002Å0j`*2
+0j`!2
+0j`Há “
+	(Üwâ0j`2
+002
+002Å0j`*200"j`#0j`$2
+0j`Há “
+	(àwã0j`2
+002
+002Å0j`*200j`0j`%2
+0j`Há “
+	(äwç0j`2
+002
+002Å0j`*20
+0j`0j`2
+0j`Há “
+	(åwè0j`2
+002
+002Å0j`*200j`0j`2
+0j`Há “
+	(écë0j`2
+002
+002Å0j`*2
+0j`2
+0j`Há “
+	(êwì0j`2
+002
+002Å0j`*200j`0j`2
+0j`Há “
+	(íwï0j`2
+002
+002Å0j`*200j`0j`2
+0j`Há “
+	(îõ†0j`2
+002
+002ò0+j`,2ô0+j`,2ö02õ02û0-0j`.2
+0j` 2
+0j`Há “
+	(üõ£0j`2
+002
+002ò0+j`,2ô0+j`,2ö02õ02û0-0j`.2
+0
+j`/2
+0j`Há “
+	(¢õ•0j`2
+002
+002ò0+j`,2ô0+j`,2ö02õ02û0-0j`.2
+0j`)2
+0j`Há “
+	(§õß0j`2
+002
+002ò0+j`,2ô0+j`,2ö02õ02û0-0j`.2
+0j`!2
+0j`Há “
+	(¶Ø©0j`2
+002
+002ò0+j`,2ô0+j`,2ö02õ02û0-0j`.200"j`#0j`$2
+0j`Há “
+	(®Ø´0j`2
+002
+002ò0+j`,2ô0+j`,2ö02õ02û0-0j`.200j`0j`%2
+0j`Há “
+	(™Ø≠0j`2
+002
+002ò0+j`,2ô0+j`,2ö02õ02û0-0j`.20
+0j`0j`2
+0j`Há “
+	(¨ØØ0j`2
+002
+002ò0+j`,2ô0+j`,2ö02õ02û0-0j`.200j`0j`2
+0j`Há “
+	(Æõ±0j`2
+002
+002ò0+j`,2ô0+j`,2ö02õ02û0-0j`.2
+0j`2
+0j`Há “
+	(∞Ø≥0j`2
+002
+002ò0+j`,2ô0+j`,2ö02õ02û0-0j`.200j`0j`2
+0j`Há “
+	(≤Øµ0j`2
+002
+002ò0+j`,2ô0+j`,2ö02õ02û0-0j`.200j`0j`2
+0j`Há “
+	(¥õ∏0j`2
+002
+002ò0+j`,2ô0+j`,2∂02õ02û0-0j`.2
+0j` 2
+0j`Há “
+	(∑õ∫0j`2
+002
+002ò0+j`,2ô0+j`,2∂02õ02û0-0j`.2
+0
+j`/2
+0j`Há “
+	(πõº0j`2
+002
+002ò0+j`,2ô0+j`,2∂02õ02û0-0j`.2
+0j`)2
+0j`Há “
+	(ªõæ0j`2
+002
+002ò0+j`,2ô0+j`,2∂02õ02û0-0j`.2
+0j`!2
+0j`Há “
+	(ΩØ¿0j`2
+002
+002ò0+j`,2ô0+j`,2∂02õ02û0-0j`.200"j`#0j`$2
+0j`Há “
+	(øØ¬0j`2
+002
+002ò0+j`,2ô0+j`,2∂02õ02û0-0j`.200j`0j`%2
+0j`Há “
+	(¡Øƒ0j`2
+002
+002ò0+j`,2ô0+j`,2∂02õ02û0-0j`.20
+0j`0j`2
+0j`Há “
+	(√Ø∆0j`2
+002
+002ò0+j`,2ô0+j`,2∂02õ02û0-0j`.200j`0j`2
+0j`Há “
+	(≈õ»0j`2
+002
+002ò0+j`,2ô0+j`,2∂02õ02û0-0j`.2
+0j`2
+0j`Há “
+	(«Ø 0j`2
+002
+002ò0+j`,2ô0+j`,2∂02õ02û0-0j`.200j`0j`2
+0j`Há “
+	(…ØÃ0j`2
+002
+002ò0+j`,2ô0+j`,2∂02õ02û0-0j`.200j`0j`2
+0j`Há “
+	(Àõœ0j`2
+002
+002ò0+j`,2ô0+j`,2ö002õ002û0-0j`.2
+0j` 2
+0j`Há “
+	(Œõ—0j`2
+002
+002ò0+j`,2ô0+j`,2ö002õ002û0-0j`.2
+0j`!2
+0j`Há “
+	(–Ø”0j`2
+002
+002ò0+j`,2ô0+j`,2ö002õ002û0-0j`.200"j`#0j`$2
+0j`Há “
+	(“Ø’0j`2
+002
+002ò0+j`,2ô0+j`,2ö002õ002û0-0j`.200j`0j`%2
+0j`Há “
+	(‘Ø◊0j`2
+002
+002ò0+j`,2ô0+j`,2ö002õ002û0-0j`.20
+0j`0j`2
+0j`Há “
+	(÷ØŸ0j`2
+002
+002ò0+j`,2ô0+j`,2ö002õ002û0-0j`.200j`0j`2
+0j`Há “
+	(ÿõ€0j`2
+002
+002ò0+j`,2ô0+j`,2ö002õ002û0-0j`.2
+0j`2
+0j`Há “
+	(⁄Ø›0j`2
+002
+002ò0+j`,2ô0+j`,2ö002õ002û0-0j`.200j`0j`2
+0j`Há “
+	(‹Øﬂ0j`2
+002
+002ò0+j`,2ô0+j`,2ö002õ002û0-0j`.200j`0j`2
+0j`Há “
+	(ﬁõ·0j`2
+002
+002ò0+j`,2ô0+j`,2∂002õ002û0-0j`.2
+0j` 2
+0j`Há “
+	(‡õ„0j`2
+002
+002ò0+j`,2ô0+j`,2∂002õ002û0-0j`.2
+0j`!2
+0j`Há “
+	(‚ØÂ0j`2
+002
+002ò0+j`,2ô0+j`,2∂002õ002û0-0j`.200"j`#0j`$2
+0j`Há “
+	(‰ØÁ0j`2
+002
+002ò0+j`,2ô0+j`,2∂002õ002û0-0j`.200j`0j`%2
+0j`Há “
+	(ÊØÈ0j`2
+002
+002ò0+j`,2ô0+j`,2∂002õ002û0-0j`.20
+0j`0j`2
+0j`Há “
+	(ËØÎ0j`2
+002
+002ò0+j`,2ô0+j`,2∂002õ002û0-0j`.200j`0j`2
+0j`Há “
+	(ÍõÌ0j`2
+002
+002ò0+j`,2ô0+j`,2∂002õ002û0-0j`.2
+0j`2
+0j`Há “
+	(ÏØÔ0j`2
+002
+002ò0+j`,2ô0+j`,2∂002õ002û0-0j`.200j`0j`2
+0j`Há “
+	(ÓØÒ0j`2
+002
+002ò0+j`,2ô0+j`,2∂002õ002û0-0j`.200j`0j`2
+0j`Há “
+	(ØÙ0j`2
+002
+002ò0+j`,2ô0+j`,2ö02õ02û0-0j`.200"j`#0j`12
+0j`Há “
+	(ÛØ˜0j`2
+002
+002ò0+j`,2ô0+j`,2ö02õ02û0-0j`.200j`0j`22
+0j`Há “
+	(ˆØ˘0j`2
+002
+002ò0+j`,2ô0+j`,2ö002õ002û0-0j`.200j`0j`22
+0j`Há “
+	(¯Ø¸0j`2
+002
+002ò0+j`,2ô0+j`,2ö02õ02û0-0j`.20
+0j`0j`32
+0j`Há “
+	(˚Ø˛0j`2
+002
+002ò0+j`,2ô0+j`,2ö002õ002û0-0j`.20
+0j`0j`32
+0j`Há “
+	(˝ØÄ0j`2
+002
+002ò0+j`,2ô0+j`,2∂02õ02û0-0j`.200"j`#0j`12
+0j`Há “
+	(ˇØÇ0j`2
+002
+002ò0+j`,2ô0+j`,2∂02õ02û0-0j`.200j`0j`22
+0j`Há “
+	(ÅØÑ0j`2
+002
+002ò0+j`,2ô0+j`,2∂002õ002û0-0j`.200j`0j`22
+0j`Há “
+	(ÉØÜ0j`2
+002
+002ò0+j`,2ô0+j`,2∂02õ02û0-0j`.20
+0j`0j`32
+0j`Há “
+	(ÖØà0j`2
+002
+002ò0+j`,2ô0+j`,2∂002õ002û0-0j`.20
+0j`0j`32
+0j`Há “
+	(áõã0j`2
+002
+002ò0+j`,2ô0+j`,2ö02õ02û0-0j`.2
+0j`42
+0j`Há “
+	(äõç0j`2
+002
+002ò0+j`,2ô0+j`,2∂02õ02û0-0j`.2
+0j`42
+0j`Há “
+	(å?ê0-0j`.2é02
+0j`Há “
+	(è3ì052û0-0j`.Há “
+	(íÕõ0j`2û0-0j`.2é02gób\ZVT00j`000j`00+0-0j`805070602ò02ô02
+0j`Há “
+	(ö•û0+j`92é02gób\ZVT00j`000j`00+0-0j`805070602ò02
+0j`Há “
+	(ùC†0+j`,2û0-0j`.2
+0j`Há “
+	(üU•0j`2
+002£0+0:j`;02
+0j`Há “
+	(§x™0j`2
+002£0+0:j`;02¶02ß0j`!2®0j`!2
+0j`Há “
+	(©uÆ0j`2
+0029£4.,0+0:j`;00<j0+0:j`;`=02
+0j`Há “
+	(≠ò∞0j`2
+0029£4.,0+0:j`;00<j0+0:j`;`=02¶02ß0j`!2®0j`!2
+0j`Há “
+	(ØJ≤0j`2
+002
+002
+0j`Há “
+	(±{¥0j`2
+002
+00202¶02ß0j`!2®0j`!2
+0j`Há “
+	(≥J∂0j`2
+002
+002
+0j`Há “
+	(µ{∏0j`2
+002
+00202¶02ß0j`!2®0j`!2
+0j`Há “
+	(∑eª0j`2
+002
+002π0+0:j`;02
+0j`Há “
+	(∫ñΩ0j`2
+002
+00202π0+0:j`;02¶02ß0j`!2®0j`!2
+0j`Há “
+	(ºÖø0j`2
+002
+0029π4.,0+0:j`;00<j0+0:j`;`=02
+0j`Há “
+	(æ∂¡0j`2
+002
+002029π4.,0+0:j`;00<j0+0:j`;`=02¶02ß0j`!2®0j`!2
+0j`Há “
+	(¿J√0j`2
+002
+002
+0j`Há “
+	(¬{≈0j`2
+002
+00202¶02ß0j`!2®0j`!2
+0j`Há “
+	(ƒJ«0j`2
+002
+002
+0j`Há “
+	(∆{…0j`2
+002
+00202¶02ß0j`!2®0j`!2
+0j`Há “
+	(»\Õ0j`2
+002
+002 02À02
+0j`Há “
+	(Ãçœ0j`2
+002
+00202 02À02¶02ß0j`!2®0j`!2
+0j`Há “
+	(ŒÄ”0j`2
+002
+002 00>j`?02À00>j`?02
+0j`Há “
+	(“±’0j`2
+002
+00202 00>j`?02À00>j`?02¶02ß0j`!2®0j`!2
+0j`Há “
+	(‘ô€0j`2
+002
+002ò0+j`,2ô0+j`,2◊00"j`@02ÿ0+j`,2Ÿ0+j`,2
+0j`Há “
+	(⁄ô›0j`2
+002
+002ò0+j`,2ô0+j`,2◊00j`02ÿ0+j`,2Ÿ0+j`,2
+0j`Há “
+	(‹ôﬂ0j`2
+002
+002ò0+j`,2ô0+j`,2◊00"j`@02ÿ0+j`,2Ÿ0+j`,2
+0j`Há “
+	(ﬁÿ
 ‡
  Í
 platform.Accelerate

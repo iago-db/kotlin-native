@@ -1,873 +1,639 @@
 
-ˆi
+ç`
+kotlin
+ULong
+platform
+CoreFoundation
+CFTypeID
 kotlinx
 cinterop
-CPointer
-cnames
-structs
-__IOHIDTransaction
-platform
-IOKit
-IOHIDTransactionRef
-transaction
-__IOHIDElement
-IOHIDElementRef
-element
-__IOHIDValue
-IOHIDValueRef
-value
-kotlin
-UInt
-IOOptionBits
-options
-Unit
 internal
 CCall
 id
-4knifunptr_platform_IOKit256_IOHIDTransactionSetValue
-IOHIDTransactionSetValue
-4knifunptr_platform_IOKit257_IOHIDTransactionGetValue
-IOHIDTransactionGetValue
-Int
-IOReturn
-2knifunptr_platform_IOKit258_IOHIDTransactionCommit
-IOHIDTransactionCommit
-Double
-CoreFoundation
-CFTimeInterval
-timeout
+/knifunptr_platform_IOKit128_IOHIDQueueGetTypeID
+IOHIDQueueGetTypeID
+CPointer
+cnames
+structs
+__CFAllocator
+CFAllocatorRef
+	allocator
+__IOHIDDevice
+IOKit
+IOHIDDeviceRef
+device
+Long
+CFIndex
+depth
+UInt
+IOOptionBits
+options
+__IOHIDQueue
+IOHIDQueueRef
+,knifunptr_platform_IOKit129_IOHIDQueueCreate
+IOHIDQueueCreate
+queue
+/knifunptr_platform_IOKit130_IOHIDQueueGetDevice
+IOHIDQueueGetDevice
+.knifunptr_platform_IOKit131_IOHIDQueueGetDepth
+IOHIDQueueGetDepth
+Unit
+.knifunptr_platform_IOKit132_IOHIDQueueSetDepth
+IOHIDQueueSetDepth
+__IOHIDElement
+IOHIDElementRef
+element
+0knifunptr_platform_IOKit133_IOHIDQueueAddElement
+IOHIDQueueAddElement
+3knifunptr_platform_IOKit134_IOHIDQueueRemoveElement
+IOHIDQueueRemoveElement
+Boolean
+5knifunptr_platform_IOKit135_IOHIDQueueContainsElement
+IOHIDQueueContainsElement
++knifunptr_platform_IOKit136_IOHIDQueueStart
+IOHIDQueueStart
+*knifunptr_platform_IOKit137_IOHIDQueueStop
+IOHIDQueueStop
+__CFRunLoop
+CFRunLoopRef
+runLoop
+
+__CFString
+CFStringRef
+runLoopMode
+9knifunptr_platform_IOKit138_IOHIDQueueScheduleWithRunLoop
+IOHIDQueueScheduleWithRunLoop
+;knifunptr_platform_IOKit139_IOHIDQueueUnscheduleFromRunLoop
+IOHIDQueueUnscheduleFromRunLoop
+darwin
+NSObject
+dispatch_queue_t
+dispatchQueue
+6knifunptr_platform_IOKit140_IOHIDQueueSetDispatchQueue
+IOHIDQueueSetDispatchQueue
+	Function0
+dispatch_block_t
+handler
+6knifunptr_platform_IOKit141_IOHIDQueueSetCancelHandler
+IOHIDQueueSetCancelHandler
+.knifunptr_platform_IOKit142_IOHIDQueueActivate
+IOHIDQueueActivate
+,knifunptr_platform_IOKit143_IOHIDQueueCancel
+IOHIDQueueCancel
 	CFunction
 	Function3
 CPointed
 COpaquePointer
+Int
+IOReturn
 IOHIDCallback
 callback
 
 CValuesRef
 context
->knifunptr_platform_IOKit259_IOHIDTransactionCommitWithCallback
-"IOHIDTransactionCommitWithCallback
-1knifunptr_platform_IOKit260_IOHIDTransactionClear
-IOHIDTransactionClear
-io_connect_t
-connect
-version
-darwin
-kern_return_t
-3knifunptr_platform_IOKit261_IOHIDCreateSharedMemory
-IOHIDCreateSharedMemory
-posix
-	boolean_t
-enable
-0knifunptr_platform_IOKit262_IOHIDSetEventsEnable
-IOHIDSetEventsEnable
-0knifunptr_platform_IOKit263_IOHIDSetCursorEnable
-IOHIDSetCursorEnable
-UInt32
-	eventType
-CValue
-IOGPoint
-location
-NXEventData
-	eventData
-eventDataVersion
-
-eventFlags
-*knifunptr_platform_IOKit264_IOHIDPostEvent
-IOHIDPostEvent
-x
-y
-1knifunptr_platform_IOKit265_IOHIDSetMouseLocation
-IOHIDSetMouseLocation
-NXMouseButton
-button
-IntVarOf
-IntVar
-eventNum
-2knifunptr_platform_IOKit266_IOHIDGetButtonEventNum
-IOHIDGetButtonEventNum
-handle
-DoubleVarOf
-	DoubleVar
-acceleration
-6knifunptr_platform_IOKit267_IOHIDGetScrollAcceleration
-IOHIDGetScrollAcceleration
-6knifunptr_platform_IOKit268_IOHIDSetScrollAcceleration
-IOHIDSetScrollAcceleration
-5knifunptr_platform_IOKit269_IOHIDGetMouseAcceleration
-IOHIDGetMouseAcceleration
-5knifunptr_platform_IOKit270_IOHIDSetMouseAcceleration
-IOHIDSetMouseAcceleration
-mode
-3knifunptr_platform_IOKit271_IOHIDGetMouseButtonMode
-IOHIDGetMouseButtonMode
-3knifunptr_platform_IOKit272_IOHIDSetMouseButtonMode
-IOHIDSetMouseButtonMode
-
-__CFString
-CFStringRef
-key
-7knifunptr_platform_IOKit273_IOHIDGetAccelerationWithKey
-IOHIDGetAccelerationWithKey
-7knifunptr_platform_IOKit274_IOHIDSetAccelerationWithKey
-IOHIDSetAccelerationWithKey
-IOByteCount
-maxSize
-bytes
-	UIntVarOf
-IOByteCountVar
-
-actualSize
--knifunptr_platform_IOKit275_IOHIDGetParameter
-IOHIDGetParameter
-size
--knifunptr_platform_IOKit276_IOHIDSetParameter
-IOHIDSetParameter
-CPointerVarOf
-	CFTypeRef
-CFTypeRefVar
-	parameter
-4knifunptr_platform_IOKit277_IOHIDCopyCFTypeParameter
-IOHIDCopyCFTypeParameter
-3knifunptr_platform_IOKit278_IOHIDSetCFTypeParameter
-IOHIDSetCFTypeParameter
-selector
-	UInt32Var
-state
-4knifunptr_platform_IOKit279_IOHIDGetStateForSelector
-IOHIDGetStateForSelector
-4knifunptr_platform_IOKit280_IOHIDSetStateForSelector
-IOHIDSetStateForSelector
-BooleanVarOf
-Boolean
-
-BooleanVar
-5knifunptr_platform_IOKit281_IOHIDGetModifierLockState
-IOHIDGetModifierLockState
-5knifunptr_platform_IOKit282_IOHIDSetModifierLockState
-IOHIDSetModifierLockState
-display_token
-7knifunptr_platform_IOKit283_IOHIDRegisterVirtualDisplay
-IOHIDRegisterVirtualDisplay
-9knifunptr_platform_IOKit284_IOHIDUnregisterVirtualDisplay
-IOHIDUnregisterVirtualDisplay
-	IOGBounds
-bounds
-8knifunptr_platform_IOKit285_IOHIDSetVirtualDisplayBounds
-IOHIDSetVirtualDisplayBounds
-hidActivityIdle
-1knifunptr_platform_IOKit286_IOHIDGetActivityState
-IOHIDGetActivityState
-IOHIDRequestType
-requestType
-IOHIDAccessType
-,knifunptr_platform_IOKit287_IOHIDCheckAccess
-IOHIDCheckAccess
-.knifunptr_platform_IOKit288_IOHIDRequestAccess
-IOHIDRequestAccess
-audit_token_t
-token
-6knifunptr_platform_IOKit289_IOHIDAccessCheckAuditToken
-IOHIDAccessCheckAuditToken
-NXEventHandle
--knifunptr_platform_IOKit290_NXOpenEventStatus
-NXOpenEventStatus
-.knifunptr_platform_IOKit291_NXCloseEventStatus
-NXCloseEventStatus
-	ByteVarOf
-Byte
-ByteVar
-flavor
-evs_info
-UIntVar
-evs_info_cnt
-NXEventSystemInfoType
--knifunptr_platform_IOKit292_NXEventSystemInfo
-NXEventSystemInfo
-seconds
-2knifunptr_platform_IOKit293_NXSetKeyRepeatInterval
-NXSetKeyRepeatInterval
-/knifunptr_platform_IOKit294_NXKeyRepeatInterval
-NXKeyRepeatInterval
-	threshold
-3knifunptr_platform_IOKit295_NXSetKeyRepeatThreshold
-NXSetKeyRepeatThreshold
-0knifunptr_platform_IOKit296_NXKeyRepeatThreshold
-NXKeyRepeatThreshold
-+knifunptr_platform_IOKit297_NXResetKeyboard
-NXResetKeyboard
-*knifunptr_platform_IOKit298_NXSetClickTime
-NXSetClickTime
-'knifunptr_platform_IOKit299_NXClickTime
-NXClickTime
-_NXSize
-NXSize
-area
-+knifunptr_platform_IOKit300_NXSetClickSpace
-NXSetClickSpace
-+knifunptr_platform_IOKit301_NXGetClickSpace
-NXGetClickSpace
-(knifunptr_platform_IOKit302_NXResetMouse
-NXResetMouse
-__CFAllocator
-CFAllocatorRef
-	allocator
-__IOHIDEventSystemClient
-IOHIDEventSystemClientRef
-Dknifunptr_platform_IOKit303_IOHIDEventSystemClientCreateSimpleClient
-(IOHIDEventSystemClientCreateSimpleClient
-client
-property
-=knifunptr_platform_IOKit304_IOHIDEventSystemClientSetProperty
-!IOHIDEventSystemClientSetProperty
->knifunptr_platform_IOKit305_IOHIDEventSystemClientCopyProperty
-"IOHIDEventSystemClientCopyProperty
-ULong
-CFTypeID
-;knifunptr_platform_IOKit306_IOHIDEventSystemClientGetTypeID
-IOHIDEventSystemClientGetTypeID
-	__CFArray
-
-CFArrayRef
->knifunptr_platform_IOKit307_IOHIDEventSystemClientCopyServices
-"IOHIDEventSystemClientCopyServices
-__IOHIDServiceClient
-IOHIDServiceClientRef
+Dknifunptr_platform_IOKit144_IOHIDQueueRegisterValueAvailableCallback
+(IOHIDQueueRegisterValueAvailableCallback
+__IOHIDValue
+IOHIDValueRef
+3knifunptr_platform_IOKit145_IOHIDQueueCopyNextValue
+IOHIDQueueCopyNextValue
+Double
+CFTimeInterval
+timeout
+>knifunptr_platform_IOKit146_IOHIDQueueCopyNextValueWithTimeout
+"IOHIDQueueCopyNextValueWithTimeout
+0knifunptr_platform_IOKit147_IOHIDDeviceGetTypeID
+IOHIDDeviceGetTypeID
+io_service_t
 service
-9knifunptr_platform_IOKit308_IOHIDServiceClientSetProperty
-IOHIDServiceClientSetProperty
-:knifunptr_platform_IOKit309_IOHIDServiceClientCopyProperty
-IOHIDServiceClientCopyProperty
-7knifunptr_platform_IOKit310_IOHIDServiceClientGetTypeID
-IOHIDServiceClientGetTypeID
-;knifunptr_platform_IOKit311_IOHIDServiceClientGetRegistryID
-IOHIDServiceClientGetRegistryID
+-knifunptr_platform_IOKit148_IOHIDDeviceCreate
+IOHIDDeviceCreate
+1knifunptr_platform_IOKit149_IOHIDDeviceGetService
+IOHIDDeviceGetService
++knifunptr_platform_IOKit150_IOHIDDeviceOpen
+IOHIDDeviceOpen
+,knifunptr_platform_IOKit151_IOHIDDeviceClose
+IOHIDDeviceClose
+posix
 uint32_t
 	usagePage
 usage
-8knifunptr_platform_IOKit312_IOHIDServiceClientConformsTo
-IOHIDServiceClientConformsTo
-4knifunptr_platform_IOKit313_IOHIDUserDeviceGetTypeID
-IOHIDUserDeviceGetTypeID
+1knifunptr_platform_IOKit152_IOHIDDeviceConformsTo
+IOHIDDeviceConformsTo
+key
+	CFTypeRef
+2knifunptr_platform_IOKit153_IOHIDDeviceGetProperty
+IOHIDDeviceGetProperty
+property
+2knifunptr_platform_IOKit154_IOHIDDeviceSetProperty
+IOHIDDeviceSetProperty
 __CFDictionary
 CFDictionaryRef
+matching
+	__CFArray
 
-properties
-__IOHIDUserDevice
-IOHIDUserDeviceRef
-?knifunptr_platform_IOKit314_IOHIDUserDeviceCreateWithProperties
-#IOHIDUserDeviceCreateWithProperties
-device
+CFArrayRef
+;knifunptr_platform_IOKit155_IOHIDDeviceCopyMatchingElements
+IOHIDDeviceCopyMatchingElements
+:knifunptr_platform_IOKit156_IOHIDDeviceScheduleWithRunLoop
+IOHIDDeviceScheduleWithRunLoop
+<knifunptr_platform_IOKit157_IOHIDDeviceUnscheduleFromRunLoop
+ IOHIDDeviceUnscheduleFromRunLoop
+7knifunptr_platform_IOKit158_IOHIDDeviceSetDispatchQueue
+IOHIDDeviceSetDispatchQueue
+7knifunptr_platform_IOKit159_IOHIDDeviceSetCancelHandler
+IOHIDDeviceSetCancelHandler
+/knifunptr_platform_IOKit160_IOHIDDeviceActivate
+IOHIDDeviceActivate
+-knifunptr_platform_IOKit161_IOHIDDeviceCancel
+IOHIDDeviceCancel
+>knifunptr_platform_IOKit162_IOHIDDeviceRegisterRemovalCallback
+"IOHIDDeviceRegisterRemovalCallback
 	Function4
-IOHIDReportType
+IOHIDValueCallback
+Aknifunptr_platform_IOKit163_IOHIDDeviceRegisterInputValueCallback
+%IOHIDDeviceRegisterInputValueCallback
 
 UByteVarOf
 UByte
 
 uint8_tVar
-	LongVarOf
-Long
-
-CFIndexVar
-IOHIDUserDeviceGetReportBlock
-block
-Aknifunptr_platform_IOKit315_IOHIDUserDeviceRegisterGetReportBlock
-%IOHIDUserDeviceRegisterGetReportBlock
-CFIndex
-IOHIDUserDeviceSetReportBlock
-Aknifunptr_platform_IOKit316_IOHIDUserDeviceRegisterSetReportBlock
-%IOHIDUserDeviceRegisterSetReportBlock
-NSObject
-dispatch_queue_t
-queue
-;knifunptr_platform_IOKit317_IOHIDUserDeviceSetDispatchQueue
-IOHIDUserDeviceSetDispatchQueue
-	Function0
-dispatch_block_t
-handler
-;knifunptr_platform_IOKit318_IOHIDUserDeviceSetCancelHandler
-IOHIDUserDeviceSetCancelHandler
-3knifunptr_platform_IOKit319_IOHIDUserDeviceActivate
-IOHIDUserDeviceActivate
-1knifunptr_platform_IOKit320_IOHIDUserDeviceCancel
-IOHIDUserDeviceCancel
-7knifunptr_platform_IOKit321_IOHIDUserDeviceCopyProperty
-IOHIDUserDeviceCopyProperty
-6knifunptr_platform_IOKit322_IOHIDUserDeviceSetProperty
-IOHIDUserDeviceSetProperty
-uint64_t
-	timestamp
 report
 reportLength
-Dknifunptr_platform_IOKit323_IOHIDUserDeviceHandleReportWithTimeStamp
-(IOHIDUserDeviceHandleReportWithTimeStamp
-io_service_t
-framebuffer
-IOItemCountVar
-count
-4knifunptr_platform_IOKit324_IOFBGetI2CInterfaceCount
-IOFBGetI2CInterfaceCount
-bus
-io_service_tVar
-	interface
-6knifunptr_platform_IOKit325_IOFBCopyI2CInterfaceForBus
-IOFBCopyI2CInterfaceForBus
-
-identifier
-3knifunptr_platform_IOKit326_IOI2CCopyInterfaceForID
-IOI2CCopyInterfaceForID
-IOI2CConnect
-IOI2CConnectRef
-IOI2CConnectRefVar
-.knifunptr_platform_IOKit327_IOI2CInterfaceOpen
-IOI2CInterfaceOpen
-/knifunptr_platform_IOKit328_IOI2CInterfaceClose
-IOI2CInterfaceClose
-IOI2CRequest
-request
-,knifunptr_platform_IOKit329_IOI2CSendRequest
-IOI2CSendRequest
-kextIdentifier
-__CFURL
-CFURLRef
-Cknifunptr_platform_IOKit330_KextManagerCreateURLForBundleIdentifier
-'KextManagerCreateURLForBundleIdentifier
-dependencyKextAndFolderURLs
-libkern
-OSReturn
-=knifunptr_platform_IOKit331_KextManagerLoadKextWithIdentifier
-!KextManagerLoadKextWithIdentifier
-kextURL
-6knifunptr_platform_IOKit332_KextManagerLoadKextWithURL
-KextManagerLoadKextWithURL
-?knifunptr_platform_IOKit333_KextManagerUnloadKextWithIdentifier
-#KextManagerUnloadKextWithIdentifier
-kextIdentifiers
-infoKeys
-9knifunptr_platform_IOKit334_KextManagerCopyLoadedKextInfo
-KextManagerCopyLoadedKextInfo
-io_object_t
-obj
-io_connect_tVar
-con
-)knifunptr_platform_IOKit335_IONetworkOpen
-IONetworkOpen
-*knifunptr_platform_IOKit336_IONetworkClose
-IONetworkClose
-conObj
-
-IONDHandle
-
-dataHandle
-UInt8Var
-srcBuf
-inSize
-.knifunptr_platform_IOKit337_IONetworkWriteData
-IONetworkWriteData
-destBuf
-
-inOutSizeP
--knifunptr_platform_IOKit338_IONetworkReadData
-IONetworkReadData
-	conObject
-.knifunptr_platform_IOKit339_IONetworkResetData
-IONetworkResetData
-	capacityP
-4knifunptr_platform_IOKit340_IONetworkGetDataCapacity
-IONetworkGetDataCapacity
-String
-CString
-dataName
-IONDHandleVar
-dataHandleP
-2knifunptr_platform_IOKit341_IONetworkGetDataHandle
-IONetworkGetDataHandle
-	io_name_t
-filterGroup
-filtersMask
-9knifunptr_platform_IOKit342_IONetworkSetPacketFiltersMask
-IONetworkSetPacketFiltersMask
-9knifunptr_platform_IOKit343_IONetworkGetPacketFiltersMask
-IONetworkGetPacketFiltersMask
-IOPSLowBatteryWarningLevel
-6knifunptr_platform_IOKit344_IOPSGetBatteryWarningLevel
-IOPSGetBatteryWarningLevel
-8knifunptr_platform_IOKit345_IOPSGetTimeRemainingEstimate
-IOPSGetTimeRemainingEstimate
-4knifunptr_platform_IOKit346_IOPSCopyPowerSourcesInfo
-IOPSCopyPowerSourcesInfo
-blob
-4knifunptr_platform_IOKit347_IOPSCopyPowerSourcesList
-IOPSCopyPowerSourcesList
-ps
-9knifunptr_platform_IOKit348_IOPSGetPowerSourceDescription
-IOPSGetPowerSourceDescription
-snapshot
-;knifunptr_platform_IOKit349_IOPSGetProvidingPowerSourceType
-IOPSGetProvidingPowerSourceType
-	Function1
-IOPowerSourceCallbackType
-__CFRunLoopSource
-CFRunLoopSourceRef
-?knifunptr_platform_IOKit350_IOPSNotificationCreateRunLoopSource
-#IOPSNotificationCreateRunLoopSource
->knifunptr_platform_IOKit351_IOPSCreateLimitedPowerNotification
-"IOPSCreateLimitedPowerNotification
-?knifunptr_platform_IOKit352_IOPSCopyExternalPowerAdapterDetails
-#IOPSCopyExternalPowerAdapterDetails
-mach_port_t
-master_device_port
-3knifunptr_platform_IOKit353_IOPMFindPowerManagement
-IOPMFindPowerManagement
-fb
-type
-aggressiveness
-1knifunptr_platform_IOKit354_IOPMSetAggressiveness
-IOPMSetAggressiveness
-
-ULongVarOf
-ULongVar
-1knifunptr_platform_IOKit355_IOPMGetAggressiveness
-IOPMGetAggressiveness
-,knifunptr_platform_IOKit356_IOPMSleepEnabled
-IOPMSleepEnabled
-+knifunptr_platform_IOKit357_IOPMSleepSystem
-IOPMSleepSystem
-
-masterPort
-CFArrayRefVar
-info
-/knifunptr_platform_IOKit358_IOPMCopyBatteryInfo
-IOPMCopyBatteryInfo
-refcon
-	theDriver
-IONotificationPort
-IONotificationPortRef
-IONotificationPortRefVar
-
-thePortRef
-IOServiceInterestCallback
-io_object_tVar
-notifier
-)knifunptr_platform_IOKit359_IORegisterApp
-IORegisterApp
-4knifunptr_platform_IOKit360_IORegisterForSystemPower
-IORegisterForSystemPower
-+knifunptr_platform_IOKit361_IODeregisterApp
-IODeregisterApp
-6knifunptr_platform_IOKit362_IODeregisterForSystemPower
-IODeregisterForSystemPower
-
-kernelPort
-intptr_t
-notificationID
-.knifunptr_platform_IOKit363_IOAllowPowerChange
-IOAllowPowerChange
-/knifunptr_platform_IOKit364_IOCancelPowerChange
-IOCancelPowerChange
-__CFDate
-	CFDateRef
-time_to_wake
-my_id
-2knifunptr_platform_IOKit365_IOPMSchedulePowerEvent
-IOPMSchedulePowerEvent
-9knifunptr_platform_IOKit366_IOPMCancelScheduledPowerEvent
-IOPMCancelScheduledPowerEvent
-8knifunptr_platform_IOKit367_IOPMCopyScheduledPowerEvents
-IOPMCopyScheduledPowerEvents
-AssertionType
-Name
-Details
-HumanReadableReason
-LocalizationBundlePath
-Timeout
-TimeoutAction
-IOPMAssertionIDVar
-AssertionID
->knifunptr_platform_IOKit368_IOPMAssertionCreateWithDescription
-"IOPMAssertionCreateWithDescription
-AssertionProperties
-=knifunptr_platform_IOKit369_IOPMAssertionCreateWithProperties
-!IOPMAssertionCreateWithProperties
-AssertionName
-IOPMUserActiveType
-userType
-<knifunptr_platform_IOKit370_IOPMAssertionDeclareUserActivity
- IOPMAssertionDeclareUserActivity
-<knifunptr_platform_IOKit371_IOPMDeclareNetworkClientActivity
- IOPMDeclareNetworkClientActivity
-IOPMAssertionID
-theAssertion
-/knifunptr_platform_IOKit372_IOPMAssertionRetain
-IOPMAssertionRetain
-0knifunptr_platform_IOKit373_IOPMAssertionRelease
-IOPMAssertionRelease
-7knifunptr_platform_IOKit374_IOPMAssertionCopyProperties
-IOPMAssertionCopyProperties
-theProperty
-theValue
-4knifunptr_platform_IOKit375_IOPMAssertionSetProperty
-IOPMAssertionSetProperty
+	Function7
+IOHIDReportType
+IOHIDReportCallback
+Bknifunptr_platform_IOKit164_IOHIDDeviceRegisterInputReportCallback
+&IOHIDDeviceRegisterInputReportCallback
+	Function8
+uint64_t
+ IOHIDReportWithTimeStampCallback
+Oknifunptr_platform_IOKit165_IOHIDDeviceRegisterInputReportWithTimeStampCallback
+3IOHIDDeviceRegisterInputReportWithTimeStampCallback
+<knifunptr_platform_IOKit166_IOHIDDeviceSetInputValueMatching
+ IOHIDDeviceSetInputValueMatching
+multiple
+Dknifunptr_platform_IOKit167_IOHIDDeviceSetInputValueMatchingMultiple
+(IOHIDDeviceSetInputValueMatchingMultiple
+value
+/knifunptr_platform_IOKit168_IOHIDDeviceSetValue
+IOHIDDeviceSetValue
+7knifunptr_platform_IOKit169_IOHIDDeviceSetValueMultiple
+IOHIDDeviceSetValueMultiple
+;knifunptr_platform_IOKit170_IOHIDDeviceSetValueWithCallback
+IOHIDDeviceSetValueWithCallback
+IOHIDValueMultipleCallback
+Cknifunptr_platform_IOKit171_IOHIDDeviceSetValueMultipleWithCallback
+'IOHIDDeviceSetValueMultipleWithCallback
+CPointerVarOf
+IOHIDValueRefVar
+pValue
+/knifunptr_platform_IOKit172_IOHIDDeviceGetValue
+IOHIDDeviceGetValue
+:knifunptr_platform_IOKit173_IOHIDDeviceGetValueWithOptions
+IOHIDDeviceGetValueWithOptions
+elements
 CFDictionaryRefVar
-AssertionsByPID
-7knifunptr_platform_IOKit376_IOPMCopyAssertionsByProcess
-IOPMCopyAssertionsByProcess
-AssertionsStatus
-4knifunptr_platform_IOKit377_IOPMCopyAssertionsStatus
-IOPMCopyAssertionsStatus
-IOPMAssertionLevel
-AssertionLevel
-/knifunptr_platform_IOKit378_IOPMAssertionCreate
-IOPMAssertionCreate
-7knifunptr_platform_IOKit379_IOPMAssertionCreateWithName
-IOPMAssertionCreateWithName
-IOSystemLoadAdvisoryLevel
-3knifunptr_platform_IOKit380_IOGetSystemLoadAdvisory
-IOGetSystemLoadAdvisory
-<knifunptr_platform_IOKit381_IOCopySystemLoadAdvisoryDetailed
- IOCopySystemLoadAdvisoryDetailed
-cpuPowerStatus
-2knifunptr_platform_IOKit382_IOPMCopyCPUPowerStatus
-IOPMCopyCPUPowerStatus
-uint32_tVar
-thermalLevel
-6knifunptr_platform_IOKit383_IOPMGetThermalWarningLevel
-IOPMGetThermalWarningLevel™	
+	pMultiple
+8knifunptr_platform_IOKit174_IOHIDDeviceCopyValueMultiple
+IOHIDDeviceCopyValueMultiple
+;knifunptr_platform_IOKit175_IOHIDDeviceGetValueWithCallback
+IOHIDDeviceGetValueWithCallback
+Dknifunptr_platform_IOKit176_IOHIDDeviceCopyValueMultipleWithCallback
+(IOHIDDeviceCopyValueMultipleWithCallback
+
+reportType
+reportID
+0knifunptr_platform_IOKit177_IOHIDDeviceSetReport
+IOHIDDeviceSetReport
+<knifunptr_platform_IOKit178_IOHIDDeviceSetReportWithCallback
+ IOHIDDeviceSetReportWithCallback
+	LongVarOf
+
+CFIndexVar
+pReportLength
+0knifunptr_platform_IOKit179_IOHIDDeviceGetReport
+IOHIDDeviceGetReport
+<knifunptr_platform_IOKit180_IOHIDDeviceGetReportWithCallback
+ IOHIDDeviceGetReportWithCallback
+1knifunptr_platform_IOKit181_IOHIDElementGetTypeID
+IOHIDElementGetTypeID
+
+dictionary
+<knifunptr_platform_IOKit182_IOHIDElementCreateWithDictionary
+ IOHIDElementCreateWithDictionary
+1knifunptr_platform_IOKit183_IOHIDElementGetDevice
+IOHIDElementGetDevice
+1knifunptr_platform_IOKit184_IOHIDElementGetParent
+IOHIDElementGetParent
+3knifunptr_platform_IOKit185_IOHIDElementGetChildren
+IOHIDElementGetChildren
+toAttach
+.knifunptr_platform_IOKit186_IOHIDElementAttach
+IOHIDElementAttach
+toDetach
+.knifunptr_platform_IOKit187_IOHIDElementDetach
+IOHIDElementDetach
+4knifunptr_platform_IOKit188_IOHIDElementCopyAttached
+IOHIDElementCopyAttached
+IOHIDElementCookie
+1knifunptr_platform_IOKit189_IOHIDElementGetCookie
+IOHIDElementGetCookie
+IOHIDElementType
+/knifunptr_platform_IOKit190_IOHIDElementGetType
+IOHIDElementGetType
+IOHIDElementCollectionType
+9knifunptr_platform_IOKit191_IOHIDElementGetCollectionType
+IOHIDElementGetCollectionType
+4knifunptr_platform_IOKit192_IOHIDElementGetUsagePage
+IOHIDElementGetUsagePage
+0knifunptr_platform_IOKit193_IOHIDElementGetUsage
+IOHIDElementGetUsage
+1knifunptr_platform_IOKit194_IOHIDElementIsVirtual
+IOHIDElementIsVirtual
+2knifunptr_platform_IOKit195_IOHIDElementIsRelative
+IOHIDElementIsRelative
+2knifunptr_platform_IOKit196_IOHIDElementIsWrapping
+IOHIDElementIsWrapping
+/knifunptr_platform_IOKit197_IOHIDElementIsArray
+IOHIDElementIsArray
+3knifunptr_platform_IOKit198_IOHIDElementIsNonLinear
+IOHIDElementIsNonLinear
+9knifunptr_platform_IOKit199_IOHIDElementHasPreferredState
+IOHIDElementHasPreferredState
+4knifunptr_platform_IOKit200_IOHIDElementHasNullState
+IOHIDElementHasNullState
+/knifunptr_platform_IOKit201_IOHIDElementGetName
+IOHIDElementGetName
+3knifunptr_platform_IOKit202_IOHIDElementGetReportID
+IOHIDElementGetReportID
+5knifunptr_platform_IOKit203_IOHIDElementGetReportSize
+IOHIDElementGetReportSize
+6knifunptr_platform_IOKit204_IOHIDElementGetReportCount
+IOHIDElementGetReportCount
+/knifunptr_platform_IOKit205_IOHIDElementGetUnit
+IOHIDElementGetUnit
+7knifunptr_platform_IOKit206_IOHIDElementGetUnitExponent
+IOHIDElementGetUnitExponent
+5knifunptr_platform_IOKit207_IOHIDElementGetLogicalMin
+IOHIDElementGetLogicalMin
+5knifunptr_platform_IOKit208_IOHIDElementGetLogicalMax
+IOHIDElementGetLogicalMax
+6knifunptr_platform_IOKit209_IOHIDElementGetPhysicalMin
+IOHIDElementGetPhysicalMin
+6knifunptr_platform_IOKit210_IOHIDElementGetPhysicalMax
+IOHIDElementGetPhysicalMax
+3knifunptr_platform_IOKit211_IOHIDElementGetProperty
+IOHIDElementGetProperty
+3knifunptr_platform_IOKit212_IOHIDElementSetProperty
+IOHIDElementSetProperty
+1knifunptr_platform_IOKit213_IOHIDManagerGetTypeID
+IOHIDManagerGetTypeID
+__IOHIDManager
+IOHIDManagerRef
+.knifunptr_platform_IOKit214_IOHIDManagerCreate
+IOHIDManagerCreate
+manager
+,knifunptr_platform_IOKit215_IOHIDManagerOpen
+IOHIDManagerOpen
+-knifunptr_platform_IOKit216_IOHIDManagerClose
+IOHIDManagerClose
+3knifunptr_platform_IOKit217_IOHIDManagerGetProperty
+IOHIDManagerGetProperty
+3knifunptr_platform_IOKit218_IOHIDManagerSetProperty
+IOHIDManagerSetProperty
+;knifunptr_platform_IOKit219_IOHIDManagerScheduleWithRunLoop
+IOHIDManagerScheduleWithRunLoop
+=knifunptr_platform_IOKit220_IOHIDManagerUnscheduleFromRunLoop
+!IOHIDManagerUnscheduleFromRunLoop
+8knifunptr_platform_IOKit221_IOHIDManagerSetDispatchQueue
+IOHIDManagerSetDispatchQueue
+8knifunptr_platform_IOKit222_IOHIDManagerSetCancelHandler
+IOHIDManagerSetCancelHandler
+0knifunptr_platform_IOKit223_IOHIDManagerActivate
+IOHIDManagerActivate
+.knifunptr_platform_IOKit224_IOHIDManagerCancel
+IOHIDManagerCancel
+9knifunptr_platform_IOKit225_IOHIDManagerSetDeviceMatching
+IOHIDManagerSetDeviceMatching
+Aknifunptr_platform_IOKit226_IOHIDManagerSetDeviceMatchingMultiple
+%IOHIDManagerSetDeviceMatchingMultiple
+__CFSet
+CFSetRef
+3knifunptr_platform_IOKit227_IOHIDManagerCopyDevices
+IOHIDManagerCopyDevices
+IOHIDDeviceCallback
+Fknifunptr_platform_IOKit228_IOHIDManagerRegisterDeviceMatchingCallback
+*IOHIDManagerRegisterDeviceMatchingCallback
+Eknifunptr_platform_IOKit229_IOHIDManagerRegisterDeviceRemovalCallback
+)IOHIDManagerRegisterDeviceRemovalCallback
+Cknifunptr_platform_IOKit230_IOHIDManagerRegisterInputReportCallback
+'IOHIDManagerRegisterInputReportCallback
+Pknifunptr_platform_IOKit231_IOHIDManagerRegisterInputReportWithTimeStampCallback
+4IOHIDManagerRegisterInputReportWithTimeStampCallback
+Bknifunptr_platform_IOKit232_IOHIDManagerRegisterInputValueCallback
+&IOHIDManagerRegisterInputValueCallback
+=knifunptr_platform_IOKit233_IOHIDManagerSetInputValueMatching
+!IOHIDManagerSetInputValueMatching
+Eknifunptr_platform_IOKit234_IOHIDManagerSetInputValueMatchingMultiple
+)IOHIDManagerSetInputValueMatchingMultiple
+applicationID
+userName
+hostName
+<knifunptr_platform_IOKit235_IOHIDManagerSaveToPropertyDomain
+ IOHIDManagerSaveToPropertyDomain
+/knifunptr_platform_IOKit236_IOHIDValueGetTypeID
+IOHIDValueGetTypeID
+	timeStamp
+<knifunptr_platform_IOKit237_IOHIDValueCreateWithIntegerValue
+ IOHIDValueCreateWithIntegerValue
+bytes
+length
+5knifunptr_platform_IOKit238_IOHIDValueCreateWithBytes
+IOHIDValueCreateWithBytes
+;knifunptr_platform_IOKit239_IOHIDValueCreateWithBytesNoCopy
+IOHIDValueCreateWithBytesNoCopy
+0knifunptr_platform_IOKit240_IOHIDValueGetElement
+IOHIDValueGetElement
+2knifunptr_platform_IOKit241_IOHIDValueGetTimeStamp
+IOHIDValueGetTimeStamp
+/knifunptr_platform_IOKit242_IOHIDValueGetLength
+IOHIDValueGetLength
+0knifunptr_platform_IOKit243_IOHIDValueGetBytePtr
+IOHIDValueGetBytePtr
+5knifunptr_platform_IOKit244_IOHIDValueGetIntegerValue
+IOHIDValueGetIntegerValue
+IOHIDValueScaleType
+type
+double_t
+4knifunptr_platform_IOKit245_IOHIDValueGetScaledValue
+IOHIDValueGetScaledValue
+5knifunptr_platform_IOKit246_IOHIDTransactionGetTypeID
+IOHIDTransactionGetTypeID
+IOHIDTransactionDirectionType
+	direction
+__IOHIDTransaction
+IOHIDTransactionRef
+2knifunptr_platform_IOKit247_IOHIDTransactionCreate
+IOHIDTransactionCreate
+transaction
+5knifunptr_platform_IOKit248_IOHIDTransactionGetDevice
+IOHIDTransactionGetDevice
+8knifunptr_platform_IOKit249_IOHIDTransactionGetDirection
+IOHIDTransactionGetDirection
+8knifunptr_platform_IOKit250_IOHIDTransactionSetDirection
+IOHIDTransactionSetDirection
+6knifunptr_platform_IOKit251_IOHIDTransactionAddElement
+IOHIDTransactionAddElement
+9knifunptr_platform_IOKit252_IOHIDTransactionRemoveElement
+IOHIDTransactionRemoveElement
+;knifunptr_platform_IOKit253_IOHIDTransactionContainsElement
+IOHIDTransactionContainsElement
+?knifunptr_platform_IOKit254_IOHIDTransactionScheduleWithRunLoop
+#IOHIDTransactionScheduleWithRunLoop
+Aknifunptr_platform_IOKit255_IOHIDTransactionUnscheduleFromRunLoop
+%IOHIDTransactionUnscheduleFromRunLoop≤
  
- 
- 
-
-
- 
-
+  
+
+
+ 
+
+
 
  
-
- 
- 
- 
- 
-
- 
- 
- 
-
- 
- 
- 
-  
-!
-" 
-$ 
-% 
-& 
-' 
-( 
-* 
-0 
-3
-4 
-7
-!8 
-> 
-@ 
-A 
-C 
-M 
-O 
-P 
-U 
-V 
-e 
-f 
-l 
-o 
-p 
-w 
-x 
-y 
-Ä 
-Ü 
-á 
-à 
-í 
-ô 
-õ 
-† 
-§ 
-© 
-™ 
-´ 
-Æ 
-∞ 
-√ 
-ƒ 
-Ã 
-Õ 
-œ 
-– 
-Ÿ 
-⁄ 
-› 
-ﬁ 
-· 
-‚ 
-!Ï 
-Û 
-Ù 
-ˆ 
-˜ 
-˚ 
-¸ 
-˝ 
-˛ 
-!ˇ 
-Ä 
-Å 
-Ç 
-É 
-á 
-à 
-ã 
-å 
-ê 
-ë 
-!ù 
-£ 
-• 
-™ 
-± 
-≤ 
-≥ 
-∏ 
-Ω 
-æ 
-¬
-l√ 
-œ 
-— 
-ÿ 
-⁄ 
-È 
-Í 
-Ï 
-l 
-˜ 
-á 
-à 
-â 
-ä 
-!ë 
-ö 
-õ 
-£ 
-© 
-™ 
-´ 
-≠ 
-Æ 
-!π 
-ø 
-¿ 
-– 
-ÿ 
-ﬁ 
-Í 
-Ò 
-˜ 
-!ˇ ôKf02	00j`20	0j`
-200j`2
-0j`Há “
-(^00j`2	00j`20	0j`
-2
-0j`Há “
-(20j`2	00j`Há “
-(§-0j`2	00j`2
-#0j`2V)RFD@>00j`0j`00j`0000j`2+0Há “
-(,./02	00j`Há “
-(.060j` 2
-10j`220Há “
-(54;0j` 2
-10j`2
-90j`"Há “
-(:4=0j` 2
-10j`2
-90j`"Há “
-(<vH0j` 2
-10j`2
-?0j`#2B0%0$2D
-0&02
-E0j`#2
-F0j`2
-0j`Há “
-(G8L0j` 2
-10j`2I02J0Há “
-(KJS0j` 2
-10j`2N0'2Q00(j`)0Há “
-(RBY0j` 2
-T0j`2W00*j`+0Há “
-(X0[0j` 2
-T0j`2W0Há “
-(ZB]0j` 2
-T0j`2W00*j`+0Há “
-(\0_0j` 2
-T0j`2W0Há “
-(^Bb0j` 2
-T0j`2`00(j`)0Há “
-(a0d0j` 2
-T0j`2`0Há “
-(cXi0j` 2
-T0j`2g0,0j`-2W00*j`+0Há “
-(hFk0j` 2
-T0j`2g0,0j`-2W0Há “
-(jrs0j` 2
-T0j`2g0,0j`-2
-m0j`.2n02q00/j`00Há “
-(rXv0j` 2
-T0j`2g0,0j`-2n02
-t0j`.Há “
-(ud|0j` 2
-T0j`2g0,0j`-2$z 00j`201j`30Há “
-({V~0j` 2
-T0j`2g0,0j`-2z00j`2Há “
-(}MÉ0j` 2
-T0j`202Å00/j`40Há “
-	(Ç?Ö0j` 2
-T0j`202Å0j`#Há “
-	(ÑMä0j` 2
-T0j`202Å0605j`70Há “
-	(â;å0j` 2
-T0j`202Å06Há “
-	(ãEè0j` 2
-T0j`2ç00/j`40Há “
-	(é7ë0j` 2
-T0j`2ç0j`#Há “
-	(êHï0j` 2
-T0j`2ç0j`#2ì
-080Há “
-	(îEò0j` 2
-T0j`2ñ0605j`70Há “
-	(ó#ù0:2ö09Há “
-	(ú#ü062ö09Há “
-	(û2£062ö092°0;0$Há “
-	(¢¶0j`<Há “
-	(•&®02
-T0j`<Há “
-	(ßè≤00(j`)0j`A2
-T0j`<2¨0>0=j`?02≠00(j`)02Ø00/j`@0Há “
-	(±/µ02
-T0j`<2≥0Há “
-	(¥&∑02
-T0j`<Há “
-	(∂/∫02
-T0j`<2∏0Há “
-	(π&º02
-T0j`<Há “
-	(ª&æ02
-T0j`<Há “
-	(Ω/¿02
-T0j`<2≥0Há “
-	(ø&¬02
-T0j`<Há “
-	(¡;«02
-T0j`<2≈0Bj`C0Há “
-	(∆;…02
-T0j`<2≈0Bj`C0Há “
-	(»&À02
-T0j`<Há “
-	( ?“0F0j`G2Œ0D0j`EHá “
-	(—`÷062”0F0j`G2g0,0j`-2‘00j`2Há “
-	(’Wÿ00j`22”0F0j`G2g0,0j`-Há “
-	(◊‹0Hj`IHá “
-	(€?‡0J0j`K2”0F0j`GHá “
-	(ﬂ`Â062„0L0j`M2g0,0j`-2‘00j`2Há “
-	(‰WÁ00j`22„0L0j`M2g0,0j`-Há “
-	(ÊÈ0Hj`IHá “
-	(ËAÎ00j`22„0L0j`MHá “
-	(ÍO0j`"2„0L0j`M2Ì0j`N2Ó0j`NHá “
-	(ÔÚ0Hj`IHá “
-	(Òb˘0Q0j`R2Œ0D0j`E2ı0O0j`P2
-0j`Há “
-	(¯êÜ02˙0Q0j`R2]ÑX0j`T0j`N0V0Uj`W00Y0Xj`Z00j`0Sj`[Há “
-	(ÖÇä02˙0Q0j`R2OÑJ0j`T0j`N0V0Uj`W00Yj`\0j`0Sj`]Há “
-	(âBè02˙0Q0j`R2ç
-0^j`_Há “
-	(éHî02˙0Q0j`R2í00`j`aHá “
-	(ì1ñ02˙0Q0j`RHá “
-	(ï1ò02˙0Q0j`RHá “
-	(óWö00j`22˙0Q0j`R2g0,0j`-Há “
-	(ô`ú062˙0Q0j`R2g0,0j`-2‘00j`2Há “
-	(õj¢0j`2˙0Q0j`R2û0Hj`b2ü0V0Uj`W02†0Yj`\Há “
-	(°F®0j`2§0j`c2¶00/j`d0Há “
-	(ßS≠0j`2§0j`c2©0j`2´00/j`e0Há “
-	(¨R∞0j`2Æ00j`22´00/j`e0Há “
-	(Ø[µ0j`2´0j`c2
-0j`2"10f0j`g01j`h0Há “
-	(¥@∑0j`210f0j`g2
-0j`Há “
-	(∂Qª0j`210f0j`g2
-0j`2π
-0i0Há “
-	(∫V¿0j0j`k2Œ0D0j`E2º0,0j`-Há “
-	(øL≈0j`m2º0,0j`-2¡0J0j`KHá “
-	(ƒL»0j`m2∆0j0j`k2¡0J0j`KHá “
-	(«5 0j`m2º0,0j`-Há “
-	(…VŒ0O0j`P2À0J0j`K2Ã0J0j`KHá “
-	(ÕF‘0j`2–0j`n2“00/j`o0Há “
-	(”+÷0j`2“0j`Há “
-	(’`ﬁ0j`2◊0j`2Ÿ0j`p2€0V0Uj`q02‹0j`#Há “
-	(›n‚0j`2◊0j`2Ÿ0j`p2ﬂ0V0Uj`q02‡00/j`40Há “
-	(·8Â0j`2„0j`2Ÿ0j`pHá “
-	(‰SË0j`2„0j`2Ÿ0j`p2Ê00/j`40Há “
-	(ÁXÔ0j`2„0j`2Î0r“
-s2Ì00/j`t0Há “
-	(ÓdÙ0j`2
-10j`2Ò0>0=j`?0j`u2Ú0j`#2
-0j`Há “
-	(Ûrˆ0j`2
-10j`2Ò0>0=j`?0j`u2Ú00/j`402
-0j`Há “
-	(ı˘0j`vHá “
-	(¯˚0j`Há “
-	(˙*˝00j`2Há “
-	(¸AÄ0J0j`K2˛00j`2Há “
-	(ˇZÉ0O0j`P2˛00j`22Å00j`2Há “
-	(ÇAÜ0,0j`-2Ñ00j`2Há “
-	(Önå0y0j`z26)2&$ 00j`00w00j`x2+0Há “
-	(ãné0y0j`z26)2&$ 00j`00w00j`x2+0Há “
-	(ç(ê0O0j`PHá “
-	(è+î0j`2í0j`{Há “
-	(ì=ô0j`2ï0j`2ñ0H2ó0HHá “
-	(òOù0j`2ï0j`2ñ0H2ó0H0|j`}0Há “
-	(úü0j`"Há “
-	(û+°0j`2ï0j`Há “
-	(†P¶0j`2¢0j`{2#§0J0j`K01j`~0Há “
-	(•‡±0j`2ß02®0j`c2%¨ 00j`Ä01j`Å02a)]PNJH00j`0j`c0j`N00j`00S00j`Ç2Ø00/j`É0Há “
-	(∞”≥0j`2ß02%¨ 00j`Ä01j`Å02a)]PNJH00j`0j`c0j`N00j`00S00j`Ç2Ø00/j`É0Há “
-	(≤:µ0j`2Ø00/j`É0Há “
-	(¥:∑0j`2Ø00/j`É0Há “
-	(∂9º0j`2∏0j`2∫0Yj`ÑHá “
-	(ª9æ0j`2∏0j`2∫0Yj`ÑHá “
-	(Ωeƒ0j`2¡0Ö0j`Ü2¬0,0j`-2ñ0,0j`-Há “
-	(√e∆0j`2¡0Ö0j`Ü2¬0,0j`-2ñ0,0j`-Há “
-	(≈(»0J0j`KHá “
-	(«—”0j`2…0,0j`-2 0,0j`-2À0,0j`-2Ã0,0j`-2Õ0,0j`-2Œ0j`2œ0,0j`-2—00/j`á0Há “
-	(“Q÷0j`2‘0O0j`P2—00/j`á0Há “
-	(’[€0j`2◊0,0j`-2Ÿ0à2—00/j`á0Há “
-	(⁄Q›0j`2◊0,0j`-2—00/j`á0Há “
-	(‹(·02ﬂ0j`âHá “
-	(‡,„0j`2—0j`âHá “
-	(‚6Â0O0j`P2ﬂ0j`âHá “
-	(‰\È0j`2ﬂ0j`â2Ê0,0j`-2Á00j`2Há “
-	(ËDÌ0j`2$Î0O0j`P01j`ä0Há “
-	(ÏD0j`2$Ó0O0j`P01j`ä0Há “
-	(Ô_Ù0j`2…0,0j`-2Ú0j`ã2—00/j`á0Há “
-	(Ûvˆ0j`2…0,0j`-2Ú0j`ã2◊0,0j`-2—00/j`á0Há “
-	(ı˘0j`åHá “
-	(¯(˚0O0j`PHá “
-	(˙D˛0j`2$¸0O0j`P01j`ä0Há “
-	(˝:Ç0j`2Ä00/j`ç0Há “
-	(Åÿ
-‡
+ 
+
+
+
+ 
+ 
+ 
+
+ 
+  
+ 
+  
+ 
+ 
+ 
+ % 
+( 
+) 
+ / 
+6 
+7 
+9 
+: 
+@
+A 
+B 
+ F 
+G 
+O 
+ P 
+Q 
+R 
+ S 
+T 
+U 
+W 
+[ 
+\ 
+ _ 
+` 
+f 
+p
+1q 
+w 
+} 
+~ 
+Ä 
+Å 
+ í 
+ì 
+ñ 
+ ó 
+1ò 
+ õ 
+ú 
+ù 
+ † 
+1° 
+¢ 
+± 
+¥ 
+µ 
+º 
+  
+À 
+‰ 
+Á 
+Í 
+ô 
+ö 
+∂ 
+∑ 
+∫ 
+„ 
+1Â 
+Í 
+Ï 
+Ì ¯X0j`Há “
+	(
+j00	j`200	j`200	j`2
+0j`2
+0j`Há “
+	(<"00	j`2 00	j`Há “
+	(!2$0j`2 00	j`Há “
+	(#:'02 00	j`2
+0j`Há “
+	(&D,02 00	j`2*00	j`Há “
+	(+D.02 00	j`2*00	j`Há “
+	(-D102 00	j`2*00	j`Há “
+	(0.302 00	j`Há “
+	(2.502 00	j`Há “
+	(4Z=02 00	j`2800	j`2;00	j`Há “
+	(<Z?02 00	j`2800	j`2;00	j`Há “
+	(>>E02 00	j`2C
+0 j`!Há “
+	(DDJ02 00	j`2H00"j`#Há “
+	(I.L02 00	j`Há “
+	(K.N02 00	j`Há “
+	(MîZ02 00	j`2VVRFD@>0&0	j`'0(j`)0&0	j`'00%0$0	j`*2X0+Há “
+	(Y<^0,0	j`-2 00	j`Há “
+	(]Hc0,0	j`-2 00	j`2
+a0.j`/Há “
+	(be0j`Há “
+	(dHi00	j`200	j`2
+g0j`0Há “
+	(h2k0j`0200	j`Há “
+	(j>m0(j`)200	j`2
+0j`Há “
+	(l>o0(j`)200	j`2
+0j`Há “
+	(nFu0200	j`2
+r0j`22
+s0j`2Há “
+	(tTy0&0	j`3200	j`2v00	j`Há “
+	(x\|0200	j`2v00	j`2z0&0	j`3Há “
+	({`É060	j`7200	j`2040	j`52
+0j`Há “
+		(Ç\Ö0200	j`2800	j`2;00	j`Há “
+		(Ñ\á0200	j`2800	j`2;00	j`Há “
+		(Ü@â0200	j`2 
+0 j`!Há “
+		(àFã0200	j`2H00"j`#Há “
+		(ä0ç0200	j`Há “
+		(å0è0200	j`Há “
+		(éñë0200	j`2VVRFD@>0&0	j`'0(j`)0&0	j`'00%0$0	j`*2X0+Há “
+		(ê™ï0200	j`2jVfZXTR0&0	j`'0(j`)0&0	j`'0,0	j`-0080$0	j`92X0+Há “
+		(îˆü0200	j`2ô0;0:j`<0+2ö0j`2çVà|zvt0&0	j`'0(j`)0&0	j`'0j`>0j`20;0:j`<0	0j`00=0$0	j`?2X0+Há “
+		(ûÉ§0200	j`2ô0;0:j`<0+2ö0j`2öVïàÖÄ~0&0	j`'0(j`)0&0	j`'0j`>0j`20;0:j`<0	0j`0j`A00@0$0	j`B2X0+Há “
+		(£F¶0200	j`2040	j`5Há “
+		(•G©0200	j`2ß060	j`7Há “
+		(®a¨0(j`)200	j`2*00	j`2™0,0	j`-Há “
+		(´KÆ0(j`)200	j`2ß040	j`5Há “
+		(≠Á∞0(j`)200	j`2*00	j`2™0,0	j`-2
+a0.j`/2jVfZXTR0&0	j`'0(j`)0&0	j`'0,0	j`-0080$0	j`92X0+Há “
+		(Ø—≥0(j`)200	j`2ß040	j`52
+a0.j`/2jVfZXTR0&0	j`'0(j`)0&0	j`'040	j`50080$0	j`C2X0+Há “
+		(≤o∏0(j`)200	j`2*00	j`2#∂0,0	j`-0Dj`E0+Há “
+		(∑{∫0(j`)200	j`2*00	j`2#∂0,0	j`-0Dj`E0+2
+0j`2Há “
+		(πpø0(j`)200	j`2ª060	j`72#Ω040	j`50Dj`F0+Há “
+		(æı¡0(j`)200	j`2*00	j`2#∂0,0	j`-0Dj`E0+2
+a0.j`/2jVfZXTR0&0	j`'0(j`)0&0	j`'0,0	j`-0080$0	j`92X0+Há “
+		(¿ˆ√0(j`)200	j`2ª060	j`72#Ω040	j`50Dj`F0+2
+a0.j`/2jVfZXTR0&0	j`'0(j`)0&0	j`'040	j`50080$0	j`C2X0+Há “
+		(¬v«0(j`)200	j`2ƒ0j`>2≈0j`2ô0;0:j`<0+2ö0j`Há “
+		(∆†…0(j`)200	j`2ƒ0j`>2≈0j`2ô0;0:j`<0+2ö0j`2
+a0.j`/2çVà|zvt0&0	j`'0(j`)0&0	j`'0j`>0j`20;0:j`<0	0j`00=0$0	j`?2X0+Há “
+		(»ÑŒ0(j`)200	j`2ƒ0j`>2≈0j`2ô0;0:j`<0+2Ã00Gj`H0+Há “
+		(ÕÆ–0(j`)200	j`2ƒ0j`>2≈0j`2ô0;0:j`<0+2Ã00Gj`H0+2
+a0.j`/2çVà|zvt0&0	j`'0(j`)0&0	j`'0j`>0j`20;0:j`<0	0j`00=0$0	j`?2X0+Há “
+		(œ“0j`Há “
+		(—U’00	j`200	j`2”040	j`5Há “
+		(‘>◊00	j`2*00	j`Há “
+		(÷>Ÿ00	j`2*00	j`Há “
+		(ÿ>€060	j`72*00	j`Há “
+		(⁄Gﬁ02*00	j`2‹00	j`Há “
+		(›G·02*00	j`2ﬂ00	j`Há “
+		(‡>„060	j`72*00	j`Há “
+		(‚4Ê0j`I2*00	j`Há “
+		(Â4È0j`J2*00	j`Há “
+		(Ë4Ï0j`K2*00	j`Há “
+		(Î4Ó0j`22*00	j`Há “
+		(Ì40j`22*00	j`Há “
+		(Ô0Ú02*00	j`Há “
+		(Ò0Ù02*00	j`Há “
+		(Û0ˆ02*00	j`Há “
+		(ı0¯02*00	j`Há “
+		(˜0˙02*00	j`Há “
+		(˘0¸02*00	j`Há “
+		(˚0˛02*00	j`Há “
+		(˝>Ä00	j`2*00	j`Há “
+		(ˇ4Ç0j`22*00	j`Há “
+		(Å4Ñ0j`22*00	j`Há “
+		(É4Ü0j`22*00	j`Há “
+		(Ö4à0j`22*00	j`Há “
+		(á4ä0j`22*00	j`Há “
+		(â4å0j`2*00	j`Há “
+		(ã4é0j`2*00	j`Há “
+		(ç4ê0j`2*00	j`Há “
+		(è4í0j`2*00	j`Há “
+		(ëVî0&0	j`32*00	j`2v00	j`Há “
+		(ì^ñ02*00	j`2v00	j`2z0&0	j`3Há “
+		(ïò0j`Há “
+		(óJú0L0	j`M200	j`2
+0j`Há “
+		(õAü0(j`)2ù0L0	j`M2
+0j`Há “
+		(ûA°0(j`)2ù0L0	j`M2
+0j`Há “
+		(†W£0&0	j`32ù0L0	j`M2v00	j`Há “
+		(¢`•02ù0L0	j`M2v00	j`2™0&0	j`3Há “
+		(§]ß02ù0L0	j`M2800	j`2;00	j`Há “
+		(¶]©02ù0L0	j`M2800	j`2;00	j`Há “
+		(®A´02ù0L0	j`M2 
+0 j`!Há “
+		(™G≠02ù0L0	j`M2H00"j`#Há “
+		(¨1Ø02ù0L0	j`MHá “
+		(Æ1±02ù0L0	j`MHá “
+		(∞G≥02ù0L0	j`M2040	j`5Há “
+		(≤Hµ02ù0L0	j`M2ß060	j`7Há “
+		(¥?π0N0	j`O2ù0L0	j`MHá “
+		(∏´º02ù0L0	j`M2jVfZXTR0&0	j`'0(j`)0&0	j`'00	j`0080$0	j`P2X0+Há “
+		(ª´æ02ù0L0	j`M2jVfZXTR0&0	j`'0(j`)0&0	j`'00	j`0080$0	j`P2X0+Há “
+		(Ωœ¿02ù0L0	j`M2çVà|zvt0&0	j`'0(j`)0&0	j`'0j`>0j`20;0:j`<0	0j`00=0$0	j`?2X0+Há “
+		(ø‹¬02ù0L0	j`M2öVïàÖÄ~0&0	j`'0(j`)0&0	j`'0j`>0j`20;0:j`<0	0j`0j`A00@0$0	j`B2X0+Há “
+		(¡´ƒ02ù0L0	j`M2jVfZXTR0&0	j`'0(j`)0&0	j`'0,0	j`-0080$0	j`92X0+Há “
+		(√G∆02ù0L0	j`M2040	j`5Há “
+		(≈H»02ù0L0	j`M2ß060	j`7Há “
+		(«ÇÕ02ù0L0	j`M2…00	j`2 00	j`2À00	j`2
+0j`Há “
+		(Ãœ0j`Há “
+		(Œn“0,0	j`-200	j`2*00	j`2–0j`A2™0j`Há “
+		(—â÷0,0	j`-200	j`2*00	j`2–0j`A2”0;0:j`<0+2‘0j`Há “
+		(’âÿ0,0	j`-200	j`2*00	j`2–0j`A2”0;0:j`<0+2‘0j`Há “
+		(◊?⁄00	j`2™0,0	j`-Há “
+		(Ÿ5‹0j`A2™0,0	j`-Há “
+		(€5ﬁ0j`2™0,0	j`-Há “
+		(›C‡0;0:j`<0	2™0,0	j`-Há “
+		(ﬂ5‚0j`2™0,0	j`-Há “
+		(·BÁ0.j`R2™0,0	j`-2‰0j`QHá “
+		(ÊÈ0j`Há “
+		(ËiÔ0T0	j`U200	j`200	j`2Î0S2
+0j`Há “
+		(Ó?Ú00	j`20T0	j`UHá “
+		(Ò1Ù0S20T0	j`UHá “
+		(Û:ˆ020T0	j`U2Î0SHá “
+		(ıG¯020T0	j`U2*00	j`Há “
+		(˜G˙020T0	j`U2*00	j`Há “
+		(˘G¸020T0	j`U2*00	j`Há “
+		(˚]˛020T0	j`U2800	j`2;00	j`Há “
+		(˝]Ä020T0	j`U2800	j`2;00	j`Há “
+		(ˇÿ
+‡
  Í
 platform.IOKit

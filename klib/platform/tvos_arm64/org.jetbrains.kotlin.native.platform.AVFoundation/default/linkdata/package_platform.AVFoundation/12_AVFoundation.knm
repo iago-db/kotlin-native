@@ -1,33 +1,116 @@
 
-“?
+ŸA
 platform
 AVFoundation
-AVSampleCursor
-cursor
-kotlin
-Boolean
+AVSampleBufferDisplayLayer
 kotlinx
 cinterop
-
-ObjCMethod
-selector
-OsamplesWithEarlierDecodeTimeStampsMayHaveLaterPresentationTimeStampsThanCursor:
-encoding
-
-B24@0:8@16
-isStret
-NsamplesWithEarlierDecodeTimeStampsMayHaveLaterPresentationTimeStampsThanCursor
-OsamplesWithLaterDecodeTimeStampsMayHaveEarlierPresentationTimeStampsThanCursor:
-NsamplesWithLaterDecodeTimeStampsMayHaveEarlierPresentationTimeStampsThanCursor
-CValue
-	CoreMedia
-CMTime
-presentationTimeStamp
-{?=qiIq}16@0:8
-decodeTimeStamp
 CPointer
 cnames
 structs
+opaqueCMSampleBuffer
+	CoreMedia
+CMSampleBufferRef
+sampleBuffer
+kotlin
+Unit
+
+ObjCMethod
+selector
+enqueueSampleBuffer:
+encoding
+!v24@0:8^{opaqueCMSampleBuffer=}16
+isStret
+enqueueSampleBuffer
+flush
+v16@0:8
+flushAndRemoveImage
+darwin
+NSObject
+dispatch_queue_t
+queue
+	Function0
+
+usingBlock
+,requestMediaDataWhenReadyOnQueue:usingBlock:
+v32@0:8@16@?24
+ requestMediaDataWhenReadyOnQueue
+stopRequestingMediaData
+OpaqueCMTimebase
+CMTimebaseRef
+timebase
+^{OpaqueCMTimebase=}16@0:8
+Long
+#AVQueuedSampleBufferRenderingStatus
+status
+q16@0:8
+
+Foundation
+NSError
+error
+@16@0:8
+Boolean
+requiresFlushToResumeDecoding
+B16@0:8
+isReadyForMoreMediaData
+.hasSufficientMediaDataForReliablePlaybackStart
+preventsCapture
+setPreventsCapture:
+
+v20@0:8B16
+setPreventsCapture
+'preventsDisplaySleepDuringVideoPlayback
++setPreventsDisplaySleepDuringVideoPlayback:
+*setPreventsDisplaySleepDuringVideoPlayback
+1outputObscuredDueToInsufficientExternalProtection
+AVSampleBufferVideoRenderer
+sampleBufferRenderer
+ AVSampleBufferRenderSynchronizer
+%AVQueuedSampleBufferRenderingProtocol
+renderer
+addRenderer:
+
+v24@0:8@16
+addRenderer
+CValue
+CMTime
+atTime
+	Function1
+completionHandler
+(removeRenderer:atTime:completionHandler:
+v56@0:8@16{?=qiIq}24@?48
+removeRenderer
+collections
+List
+	renderers
+interval
+Any
+4addPeriodicTimeObserverForInterval:queue:usingBlock:
+@56@0:8{?=qiIq}16@40@?48
+"addPeriodicTimeObserverForInterval
+times
+1addBoundaryTimeObserverForTimes:queue:usingBlock:
+@40@0:8@16@24@?32
+addBoundaryTimeObserverForTimes
+observer
+removeTimeObserver:
+removeTimeObserver
+AVSampleCursor
+cursor
+NSComparisonResult
+1comparePositionInDecodeOrderWithPositionOfCursor:
+
+q24@0:8@16
+0comparePositionInDecodeOrderWithPositionOfCursor
+OsamplesWithEarlierDecodeTimeStampsMayHaveLaterPresentationTimeStampsThanCursor:
+
+B24@0:8@16
+NsamplesWithEarlierDecodeTimeStampsMayHaveLaterPresentationTimeStampsThanCursor
+OsamplesWithLaterDecodeTimeStampsMayHaveEarlierPresentationTimeStampsThanCursor:
+NsamplesWithLaterDecodeTimeStampsMayHaveEarlierPresentationTimeStampsThanCursor
+presentationTimeStamp
+{?=qiIq}16@0:8
+decodeTimeStamp
 opaqueCMFormatDescription
 CMFormatDescriptionRef
 "copyCurrentSampleFormatDescription
@@ -39,21 +122,13 @@ NsamplesWithLaterDecodeTimeStampsMayHaveEarlierPresentationTimeStampsThanCursor
 AVSampleCursorDependencyInfo
 currentSampleDependencyInfo
 {?=BBBBBB}16@0:8
-collections
 Map
-Any
 "currentSampleDependencyAttachments
-@16@0:8
 !AVSampleCursorAudioDependencyInfo
  currentSampleAudioDependencyInfo
 {?=Bq}16@0:8
-Long
-darwin
 	NSInteger
  samplesRequiredForDecoderRefresh
-q16@0:8
-
-Foundation
 NSURL
 currentChunkStorageURL
 AVSampleCursorStorageRange
@@ -66,7 +141,6 @@ Foundation
 int64_t
 currentSampleIndexInChunk
 currentSampleStorageRange
-AVSampleBufferVideoRenderer
 
 __CVBuffer
 	CoreVideo
@@ -74,16 +148,13 @@ __CVBuffer
 copyDisplayedPixelBuffer
 ^{__CVBuffer=}16@0:8
 minimumUpcomingPresentationTime
-Unit
 2expectMinimumUpcomingSampleBufferPresentationTime:
 v40@0:8{?=qiIq}16
 1expectMinimumUpcomingSampleBufferPresentationTime
 BexpectMonotonicallyIncreasingUpcomingSampleBufferPresentationTimes
-v16@0:8
 5resetUpcomingSampleBufferPresentationTimeExpectations
-	Function1
+ recommendedPixelBufferAttributes
 AVVideoPerformanceMetrics
-completionHandler
 1loadVideoPerformanceMetricsWithCompletionHandler:
 v24@0:8@?16
 0loadVideoPerformanceMetricsWithCompletionHandler
@@ -144,8 +215,6 @@ deviceType
 defaultDeviceWithDeviceType
 userPreferredCamera
 setUserPreferredCamera:
-
-v24@0:8@16
 setUserPreferredCamera
 systemPreferredCamera
 AVCaptureSystemPressureState
@@ -159,8 +228,6 @@ SsetPrimaryConstituentDeviceSwitchingBehavior:restrictedSwitchingBehaviorConditi
 v32@0:8q16Q24
 ,setPrimaryConstituentDeviceSwitchingBehavior
 isVirtualDevice
-B16@0:8
-List
 constituentDevices
 'virtualDeviceSwitchOverVideoZoomFactors
 )primaryConstituentDeviceSwitchingBehavior
@@ -185,8 +252,6 @@ B24@0:8q16
 
 torchLevel
 ObjCObjectVar
-NSError
-error
 setTorchModeOnWithLevel:error:
 B28@0:8f16^@20
 setTorchModeOnWithLevel
@@ -202,21 +267,46 @@ v24@0:8q16
 	focusMode
 isFocusModeSupported:
 isFocusModeSupported
+CoreGraphics
+CGPoint
+pointOfInterest
+CGRect
+#defaultRectForFocusPointOfInterest:
+4{CGRect={CGPoint=dd}{CGSize=dd}}32@0:8{CGPoint=dd}16
+"defaultRectForFocusPointOfInterest
 lensPosition
 5setFocusModeLockedWithLensPosition:completionHandler:
 v28@0:8f16@?20
 "setFocusModeLockedWithLensPosition
+detectedObjectID
+ AVCaptureCinematicVideoFocusMode
+=setCinematicVideoTrackingFocusWithDetectedObjectID:focusMode:
+v32@0:8q16q24
+2setCinematicVideoTrackingFocusWithDetectedObjectID
+point
+0setCinematicVideoTrackingFocusAtPoint:focusMode:
+v40@0:8{CGPoint=dd}16q32
+%setCinematicVideoTrackingFocusAtPoint
+-setCinematicVideoFixedFocusAtPoint:focusMode:
+"setCinematicVideoFixedFocusAtPoint
 -isLockingFocusWithCustomLensPositionSupported
 setFocusMode:
 setFocusMode
 isFocusPointOfInterestSupported
-CoreGraphics
-CGPoint
 focusPointOfInterest
 {CGPoint=dd}16@0:8
 setFocusPointOfInterest:
 v32@0:8{CGPoint=dd}16
 setFocusPointOfInterest
+isFocusRectOfInterestSupported
+CGSize
+minFocusRectOfInterestSize
+{CGSize=dd}16@0:8
+focusRectOfInterest
+&{CGRect={CGPoint=dd}{CGSize=dd}}16@0:8
+setFocusRectOfInterest:
+)v48@0:8{CGRect={CGPoint=dd}{CGSize=dd}}16
+setFocusRectOfInterest
 isAdjustingFocus
 $isAutoFocusRangeRestrictionSupported
 "AVCaptureAutoFocusRangeRestriction
@@ -227,8 +317,6 @@ $isAutoFocusRangeRestrictionSupported
 isSmoothAutoFocusEnabled
 smoothAutoFocusEnabled
 setSmoothAutoFocusEnabled:
-
-v20@0:8B16
 setSmoothAutoFocusEnabled
 .automaticallyAdjustsFaceDrivenAutoFocusEnabled
 2setAutomaticallyAdjustsFaceDrivenAutoFocusEnabled:
@@ -242,6 +330,8 @@ v20@0:8B16
 exposureMode
 isExposureModeSupported:
 isExposureModeSupported
+&defaultRectForExposurePointOfInterest:
+%defaultRectForExposurePointOfInterest
 duration
 ISO
 8setExposureModeCustomWithDuration:ISO:completionHandler:
@@ -256,297 +346,229 @@ v20@0:8B16
 exposurePointOfInterest
 setExposurePointOfInterest:
 setExposurePointOfInterest
-1automaticallyAdjustsFaceDrivenAutoExposureEnabled
-5setAutomaticallyAdjustsFaceDrivenAutoExposureEnabled:
-4setAutomaticallyAdjustsFaceDrivenAutoExposureEnabled
-isFaceDrivenAutoExposureEnabled
-faceDrivenAutoExposureEnabled
-!setFaceDrivenAutoExposureEnabled:
- setFaceDrivenAutoExposureEnabled
-activeMaxExposureDuration
-setActiveMaxExposureDuration:
-setActiveMaxExposureDuration
-isAdjustingExposure
-lensAperture
-exposureDuration
-exposureTargetOffset
-exposureTargetBias
-minExposureTargetBias
-maxExposureTargetBias
-isGlobalToneMappingEnabled
-globalToneMappingEnabled
-setGlobalToneMappingEnabled:
-setGlobalToneMappingEnabled
-AVCaptureWhiteBalanceMode
-whiteBalanceMode
-isWhiteBalanceModeSupported:
-isWhiteBalanceModeSupported
-AVCaptureWhiteBalanceGains
-whiteBalanceGains
-GsetWhiteBalanceModeLockedWithDeviceWhiteBalanceGains:completionHandler:
-v36@0:8{?=fff}16@?28
-4setWhiteBalanceModeLockedWithDeviceWhiteBalanceGains
-'AVCaptureWhiteBalanceChromaticityValues
--chromaticityValuesForDeviceWhiteBalanceGains:
-{?=ff}28@0:8{?=fff}16
-,chromaticityValuesForDeviceWhiteBalanceGains
-chromaticityValues
--deviceWhiteBalanceGainsForChromaticityValues:
-{?=fff}24@0:8{?=ff}16
-,deviceWhiteBalanceGainsForChromaticityValues
--AVCaptureWhiteBalanceTemperatureAndTintValues
-3temperatureAndTintValuesForDeviceWhiteBalanceGains:
-2temperatureAndTintValuesForDeviceWhiteBalanceGains
-tempAndTintValues
-3deviceWhiteBalanceGainsForTemperatureAndTintValues:
-2deviceWhiteBalanceGainsForTemperatureAndTintValues
-3isLockingWhiteBalanceWithCustomDeviceGainsSupported
-setWhiteBalanceMode:
-setWhiteBalanceMode
-isAdjustingWhiteBalance
-deviceWhiteBalanceGains
-{?=fff}16@0:8
- grayWorldDeviceWhiteBalanceGains
-maxWhiteBalanceGain
-$isSubjectAreaChangeMonitoringEnabled
-"subjectAreaChangeMonitoringEnabled
-&setSubjectAreaChangeMonitoringEnabled:
-%setSubjectAreaChangeMonitoringEnabled
-isLowLightBoostSupported
-isLowLightBoostEnabled
-.automaticallyEnablesLowLightBoostWhenAvailable
-2setAutomaticallyEnablesLowLightBoostWhenAvailable:
-1setAutomaticallyEnablesLowLightBoostWhenAvailable
-Double
-CGFloat
-factor
-withRate
-rampToVideoZoomFactor:withRate:
-v28@0:8d16f24
-rampToVideoZoomFactor
-cancelVideoZoomRampõ
+!isExposureRectOfInterestSupported
+minExposureRectOfInterestSize
+exposureRectOfInterestÏ
  
  
  
-
- 
+
+
+ 
 
-
- 
- 
- 
-	 
- 
-
-
- 
-	 
- 
-" 
-%
-& 
-' 
-* 
-- 
- .
-/ 
- 2
-3 
-5 
-8 
- ;
-< 
-? 
-@ 
- A
-!B 
-F 
-M 
-N 
-S 
-U 
-	Y 
-	^ 
-h 
-i 
-~ 
+
+ 
+ 	
+	
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+" 
+	# 
+& 
+' 
+ *
++ 
+. 
+; 
+= 
+> 
+C 
+	D 
+F 
+K
+L 
+O 
+Z 
+\ 
+h 
+	i 
+m 
+p 
+s 
+u 
+x 
+z 
+| 
  
-Å 
-É 
-Ñ 
-é 
-ê 
-í 
-ì 
-ö 
-© 
-Æ 
-∞ 
-± 
-Ω 
- …
-;  
+ Ç
+.É 
+Ü 
+ á
+1à 
+í 
+ñ 
+ò 
+	ú 
+	° 
+´ 
+¨ 
+¡ 
+¬ 
+ƒ 
+∆ 
+« 
+– 
 “ 
-‰ 
+‘ 
+’ 
+È 
+Ó 
+ 
+˚ 
+ ˇ
+GÄ 
+GÇ 
 ã 
-è 
-î 
-ú 
-≥ 
-;¥ ¿<80*020Há “
- 	(
-( 80*020Há “
- 	(( 60
-0*0Há “
- 	(( 60
-0*0Há “
- 	(( >00j`*0Há “
- 	(( 60
-0*0Há “
- 	(( 6 00*0Há “
- 	( (! 6#00*0Há “
- 	(#($ >(00*0Há “
- 	((() 6+00*0Há “
- 	(+(, 400j`*0Há “
- 	(0(1 240*0Há “
- 	(4() 6600*0Há “
- 	(6(7 6900*0Há “
- 	(9(: 4=0j`*0Há “
- 	(=(1 6>00*0Há “
- 	(>(7 >C0 0j`"*0Há “
- 	(C(D >I0#*02E0
-0Há “
- 	(G(H 0J0#*0Há “
- 	(J(K 0L0#*0Há “
- 	(L(K FR0#*02O0%0#0$Há “
- 	(P(Q >X0'*0&2T0
-0Há “
- 	(V(W >]0'*0&2Z0(0Há “
- 	([(\ >b0'*0&2_0)0Há “
- 	(`(a 6c0
-0*0'Há “
- 	(c( 6d0(0*0'Há “
- 	(d(e 6f0)0*0'Há “
- 	(f(g Fm0#*0*2T0
-02j0+Há “
- 	(k(l >q0
-0*0*2n0+Há “
- 	(o(p Ft0#*0*2Z0(02j0+Há “
- 	(r(s >w0(0*0*2n0+Há “
- 	(u(v Fz0#*0*2_0)02j0+Há “
- 	(x(y >}0)0*0*2n0+Há “
- 	({(| 6Ä0j`-*0,Há “
-!		(Ä(1 :Ç
-0+j`.*0,Há “
-!		(Ç() dà0,*0/2Ç
-0+j`.2Ö
-0+j`02Ä0j`-Há “
-"		(Ü	(á 4â0,*0/Há “
-!		(â() >å0#*0/2	â0,Há “
-"		(ä	(ã 4ç0,*0/Há “
-!		(ç() 2è01*0,Há “
-!		(è() Mó0#*0,2ë0j`22î03j`4Há “
-"		(ï	(ñ 3ò0*0,Há “
-"		(ò	(ô 6õ05*0,Há “
-!		(õ() 6ú05*0,Há “
-!		(ú() 6ù0j`2*0,Há “
-!		(ù(1 7û03j`4*0,Há “
-"		(û	(ü 6†0j`2*0,Há “
-!		(†(1 7°03j`4*0,Há “
-"		(°	(ü 4¢0,*0,Há “
-!		(¢() 6£05*0,Há “
-!		(£() 6§05*0,Há “
-!		(§() @¶0#*0,2§05Há “
-"		(•	(ã 3ß0*0,Há “
-"		(ß	(ô 3®0*0,Há “
-"		(®	(ô @≠0*0,2™0j`6Há “
-"		(´	(¨ Uµ0*0,2Ø072≤
-09080Há “
-"		(≥	(¥ 3∂0*0,Há “
-"		(∂	(ô 3∑0*0,Há “
-"		(∑	(ô 3∏0*0,Há “
-"		(∏	(ô 3Ø07*0,Há “
-"		(Ø	(π 6™0j`6*0,Há “
-!		(™(1 @º0#*0,2™0j`6Há “
-"		(∫	(ª @¿0*0,2æ0j`:Há “
-"		(ø	(¨ Xƒ0#*0,2¡072O
-0
-00#0$Há “
-"		(¬	(√ 3≈0*0,Há “
-"		(≈	(ô 6æ0j`:*0,Há “
-!		(æ(1 @«0#*0,2æ0j`:Há “
-"		(∆	(ª 3»0*0,Há “
-"		(»	(ô 9À0<0*0,Há “
-"		(À	(Ã Bœ0#*0,2À0<0Há “
-"		(Õ	(Œ 3–0*0,Há “
-"		(–	(ô 3—0*0,Há “
-"		(—	(ô 6”0j`=*0,Há “
-!		(”(1 @’0#*0,2”0j`=Há “
-"		(‘	(ª 3÷0*0,Há “
-"		(÷	(ô 3◊0*0,Há “
-"		(◊	(ô <€0#*0,2ÿ0Há “
-"		(Ÿ	(⁄ 3‹0*0,Há “
-"		(‹	(ô <ﬁ0#*0,2‹0Há “
-"		(›	(⁄ 3ﬂ0*0,Há “
-"		(ﬂ	(ô <‚0#*0,2‡0Há “
-"		(·	(⁄ 3¡07*0,Há “
-"		(¡	(π 6„0j`*0,Há “
-!		(„(1 @Á0*0,2Â0j`>Há “
-"		(Ê	(¨ gÏ0#*0,2Ë0
-02È072O
-0
-00#0$Há “
-"		(Í	(Î XÔ0#*0,2Ì072O
-0
-00#0$Há “
-"		(Ó	(√ 6Â0j`>*0,Há “
-!		(Â(1 @Ò0#*0,2Â0j`>Há “
-"		(	(ª 3Ú0*0,Há “
-"		(Ú	(ô 9Û0<0*0,Há “
-"		(Û	(Ã Bı0#*0,2Û0<0Há “
-"		(Ù	(Œ 3ˆ0*0,Há “
-"		(ˆ	(ô <¯0#*0,2ˆ0Há “
-"		(˜	(⁄ 3˘0*0,Há “
-"		(˘	(ô <¸0#*0,2˙0Há “
-"		(˚	(⁄ 8˝0
-0*0,Há “
-!		(˝( Aˇ0#*0,2˝0
-0Há “
-!		(˛(H 3Ä0*0,Há “
-"		(Ä	(ô 3Å07*0,Há “
-"		(Å	(π 8Ç0
-0*0,Há “
-!		(Ç( 3È07*0,Há “
-"		(È	(π 3É07*0,Há “
-"		(É	(π 3Ñ07*0,Há “
-"		(Ñ	(π 3Ö07*0,Há “
-"		(Ö	(π 3Ü07*0,Há “
-"		(Ü	(π 3á0*0,Há “
-"		(á	(ô <ä0#*0,2à0Há “
-"		(â	(⁄ @é0*0,2å0j`?Há “
-"		(ç	(¨ ^ì0#*0,2ê0@02O
-0
-00#0$Há “
-"		(ë	(í Hó0A0*0,2ê0@0Há “
-"		(ï	(ñ Hõ0@0*0,2ò0A0Há “
-"		(ô	(ö Hû0B0*0,2ê0@0Há “
-"		(ù	(ñ H°0@0*0,2ü0B0Há “
-"		(†	(ö 3¢0*0,Há “
-"		(¢	(ô 6å0j`?*0,Há “
-!		(å(1 @§0#*0,2å0j`?Há “
-"		(£	(ª 3•0*0,Há “
-"		(•	(ô 9¶0@0*0,Há “
-"		(¶	(ß 9®0@0*0,Há “
-"		(®	(ß 3©07*0,Há “
-"		(©	(π 3™0*0,Há “
-"		(™	(ô <≠0#*0,2´0Há “
-"		(¨	(⁄ 3Æ0*0,Há “
-"		(Æ	(ô 3Ø0*0,Há “
-"		(Ø	(ô 3∞0*0,Há “
-"		(∞	(ô <≤0#*0,2∞0Há “
-"		(±	(⁄ Iπ0#*0,2µ0Cj`D2∂07Há “
-"		(∑	(∏ 2∫0#*0,Há “
-!		(∫(K ÿ
+Gü 
+© 
+∫ ◊=F0*0200j`
+Há “
+ (( 00*0Há “
+ (( 00*0Há “
+ (( N 0*02
+0j`200Há “
+ (( 0!0*0Há “
+ (!( >$00j`*0Há “
+ ($(% 4(0j`*0Há “
+ ((() 2,0*0Há “
+ (,(- 0/0*0Há “
+ (/(0 010*0Há “
+ (1(0 020*0Há “
+ (2(0 030*0Há “
+ (3(0 860*0230Há “
+ (4(5 070*0Há “
+ (7(0 890*0270Há “
+ (8(5 0:0*0Há “
+ (:(0 0<0*0Há “
+ (<(- 8B0*02?0Há “
+ (@(A \J0*02?02E002G000Há “
+ (H(I 4M0 *0Há “
+ (M(- hR0!*02N002
+0j`2
+0000Há “
+ (P(Q ZV0!*02
+S0 2
+0j`200Há “
+ (T(U 8Y0*02W0!Há “
+ (X(A <_0j`#*0"2[0"Há “
+ (](^ 8b0*0"2[0"Há “
+ (`(a 8d0*0"2[0"Há “
+ (c(a 6e00*0"Há “
+ (e(f 6g00*0"Há “
+ (g(f >j0$0j`%*0"Há “
+ (j(k 6l00*0"Há “
+ (l(f 6n0&0*0"Há “
+ (n(o 6q0'0*0"Há “
+ (q(r >t0!0(*0"Há “
+ (t(- 6v0)0*0"Há “
+ (v(w 4y0j`**0"Há “
+ (y() 2{0+*0"Há “
+ ({(- 6}0,0*0"Há “
+ (}(~ 9Ä0-0*0"Há “
+"	(Ä	(Å 6Ñ0j`/*0"Há “
+!	(Ñ() 8Ö0,0*0"Há “
+!	(Ö(~ Aâ000j`2*0Há “
+"	(â	(ä Bé0*02ã00Há “
+"	(å	(ç 2è0*0Há “
+!	(è( 2ê0*0Há “
+!	(ê( >ë0!0(*0Há “
+!	(ë(- Iï0*02G0300Há “
+"	(ì	(î Bõ05*042ó00Há “
+"	(ô	(ö B†05*042ù060Há “
+"	(û	(ü B•05*042¢070Há “
+"	(£	(§ 8¶00*05Há “
+!	(¶(f 9ß060*05Há “
+"	(ß	(® 9©070*05Há “
+"	(©	(™ K∞0*082ó002≠09Há “
+"	(Æ	(Ø B¥00*082±09Há “
+"	(≤	(≥ K∑0*082ù0602≠09Há “
+"	(µ	(∂ B∫060*082±09Há “
+"	(∏	(π KΩ0*082¢0702≠09Há “
+"	(ª	(º B¿070*082±09Há “
+"	(æ	(ø 6√0j`;*0:Há “
+!	(√() :≈
+09j`<*0:Há “
+!	(≈(- dÀ0:*0=2≈
+09j`<2»
+09j`>2√0j`;Há “
+"	(…	(  4Ã0:*0=Há “
+!	(Ã(- =Œ0*0=2	Ã0:Há “
+!	(Õ(A 4œ0:*0=Há “
+!	(œ(- 2—0?*0:Há “
+!	(—(- MŸ0*0:2”0j`@2÷0Aj`BHá “
+"	(◊	(ÿ 2⁄0*0:Há “
+!	(⁄(0 6€0 *0:Há “
+!	(€(- 6‹0 *0:Há “
+!	(‹(- 6›0j`@*0:Há “
+!	(›() 7ﬁ0Aj`B*0:Há “
+"	(ﬁ	(ﬂ 6‡0j`@*0:Há “
+!	(‡() 7·0Aj`B*0:Há “
+"	(·	(ﬂ 4‚0:*0:Há “
+!	(‚(- 6„0 *0:Há “
+!	(„(- 6‰0 *0:Há “
+!	(‰(- ?Ê0*0:2‰0 Há “
+!	(Â(A 2Á0*0:Há “
+!	(Á(0 2Ë0*0:Há “
+!	(Ë(0 @Ì0*0:2Í0j`CHá “
+"	(Î	(Ï TÛ0*0:2Ô0D2,
+00E0Há “
+"	(Ò	(Ú 2Ù0*0:Há “
+!	(Ù(0 2ı0*0:Há “
+!	(ı(0 2ˆ0*0:Há “
+!	(ˆ(0 3Ô0D*0:Há “
+"	(Ô	(˜ 6Í0j`C*0:Há “
+!	(Í() @˙0*0:2Í0j`CHá “
+"	(¯	(˘ @˛0*0:2¸0j`FHá “
+"	(˝	(Ï HÖ0I0*0:2Å0H0Há “
+"	(É	(Ñ Xâ0*0:2Ü0D2G
+0000Há “
+"	(á	(à Mé0*0:2ä0j`*2¸0j`JHá “
+"	(å	(ç Oí0*0:2è0H02¸0j`JHá “
+"	(ê	(ë Oî0*0:2è0H02¸0j`JHá “
+"	(ì	(ë 2ï0*0:Há “
+!	(ï(0 6¸0j`F*0:Há “
+!	(¸() @ó0*0:2¸0j`FHá “
+"	(ñ	(˘ 2ò0*0:Há “
+!	(ò(0 9ô0H0*0:Há “
+"	(ô	(ö Bù0*0:2ô0H0Há “
+"	(õ	(ú 2û0*0:Há “
+!	(û(0 9†0K0*0:Há “
+"	(†	(° 9¢0I0*0:Há “
+"	(¢	(£ B¶0*0:2¢0I0Há “
+"	(§	(• 2ß0*0:Há “
+!	(ß(0 2®0*0:Há “
+!	(®(0 6™0j`L*0:Há “
+!	(™() @¨0*0:2™0j`LHá “
+"	(´	(˘ 2≠0*0:Há “
+!	(≠(0 2Æ0*0:Há “
+!	(Æ(0 ;±0*0:2Ø0Há “
+!	(∞(5 2≤0*0:Há “
+!	(≤(0 ;¥0*0:2≤0Há “
+!	(≥(5 2µ0*0:Há “
+!	(µ(0 ;∏0*0:2∂0Há “
+!	(∑(5 3Ü0D*0:Há “
+"	(Ü	(˜ 6π0j`**0:Há “
+!	(π() @Ω0*0:2ª0j`MHá “
+"	(º	(Ï Hø0I0*0:2Å0H0Há “
+"	(æ	(Ñ gƒ0*0:2¿002¡0D2G
+0000Há “
+"	(¬	(√ X«0*0:2≈0D2G
+0000Há “
+"	(∆	(à 6ª0j`M*0:Há “
+!	(ª() @…0*0:2ª0j`MHá “
+"	(»	(˘ 2 0*0:Há “
+!	( (0 9À0H0*0:Há “
+"	(À	(ö BÕ0*0:2À0H0Há “
+"	(Ã	(ú 2Œ0*0:Há “
+!	(Œ(0 9œ0K0*0:Há “
+"	(œ	(° 9–0I0*0:Há “
+"	(–	(£ ÿ
 ‡
  Í
 platform.AVFoundation
